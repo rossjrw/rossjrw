@@ -17,17 +17,22 @@
   },
   "homepage": "https://github.com/rossjrw/ur#readme",
   "devDependencies": {
+    "@octokit/rest": "^18.0.1",
+    "@octokit/types": "^5.1.0",
     "@types/jest": "^26.0.5",
     "@typescript-eslint/eslint-plugin": "^3.7.0",
     "@typescript-eslint/parser": "^3.7.0",
     "clean-webpack-plugin": "^3.0.0",
     "core-js": "^3.6.5",
     "eslint": "^7.5.0",
+    "github-script": "git+https://github.com/actions/github-script.git",
     "jest": "^26.1.0",
     "source-map-loader": "^1.0.1",
     "typescript": "^3.9.7",
-    "ur-game": "^1.3.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "ur-game": "^1.3.0"
   }
 }
