@@ -1,0 +1,10 @@
+__pycache__
+*.secret.*
+*.vim
+*.sw*
+env
+.venv
+.vscode
+.cache
+node_modules
+dist
