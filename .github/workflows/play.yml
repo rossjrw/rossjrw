@@ -1,0 +1,27 @@
+# Main action for Ur
+
+name: "play"
+
+# Run this action whenever an issue is opened
+on:
+  issues:
+    types: [opened]
+jobs:
+  play:
+    runs-on: ubuntu-latest
+    # Only do anything if the issue says it's a move
+    if: startsWith(github.event.issue.title, 'ur-')
+    steps:
+      # TODO setup Node
+      # Checkout the compiled code
+      # I'll probably need to store the results of the main action, checkout
+      # master, then make the edits that I need to
+      - uses: actions/checkout@2
+        with:
+          ref: compiled
+      - uses: actions/github-script@2
+        with:
+          script: |
+            const path = require('path')
+            const scriptPath = path.resolve('./dist/path.js')
+            console.log(require(scriptPath)())
