@@ -2,6 +2,8 @@ import { Octokit } from "@octokit/rest"
 import { Context } from "@actions/github/lib/context"
 import { get } from "lodash"
 
+import { addReaction, addLabels } from '@/issues'
+
 interface ErrorDescriptions {
   [error_type: string]: string
 }
@@ -29,15 +31,15 @@ export function handleError(
 
   addReaction("confused", octokit, context)
   octokit.issues.createComment({
-    owner: context.issue.owner,
-    repo: context.issue.repo,
+    owner: context.repo.owner,
+    repo: context.repo.repo,
     issue_number: context.issue.number,
     body: `@${context.actor} ${get(ERROR_DESC, error.message, ERROR_DEFAULT)}`,
   })
   addLabels(["Unsuccessful"], octokit, context)
   octokit.issues.update({
-    owner: context.issue.owner,
-    repo: context.issue.repo,
+    owner: context.repo.owner,
+    repo: context.repo.repo,
     issue_number: context.issue.number,
     state: "closed",
   })

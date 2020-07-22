@@ -89,10 +89,13 @@ function getGameState (
     octokit.repos.getContent({
       owner: context.issue.owner,
       repo: context.issue.repo,
+      ref: "play",
       path: gamePath,
       mediaType: { format: "raw" },
     }).then(stateFile => {
-      state = JSON.parse(btoa(stateFile.data.content))
+      state = JSON.parse(
+        Buffer.from(stateFile.data.content, "base64").toString()
+      )
       return state
     })
   } catch (error) {

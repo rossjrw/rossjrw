@@ -10,8 +10,8 @@ export function addReaction (
    * Adds a reaction to the triggering issue.
    */
   octokit.reactions.createForIssue({
-    owner: context.issue.owner,
-    repo: context.issue.repo,
+    owner: context.repo.owner,
+    repo: context.repo.repo,
     issue_number: context.issue.number,
     content: reaction,
   })
@@ -26,8 +26,8 @@ export function addLabels (
    * Adds labels to the triggering issue.
    */
   octokit.issues.addLabels({
-    owner: context.issue.owner,
-    repo: context.issue.repo,
+    owner: context.repo.owner,
+    repo: context.repo.repo,
     issue_number: context.issue.number,
     labels: labels,
   })
