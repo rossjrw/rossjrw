@@ -2,17 +2,16 @@ const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.ts',
+  entry: './src/play.ts',
   output: {
-    filename: 'bundle.[contenthash].js',
+    filename: 'play.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  devtool: "source-map",
   module: {
     rules: [
       {
         test: /\.ts$/,
-        use: 'babel-loader',
+        use: 'ts-loader',
         exclude: /node_modules/,
       },
     ],

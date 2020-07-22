@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "webpack --config webpack.config.js --mode development",
+    "build-production": "webpack --config webpack.config.js --mode production"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,7 @@
     "github-script": "git+https://github.com/actions/github-script.git",
     "jest": "^26.1.0",
     "source-map-loader": "^1.0.1",
+    "ts-loader": "^8.0.1",
     "typescript": "^3.9.7",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"

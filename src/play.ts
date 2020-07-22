@@ -120,3 +120,26 @@ function parseIssueTitle (
   }
   return [command as "new" | "move", move, parseInt(gameId)]
 }
+
+function getBoardContents (
+  octokit: Octokit,
+  context: Context,
+): void {
+  const GAME_DATA_PATH = "games/current/state.json"
+  const TEMP_FILENAME = "/tmp/state.json"
+  let state = null
+  const game_content = null
+
+  // Grab the content of the current board from file
+  try {
+    const gameContentRaw = octokit.repos.getContent({
+      owner: context.issue.owner,
+      repo: context.issue.repo,
+      issue_number: context.issue.number,
+      path: GAME_DATA_PATH,
+    })
+  } catch (error) {
+    if (error.status === 404) {
+      // There is no game, so create it
+      game = 
+}
