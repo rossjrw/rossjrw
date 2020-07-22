@@ -1,9 +1,8 @@
 import { Octokit } from "@octokit/rest"
 import { Context } from "@actions/github/lib/context"
+import Ur from "ur-game"
 
-interface ErrorDescriptions {
-  [error_type: string]: string
-}
+import { addReaction, addLabels } from '@/issues'
 
 export function play (
   title: string,
@@ -29,64 +28,15 @@ export function play (
   // TODO React with a rocket once the issue has been actioned.
   addReaction("eyes", octokit, context)
 
-  // Parse the issue's title into a concrete action
   try {
+    // Parse the issue's title into a concrete action
     const [command, move, gameId] = parseIssueTitle(title)
+    let state = getGameState(octokit, context)
   } catch (error) {
     // If there was an error, forward it to the user, then stop
     handleError(error, octokit, context)
     return
   }
-}
-
-function handleError(
-  error: Error,
-  octokit: Octokit,
-  context: Context,
-): void {
-  /**
-   * Handles execution errors by reporting the problem back to the user and
-   * closing the issue.
-   *
-   * @param error: The error to report with an ID matching the desc object.
-   */
-  const ERROR_DESC: ErrorDescriptions = {
-    WRONG_GAME: "Sorry, I only know how to play Ur.",
-    UNKNOWN_COMMAND: "I'm not sure what you're asking me to do - the only commands I know are 'new' and 'move'.",
-    NO_MOVE_GIVEN: "You've asked me to make a move, but you haven't told me which move to make.",
-    NO_ID_GIVEN: "You've told me what move to make, but I'm not sure where I should make it without a game ID.",
-    MOVE_BAD_FORMAT: "You've asked me to make a move, but I'm not sure what exactly you want me to do. Is your move in the right format?",
-    NON_NUMERIC_ID: "You've told me what move to make, but the game ID you've given me isn't a number.",
-  }
-  addReaction("confused", octokit, context)
-  octokit.issues.createComment({
-    owner: context.issue.owner,
-    repo: context.issue.repo,
-    issue_number: context.issue.number,
-    body: ERROR_DESC[error.message],
-  })
-  octokit.issues.update({
-    owner: context.issue.owner,
-    repo: context.issue.repo,
-    issue_number: context.issue.number,
-    state: "closed",
-  })
-}
-
-function addReaction (
-  reaction: NonNullable<Parameters<typeof octokit.reactions.createForIssue>[0]>["content"],
-  octokit: Octokit,
-  context: Context,
-): void {
-  /**
-   * Adds a reaction to the triggering issue.
-   */
-  octokit.reactions.createForIssue({
-    owner: context.issue.owner,
-    repo: context.issue.repo,
-    issue_number: context.issue.number,
-    content: reaction,
-  })
 }
 
 function parseIssueTitle (
@@ -121,25 +71,39 @@ function parseIssueTitle (
   return [command as "new" | "move", move, parseInt(gameId)]
 }
 
-function getBoardContents (
+function getGameState (
+  gamePath: string,
   octokit: Octokit,
   context: Context,
 ): void {
-  const GAME_DATA_PATH = "games/current/state.json"
+  /**
+   * Gets the current game state as stored on file.
+   */
+  // const gamePath = "games/current/state.json"
   const TEMP_FILENAME = "/tmp/state.json"
   let state = null
   const game_content = null
 
   // Grab the content of the current board from file
   try {
-    const gameContentRaw = octokit.repos.getContent({
+    octokit.repos.getContent({
       owner: context.issue.owner,
       repo: context.issue.repo,
-      issue_number: context.issue.number,
-      path: GAME_DATA_PATH,
+      path: gamePath,
+      mediaType: { format: "raw" },
+    }).then(stateFile => {
+      state = JSON.parse(btoa(stateFile.data.content))
+      return state
     })
   } catch (error) {
     if (error.status === 404) {
       // There is no game, so create it
-      game = 
+      state = Ur.startGame(7, 4, Ur.BLACK) // TODO get player team
+      // return state
+    } else {
+      // Something else happened
+      throw error
+    }
+  }
 }
+
