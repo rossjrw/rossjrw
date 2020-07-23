@@ -2,7 +2,7 @@ import { Octokit } from "@octokit/rest"
 import { Context } from "@actions/github/lib/context"
 import Ur from "ur-game"
 
-import { addReaction, addLabels } from '@/issues'
+import { addReaction } from '@/issues'
 
 export function play (
   title: string,
@@ -71,42 +71,39 @@ function parseIssueTitle (
   return [command as "new" | "move", move, parseInt(gameId)]
 }
 
-function getGameState (
+async function getGameState (
   gamePath: string,
   octokit: Octokit,
   context: Context,
-): void {
+): Promise<Ur.State> {
   /**
    * Gets the current game state as stored on file.
    */
-  // const gamePath = "games/current/state.json"
-  const TEMP_FILENAME = "/tmp/state.json"
-  let state = null
-  const game_content = null
+  // const gamePath = "games/current"
 
   // Grab the content of the current board from file
+  let stateFile
   try {
-    octokit.repos.getContent({
+    stateFile = await octokit.repos.getContent({
       owner: context.issue.owner,
       repo: context.issue.repo,
       ref: "play",
       path: `${gamePath}/state.json`,
       mediaType: { format: "raw" },
-    }).then(stateFile => {
-      state = JSON.parse(
-        Buffer.from(stateFile.data.content, "base64").toString()
-      )
-      return state
     })
   } catch (error) {
     if (error.status === 404) {
       // There is no game, so create it
-      state = Ur.startGame(7, 4, Ur.BLACK) // TODO get player team
-      // return state
+      // This situation probably shouldn't be able to happen
+      // state = Ur.startGame(7, 4, Ur.BLACK) // TODO get player team
+      throw error
     } else {
-      // Something else happened
       throw error
     }
   }
+  const state = JSON.parse(
+    Buffer.from(stateFile.data.content, "base64").toString()
+  )
+  return state
 }
 

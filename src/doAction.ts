@@ -6,11 +6,11 @@ import { isEmpty, values, sum } from "lodash"
 import { getPlayerTeam } from '@/player'
 import {addLabels} from './issues'
 
-export function resetGame (
+export async function resetGame (
   gamePath: string,
   octokit: Octokit,
   context: Context,
-): void {
+): Promise<void> {
   /**
    * Called when a player uses the "new" command.
    *
@@ -18,29 +18,29 @@ export function resetGame (
    * here - maybe no moves for a few hours or something.
    */
   // Delete the current game state
-  octokit.repos.getContent({
+  const stateFile = await octokit.repos.getContent({
     owner: context.issue.owner,
     repo: context.issue.repo,
     path: gamePath,
-  }).then(stateFile => {
-    octokit.repos.deleteFile({
-      owner: context.issue.owner,
-      repo: context.issue.repo,
-      path: gamePath,
-      branch: 'play',
-      message: `@${context.actor} Start a new game (#${context.issue.number})`,
-      sha: stateFile.data.sha,
-    })
+  })
+
+  octokit.repos.deleteFile({
+    owner: context.issue.owner,
+    repo: context.issue.repo,
+    path: gamePath,
+    branch: 'play',
+    message: `@${context.actor} Start a new game (#${context.issue.number})`,
+    sha: stateFile.data.sha,
   })
 }
 
-export function makeMove (
+export async function makeMove (
   state: Ur.State,
   move: string,
   gamePath: string,
   octokit: Octokit,
   context: Context,
-): void {
+): Promise<void> {
   /**
    * Called when a player uses the "move" command.
    *
@@ -82,21 +82,21 @@ export function makeMove (
 
   // Next job is to save the new state
   // Replace the contents of the current game state file with the new state
-  octokit.repos.getContent({
+  const stateFile = await octokit.repos.getContent({
     owner: context.issue.owner,
     repo: context.issue.repo,
     ref: "play",
     path: gamePath,
-  }).then(stateFile => {
-    octokit.repos.createOrUpdateFileContents({
-      owner: context.repo.owner,
-      repo: context.repo.repo,
-      branch: "play",
-      path: gamePath,
-      message: `@${context.actor} Move white from ${fromPosition} to ${toPosition} (#${context.issue.number})`,
-      content: Buffer.from(JSON.stringify(newState)).toString("base64"),
-      sha: stateFile.data.sha,
-    })
+  })
+
+  octokit.repos.createOrUpdateFileContents({
+    owner: context.repo.owner,
+    repo: context.repo.repo,
+    branch: "play",
+    path: gamePath,
+    message: `@${context.actor} Move white from ${fromPosition} to ${toPosition} (#${context.issue.number})`,
+    content: Buffer.from(JSON.stringify(newState)).toString("base64"),
+    sha: stateFile.data.sha,
   })
 
   // Move has been performed and the result has been saved.

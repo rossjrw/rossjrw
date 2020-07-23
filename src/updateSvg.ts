@@ -2,12 +2,13 @@ import { Octokit, RestEndpointMethodTypes } from "@octokit/rest"
 import { Context } from "@actions/github/lib/context"
 import { State } from "ur-game"
 
-export function updateSvg(
+export async function updateSvg(
   state: State,
   gamePath: string,
+  baseSvgPath: string,
   octokit: Octokit,
   context: Context,
-): string {
+): Promise<string> {
   /**
    * Generates an SVG to visually represent the current board state.
    *
@@ -17,34 +18,49 @@ export function updateSvg(
    * Saves the resulting SVG to games/current/board.[hash].svg.
    *
    * @param state: The current state of the game board.
-   * @param gamePath: The path to the current game's info.
+   * @param gamePath: The path to the current game's info dir.
+   * @param baseSvgPath: The path to the SVG template file.
    * @returns The hash of the newly-created file, so that README.md can
    * correctly reference it (this avoids cache issues).
    */
   // Delete the current board image - we didn't save the hash, so we'll have to
   // trawl through that directory and delete any matching files
-  octokit.repos.getContent({
+  const gameFiles = await octokit.repos.getContent({
     owner: context.repo.owner,
     repo: context.repo.repo,
     ref: "play",
     path: gamePath,
-  }).then(gameFiles => {
-    if (Array.isArray(gameFiles)) {
-      gameFiles.forEach(gameFile => {
-        if (/^board\.[A-z0-9]+\.svg$/.test(gameFile.name)) {
-          octokit.repos.deleteFile({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            branch: "play",
-            path: gameFile.path,
-            message: TODO,
-            sha: TODO,
-          })
-        }
+  })
+
+  // If the result is not an array, then games/current/ is not a dir
+  if (!Array.isArray(gameFiles.data)) {
+    throw new Error('GAME_DIR_IS_FILE')
+  }
+
+  gameFiles.data.forEach(gameFile => {
+    if (/^board\.[A-z0-9]+\.svg$/.test(gameFile.name)) {
+      octokit.repos.deleteFile({
+        owner: context.repo.owner,
+        repo: context.repo.repo,
+        branch: "play",
+        path: gameFile.path,
+        message: `Clear old board image (#${context.issue.number})`,
+        sha: gameFile.sha,
       })
-    } else {
-      throw new Error('GAME_DIR_IS_FILE')
     }
   })
+
+  // Make a new svg and write it to file
+  const svgFile = await octokit.repos.getContent({
+    owner: context.repo.owner,
+    repo: context.repo.repo,
+    branch: "source",
+    path: baseSvgPath,
+    mediaType: { format: "raw" },
+  })
+
+  let svgContents = Buffer.from(svgFile.data.content, "base64").toString()
+
+
   return "no thank you sir"
 }
