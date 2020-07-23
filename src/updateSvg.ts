@@ -1,6 +1,7 @@
 import { Octokit, RestEndpointMethodTypes } from "@octokit/rest"
 import { Context } from "@actions/github/lib/context"
 import { State } from "ur-game"
+import { range, has } from "lodash"
 
 export async function updateSvg(
   state: State,
@@ -61,6 +62,57 @@ export async function updateSvg(
 
   let svgContents = Buffer.from(svgFile.data.content, "base64").toString()
 
+  // What IDs are there?
+  // Tokens: tileN-T and tile0-TN, tile15-TN
+  // Dice spots: diceN-spot-on and/or diceN-spot-off
+  state.board.forEach(
+    (field, fieldIndex) => {
+      if (fieldIndex === 0 || fieldIndex === 15) {
+        range(field.b, 7).forEach(tokenIndex => {
+          hideSvgElement(svgContents, `tile${fieldIndex}-b${tokenIndex}`)
+        })
+        range(field.w, 7).forEach(tokenIndex => {
+          hideSvgElement(svgContents, `tile${fieldIndex}-w${tokenIndex}`)
+        })
+      } else {
+        if (field.b === 0) {
+          hideSvgElement(svgContents, `tile${fieldIndex}-b`)
+        }
+        if (field.w === 0) {
+          hideSvgElement(svgContents, `tile${fieldIndex}-w`)
+        }
+      }
+    }
+  )
+  state.dice!.forEach(
+    (diceResult, index) => {
+      if (diceResult) {
+        svgContents = hideSvgElement(svgContents, `dice${index}-spot-off`)
+      } else {
+        svgContents = hideSvgElement(svgContents, `dice${index}-spot-on`)
+      }
+    }
+  )
+    
 
   return "no thank you sir"
+}
+
+function hideSvgElement(
+  svgContents: string,
+  elementId: string,
+): string {
+  /**
+   * Hides the SVG element that has the given ID.
+   *
+   * All elements in the SVG are displayed by default, and must be turned off
+   * in order to produce a coherent image. The reason that the far more
+   * sensible approach of turning things on has not been taken is because a) it
+   * makes it hard to edit the base file when everything is hidden by default
+   * b) the base file just looks way cooler now
+   *
+   * @param svgContents: The contents of the SVG as text.
+   * @param elementId: The ID to find.
+   * @returns The updated contents of the SVG.
+   */
 }
