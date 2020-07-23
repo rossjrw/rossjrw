@@ -90,7 +90,7 @@ function getGameState (
       owner: context.issue.owner,
       repo: context.issue.repo,
       ref: "play",
-      path: gamePath,
+      path: `${gamePath}/state.json`,
       mediaType: { format: "raw" },
     }).then(stateFile => {
       state = JSON.parse(
