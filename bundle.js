@@ -23990,6 +23990,9 @@ function handleError(error, octokit, context, core) {
         state: "closed",
     });
     core.error(error);
+    // Seems like this is the only reliable way for me to know what actually
+    // caused the error
+    throw error;
 }
 
 
