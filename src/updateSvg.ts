@@ -1,7 +1,8 @@
-import { Octokit, RestEndpointMethodTypes } from "@octokit/rest"
+import { Octokit } from "@octokit/rest"
 import { Context } from "@actions/github/lib/context"
 import { State } from "ur-game"
-import { range, has } from "lodash"
+import { range } from "lodash"
+import cryptoRandomString from "crypto-random-string"
 
 export async function updateSvg(
   state: State,
@@ -12,9 +13,6 @@ export async function updateSvg(
 ): Promise<string> {
   /**
    * Generates an SVG to visually represent the current board state.
-   *
-   * Does this by taking the base SVG and adding "display: none" to all objects
-   * that aren't visible in the current state.
    *
    * Saves the resulting SVG to games/current/board.[hash].svg.
    *
@@ -55,12 +53,12 @@ export async function updateSvg(
   const svgFile = await octokit.repos.getContent({
     owner: context.repo.owner,
     repo: context.repo.repo,
-    branch: "source",
+    branch: "source", // TODO use compiled branch
     path: baseSvgPath,
     mediaType: { format: "raw" },
   })
 
-  let svgContents = Buffer.from(svgFile.data.content, "base64").toString()
+  let svg = Buffer.from(svgFile.data.content, "base64").toString()
 
   // What IDs are there?
   // Tokens: tileN-T and tile0-TN, tile15-TN
@@ -69,17 +67,17 @@ export async function updateSvg(
     (field, fieldIndex) => {
       if (fieldIndex === 0 || fieldIndex === 15) {
         range(field.b, 7).forEach(tokenIndex => {
-          hideSvgElement(svgContents, `tile${fieldIndex}-b${tokenIndex}`)
+          svg = hideSvgElement(svg, `tile${fieldIndex}-b${tokenIndex}`)
         })
         range(field.w, 7).forEach(tokenIndex => {
-          hideSvgElement(svgContents, `tile${fieldIndex}-w${tokenIndex}`)
+          svg = hideSvgElement(svg, `tile${fieldIndex}-w${tokenIndex}`)
         })
       } else {
         if (field.b === 0) {
-          hideSvgElement(svgContents, `tile${fieldIndex}-b`)
+          svg = hideSvgElement(svg, `tile${fieldIndex}-b`)
         }
         if (field.w === 0) {
-          hideSvgElement(svgContents, `tile${fieldIndex}-w`)
+          hideSvgElement(svg, `tile${fieldIndex}-w`)
         }
       }
     }
@@ -87,19 +85,31 @@ export async function updateSvg(
   state.dice!.forEach(
     (diceResult, index) => {
       if (diceResult) {
-        svgContents = hideSvgElement(svgContents, `dice${index}-spot-off`)
+        svg = hideSvgElement(svg, `dice${index}-spot-off`)
       } else {
-        svgContents = hideSvgElement(svgContents, `dice${index}-spot-on`)
+        svg = hideSvgElement(svg, `dice${index}-spot-on`)
       }
     }
   )
-    
 
-  return "no thank you sir"
+  const hash = cryptoRandomString({length: 16, type: "base64"})
+
+  // Save the new SVG to a file
+  octokit.repos.createOrUpdateFileContents({
+    owner: context.repo.owner,
+    repo: context.repo.repo,
+    branch: "play",
+    path: `${gamePath}/board.${hash}.svg`,
+    message: `Create new board image (#${context.issue.number})`,
+    content: Buffer.from(svg).toString("base64"),
+  })
+
+  // Return the hash for use by the README
+  return hash
 }
 
 function hideSvgElement(
-  svgContents: string,
+  svg: string,
   elementId: string,
 ): string {
   /**
@@ -111,8 +121,31 @@ function hideSvgElement(
    * makes it hard to edit the base file when everything is hidden by default
    * b) the base file just looks way cooler now
    *
-   * @param svgContents: The contents of the SVG as text.
+   * @param svg: The contents of the SVG as text.
    * @param elementId: The ID to find.
    * @returns The updated contents of the SVG.
    */
+  // The ID is always the first attribute in a node, thankfully
+  // Also, all nodes are written on a single line
+
+  // Pattern to match the node with the wanted ID
+  const nodePattern = new RegExp(`<[A-z]+ id="${elementId}"[^>]*>`)
+
+  svg = svg.replace(nodePattern, (node) => {
+    if (node.includes("style=")) {
+      // There is a style attribute - modify it
+      const stylePattern = /style="([^"]*)"/
+      node = node.replace(stylePattern, (_, styleValue) => {
+        return `style="display:none;${styleValue}"`
+      })
+      return node
+    } else {
+      // There is no style attribute - add one
+      // Add the new attribute before the ">" at the end
+      node = node.slice(0, -1) + ' style="display:none;"' + node.slice(-1)
+      return node
+    }
+  })
+
+  return svg
 }

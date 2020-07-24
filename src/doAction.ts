@@ -4,7 +4,8 @@ import Ur from "ur-game"
 import { isEmpty, values, sum } from "lodash"
 
 import { getPlayerTeam } from '@/player'
-import {addLabels} from './issues'
+import { addLabels } from '@/issues'
+import { updateSvg } from '@/updateSvg'
 
 export async function resetGame (
   gamePath: string,
@@ -21,7 +22,7 @@ export async function resetGame (
   const stateFile = await octokit.repos.getContent({
     owner: context.issue.owner,
     repo: context.issue.repo,
-    path: gamePath,
+    path: `${gamePath}/state.json`
   })
 
   octokit.repos.deleteFile({
@@ -93,7 +94,7 @@ export async function makeMove (
     owner: context.repo.owner,
     repo: context.repo.repo,
     branch: "play",
-    path: gamePath,
+    path: `${gamePath}/state.json`,
     message: `@${context.actor} Move white from ${fromPosition} to ${toPosition} (#${context.issue.number})`,
     content: Buffer.from(JSON.stringify(newState)).toString("base64"),
     sha: stateFile.data.sha,
@@ -153,11 +154,11 @@ export async function makeMove (
   // Update README.md with the new state
 
   // Update the SVG to represent the new game board
-  // This is as simple as adding "display:none;" to the style attribute of any
-  // elements that don't want to be seen
-  // Bear in mind that not all elements actually have a style attribute - and
-  // those that do will need their current style preseverved
-  // With that in mind, would I prefer to hide everything that needs to be
-  // hidden and save that, or would I prefer to edit the previous state?
-  // --> obviously the former
+  const boardImageHash = updateSvg(
+    state,
+    gamePath,
+    "assets/board.optimised.svg", // TODO change for compiled branch
+    octokit,
+    context
+  )
 }
