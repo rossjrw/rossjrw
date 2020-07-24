@@ -13,7 +13,7 @@ jobs:
     - name: Install
       run: npm install
     - name: Build
-      run: npm run build-production
+      run: npm run build
     - name: Deploy
       if: github.ref == 'refs/heads/source'
       uses: JamesIves/github-pages-deploy-action@releases/v3
