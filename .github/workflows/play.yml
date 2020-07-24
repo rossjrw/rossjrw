@@ -23,5 +23,5 @@ jobs:
         with:
           script: |
             const path = require('path')
-            const scriptPath = path.resolve('./dist/bundle.js')
+            const scriptPath = path.resolve('./bundle.js')
             console.log(require(scriptPath)({{ github.event.issue.title}}, github, context))
