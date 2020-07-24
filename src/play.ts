@@ -6,7 +6,7 @@ import { addReaction } from '@/issues'
 import { handleError } from '@/error'
 import { resetGame, makeMove } from '@/doAction'
 
-export default async function play (
+module.exports = async function play (
   title: string,
   octokit: Octokit,
   context: Context,
