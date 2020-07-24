@@ -24140,6 +24140,7 @@ async function play(title, octokit, context, core) {
     // that we've seen it.
     // TODO React with a rocket once the issue has been actioned.
     const gamePath = "games/current";
+    console.log(title, octokit, context);
     try {
         Object(_issues__WEBPACK_IMPORTED_MODULE_0__["addReaction"])("eyes", octokit, context);
         // Parse the issue's title into a concrete action
