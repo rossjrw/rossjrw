@@ -10,6 +10,7 @@ module.exports = {
     library: "play",
     libraryTarget: "umd",
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
