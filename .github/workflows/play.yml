@@ -23,5 +23,5 @@ jobs:
         with:
           script: |
             const path = require('path')
-            const scriptPath = path.resolve('./dist/path.js')
+            const scriptPath = path.resolve('./dist/bundle.js')
             console.log(require(scriptPath)())
