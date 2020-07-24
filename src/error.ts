@@ -27,7 +27,7 @@ export function handleError(
     MOVE_BAD_FORMAT: "You've asked me to make a move, but I'm not sure what exactly you want me to do. Is your move in the right format?",
     NON_NUMERIC_ID: "You've told me what move to make, but the game ID you've given me isn't a number.",
   }
-  const ERROR_DEFAULT = "Something went wrong, but I'm not sure exactly what.\n\n@rossjrw"
+  const ERROR_DEFAULT = "Something went wrong, but I'm not sure exactly what.\n\n@rossjrw "
 
   addReaction("confused", octokit, context)
   octokit.issues.createComment({
