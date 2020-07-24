@@ -23959,7 +23959,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _issues__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/issues */ "./src/issues.ts");
 
 
-function handleError(error, octokit, context) {
+function handleError(error, octokit, context, core) {
     /**
      * Handles execution errors by reporting the problem back to the user and
      * closing the issue.
@@ -23989,6 +23989,7 @@ function handleError(error, octokit, context) {
         issue_number: context.issue.number,
         state: "closed",
     });
+    core.error(error);
 }
 
 
@@ -24118,7 +24119,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-async function play(title, octokit, context) {
+async function play(title, octokit, context, core) {
     /**
      * Let's play Ur!
      *
@@ -24150,7 +24151,7 @@ async function play(title, octokit, context) {
     }
     catch (error) {
         // If there was an error, forward it to the user, then stop
-        Object(_error__WEBPACK_IMPORTED_MODULE_1__["handleError"])(error, octokit, context);
+        Object(_error__WEBPACK_IMPORTED_MODULE_1__["handleError"])(error, octokit, context, core);
         return;
     }
 }
