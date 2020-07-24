@@ -4,9 +4,9 @@ import Ur from "ur-game"
 
 import { addReaction } from '@/issues'
 import { handleError } from '@/error'
-import {resetGame, makeMove} from './doAction'
+import { resetGame, makeMove } from '@/doAction'
 
-export async function play (
+export default async function play (
   title: string,
   octokit: Octokit,
   context: Context,
