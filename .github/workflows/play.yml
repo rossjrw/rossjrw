@@ -28,4 +28,4 @@ jobs:
             const scriptPath = path.resolve('./bundle.js')
             const play = require(scriptPath)
             console.log(scriptPath, play, play.default)
-            console.log(await play.default("${{ github.event.issue.title}}", github, context))
+            console.log(await play.default("${{ github.event.issue.title}}", github, context, core))
