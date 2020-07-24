@@ -47,4 +47,8 @@ export function handleError(
   })
 
   core.error(error)
+
+  // Seems like this is the only reliable way for me to know what actually
+  // caused the error
+  throw error
 }
