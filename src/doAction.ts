@@ -1,11 +1,12 @@
 import { Octokit } from "@octokit/rest"
 import { Context } from "@actions/github/lib/context"
 import Ur from "ur-game"
-import { isEmpty, values, sum } from "lodash"
+import { isEmpty } from "lodash"
 
 import { getPlayerTeam } from '@/player'
 import { addLabels } from '@/issues'
 import { updateSvg } from '@/updateSvg'
+import { analyseMove } from '@/analyseMove'
 
 export async function resetGame (
   gamePath: string,
@@ -88,6 +89,7 @@ export async function makeMove (
     repo: context.issue.repo,
     ref: "play",
     path: gamePath,
+    mediaType: { format: "raw" },
   })
 
   octokit.repos.createOrUpdateFileContents({
@@ -104,24 +106,17 @@ export async function makeMove (
   // All that remains is to report back to the issue and update the README.
 
   // Let's detect what happened in that move
-  // Was a rosette claimed?
-  const rosetteClaimed = [4, 8, 14].includes(toPosition)
-  if (rosetteClaimed) {
+  const events = analyseMove(state, fromPosition, toPosition)
+  if (events.rosetteClaimed) {
     addLabels([":rosette: Rosette!"], octokit, context)
   }
-  // Did a capture happen?
-  const captureHappened = !!sum(values(state.board[toPosition]))
-  if (captureHappened) {
+  if (events.captureHappened) {
     addLabels([":crossed_swords: Capture!"], octokit, context)
   }
-  // Did an ascension happen?
-  const ascensionHappened = toPosition >= 15
-  if (ascensionHappened) {
+  if (events.ascensionHappened) {
     addLabels([":rocket: Ascension!"], octokit, context)
   }
-  // Was the game won?
-  const gameWon = newState.currentPlayer === undefined
-  if (gameWon) {
+  if (events.gameWon) {
     addLabels([":crown: Winner!"], octokit, context)
   }
 
@@ -130,7 +125,7 @@ export async function makeMove (
     owner: context.repo.owner,
     repo: context.repo.repo,
     issue_number: context.issue.number,
-    body: `@${context.actor} Done! You ${ascensionHappened ? "ascended" : "moved"} a ${state.currentPlayer === Ur.BLACK ? "black" : "white"} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`}${ascensionHappened ? ". " : ` to position ${toPosition}. `}${rosetteClaimed ? "You claimed a rosette, meaning that your team gets to take another turn! " : ""}${gameWon ? "This was the winning move! " : ""}\n\nAsk a friend to make the next move: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+moved+%E2%80%94+take+your+turn+at+https://github.com/rossjrw+%23ur+%23github`
+    body: `@${context.actor} Done! You ${events.ascensionHappened ? "ascended" : "moved"} a ${state.currentPlayer === Ur.BLACK ? "black" : "white"} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`}${events.ascensionHappened ? ". " : ` to position ${toPosition}. `}${events.rosetteClaimed ? "You claimed a rosette, meaning that your team gets to take another turn! " : ""}${events.gameWon ? "This was the winning move! " : ""}\n\nAsk a friend to make the next move: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+moved+%E2%80%94+take+your+turn+at+https://github.com/rossjrw+%23ur+%23github`
   })
   octokit.issues.update({
     owner: context.repo.owner,
@@ -140,7 +135,7 @@ export async function makeMove (
   })
 
   // If the game was won, leave a message to let everyone know
-  if (gameWon) {
+  if (events.gameWon) {
     // TODO - need to find a reliable way of working out which issues are
     // related to this one (that's not based on issue titles)
     octokit.issues.createComment({
