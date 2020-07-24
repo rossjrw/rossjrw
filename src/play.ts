@@ -3,12 +3,14 @@ import { Context } from "@actions/github/lib/context"
 import Ur from "ur-game"
 
 import { addReaction } from '@/issues'
+import { handleError } from '@/error'
+import {resetGame, makeMove} from './doAction'
 
-export function play (
+export async function play (
   title: string,
   octokit: Octokit,
   context: Context,
-): void {
+): Promise<void> {
   /**
    * Let's play Ur!
    *
@@ -26,12 +28,19 @@ export function play (
   // First thing to do: add a reaction to the triggering commit to acknowledge
   // that we've seen it.
   // TODO React with a rocket once the issue has been actioned.
-  addReaction("eyes", octokit, context)
+
+  const gamePath = "games/current"
 
   try {
+    addReaction("eyes", octokit, context)
     // Parse the issue's title into a concrete action
     const [command, move, gameId] = parseIssueTitle(title)
-    let state = getGameState(octokit, context)
+    const state = await getGameState(gamePath, octokit, context)
+    if (command === "new") {
+      resetGame(gamePath, octokit, context)
+    } else if (command === "move") {
+      makeMove(state, move, gamePath, octokit, context)
+    }
   } catch (error) {
     // If there was an error, forward it to the user, then stop
     handleError(error, octokit, context)

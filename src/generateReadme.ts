@@ -10,13 +10,12 @@ export async function generateReadme (
   boardImageHash: string,
   octokit: Octokit,
   context: Context,
-): Promise<string> {
+): Promise<void> {
   /**
    * Generates the new README file based on the current state of the game.
    *
    * @param state: The current state of the board, as of right now.
    * @param boardImageHash: The hash in the name of the board image file.
-   * @returns The new content of README.md.
    */
 
   const readmeFile = await octokit.repos.getContent({
@@ -56,7 +55,16 @@ export async function generateReadme (
   }
 
   const readme = ejs.render(template, { actions, state, boardImageHash })
-  return readme
+
+  octokit.repos.createOrUpdateFileContents({
+    owner: context.repo.owner,
+    repo: context.repo.repo,
+    branch: "play",
+    path: "README.md",
+    message: `Update README.md (#${context.issue.number})`,
+    sha: readmeFile.data.sha,
+    content: Buffer.from(readme).toString("base64"),
+  })
 }
 
 function issueLink (

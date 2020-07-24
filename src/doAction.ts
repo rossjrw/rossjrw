@@ -7,6 +7,7 @@ import { getPlayerTeam } from '@/player'
 import { addLabels } from '@/issues'
 import { updateSvg } from '@/updateSvg'
 import { analyseMove } from '@/analyseMove'
+import {generateReadme} from './generateReadme'
 
 export async function resetGame (
   gamePath: string,
@@ -146,14 +147,15 @@ export async function makeMove (
     })
   }
 
-  // Update README.md with the new state
-
   // Update the SVG to represent the new game board
-  const boardImageHash = updateSvg(
+  const boardImageHash = await updateSvg(
     state,
     gamePath,
     "assets/board.optimised.svg", // TODO change for compiled branch
     octokit,
     context
   )
+
+  // Update README.md with the new state
+  generateReadme(state, boardImageHash, octokit, context)
 }
