@@ -7,7 +7,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    library: "play",
+    libraryTarget: "commonjs2",
   },
   module: {
     rules: [
