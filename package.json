@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/rossjrw/ur#readme",
   "devDependencies": {
+    "@actions/core": "^1.2.4",
     "@octokit/rest": "^18.0.1",
     "@octokit/types": "^5.1.0",
     "@types/ejs": "^3.0.4",

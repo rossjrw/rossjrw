@@ -1,5 +1,6 @@
 import { Octokit } from "@octokit/rest"
 import { Context } from "@actions/github/lib/context"
+import { default as _core } from "@actions/core"
 import Ur from "ur-game"
 
 import { addReaction } from '@/issues'
@@ -10,6 +11,7 @@ export default async function play (
   title: string,
   octokit: Octokit,
   context: Context,
+  core: typeof _core,
 ): Promise<void> {
   /**
    * Let's play Ur!
@@ -43,7 +45,7 @@ export default async function play (
     }
   } catch (error) {
     // If there was an error, forward it to the user, then stop
-    handleError(error, octokit, context)
+    handleError(error, octokit, context, core)
     return
   }
 }

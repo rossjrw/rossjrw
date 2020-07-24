@@ -1,5 +1,6 @@
 import { Octokit } from "@octokit/rest"
 import { Context } from "@actions/github/lib/context"
+import { default as _core } from "@actions/core"
 import { get } from "lodash"
 
 import { addReaction, addLabels } from '@/issues'
@@ -12,6 +13,7 @@ export function handleError(
   error: Error,
   octokit: Octokit,
   context: Context,
+  core: typeof _core,
 ): void {
   /**
    * Handles execution errors by reporting the problem back to the user and
@@ -43,4 +45,6 @@ export function handleError(
     issue_number: context.issue.number,
     state: "closed",
   })
+
+  core.error(error)
 }
