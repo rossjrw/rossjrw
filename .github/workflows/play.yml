@@ -26,4 +26,5 @@ jobs:
           script: |
             const path = require('path')
             const scriptPath = path.resolve('./bundle.js')
-            console.log(await require(scriptPath)("${{ github.event.issue.title}}", github, context))
+            const { play } = require(scriptPath)
+            console.log(await play("${{ github.event.issue.title}}", github, context))
