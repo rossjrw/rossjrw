@@ -16,10 +16,10 @@ jobs:
       # Checkout the compiled code
       # I'll probably need to store the results of the main action, checkout
       # master, then make the edits that I need to
-      - uses: actions/checkout@2
+      - uses: actions/checkout@v2
         with:
           ref: compiled
-      - uses: actions/github-script@2
+      - uses: actions/github-script@v2
         with:
           script: |
             const path = require('path')
