@@ -16,37 +16,42 @@ export async function resetGame (
    * I don't want this to happen willy-nilly, so I might add some restriction
    * here - maybe no moves for a few hours or something.
    */
-  // Delete the current game state
-  const stateFile = await octokit.repos.getContents({
-    owner: context.issue.owner,
-    repo: context.issue.repo,
-    path: `${gamePath}/state.json`,
-  })
-  if (Array.isArray(stateFile.data)) {
-    throw new Error('FILE_IS_DIR')
+  // Get the current game state file
+  let stateFile
+  try {
+    stateFile = await octokit.repos.getContents({
+      owner: context.issue.owner,
+      repo: context.issue.repo,
+      path: `${gamePath}/state.json`,
+    })
+  } catch (error) {
+    if (error.status === 404) {
+      // There's no game file! That's probably fine
+      stateFile = null
+    } else {
+      throw error
+    }
   }
-  await octokit.repos.deleteFile({
-    owner: context.issue.owner,
-    repo: context.issue.repo,
-    path: `${gamePath}/state.json`,
-    branch: 'play',
-    message: `Delete the old game (#${context.issue.number})`,
-    sha: stateFile.data.sha!,
-  })
 
   // Make a new game state
   const newState = Ur.startGame(7, 4, getPlayerTeam(context.actor))
 
   // Save the new state
-  await octokit.repos.createOrUpdateFile({
+  const update: Octokit.ReposCreateOrUpdateFileParams = {
     owner: context.repo.owner,
     repo: context.repo.repo,
     branch: "play",
     path: `${gamePath}/state.json`,
     message: `@${context.actor} Start a new game (#${context.issue.number})`,
     content: Buffer.from(JSON.stringify(newState)).toString("base64"),
-    sha: stateFile.data.sha,
-  })
+  }
+  if (stateFile) {
+    if (Array.isArray(stateFile.data)) {
+      throw new Error('FILE_IS_DIR')
+    }
+    update.sha = stateFile.data.sha
+  }
+  await octokit.repos.createOrUpdateFile(update)
 
   // Add a comment to the issue to indicate that a new board was made
   octokit.issues.createComment({
