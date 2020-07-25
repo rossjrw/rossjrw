@@ -5,7 +5,8 @@ import Ur from "ur-game"
 
 import { addReaction } from '@/issues'
 import { handleError } from '@/error'
-import { resetGame, makeMove } from '@/doAction'
+import { resetGame } from '@/new'
+import { makeMove } from '@/move'
 
 export default async function play (
   title: string,

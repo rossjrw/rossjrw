@@ -4,10 +4,11 @@ import Ur from "ur-game"
 import ejs from "ejs"
 
 import { analyseMove } from '@/analyseMove'
+import { updateSvg } from '@/updateSvg'
 
 export async function generateReadme (
   state: Ur.State,
-  boardImageHash: string,
+  gamePath: string,
   octokit: Octokit,
   context: Context,
 ): Promise<void> {
@@ -15,8 +16,16 @@ export async function generateReadme (
    * Generates the new README file based on the current state of the game.
    *
    * @param state: The current state of the board, as of right now.
-   * @param boardImageHash: The hash in the name of the board image file.
+   * @param gamePath
    */
+  // Update the SVG to represent the new game board
+  const boardImageHash = await updateSvg(
+    state,
+    gamePath,
+    "assets/board.optimised.svg", // TODO change for compiled branch
+    octokit,
+    context
+  )
 
   const readmeFile = await octokit.repos.getContents({
     owner: context.repo.owner,
