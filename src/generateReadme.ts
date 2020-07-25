@@ -69,13 +69,25 @@ export async function generateReadme (
 
   const readme = ejs.render(template, { actions, state, boardImageHash })
 
+  const currentReadmeFile = await octokit.repos.getContents({
+    owner: context.repo.owner,
+    repo: context.repo.repo,
+    ref: "play",
+    path: "README.md",
+    mediaType: { format: "raw" },
+  })
+  // If a file was queried then data is not an array
+  if(Array.isArray(currentReadmeFile.data)) {
+    throw new Error('FILE_IS_DIR')
+  }
+
   octokit.repos.createOrUpdateFile({
     owner: context.repo.owner,
     repo: context.repo.repo,
     branch: "play",
     path: "README.md",
     message: `Update README.md (#${context.issue.number})`,
-    sha: readmeFile.data.sha,
+    sha: currentReadmeFile.data.sha,
     content: Buffer.from(readme).toString("base64"),
   })
 }
