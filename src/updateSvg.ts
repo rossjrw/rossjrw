@@ -100,7 +100,7 @@ export async function updateSvg(
   const hash = cryptoRandomString({length: 16, type: "base64"})
 
   // Save the new SVG to a file
-  octokit.repos.createOrUpdateFile({
+  await octokit.repos.createOrUpdateFile({
     owner: context.repo.owner,
     repo: context.repo.repo,
     branch: "play",
