@@ -23890,7 +23890,7 @@ async function generateReadme(state, gamePath, octokit, context) {
         }).map(move => {
             const events = Object(_analyseMove__WEBPACK_IMPORTED_MODULE_1__["analyseMove"])(state, move.from, move.to);
             return {
-                text: `${events.ascensionHappened ? "Ascend" : "Move"} a ${move.from === 0 ? "new piece" : `piece from ${move.from}`}${events.ascensionHappened ? "" : ` to ${move.to}`}${events.rosetteClaimed ? " (:rosette:)" : ""}${events.captureHappened ? " (:crossed_swords:)" : ""}${events.ascensionHappened ? " (:rocket:)" : ""}${events.gameWon ? " (:crown:)" : ""}`,
+                text: `${events.ascensionHappened ? "Ascend" : "Move"} a ${move.from === 0 ? "new piece" : `piece from tile ${move.from}`}${events.ascensionHappened ? "" : ` to tile ${move.to}`}${events.rosetteClaimed ? " (:rosette:)" : ""}${events.captureHappened ? " (:crossed_swords:)" : ""}${events.ascensionHappened ? " (:rocket:)" : ""}${events.gameWon ? " (:crown:)" : ""}`,
                 url: issueLink(`ur-move-${state.diceResult}%40${move.from}-0`, context),
             };
         });
@@ -24069,10 +24069,10 @@ async function makeMove(move, gamePath, octokit, context) {
     // The move should be 'a@b' where a is the dice count and b is the position
     // The given diceResult must match the internal diceResult
     const [diceResult, fromPosition] = move.split('@').map(a => parseInt(a));
-    if (!diceResult || diceResult !== state.diceResult) {
+    if (diceResult === undefined || diceResult !== state.diceResult) {
         throw new Error('WRONG_DICE_COUNT');
     }
-    if (!fromPosition) {
+    if (fromPosition === undefined) {
         throw new Error('NO_MOVE_POSITION');
     }
     // The fromPosition must be a key of one of the possibleMoves
