@@ -23822,11 +23822,14 @@ async function resetGame(gamePath, octokit, context) {
      * here - maybe no moves for a few hours or something.
      */
     // Delete the current game state
-    const stateFile = await octokit.repos.getContent({
+    const stateFile = await octokit.repos.getContents({
         owner: context.issue.owner,
         repo: context.issue.repo,
         path: `${gamePath}/state.json`
     });
+    if (Array.isArray(stateFile.data)) {
+        throw new Error('FILE_IS_DIR');
+    }
     octokit.repos.deleteFile({
         owner: context.issue.owner,
         repo: context.issue.repo,
@@ -23878,14 +23881,17 @@ async function makeMove(state, move, gamePath, octokit, context) {
     const newState = ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.takeTurn(state, state.currentPlayer, fromPosition);
     // Next job is to save the new state
     // Replace the contents of the current game state file with the new state
-    const stateFile = await octokit.repos.getContent({
+    const stateFile = await octokit.repos.getContents({
         owner: context.issue.owner,
         repo: context.issue.repo,
         ref: "play",
         path: gamePath,
         mediaType: { format: "raw" },
     });
-    octokit.repos.createOrUpdateFileContents({
+    if (Array.isArray(stateFile.data)) {
+        throw new Error('FILE_IS_DIR');
+    }
+    octokit.repos.createOrUpdateFile({
         owner: context.repo.owner,
         repo: context.repo.repo,
         branch: "play",
@@ -24020,13 +24026,17 @@ async function generateReadme(state, boardImageHash, octokit, context) {
      * @param state: The current state of the board, as of right now.
      * @param boardImageHash: The hash in the name of the board image file.
      */
-    const readmeFile = await octokit.repos.getContent({
+    const readmeFile = await octokit.repos.getContents({
         owner: context.repo.owner,
         repo: context.repo.repo,
         ref: "source",
         path: "src/README.ejs",
         mediaType: { format: "raw" },
     });
+    // If a file was queried then data is not an array
+    if (Array.isArray(readmeFile.data)) {
+        throw new Error('FILE_IS_DIR');
+    }
     const template = Buffer.from(readmeFile.data.content, "base64").toString();
     let actions;
     if (state.possibleMoves) {
@@ -24052,7 +24062,7 @@ async function generateReadme(state, boardImageHash, octokit, context) {
         ];
     }
     const readme = ejs__WEBPACK_IMPORTED_MODULE_0___default.a.render(template, { actions, state, boardImageHash });
-    octokit.repos.createOrUpdateFileContents({
+    octokit.repos.createOrUpdateFile({
         owner: context.repo.owner,
         repo: context.repo.repo,
         branch: "play",
@@ -24143,7 +24153,7 @@ async function play(title, octokit, context, core) {
     try {
         Object(_issues__WEBPACK_IMPORTED_MODULE_0__["addReaction"])("eyes", octokit, context);
         // Parse the issue's title into a concrete action
-        const [command, move, gameId] = parseIssueTitle(title);
+        const [command, move] = parseIssueTitle(title);
         const state = await getGameState(gamePath, octokit, context);
         if (command === "new") {
             Object(_doAction__WEBPACK_IMPORTED_MODULE_2__["resetGame"])(gamePath, octokit, context);
@@ -24191,11 +24201,10 @@ async function getGameState(gamePath, octokit, context) {
     /**
      * Gets the current game state as stored on file.
      */
-    // const gamePath = "games/current"
     // Grab the content of the current board from file
     let stateFile;
     try {
-        stateFile = await octokit.repos.getContent({
+        stateFile = await octokit.repos.getContents({
             owner: context.issue.owner,
             repo: context.issue.repo,
             ref: "play",
@@ -24213,6 +24222,9 @@ async function getGameState(gamePath, octokit, context) {
         else {
             throw error;
         }
+    }
+    if (Array.isArray(stateFile.data)) {
+        throw new Error('FILE_IS_DIR');
     }
     const state = JSON.parse(Buffer.from(stateFile.data.content, "base64").toString());
     return state;
@@ -24279,11 +24291,12 @@ async function updateSvg(state, gamePath, baseSvgPath, octokit, context) {
      */
     // Delete the current board image - we didn't save the hash, so we'll have to
     // trawl through that directory and delete any matching files
-    const gameFiles = await octokit.repos.getContent({
+    const gameFiles = await octokit.repos.getContents({
         owner: context.repo.owner,
         repo: context.repo.repo,
         ref: "play",
         path: gamePath,
+        mediaType: { format: "raw" },
     });
     // If the result is not an array, then games/current/ is not a dir
     if (!Array.isArray(gameFiles.data)) {
@@ -24302,13 +24315,17 @@ async function updateSvg(state, gamePath, baseSvgPath, octokit, context) {
         }
     });
     // Make a new svg and write it to file
-    const svgFile = await octokit.repos.getContent({
+    const svgFile = await octokit.repos.getContents({
         owner: context.repo.owner,
         repo: context.repo.repo,
-        branch: "source",
+        ref: "source",
         path: baseSvgPath,
         mediaType: { format: "raw" },
     });
+    // If a file was queried then data is not an array
+    if (Array.isArray(svgFile.data)) {
+        throw new Error('FILE_IS_DIR');
+    }
     let svg = Buffer.from(svgFile.data.content, "base64").toString();
     // What IDs are there?
     // Tokens: tileN-T and tile0-TN, tile15-TN
@@ -24341,7 +24358,7 @@ async function updateSvg(state, gamePath, baseSvgPath, octokit, context) {
     });
     const hash = crypto_random_string__WEBPACK_IMPORTED_MODULE_1___default()({ length: 16, type: "base64" });
     // Save the new SVG to a file
-    octokit.repos.createOrUpdateFileContents({
+    octokit.repos.createOrUpdateFile({
         owner: context.repo.owner,
         repo: context.repo.repo,
         branch: "play",
