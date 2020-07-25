@@ -21,7 +21,7 @@ jobs:
         with:
           ref: compiled
       - name: Run script
-        uses: actions/github-script@v2
+        uses: actions/github-script@v2.0.0
         with:
           script: |
             const path = require('path')
