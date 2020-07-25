@@ -37,9 +37,9 @@ export async function updateSvg(
     throw new Error('GAME_DIR_IS_FILE')
   }
 
-  gameFiles.data.forEach(gameFile => {
+  gameFiles.data.forEach(async gameFile => {
     if (/^board\.[A-z0-9]+\.svg$/.test(gameFile.name)) {
-      octokit.repos.deleteFile({
+      await octokit.repos.deleteFile({
         owner: context.repo.owner,
         repo: context.repo.repo,
         branch: "play",
@@ -148,7 +148,7 @@ function hideSvgElement(
       // There is no style attribute - add one
       // Add the new attribute before the ">" or "/>" at the end
       const endPattern = /\/?>$/
-      node = node.replace(endPattern, (_, endBracket) => {
+      node = node.replace(endPattern, (endBracket) => {
         return ` style="display:none;"${endBracket}`
       })
       return node
