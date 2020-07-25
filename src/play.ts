@@ -1,4 +1,4 @@
-import { Octokit } from "@octokit/rest"
+import { Octokit } from "@octokit/rest/index"
 import { Context } from "@actions/github/lib/context"
 import { default as _core } from "@actions/core"
 import Ur from "ur-game"
@@ -36,7 +36,7 @@ export default async function play (
   try {
     addReaction("eyes", octokit, context)
     // Parse the issue's title into a concrete action
-    const [command, move, gameId] = parseIssueTitle(title)
+    const [command, move] = parseIssueTitle(title)
     const state = await getGameState(gamePath, octokit, context)
     if (command === "new") {
       resetGame(gamePath, octokit, context)
@@ -90,12 +90,11 @@ async function getGameState (
   /**
    * Gets the current game state as stored on file.
    */
-  // const gamePath = "games/current"
 
   // Grab the content of the current board from file
   let stateFile
   try {
-    stateFile = await octokit.repos.getContent({
+    stateFile = await octokit.repos.getContents({
       owner: context.issue.owner,
       repo: context.issue.repo,
       ref: "play",
@@ -112,8 +111,11 @@ async function getGameState (
       throw error
     }
   }
+  if(Array.isArray(stateFile.data)) {
+    throw new Error('FILE_IS_DIR')
+  }
   const state = JSON.parse(
-    Buffer.from(stateFile.data.content, "base64").toString()
+    Buffer.from(stateFile.data.content!, "base64").toString()
   )
   return state
 }

@@ -7,7 +7,7 @@ import { getPlayerTeam } from '@/player'
 import { addLabels } from '@/issues'
 import { updateSvg } from '@/updateSvg'
 import { analyseMove } from '@/analyseMove'
-import {generateReadme} from './generateReadme'
+import { generateReadme } from './generateReadme'
 
 export async function resetGame (
   gamePath: string,
@@ -21,11 +21,14 @@ export async function resetGame (
    * here - maybe no moves for a few hours or something.
    */
   // Delete the current game state
-  const stateFile = await octokit.repos.getContent({
+  const stateFile = await octokit.repos.getContents({
     owner: context.issue.owner,
     repo: context.issue.repo,
     path: `${gamePath}/state.json`
   })
+  if (Array.isArray(stateFile.data)) {
+    throw new Error('FILE_IS_DIR')
+  }
 
   octokit.repos.deleteFile({
     owner: context.issue.owner,
@@ -33,7 +36,7 @@ export async function resetGame (
     path: gamePath,
     branch: 'play',
     message: `@${context.actor} Start a new game (#${context.issue.number})`,
-    sha: stateFile.data.sha,
+    sha: stateFile.data.sha!,
   })
 }
 
@@ -85,15 +88,18 @@ export async function makeMove (
 
   // Next job is to save the new state
   // Replace the contents of the current game state file with the new state
-  const stateFile = await octokit.repos.getContent({
+  const stateFile = await octokit.repos.getContents({
     owner: context.issue.owner,
     repo: context.issue.repo,
     ref: "play",
     path: gamePath,
     mediaType: { format: "raw" },
   })
+  if (Array.isArray(stateFile.data)) {
+    throw new Error('FILE_IS_DIR')
+  }
 
-  octokit.repos.createOrUpdateFileContents({
+  octokit.repos.createOrUpdateFile({
     owner: context.repo.owner,
     repo: context.repo.repo,
     branch: "play",

@@ -1,4 +1,4 @@
-import { Octokit } from "@octokit/rest"
+import { Octokit } from "@octokit/rest/index"
 import { Context } from "@actions/github/lib/context"
 import Ur from "ur-game"
 import ejs from "ejs"
@@ -18,15 +18,19 @@ export async function generateReadme (
    * @param boardImageHash: The hash in the name of the board image file.
    */
 
-  const readmeFile = await octokit.repos.getContent({
+  const readmeFile = await octokit.repos.getContents({
     owner: context.repo.owner,
     repo: context.repo.repo,
     ref: "source",
     path: "src/README.ejs",
     mediaType: { format: "raw" },
   })
+  // If a file was queried then data is not an array
+  if(Array.isArray(readmeFile.data)) {
+    throw new Error('FILE_IS_DIR')
+  }
 
-  const template = Buffer.from(readmeFile.data.content, "base64").toString()
+  const template = Buffer.from(readmeFile.data.content!, "base64").toString()
 
   let actions
   if (state.possibleMoves) {
@@ -56,7 +60,7 @@ export async function generateReadme (
 
   const readme = ejs.render(template, { actions, state, boardImageHash })
 
-  octokit.repos.createOrUpdateFileContents({
+  octokit.repos.createOrUpdateFile({
     owner: context.repo.owner,
     repo: context.repo.repo,
     branch: "play",

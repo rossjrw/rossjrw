@@ -24,11 +24,12 @@ export async function updateSvg(
    */
   // Delete the current board image - we didn't save the hash, so we'll have to
   // trawl through that directory and delete any matching files
-  const gameFiles = await octokit.repos.getContent({
+  const gameFiles = await octokit.repos.getContents({
     owner: context.repo.owner,
     repo: context.repo.repo,
     ref: "play",
     path: gamePath,
+    mediaType: { format: "raw" },
   })
 
   // If the result is not an array, then games/current/ is not a dir
@@ -50,15 +51,19 @@ export async function updateSvg(
   })
 
   // Make a new svg and write it to file
-  const svgFile = await octokit.repos.getContent({
+  const svgFile = await octokit.repos.getContents({
     owner: context.repo.owner,
     repo: context.repo.repo,
-    branch: "source", // TODO use compiled branch
+    ref: "source", // TODO use compiled branch
     path: baseSvgPath,
     mediaType: { format: "raw" },
   })
+  // If a file was queried then data is not an array
+  if(Array.isArray(svgFile.data)) {
+    throw new Error('FILE_IS_DIR')
+  }
 
-  let svg = Buffer.from(svgFile.data.content, "base64").toString()
+  let svg = Buffer.from(svgFile.data.content!, "base64").toString()
 
   // What IDs are there?
   // Tokens: tileN-T and tile0-TN, tile15-TN
@@ -95,7 +100,7 @@ export async function updateSvg(
   const hash = cryptoRandomString({length: 16, type: "base64"})
 
   // Save the new SVG to a file
-  octokit.repos.createOrUpdateFileContents({
+  octokit.repos.createOrUpdateFile({
     owner: context.repo.owner,
     repo: context.repo.repo,
     branch: "play",

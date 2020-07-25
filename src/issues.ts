@@ -1,4 +1,4 @@
-import { Octokit } from "@octokit/rest"
+import { Octokit } from "@octokit/rest/index"
 import { Context } from "@actions/github/lib/context"
 
 export function addReaction (
