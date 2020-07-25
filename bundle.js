@@ -23904,13 +23904,24 @@ async function generateReadme(state, gamePath, octokit, context) {
         ];
     }
     const readme = ejs__WEBPACK_IMPORTED_MODULE_0___default.a.render(template, { actions, state, boardImageHash });
+    const currentReadmeFile = await octokit.repos.getContents({
+        owner: context.repo.owner,
+        repo: context.repo.repo,
+        ref: "play",
+        path: "README.md",
+        mediaType: { format: "raw" },
+    });
+    // If a file was queried then data is not an array
+    if (Array.isArray(currentReadmeFile.data)) {
+        throw new Error('FILE_IS_DIR');
+    }
     octokit.repos.createOrUpdateFile({
         owner: context.repo.owner,
         repo: context.repo.repo,
         branch: "play",
         path: "README.md",
         message: `Update README.md (#${context.issue.number})`,
-        sha: readmeFile.data.sha,
+        sha: currentReadmeFile.data.sha,
         content: Buffer.from(readme).toString("base64"),
     });
 }
@@ -24451,7 +24462,7 @@ function hideSvgElement(svg, elementId) {
             // There is no style attribute - add one
             // Add the new attribute before the ">" or "/>" at the end
             const endPattern = /\/?>$/;
-            node = node.replace(endPattern, (_, endBracket) => {
+            node = node.replace(endPattern, (endBracket) => {
                 return ` style="display:none;"${endBracket}`;
             });
             return node;
