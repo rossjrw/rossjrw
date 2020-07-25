@@ -23890,7 +23890,7 @@ async function generateReadme(state, gamePath, octokit, context) {
         }).map(move => {
             const events = Object(_analyseMove__WEBPACK_IMPORTED_MODULE_1__["analyseMove"])(state, move.from, move.to);
             return {
-                text: `${events.ascensionHappened ? "Ascend" : "Move"} a${move.from === 0 ? "new piece" : `piece from ${move.from}`}${events.ascensionHappened ? "" : ` to ${move.to}`}${events.rosetteClaimed ? " (:rosette:)" : ""}${events.captureHappened ? " (:crossed_swords:)" : ""}${events.ascensionHappened ? " (:rocket:)" : ""}${events.gameWon ? " (:crown:)" : ""}`,
+                text: `${events.ascensionHappened ? "Ascend" : "Move"} a ${move.from === 0 ? "new piece" : `piece from ${move.from}`}${events.ascensionHappened ? "" : ` to ${move.to}`}${events.rosetteClaimed ? " (:rosette:)" : ""}${events.captureHappened ? " (:crossed_swords:)" : ""}${events.ascensionHappened ? " (:rocket:)" : ""}${events.gameWon ? " (:crown:)" : ""}`,
                 url: issueLink(`ur-move-${state.diceResult}%40${move.from}-0`, context),
             };
         });
@@ -23915,7 +23915,7 @@ async function generateReadme(state, gamePath, octokit, context) {
     if (Array.isArray(currentReadmeFile.data)) {
         throw new Error('FILE_IS_DIR');
     }
-    octokit.repos.createOrUpdateFile({
+    await octokit.repos.createOrUpdateFile({
         owner: context.repo.owner,
         repo: context.repo.repo,
         branch: "play",
@@ -24420,7 +24420,7 @@ async function updateSvg(state, gamePath, baseSvgPath, octokit, context) {
     });
     const hash = crypto_random_string__WEBPACK_IMPORTED_MODULE_1___default()({ length: 16, type: "base64" });
     // Save the new SVG to a file
-    octokit.repos.createOrUpdateFile({
+    await octokit.repos.createOrUpdateFile({
         owner: context.repo.owner,
         repo: context.repo.repo,
         branch: "play",
