@@ -29,14 +29,41 @@ export async function resetGame (
   if (Array.isArray(stateFile.data)) {
     throw new Error('FILE_IS_DIR')
   }
-
-  octokit.repos.deleteFile({
+  await octokit.repos.deleteFile({
     owner: context.issue.owner,
     repo: context.issue.repo,
     path: `${gamePath}/state.json`,
     branch: 'play',
-    message: `@${context.actor} Start a new game (#${context.issue.number})`,
+    message: `Delete the old game (#${context.issue.number})`,
     sha: stateFile.data.sha!,
+  })
+
+  // Make a new game state
+  const newState = Ur.startGame(7, 4, getPlayerTeam(context.actor))
+
+  // Save the new state
+  await octokit.repos.createOrUpdateFile({
+    owner: context.repo.owner,
+    repo: context.repo.repo,
+    branch: "play",
+    path: `${gamePath}/state.json`,
+    message: `@${context.actor} Start a new game (#${context.issue.number})`,
+    content: Buffer.from(JSON.stringify(newState)).toString("base64"),
+    sha: stateFile.data.sha,
+  })
+
+  // Add a comment to the issue to indicate that a new board was made
+  octokit.issues.createComment({
+    owner: context.repo.owner,
+    repo: context.repo.repo,
+    issue_number: context.issue.number,
+    body: `@${context.actor} Done! You started a new game.\n\nMake the next move yourself, or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+A+new+game+just+started+%E2%80%94+take+your+turn+at+https://github.com/rossjrw+%23ur+%23github`
+  })
+  octokit.issues.update({
+    owner: context.repo.owner,
+    repo: context.repo.repo,
+    issue_number: context.issue.number,
+    state: "closed",
   })
 }
 
@@ -104,7 +131,7 @@ export async function makeMove (
     repo: context.repo.repo,
     branch: "play",
     path: `${gamePath}/state.json`,
-    message: `@${context.actor} Move white from ${fromPosition} to ${toPosition} (#${context.issue.number})`,
+    message: `@${context.actor} Move ${newState.currentPlayer === "b"? "black" : "white"} from ${fromPosition} to ${toPosition} (#${context.issue.number})`,
     content: Buffer.from(JSON.stringify(newState)).toString("base64"),
     sha: stateFile.data.sha,
   })
