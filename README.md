@@ -8,17 +8,15 @@ If your GitHub username starts with a letter in the first half of the alphabet
 Otherwise, you're on the **white** team.
 **It's white to play.**
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.ZwAb4LARmmCu0JaY.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.8057519879081878.svg"></p>
 
 **White team:**
-You rolled a 2!
+You rolled a 1!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-
-  | [Move a new piece to 2](https://github.com/rossjrw/ur/issues/new?title=ur-move-2%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.) |
-
+  | [Move a new piece to 1](https://github.com/rossjrw/ur/issues/new?title=ur-move-1%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.) |
 
 -----
 
