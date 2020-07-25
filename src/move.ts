@@ -4,12 +4,12 @@ import Ur from "ur-game"
 import { isEmpty } from "lodash"
 
 import { getPlayerTeam } from '@/player'
+import { getStateFile } from '@/getState'
 import { addLabels } from '@/issues'
 import { analyseMove } from '@/analyseMove'
 import { generateReadme } from '@/generateReadme'
 
 export async function makeMove (
-  state: Ur.State,
   move: string,
   gamePath: string,
   octokit: Octokit,
@@ -22,6 +22,18 @@ export async function makeMove (
    * @param move: The move the player wants to make.
    * @param gamePath: The location of the current game's state file.
    */
+  // Get the current game state file, but it's null if the file doesn't exist
+  const stateFile = await getStateFile(gamePath, octokit, context)
+  if (!stateFile) {
+    throw new Error('MOVE_WHEN_EMPTY_GAME')
+  }
+  if (Array.isArray(stateFile.data)) {
+    throw new Error('FILE_IS_DIR')
+  }
+  const state = JSON.parse(
+    Buffer.from(stateFile.data.content!, "base64").toString()
+  )
+
   if (!state.currentPlayer) {
     throw new Error('GAME_ENDED')
   }
@@ -54,19 +66,7 @@ export async function makeMove (
   // Everything seems ok, so execute the move
   const newState = Ur.takeTurn(state, state.currentPlayer, fromPosition)
 
-  // Next job is to save the new state
   // Replace the contents of the current game state file with the new state
-  const stateFile = await octokit.repos.getContents({
-    owner: context.issue.owner,
-    repo: context.issue.repo,
-    ref: "play",
-    path: `${gamePath}/state.json`,
-    mediaType: { format: "raw" },
-  })
-  if (Array.isArray(stateFile.data)) {
-    throw new Error('FILE_IS_DIR')
-  }
-
   await octokit.repos.createOrUpdateFile({
     owner: context.repo.owner,
     repo: context.repo.repo,

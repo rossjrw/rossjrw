@@ -1,7 +1,6 @@
 import { Octokit } from "@octokit/rest/index"
 import { Context } from "@actions/github/lib/context"
 import { default as _core } from "@actions/core"
-import Ur from "ur-game"
 
 import { addReaction } from '@/issues'
 import { handleError } from '@/error'
@@ -38,11 +37,10 @@ export default async function play (
     addReaction("eyes", octokit, context)
     // Parse the issue's title into a concrete action
     const [command, move] = parseIssueTitle(title)
-    const state = await getGameState(gamePath, octokit, context)
     if (command === "new") {
       await resetGame(gamePath, octokit, context)
     } else if (command === "move") {
-      await makeMove(state, move, gamePath, octokit, context)
+      await makeMove(move, gamePath, octokit, context)
     }
   } catch (error) {
     // If there was an error, forward it to the user, then stop
@@ -82,42 +80,3 @@ function parseIssueTitle (
   }
   return [command as "new" | "move", move, parseInt(gameId)]
 }
-
-async function getGameState (
-  gamePath: string,
-  octokit: Octokit,
-  context: Context,
-): Promise<Ur.State> {
-  /**
-   * Gets the current game state as stored on file.
-   */
-
-  // Grab the content of the current board from file
-  let stateFile
-  try {
-    stateFile = await octokit.repos.getContents({
-      owner: context.issue.owner,
-      repo: context.issue.repo,
-      ref: "play",
-      path: `${gamePath}/state.json`,
-      mediaType: { format: "raw" },
-    })
-  } catch (error) {
-    if (error.status === 404) {
-      // There is no game, so create it
-      // This situation probably shouldn't be able to happen
-      // state = Ur.startGame(7, 4, Ur.BLACK) // TODO get player team
-      throw error
-    } else {
-      throw error
-    }
-  }
-  if(Array.isArray(stateFile.data)) {
-    throw new Error('FILE_IS_DIR')
-  }
-  const state = JSON.parse(
-    Buffer.from(stateFile.data.content!, "base64").toString()
-  )
-  return state
-}
-

@@ -4,6 +4,7 @@ import Ur from "ur-game"
 
 import { getPlayerTeam } from '@/player'
 import { generateReadme } from '@/generateReadme'
+import { getStateFile } from '@/getState'
 
 export async function resetGame (
   gamePath: string,
@@ -16,22 +17,8 @@ export async function resetGame (
    * I don't want this to happen willy-nilly, so I might add some restriction
    * here - maybe no moves for a few hours or something.
    */
-  // Get the current game state file
-  let stateFile
-  try {
-    stateFile = await octokit.repos.getContents({
-      owner: context.issue.owner,
-      repo: context.issue.repo,
-      path: `${gamePath}/state.json`,
-    })
-  } catch (error) {
-    if (error.status === 404) {
-      // There's no game file! That's probably fine
-      stateFile = null
-    } else {
-      throw error
-    }
-  }
+  // Get the current game state file, but it's null if the file doesn't exist
+  const stateFile = await getStateFile(gamePath, octokit, context)
 
   // Make a new game state
   const newState = Ur.startGame(7, 4, getPlayerTeam(context.actor))
@@ -45,6 +32,7 @@ export async function resetGame (
     message: `@${context.actor} Start a new game (#${context.issue.number})`,
     content: Buffer.from(JSON.stringify(newState)).toString("base64"),
   }
+  // If the old statefile existed, add its sha to the commit
   if (stateFile) {
     if (Array.isArray(stateFile.data)) {
       throw new Error('FILE_IS_DIR')
