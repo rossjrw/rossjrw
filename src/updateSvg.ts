@@ -38,7 +38,7 @@ export async function updateSvg(
   }
 
   gameFiles.data.forEach(async gameFile => {
-    if (/^board\.[A-z0-9]+\.svg$/.test(gameFile.name)) {
+    if (/^board\.[0-9]+\.svg$/.test(gameFile.name)) {
       await octokit.repos.deleteFile({
         owner: context.repo.owner,
         repo: context.repo.repo,
@@ -97,7 +97,7 @@ export async function updateSvg(
     }
   )
 
-  const hash = cryptoRandomString({length: 16, type: "base64"})
+  const hash = cryptoRandomString({length: 16, type: "numeric"})
 
   // Save the new SVG to a file
   await octokit.repos.createOrUpdateFile({
