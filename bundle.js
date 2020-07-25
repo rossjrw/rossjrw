@@ -23825,7 +23825,7 @@ async function resetGame(gamePath, octokit, context) {
     const stateFile = await octokit.repos.getContents({
         owner: context.issue.owner,
         repo: context.issue.repo,
-        path: `${gamePath}/state.json`
+        path: `${gamePath}/state.json`,
     });
     if (Array.isArray(stateFile.data)) {
         throw new Error('FILE_IS_DIR');
@@ -23833,7 +23833,7 @@ async function resetGame(gamePath, octokit, context) {
     octokit.repos.deleteFile({
         owner: context.issue.owner,
         repo: context.issue.repo,
-        path: gamePath,
+        path: `${gamePath}/state.json`,
         branch: 'play',
         message: `@${context.actor} Start a new game (#${context.issue.number})`,
         sha: stateFile.data.sha,
@@ -23885,13 +23885,13 @@ async function makeMove(state, move, gamePath, octokit, context) {
         owner: context.issue.owner,
         repo: context.issue.repo,
         ref: "play",
-        path: gamePath,
+        path: `${gamePath}/state.json`,
         mediaType: { format: "raw" },
     });
     if (Array.isArray(stateFile.data)) {
         throw new Error('FILE_IS_DIR');
     }
-    octokit.repos.createOrUpdateFile({
+    await octokit.repos.createOrUpdateFile({
         owner: context.repo.owner,
         repo: context.repo.repo,
         branch: "play",
@@ -23944,7 +23944,7 @@ async function makeMove(state, move, gamePath, octokit, context) {
     const boardImageHash = await Object(_updateSvg__WEBPACK_IMPORTED_MODULE_4__["updateSvg"])(state, gamePath, "assets/board.optimised.svg", // TODO change for compiled branch
     octokit, context);
     // Update README.md with the new state
-    Object(_generateReadme__WEBPACK_IMPORTED_MODULE_6__["generateReadme"])(state, boardImageHash, octokit, context);
+    await Object(_generateReadme__WEBPACK_IMPORTED_MODULE_6__["generateReadme"])(state, boardImageHash, octokit, context);
 }
 
 
