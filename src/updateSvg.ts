@@ -82,7 +82,7 @@ export async function updateSvg(
           svg = hideSvgElement(svg, `tile${fieldIndex}-b`)
         }
         if (field.w === 0) {
-          hideSvgElement(svg, `tile${fieldIndex}-w`)
+          svg = hideSvgElement(svg, `tile${fieldIndex}-w`)
         }
       }
     }
