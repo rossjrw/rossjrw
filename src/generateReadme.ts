@@ -51,7 +51,7 @@ export async function generateReadme (
     }).map(move => {
       const events = analyseMove(state, move.from, move.to)
       return {
-        text: `${events.ascensionHappened ? "Ascend" : "Move"} a ${move.from === 0 ? "new piece" : `piece from ${move.from}`}${events.ascensionHappened ? "" : ` to ${move.to}`}${events.rosetteClaimed ? " (:rosette:)" : ""}${events.captureHappened ? " (:crossed_swords:)" : ""}${events.ascensionHappened ? " (:rocket:)" : ""}${events.gameWon ? " (:crown:)" : ""}`,
+        text: `${events.ascensionHappened ? "Ascend" : "Move"} a ${move.from === 0 ? "new piece" : `piece from tile ${move.from}`}${events.ascensionHappened ? "" : ` to tile ${move.to}`}${events.rosetteClaimed ? " (:rosette:)" : ""}${events.captureHappened ? " (:crossed_swords:)" : ""}${events.ascensionHappened ? " (:rocket:)" : ""}${events.gameWon ? " (:crown:)" : ""}`,
         url: issueLink(
           `ur-move-${state.diceResult}%40${move.from}-0`,
           context,

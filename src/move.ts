@@ -49,10 +49,10 @@ export async function makeMove (
   // The move should be 'a@b' where a is the dice count and b is the position
   // The given diceResult must match the internal diceResult
   const [diceResult, fromPosition] = move.split('@').map(a => parseInt(a))
-  if (!diceResult || diceResult !== state.diceResult) {
+  if (diceResult === undefined || diceResult !== state.diceResult) {
     throw new Error('WRONG_DICE_COUNT')
   }
-  if (!fromPosition) {
+  if (fromPosition === undefined) {
     throw new Error('NO_MOVE_POSITION')
   }
   // The fromPosition must be a key of one of the possibleMoves
