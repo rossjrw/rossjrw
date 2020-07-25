@@ -24449,8 +24449,11 @@ function hideSvgElement(svg, elementId) {
         }
         else {
             // There is no style attribute - add one
-            // Add the new attribute before the ">" at the end
-            node = node.slice(0, -1) + ' style="display:none;"' + node.slice(-1);
+            // Add the new attribute before the ">" or "/>" at the end
+            const endPattern = /\/?>$/;
+            node = node.replace(endPattern, (_, endBracket) => {
+                return ` style="display:none;"${endBracket}`;
+            });
             return node;
         }
     });
