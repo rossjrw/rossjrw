@@ -39,9 +39,9 @@ export default async function play (
     const [command, move] = parseIssueTitle(title)
     const state = await getGameState(gamePath, octokit, context)
     if (command === "new") {
-      resetGame(gamePath, octokit, context)
+      await resetGame(gamePath, octokit, context)
     } else if (command === "move") {
-      makeMove(state, move, gamePath, octokit, context)
+      await makeMove(state, move, gamePath, octokit, context)
     }
   } catch (error) {
     // If there was an error, forward it to the user, then stop
