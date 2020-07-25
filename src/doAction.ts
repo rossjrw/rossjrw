@@ -24,7 +24,7 @@ export async function resetGame (
   const stateFile = await octokit.repos.getContents({
     owner: context.issue.owner,
     repo: context.issue.repo,
-    path: `${gamePath}/state.json`
+    path: `${gamePath}/state.json`,
   })
   if (Array.isArray(stateFile.data)) {
     throw new Error('FILE_IS_DIR')
@@ -33,7 +33,7 @@ export async function resetGame (
   octokit.repos.deleteFile({
     owner: context.issue.owner,
     repo: context.issue.repo,
-    path: gamePath,
+    path: `${gamePath}/state.json`,
     branch: 'play',
     message: `@${context.actor} Start a new game (#${context.issue.number})`,
     sha: stateFile.data.sha!,
@@ -92,14 +92,14 @@ export async function makeMove (
     owner: context.issue.owner,
     repo: context.issue.repo,
     ref: "play",
-    path: gamePath,
+    path: `${gamePath}/state.json`,
     mediaType: { format: "raw" },
   })
   if (Array.isArray(stateFile.data)) {
     throw new Error('FILE_IS_DIR')
   }
 
-  octokit.repos.createOrUpdateFile({
+  await octokit.repos.createOrUpdateFile({
     owner: context.repo.owner,
     repo: context.repo.repo,
     branch: "play",
@@ -163,5 +163,5 @@ export async function makeMove (
   )
 
   // Update README.md with the new state
-  generateReadme(state, boardImageHash, octokit, context)
+  await generateReadme(state, boardImageHash, octokit, context)
 }
