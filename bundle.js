@@ -23921,6 +23921,47 @@ function issueLink(issueTitle, context) {
 
 /***/ }),
 
+/***/ "./src/getState.ts":
+/*!*************************!*\
+  !*** ./src/getState.ts ***!
+  \*************************/
+/*! exports provided: getStateFile */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStateFile", function() { return getStateFile; });
+async function getStateFile(gamePath, octokit, context) {
+    /**
+     * Gets the current game state as stored on file. If there is no state on
+     * file, returns null.
+     */
+    // Grab the content of the current board from file
+    let stateFile;
+    try {
+        stateFile = await octokit.repos.getContents({
+            owner: context.issue.owner,
+            repo: context.issue.repo,
+            ref: "play",
+            path: `${gamePath}/state.json`,
+            mediaType: { format: "raw" },
+        });
+    }
+    catch (error) {
+        if (error.status === 404) {
+            // There's no game file! That's probably fine
+            return null;
+        }
+        else {
+            throw error;
+        }
+    }
+    return stateFile;
+}
+
+
+/***/ }),
+
 /***/ "./src/issues.ts":
 /*!***********************!*\
   !*** ./src/issues.ts ***!
@@ -23973,16 +24014,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/player */ "./src/player.ts");
-/* harmony import */ var _issues__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/issues */ "./src/issues.ts");
-/* harmony import */ var _analyseMove__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/analyseMove */ "./src/analyseMove.ts");
-/* harmony import */ var _generateReadme__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/generateReadme */ "./src/generateReadme.ts");
+/* harmony import */ var _getState__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/getState */ "./src/getState.ts");
+/* harmony import */ var _issues__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/issues */ "./src/issues.ts");
+/* harmony import */ var _analyseMove__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/analyseMove */ "./src/analyseMove.ts");
+/* harmony import */ var _generateReadme__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/generateReadme */ "./src/generateReadme.ts");
 
 
 
 
 
 
-async function makeMove(state, move, gamePath, octokit, context) {
+
+async function makeMove(move, gamePath, octokit, context) {
     /**
      * Called when a player uses the "move" command.
      *
@@ -23990,6 +24033,15 @@ async function makeMove(state, move, gamePath, octokit, context) {
      * @param move: The move the player wants to make.
      * @param gamePath: The location of the current game's state file.
      */
+    // Get the current game state file, but it's null if the file doesn't exist
+    const stateFile = await Object(_getState__WEBPACK_IMPORTED_MODULE_3__["getStateFile"])(gamePath, octokit, context);
+    if (!stateFile) {
+        throw new Error('MOVE_WHEN_EMPTY_GAME');
+    }
+    if (Array.isArray(stateFile.data)) {
+        throw new Error('FILE_IS_DIR');
+    }
+    const state = JSON.parse(Buffer.from(stateFile.data.content, "base64").toString());
     if (!state.currentPlayer) {
         throw new Error('GAME_ENDED');
     }
@@ -23998,10 +24050,10 @@ async function makeMove(state, move, gamePath, octokit, context) {
         throw new Error('WRONG_TEAM');
     }
     if (Object(_player__WEBPACK_IMPORTED_MODULE_2__["getPlayerTeam"])(context.actor) === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK) {
-        Object(_issues__WEBPACK_IMPORTED_MODULE_3__["addLabels"])(["Black team"], octokit, context);
+        Object(_issues__WEBPACK_IMPORTED_MODULE_4__["addLabels"])(["Black team"], octokit, context);
     }
     else {
-        Object(_issues__WEBPACK_IMPORTED_MODULE_3__["addLabels"])(["White team"], octokit, context);
+        Object(_issues__WEBPACK_IMPORTED_MODULE_4__["addLabels"])(["White team"], octokit, context);
     }
     // The move should be 'a@b' where a is the dice count and b is the position
     // The given diceResult must match the internal diceResult
@@ -24022,18 +24074,7 @@ async function makeMove(state, move, gamePath, octokit, context) {
     const toPosition = state.possibleMoves[`${fromPosition}`];
     // Everything seems ok, so execute the move
     const newState = ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.takeTurn(state, state.currentPlayer, fromPosition);
-    // Next job is to save the new state
     // Replace the contents of the current game state file with the new state
-    const stateFile = await octokit.repos.getContents({
-        owner: context.issue.owner,
-        repo: context.issue.repo,
-        ref: "play",
-        path: `${gamePath}/state.json`,
-        mediaType: { format: "raw" },
-    });
-    if (Array.isArray(stateFile.data)) {
-        throw new Error('FILE_IS_DIR');
-    }
     await octokit.repos.createOrUpdateFile({
         owner: context.repo.owner,
         repo: context.repo.repo,
@@ -24046,18 +24087,18 @@ async function makeMove(state, move, gamePath, octokit, context) {
     // Move has been performed and the result has been saved.
     // All that remains is to report back to the issue and update the README.
     // Let's detect what happened in that move
-    const events = Object(_analyseMove__WEBPACK_IMPORTED_MODULE_4__["analyseMove"])(state, fromPosition, toPosition);
+    const events = Object(_analyseMove__WEBPACK_IMPORTED_MODULE_5__["analyseMove"])(state, fromPosition, toPosition);
     if (events.rosetteClaimed) {
-        Object(_issues__WEBPACK_IMPORTED_MODULE_3__["addLabels"])([":rosette: Rosette!"], octokit, context);
+        Object(_issues__WEBPACK_IMPORTED_MODULE_4__["addLabels"])([":rosette: Rosette!"], octokit, context);
     }
     if (events.captureHappened) {
-        Object(_issues__WEBPACK_IMPORTED_MODULE_3__["addLabels"])([":crossed_swords: Capture!"], octokit, context);
+        Object(_issues__WEBPACK_IMPORTED_MODULE_4__["addLabels"])([":crossed_swords: Capture!"], octokit, context);
     }
     if (events.ascensionHappened) {
-        Object(_issues__WEBPACK_IMPORTED_MODULE_3__["addLabels"])([":rocket: Ascension!"], octokit, context);
+        Object(_issues__WEBPACK_IMPORTED_MODULE_4__["addLabels"])([":rocket: Ascension!"], octokit, context);
     }
     if (events.gameWon) {
-        Object(_issues__WEBPACK_IMPORTED_MODULE_3__["addLabels"])([":crown: Winner!"], octokit, context);
+        Object(_issues__WEBPACK_IMPORTED_MODULE_4__["addLabels"])([":crown: Winner!"], octokit, context);
     }
     // Add a comment to the issue to indicate that the move was successful
     octokit.issues.createComment({
@@ -24084,7 +24125,7 @@ async function makeMove(state, move, gamePath, octokit, context) {
         });
     }
     // Update README.md with the new state
-    await Object(_generateReadme__WEBPACK_IMPORTED_MODULE_5__["generateReadme"])(state, gamePath, octokit, context);
+    await Object(_generateReadme__WEBPACK_IMPORTED_MODULE_6__["generateReadme"])(state, gamePath, octokit, context);
 }
 
 
@@ -24104,6 +24145,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ur_game__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/player */ "./src/player.ts");
 /* harmony import */ var _generateReadme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/generateReadme */ "./src/generateReadme.ts");
+/* harmony import */ var _getState__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/getState */ "./src/getState.ts");
+
 
 
 
@@ -24114,24 +24157,8 @@ async function resetGame(gamePath, octokit, context) {
      * I don't want this to happen willy-nilly, so I might add some restriction
      * here - maybe no moves for a few hours or something.
      */
-    // Get the current game state file
-    let stateFile;
-    try {
-        stateFile = await octokit.repos.getContents({
-            owner: context.issue.owner,
-            repo: context.issue.repo,
-            path: `${gamePath}/state.json`,
-        });
-    }
-    catch (error) {
-        if (error.status === 404) {
-            // There's no game file! That's probably fine
-            stateFile = null;
-        }
-        else {
-            throw error;
-        }
-    }
+    // Get the current game state file, but it's null if the file doesn't exist
+    const stateFile = await Object(_getState__WEBPACK_IMPORTED_MODULE_3__["getStateFile"])(gamePath, octokit, context);
     // Make a new game state
     const newState = ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.startGame(7, 4, Object(_player__WEBPACK_IMPORTED_MODULE_1__["getPlayerTeam"])(context.actor));
     // Save the new state
@@ -24143,6 +24170,7 @@ async function resetGame(gamePath, octokit, context) {
         message: `@${context.actor} Start a new game (#${context.issue.number})`,
         content: Buffer.from(JSON.stringify(newState)).toString("base64"),
     };
+    // If the old statefile existed, add its sha to the commit
     if (stateFile) {
         if (Array.isArray(stateFile.data)) {
             throw new Error('FILE_IS_DIR');
@@ -24210,12 +24238,11 @@ async function play(title, octokit, context, core) {
         Object(_issues__WEBPACK_IMPORTED_MODULE_0__["addReaction"])("eyes", octokit, context);
         // Parse the issue's title into a concrete action
         const [command, move] = parseIssueTitle(title);
-        const state = await getGameState(gamePath, octokit, context);
         if (command === "new") {
             await Object(_new__WEBPACK_IMPORTED_MODULE_2__["resetGame"])(gamePath, octokit, context);
         }
         else if (command === "move") {
-            await Object(_move__WEBPACK_IMPORTED_MODULE_3__["makeMove"])(state, move, gamePath, octokit, context);
+            await Object(_move__WEBPACK_IMPORTED_MODULE_3__["makeMove"])(move, gamePath, octokit, context);
         }
     }
     catch (error) {
@@ -24252,38 +24279,6 @@ function parseIssueTitle(title) {
         }
     }
     return [command, move, parseInt(gameId)];
-}
-async function getGameState(gamePath, octokit, context) {
-    /**
-     * Gets the current game state as stored on file.
-     */
-    // Grab the content of the current board from file
-    let stateFile;
-    try {
-        stateFile = await octokit.repos.getContents({
-            owner: context.issue.owner,
-            repo: context.issue.repo,
-            ref: "play",
-            path: `${gamePath}/state.json`,
-            mediaType: { format: "raw" },
-        });
-    }
-    catch (error) {
-        if (error.status === 404) {
-            // There is no game, so create it
-            // This situation probably shouldn't be able to happen
-            // state = Ur.startGame(7, 4, Ur.BLACK) // TODO get player team
-            throw error;
-        }
-        else {
-            throw error;
-        }
-    }
-    if (Array.isArray(stateFile.data)) {
-        throw new Error('FILE_IS_DIR');
-    }
-    const state = JSON.parse(Buffer.from(stateFile.data.content, "base64").toString());
-    return state;
 }
 
 
