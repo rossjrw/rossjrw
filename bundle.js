@@ -24365,7 +24365,7 @@ async function updateSvg(state, gamePath, baseSvgPath, octokit, context) {
         throw new Error('GAME_DIR_IS_FILE');
     }
     gameFiles.data.forEach(async (gameFile) => {
-        if (/^board\.[A-z0-9]+\.svg$/.test(gameFile.name)) {
+        if (/^board\.[0-9]+\.svg$/.test(gameFile.name)) {
             await octokit.repos.deleteFile({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
@@ -24406,7 +24406,7 @@ async function updateSvg(state, gamePath, baseSvgPath, octokit, context) {
                 svg = hideSvgElement(svg, `tile${fieldIndex}-b`);
             }
             if (field.w === 0) {
-                hideSvgElement(svg, `tile${fieldIndex}-w`);
+                svg = hideSvgElement(svg, `tile${fieldIndex}-w`);
             }
         }
     });
@@ -24418,7 +24418,7 @@ async function updateSvg(state, gamePath, baseSvgPath, octokit, context) {
             svg = hideSvgElement(svg, `dice${index}-spot-on`);
         }
     });
-    const hash = crypto_random_string__WEBPACK_IMPORTED_MODULE_1___default()({ length: 16, type: "base64" });
+    const hash = crypto_random_string__WEBPACK_IMPORTED_MODULE_1___default()({ length: 16, type: "numeric" });
     // Save the new SVG to a file
     await octokit.repos.createOrUpdateFile({
         owner: context.repo.owner,
