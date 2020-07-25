@@ -24156,10 +24156,10 @@ async function play(title, octokit, context, core) {
         const [command, move] = parseIssueTitle(title);
         const state = await getGameState(gamePath, octokit, context);
         if (command === "new") {
-            Object(_doAction__WEBPACK_IMPORTED_MODULE_2__["resetGame"])(gamePath, octokit, context);
+            await Object(_doAction__WEBPACK_IMPORTED_MODULE_2__["resetGame"])(gamePath, octokit, context);
         }
         else if (command === "move") {
-            Object(_doAction__WEBPACK_IMPORTED_MODULE_2__["makeMove"])(state, move, gamePath, octokit, context);
+            await Object(_doAction__WEBPACK_IMPORTED_MODULE_2__["makeMove"])(state, move, gamePath, octokit, context);
         }
     }
     catch (error) {
