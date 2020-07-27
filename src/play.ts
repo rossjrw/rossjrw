@@ -61,7 +61,7 @@ export default async function play (
 
     // All the changes have been collected - commit them
     await makeCommit(
-      `@${context.actor} ${command === "new" ? "Start a new game" : `Move ${playerIsOnTeam(context.actor, Ur.BLACK) ? "black" : "white"} ${move} (#${context.issue.number})`}`,
+      `@${context.actor} ${command === "new" ? "Start a new game" : `Move ${playerIsOnTeam(context.actor, Ur.BLACK) ? "black" : "white"} ${move}`} (#${context.issue.number})`,
       changes,
       octokit,
       context,
