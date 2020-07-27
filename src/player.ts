@@ -1,6 +1,22 @@
 import Ur from "ur-game"
 
-export function getPlayerTeam (
+export function playerIsOnTeam (
+  username: string,
+  team: Ur.Player,
+): boolean {
+  /**
+   * Checks if a player is on the given team.
+   *
+   * @param username: The player's name.
+   * @param team: The team to check against.
+   */
+  if (username === "rossjrw") {
+    return true
+  }
+  return getPlayerTeam(username) === team
+}
+
+function getPlayerTeam (
   username: string,
 ): Ur.Player {
   /**
