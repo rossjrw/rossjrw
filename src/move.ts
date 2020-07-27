@@ -121,7 +121,7 @@ export async function makeMove (
 
   // Update README.md with the new state
   changes = changes.concat(
-    await generateReadme(state, gamePath, octokit, context)
+    await generateReadme(newState, gamePath, octokit, context)
   )
 
   return changes
