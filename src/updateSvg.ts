@@ -2,15 +2,17 @@ import { Octokit } from "@octokit/rest"
 import { Context } from "@actions/github/lib/context"
 import { State } from "ur-game"
 import { range } from "lodash"
-import cryptoRandomString from "crypto-random-string"
+
+import { Change } from '@/play'
 
 export async function updateSvg(
   state: State,
   gamePath: string,
   baseSvgPath: string,
+  hash: string,
   octokit: Octokit,
   context: Context,
-): Promise<string> {
+): Promise<Change[]> {
   /**
    * Generates an SVG to visually represent the current board state.
    *
@@ -19,9 +21,11 @@ export async function updateSvg(
    * @param state: The current state of the game board.
    * @param gamePath: The path to the current game's info dir.
    * @param baseSvgPath: The path to the SVG template file.
-   * @returns The hash of the newly-created file, so that README.md can
-   * correctly reference it (this avoids cache issues).
+   * @param hash: A random string to add to the image's name.
+   * @returns An array of changes to add to the commit.
    */
+  const changes: Change[] = []
+
   // Delete the current board image - we didn't save the hash, so we'll have to
   // trawl through that directory and delete any matching files
   const gameFiles = await octokit.repos.getContents({
@@ -37,15 +41,12 @@ export async function updateSvg(
     throw new Error('GAME_DIR_IS_FILE')
   }
 
+  // Delete old board images
   gameFiles.data.forEach(async gameFile => {
     if (/^board\.[0-9]+\.svg$/.test(gameFile.name)) {
-      await octokit.repos.deleteFile({
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        branch: "play",
+      changes.push({
         path: gameFile.path,
-        message: `Clear old board image (#${context.issue.number})`,
-        sha: gameFile.sha,
+        content: null,
       })
     }
   })
@@ -97,20 +98,13 @@ export async function updateSvg(
     }
   )
 
-  const hash = cryptoRandomString({length: 16, type: "numeric"})
-
   // Save the new SVG to a file
-  await octokit.repos.createOrUpdateFile({
-    owner: context.repo.owner,
-    repo: context.repo.repo,
-    branch: "play",
+  changes.push({
     path: `${gamePath}/board.${hash}.svg`,
-    message: `Create new board image (#${context.issue.number})`,
     content: Buffer.from(svg).toString("base64"),
   })
 
-  // Return the hash for use by the README
-  return hash
+  return changes
 }
 
 function hideSvgElement(

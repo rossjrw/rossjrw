@@ -8,20 +8,23 @@ import { getStateFile } from '@/getState'
 import { addLabels } from '@/issues'
 import { analyseMove } from '@/analyseMove'
 import { generateReadme } from '@/generateReadme'
+import { Change } from '@/play'
 
 export async function makeMove (
   move: string,
   gamePath: string,
   octokit: Octokit,
   context: Context,
-): Promise<void> {
+): Promise<Change[]> {
   /**
    * Called when a player uses the "move" command.
    *
    * @param state: The current state of the game.
    * @param move: The move the player wants to make.
    * @param gamePath: The location of the current game's state file.
+   * @returns An array of changes to add to the commit.
    */
+  let changes: Change[] = []
   // Get the current game state file, but it's null if the file doesn't exist
   const stateFile = await getStateFile(gamePath, octokit, context)
   if (!stateFile) {
@@ -67,14 +70,9 @@ export async function makeMove (
   const newState = Ur.takeTurn(state, state.currentPlayer, fromPosition)
 
   // Replace the contents of the current game state file with the new state
-  await octokit.repos.createOrUpdateFile({
-    owner: context.repo.owner,
-    repo: context.repo.repo,
-    branch: "play",
+  changes.push({
     path: `${gamePath}/state.json`,
-    message: `@${context.actor} Move ${newState.currentPlayer === "b"? "black" : "white"} from ${fromPosition} to ${toPosition} (#${context.issue.number})`,
     content: Buffer.from(JSON.stringify(newState)).toString("base64"),
-    sha: stateFile.data.sha,
   })
 
   // Move has been performed and the result has been saved.
@@ -122,5 +120,9 @@ export async function makeMove (
   }
 
   // Update README.md with the new state
-  await generateReadme(state, gamePath, octokit, context)
+  changes = changes.concat(
+    await generateReadme(state, gamePath, octokit, context)
+  )
+
+  return changes
 }

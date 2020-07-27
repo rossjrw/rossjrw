@@ -2,29 +2,38 @@ import { Octokit } from "@octokit/rest/index"
 import { Context } from "@actions/github/lib/context"
 import Ur from "ur-game"
 import ejs from "ejs"
+import cryptoRandomString from "crypto-random-string"
 
 import { analyseMove } from '@/analyseMove'
 import { updateSvg } from '@/updateSvg'
+import { Change } from '@/play'
 
 export async function generateReadme (
   state: Ur.State,
   gamePath: string,
   octokit: Octokit,
   context: Context,
-): Promise<void> {
+): Promise<Change[]> {
   /**
    * Generates the new README file based on the current state of the game.
    *
    * @param state: The current state of the board, as of right now.
-   * @param gamePath
+   * @param gamePath: The location of the current game's state file.
+   * @returns An array of changes to add to the commit.
    */
+  let changes: Change[] = []
+
   // Update the SVG to represent the new game board
-  const boardImageHash = await updateSvg(
-    state,
-    gamePath,
-    "assets/board.optimised.svg", // TODO change for compiled branch
-    octokit,
-    context
+  const boardImageHash = cryptoRandomString({length: 16, type: "numeric"})
+  changes = changes.concat(
+    await updateSvg(
+      state,
+      gamePath,
+      "assets/board.optimised.svg", // TODO change for compiled branch
+      boardImageHash,
+      octokit,
+      context
+    )
   )
 
   const readmeFile = await octokit.repos.getContents({
@@ -81,15 +90,12 @@ export async function generateReadme (
     throw new Error('FILE_IS_DIR')
   }
 
-  await octokit.repos.createOrUpdateFile({
-    owner: context.repo.owner,
-    repo: context.repo.repo,
-    branch: "play",
+  changes.push({
     path: "README.md",
-    message: `Update README.md (#${context.issue.number})`,
-    sha: currentReadmeFile.data.sha,
     content: Buffer.from(readme).toString("base64"),
   })
+
+  return changes
 }
 
 function issueLink (

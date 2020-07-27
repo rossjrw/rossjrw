@@ -7,6 +7,11 @@ import { handleError } from '@/error'
 import { resetGame } from '@/new'
 import { makeMove } from '@/move'
 
+export interface Change {
+  path: string
+  content: string | null
+}
+
 export default async function play (
   title: string,
   octokit: Octokit,
@@ -31,17 +36,35 @@ export default async function play (
   // that we've seen it.
   // TODO React with a rocket once the issue has been actioned.
 
+
   const gamePath = "games/current"
+
+  // Prepare a list of trees, which will be made into a single commit to the
+  // play branch
+  const trees: Octokit.GitCreateTreeParamsTree[] = []
 
   try {
     addReaction("eyes", octokit, context)
-    // Parse the issue's title into a concrete action
     const [command, move] = parseIssueTitle(title)
     if (command === "new") {
-      await resetGame(gamePath, octokit, context)
+      trees.push(...await resetGame(gamePath, octokit, context))
     } else if (command === "move") {
-      await makeMove(move, gamePath, octokit, context)
+      trees.push(...await makeMove(move, gamePath, octokit, context))
     }
+
+    // All the blobs have been collected, so commit them
+
+    // Get the SHA of the play branch
+
+    // Make the commit
+    await octokit.git.createCommit({
+      owner: context.repo.owner,
+      repo: context.repo.repo,
+      parents: ["TODO"],
+      message: `@${context.actor} ${command} (#${context.issue.number})`,
+      tree: trees,
+
+    })
   } catch (error) {
     // If there was an error, forward it to the user, then stop
     handleError(error, octokit, context, core)
