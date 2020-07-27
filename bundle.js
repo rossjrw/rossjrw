@@ -23826,7 +23826,8 @@ async function makeCommit(message, changes, octokit, context) {
                 subTree.content = change.content;
             }
             else {
-                subTree.sha = "null";
+                //@ts-expect-error
+                subTree.sha = null;
             }
             return subTree;
         })
