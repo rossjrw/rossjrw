@@ -38,7 +38,7 @@ export async function makeMove (
   )
 
   if (!state.currentPlayer) {
-    throw new Error('GAME_ENDED')
+    throw new Error('MOVE_WHEN_GAME_ENDED')
   }
   // First I need to validate which team the user is on
   if (state.currentPlayer !== getPlayerTeam(context.actor)) {
