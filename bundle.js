@@ -23775,7 +23775,8 @@ function analyseMove(state, fromPosition, toPosition) {
         // Was a rosette claimed?
         rosetteClaimed: [4, 8, 14].includes(toPosition),
         // Did a capture happen?
-        captureHappened: !!Object(lodash__WEBPACK_IMPORTED_MODULE_1__["sum"])(Object(lodash__WEBPACK_IMPORTED_MODULE_1__["values"])(state.board[toPosition])),
+        captureHappened: !!Object(lodash__WEBPACK_IMPORTED_MODULE_1__["sum"])(Object(lodash__WEBPACK_IMPORTED_MODULE_1__["values"])(state.board[toPosition])) &&
+            [5, 6, 7, 9, 10, 11, 12].includes(toPosition),
         // Did an ascension happen?
         ascensionHappened: toPosition >= 15,
         // Was the game won?
@@ -24210,7 +24211,7 @@ async function makeMove(move, gamePath, octokit, context) {
         });
     }
     // Update README.md with the new state
-    changes = changes.concat(await Object(_generateReadme__WEBPACK_IMPORTED_MODULE_6__["generateReadme"])(state, gamePath, octokit, context));
+    changes = changes.concat(await Object(_generateReadme__WEBPACK_IMPORTED_MODULE_6__["generateReadme"])(newState, gamePath, octokit, context));
     return changes;
 }
 
