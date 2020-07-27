@@ -24135,10 +24135,10 @@ async function makeMove(move, gamePath, octokit, context) {
         throw new Error('MOVE_WHEN_GAME_ENDED');
     }
     // First I need to validate which team the user is on
-    if (state.currentPlayer !== Object(_player__WEBPACK_IMPORTED_MODULE_2__["getPlayerTeam"])(context.actor)) {
+    if (!Object(_player__WEBPACK_IMPORTED_MODULE_2__["playerIsOnTeam"])(context.actor, state.currentPlayer)) {
         throw new Error('WRONG_TEAM');
     }
-    if (Object(_player__WEBPACK_IMPORTED_MODULE_2__["getPlayerTeam"])(context.actor) === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK) {
+    if (state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK) {
         Object(_issues__WEBPACK_IMPORTED_MODULE_4__["addLabels"])(["Black team"], octokit, context);
     }
     else {
@@ -24279,12 +24279,15 @@ async function resetGame(gamePath, octokit, context) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return play; });
-/* harmony import */ var _issues__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/issues */ "./src/issues.ts");
-/* harmony import */ var _error__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/error */ "./src/error.ts");
-/* harmony import */ var _new__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/new */ "./src/new.ts");
-/* harmony import */ var _move__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/move */ "./src/move.ts");
-/* harmony import */ var _commit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/commit */ "./src/commit.ts");
-/* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/player */ "./src/player.ts");
+/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ur-game */ "./node_modules/ur-game/src/game.js");
+/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ur_game__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _issues__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/issues */ "./src/issues.ts");
+/* harmony import */ var _error__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/error */ "./src/error.ts");
+/* harmony import */ var _new__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/new */ "./src/new.ts");
+/* harmony import */ var _move__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/move */ "./src/move.ts");
+/* harmony import */ var _commit__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/commit */ "./src/commit.ts");
+/* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/player */ "./src/player.ts");
+
 
 
 
@@ -24313,20 +24316,20 @@ async function play(title, octokit, context, core) {
     // play branch
     let changes = [];
     try {
-        Object(_issues__WEBPACK_IMPORTED_MODULE_0__["addReaction"])("eyes", octokit, context);
+        Object(_issues__WEBPACK_IMPORTED_MODULE_1__["addReaction"])("eyes", octokit, context);
         const [command, move] = parseIssueTitle(title);
         if (command === "new") {
-            changes = changes.concat(await Object(_new__WEBPACK_IMPORTED_MODULE_2__["resetGame"])(gamePath, octokit, context));
+            changes = changes.concat(await Object(_new__WEBPACK_IMPORTED_MODULE_3__["resetGame"])(gamePath, octokit, context));
         }
         else if (command === "move") {
-            changes = changes.concat(await Object(_move__WEBPACK_IMPORTED_MODULE_3__["makeMove"])(move, gamePath, octokit, context));
+            changes = changes.concat(await Object(_move__WEBPACK_IMPORTED_MODULE_4__["makeMove"])(move, gamePath, octokit, context));
         }
         // All the changes have been collected - commit them
-        await Object(_commit__WEBPACK_IMPORTED_MODULE_4__["makeCommit"])(`@${context.actor} ${command === "new" ? "Start a new game" : `Move ${Object(_player__WEBPACK_IMPORTED_MODULE_5__["getPlayerTeam"])(context.actor) === "b" ? "black" : "white"} ${move} (#${context.issue.number})`}`, changes, octokit, context);
+        await Object(_commit__WEBPACK_IMPORTED_MODULE_5__["makeCommit"])(`@${context.actor} ${command === "new" ? "Start a new game" : `Move ${Object(_player__WEBPACK_IMPORTED_MODULE_6__["playerIsOnTeam"])(context.actor, ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK) ? "black" : "white"} ${move} (#${context.issue.number})`}`, changes, octokit, context);
     }
     catch (error) {
         // If there was an error, forward it to the user, then stop
-        Object(_error__WEBPACK_IMPORTED_MODULE_1__["handleError"])(error, octokit, context, core);
+        Object(_error__WEBPACK_IMPORTED_MODULE_2__["handleError"])(error, octokit, context, core);
         return;
     }
 }
@@ -24367,15 +24370,28 @@ function parseIssueTitle(title) {
 /*!***********************!*\
   !*** ./src/player.ts ***!
   \***********************/
-/*! exports provided: getPlayerTeam */
+/*! exports provided: playerIsOnTeam, getPlayerTeam */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "playerIsOnTeam", function() { return playerIsOnTeam; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getPlayerTeam", function() { return getPlayerTeam; });
 /* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ur-game */ "./node_modules/ur-game/src/game.js");
 /* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ur_game__WEBPACK_IMPORTED_MODULE_0__);
 
+function playerIsOnTeam(username, team) {
+    /**
+     * Checks if a player is on the given team.
+     *
+     * @param username: The player's name.
+     * @param team: The team to check against.
+     */
+    if (username === "rossjrw") {
+        return true;
+    }
+    return getPlayerTeam(username) === team;
+}
 function getPlayerTeam(username) {
     /**
      * Assigns a player to a team based on their username.
