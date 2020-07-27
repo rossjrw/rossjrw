@@ -5,6 +5,7 @@ import Ur from "ur-game"
 import { getPlayerTeam } from '@/player'
 import { generateReadme } from '@/generateReadme'
 import { Change } from '@/play'
+import { addToLog } from '@/log'
 
 export async function resetGame (
   gamePath: string,
@@ -45,6 +46,19 @@ export async function resetGame (
   // Update README.md with the new state
   changes = changes.concat(
     await generateReadme(newState, gamePath, octokit, context)
+  )
+
+  // Update the log with this action
+  changes = changes.concat(
+    await addToLog(
+      "new",
+      "started a new game",
+      newState.currentPlayer!,
+      "TODO",
+      gamePath,
+      octokit,
+      context
+    )
   )
 
   return changes
