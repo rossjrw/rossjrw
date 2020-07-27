@@ -8,7 +8,7 @@ If your GitHub username starts with a letter in the first half of the alphabet
 Otherwise, you're on the **white** team.
 **It's white to play.**
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.7716002197045862.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.7037659504027849.svg"></p>
 
 **White team:**
 You rolled a 1!
