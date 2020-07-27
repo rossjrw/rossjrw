@@ -27,7 +27,9 @@ export function analyseMove (
     // Was a rosette claimed?
     rosetteClaimed: [4, 8, 14].includes(toPosition),
     // Did a capture happen?
-    captureHappened: !!sum(values(state.board[toPosition])),
+    captureHappened: 
+      !!sum(values(state.board[toPosition])) &&
+      [5, 6, 7, 9, 10, 11, 12].includes(toPosition),
     // Did an ascension happen?
     ascensionHappened: toPosition >= 15,
     // Was the game won?
