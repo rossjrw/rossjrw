@@ -8,7 +8,7 @@ If your GitHub username starts with a letter in the first half of the alphabet
 Otherwise, you're on the **white** team.
 **It's black to play.**
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.4579362438106730.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.0274750924951742.svg"></p>
 
 **Black team:**
 You rolled a 2!
@@ -17,7 +17,7 @@ What would you like to do?
 | Choices *(click one of them!)* |
 | --- |
   | [Move a new piece to tile 2](https://github.com/rossjrw/ur/issues/new?title=ur-move-2%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.) |
-  | [Move a piece from tile 6 to tile 8 (:rosette:)](https://github.com/rossjrw/ur/issues/new?title=ur-move-2%406-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.) |
+  | [Move a piece from tile 8 to tile 10](https://github.com/rossjrw/ur/issues/new?title=ur-move-2%408-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.) |
 
 -----
 
