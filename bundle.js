@@ -23787,6 +23787,71 @@ function analyseMove(state, fromPosition, toPosition) {
 
 /***/ }),
 
+/***/ "./src/commit.ts":
+/*!***********************!*\
+  !*** ./src/commit.ts ***!
+  \***********************/
+/*! exports provided: makeCommit */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "makeCommit", function() { return makeCommit; });
+async function makeCommit(message, changes, octokit, context) {
+    /**
+     * From the given list of changes, makes a single commit to implement them.
+     *
+     * @param changes: The list of changes to make.
+     */
+    // Grab the SHA of the latest commit
+    const remoteCommits = await octokit.repos.listCommits({
+        owner: context.repo.owner,
+        repo: context.repo.repo,
+        sha: "play",
+        per_page: 1,
+    });
+    let latestCommitSha = remoteCommits.data[0].sha;
+    const treeSha = remoteCommits.data[0].commit.tree.sha;
+    // Make a new tree for these changes
+    const newTree = await octokit.git.createTree({
+        owner: context.repo.owner,
+        repo: context.repo.repo,
+        base_tree: treeSha,
+        tree: changes.map(change => {
+            const subTree = {
+                path: change.path,
+                mode: '100644',
+            };
+            if (change.content) {
+                subTree.content = change.content;
+            }
+            else {
+                subTree.sha = "null";
+            }
+            return subTree;
+        })
+    });
+    const newTreeSha = newTree.data.sha;
+    const newCommit = await octokit.git.createCommit({
+        owner: context.repo.owner,
+        repo: context.repo.repo,
+        message,
+        tree: newTreeSha,
+        parents: [latestCommitSha]
+    });
+    latestCommitSha = newCommit.data.sha;
+    // Set HEAD of play branch to the new commit
+    await octokit.git.updateRef({
+        owner: context.repo.owner,
+        repo: context.repo.repo,
+        sha: latestCommitSha,
+        ref: "heads/play",
+    });
+}
+
+
+/***/ }),
+
 /***/ "./src/error.ts":
 /*!**********************!*\
   !*** ./src/error.ts ***!
@@ -23853,8 +23918,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "generateReadme", function() { return generateReadme; });
 /* harmony import */ var ejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ejs */ "./node_modules/ejs/lib/ejs.js");
 /* harmony import */ var ejs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ejs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _analyseMove__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/analyseMove */ "./src/analyseMove.ts");
-/* harmony import */ var _updateSvg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/updateSvg */ "./src/updateSvg.ts");
+/* harmony import */ var crypto_random_string__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! crypto-random-string */ "./node_modules/crypto-random-string/index.js");
+/* harmony import */ var crypto_random_string__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(crypto_random_string__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _analyseMove__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/analyseMove */ "./src/analyseMove.ts");
+/* harmony import */ var _updateSvg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/updateSvg */ "./src/updateSvg.ts");
+
 
 
 
@@ -23863,11 +23931,14 @@ async function generateReadme(state, gamePath, octokit, context) {
      * Generates the new README file based on the current state of the game.
      *
      * @param state: The current state of the board, as of right now.
-     * @param gamePath
+     * @param gamePath: The location of the current game's state file.
+     * @returns An array of changes to add to the commit.
      */
+    let changes = [];
     // Update the SVG to represent the new game board
-    const boardImageHash = await Object(_updateSvg__WEBPACK_IMPORTED_MODULE_2__["updateSvg"])(state, gamePath, "assets/board.optimised.svg", // TODO change for compiled branch
-    octokit, context);
+    const boardImageHash = crypto_random_string__WEBPACK_IMPORTED_MODULE_1___default()({ length: 16, type: "numeric" });
+    changes = changes.concat(await Object(_updateSvg__WEBPACK_IMPORTED_MODULE_3__["updateSvg"])(state, gamePath, "assets/board.optimised.svg", // TODO change for compiled branch
+    boardImageHash, octokit, context));
     const readmeFile = await octokit.repos.getContents({
         owner: context.repo.owner,
         repo: context.repo.repo,
@@ -23888,7 +23959,7 @@ async function generateReadme(state, gamePath, octokit, context) {
                 to: state.possibleMoves[key],
             };
         }).map(move => {
-            const events = Object(_analyseMove__WEBPACK_IMPORTED_MODULE_1__["analyseMove"])(state, move.from, move.to);
+            const events = Object(_analyseMove__WEBPACK_IMPORTED_MODULE_2__["analyseMove"])(state, move.from, move.to);
             return {
                 text: `${events.ascensionHappened ? "Ascend" : "Move"} a ${move.from === 0 ? "new piece" : `piece from tile ${move.from}`}${events.ascensionHappened ? "" : ` to tile ${move.to}`}${events.rosetteClaimed ? " (:rosette:)" : ""}${events.captureHappened ? " (:crossed_swords:)" : ""}${events.ascensionHappened ? " (:rocket:)" : ""}${events.gameWon ? " (:crown:)" : ""}`,
                 url: issueLink(`ur-move-${state.diceResult}%40${move.from}-0`, context),
@@ -23915,15 +23986,11 @@ async function generateReadme(state, gamePath, octokit, context) {
     if (Array.isArray(currentReadmeFile.data)) {
         throw new Error('FILE_IS_DIR');
     }
-    await octokit.repos.createOrUpdateFile({
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        branch: "play",
+    changes.push({
         path: "README.md",
-        message: `Update README.md (#${context.issue.number})`,
-        sha: currentReadmeFile.data.sha,
         content: Buffer.from(readme).toString("base64"),
     });
+    return changes;
 }
 function issueLink(issueTitle, context) {
     return `https://github.com/${context.repo.owner}/${context.repo.repo}/issues/new?title=${issueTitle}&body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.`;
@@ -24043,7 +24110,9 @@ async function makeMove(move, gamePath, octokit, context) {
      * @param state: The current state of the game.
      * @param move: The move the player wants to make.
      * @param gamePath: The location of the current game's state file.
+     * @returns An array of changes to add to the commit.
      */
+    let changes = [];
     // Get the current game state file, but it's null if the file doesn't exist
     const stateFile = await Object(_getState__WEBPACK_IMPORTED_MODULE_3__["getStateFile"])(gamePath, octokit, context);
     if (!stateFile) {
@@ -24086,14 +24155,9 @@ async function makeMove(move, gamePath, octokit, context) {
     // Everything seems ok, so execute the move
     const newState = ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.takeTurn(state, state.currentPlayer, fromPosition);
     // Replace the contents of the current game state file with the new state
-    await octokit.repos.createOrUpdateFile({
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        branch: "play",
+    changes.push({
         path: `${gamePath}/state.json`,
-        message: `@${context.actor} Move ${newState.currentPlayer === "b" ? "black" : "white"} from ${fromPosition} to ${toPosition} (#${context.issue.number})`,
         content: Buffer.from(JSON.stringify(newState)).toString("base64"),
-        sha: stateFile.data.sha,
     });
     // Move has been performed and the result has been saved.
     // All that remains is to report back to the issue and update the README.
@@ -24136,7 +24200,8 @@ async function makeMove(move, gamePath, octokit, context) {
         });
     }
     // Update README.md with the new state
-    await Object(_generateReadme__WEBPACK_IMPORTED_MODULE_6__["generateReadme"])(state, gamePath, octokit, context);
+    changes = changes.concat(await Object(_generateReadme__WEBPACK_IMPORTED_MODULE_6__["generateReadme"])(state, gamePath, octokit, context));
+    return changes;
 }
 
 
@@ -24156,8 +24221,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ur_game__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/player */ "./src/player.ts");
 /* harmony import */ var _generateReadme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/generateReadme */ "./src/generateReadme.ts");
-/* harmony import */ var _getState__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/getState */ "./src/getState.ts");
-
 
 
 
@@ -24168,27 +24231,14 @@ async function resetGame(gamePath, octokit, context) {
      * I don't want this to happen willy-nilly, so I might add some restriction
      * here - maybe no moves for a few hours or something.
      */
-    // Get the current game state file, but it's null if the file doesn't exist
-    const stateFile = await Object(_getState__WEBPACK_IMPORTED_MODULE_3__["getStateFile"])(gamePath, octokit, context);
+    let changes = [];
     // Make a new game state
     const newState = ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.startGame(7, 4, Object(_player__WEBPACK_IMPORTED_MODULE_1__["getPlayerTeam"])(context.actor));
     // Save the new state
-    const update = {
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        branch: "play",
+    changes.push({
         path: `${gamePath}/state.json`,
-        message: `@${context.actor} Start a new game (#${context.issue.number})`,
         content: Buffer.from(JSON.stringify(newState)).toString("base64"),
-    };
-    // If the old statefile existed, add its sha to the commit
-    if (stateFile) {
-        if (Array.isArray(stateFile.data)) {
-            throw new Error('FILE_IS_DIR');
-        }
-        update.sha = stateFile.data.sha;
-    }
-    await octokit.repos.createOrUpdateFile(update);
+    });
     // Add a comment to the issue to indicate that a new board was made
     octokit.issues.createComment({
         owner: context.repo.owner,
@@ -24203,7 +24253,8 @@ async function resetGame(gamePath, octokit, context) {
         state: "closed",
     });
     // Update README.md with the new state
-    await Object(_generateReadme__WEBPACK_IMPORTED_MODULE_2__["generateReadme"])(newState, gamePath, octokit, context);
+    changes = changes.concat(await Object(_generateReadme__WEBPACK_IMPORTED_MODULE_2__["generateReadme"])(newState, gamePath, octokit, context));
+    return changes;
 }
 
 
@@ -24223,6 +24274,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _error__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/error */ "./src/error.ts");
 /* harmony import */ var _new__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/new */ "./src/new.ts");
 /* harmony import */ var _move__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/move */ "./src/move.ts");
+/* harmony import */ var _commit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/commit */ "./src/commit.ts");
+/* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/player */ "./src/player.ts");
+
+
 
 
 
@@ -24245,16 +24300,20 @@ async function play(title, octokit, context, core) {
     // that we've seen it.
     // TODO React with a rocket once the issue has been actioned.
     const gamePath = "games/current";
+    // Prepare a list of changes, which will be made into a single commit to the
+    // play branch
+    let changes = [];
     try {
         Object(_issues__WEBPACK_IMPORTED_MODULE_0__["addReaction"])("eyes", octokit, context);
-        // Parse the issue's title into a concrete action
         const [command, move] = parseIssueTitle(title);
         if (command === "new") {
-            await Object(_new__WEBPACK_IMPORTED_MODULE_2__["resetGame"])(gamePath, octokit, context);
+            changes = changes.concat(await Object(_new__WEBPACK_IMPORTED_MODULE_2__["resetGame"])(gamePath, octokit, context));
         }
         else if (command === "move") {
-            await Object(_move__WEBPACK_IMPORTED_MODULE_3__["makeMove"])(move, gamePath, octokit, context);
+            changes = changes.concat(await Object(_move__WEBPACK_IMPORTED_MODULE_3__["makeMove"])(move, gamePath, octokit, context));
         }
+        // All the changes have been collected - commit them
+        await Object(_commit__WEBPACK_IMPORTED_MODULE_4__["makeCommit"])(`@${context.actor} ${command === "new" ? "Start a new game" : `Move ${Object(_player__WEBPACK_IMPORTED_MODULE_5__["getPlayerTeam"])(context.actor) === "b" ? "black" : "white"} ${move} (#${context.issue.number})`}`, changes, octokit, context);
     }
     catch (error) {
         // If there was an error, forward it to the user, then stop
@@ -24335,11 +24394,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateSvg", function() { return updateSvg; });
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var crypto_random_string__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! crypto-random-string */ "./node_modules/crypto-random-string/index.js");
-/* harmony import */ var crypto_random_string__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(crypto_random_string__WEBPACK_IMPORTED_MODULE_1__);
 
-
-async function updateSvg(state, gamePath, baseSvgPath, octokit, context) {
+async function updateSvg(state, gamePath, baseSvgPath, hash, octokit, context) {
     /**
      * Generates an SVG to visually represent the current board state.
      *
@@ -24348,9 +24404,10 @@ async function updateSvg(state, gamePath, baseSvgPath, octokit, context) {
      * @param state: The current state of the game board.
      * @param gamePath: The path to the current game's info dir.
      * @param baseSvgPath: The path to the SVG template file.
-     * @returns The hash of the newly-created file, so that README.md can
-     * correctly reference it (this avoids cache issues).
+     * @param hash: A random string to add to the image's name.
+     * @returns An array of changes to add to the commit.
      */
+    const changes = [];
     // Delete the current board image - we didn't save the hash, so we'll have to
     // trawl through that directory and delete any matching files
     const gameFiles = await octokit.repos.getContents({
@@ -24364,15 +24421,12 @@ async function updateSvg(state, gamePath, baseSvgPath, octokit, context) {
     if (!Array.isArray(gameFiles.data)) {
         throw new Error('GAME_DIR_IS_FILE');
     }
+    // Delete old board images
     gameFiles.data.forEach(async (gameFile) => {
         if (/^board\.[0-9]+\.svg$/.test(gameFile.name)) {
-            await octokit.repos.deleteFile({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                branch: "play",
+            changes.push({
                 path: gameFile.path,
-                message: `Clear old board image (#${context.issue.number})`,
-                sha: gameFile.sha,
+                content: null,
             });
         }
     });
@@ -24418,18 +24472,12 @@ async function updateSvg(state, gamePath, baseSvgPath, octokit, context) {
             svg = hideSvgElement(svg, `dice${index}-spot-on`);
         }
     });
-    const hash = crypto_random_string__WEBPACK_IMPORTED_MODULE_1___default()({ length: 16, type: "numeric" });
     // Save the new SVG to a file
-    await octokit.repos.createOrUpdateFile({
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        branch: "play",
+    changes.push({
         path: `${gamePath}/board.${hash}.svg`,
-        message: `Create new board image (#${context.issue.number})`,
         content: Buffer.from(svg).toString("base64"),
     });
-    // Return the hash for use by the README
-    return hash;
+    return changes;
 }
 function hideSvgElement(svg, elementId) {
     /**
