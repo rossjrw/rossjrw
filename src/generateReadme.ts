@@ -92,7 +92,7 @@ export async function generateReadme (
 
   changes.push({
     path: "README.md",
-    content: Buffer.from(readme).toString("base64"),
+    content: readme,
   })
 
   return changes

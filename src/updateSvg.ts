@@ -101,7 +101,7 @@ export async function updateSvg(
   // Save the new SVG to a file
   changes.push({
     path: `${gamePath}/board.${hash}.svg`,
-    content: Buffer.from(svg).toString("base64"),
+    content: svg,
   })
 
   return changes

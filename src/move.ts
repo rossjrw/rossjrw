@@ -72,7 +72,7 @@ export async function makeMove (
   // Replace the contents of the current game state file with the new state
   changes.push({
     path: `${gamePath}/state.json`,
-    content: Buffer.from(JSON.stringify(newState)).toString("base64"),
+    content: JSON.stringify(newState),
   })
 
   // Move has been performed and the result has been saved.

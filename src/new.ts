@@ -25,7 +25,7 @@ export async function resetGame (
   // Save the new state
   changes.push({
     path: `${gamePath}/state.json`,
-    content: Buffer.from(JSON.stringify(newState)).toString("base64"),
+    content: JSON.stringify(newState),
   })
 
   // Add a comment to the issue to indicate that a new board was made
