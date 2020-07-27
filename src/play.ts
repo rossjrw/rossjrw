@@ -1,13 +1,14 @@
 import { Octokit } from "@octokit/rest/index"
 import { Context } from "@actions/github/lib/context"
 import { default as _core } from "@actions/core"
+import Ur from "ur-game"
 
 import { addReaction } from '@/issues'
 import { handleError } from '@/error'
 import { resetGame } from '@/new'
 import { makeMove } from '@/move'
 import { makeCommit } from '@/commit'
-import { getPlayerTeam } from '@/player'
+import { playerIsOnTeam } from '@/player'
 
 export interface Change {
   path: string
@@ -60,7 +61,7 @@ export default async function play (
 
     // All the changes have been collected - commit them
     await makeCommit(
-      `@${context.actor} ${command === "new" ? "Start a new game" : `Move ${getPlayerTeam(context.actor) === "b" ? "black" : "white"} ${move} (#${context.issue.number})`}`,
+      `@${context.actor} ${command === "new" ? "Start a new game" : `Move ${playerIsOnTeam(context.actor, Ur.BLACK) ? "black" : "white"} ${move} (#${context.issue.number})`}`,
       changes,
       octokit,
       context,

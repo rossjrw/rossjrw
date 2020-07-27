@@ -16,7 +16,7 @@ export function playerIsOnTeam (
   return getPlayerTeam(username) === team
 }
 
-function getPlayerTeam (
+export function getPlayerTeam (
   username: string,
 ): Ur.Player {
   /**

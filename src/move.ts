@@ -3,7 +3,7 @@ import { Context } from "@actions/github/lib/context"
 import Ur from "ur-game"
 import { isEmpty } from "lodash"
 
-import { getPlayerTeam } from '@/player'
+import { playerIsOnTeam } from '@/player'
 import { getStateFile } from '@/getState'
 import { addLabels } from '@/issues'
 import { analyseMove } from '@/analyseMove'
@@ -41,10 +41,10 @@ export async function makeMove (
     throw new Error('MOVE_WHEN_GAME_ENDED')
   }
   // First I need to validate which team the user is on
-  if (state.currentPlayer !== getPlayerTeam(context.actor)) {
+  if (!playerIsOnTeam(context.actor, state.currentPlayer)) {
     throw new Error('WRONG_TEAM')
   }
-  if (getPlayerTeam(context.actor) === Ur.BLACK) {
+  if (state.currentPlayer === Ur.BLACK) {
     addLabels(["Black team"], octokit, context)
   } else {
     addLabels(["White team"], octokit, context)
