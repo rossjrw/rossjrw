@@ -23997,7 +23997,7 @@ async function generateReadme(state, gamePath, octokit, context) {
     }
     changes.push({
         path: "README.md",
-        content: Buffer.from(readme).toString("base64"),
+        content: readme,
     });
     return changes;
 }
@@ -24166,7 +24166,7 @@ async function makeMove(move, gamePath, octokit, context) {
     // Replace the contents of the current game state file with the new state
     changes.push({
         path: `${gamePath}/state.json`,
-        content: Buffer.from(JSON.stringify(newState)).toString("base64"),
+        content: JSON.stringify(newState),
     });
     // Move has been performed and the result has been saved.
     // All that remains is to report back to the issue and update the README.
@@ -24246,7 +24246,7 @@ async function resetGame(gamePath, octokit, context) {
     // Save the new state
     changes.push({
         path: `${gamePath}/state.json`,
-        content: Buffer.from(JSON.stringify(newState)).toString("base64"),
+        content: JSON.stringify(newState),
     });
     // Add a comment to the issue to indicate that a new board was made
     octokit.issues.createComment({
@@ -24500,7 +24500,7 @@ async function updateSvg(state, gamePath, baseSvgPath, hash, octokit, context) {
     // Save the new SVG to a file
     changes.push({
         path: `${gamePath}/board.${hash}.svg`,
-        content: Buffer.from(svg).toString("base64"),
+        content: svg,
     });
     return changes;
 }
