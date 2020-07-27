@@ -6,17 +6,18 @@ You're on a team!
 If your GitHub username starts with a letter in the first half of the alphabet
 (A–M), you're on the **black** team.
 Otherwise, you're on the **white** team.
-**It's black to play.**
+**It's white to play.**
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.2072173362568150.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.8705280846900255.svg"></p>
 
-**Black team:**
-You rolled a 2!
+**White team:**
+You rolled a 1!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a new piece to tile 2](https://github.com/rossjrw/ur/issues/new?title=ur-move-2%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.) |
+  | [Move a new piece to tile 1](https://github.com/rossjrw/ur/issues/new?title=ur-move-1%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.) |
+  | [Move a piece from tile 2 to tile 3](https://github.com/rossjrw/ur/issues/new?title=ur-move-1%402-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.) |
 
 -----
 
