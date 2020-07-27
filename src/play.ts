@@ -6,6 +6,13 @@ import { addReaction } from '@/issues'
 import { handleError } from '@/error'
 import { resetGame } from '@/new'
 import { makeMove } from '@/move'
+import { makeCommit } from '@/commit'
+import { getPlayerTeam } from '@/player'
+
+export interface Change {
+  path: string
+  content: string | null
+}
 
 export default async function play (
   title: string,
@@ -31,17 +38,33 @@ export default async function play (
   // that we've seen it.
   // TODO React with a rocket once the issue has been actioned.
 
+
   const gamePath = "games/current"
+
+  // Prepare a list of changes, which will be made into a single commit to the
+  // play branch
+  let changes: Change[] = []
 
   try {
     addReaction("eyes", octokit, context)
-    // Parse the issue's title into a concrete action
     const [command, move] = parseIssueTitle(title)
     if (command === "new") {
-      await resetGame(gamePath, octokit, context)
+      changes = changes.concat(
+        await resetGame(gamePath, octokit, context)
+      )
     } else if (command === "move") {
-      await makeMove(move, gamePath, octokit, context)
+      changes = changes.concat(
+        await makeMove(move, gamePath, octokit, context)
+      )
     }
+
+    // All the changes have been collected - commit them
+    await makeCommit(
+      `@${context.actor} ${command === "new" ? "Start a new game" : `Move ${getPlayerTeam(context.actor) === "b" ? "black" : "white"} ${move} (#${context.issue.number})`}`,
+      changes,
+      octokit,
+      context,
+    )
   } catch (error) {
     // If there was an error, forward it to the user, then stop
     handleError(error, octokit, context, core)

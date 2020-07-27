@@ -4,42 +4,29 @@ import Ur from "ur-game"
 
 import { getPlayerTeam } from '@/player'
 import { generateReadme } from '@/generateReadme'
-import { getStateFile } from '@/getState'
+import { Change } from '@/play'
 
 export async function resetGame (
   gamePath: string,
   octokit: Octokit,
   context: Context,
-): Promise<void> {
+): Promise<Change[]> {
   /**
    * Called when a player uses the "new" command.
    *
    * I don't want this to happen willy-nilly, so I might add some restriction
    * here - maybe no moves for a few hours or something.
    */
-  // Get the current game state file, but it's null if the file doesn't exist
-  const stateFile = await getStateFile(gamePath, octokit, context)
+  let changes: Change[] = []
 
   // Make a new game state
   const newState = Ur.startGame(7, 4, getPlayerTeam(context.actor))
 
   // Save the new state
-  const update: Octokit.ReposCreateOrUpdateFileParams = {
-    owner: context.repo.owner,
-    repo: context.repo.repo,
-    branch: "play",
+  changes.push({
     path: `${gamePath}/state.json`,
-    message: `@${context.actor} Start a new game (#${context.issue.number})`,
     content: Buffer.from(JSON.stringify(newState)).toString("base64"),
-  }
-  // If the old statefile existed, add its sha to the commit
-  if (stateFile) {
-    if (Array.isArray(stateFile.data)) {
-      throw new Error('FILE_IS_DIR')
-    }
-    update.sha = stateFile.data.sha
-  }
-  await octokit.repos.createOrUpdateFile(update)
+  })
 
   // Add a comment to the issue to indicate that a new board was made
   octokit.issues.createComment({
@@ -56,5 +43,9 @@ export async function resetGame (
   })
 
   // Update README.md with the new state
-  await generateReadme(newState, gamePath, octokit, context)
+  changes = changes.concat(
+    await generateReadme(newState, gamePath, octokit, context)
+  )
+
+  return changes
 }
