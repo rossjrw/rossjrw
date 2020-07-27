@@ -24327,7 +24327,7 @@ async function play(title, octokit, context, core) {
             changes = changes.concat(await Object(_move__WEBPACK_IMPORTED_MODULE_4__["makeMove"])(move, gamePath, octokit, context));
         }
         // All the changes have been collected - commit them
-        await Object(_commit__WEBPACK_IMPORTED_MODULE_5__["makeCommit"])(`@${context.actor} ${command === "new" ? "Start a new game" : `Move ${Object(_player__WEBPACK_IMPORTED_MODULE_6__["playerIsOnTeam"])(context.actor, ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK) ? "black" : "white"} ${move} (#${context.issue.number})`}`, changes, octokit, context);
+        await Object(_commit__WEBPACK_IMPORTED_MODULE_5__["makeCommit"])(`@${context.actor} ${command === "new" ? "Start a new game" : `Move ${Object(_player__WEBPACK_IMPORTED_MODULE_6__["playerIsOnTeam"])(context.actor, ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK) ? "black" : "white"} ${move}`} (#${context.issue.number})`, changes, octokit, context);
     }
     catch (error) {
         // If there was an error, forward it to the user, then stop
