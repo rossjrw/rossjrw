@@ -6,11 +6,11 @@ You're on a team!
 If your GitHub username starts with a letter in the first half of the alphabet
 (A–M), you're on the **black** team.
 Otherwise, you're on the **white** team.
-**It's white to play.**
+**It's black to play.**
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.8705280846900255.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.5456697791939096.svg"></p>
 
-**White team:**
+**Black team:**
 You rolled a 1!
 What would you like to do?
 
