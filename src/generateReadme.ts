@@ -81,9 +81,11 @@ export async function generateReadme (
   log.linkPreviousBoardState()
 
   // Make a list of moves that have happened so far this game, as markdown
-  const logItems =
+  const logItems = log.internalLog.map(logItem => {
+    return `${logItem.time} ${logItem.team === Ur.BLACK ? ":black_circle:" : ":white_circle:"} @${logItem.username} ${logItem.message} (#${logItem.issue})${logItem.boardImage === null ? "" : ` ([board](${logItem.boardImage}))`}`
+  })
 
-  const readme = ejs.render(template, { actions, state })
+  const readme = ejs.render(template, { actions, state, logItems })
 
   const currentReadmeFile = await octokit.repos.getContents({
     owner: context.repo.owner,

@@ -116,7 +116,8 @@ export class Log {
 
     // The board image for the current round has already been added, so the
     // second-to-last image needs to be linked
-    if (this.internalLog[this.internalLog.length - 2].boardImage === null) {
+    if (this.internalLog.length >= 2 &&
+        this.internalLog[this.internalLog.length - 2].boardImage === null) {
       this.internalLog[this.internalLog.length - 2].boardImage = `https://raw.githubusercontent.com/${this.context.repo.owner}/${this.context.repo.repo}/${this.lastCommitSha}/${this.gamePath}/board.svg`
     } else {
       // The second-to-last image should have had a null address, but it's not
