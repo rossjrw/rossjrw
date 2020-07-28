@@ -134,8 +134,6 @@ export class Log {
      */
     const changes: Change[] = []
 
-    this.linkPreviousBoardState()
-
     changes.push({
       path: `${this.gamePath}/log.json`,
       content: JSON.stringify(this.internalLog, null, 2),

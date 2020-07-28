@@ -2,17 +2,18 @@ import { Octokit } from "@octokit/rest/index"
 import { Context } from "@actions/github/lib/context"
 import Ur from "ur-game"
 import ejs from "ejs"
-import cryptoRandomString from "crypto-random-string"
 
 import { analyseMove } from '@/analyseMove'
 import { updateSvg } from '@/updateSvg'
 import { Change } from '@/play'
+import { Log } from './log'
 
 export async function generateReadme (
   state: Ur.State,
   gamePath: string,
   octokit: Octokit,
   context: Context,
+  log: Log,
 ): Promise<Change[]> {
   /**
    * Generates the new README file based on the current state of the game.
@@ -75,6 +76,9 @@ export async function generateReadme (
       }
     ]
   }
+
+  // Trigger the log to update the second-to-last board image URL
+  log.linkPreviousBoardState()
 
   // Make a list of moves that have happened so far this game, as markdown
   const logItems =
