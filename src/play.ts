@@ -38,8 +38,6 @@ export default async function play (
 
   // First thing to do: add a reaction to the triggering commit to acknowledge
   // that we've seen it.
-  // TODO React with a rocket once the issue has been actioned.
-
 
   const gamePath = "games/current"
 
@@ -67,6 +65,7 @@ export default async function play (
       octokit,
       context,
     )
+    addReaction("rocket", octokit, context)
   } catch (error) {
     // If there was an error, forward it to the user, then stop
     handleError(error, octokit, context, core)
