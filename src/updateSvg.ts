@@ -9,49 +9,22 @@ export async function updateSvg(
   state: State,
   gamePath: string,
   baseSvgPath: string,
-  hash: string,
   octokit: Octokit,
   context: Context,
 ): Promise<Change[]> {
   /**
    * Generates an SVG to visually represent the current board state.
    *
-   * Saves the resulting SVG to games/current/board.[hash].svg.
+   * Saves the resulting SVG to games/current/board.svg.
    *
    * @param state: The current state of the game board.
    * @param gamePath: The path to the current game's info dir.
    * @param baseSvgPath: The path to the SVG template file.
-   * @param hash: A random string to add to the image's name.
    * @returns An array of changes to add to the commit.
    */
   const changes: Change[] = []
 
-  // Delete the current board image - we didn't save the hash, so we'll have to
-  // trawl through that directory and delete any matching files
-  const gameFiles = await octokit.repos.getContents({
-    owner: context.repo.owner,
-    repo: context.repo.repo,
-    ref: "play",
-    path: gamePath,
-    mediaType: { format: "raw" },
-  })
-
-  // If the result is not an array, then games/current/ is not a dir
-  if (!Array.isArray(gameFiles.data)) {
-    throw new Error('GAME_DIR_IS_FILE')
-  }
-
-  // Delete old board images
-  gameFiles.data.forEach(async gameFile => {
-    if (/^board\.[0-9]+\.svg$/.test(gameFile.name)) {
-      changes.push({
-        path: gameFile.path,
-        content: null,
-      })
-    }
-  })
-
-  // Make a new svg and write it to file
+  // Get the contents of the template SVG
   const svgFile = await octokit.repos.getContents({
     owner: context.repo.owner,
     repo: context.repo.repo,
@@ -66,7 +39,7 @@ export async function updateSvg(
 
   let svg = Buffer.from(svgFile.data.content!, "base64").toString()
 
-  // What IDs are there?
+  // Hide elements that should not be visible for this board
   // Tokens: tileN-T and tile0-TN, tile15-TN
   // Dice spots: diceN-spot-on and/or diceN-spot-off
   state.board.forEach(
@@ -100,7 +73,7 @@ export async function updateSvg(
 
   // Save the new SVG to a file
   changes.push({
-    path: `${gamePath}/board.${hash}.svg`,
+    path: `${gamePath}/board.svg`,
     content: svg,
   })
 

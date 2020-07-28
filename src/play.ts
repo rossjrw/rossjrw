@@ -9,6 +9,7 @@ import { resetGame } from '@/new'
 import { makeMove } from '@/move'
 import { makeCommit } from '@/commit'
 import { playerIsOnTeam } from '@/player'
+import { Log } from '@/log'
 
 export interface Change {
   path: string
