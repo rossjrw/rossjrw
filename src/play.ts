@@ -36,27 +36,34 @@ export default async function play (
   // The Octokit client comes pre-authenticated, so there's no need to
   // instantiate it.
 
-  // First thing to do: add a reaction to the triggering commit to acknowledge
-  // that we've seen it.
-
   const gamePath = "games/current"
 
   // Prepare a list of changes, which will be made into a single commit to the
   // play branch
   let changes: Change[] = []
 
+  // Prepare a log object, which will be used to merge log entries into a
+  // single change
+  const log = new Log(gamePath, octokit, context)
+  await log.prepareInitialLog()
+
   try {
     addReaction("eyes", octokit, context)
+
     const [command, move] = parseIssueTitle(title)
+
     if (command === "new") {
       changes = changes.concat(
-        await resetGame(gamePath, octokit, context)
+        await resetGame(gamePath, octokit, context, log)
       )
     } else if (command === "move") {
       changes = changes.concat(
-        await makeMove(move, gamePath, octokit, context)
+        await makeMove(move, gamePath, octokit, context, log)
       )
     }
+
+    // Extract changes from the log
+    changes = changes.concat(log.makeLogChanges())
 
     // All the changes have been collected - commit them
     await makeCommit(
@@ -65,6 +72,7 @@ export default async function play (
       octokit,
       context,
     )
+
     addReaction("rocket", octokit, context)
   } catch (error) {
     // If there was an error, forward it to the user, then stop

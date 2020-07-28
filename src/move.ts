@@ -9,13 +9,14 @@ import { addLabels } from '@/issues'
 import { analyseMove } from '@/analyseMove'
 import { generateReadme } from '@/generateReadme'
 import { Change } from '@/play'
-import { addToLog } from '@/log'
+import { Log } from '@/log'
 
 export async function makeMove (
   move: string,
   gamePath: string,
   octokit: Octokit,
   context: Context,
+  log: Log,
 ): Promise<Change[]> {
   /**
    * Called when a player uses the "move" command.
@@ -126,16 +127,10 @@ export async function makeMove (
   )
 
   // Update the log with this action
-  changes = changes.concat(
-    await addToLog(
-      "move",
-      `${events.ascensionHappened ? "ascended" : "moved"} a ${state.currentPlayer === Ur.BLACK ? "black" : "white"} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`} ${events.ascensionHappened ? ":rocket:" : `to position ${toPosition}${events.captureHappened ? ` — captured a ${state.currentPlayer === Ur.BLACK ? "white" : "black"} piece :crossed_swords:` : ""}. `}${events.rosetteClaimed ? " — claimed a rosette :rosette:" : ""}${events.gameWon ? " — won the game :crown:" : ""}`,
-      state.currentPlayer,
-      "TODO",
-      gamePath,
-      octokit,
-      context
-    )
+  log.addToLog(
+    "move",
+    `${events.ascensionHappened ? "ascended" : "moved"} a ${state.currentPlayer === Ur.BLACK ? "black" : "white"} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`} ${events.ascensionHappened ? ":rocket:" : `to position ${toPosition}${events.captureHappened ? ` — captured a ${state.currentPlayer === Ur.BLACK ? "white" : "black"} piece :crossed_swords:` : ""}. `}${events.rosetteClaimed ? " — claimed a rosette :rosette:" : ""}${events.gameWon ? " — won the game :crown:" : ""}`,
+    state.currentPlayer,
   )
 
   return changes

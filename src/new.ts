@@ -5,12 +5,13 @@ import Ur from "ur-game"
 import { getPlayerTeam } from '@/player'
 import { generateReadme } from '@/generateReadme'
 import { Change } from '@/play'
-import { addToLog } from '@/log'
+import { Log } from '@/log'
 
 export async function resetGame (
   gamePath: string,
   octokit: Octokit,
   context: Context,
+  log: Log,
 ): Promise<Change[]> {
   /**
    * Called when a player uses the "new" command.
@@ -49,17 +50,13 @@ export async function resetGame (
   )
 
   // Update the log with this action
-  changes = changes.concat(
-    await addToLog(
-      "new",
-      "started a new game",
-      newState.currentPlayer!,
-      "TODO",
-      gamePath,
-      octokit,
-      context
-    )
+  log.addToLog(
+    "new",
+    "started a new game",
+    newState.currentPlayer!,
   )
+
+  // TODO move game files into backup dir
 
   return changes
 }
