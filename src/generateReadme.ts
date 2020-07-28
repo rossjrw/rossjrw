@@ -102,5 +102,5 @@ function issueLink (
   issueTitle: string,
   context: Context,
 ): string {
-  return `https://github.com/${context.repo.owner}/${context.repo.repo}/issues/new?title=${issueTitle}&body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.`
+  return `https://github.com/${context.repo.owner}/${context.repo.repo}/issues/new?title=${issueTitle}&body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._`
 }
