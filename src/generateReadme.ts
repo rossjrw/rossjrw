@@ -24,18 +24,17 @@ export async function generateReadme (
   let changes: Change[] = []
 
   // Update the SVG to represent the new game board
-  const boardImageHash = cryptoRandomString({length: 16, type: "numeric"})
   changes = changes.concat(
     await updateSvg(
       state,
       gamePath,
       "assets/board.optimised.svg", // TODO change for compiled branch
-      boardImageHash,
       octokit,
       context
     )
   )
 
+  // Grab the EJS template
   const readmeFile = await octokit.repos.getContents({
     owner: context.repo.owner,
     repo: context.repo.repo,
@@ -47,9 +46,10 @@ export async function generateReadme (
   if(Array.isArray(readmeFile.data)) {
     throw new Error('FILE_IS_DIR')
   }
-
   const template = Buffer.from(readmeFile.data.content!, "base64").toString()
 
+  // Make a list of possible actions that can be taken this turn, structured
+  // into an array of links
   let actions
   if (state.possibleMoves) {
     actions = Object.keys(state.possibleMoves).map(key => {
@@ -76,7 +76,10 @@ export async function generateReadme (
     ]
   }
 
-  const readme = ejs.render(template, { actions, state, boardImageHash })
+  // Make a list of moves that have happened so far this game, as markdown
+  const logItems =
+
+  const readme = ejs.render(template, { actions, state })
 
   const currentReadmeFile = await octokit.repos.getContents({
     owner: context.repo.owner,
