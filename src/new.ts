@@ -9,6 +9,7 @@ import { Log } from '@/log'
 
 export async function resetGame (
   gamePath: string,
+  oldGamePath: string,
   octokit: Octokit,
   context: Context,
   log: Log,
@@ -18,13 +19,16 @@ export async function resetGame (
    *
    * I don't want this to happen willy-nilly, so I might add some restriction
    * here - maybe no moves for a few hours or something.
+   *
+   * @param gamePath: The location of the current game.
+   * @param oldGamePath: Where old games should be kept.
    */
   let changes: Change[] = []
 
   // Move the old log.json to another directory - don't care about state
   // Get the contents of the log from the log object
   changes.push({
-    path: `${gamePath}/../log.${log.internalLog[0].time}.json`,
+    path: `${oldGamePath}/log.${log.internalLog[0].time}.json`,
     content: JSON.stringify(log.internalLog, null, 2),
   })
   // This only creates a new file with the same content, but that's okay,

@@ -37,6 +37,7 @@ export default async function play (
   // instantiate it.
 
   const gamePath = "games/current"
+  const oldGamePath = "games"
 
   // Prepare a list of changes, which will be made into a single commit to the
   // play branch
@@ -54,7 +55,7 @@ export default async function play (
 
     if (command === "new") {
       changes = changes.concat(
-        await resetGame(gamePath, octokit, context, log)
+        await resetGame(gamePath, oldGamePath, octokit, context, log)
       )
     } else if (command === "move") {
       changes = changes.concat(
