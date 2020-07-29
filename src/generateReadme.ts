@@ -82,7 +82,7 @@ export async function generateReadme (
 
   // Make a list of moves that have happened so far this game, as markdown
   const logItems = log.internalLog.map(logItem => {
-    return `${logItem.time} ${logItem.team === Ur.BLACK ? ":black_circle:" : ":white_circle:"} @${logItem.username} ${logItem.message} (#${logItem.issue})${logItem.boardImage === null ? "" : ` ([board](${logItem.boardImage}))`}`
+    return `${logItem.time.split(".")[0].split("T").join(" ")} ${logItem.team === Ur.BLACK ? ":black_circle:" : ":white_circle:"} **[@${logItem.username}](https://github.com/${logItem.username})** ${logItem.message} ([#${logItem.issue}](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${logItem.issue}))${logItem.boardImage === null ? "" : ` ([board](${logItem.boardImage}))`}`
   })
 
   const readme = ejs.render(template, { actions, state, logItems })
