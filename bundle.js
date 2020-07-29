@@ -24251,18 +24251,21 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-async function resetGame(gamePath, octokit, context, log) {
+async function resetGame(gamePath, oldGamePath, octokit, context, log) {
     /**
      * Called when a player uses the "new" command.
      *
      * I don't want this to happen willy-nilly, so I might add some restriction
      * here - maybe no moves for a few hours or something.
+     *
+     * @param gamePath: The location of the current game.
+     * @param oldGamePath: Where old games should be kept.
      */
     let changes = [];
     // Move the old log.json to another directory - don't care about state
     // Get the contents of the log from the log object
     changes.push({
-        path: `${gamePath}/../log.${log.internalLog[0].time}.json`,
+        path: `${oldGamePath}/log.${log.internalLog[0].time}.json`,
         content: JSON.stringify(log.internalLog, null, 2),
     });
     // This only creates a new file with the same content, but that's okay,
@@ -24341,6 +24344,7 @@ async function play(title, octokit, context, core) {
     // The Octokit client comes pre-authenticated, so there's no need to
     // instantiate it.
     const gamePath = "games/current";
+    const oldGamePath = "games";
     // Prepare a list of changes, which will be made into a single commit to the
     // play branch
     let changes = [];
@@ -24352,7 +24356,7 @@ async function play(title, octokit, context, core) {
         Object(_issues__WEBPACK_IMPORTED_MODULE_1__["addReaction"])("eyes", octokit, context);
         const [command, move] = parseIssueTitle(title);
         if (command === "new") {
-            changes = changes.concat(await Object(_new__WEBPACK_IMPORTED_MODULE_3__["resetGame"])(gamePath, octokit, context, log));
+            changes = changes.concat(await Object(_new__WEBPACK_IMPORTED_MODULE_3__["resetGame"])(gamePath, oldGamePath, octokit, context, log));
         }
         else if (command === "move") {
             changes = changes.concat(await Object(_move__WEBPACK_IMPORTED_MODULE_4__["makeMove"])(move, gamePath, octokit, context, log));
