@@ -124,16 +124,16 @@ export async function makeMove (
     })
   }
 
-  // Update README.md with the new state
-  changes = changes.concat(
-    await generateReadme(newState, gamePath, octokit, context, log)
-  )
-
   // Update the log with this action
   log.addToLog(
     "move",
     `${events.ascensionHappened ? "ascended" : "moved"} a ${state.currentPlayer === Ur.BLACK ? "black" : "white"} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`} ${events.ascensionHappened ? ":rocket:" : `to position ${toPosition}${events.captureHappened ? ` — captured a ${state.currentPlayer === Ur.BLACK ? "white" : "black"} piece :crossed_swords:` : ""}. `}${events.rosetteClaimed ? " — claimed a rosette :rosette:" : ""}${events.gameWon ? " — won the game :crown:" : ""}`,
     state.currentPlayer,
+  )
+
+  // Update README.md with the new state
+  changes = changes.concat(
+    await generateReadme(newState, gamePath, octokit, context, log)
   )
 
   return changes
