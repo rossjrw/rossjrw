@@ -6,11 +6,11 @@ You're on a team!
 If your GitHub username starts with a letter in the first half of the alphabet
 (A–M), you're on the **black** team.
 Otherwise, you're on the **white** team.
-**It's white to play.**
+**It's black to play.**
 
 <p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.svg"></p>
 
-**White team:**
+**Black team:**
 You rolled a 1!
 What would you like to do?
 
@@ -22,7 +22,7 @@ What would you like to do?
 
 | Game log |
 | --- |
-  | 2020-07-29T16:12:47.612Z :white_circle: @rossjrw started a new game (#58) |
+  | 2020-07-29 16:12:47 :white_circle: **[@rossjrw](https://github.com/rossjrw)** started a new game ([#58](https://github.com/rossjrw/ur/issues/58)) |
 
 </details>
 

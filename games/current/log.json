@@ -7,5 +7,14 @@
     "team": "w",
     "action": "new",
     "boardImage": null
+  },
+  {
+    "username": "rossjrw",
+    "issue": 59,
+    "message": "moved a white piece onto the board to position 1. ",
+    "time": "2020-07-29T16:29:23.232Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null
   }
 ]
