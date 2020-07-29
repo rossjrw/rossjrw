@@ -4,7 +4,7 @@ import Ur from "ur-game"
 import { isEmpty } from "lodash"
 
 import { playerIsOnTeam } from '@/player'
-import { getStateFile } from '@/getState'
+import { getFile } from '@/getFile'
 import { addLabels } from '@/issues'
 import { analyseMove } from '@/analyseMove'
 import { generateReadme } from '@/generateReadme'
@@ -28,13 +28,16 @@ export async function makeMove (
    */
   let changes: Change[] = []
   // Get the current game state file, but it's null if the file doesn't exist
-  const stateFile = await getStateFile(gamePath, octokit, context)
+  const stateFile = await getFile(
+    "play", gamePath, "state.json", octokit, context
+  )
   if (!stateFile) {
     throw new Error('MOVE_WHEN_EMPTY_GAME')
   }
   if (Array.isArray(stateFile.data)) {
     throw new Error('FILE_IS_DIR')
   }
+
   const state = JSON.parse(
     Buffer.from(stateFile.data.content!, "base64").toString()
   )
@@ -123,7 +126,7 @@ export async function makeMove (
 
   // Update README.md with the new state
   changes = changes.concat(
-    await generateReadme(newState, gamePath, octokit, context)
+    await generateReadme(newState, gamePath, octokit, context, log)
   )
 
   // Update the log with this action
