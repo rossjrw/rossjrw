@@ -80,15 +80,22 @@ export async function updateSvg(
       }
     }
   )
-  state.dice!.forEach(
-    (diceResult, index) => {
-      if (diceResult) {
-        svg = hideSvgElement(svg, `dice${index}-spot-off`)
-      } else {
-        svg = hideSvgElement(svg, `dice${index}-spot-on`)
+  if (state.dice) {
+    state.dice.forEach(
+      (diceResult, index) => {
+        if (diceResult) {
+          svg = hideSvgElement(svg, `dice${index}-spot-off`)
+        } else {
+          svg = hideSvgElement(svg, `dice${index}-spot-on`)
+        }
       }
-    }
-  )
+    )
+  } else {
+    svg = hideSvgElement(svg, "dice0")
+    svg = hideSvgElement(svg, "dice1")
+    svg = hideSvgElement(svg, "dice2")
+    svg = hideSvgElement(svg, "dice3")
+  }
 
   // Save the new SVG to a file
   changes.push({
