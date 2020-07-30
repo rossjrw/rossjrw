@@ -1,31 +1,32 @@
 Let's play
-[The Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur)!
+[The Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur)
+on my GitHub profile!
 **Game is in progress.**
 
 You're on a team!
 If your GitHub username starts with a letter in the first half of the alphabet
 (A–M), you're on the **black** team.
 Otherwise, you're on the **white** team.
-  **It's white to play.**
+  **It's black to play.**
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.79.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.80.svg"></p>
 
-  **White team:**
-  You rolled a 3!
+  **Black team:**
+  You rolled a 1!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a new piece to tile 3](https://github.com/rossjrw/ur/issues/new?title=ur-move-3%400-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
-  | [Move a piece from tile 2 to tile 5](https://github.com/rossjrw/ur/issues/new?title=ur-move-3%402-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a new piece to tile 1](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%400-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
 
 <details><summary>The game so far</summary>
 
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
-  | 2020-07-30 14:24:20 | **0** | :white_circle: **[@rossjrw](https://github.com/rossjrw)** started a new game | [#78](https://github.com/rossjrw/ur/issues/78) |  |
-  | 2020-07-30 14:25:35 | **1** | :white_circle: **[@rossjrw](https://github.com/rossjrw)** moved a white piece onto the board to position 2 | [#79](https://github.com/rossjrw/ur/issues/79) | [link](https://raw.githubusercontent.com/rossjrw/ur/0168f8cacc62e260cf8cc8385a00511870b289a8/games/current/board.79.svg) |
-  | 2020-07-30 14:25:35 | **2** | :black_circle: **[@rossjrw](https://github.com/rossjrw)** The black team rolled a 0 and their turn was automatically passed | [#79](https://github.com/rossjrw/ur/issues/79) |  |
+  | 2020-07-30 14:24:20 | **0** | :white_circle: **[@rossjrw](https://github.com/rossjrw)** started a new game | [#78](https://github.com/rossjrw/rossjrw/issues/78) |  |
+  | 2020-07-30 14:25:35 | **1** | :white_circle: **[@rossjrw](https://github.com/rossjrw)** moved a white piece onto the board to position 2 | [#79](https://github.com/rossjrw/rossjrw/issues/79) | [link](https://raw.githubusercontent.com/rossjrw/ur/0168f8cacc62e260cf8cc8385a00511870b289a8/games/current/board.79.svg) |
+  | 2020-07-30 14:25:35 | **2** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#79](https://github.com/rossjrw/rossjrw/issues/79) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/728e861bb95e24c3bad3b24206de3a1182caa805/games/current/board.79.svg) |
+  | 2020-07-30 15:16:02 | **3** | :white_circle: **[@rossjrw](https://github.com/rossjrw)** moved a white piece onto the board to position 3 | [#80](https://github.com/rossjrw/rossjrw/issues/80) |  |
 
 </details>
 
