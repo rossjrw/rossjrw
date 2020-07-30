@@ -6,23 +6,24 @@ You're on a team!
 If your GitHub username starts with a letter in the first half of the alphabet
 (A–M), you're on the **black** team.
 Otherwise, you're on the **white** team.
-**It's white to play.**
+**It's black to play.**
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.70.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.71.svg"></p>
 
-**White team:**
-You rolled a 1!
+**Black team:**
+You rolled a 3!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a new piece to tile 1](https://github.com/rossjrw/ur/issues/new?title=ur-move-1%400-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a new piece to tile 3](https://github.com/rossjrw/ur/issues/new?title=ur-move-3%400-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
 
 <details><summary>The game so far</summary>
 
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
-  | 2020-07-30 01:28:16 | **0** | :white_circle: **[@rossjrw](https://github.com/rossjrw)** started a new game | [#70](https://github.com/rossjrw/ur/issues/70) |  |
+  | 2020-07-30 01:28:16 | **0** | :white_circle: **[@rossjrw](https://github.com/rossjrw)** started a new game | [#70](https://github.com/rossjrw/ur/issues/70) | [link](https://raw.githubusercontent.com/rossjrw/ur/f7f9277b1472d2d3be21fdb595f7a62295ec2498/games/current/board.70.svg) |
+  | 2020-07-30 13:26:47 | **1** | :white_circle: **[@rossjrw](https://github.com/rossjrw)** moved a white piece onto the board to position 1 | [#71](https://github.com/rossjrw/ur/issues/71) |  |
 
 </details>
 
