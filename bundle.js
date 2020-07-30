@@ -24208,11 +24208,11 @@ async function makeMove(state, move, gamePath, octokit, context, log) {
             Object(_issues__WEBPACK_IMPORTED_MODULE_3__["addLabels"])([":crown: Winner!"], octokit, context);
         }
         // Add a comment to the issue to indicate that the move was successful
-        octokit.issues.createComment({
+        await octokit.issues.createComment({
             owner: context.repo.owner,
             repo: context.repo.repo,
             issue_number: context.issue.number,
-            body: `@${context.actor} Done! You ${events.ascensionHappened ? "ascended" : "moved"} a ${state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? "black" : "white"} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`}${events.ascensionHappened ? ". " : ` to position ${toPosition}${events.captureHappened ? ", capturing the opponents' piece!" : ""}. `}${events.rosetteClaimed ? "You claimed a rosette, meaning that your team gets to take another turn! " : ""}${events.gameWon ? "This was the winning move! " : ""}\n\nAsk a friend to make the next move: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+moved+%E2%80%94+take+your+turn+at+https://github.com/rossjrw+%23ur+%23github)`
+            body: `@${context.actor} Done! You ${events.ascensionHappened ? "ascended" : "moved"} a ${state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? "black" : "white"} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`}${events.ascensionHappened ? ". " : ` to position ${toPosition}${events.captureHappened ? ", capturing the opponents' piece!" : ""}. `}${events.rosetteClaimed ? "You claimed a rosette, meaning that your team gets to take another turn! " : ""}${events.gameWon ? "This was the winning move! " : ""}\n\nAsk a friend to ${events.gameWon ? "start the next game" : "make the next move"}: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+${events.gameWon ? "won+a+game" : "moved"}+%E2%80%94+${events.gameWon ? "start+the+next+one" : "take+your+turn"}+at+https://github.com/rossjrw+%23ur+%23github)`
         });
         octokit.issues.update({
             owner: context.repo.owner,
@@ -24224,7 +24224,7 @@ async function makeMove(state, move, gamePath, octokit, context, log) {
         log.addToLog("move", `${events.ascensionHappened ? "ascended" : "moved"} a ${state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? "black" : "white"} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`} ${events.ascensionHappened ? ":rocket:" : `to position ${toPosition}${events.captureHappened ? ` — captured a ${state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? "white" : "black"} piece :crossed_swords:` : ""}`}${events.rosetteClaimed ? " — claimed a rosette :rosette:" : ""}${events.gameWon ? " — won the game :crown:" : ""}`, state.currentPlayer);
         // If the game was won, leave a message to let everyone know
         if (events.gameWon) {
-            octokit.issues.createComment({
+            await octokit.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: context.issue.number,
@@ -24551,14 +24551,22 @@ async function updateSvg(state, gamePath, baseSvgPath, octokit, context) {
             }
         }
     });
-    state.dice.forEach((diceResult, index) => {
-        if (diceResult) {
-            svg = hideSvgElement(svg, `dice${index}-spot-off`);
-        }
-        else {
-            svg = hideSvgElement(svg, `dice${index}-spot-on`);
-        }
-    });
+    if (state.dice) {
+        state.dice.forEach((diceResult, index) => {
+            if (diceResult) {
+                svg = hideSvgElement(svg, `dice${index}-spot-off`);
+            }
+            else {
+                svg = hideSvgElement(svg, `dice${index}-spot-on`);
+            }
+        });
+    }
+    else {
+        svg = hideSvgElement(svg, "dice0");
+        svg = hideSvgElement(svg, "dice1");
+        svg = hideSvgElement(svg, "dice2");
+        svg = hideSvgElement(svg, "dice3");
+    }
     // Save the new SVG to a file
     changes.push({
         path: `${gamePath}/board.${context.issue.number}.svg`,
