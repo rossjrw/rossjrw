@@ -22,10 +22,10 @@ What would you like to do?
 
 <details><summary>The game so far</summary>
 
-| Game log |
-| --- |
-<% logItems.forEach(logItem => { -%>
-  | <%= logItem %> |
+| Time | Turn | Event | Issue | Board |
+| :---: | :---: | :--- | :---: | :---: |
+<% logItems.forEach((logItem, index) => { -%>
+  | <%= logItem[0] %> | **<%= index %>** | <%= logItem[1] %> | <%= logItem[2] %> | <%= logItem[3] %> |
 <% }) -%>
 
 </details>
