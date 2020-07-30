@@ -63,7 +63,14 @@ export class Log {
     this.internalLog = JSON.parse(
       Buffer.from(logFile.data.content!, "base64").toString()
     )
-    this.lastCommitSha = logFile.data.sha
+
+    // Get the SHA of the latest commit
+    const lastCommit = await this.octokit.git.getRef({
+      owner: this.context.repo.owner,
+      repo: this.context.repo.repo,
+      ref: "heads/play",
+    })
+    this.lastCommitSha = lastCommit.data.object.sha
   }
 
   addToLog (
