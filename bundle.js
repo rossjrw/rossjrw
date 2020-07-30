@@ -23887,7 +23887,7 @@ async function generateReadme(state, gamePath, octokit, context, log) {
     const logItems = log.internalLog.map(logItem => {
         return [
             `${logItem.time.split(".")[0].split("T").join(" ")}`,
-            `${logItem.team === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? ":black_circle:" : ":white_circle:"} **[@${logItem.username}](https://github.com/${logItem.username})** ${logItem.message}`,
+            `${logItem.team === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? ":black_circle:" : ":white_circle:"} ${logItem.action === "pass" ? "" : `**[@${logItem.username}](https://github.com/${logItem.username})**`} ${logItem.message}`,
             `[#${logItem.issue}](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${logItem.issue})`,
             `${logItem.boardImage === null ? "" : `[link](${logItem.boardImage})`}`,
         ];
