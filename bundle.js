@@ -23932,7 +23932,7 @@ async function getFile(branch, gamePath, filename, octokit, context) {
             owner: context.issue.owner,
             repo: context.issue.repo,
             ref: branch,
-            path: `${gamePath}/${filename}`,
+            path: `${gamePath}${filename === null ? "" : `/${filename}`}`,
             mediaType: { format: "raw" },
         });
     }
@@ -24075,7 +24075,7 @@ class Log {
         // second-to-last image needs to be linked
         if (this.internalLog.length >= 2 &&
             this.internalLog[this.internalLog.length - 2].boardImage === null) {
-            this.internalLog[this.internalLog.length - 2].boardImage = `https://raw.githubusercontent.com/${this.context.repo.owner}/${this.context.repo.repo}/${this.lastCommitSha}/${this.gamePath}/board.svg`;
+            this.internalLog[this.internalLog.length - 2].boardImage = `https://raw.githubusercontent.com/${this.context.repo.owner}/${this.context.repo.repo}/${this.lastCommitSha}/${this.gamePath}/board.${this.internalLog[this.internalLog.length - 2].issue}.svg`;
         }
         else {
             // The second-to-last image should have had a null address, but it's not
@@ -24224,10 +24224,10 @@ async function makeMove(move, gamePath, octokit, context, log) {
             body: "The game has been won!",
         });
     }
-    // Update README.md with the new state
-    changes = changes.concat(await Object(_generateReadme__WEBPACK_IMPORTED_MODULE_6__["generateReadme"])(newState, gamePath, octokit, context, log));
     // Update the log with this action
     log.addToLog("move", `${events.ascensionHappened ? "ascended" : "moved"} a ${state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? "black" : "white"} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`} ${events.ascensionHappened ? ":rocket:" : `to position ${toPosition}${events.captureHappened ? ` — captured a ${state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? "white" : "black"} piece :crossed_swords:` : ""}. `}${events.rosetteClaimed ? " — claimed a rosette :rosette:" : ""}${events.gameWon ? " — won the game :crown:" : ""}`, state.currentPlayer);
+    // Update README.md with the new state
+    changes = changes.concat(await Object(_generateReadme__WEBPACK_IMPORTED_MODULE_6__["generateReadme"])(newState, gamePath, octokit, context, log));
     return changes;
 }
 
@@ -24459,6 +24459,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateSvg", function() { return updateSvg; });
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _getFile__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/getFile */ "./src/getFile.ts");
+
 
 async function updateSvg(state, gamePath, baseSvgPath, octokit, context) {
     /**
@@ -24472,6 +24474,21 @@ async function updateSvg(state, gamePath, baseSvgPath, octokit, context) {
      * @returns An array of changes to add to the commit.
      */
     const changes = [];
+    // Delete the old board image
+    const gameFiles = await Object(_getFile__WEBPACK_IMPORTED_MODULE_1__["getFile"])("play", gamePath, null, octokit, context);
+    if (gameFiles) {
+        if (!Array.isArray(gameFiles.data)) {
+            throw new Error('GAME_DIR_IS_FILE');
+        }
+        gameFiles.data.forEach(gameFile => {
+            if (/^board\.[0-9]+\.svg$/.test(gameFile.name)) {
+                changes.push({
+                    path: gameFile.path,
+                    content: null,
+                });
+            }
+        });
+    }
     // Get the contents of the template SVG
     const svgFile = await octokit.repos.getContents({
         owner: context.repo.owner,
@@ -24516,7 +24533,7 @@ async function updateSvg(state, gamePath, baseSvgPath, octokit, context) {
     });
     // Save the new SVG to a file
     changes.push({
-        path: `${gamePath}/board.svg`,
+        path: `${gamePath}/board.${context.issue.number}.svg`,
         content: svg,
     });
     return changes;
