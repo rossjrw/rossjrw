@@ -8,21 +8,24 @@ If your GitHub username starts with a letter in the first half of the alphabet
 Otherwise, you're on the **white** team.
   **It's white to play.**
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.78.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.79.svg"></p>
 
   **White team:**
-  You rolled a 2!
+  You rolled a 3!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a new piece to tile 2](https://github.com/rossjrw/ur/issues/new?title=ur-move-2%400-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a new piece to tile 3](https://github.com/rossjrw/ur/issues/new?title=ur-move-3%400-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a piece from tile 2 to tile 5](https://github.com/rossjrw/ur/issues/new?title=ur-move-3%402-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
 
 <details><summary>The game so far</summary>
 
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
   | 2020-07-30 14:24:20 | **0** | :white_circle: **[@rossjrw](https://github.com/rossjrw)** started a new game | [#78](https://github.com/rossjrw/ur/issues/78) |  |
+  | 2020-07-30 14:25:35 | **1** | :white_circle: **[@rossjrw](https://github.com/rossjrw)** moved a white piece onto the board to position 2 | [#79](https://github.com/rossjrw/ur/issues/79) | [link](https://raw.githubusercontent.com/rossjrw/ur/0168f8cacc62e260cf8cc8385a00511870b289a8/games/current/board.79.svg) |
+  | 2020-07-30 14:25:35 | **2** | :black_circle: **[@rossjrw](https://github.com/rossjrw)** The black team rolled a 0 and their turn was automatically passed | [#79](https://github.com/rossjrw/ur/issues/79) |  |
 
 </details>
 
@@ -30,7 +33,7 @@ What would you like to do?
 
 <details><summary>How do I play?</summary>
 
-  The turn starts by rolling 4 binary dice, which is done automatically. That
+  The turn starts by rolling 4 binary dice, which
   results in a number from 0 to 4. The current team gets to move one of their
   pieces by that many tiles.
 
@@ -50,9 +53,42 @@ What would you like to do?
   another turn. Also, a piece that is on the rosette on tile 8 *cannot be
   captured*.
 
+  The first team to **ascend** all seven of their pieces — that is, move them
+  off the board onto position 15 — wins!
+
   Watch [Tom Scott play against Irving
-  Finkel](https://www.youtube.com/watch?v=WZskjLq040I).
+  Finkel](https://www.youtube.com/watch?v=WZskjLq040I) in 2017.
 
   -----
+
+  Playing Ur on my GitHub profile is easy. The dice have already been rolled
+  for you — all you have to do is decide what to do with them.
+
+  Your team is determined by your username. If it starts with a letter in the
+  first half of the English alphabet (A–M), you're on the black team;
+  otherwise, you're on the white team. You can't play a move when it's the
+  other team's turn, though you can certainly try.
+
+  There will be a list of links below the board image with each possible move.
+  Clicking one of those will take you to a page where you can create an Issue
+  in this repository. The fields will already be filled in and all you have to
+  do is click Submit.
+
+  It will take a moment for Github Actions to acknowledge your move, but once
+  it does, you'll see it react with the 'eyes' emoji. No more than a minute
+  later it should react with the 'rocket' emoji to let you know that your move
+  was successful.
+
+  If you don't see any of that, then something went wrong. Ping me in your
+  issue by typing `cc @rossjrw`, and I'll take a look.
+
+  Note that if your team has no possible moves — for example by rolling a 0 —
+  your turn will be automatically skipped. The event log will let you know if
+  this has happened.
+
+  -----
+
+  Check out the `source` branch of this repository for the source code and a
+  little commentary on the inspiration behind this project.
 
 </details>
