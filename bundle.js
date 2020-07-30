@@ -24323,17 +24323,12 @@ async function resetGame(gamePath, oldGamePath, octokit, context, log) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return play; });
-/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ur-game */ "./node_modules/ur-game/src/game.js");
-/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ur_game__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _issues__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/issues */ "./src/issues.ts");
-/* harmony import */ var _error__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/error */ "./src/error.ts");
-/* harmony import */ var _new__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/new */ "./src/new.ts");
-/* harmony import */ var _move__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/move */ "./src/move.ts");
-/* harmony import */ var _commit__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/commit */ "./src/commit.ts");
-/* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/player */ "./src/player.ts");
-/* harmony import */ var _log__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/log */ "./src/log.ts");
-
-
+/* harmony import */ var _issues__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/issues */ "./src/issues.ts");
+/* harmony import */ var _error__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/error */ "./src/error.ts");
+/* harmony import */ var _new__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/new */ "./src/new.ts");
+/* harmony import */ var _move__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/move */ "./src/move.ts");
+/* harmony import */ var _commit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/commit */ "./src/commit.ts");
+/* harmony import */ var _log__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/log */ "./src/log.ts");
 
 
 
@@ -24361,26 +24356,26 @@ async function play(title, octokit, context, core) {
     let changes = [];
     // Prepare a log object, which will be used to merge log entries into a
     // single change
-    const log = new _log__WEBPACK_IMPORTED_MODULE_7__["Log"](gamePath, octokit, context);
+    const log = new _log__WEBPACK_IMPORTED_MODULE_5__["Log"](gamePath, octokit, context);
     await log.prepareInitialLog();
     try {
-        Object(_issues__WEBPACK_IMPORTED_MODULE_1__["addReaction"])("eyes", octokit, context);
+        Object(_issues__WEBPACK_IMPORTED_MODULE_0__["addReaction"])("eyes", octokit, context);
         const [command, move] = parseIssueTitle(title);
         if (command === "new") {
-            changes = changes.concat(await Object(_new__WEBPACK_IMPORTED_MODULE_3__["resetGame"])(gamePath, oldGamePath, octokit, context, log));
+            changes = changes.concat(await Object(_new__WEBPACK_IMPORTED_MODULE_2__["resetGame"])(gamePath, oldGamePath, octokit, context, log));
         }
         else if (command === "move") {
-            changes = changes.concat(await Object(_move__WEBPACK_IMPORTED_MODULE_4__["makeMove"])(move, gamePath, octokit, context, log));
+            changes = changes.concat(await Object(_move__WEBPACK_IMPORTED_MODULE_3__["makeMove"])(move, gamePath, octokit, context, log));
         }
         // Extract changes from the log
         changes = changes.concat(log.makeLogChanges());
         // All the changes have been collected - commit them
-        await Object(_commit__WEBPACK_IMPORTED_MODULE_5__["makeCommit"])(`@${context.actor} ${command === "new" ? "Start a new game" : `Move ${Object(_player__WEBPACK_IMPORTED_MODULE_6__["playerIsOnTeam"])(context.actor, ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK) ? "black" : "white"} ${move}`} (#${context.issue.number})`, changes, octokit, context);
-        Object(_issues__WEBPACK_IMPORTED_MODULE_1__["addReaction"])("rocket", octokit, context);
+        await Object(_commit__WEBPACK_IMPORTED_MODULE_4__["makeCommit"])(`@${context.actor} ${command === "new" ? "Start a new game" : `Move ${move}`} (#${context.issue.number})`, changes, octokit, context);
+        Object(_issues__WEBPACK_IMPORTED_MODULE_0__["addReaction"])("rocket", octokit, context);
     }
     catch (error) {
         // If there was an error, forward it to the user, then stop
-        Object(_error__WEBPACK_IMPORTED_MODULE_2__["handleError"])(error, octokit, context, core);
+        Object(_error__WEBPACK_IMPORTED_MODULE_1__["handleError"])(error, octokit, context, core);
         return;
     }
 }
