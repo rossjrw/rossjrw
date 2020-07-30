@@ -69,6 +69,15 @@
     "time": "2020-07-30T01:22:23.965Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/ur/dc9510a24a7bbde3a6cdbedeb4c41c0995bd55d5/games/current/board.68.svg"
+  },
+  {
+    "username": "rossjrw",
+    "issue": 69,
+    "message": "moved a black piece onto the board to position 2",
+    "time": "2020-07-30T01:23:12.270Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
