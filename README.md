@@ -6,23 +6,26 @@ You're on a team!
 If your GitHub username starts with a letter in the first half of the alphabet
 (A–M), you're on the **black** team.
 Otherwise, you're on the **white** team.
-**It's black to play.**
+**It's white to play.**
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.61.svg"></p>
 
-**Black team:**
-You rolled a 1!
+**White team:**
+You rolled a 3!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a new piece to tile 1](https://github.com/rossjrw/ur/issues/new?title=ur-move-1%400-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a new piece to tile 3](https://github.com/rossjrw/ur/issues/new?title=ur-move-3%400-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a piece from tile 1 to tile 4 (:rosette:)](https://github.com/rossjrw/ur/issues/new?title=ur-move-3%401-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
 
 <details><summary>The game so far</summary>
 
 | Game log |
 | --- |
   | 2020-07-29 16:12:47 :white_circle: **[@rossjrw](https://github.com/rossjrw)** started a new game ([#58](https://github.com/rossjrw/ur/issues/58)) |
+  | 2020-07-29 16:29:23 :white_circle: **[@rossjrw](https://github.com/rossjrw)** moved a white piece onto the board to position 1.  ([#59](https://github.com/rossjrw/ur/issues/59)) ([board](https://raw.githubusercontent.com/rossjrw/ur/2d37cb50493af17dbd53e95c8576fae74da6cd04/games/current/board.59.svg)) |
+  | 2020-07-30 00:36:06 :black_circle: **[@rossjrw](https://github.com/rossjrw)** moved a black piece onto the board to position 1.  ([#61](https://github.com/rossjrw/ur/issues/61)) |
 
 </details>
 
