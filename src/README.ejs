@@ -1,5 +1,6 @@
 Let's play
-[The Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur)!
+[The Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur)
+on my GitHub profile!
 **<%= state.currentPlayer ? "Game is in progress." : "Game has ended." %>**
 
 You're on a team!
@@ -43,7 +44,7 @@ What would you like to do?
 
 <details><summary>How do I play?</summary>
 
-  The turn starts by rolling 4 binary dice, which is done automatically. That
+  The turn starts by rolling 4 binary dice, which
   results in a number from 0 to 4. The current team gets to move one of their
   pieces by that many tiles.
 
@@ -63,9 +64,42 @@ What would you like to do?
   another turn. Also, a piece that is on the rosette on tile 8 *cannot be
   captured*.
 
+  The first team to **ascend** all seven of their pieces — that is, move them
+  off the board onto position 15 — wins!
+
   Watch [Tom Scott play against Irving
-  Finkel](https://www.youtube.com/watch?v=WZskjLq040I).
+  Finkel](https://www.youtube.com/watch?v=WZskjLq040I) in 2017.
 
   -----
+
+  Playing Ur on my GitHub profile is easy. The dice have already been rolled
+  for you — all you have to do is decide what to do with them.
+
+  Your team is determined by your username. If it starts with a letter in the
+  first half of the English alphabet (A–M), you're on the black team;
+  otherwise, you're on the white team. You can't play a move when it's the
+  other team's turn, though you can certainly try.
+
+  There will be a list of links below the board image with each possible move.
+  Clicking one of those will take you to a page where you can create an Issue
+  in this repository. The fields will already be filled in and all you have to
+  do is click Submit.
+
+  It will take a moment for Github Actions to acknowledge your move, but once
+  it does, you'll see it react with the 'eyes' emoji. No more than a minute
+  later it should react with the 'rocket' emoji to let you know that your move
+  was successful.
+
+  If you don't see any of that, then something went wrong. Ping me in your
+  issue by typing `cc @rossjrw`, and I'll take a look.
+
+  Note that if your team has no possible moves — for example by rolling a 0 —
+  your turn will be automatically skipped. The event log will let you know if
+  this has happened.
+
+  -----
+
+  Check out the `source` branch of this repository for the source code and a
+  little commentary on the inspiration behind this project.
 
 </details>

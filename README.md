@@ -24,7 +24,7 @@ I checked my cupboard full of board games and discovered that they were all
 vastly more complicated than I wanted. The simplest I found was
 [Tak](https://en.wikipedia.org/wiki/Tak_%28game%29), a simple abstract game
 that I love but that I'm terrible at — but even that was far too complex, with
-all sorts of moves that the player can make at any given point.
+a 3D element and all sorts of moves that the player can make at any given point.
 
 But then! I remembered [The Royal Game of
 Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur), a game that has been
@@ -46,3 +46,7 @@ lost to the ages?
 I hope you enjoy playing the Royal Game, and that the thought of countless
 generations of your ancestors playing a game that you'll never truly know sends
 a shiver down your spine.
+
+A big thank you to [Felix Schorer](https://github.com/felixschorer) for
+creating the [`ur-game`](https://www.npmjs.com/package/ur-game) npm package
+(MIT) that this project depends upon.
