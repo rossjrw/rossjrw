@@ -1,22 +1,21 @@
 Let's play
 [The Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur)!
-**Game is in progress.**
+**Game has ended.**
 
 You're on a team!
 If your GitHub username starts with a letter in the first half of the alphabet
 (A–M), you're on the **black** team.
 Otherwise, you're on the **white** team.
-**It's white to play.**
+  This game has finished, so we're just waiting for someone to click _"Start a
+  new game"._ That could be you!
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.72.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.77.svg"></p>
 
-**White team:**
-You rolled a 1!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a piece from tile 1 to tile 2](https://github.com/rossjrw/ur/issues/new?title=ur-move-1%401-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Start a new game](https://github.com/rossjrw/ur/issues/new?title=ur-new&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
 
 <details><summary>The game so far</summary>
 
@@ -24,7 +23,8 @@ What would you like to do?
 | :---: | :---: | :--- | :---: | :---: |
   | 2020-07-30 01:28:16 | **0** | :white_circle: **[@rossjrw](https://github.com/rossjrw)** started a new game | [#70](https://github.com/rossjrw/ur/issues/70) | [link](https://raw.githubusercontent.com/rossjrw/ur/f7f9277b1472d2d3be21fdb595f7a62295ec2498/games/current/board.70.svg) |
   | 2020-07-30 13:26:47 | **1** | :white_circle: **[@rossjrw](https://github.com/rossjrw)** moved a white piece onto the board to position 1 | [#71](https://github.com/rossjrw/ur/issues/71) | [link](https://raw.githubusercontent.com/rossjrw/ur/c3f37cff27162f3b78e85974423b3fdb267f5d7b/games/current/board.71.svg) |
-  | 2020-07-30 13:27:31 | **2** | :black_circle: **[@rossjrw](https://github.com/rossjrw)** moved a black piece onto the board to position 3 | [#72](https://github.com/rossjrw/ur/issues/72) |  |
+  | 2020-07-30 13:27:31 | **2** | :black_circle: **[@rossjrw](https://github.com/rossjrw)** moved a black piece onto the board to position 3 | [#72](https://github.com/rossjrw/ur/issues/72) | [link](https://raw.githubusercontent.com/rossjrw/ur/763ee760116fe82144db388486ed43d09d2bd3cd/games/current/board.72.svg) |
+  | 2020-07-30 14:03:07 | **3** | :white_circle: **[@rossjrw](https://github.com/rossjrw)** ascended a white piece from position 14 :rocket: — won the game :crown: | [#77](https://github.com/rossjrw/ur/issues/77) |  |
 
 </details>
 

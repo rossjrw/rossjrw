@@ -24,6 +24,15 @@
     "time": "2020-07-30T13:27:31.350Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/ur/763ee760116fe82144db388486ed43d09d2bd3cd/games/current/board.72.svg"
+  },
+  {
+    "username": "rossjrw",
+    "issue": 77,
+    "message": "ascended a white piece from position 14 :rocket: — won the game :crown:",
+    "time": "2020-07-30T14:03:07.783Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]
