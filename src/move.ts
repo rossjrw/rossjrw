@@ -9,6 +9,7 @@ import { analyseMove } from '@/analyseMove'
 import { generateReadme } from '@/generateReadme'
 import { Change } from '@/play'
 import { Log } from '@/log'
+import { makeVictoryMessage } from '@/victory'
 
 export async function makeMove (
   state: Ur.State,
@@ -34,6 +35,7 @@ export async function makeMove (
   }
 
   let newState
+  let events
 
   if (move === "pass") {
     // If we are just passing, then void the turn and skip all checks
@@ -75,7 +77,7 @@ export async function makeMove (
     // All that remains is to report back to the issue and update the README.
 
     // Let's detect what happened in that move
-    const events = analyseMove(state, fromPosition, toPosition)
+    events = analyseMove(state, fromPosition, toPosition)
     if (events.rosetteClaimed) {
       addLabels([":rosette: Rosette!"], octokit, context)
     }
@@ -103,27 +105,26 @@ export async function makeMove (
       state: "closed",
     })
 
-    // If the game was won, leave a message to let everyone know
-    if (events.gameWon) {
-      // TODO - need to find a reliable way of working out which issues are
-      // related to this one (that's not based on issue titles)
-      octokit.issues.createComment({
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        issue_number: context.issue.number,
-        body: "The game has been won!",
-      })
-    }
-
     // Update the log with this action
     log.addToLog(
       "move",
       `${events.ascensionHappened ? "ascended" : "moved"} a ${state.currentPlayer === Ur.BLACK ? "black" : "white"} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`} ${events.ascensionHappened ? ":rocket:" : `to position ${toPosition}${events.captureHappened ? ` — captured a ${state.currentPlayer === Ur.BLACK ? "white" : "black"} piece :crossed_swords:` : ""}`}${events.rosetteClaimed ? " — claimed a rosette :rosette:" : ""}${events.gameWon ? " — won the game :crown:" : ""}`,
       state.currentPlayer,
     )
+
+    // If the game was won, leave a message to let everyone know
+    if (events.gameWon) {
+      octokit.issues.createComment({
+        owner: context.repo.owner,
+        repo: context.repo.repo,
+        issue_number: context.issue.number,
+        body: makeVictoryMessage(log),
+      })
+    }
   }
 
-  if (Object.keys(newState.possibleMoves!).length === 0) {
+  if (events && !events.gameWon &&
+      Object.keys(newState.possibleMoves!).length === 0) {
     // If a 0 was rolled, then the new turn should be passed
     log.addToLog(
       "pass",
