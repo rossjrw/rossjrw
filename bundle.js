@@ -24036,7 +24036,7 @@ class Log {
         const lastCommit = await this.octokit.git.getRef({
             owner: this.context.repo.owner,
             repo: this.context.repo.repo,
-            ref: "play",
+            ref: "heads/play",
         });
         this.lastCommitSha = lastCommit.data.object.sha;
     }
