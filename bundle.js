@@ -23885,7 +23885,12 @@ async function generateReadme(state, gamePath, octokit, context, log) {
     log.linkPreviousBoardState();
     // Make a list of moves that have happened so far this game, as markdown
     const logItems = log.internalLog.map(logItem => {
-        return `${logItem.time.split(".")[0].split("T").join(" ")} ${logItem.team === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? ":black_circle:" : ":white_circle:"} **[@${logItem.username}](https://github.com/${logItem.username})** ${logItem.message} ([#${logItem.issue}](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${logItem.issue}))${logItem.boardImage === null ? "" : ` ([board](${logItem.boardImage}))`}`;
+        return [
+            `${logItem.time.split(".")[0].split("T").join(" ")}`,
+            `${logItem.team === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? ":black_circle:" : ":white_circle:"} **[@${logItem.username}](https://github.com/${logItem.username})** ${logItem.message}`,
+            `[#${logItem.issue}](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${logItem.issue})`,
+            `${logItem.boardImage === null ? "" : `[link](${logItem.boardImage})`}`,
+        ];
     });
     const readme = ejs__WEBPACK_IMPORTED_MODULE_1___default.a.render(template, { actions, state, logItems, context });
     const currentReadmeFile = await octokit.repos.getContents({
@@ -24027,7 +24032,13 @@ class Log {
             throw new Error("FILE_IS_DIR");
         }
         this.internalLog = JSON.parse(Buffer.from(logFile.data.content, "base64").toString());
-        this.lastCommitSha = logFile.data.sha;
+        // Get the SHA of the latest commit
+        const lastCommit = await this.octokit.git.getRef({
+            owner: this.context.repo.owner,
+            repo: this.context.repo.repo,
+            ref: "play",
+        });
+        this.lastCommitSha = lastCommit.data.object.sha;
     }
     addToLog(action, message, team) {
         /**
@@ -24225,7 +24236,7 @@ async function makeMove(move, gamePath, octokit, context, log) {
         });
     }
     // Update the log with this action
-    log.addToLog("move", `${events.ascensionHappened ? "ascended" : "moved"} a ${state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? "black" : "white"} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`} ${events.ascensionHappened ? ":rocket:" : `to position ${toPosition}${events.captureHappened ? ` — captured a ${state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? "white" : "black"} piece :crossed_swords:` : ""}. `}${events.rosetteClaimed ? " — claimed a rosette :rosette:" : ""}${events.gameWon ? " — won the game :crown:" : ""}`, state.currentPlayer);
+    log.addToLog("move", `${events.ascensionHappened ? "ascended" : "moved"} a ${state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? "black" : "white"} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`} ${events.ascensionHappened ? ":rocket:" : `to position ${toPosition}${events.captureHappened ? ` — captured a ${state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? "white" : "black"} piece :crossed_swords:` : ""}`}${events.rosetteClaimed ? " — claimed a rosette :rosette:" : ""}${events.gameWon ? " — won the game :crown:" : ""}`, state.currentPlayer);
     // Update README.md with the new state
     changes = changes.concat(await Object(_generateReadme__WEBPACK_IMPORTED_MODULE_6__["generateReadme"])(newState, gamePath, octokit, context, log));
     return changes;
