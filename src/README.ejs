@@ -6,12 +6,21 @@ You're on a team!
 If your GitHub username starts with a letter in the first half of the alphabet
 (A–M), you're on the **black** team.
 Otherwise, you're on the **white** team.
-**It's <%= state.currentPlayer === "b" ? "black" : "white" %> to play.**
+<% if (state.currentPlayer === "b") { -%>
+  **It's black to play.**
+<% } else if (state.currentPlayer === "w") { -%>
+  **It's white to play.**
+<% } else { -%>
+  This game has finished, so we're just waiting for someone to click _"Start a
+  new game"._ That could be you!
+<% } -%>
 
 <p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.<%= context.issue.number %>.svg"></p>
 
-**<%= state.currentPlayer === "b" ? "Black" : "White" %> team:**
-You rolled a <%= state.diceResult %>!
+<% if (state.currentPlayer) { -%>
+  **<%= state.currentPlayer === "b" ? "Black" : "White" %> team:**
+  You rolled a <%= state.diceResult %>!
+<% } -%>
 What would you like to do?
 
 | Choices *(click one of them!)* |
