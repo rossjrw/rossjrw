@@ -4,6 +4,7 @@ import { State } from "ur-game"
 import { range } from "lodash"
 
 import { Change } from '@/play'
+import { getFile } from '@/getFile'
 
 export async function updateSvg(
   state: State,
@@ -23,6 +24,24 @@ export async function updateSvg(
    * @returns An array of changes to add to the commit.
    */
   const changes: Change[] = []
+
+  // Delete the old board image
+  const gameFiles = await getFile(
+    "play", gamePath, null, octokit, context
+  )
+  if (gameFiles) {
+    if (!Array.isArray(gameFiles.data)) {
+      throw new Error('GAME_DIR_IS_FILE')
+    }
+    gameFiles.data.forEach(gameFile => {
+      if (/^board\.[0-9]+\.svg$/.test(gameFile.name)) {
+        changes.push({
+          path: gameFile.path,
+          content: null,
+        })
+      }
+    })
+  }
 
   // Get the contents of the template SVG
   const svgFile = await octokit.repos.getContents({
@@ -73,7 +92,7 @@ export async function updateSvg(
 
   // Save the new SVG to a file
   changes.push({
-    path: `${gamePath}/board.svg`,
+    path: `${gamePath}/board.${context.issue.number}.svg`,
     content: svg,
   })
 

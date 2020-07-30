@@ -4,7 +4,7 @@ import { Context } from "@actions/github/lib/context"
 export async function getFile (
   branch: "source" | "play",
   gamePath: string,
-  filename: string,
+  filename: string | null,
   octokit: Octokit,
   context: Context,
 ): Promise<Octokit.Response<Octokit.ReposGetContentsResponse> | null> {
@@ -18,7 +18,7 @@ export async function getFile (
       owner: context.issue.owner,
       repo: context.issue.repo,
       ref: branch,
-      path: `${gamePath}/${filename}`,
+      path: `${gamePath}${filename === null ? "" : `/${filename}`}`,
       mediaType: { format: "raw" },
     })
   } catch (error) {

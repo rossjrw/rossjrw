@@ -118,7 +118,7 @@ export class Log {
     // second-to-last image needs to be linked
     if (this.internalLog.length >= 2 &&
         this.internalLog[this.internalLog.length - 2].boardImage === null) {
-      this.internalLog[this.internalLog.length - 2].boardImage = `https://raw.githubusercontent.com/${this.context.repo.owner}/${this.context.repo.repo}/${this.lastCommitSha}/${this.gamePath}/board.svg`
+      this.internalLog[this.internalLog.length - 2].boardImage = `https://raw.githubusercontent.com/${this.context.repo.owner}/${this.context.repo.repo}/${this.lastCommitSha}/${this.gamePath}/board.${this.internalLog[this.internalLog.length - 2].issue}.svg`
     } else {
       // The second-to-last image should have had a null address, but it's not
       // absolutely critical to execution

@@ -8,7 +8,7 @@ If your GitHub username starts with a letter in the first half of the alphabet
 Otherwise, you're on the **white** team.
 **It's <%= state.currentPlayer === "b" ? "black" : "white" %> to play.**
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.<%= context.issue.number %>.svg"></p>
 
 **<%= state.currentPlayer === "b" ? "Black" : "White" %> team:**
 You rolled a <%= state.diceResult %>!

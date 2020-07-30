@@ -85,7 +85,7 @@ export async function generateReadme (
     return `${logItem.time.split(".")[0].split("T").join(" ")} ${logItem.team === Ur.BLACK ? ":black_circle:" : ":white_circle:"} **[@${logItem.username}](https://github.com/${logItem.username})** ${logItem.message} ([#${logItem.issue}](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${logItem.issue}))${logItem.boardImage === null ? "" : ` ([board](${logItem.boardImage}))`}`
   })
 
-  const readme = ejs.render(template, { actions, state, logItems })
+  const readme = ejs.render(template, { actions, state, logItems, context })
 
   const currentReadmeFile = await octokit.repos.getContents({
     owner: context.repo.owner,
