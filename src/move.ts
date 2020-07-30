@@ -92,7 +92,7 @@ export async function makeMove (
     }
 
     // Add a comment to the issue to indicate that the move was successful
-    octokit.issues.createComment({
+    await octokit.issues.createComment({
       owner: context.repo.owner,
       repo: context.repo.repo,
       issue_number: context.issue.number,
@@ -114,7 +114,7 @@ export async function makeMove (
 
     // If the game was won, leave a message to let everyone know
     if (events.gameWon) {
-      octokit.issues.createComment({
+      await octokit.issues.createComment({
         owner: context.repo.owner,
         repo: context.repo.repo,
         issue_number: context.issue.number,
