@@ -74,7 +74,7 @@ export class Log {
   }
 
   addToLog (
-    action: "new" | "move",
+    action: "new" | "move" | "pass",
     message: string,
     team: Ur.Player,
   ): void {

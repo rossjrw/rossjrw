@@ -8,8 +8,8 @@ import { handleError } from '@/error'
 import { resetGame } from '@/new'
 import { makeMove } from '@/move'
 import { makeCommit } from '@/commit'
-import { playerIsOnTeam } from '@/player'
 import { Log } from '@/log'
+import { getFile } from '@/getFile'
 
 export interface Change {
   path: string
@@ -53,13 +53,27 @@ export default async function play (
 
     const [command, move] = parseIssueTitle(title)
 
+    // Get the current game state file, but it's null if the file doesn't exist
+    const stateFile = await getFile(
+      "play", gamePath, "state.json", octokit, context
+    )
+    if (!stateFile) {
+      throw new Error('MOVE_WHEN_EMPTY_GAME')
+    }
+    if (Array.isArray(stateFile.data)) {
+      throw new Error('FILE_IS_DIR')
+    }
+    const state = JSON.parse(
+      Buffer.from(stateFile.data.content!, "base64").toString()
+    )
+
     if (command === "new") {
       changes = changes.concat(
         await resetGame(gamePath, oldGamePath, octokit, context, log)
       )
     } else if (command === "move") {
       changes = changes.concat(
-        await makeMove(move, gamePath, octokit, context, log)
+        await makeMove(state, move, gamePath, octokit, context, log)
       )
     }
 
@@ -68,7 +82,7 @@ export default async function play (
 
     // All the changes have been collected - commit them
     await makeCommit(
-      `@${context.actor} ${command === "new" ? "Start a new game" : `Move ${move}`} (#${context.issue.number})`,
+      `@${context.actor} ${command === "new" ? "Start a new game" : `Move ${state.currentPlayer === Ur.BLACK ? "black" : "white"} ${move}`} (#${context.issue.number})`,
       changes,
       octokit,
       context,
