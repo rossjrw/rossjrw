@@ -9,17 +9,16 @@ If your GitHub username starts with a letter in the first half of the alphabet
 Otherwise, you're on the **white** team.
   **It's white to play.**
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.81.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.83.svg"></p>
 
   **White team:**
-  You rolled a 4!
+  You rolled a 2!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a new piece to tile 4 (:rosette:)](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-4%400-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
-  | [Move a piece from tile 2 to tile 6](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-4%402-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
-  | [Move a piece from tile 3 to tile 7](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-4%403-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a piece from tile 3 to tile 5](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%403-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a piece from tile 4 to tile 6](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%404-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
 
 <details><summary>The game so far</summary>
 
@@ -29,7 +28,8 @@ What would you like to do?
   | 2020-07-30 14:25:35 | **1** | :white_circle: **[@rossjrw](https://github.com/rossjrw)** moved a white piece onto the board to position 2 | [#79](https://github.com/rossjrw/rossjrw/issues/79) | [link](https://raw.githubusercontent.com/rossjrw/ur/0168f8cacc62e260cf8cc8385a00511870b289a8/games/current/board.79.svg) |
   | 2020-07-30 14:25:35 | **2** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#79](https://github.com/rossjrw/rossjrw/issues/79) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/728e861bb95e24c3bad3b24206de3a1182caa805/games/current/board.79.svg) |
   | 2020-07-30 15:16:02 | **3** | :white_circle: **[@rossjrw](https://github.com/rossjrw)** moved a white piece onto the board to position 3 | [#80](https://github.com/rossjrw/rossjrw/issues/80) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/1066e415bb308a4166acd2b23e3665c6ea707275/games/current/board.80.svg) |
-  | 2020-07-30 15:17:39 | **4** | :black_circle: **[@LorrdOdin97](https://github.com/LorrdOdin97)** moved a black piece onto the board to position 1 | [#81](https://github.com/rossjrw/rossjrw/issues/81) |  |
+  | 2020-07-30 15:17:39 | **4** | :black_circle: **[@LorrdOdin97](https://github.com/LorrdOdin97)** moved a black piece onto the board to position 1 | [#81](https://github.com/rossjrw/rossjrw/issues/81) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/6c42e5716f8d01af93c2b216f6dbe9359f08ce66/games/current/board.81.svg) |
+  | 2020-08-05 04:18:00 | **5** | :white_circle: **[@tb148](https://github.com/tb148)** moved a white piece onto the board to position 4 — claimed a rosette :rosette: | [#83](https://github.com/rossjrw/rossjrw/issues/83) |  |
 
 </details>
 
