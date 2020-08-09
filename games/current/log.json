@@ -78,6 +78,15 @@
     "time": "2020-08-09T11:23:20.357Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2fbe5a5884fd624d614e6ba2c294573b5ef3d711/games/current/board.92.svg"
+  },
+  {
+    "username": "tchiarani",
+    "issue": 93,
+    "message": "moved a white piece from position 4 to position 5",
+    "time": "2020-08-09T19:01:46.996Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]
