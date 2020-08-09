@@ -69,6 +69,15 @@
     "time": "2020-08-07T18:46:21.871Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ae2b994c09cc42031bd5d7d8e490de79fb92ad33/games/current/board.88.svg"
+  },
+  {
+    "username": "scribble-de-gook",
+    "issue": 92,
+    "message": "moved a white piece from position 5 to position 8 — claimed a rosette :rosette:",
+    "time": "2020-08-09T11:23:20.357Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]

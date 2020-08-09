@@ -9,17 +9,18 @@ If your GitHub username starts with a letter in the first half of the alphabet
 Otherwise, you're on the **white** team.
   **It's white to play.**
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.88.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.92.svg"></p>
 
   **White team:**
-  You rolled a 3!
+  You rolled a 1!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a new piece to tile 3](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%400-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
-  | [Move a piece from tile 4 to tile 7](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%404-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
-  | [Move a piece from tile 5 to tile 8 (:rosette:)](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%405-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a new piece to tile 1](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%400-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a piece from tile 2 to tile 3](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%402-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a piece from tile 4 to tile 5](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%404-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a piece from tile 8 to tile 9](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%408-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
 
 <details><summary>The game so far</summary>
 
@@ -32,7 +33,8 @@ What would you like to do?
   | 2020-07-30 15:17:39 | **4** | :black_circle: **[@LorrdOdin97](https://github.com/LorrdOdin97)** moved a black piece onto the board to position 1 | [#81](https://github.com/rossjrw/rossjrw/issues/81) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/6c42e5716f8d01af93c2b216f6dbe9359f08ce66/games/current/board.81.svg) |
   | 2020-08-05 04:18:00 | **5** | :white_circle: **[@tb148](https://github.com/tb148)** moved a white piece onto the board to position 4 — claimed a rosette :rosette: | [#83](https://github.com/rossjrw/rossjrw/issues/83) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/034e6ca15d88791d1f0e269775caeadc24590439/games/current/board.83.svg) |
   | 2020-08-07 00:56:38 | **6** | :white_circle: **[@rossjrw](https://github.com/rossjrw)** moved a white piece from position 3 to position 5 | [#86](https://github.com/rossjrw/rossjrw/issues/86) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/7ae91dc3075f0c220a23a3078481aadd86dd3a6f/games/current/board.86.svg) |
-  | 2020-08-07 18:46:21 | **7** | :black_circle: **[@IRHM](https://github.com/IRHM)** moved a black piece onto the board to position 3 | [#88](https://github.com/rossjrw/rossjrw/issues/88) |  |
+  | 2020-08-07 18:46:21 | **7** | :black_circle: **[@IRHM](https://github.com/IRHM)** moved a black piece onto the board to position 3 | [#88](https://github.com/rossjrw/rossjrw/issues/88) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/ae2b994c09cc42031bd5d7d8e490de79fb92ad33/games/current/board.88.svg) |
+  | 2020-08-09 11:23:20 | **8** | :white_circle: **[@scribble-de-gook](https://github.com/scribble-de-gook)** moved a white piece from position 5 to position 8 — claimed a rosette :rosette: | [#92](https://github.com/rossjrw/rossjrw/issues/92) |  |
 
 </details>
 
