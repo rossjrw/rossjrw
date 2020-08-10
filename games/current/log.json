@@ -96,6 +96,15 @@
     "time": "2020-08-10T06:33:53.704Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/41d68ab1ae3606e8221d943e513be113497bdec3/games/current/board.94.svg"
+  },
+  {
+    "username": "bejoistic",
+    "issue": 95,
+    "message": "moved a black piece from position 3 to position 5 — captured a white piece :crossed_swords:",
+    "time": "2020-08-10T06:34:45.857Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
