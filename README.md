@@ -1,9 +1,9 @@
-Let's play
-[The Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur)
-on my GitHub profile!
-**Game is in progress.**
+Welcome to my Github profile!
+We're playing
+[The Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur).
+**This game is in progress,** but you can join!
 
-You're on a team!
+:wave: You're on a team!
 If your GitHub username starts with a letter in the first half of the alphabet
 (A–M), you're on the **black** team.
 Otherwise, you're on the **white** team.
