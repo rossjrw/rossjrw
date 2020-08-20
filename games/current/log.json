@@ -114,6 +114,15 @@
     "time": "2020-08-18T23:05:00.906Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/daa627126407d8fa27398b8cc45245636b1ef278/games/current/board.104.svg"
+  },
+  {
+    "username": "UndarkAido",
+    "issue": 105,
+    "message": "moved a white piece from position 4 to position 5 — captured a black piece :crossed_swords:",
+    "time": "2020-08-20T16:15:12.718Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]
