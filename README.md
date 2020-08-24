@@ -7,22 +7,23 @@ You're on a team! :wave:
 If your GitHub username starts with a letter in the first half of the alphabet
 (A–M), you're on the **black** team.
 Otherwise, you're on the **white** team.
-  **It's black to play.**
+  **It's white to play.**
 
 If it's not your turn, check back later, or
 [poke a friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw+%23ur+%23github)
 to make a move!
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.105.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.106.svg"></p>
 
-  **Black team:**
+  **White team:**
   You rolled a 2!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a new piece to tile 2](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%400-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
-  | [Move a piece from tile 4 to tile 6](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%404-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a piece from tile 2 to tile 4 (:rosette:)](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%402-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a piece from tile 5 to tile 7](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%405-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a piece from tile 8 to tile 10](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%408-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
 
 <details><summary>The game so far</summary>
 
@@ -41,7 +42,8 @@ What would you like to do?
   | 2020-08-10 06:33:53 | **10** | :black_circle: **[@bejoistic](https://github.com/bejoistic)** moved a black piece from position 1 to position 4 — claimed a rosette :rosette: | [#94](https://github.com/rossjrw/rossjrw/issues/94) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/41d68ab1ae3606e8221d943e513be113497bdec3/games/current/board.94.svg) |
   | 2020-08-10 06:34:45 | **11** | :black_circle: **[@bejoistic](https://github.com/bejoistic)** moved a black piece from position 3 to position 5 — captured a white piece :crossed_swords: | [#95](https://github.com/rossjrw/rossjrw/issues/95) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/d68b56d7e3e70ba01ea23f96f431f1b8a668fc23/games/current/board.95.svg) |
   | 2020-08-18 23:05:00 | **12** | :white_circle: **[@tholeb](https://github.com/tholeb)** moved a white piece onto the board to position 4 — claimed a rosette :rosette: | [#104](https://github.com/rossjrw/rossjrw/issues/104) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/daa627126407d8fa27398b8cc45245636b1ef278/games/current/board.104.svg) |
-  | 2020-08-20 16:15:12 | **13** | :white_circle: **[@UndarkAido](https://github.com/UndarkAido)** moved a white piece from position 4 to position 5 — captured a black piece :crossed_swords: | [#105](https://github.com/rossjrw/rossjrw/issues/105) |  |
+  | 2020-08-20 16:15:12 | **13** | :white_circle: **[@UndarkAido](https://github.com/UndarkAido)** moved a white piece from position 4 to position 5 — captured a black piece :crossed_swords: | [#105](https://github.com/rossjrw/rossjrw/issues/105) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/0ba7ef1d093f01932fc1f4fc416d3fd142dcfc95/games/current/board.105.svg) |
+  | 2020-08-24 21:48:04 | **14** | :black_circle: **[@Bonsailinse](https://github.com/Bonsailinse)** moved a black piece onto the board to position 2 | [#106](https://github.com/rossjrw/rossjrw/issues/106) |  |
 
 </details>
 
