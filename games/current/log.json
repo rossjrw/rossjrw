@@ -132,6 +132,15 @@
     "time": "2020-08-24T21:48:04.152Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d6d359fddf26ceecf805a6bda21b29147dd66dbd/games/current/board.106.svg"
+  },
+  {
+    "username": "Notekunn",
+    "issue": 109,
+    "message": "moved a white piece from position 2 to position 4 — claimed a rosette :rosette:",
+    "time": "2020-08-30T12:35:40.637Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]
