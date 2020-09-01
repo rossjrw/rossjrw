@@ -142,5 +142,23 @@
     "team": "w",
     "action": "move",
     "boardImage": null
+  },
+  {
+    "username": "Rishit-dagli",
+    "issue": 110,
+    "message": "moved a white piece from position 4 to position 7",
+    "time": "2020-09-01T03:09:49.375Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4929e7984daf5ca7076347d8286764b646c855cf/games/current/board.110.svg"
+  },
+  {
+    "username": "Rishit-dagli",
+    "issue": 110,
+    "message": "The black team rolled a 0 and their turn was automatically passed",
+    "time": "2020-09-01T03:09:49.375Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": null
   }
 ]
