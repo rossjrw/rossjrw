@@ -186,6 +186,15 @@
     "time": "2020-09-02T06:42:25.242Z",
     "team": "b",
     "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/febc6de23dbdb108b9b9d778940313bbfa7266f8/games/current/board.113.svg"
+  },
+  {
+    "username": "Notekunn",
+    "issue": 114,
+    "message": "moved a white piece onto the board to position 3",
+    "time": "2020-09-02T06:43:07.086Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]
