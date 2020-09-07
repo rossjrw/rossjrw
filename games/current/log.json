@@ -222,6 +222,15 @@
     "time": "2020-09-05T13:45:35.329Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1e6ec3c7e3ef32da5b7449fedd6bc25a9863f800/games/current/board.119.svg"
+  },
+  {
+    "username": "MarikIshtar007",
+    "issue": 120,
+    "message": "moved a black piece onto the board to position 1",
+    "time": "2020-09-07T20:01:49.323Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
