@@ -231,6 +231,15 @@
     "time": "2020-09-07T20:01:49.323Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2e9c524b524fbea03570326d827cc4781287d528/games/current/board.120.svg"
+  },
+  {
+    "username": "Rishit-dagli",
+    "issue": 122,
+    "message": "moved a white piece from position 4 to position 5",
+    "time": "2020-09-08T10:24:06.166Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]
