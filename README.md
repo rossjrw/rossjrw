@@ -7,23 +7,24 @@ You're on a team! :wave:
 If your GitHub username starts with a letter in the first half of the alphabet
 (A–M), you're on the **black** team.
 Otherwise, you're on the **white** team.
-  **It's black to play.**
+  **It's white to play.**
 
 If it's not your turn, check back later, or
 [poke a friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw+%23ur+%23github)
 to make a move!
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.122.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.124.svg"></p>
 
-  **Black team:**
-  You rolled a 2!
+  **White team:**
+  You rolled a 1!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a new piece to tile 2](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%400-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
-  | [Move a piece from tile 1 to tile 3](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%401-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
-  | [Move a piece from tile 4 to tile 6 (:crossed_swords:)](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%404-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a new piece to tile 1](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%400-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a piece from tile 3 to tile 4 (:rosette:)](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%403-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a piece from tile 5 to tile 6 (:crossed_swords:)](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%405-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a piece from tile 8 to tile 9](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%408-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
 
 <details><summary>The game so far</summary>
 
@@ -55,7 +56,8 @@ What would you like to do?
   | 2020-09-03 23:08:27 | **23** | :white_circle: **[@ponickkhan](https://github.com/ponickkhan)** moved a white piece from position 5 to position 6 — captured a black piece :crossed_swords: | [#117](https://github.com/rossjrw/rossjrw/issues/117) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/85b38c3f488134eafff858a566de104bf1b49c94/games/current/board.117.svg) |
   | 2020-09-05 13:45:35 | **24** | :black_circle: **[@jffrydsr](https://github.com/jffrydsr)** moved a black piece from position 2 to position 4 — claimed a rosette :rosette: | [#119](https://github.com/rossjrw/rossjrw/issues/119) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/1e6ec3c7e3ef32da5b7449fedd6bc25a9863f800/games/current/board.119.svg) |
   | 2020-09-07 20:01:49 | **25** | :black_circle: **[@MarikIshtar007](https://github.com/MarikIshtar007)** moved a black piece onto the board to position 1 | [#120](https://github.com/rossjrw/rossjrw/issues/120) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/2e9c524b524fbea03570326d827cc4781287d528/games/current/board.120.svg) |
-  | 2020-09-08 10:24:06 | **26** | :white_circle: **[@Rishit-dagli](https://github.com/Rishit-dagli)** moved a white piece from position 4 to position 5 | [#122](https://github.com/rossjrw/rossjrw/issues/122) |  |
+  | 2020-09-08 10:24:06 | **26** | :white_circle: **[@Rishit-dagli](https://github.com/Rishit-dagli)** moved a white piece from position 4 to position 5 | [#122](https://github.com/rossjrw/rossjrw/issues/122) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/4e2b904a394800a0bcb929ae081763946049a3a9/games/current/board.122.svg) |
+  | 2020-09-10 02:07:51 | **27** | :black_circle: **[@jy1263](https://github.com/jy1263)** moved a black piece from position 4 to position 6 — captured a white piece :crossed_swords: | [#124](https://github.com/rossjrw/rossjrw/issues/124) |  |
 
 </details>
 
