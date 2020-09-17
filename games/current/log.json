@@ -285,6 +285,15 @@
     "time": "2020-09-17T03:55:27.231Z",
     "team": "b",
     "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/79d848be83a541edf06e63433a2ae4f58a66205f/games/current/board.129.svg"
+  },
+  {
+    "username": "ponickkhan",
+    "issue": 130,
+    "message": "moved a white piece onto the board to position 2",
+    "time": "2020-09-17T14:22:06.741Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]
