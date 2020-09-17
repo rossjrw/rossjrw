@@ -268,5 +268,23 @@
     "team": "b",
     "action": "move",
     "boardImage": null
+  },
+  {
+    "username": "spielers",
+    "issue": 129,
+    "message": "moved a white piece from position 2 to position 5",
+    "time": "2020-09-17T03:55:27.231Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/5f58abb41afa5fe51bd949aa94555fc711afc501/games/current/board.129.svg"
+  },
+  {
+    "username": "spielers",
+    "issue": 129,
+    "message": "The black team rolled a 0 and their turn was automatically passed",
+    "time": "2020-09-17T03:55:27.231Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": null
   }
 ]

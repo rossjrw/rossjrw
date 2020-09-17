@@ -13,18 +13,17 @@ If it's not your turn, check back later, or
 [poke a friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw+%23ur+%23github)
 to make a move!
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.127.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.129.svg"></p>
 
   **White team:**
-  You rolled a 3!
+  You rolled a 2!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a piece from tile 2 to tile 5](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%402-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
-  | [Move a piece from tile 6 to tile 9](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%406-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
-  | [Move a piece from tile 7 to tile 10](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%407-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
-  | [Move a piece from tile 8 to tile 11](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%408-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a new piece to tile 2](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%400-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a piece from tile 7 to tile 9](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%407-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a piece from tile 8 to tile 10](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%408-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
 
 <details><summary>The game so far</summary>
 
@@ -60,6 +59,8 @@ What would you like to do?
   | 2020-09-10 02:07:51 | **27** | :black_circle: **[@jy1263](https://github.com/jy1263)** moved a black piece from position 4 to position 6 — captured a white piece :crossed_swords: | [#124](https://github.com/rossjrw/rossjrw/issues/124) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/caaed6467e00d6edace7a81f9b9ce54674e04c9e/games/current/board.124.svg) |
   | 2020-09-10 10:53:51 | **28** | :white_circle: **[@toberge](https://github.com/toberge)** moved a white piece from position 5 to position 6 — captured a black piece :crossed_swords: | [#125](https://github.com/rossjrw/rossjrw/issues/125) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/ba34de6bd0e1115bc1d34d917db27a40e2ccaa9c/games/current/board.125.svg) |
   | 2020-09-13 04:27:56 | **29** | :black_circle: **[@andreposman](https://github.com/andreposman)** moved a black piece onto the board to position 2 | [#127](https://github.com/rossjrw/rossjrw/issues/127) |  |
+  | 2020-09-17 03:55:27 | **30** | :white_circle: **[@spielers](https://github.com/spielers)** moved a white piece from position 2 to position 5 | [#129](https://github.com/rossjrw/rossjrw/issues/129) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/5f58abb41afa5fe51bd949aa94555fc711afc501/games/current/board.129.svg) |
+  | 2020-09-17 03:55:27 | **31** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#129](https://github.com/rossjrw/rossjrw/issues/129) |  |
 
 </details>
 
