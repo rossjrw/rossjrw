@@ -5,6 +5,8 @@ import { get } from "lodash"
 
 import { addReaction, addLabels } from '@/issues'
 import { getPlayerTeam } from '@/player'
+import { teamName, getOppositeTeam } from '@/teams'
+import { Log } from '@/log'
 
 interface ErrorDescriptions {
   [error_type: string]: string
@@ -12,6 +14,7 @@ interface ErrorDescriptions {
 
 export function handleError(
   error: Error,
+  log: Log,
   octokit: Octokit,
   context: Context,
   core: typeof _core,
@@ -22,6 +25,8 @@ export function handleError(
    *
    * @param error: The error to report with an ID matching the desc object.
    */
+  const playerTeam = getPlayerTeam(context.actor, log)
+
   const ERROR_DESC: ErrorDescriptions = {
     // Action parsing
     WRONG_GAME: "Sorry, I only know how to play Ur.",
@@ -32,7 +37,7 @@ export function handleError(
     NON_NUMERIC_ID: "You've told me what move to make, but the game ID you've given me isn't a number.",
     // Execution errors
     MOVE_WHEN_GAME_ENDED: "You can't make a move when the game has finished! You'll have to start a new game instead.",
-    WRONG_TEAM: `Sorry, you're on the ${getPlayerTeam(context.actor) === "b" ? "black" : "white"} team — you can't make moves for the ${getPlayerTeam(context.actor) === "b" ? "white" : "black"} team!`,
+    WRONG_TEAM: `Sorry, you're on the ${teamName(playerTeam)} team, but it's ${teamName(getOppositeTeam(playerTeam))} to play. You'll have to wait until it's the ${playerTeam} team's turn before you can make a move.`,
     WRONG_DICE_COUNT: "You tried to move a piece by the wrong number of places. Check the dice roll!",
     NO_MOVE_POSITION: "I can't tell which piece you want to move.",
     IMPOSSIBLE_MOVE: "Woah, that's not a legal move! Maybe someone snuck in a move before yours.",

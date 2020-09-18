@@ -44,7 +44,7 @@ export async function makeMove (
     newState = Ur.voidTurn(state, state.currentPlayer)
   } else {
     // First I need to validate which team the user is on
-    if (!playerIsOnTeam(context.actor, state.currentPlayer)) {
+    if (!playerIsOnTeam(context.actor, state.currentPlayer, log)) {
       throw new Error('WRONG_TEAM')
     }
     if (state.currentPlayer === Ur.BLACK) {

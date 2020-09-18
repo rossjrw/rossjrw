@@ -91,7 +91,7 @@ export default async function play (
     addReaction("rocket", octokit, context)
   } catch (error) {
     // If there was an error, forward it to the user, then stop
-    handleError(error, octokit, context, core)
+    handleError(error, log, octokit, context, core)
     return
   }
 }
