@@ -7,6 +7,7 @@ import { analyseMove } from '@/analyseMove'
 import { updateSvg } from '@/updateSvg'
 import { Change } from '@/play'
 import { Log } from './log'
+import {makeTeamListTable} from './teams'
 
 export async function generateReadme (
   state: Ur.State,
@@ -90,7 +91,12 @@ export async function generateReadme (
     ]
   })
 
-  const readme = ejs.render(template, { actions, state, logItems, context })
+  const teamTable = makeTeamListTable(log, true)
+
+  const readme = ejs.render(
+    template,
+    { actions, state, logItems, context, teamTable }
+  )
 
   const currentReadmeFile = await octokit.repos.getContents({
     owner: context.repo.owner,

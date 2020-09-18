@@ -45,7 +45,7 @@ export function makeTeamListTable (
    */
   const PLAYERS_TABLE = `<table>
     <thead>
-      <tr><th colspan=2>Players this game</th></tr>
+      <tr><th colspan=2>Players in this game</th></tr>
     </thead>
     <tbody>
       <tr>
