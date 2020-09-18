@@ -6,8 +6,8 @@ import ejs from "ejs"
 import { analyseMove } from '@/analyseMove'
 import { updateSvg } from '@/updateSvg'
 import { Change } from '@/play'
-import { Log } from './log'
-import {makeTeamListTable} from './teams'
+import { Log } from '@/log'
+import { makeTeamListTable } from '@/teams'
 
 export async function generateReadme (
   state: Ur.State,
