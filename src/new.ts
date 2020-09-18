@@ -1,6 +1,7 @@
 import { Octokit } from "@octokit/rest"
 import { Context } from "@actions/github/lib/context"
 import Ur from "ur-game"
+import { sample } from 'lodash'
 
 import { getPlayerTeam } from '@/player'
 import { generateReadme } from '@/generateReadme'
@@ -35,7 +36,17 @@ export async function resetGame (
   // because the old file is about to be overwritten with a new log
 
   // Make a new game state
-  const newState = Ur.startGame(7, 4, getPlayerTeam(context.actor))
+  // The starting team should be the same team as the initiating player, so
+  // that they can immediately play, but as of rossjrw/rossjrw#133 that team
+  // should always be null
+  const startingPlayerTeam = getPlayerTeam(context.actor)
+  let gameStartTeam: Ur.Player
+  if (startingPlayerTeam === null) {
+    gameStartTeam = Ur.WHITE
+  } else {
+    gameStartTeam = startingPlayerTeam
+  }
+  const newState = Ur.startGame(7, 4, gameStartTeam)
 
   // Save the new state
   changes.push({
