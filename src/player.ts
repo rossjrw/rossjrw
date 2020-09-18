@@ -25,7 +25,7 @@ export function playerIsOnTeam (
 
 export function getPlayerTeam (
   username: string,
-): Ur.Player {
+): Ur.Player | null {
   /**
    * Checks what team a player is on. Returns null if that team has not yet
    * been defined.
