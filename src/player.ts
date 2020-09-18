@@ -1,8 +1,11 @@
 import Ur from "ur-game"
 
+import { Log } from '@/log'
+
 export function playerIsOnTeam (
   username: string,
   team: Ur.Player,
+  log: Log,
 ): boolean {
   /**
    * Checks if a player is on the given team.
@@ -14,25 +17,31 @@ export function playerIsOnTeam (
     // Nobody tells me what to do except me
     return true
   }
-  const playerTeam = getPlayerTeam(username)
-  if (playerTeam === null) {
+  const playerTeam = getPlayerTeam(username, log)
+  if (playerTeam === undefined) {
     // A player who hasn't played yet is allowed on either team
     return true
   }
   // Otherwise, players are locked into existing teams
-  return getPlayerTeam(username) === team
+  return playerTeam === team
 }
 
 export function getPlayerTeam (
   username: string,
-): Ur.Player | null {
+  log: Log,
+): Ur.Player | undefined {
   /**
-   * Checks what team a player is on. Returns null if that team has not yet
-   * been defined.
+   * Checks what team a player is on.
    */
-  if (/^[A-M]/i.test(username)) {
-    return Ur.BLACK
-  } else {
-    return Ur.WHITE
-  }
+  return log.internalLog.find(item => item.username === username)?.team
+}
+
+export function getPlayerTeamSource (
+  username: string,
+  log: Log,
+): number | undefined {
+  /**
+   * Returns the issue number that determined a player's team for this game.
+   */
+  return log.internalLog.find(item => item.username === username)?.issue
 }

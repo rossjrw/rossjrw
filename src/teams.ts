@@ -1,7 +1,7 @@
 import Ur from "ur-game"
 
 export function teamName (
-  team: Ur.Player
+  team: Ur.Player | undefined
 ): string {
   if (team === Ur.BLACK) {
     return "black"
@@ -9,17 +9,17 @@ export function teamName (
   if (team === Ur.WHITE) {
     return "white"
   }
-  throw new Error('UNKNOWN_TEAM')
+  return "unknown"
 }
 
 export function getOppositeTeam (
-  team: Ur.Player
-): Ur.Player {
+  team: Ur.Player | undefined
+): Ur.Player | undefined {
   if (team === Ur.BLACK) {
     return Ur.WHITE
   }
   if (team === Ur.WHITE) {
     return Ur.BLACK
   }
-  throw new Error('UNKNOWN_TEAM')
+  return undefined
 }
