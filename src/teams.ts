@@ -35,9 +35,13 @@ export function getOppositeTeam (
 
 export function makeTeamListTable (
   log: Log,
+  hasPlayerLinks: boolean,
 ): string {
   /**
    * Makes a table containing team members.
+   *
+   * @param hasPlayerLinks: Players as hyperlinks? Required for README, but not
+   * required for issues.
    */
   const PLAYERS_TABLE = `<table>
     <thead>
@@ -57,8 +61,8 @@ export function makeTeamListTable (
 
   const players = makeTeamStats(log)
 
-  const blackPlayers = makeTeamListColumn(players, Ur.BLACK)
-  const whitePlayers = makeTeamListColumn(players, Ur.WHITE)
+  const blackPlayers = makeTeamListColumn(players, Ur.BLACK, hasPlayerLinks)
+  const whitePlayers = makeTeamListColumn(players, Ur.WHITE, hasPlayerLinks)
 
   return ejs.render(PLAYERS_TABLE, { blackPlayers, whitePlayers })
 }
@@ -90,6 +94,7 @@ export function makeTeamStats (
 function makeTeamListColumn (
   players: TeamPlayer[],
   team: Ur.Player,
+  hasLinks: boolean,
 ): string[] {
   return players.filter(player => {
     return player.team === team
@@ -98,6 +103,10 @@ function makeTeamListColumn (
     if (a.moves < b.moves) return 1
     return 0
   }).map(player => {
-    return `@${player.name} (${player.moves})`
+    if (hasLinks) {
+      return `**[@${player.name}](https://github.com/${player.name})** (${player.moves})`
+    } else {
+      return `@${player.name} (${player.moves})`
+    }
   })
 }
