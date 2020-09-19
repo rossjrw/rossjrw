@@ -52,7 +52,7 @@ export async function makeMove (
         context.actor,
         getOppositeTeam(state.currentPlayer)!,
         log
-      )
+      ) && context.actor !== context.repo.owner // Owner can do what they want
     ) {
       throw new Error('WRONG_TEAM')
     }

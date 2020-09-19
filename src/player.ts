@@ -13,10 +13,6 @@ export function playerIsOnTeam (
    * @param username: The player's name.
    * @param team: The team to check against.
    */
-  if (username === "rossjrw") {
-    // Nobody tells me what to do except me
-    return true
-  }
   const playerTeam = getPlayerTeam(username, log)
   if (playerTeam === undefined) {
     // A player who hasn't played yet is allowed on either team
