@@ -23762,16 +23762,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _issues__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/issues */ "./src/issues.ts");
 /* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/player */ "./src/player.ts");
+/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
 
 
 
-function handleError(error, octokit, context, core) {
+
+function handleError(error, log, octokit, context, core) {
     /**
      * Handles execution errors by reporting the problem back to the user and
      * closing the issue.
      *
      * @param error: The error to report with an ID matching the desc object.
      */
+    const playerTeam = Object(_player__WEBPACK_IMPORTED_MODULE_2__["getPlayerTeam"])(context.actor, log);
     const ERROR_DESC = {
         // Action parsing
         WRONG_GAME: "Sorry, I only know how to play Ur.",
@@ -23782,7 +23785,7 @@ function handleError(error, octokit, context, core) {
         NON_NUMERIC_ID: "You've told me what move to make, but the game ID you've given me isn't a number.",
         // Execution errors
         MOVE_WHEN_GAME_ENDED: "You can't make a move when the game has finished! You'll have to start a new game instead.",
-        WRONG_TEAM: `Sorry, you're on the ${Object(_player__WEBPACK_IMPORTED_MODULE_2__["getPlayerTeam"])(context.actor) === "b" ? "black" : "white"} team — you can't make moves for the ${Object(_player__WEBPACK_IMPORTED_MODULE_2__["getPlayerTeam"])(context.actor) === "b" ? "white" : "black"} team!`,
+        WRONG_TEAM: `Sorry, you're on the ${Object(_teams__WEBPACK_IMPORTED_MODULE_3__["teamName"])(playerTeam)} team, but it's ${Object(_teams__WEBPACK_IMPORTED_MODULE_3__["teamName"])(Object(_teams__WEBPACK_IMPORTED_MODULE_3__["getOppositeTeam"])(playerTeam))} to play. You'll have to wait until it's the ${Object(_teams__WEBPACK_IMPORTED_MODULE_3__["teamName"])(playerTeam)} team's turn before you can make a move.`,
         WRONG_DICE_COUNT: "You tried to move a piece by the wrong number of places. Check the dice roll!",
         NO_MOVE_POSITION: "I can't tell which piece you want to move.",
         IMPOSSIBLE_MOVE: "Woah, that's not a legal move! Maybe someone snuck in a move before yours.",
@@ -23802,10 +23805,13 @@ function handleError(error, octokit, context, core) {
         issue_number: context.issue.number,
         state: "closed",
     });
-    core.error(error);
-    // Seems like this is the only reliable way for me to know what actually
-    // caused the error
-    throw error;
+    // Only raise an error if there was an actual uncaught problem
+    if (error.message in ERROR_DESC) {
+        core.error(error);
+        // Seems like this is the only reliable way for me to know what actually
+        // caused the error
+        throw error;
+    }
 }
 
 
@@ -23821,12 +23827,11 @@ function handleError(error, octokit, context, core) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "generateReadme", function() { return generateReadme; });
-/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ur-game */ "./node_modules/ur-game/src/game.js");
-/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ur_game__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var ejs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ejs */ "./node_modules/ejs/lib/ejs.js");
-/* harmony import */ var ejs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(ejs__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _analyseMove__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/analyseMove */ "./src/analyseMove.ts");
-/* harmony import */ var _updateSvg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/updateSvg */ "./src/updateSvg.ts");
+/* harmony import */ var ejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ejs */ "./node_modules/ejs/lib/ejs.js");
+/* harmony import */ var ejs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ejs__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _analyseMove__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/analyseMove */ "./src/analyseMove.ts");
+/* harmony import */ var _updateSvg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/updateSvg */ "./src/updateSvg.ts");
+/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
 
 
 
@@ -23841,7 +23846,7 @@ async function generateReadme(state, gamePath, octokit, context, log) {
      */
     let changes = [];
     // Update the SVG to represent the new game board
-    changes = changes.concat(await Object(_updateSvg__WEBPACK_IMPORTED_MODULE_3__["updateSvg"])(state, gamePath, "assets/board.optimised.svg", // TODO change for compiled branch
+    changes = changes.concat(await Object(_updateSvg__WEBPACK_IMPORTED_MODULE_2__["updateSvg"])(state, gamePath, "assets/board.optimised.svg", // TODO change for compiled branch
     octokit, context));
     // Grab the EJS template
     const readmeFile = await octokit.repos.getContents({
@@ -23866,7 +23871,7 @@ async function generateReadme(state, gamePath, octokit, context, log) {
                 to: state.possibleMoves[key],
             };
         }).map(move => {
-            const events = Object(_analyseMove__WEBPACK_IMPORTED_MODULE_2__["analyseMove"])(state, move.from, move.to);
+            const events = Object(_analyseMove__WEBPACK_IMPORTED_MODULE_1__["analyseMove"])(state, move.from, move.to);
             return {
                 text: `${events.ascensionHappened ? "Ascend" : "Move"} a ${move.from === 0 ? "new piece" : `piece from tile ${move.from}`}${events.ascensionHappened ? "" : ` to tile ${move.to}`}${events.rosetteClaimed ? " (:rosette:)" : ""}${events.captureHappened ? " (:crossed_swords:)" : ""}${events.ascensionHappened ? " (:rocket:)" : ""}${events.gameWon ? " (:crown:)" : ""}`,
                 url: issueLink(`ur-move-${state.diceResult}%40${move.from}-0`, context),
@@ -23887,12 +23892,13 @@ async function generateReadme(state, gamePath, octokit, context, log) {
     const logItems = log.internalLog.map(logItem => {
         return [
             `${logItem.time.split(".")[0].split("T").join(" ")}`,
-            `${logItem.team === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? ":black_circle:" : ":white_circle:"} ${logItem.action === "pass" ? "" : `**[@${logItem.username}](https://github.com/${logItem.username})**`} ${logItem.message}`,
+            `:${Object(_teams__WEBPACK_IMPORTED_MODULE_3__["teamName"])(logItem.team)}_circle: ${logItem.action === "pass" ? "" : `**[@${logItem.username}](https://github.com/${logItem.username})**`} ${logItem.message}`,
             `[#${logItem.issue}](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${logItem.issue})`,
             `${logItem.boardImage === null ? "" : `[link](${logItem.boardImage})`}`,
         ];
     });
-    const readme = ejs__WEBPACK_IMPORTED_MODULE_1___default.a.render(template, { actions, state, logItems, context });
+    const teamTable = Object(_teams__WEBPACK_IMPORTED_MODULE_3__["makeTeamListTable"])(log, true);
+    const readme = ejs__WEBPACK_IMPORTED_MODULE_0___default.a.render(template, { actions, state, logItems, context, teamTable });
     const currentReadmeFile = await octokit.repos.getContents({
         owner: context.repo.owner,
         repo: context.repo.repo,
@@ -24132,6 +24138,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _analyseMove__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/analyseMove */ "./src/analyseMove.ts");
 /* harmony import */ var _generateReadme__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/generateReadme */ "./src/generateReadme.ts");
 /* harmony import */ var _victory__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/victory */ "./src/victory.ts");
+/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
+
 
 
 
@@ -24162,8 +24170,10 @@ async function makeMove(state, move, gamePath, octokit, context, log) {
         newState = ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.voidTurn(state, state.currentPlayer);
     }
     else {
+        // Store the player's current team before anything else
+        const playerTeam = Object(_player__WEBPACK_IMPORTED_MODULE_2__["getPlayerTeam"])(context.actor, log);
         // First I need to validate which team the user is on
-        if (!Object(_player__WEBPACK_IMPORTED_MODULE_2__["playerIsOnTeam"])(context.actor, state.currentPlayer)) {
+        if (Object(_player__WEBPACK_IMPORTED_MODULE_2__["playerIsOnTeam"])(context.actor, Object(_teams__WEBPACK_IMPORTED_MODULE_7__["getOppositeTeam"])(state.currentPlayer), log)) {
             throw new Error('WRONG_TEAM');
         }
         if (state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK) {
@@ -24212,7 +24222,7 @@ async function makeMove(state, move, gamePath, octokit, context, log) {
             owner: context.repo.owner,
             repo: context.repo.repo,
             issue_number: context.issue.number,
-            body: `@${context.actor} Done! You ${events.ascensionHappened ? "ascended" : "moved"} a ${state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? "black" : "white"} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`}${events.ascensionHappened ? ". " : ` to position ${toPosition}${events.captureHappened ? ", capturing the opponents' piece! " : ". "}`}${events.rosetteClaimed ? "You claimed a rosette, meaning that your team gets to take another turn! " : ""}${events.gameWon ? "This was the winning move! " : ""}\n\nAsk a friend to ${events.gameWon ? "start the next game" : "make the next move"}: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+${events.gameWon ? "won+a+game" : "moved"}+%E2%80%94+${events.gameWon ? "start+the+next+one" : "take+your+turn"}+at+https://github.com/rossjrw+%23ur+%23github)`
+            body: `@${context.actor} Done! You ${events.ascensionHappened ? "ascended" : "moved"} a ${Object(_teams__WEBPACK_IMPORTED_MODULE_7__["teamName"])(state.currentPlayer)} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`}${events.ascensionHappened ? ". " : ` to position ${toPosition}${events.captureHappened ? ", capturing the opponents' piece! " : ". "}`}${events.rosetteClaimed ? "You claimed a rosette, meaning that your team gets to take another turn! " : ""}${events.gameWon ? "This was the winning move! " : ""}\n\n${playerTeam === undefined ? `You've joined the ${Object(_teams__WEBPACK_IMPORTED_MODULE_7__["teamName"])(state.currentPlayer)} team! This will be your team until this game ends.` : `The ${Object(_teams__WEBPACK_IMPORTED_MODULE_7__["teamName"])(state.currentPlayer)} team thanks you for your continued participation!`}\n\nAsk a friend to ${events.gameWon ? "start the next game" : "make the next move"}: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+${events.gameWon ? "won+a+game" : "moved"}+%E2%80%94+${events.gameWon ? "start+the+next+one" : "take+your+turn"}+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)`
         });
         octokit.issues.update({
             owner: context.repo.owner,
@@ -24221,7 +24231,7 @@ async function makeMove(state, move, gamePath, octokit, context, log) {
             state: "closed",
         });
         // Update the log with this action
-        log.addToLog("move", `${events.ascensionHappened ? "ascended" : "moved"} a ${state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? "black" : "white"} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`} ${events.ascensionHappened ? ":rocket:" : `to position ${toPosition}${events.captureHappened ? ` — captured a ${state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? "white" : "black"} piece :crossed_swords:` : ""}`}${events.rosetteClaimed ? " — claimed a rosette :rosette:" : ""}${events.gameWon ? " — won the game :crown:" : ""}`, state.currentPlayer);
+        log.addToLog("move", `${events.ascensionHappened ? "ascended" : "moved"} a ${Object(_teams__WEBPACK_IMPORTED_MODULE_7__["teamName"])(state.currentPlayer)} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`} ${events.ascensionHappened ? ":rocket:" : `to position ${toPosition}${events.captureHappened ? ` — captured a ${Object(_teams__WEBPACK_IMPORTED_MODULE_7__["teamName"])(Object(_teams__WEBPACK_IMPORTED_MODULE_7__["getOppositeTeam"])(state.currentPlayer))} piece :crossed_swords:` : ""}`}${events.rosetteClaimed ? " — claimed a rosette :rosette:" : ""}${events.gameWon ? " — won the game :crown:" : ""}`, state.currentPlayer);
         // If the game was won, leave a message to let everyone know
         if (events.gameWon) {
             await octokit.issues.createComment({
@@ -24235,7 +24245,7 @@ async function makeMove(state, move, gamePath, octokit, context, log) {
     if (events && !events.gameWon &&
         Object.keys(newState.possibleMoves).length === 0) {
         // If a 0 was rolled, then the new turn should be passed
-        log.addToLog("pass", `The ${newState.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? "black" : "white"} team rolled a ${newState.diceResult} and their turn was automatically passed`, newState.currentPlayer);
+        log.addToLog("pass", `The ${Object(_teams__WEBPACK_IMPORTED_MODULE_7__["teamName"])(newState.currentPlayer)} team rolled a ${newState.diceResult} and their turn was automatically passed`, newState.currentPlayer);
         changes = changes.concat(await makeMove(newState, "pass", gamePath, octokit, context, log));
     }
     else {
@@ -24267,6 +24277,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ur_game__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/player */ "./src/player.ts");
 /* harmony import */ var _generateReadme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/generateReadme */ "./src/generateReadme.ts");
+/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
+
 
 
 
@@ -24290,7 +24302,19 @@ async function resetGame(gamePath, oldGamePath, octokit, context, log) {
     // This only creates a new file with the same content, but that's okay,
     // because the old file is about to be overwritten with a new log
     // Make a new game state
-    const newState = ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.startGame(7, 4, Object(_player__WEBPACK_IMPORTED_MODULE_1__["getPlayerTeam"])(context.actor));
+    // The starting team should be the same team as the initiating player, so
+    // that they can immediately play, but as of rossjrw/rossjrw#133 that team
+    // should always be null
+    const startingPlayerTeam = Object(_player__WEBPACK_IMPORTED_MODULE_1__["getPlayerTeam"])(context.actor, log);
+    let gameStartTeam;
+    if (startingPlayerTeam === undefined) {
+        // If the team is null, which it should be, white plays first
+        gameStartTeam = ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.WHITE;
+    }
+    else {
+        gameStartTeam = startingPlayerTeam;
+    }
+    const newState = ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.startGame(7, 4, gameStartTeam);
     // Save the new state
     changes.push({
         path: `${gamePath}/state.json`,
@@ -24307,7 +24331,7 @@ async function resetGame(gamePath, oldGamePath, octokit, context, log) {
         owner: context.repo.owner,
         repo: context.repo.repo,
         issue_number: context.issue.number,
-        body: `@${context.actor} Done! You started a new game.\n\nMake the next move yourself, or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+A+new+game+just+started+%E2%80%94+take+your+turn+at+https://github.com/rossjrw+%23ur+%23github)`
+        body: `@${context.actor} Done! You started a new game.\n\nIt's ${Object(_teams__WEBPACK_IMPORTED_MODULE_3__["teamName"])(newState.currentPlayer)} to play! [Make the first move yourself](https://github.com/rossjrw/rossjrw), or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+started+a+new+game+%E2%80%94+take+the+first+turn+at+https://github.com/rossjrw+%23ur+%23github)`
     });
     octokit.issues.update({
         owner: context.repo.owner,
@@ -24331,15 +24355,14 @@ async function resetGame(gamePath, oldGamePath, octokit, context, log) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return play; });
-/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ur-game */ "./node_modules/ur-game/src/game.js");
-/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ur_game__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _issues__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/issues */ "./src/issues.ts");
-/* harmony import */ var _error__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/error */ "./src/error.ts");
-/* harmony import */ var _new__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/new */ "./src/new.ts");
-/* harmony import */ var _move__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/move */ "./src/move.ts");
-/* harmony import */ var _commit__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/commit */ "./src/commit.ts");
-/* harmony import */ var _log__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/log */ "./src/log.ts");
-/* harmony import */ var _getFile__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/getFile */ "./src/getFile.ts");
+/* harmony import */ var _issues__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/issues */ "./src/issues.ts");
+/* harmony import */ var _error__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/error */ "./src/error.ts");
+/* harmony import */ var _new__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/new */ "./src/new.ts");
+/* harmony import */ var _move__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/move */ "./src/move.ts");
+/* harmony import */ var _commit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/commit */ "./src/commit.ts");
+/* harmony import */ var _log__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/log */ "./src/log.ts");
+/* harmony import */ var _getFile__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/getFile */ "./src/getFile.ts");
+/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
 
 
 
@@ -24369,13 +24392,13 @@ async function play(title, octokit, context, core) {
     let changes = [];
     // Prepare a log object, which will be used to merge log entries into a
     // single change
-    const log = new _log__WEBPACK_IMPORTED_MODULE_6__["Log"](gamePath, octokit, context);
+    const log = new _log__WEBPACK_IMPORTED_MODULE_5__["Log"](gamePath, octokit, context);
     await log.prepareInitialLog();
     try {
-        Object(_issues__WEBPACK_IMPORTED_MODULE_1__["addReaction"])("eyes", octokit, context);
+        Object(_issues__WEBPACK_IMPORTED_MODULE_0__["addReaction"])("eyes", octokit, context);
         const [command, move] = parseIssueTitle(title);
         // Get the current game state file, but it's null if the file doesn't exist
-        const stateFile = await Object(_getFile__WEBPACK_IMPORTED_MODULE_7__["getFile"])("play", gamePath, "state.json", octokit, context);
+        const stateFile = await Object(_getFile__WEBPACK_IMPORTED_MODULE_6__["getFile"])("play", gamePath, "state.json", octokit, context);
         if (!stateFile) {
             throw new Error('MOVE_WHEN_EMPTY_GAME');
         }
@@ -24384,20 +24407,20 @@ async function play(title, octokit, context, core) {
         }
         const state = JSON.parse(Buffer.from(stateFile.data.content, "base64").toString());
         if (command === "new") {
-            changes = changes.concat(await Object(_new__WEBPACK_IMPORTED_MODULE_3__["resetGame"])(gamePath, oldGamePath, octokit, context, log));
+            changes = changes.concat(await Object(_new__WEBPACK_IMPORTED_MODULE_2__["resetGame"])(gamePath, oldGamePath, octokit, context, log));
         }
         else if (command === "move") {
-            changes = changes.concat(await Object(_move__WEBPACK_IMPORTED_MODULE_4__["makeMove"])(state, move, gamePath, octokit, context, log));
+            changes = changes.concat(await Object(_move__WEBPACK_IMPORTED_MODULE_3__["makeMove"])(state, move, gamePath, octokit, context, log));
         }
         // Extract changes from the log
         changes = changes.concat(log.makeLogChanges());
         // All the changes have been collected - commit them
-        await Object(_commit__WEBPACK_IMPORTED_MODULE_5__["makeCommit"])(`@${context.actor} ${command === "new" ? "Start a new game" : `Move ${state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? "black" : "white"} ${move}`} (#${context.issue.number})`, changes, octokit, context);
-        Object(_issues__WEBPACK_IMPORTED_MODULE_1__["addReaction"])("rocket", octokit, context);
+        await Object(_commit__WEBPACK_IMPORTED_MODULE_4__["makeCommit"])(`@${context.actor} ${command === "new" ? "Start a new game" : `Move ${Object(_teams__WEBPACK_IMPORTED_MODULE_7__["teamName"])(state.currentPlayer)} ${move}`} (#${context.issue.number})`, changes, octokit, context);
+        Object(_issues__WEBPACK_IMPORTED_MODULE_0__["addReaction"])("rocket", octokit, context);
     }
     catch (error) {
         // If there was an error, forward it to the user, then stop
-        Object(_error__WEBPACK_IMPORTED_MODULE_2__["handleError"])(error, octokit, context, core);
+        Object(_error__WEBPACK_IMPORTED_MODULE_1__["handleError"])(error, log, octokit, context, core);
         return;
     }
 }
@@ -24438,17 +24461,15 @@ function parseIssueTitle(title) {
 /*!***********************!*\
   !*** ./src/player.ts ***!
   \***********************/
-/*! exports provided: playerIsOnTeam, getPlayerTeam */
+/*! exports provided: playerIsOnTeam, getPlayerTeam, getPlayerTeamSource */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "playerIsOnTeam", function() { return playerIsOnTeam; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getPlayerTeam", function() { return getPlayerTeam; });
-/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ur-game */ "./node_modules/ur-game/src/game.js");
-/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ur_game__WEBPACK_IMPORTED_MODULE_0__);
-
-function playerIsOnTeam(username, team) {
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getPlayerTeamSource", function() { return getPlayerTeamSource; });
+function playerIsOnTeam(username, team, log) {
     /**
      * Checks if a player is on the given team.
      *
@@ -24456,20 +24477,135 @@ function playerIsOnTeam(username, team) {
      * @param team: The team to check against.
      */
     if (username === "rossjrw") {
+        // Nobody tells me what to do except me
         return true;
     }
-    return getPlayerTeam(username) === team;
-}
-function getPlayerTeam(username) {
-    /**
-     * Assigns a player to a team based on their username.
-     */
-    if (/^[A-M]/i.test(username)) {
-        return ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK;
+    const playerTeam = getPlayerTeam(username, log);
+    if (playerTeam === undefined) {
+        // A player who hasn't played yet is allowed on either team
+        return true;
     }
-    else {
+    // Otherwise, players are locked into existing teams
+    return playerTeam === team;
+}
+function getPlayerTeam(username, log) {
+    var _a;
+    /**
+     * Checks what team a player is on.
+     */
+    return (_a = log.internalLog.find(item => item.username === username)) === null || _a === void 0 ? void 0 : _a.team;
+}
+function getPlayerTeamSource(username, log) {
+    var _a;
+    /**
+     * Returns the issue number that determined a player's team for this game.
+     */
+    return (_a = log.internalLog.find(item => item.username === username)) === null || _a === void 0 ? void 0 : _a.issue;
+}
+
+
+/***/ }),
+
+/***/ "./src/teams.ts":
+/*!**********************!*\
+  !*** ./src/teams.ts ***!
+  \**********************/
+/*! exports provided: teamName, getOppositeTeam, makeTeamListTable, makeTeamStats */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "teamName", function() { return teamName; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getOppositeTeam", function() { return getOppositeTeam; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "makeTeamListTable", function() { return makeTeamListTable; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "makeTeamStats", function() { return makeTeamStats; });
+/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ur-game */ "./node_modules/ur-game/src/game.js");
+/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ur_game__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var ejs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ejs */ "./node_modules/ejs/lib/ejs.js");
+/* harmony import */ var ejs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(ejs__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function teamName(team) {
+    if (team === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK) {
+        return "black";
+    }
+    if (team === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.WHITE) {
+        return "white";
+    }
+    return "unknown";
+}
+function getOppositeTeam(team) {
+    if (team === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK) {
         return ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.WHITE;
     }
+    if (team === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.WHITE) {
+        return ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK;
+    }
+    return undefined;
+}
+function makeTeamListTable(log, hasPlayerLinks) {
+    /**
+     * Makes a table containing team members.
+     *
+     * @param hasPlayerLinks: Players as hyperlinks? Required for README, but not
+     * required for issues.
+     */
+    const PLAYERS_TABLE = `<table>
+    <thead>
+      <tr><th colspan=2>Players in this game</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="right"><b>Black team</b> :black_circle:</td>
+        <td>:white_circle: <b> White team</b></td>
+      </tr>
+      <tr align="center">
+        <td><%- blackPlayers.join("<br>") %></td>
+        <td><%- whitePlayers.join("<br>") %></td>
+      </tr>
+    </tbody>
+  </table>`;
+    const players = makeTeamStats(log);
+    const blackPlayers = makeTeamListColumn(players, ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK, hasPlayerLinks);
+    const whitePlayers = makeTeamListColumn(players, ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.WHITE, hasPlayerLinks);
+    return ejs__WEBPACK_IMPORTED_MODULE_1___default.a.render(PLAYERS_TABLE, { blackPlayers, whitePlayers });
+}
+function makeTeamStats(log) {
+    const players = [];
+    log.internalLog.forEach(logItem => {
+        const playerIndex = players.findIndex(player => {
+            return player.name === logItem.username && player.team === logItem.team;
+        });
+        if (playerIndex === -1) {
+            players.push({
+                name: logItem.username,
+                team: logItem.team,
+                moves: 1,
+            });
+        }
+        else {
+            players[playerIndex].moves++;
+        }
+    });
+    return players;
+}
+function makeTeamListColumn(players, team, hasLinks) {
+    return players.filter(player => {
+        return player.team === team;
+    }).sort((a, b) => {
+        if (a.moves > b.moves)
+            return -1;
+        if (a.moves < b.moves)
+            return 1;
+        return 0;
+    }).map(player => {
+        if (hasLinks) {
+            return `**[@${player.name}](https://github.com/${player.name})** (${player.moves})`;
+        }
+        else {
+            return `@${player.name} (${player.moves})`;
+        }
+    });
 }
 
 
@@ -24627,76 +24763,20 @@ function hideSvgElement(svg, elementId) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "makeVictoryMessage", function() { return makeVictoryMessage; });
-/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ur-game */ "./node_modules/ur-game/src/game.js");
-/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ur_game__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var ejs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ejs */ "./node_modules/ejs/lib/ejs.js");
-/* harmony import */ var ejs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(ejs__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
 
-
-const PLAYERS_TABLE = `<table>
-  <thead>
-    <tr><th colspan=2>Players this game</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="right"><b>Black team</b> :black_circle:</td>
-      <td>:white_circle: <b> White team</b></td>
-    </tr>
-    <tr align="center">
-      <td><%- blackPlayers.join("<br>") %></td>
-      <td><%- whitePlayers.join("<br>") %></td>
-    </tr>
-  </tbody>
-</table>`;
 function makeVictoryMessage(log) {
     /**
      * Called at the end of a game. Produces a message to ping participants in a
      * game, show teams, give stats, etc.
      */
-    const players = [];
-    log.internalLog.forEach(logItem => {
-        const playerIndex = players.findIndex(player => {
-            return player.name === logItem.username && player.team === logItem.team;
-        });
-        if (playerIndex === -1) {
-            players.push({
-                name: logItem.username,
-                team: logItem.team,
-                moves: 1,
-            });
-        }
-        else {
-            players[playerIndex].moves++;
-        }
-    });
-    const winningTeam = log.internalLog[log.internalLog.length - 1].team === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK ? "black" : "white";
+    const players = Object(_teams__WEBPACK_IMPORTED_MODULE_0__["makeTeamStats"])(log);
+    const winningTeam = Object(_teams__WEBPACK_IMPORTED_MODULE_0__["teamName"])(log.internalLog[log.internalLog.length - 1].team);
     const moves = players.reduce((moves, player) => moves + player.moves, 0);
     const startingDate = new Date(log.internalLog[0].time);
     const endingDate = new Date(log.internalLog[log.internalLog.length - 1].time);
     const hours = (endingDate.getTime() - startingDate.getTime()) / 1000 / 3600;
-    const blackPlayers = players.filter(player => {
-        return player.team === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK;
-    }).sort((a, b) => {
-        if (a.moves > b.moves)
-            return -1;
-        if (a.moves < b.moves)
-            return 1;
-        return 0;
-    }).map(player => {
-        return `@${player.name} (${player.moves})`;
-    });
-    const whitePlayers = players.filter(player => {
-        return player.team === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.WHITE;
-    }).sort((a, b) => {
-        if (a.moves > b.moves)
-            return -1;
-        if (a.moves < b.moves)
-            return 1;
-        return 0;
-    }).map(player => {
-        return `@${player.name} (${player.moves})`;
-    });
-    return `This game has ended! Congratulations to the ${winningTeam} team for their victory.\n\nThis game had ${players.length} players, ${moves} moves, and took ${hours} hours.\n\n${ejs__WEBPACK_IMPORTED_MODULE_1___default.a.render(PLAYERS_TABLE, { blackPlayers, whitePlayers })}`;
+    return `This game has ended! Congratulations to the ${winningTeam} team for their victory.\n\nThis game had ${players.length} players, ${moves} moves, and took ${hours} hours.\n\n${Object(_teams__WEBPACK_IMPORTED_MODULE_0__["makeTeamListTable"])(log, false)}`;
 }
 
 
