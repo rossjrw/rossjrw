@@ -6,6 +6,7 @@ import { getPlayerTeam } from '@/player'
 import { generateReadme } from '@/generateReadme'
 import { Change } from '@/play'
 import { Log } from '@/log'
+import { teamName } from '@/teams'
 
 export async function resetGame (
   gamePath: string,
@@ -41,6 +42,7 @@ export async function resetGame (
   const startingPlayerTeam = getPlayerTeam(context.actor, log)
   let gameStartTeam: Ur.Player
   if (startingPlayerTeam === undefined) {
+    // If the team is null, which it should be, white plays first
     gameStartTeam = Ur.WHITE
   } else {
     gameStartTeam = startingPlayerTeam
@@ -73,7 +75,7 @@ export async function resetGame (
     owner: context.repo.owner,
     repo: context.repo.repo,
     issue_number: context.issue.number,
-    body: `@${context.actor} Done! You started a new game.\n\nMake the next move yourself, or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+A+new+game+just+started+%E2%80%94+take+your+turn+at+https://github.com/rossjrw+%23ur+%23github)`
+    body: `@${context.actor} Done! You started a new game.\n\nIt's ${teamName(newState.currentPlayer)} to play! [Make the first move yourself](https://github.com/rossjrw/rossjrw), or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just++started+a+new+game+%E2%80%94+take+the+first+turn+at+https://github.com/rossjrw+%23ur+%23github)`
   })
   octokit.issues.update({
     owner: context.repo.owner,
