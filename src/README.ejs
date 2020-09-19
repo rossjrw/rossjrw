@@ -49,8 +49,8 @@ What would you like to do?
 
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
-<% logItems.slice().reverse().forEach((logItem, index) => { -%>
-  | <%= logItem[0] %> | **<%= logItems.length - index %>** | <%= logItem[1] %> | <%= logItem[2] %> | <%= logItem[3] %> |
+<% logItems.forEach((logItem, index) => { -%>
+  | <%= logItem[0] %> | **<%= index %>** | <%= logItem[1] %> | <%= logItem[2] %> | <%= logItem[3] %> |
 <% }) -%>
 
 </details>
