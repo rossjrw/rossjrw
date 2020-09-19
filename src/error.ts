@@ -37,7 +37,7 @@ export function handleError(
     NON_NUMERIC_ID: "You've told me what move to make, but the game ID you've given me isn't a number.",
     // Execution errors
     MOVE_WHEN_GAME_ENDED: "You can't make a move when the game has finished! You'll have to start a new game instead.",
-    WRONG_TEAM: `Sorry, you're on the ${teamName(playerTeam)} team, but it's ${teamName(getOppositeTeam(playerTeam))} to play. You'll have to wait until it's the ${playerTeam} team's turn before you can make a move.`,
+    WRONG_TEAM: `Sorry, you're on the ${teamName(playerTeam)} team, but it's ${teamName(getOppositeTeam(playerTeam))} to play. You'll have to wait until it's the ${teamName(playerTeam)} team's turn before you can make a move.`,
     WRONG_DICE_COUNT: "You tried to move a piece by the wrong number of places. Check the dice roll!",
     NO_MOVE_POSITION: "I can't tell which piece you want to move.",
     IMPOSSIBLE_MOVE: "Woah, that's not a legal move! Maybe someone snuck in a move before yours.",
