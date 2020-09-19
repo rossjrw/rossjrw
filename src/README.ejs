@@ -1,29 +1,37 @@
+<img align="right" src="https://github.com/rossjrw/rossjrw/workflows/build/badge.svg?branch=source"/>
+<img align="right" src="https://github.com/rossjrw/rossjrw/workflows/play/badge.svg?branch=play"/>
+
 Welcome to my Github profile!
 We're playing
 [The Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur).
 <%= state.currentPlayer ? "**This game is in progress,** but you can join!" : "**This game has ended!**" %>
 
-You're on a team! :wave:
-If your GitHub username starts with a letter in the first half of the alphabet
-(A–M), you're on the **black** team.
-Otherwise, you're on the **white** team.
-<% if (state.currentPlayer === "b") { -%>
-  **It's black to play.**
-<% } else if (state.currentPlayer === "w") { -%>
-  **It's white to play.**
-<% } else { -%>
+<% if (state.currentPlayer === undefined) { -%>
   This game has finished, so we're just waiting for someone to click _"Start a
   new game"._ That could be you!
-<% } -%>
+<% } else { -%>
+<p align="center">
+  <b>It's the
+  <%= state.currentPlayer === "b" ? ":black_circle:black" : ":white_circle:white" %>
+  team's turn.</b>
+</p>
 
+You're on a team! :wave:
+
+* If you've already played a turn this game, you know which team you're on!
+(_you can't change it!_)
 If it's not your turn, check back later, or
-[poke a friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw+%23ur+%23github)
-to make a move!
+[ask a friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)
+to make a move.
+* If you've not yet played a turn this game, make a move now to join the
+<%= state.currentPlayer === "b" ? ":black_circle:black" : ":white_circle:white" %>
+team.
+<% } -%>
 
 <p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.<%= context.issue.number %>.svg"></p>
 
 <% if (state.currentPlayer) { -%>
-  **<%= state.currentPlayer === "b" ? "Black" : "White" %> team:**
+  **<%= state.currentPlayer === "b" ? ":black_circle:Black" : ":white_circle:White" %> team:**
   You rolled a <%= state.diceResult %>!
 <% } -%>
 What would you like to do?
@@ -36,10 +44,16 @@ What would you like to do?
 
 <details><summary>The game so far</summary>
 
+## Who's on each team?
+
+<%- teamTable %>
+
+## What's happened so far?
+
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
-<% logItems.forEach((logItem, index) => { -%>
-  | <%= logItem[0] %> | **<%= index %>** | <%= logItem[1] %> | <%= logItem[2] %> | <%= logItem[3] %> |
+<% logItems.slice().reverse().forEach((logItem, index) => { -%>
+  | <%= logItem[0] %> | **<%= logItems.length - index %>** | <%= logItem[1] %> | <%= logItem[2] %> | <%= logItem[3] %> |
 <% }) -%>
 
 </details>
@@ -48,28 +62,31 @@ What would you like to do?
 
 <details><summary>How do I play?</summary>
 
+  It's the :white_circle:white team versus the :black_circle:black team.
+
   The turn starts by rolling 4 binary dice, which
   results in a number from 0 to 4. The current team gets to move one of their
   pieces by that many tiles.
 
   All of your pieces start on position 0 (the space just before tile 1). Your
   goal is to get all seven of them off the board by moving them onto position
-  15 (the space just after tile 14). This is called "**ascending**" a piece.
-  You also want to prevent your opponent from ascending their pieces.
+  15 (the space just after tile 14). This is called **:rocket:ascending** a
+  piece. You also want to prevent your opponent from :rocket:ascending their
+  pieces.
 
   You will move your pieces along the tiles from tile 1 to tile 14. The tiles
-  on your side of the board (tiles 1 through 4, 13, and 14) are safe — only your
-  pieces can be there. However, the tiles in the middle (tiles 5 through 12)
-  are unsafe — your opponent's pieces can also be here. If one team's piece
+  on your side of the board (tiles 1 through 4, 13, and 14) are safe — only
+  your pieces can be there. However, the tiles in the middle (tiles 5 through
+  12) are unsafe — your opponent's pieces can also be here. If one team's piece
   lands on the same tile as another team's piece, the piece that was landed on
-  is **captured**! It goes all the way back to position 0.
+  is **:crossed_swords:captured**! It goes all the way back to position 0.
 
-  If you land on a **rosette** (tiles 4, 8, and 14), your team gets to take
-  another turn. Also, a piece that is on the rosette on tile 8 *cannot be
-  captured*.
+  If you land on a **:rosette:rosette** (tiles 4, 8, and 14), your team gets to
+  take another turn. Also, a piece that is on the :rosette:rosette on tile 8
+  *cannot be :crossed_swords:captured*.
 
-  The first team to **ascend** all seven of their pieces — that is, move them
-  off the board onto position 15 — wins!
+  The first team to **:rocket:ascend** all seven of their pieces — that is,
+  move them off the board onto position 15 — :crown:wins!
 
   Watch [Tom Scott play against Irving
   Finkel](https://www.youtube.com/watch?v=WZskjLq040I) in 2017.
@@ -79,10 +96,12 @@ What would you like to do?
   Playing Ur on my GitHub profile is easy. The dice have already been rolled
   for you — all you have to do is decide what to do with them.
 
-  Your team is determined by your username. If it starts with a letter in the
-  first half of the English alphabet (A–M), you're on the black team;
-  otherwise, you're on the white team. You can't play a move when it's the
-  other team's turn, though you can certainly try.
+  Anyone can join either team at any time, but once you're in a team, you're
+  locked into it until the game ends. You can't play a move when it's the
+  other team's turn.
+
+  _([Before 2020-09-19](https://github.com/rossjrw/rossjrw/pull/133), your team
+  was determined by your username. This is no longer the case.)_
 
   There will be a list of links below the board image with each possible move.
   Clicking one of those will take you to a page where you can create an Issue
@@ -90,9 +109,9 @@ What would you like to do?
   do is click Submit.
 
   It will take a moment for Github Actions to acknowledge your move, but once
-  it does, you'll see it react with the 'eyes' emoji. No more than a minute
-  later it should react with the 'rocket' emoji to let you know that your move
-  was successful.
+  it does, you'll see it react with the 'eyes' emoji (:eyes:). No more than a
+  minute later it should react with the 'rocket' emoji (:rocket:) to let you
+  know that your move was successful.
 
   If you don't see any of that, then something went wrong. Ping me in your
   issue by typing `cc @rossjrw`, and I'll take a look.

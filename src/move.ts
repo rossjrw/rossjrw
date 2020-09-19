@@ -3,13 +3,14 @@ import { Context } from "@actions/github/lib/context"
 import Ur from "ur-game"
 import { isEmpty } from "lodash"
 
-import { playerIsOnTeam } from '@/player'
+import { playerIsOnTeam, getPlayerTeam } from '@/player'
 import { addLabels } from '@/issues'
 import { analyseMove } from '@/analyseMove'
 import { generateReadme } from '@/generateReadme'
 import { Change } from '@/play'
 import { Log } from '@/log'
 import { makeVictoryMessage } from '@/victory'
+import { getOppositeTeam, teamName } from '@/teams'
 
 export async function makeMove (
   state: Ur.State,
@@ -43,8 +44,16 @@ export async function makeMove (
     // be possible for a player to pass
     newState = Ur.voidTurn(state, state.currentPlayer)
   } else {
+    // Store the player's current team before anything else
+    const playerTeam = getPlayerTeam(context.actor, log)
     // First I need to validate which team the user is on
-    if (!playerIsOnTeam(context.actor, state.currentPlayer)) {
+    if (
+      playerIsOnTeam(
+        context.actor,
+        getOppositeTeam(state.currentPlayer)!,
+        log
+      )
+    ) {
       throw new Error('WRONG_TEAM')
     }
     if (state.currentPlayer === Ur.BLACK) {
@@ -96,7 +105,7 @@ export async function makeMove (
       owner: context.repo.owner,
       repo: context.repo.repo,
       issue_number: context.issue.number,
-      body: `@${context.actor} Done! You ${events.ascensionHappened ? "ascended" : "moved"} a ${state.currentPlayer === Ur.BLACK ? "black" : "white"} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`}${events.ascensionHappened ? ". " : ` to position ${toPosition}${events.captureHappened ? ", capturing the opponents' piece! " : ". "}`}${events.rosetteClaimed ? "You claimed a rosette, meaning that your team gets to take another turn! " : ""}${events.gameWon ? "This was the winning move! " : ""}\n\nAsk a friend to ${events.gameWon ? "start the next game" : "make the next move"}: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+${events.gameWon ? "won+a+game" : "moved"}+%E2%80%94+${events.gameWon ? "start+the+next+one" : "take+your+turn" }+at+https://github.com/rossjrw+%23ur+%23github)`
+      body: `@${context.actor} Done! You ${events.ascensionHappened ? "ascended" : "moved"} a ${teamName(state.currentPlayer)} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`}${events.ascensionHappened ? ". " : ` to position ${toPosition}${events.captureHappened ? ", capturing the opponents' piece! " : ". "}`}${events.rosetteClaimed ? "You claimed a rosette, meaning that your team gets to take another turn! " : ""}${events.gameWon ? "This was the winning move! " : ""}\n\n${playerTeam === undefined ? `You've joined the ${teamName(state.currentPlayer)} team! This will be your team until this game ends.` : `The ${teamName(state.currentPlayer)} team thanks you for your continued participation!`}\n\nAsk a friend to ${events.gameWon ? "start the next game" : "make the next move"}: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+${events.gameWon ? "won+a+game" : "moved"}+%E2%80%94+${events.gameWon ? "start+the+next+one" : "take+your+turn" }+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)`
     })
     octokit.issues.update({
       owner: context.repo.owner,
@@ -108,7 +117,7 @@ export async function makeMove (
     // Update the log with this action
     log.addToLog(
       "move",
-      `${events.ascensionHappened ? "ascended" : "moved"} a ${state.currentPlayer === Ur.BLACK ? "black" : "white"} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`} ${events.ascensionHappened ? ":rocket:" : `to position ${toPosition}${events.captureHappened ? ` — captured a ${state.currentPlayer === Ur.BLACK ? "white" : "black"} piece :crossed_swords:` : ""}`}${events.rosetteClaimed ? " — claimed a rosette :rosette:" : ""}${events.gameWon ? " — won the game :crown:" : ""}`,
+      `${events.ascensionHappened ? "ascended" : "moved"} a ${teamName(state.currentPlayer)} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`} ${events.ascensionHappened ? ":rocket:" : `to position ${toPosition}${events.captureHappened ? ` — captured a ${teamName(getOppositeTeam(state.currentPlayer))} piece :crossed_swords:` : ""}`}${events.rosetteClaimed ? " — claimed a rosette :rosette:" : ""}${events.gameWon ? " — won the game :crown:" : ""}`,
       state.currentPlayer,
     )
 
@@ -128,7 +137,7 @@ export async function makeMove (
     // If a 0 was rolled, then the new turn should be passed
     log.addToLog(
       "pass",
-      `The ${newState.currentPlayer === Ur.BLACK ? "black" : "white"} team rolled a ${newState.diceResult} and their turn was automatically passed`,
+      `The ${teamName(newState.currentPlayer)} team rolled a ${newState.diceResult} and their turn was automatically passed`,
       newState.currentPlayer!,
     )
     changes = changes.concat(

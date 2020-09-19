@@ -4,7 +4,7 @@
     "outDir": "./dist/",
     "noImplicitAny": true,
     "module": "esnext",
-    "target": "esnext",
+    "target": "es2018",
     "strict": true,
     "importHelpers": true,
     "esModuleInterop": true,

@@ -6,7 +6,8 @@ import ejs from "ejs"
 import { analyseMove } from '@/analyseMove'
 import { updateSvg } from '@/updateSvg'
 import { Change } from '@/play'
-import { Log } from './log'
+import { Log } from '@/log'
+import { makeTeamListTable, teamName } from '@/teams'
 
 export async function generateReadme (
   state: Ur.State,
@@ -84,13 +85,18 @@ export async function generateReadme (
   const logItems = log.internalLog.map(logItem => {
     return [
       `${logItem.time.split(".")[0].split("T").join(" ")}`,
-      `${logItem.team === Ur.BLACK ? ":black_circle:" : ":white_circle:"} ${logItem.action === "pass" ? "" : `**[@${logItem.username}](https://github.com/${logItem.username})**`} ${logItem.message}`,
+      `:${teamName(logItem.team)}_circle: ${logItem.action === "pass" ? "" : `**[@${logItem.username}](https://github.com/${logItem.username})**`} ${logItem.message}`,
       `[#${logItem.issue}](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${logItem.issue})`,
       `${logItem.boardImage === null ? "" : `[link](${logItem.boardImage})`}`,
     ]
   })
 
-  const readme = ejs.render(template, { actions, state, logItems, context })
+  const teamTable = makeTeamListTable(log, true)
+
+  const readme = ejs.render(
+    template,
+    { actions, state, logItems, context, teamTable }
+  )
 
   const currentReadmeFile = await octokit.repos.getContents({
     owner: context.repo.owner,
