@@ -75,7 +75,11 @@ export function makeTeamStats (
 
   log.internalLog.forEach(logItem => {
     const playerIndex = players.findIndex(player => {
-      return player.name === logItem.username && player.team === logItem.team
+      return (
+        player.name === logItem.username
+        && player.team === logItem.team
+        && logItem.action !== 'pass'
+      )
     })
     if (playerIndex === -1) {
       players.push({
