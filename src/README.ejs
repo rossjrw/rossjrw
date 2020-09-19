@@ -6,22 +6,27 @@ We're playing
 [The Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur).
 <%= state.currentPlayer ? "**This game is in progress,** but you can join!" : "**This game has ended!**" %>
 
-You're on a team! :wave:
-If your GitHub username starts with a letter in the first half of the alphabet
-(A–M), you're on the **black** team.
-Otherwise, you're on the **white** team.
-<% if (state.currentPlayer === "b") { -%>
-  **It's black to play.**
-<% } else if (state.currentPlayer === "w") { -%>
-  **It's white to play.**
-<% } else { -%>
+<% if (state.currentPlayer === undefined) { -%>
   This game has finished, so we're just waiting for someone to click _"Start a
   new game"._ That could be you!
-<% } -%>
+<% } else { -%>
+<p align="center">
+  <b>It's the
+  <%= state.currentPlayer === "b" ? "black" : "white" %>
+  team's turn.</b>
+</p>
 
+You're on a team! :wave:
+
+* If you've already played a turn this game, you know which team you're on!
+(_you can't change it!_)
 If it's not your turn, check back later, or
-[poke a friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw+%23ur+%23github)
-to make a move!
+[ask a friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)
+to make a move.
+* If you've not yet played a turn this game, make a move now to join the
+<%= state.currentPlayer === "b" ? "black" : "white" %>
+team.
+<% } -%>
 
 <p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.<%= context.issue.number %>.svg"></p>
 
@@ -39,16 +44,16 @@ What would you like to do?
 
 <details><summary>The game so far</summary>
 
-## Players & move count
+## Who's on each team?
 
 <%- teamTable %>
 
-## Event log
+## What's happened so far?
 
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
-<% logItems.forEach((logItem, index) => { -%>
-  | <%= logItem[0] %> | **<%= index %>** | <%= logItem[1] %> | <%= logItem[2] %> | <%= logItem[3] %> |
+<% logItems.slice().reverse().forEach((logItem, index) => { -%>
+  | <%= logItem[0] %> | **<%= logItems.length - index %>** | <%= logItem[1] %> | <%= logItem[2] %> | <%= logItem[3] %> |
 <% }) -%>
 
 </details>
