@@ -12,7 +12,7 @@ We're playing
 <% } else { -%>
 <p align="center">
   <b>It's the
-  <%= state.currentPlayer === "b" ? "black" : "white" %>
+  <%= state.currentPlayer === "b" ? ":black_circle:black" : ":white_circle:white" %>
   team's turn.</b>
 </p>
 
@@ -24,14 +24,14 @@ If it's not your turn, check back later, or
 [ask a friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)
 to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-<%= state.currentPlayer === "b" ? "black" : "white" %>
+<%= state.currentPlayer === "b" ? ":black_circle:black" : ":white_circle:white" %>
 team.
 <% } -%>
 
 <p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.<%= context.issue.number %>.svg"></p>
 
 <% if (state.currentPlayer) { -%>
-  **<%= state.currentPlayer === "b" ? "Black" : "White" %> team:**
+  **<%= state.currentPlayer === "b" ? ":black_circle:Black" : ":white_circle:White" %> team:**
   You rolled a <%= state.diceResult %>!
 <% } -%>
 What would you like to do?
@@ -62,28 +62,31 @@ What would you like to do?
 
 <details><summary>How do I play?</summary>
 
+  It's the :white_circle:white team versus the :black_circle:black team.
+
   The turn starts by rolling 4 binary dice, which
   results in a number from 0 to 4. The current team gets to move one of their
   pieces by that many tiles.
 
   All of your pieces start on position 0 (the space just before tile 1). Your
   goal is to get all seven of them off the board by moving them onto position
-  15 (the space just after tile 14). This is called "**ascending**" a piece.
-  You also want to prevent your opponent from ascending their pieces.
+  15 (the space just after tile 14). This is called **:rocket:ascending** a
+  piece. You also want to prevent your opponent from :rocket:ascending their
+  pieces.
 
   You will move your pieces along the tiles from tile 1 to tile 14. The tiles
   on your side of the board (tiles 1 through 4, 13, and 14) are safe — only
   your pieces can be there. However, the tiles in the middle (tiles 5 through
   12) are unsafe — your opponent's pieces can also be here. If one team's piece
   lands on the same tile as another team's piece, the piece that was landed on
-  is **captured**! It goes all the way back to position 0.
+  is **:crossed_swords:captured**! It goes all the way back to position 0.
 
-  If you land on a **rosette** (tiles 4, 8, and 14), your team gets to take
-  another turn. Also, a piece that is on the rosette on tile 8 *cannot be
-  captured*.
+  If you land on a **:rosette:rosette** (tiles 4, 8, and 14), your team gets to
+  take another turn. Also, a piece that is on the :rosette:rosette on tile 8
+  *cannot be :crossed_swords:captured*.
 
-  The first team to **ascend** all seven of their pieces — that is, move them
-  off the board onto position 15 — wins!
+  The first team to **:rocket:ascend** all seven of their pieces — that is,
+  move them off the board onto position 15 — :crown:wins!
 
   Watch [Tom Scott play against Irving
   Finkel](https://www.youtube.com/watch?v=WZskjLq040I) in 2017.
@@ -106,9 +109,9 @@ What would you like to do?
   do is click Submit.
 
   It will take a moment for Github Actions to acknowledge your move, but once
-  it does, you'll see it react with the 'eyes' emoji. No more than a minute
-  later it should react with the 'rocket' emoji to let you know that your move
-  was successful.
+  it does, you'll see it react with the 'eyes' emoji (:eyes:). No more than a
+  minute later it should react with the 'rocket' emoji (:rocket:) to let you
+  know that your move was successful.
 
   If you don't see any of that, then something went wrong. Ping me in your
   issue by typing `cc @rossjrw`, and I'll take a look.
