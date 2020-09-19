@@ -104,7 +104,7 @@ function makeTeamListColumn (
     return 0
   }).map(player => {
     if (hasLinks) {
-      return `**[@${player.name}](https://github.com/${player.name})** (${player.moves})`
+      return `<b><a href="https://github.com/${player.name}">@${player.name}</a></b> (${player.moves})`
     } else {
       return `@${player.name} (${player.moves})`
     }
