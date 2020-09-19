@@ -117,7 +117,7 @@ export async function makeMove (
     // Update the log with this action
     log.addToLog(
       "move",
-      `${events.ascensionHappened ? "ascended" : "moved"} a ${state.currentPlayer === Ur.BLACK ? "black" : "white"} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`} ${events.ascensionHappened ? ":rocket:" : `to position ${toPosition}${events.captureHappened ? ` — captured a ${state.currentPlayer === Ur.BLACK ? "white" : "black"} piece :crossed_swords:` : ""}`}${events.rosetteClaimed ? " — claimed a rosette :rosette:" : ""}${events.gameWon ? " — won the game :crown:" : ""}`,
+      `${events.ascensionHappened ? "ascended" : "moved"} a ${teamName(state.currentPlayer)} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`} ${events.ascensionHappened ? ":rocket:" : `to position ${toPosition}${events.captureHappened ? ` — captured a ${teamName(getOppositeTeam(state.currentPlayer))} piece :crossed_swords:` : ""}`}${events.rosetteClaimed ? " — claimed a rosette :rosette:" : ""}${events.gameWon ? " — won the game :crown:" : ""}`,
       state.currentPlayer,
     )
 
@@ -137,7 +137,7 @@ export async function makeMove (
     // If a 0 was rolled, then the new turn should be passed
     log.addToLog(
       "pass",
-      `The ${newState.currentPlayer === Ur.BLACK ? "black" : "white"} team rolled a ${newState.diceResult} and their turn was automatically passed`,
+      `The ${teamName(newState.currentPlayer)} team rolled a ${newState.diceResult} and their turn was automatically passed`,
       newState.currentPlayer!,
     )
     changes = changes.concat(
