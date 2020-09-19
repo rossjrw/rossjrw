@@ -74,11 +74,13 @@ export function makeTeamStats (
   const players: TeamPlayer[] = []
 
   log.internalLog.forEach(logItem => {
+    if (logItem.action === 'pass') {
+      return
+    }
     const playerIndex = players.findIndex(player => {
       return (
         player.name === logItem.username
         && player.team === logItem.team
-        && logItem.action !== 'pass'
       )
     })
     if (playerIndex === -1) {
