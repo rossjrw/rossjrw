@@ -24173,7 +24173,8 @@ async function makeMove(state, move, gamePath, octokit, context, log) {
         // Store the player's current team before anything else
         const playerTeam = Object(_player__WEBPACK_IMPORTED_MODULE_2__["getPlayerTeam"])(context.actor, log);
         // First I need to validate which team the user is on
-        if (Object(_player__WEBPACK_IMPORTED_MODULE_2__["playerIsOnTeam"])(context.actor, Object(_teams__WEBPACK_IMPORTED_MODULE_7__["getOppositeTeam"])(state.currentPlayer), log)) {
+        if (Object(_player__WEBPACK_IMPORTED_MODULE_2__["playerIsOnTeam"])(context.actor, Object(_teams__WEBPACK_IMPORTED_MODULE_7__["getOppositeTeam"])(state.currentPlayer), log) && context.actor !== context.repo.owner // Owner can do what they want
+        ) {
             throw new Error('WRONG_TEAM');
         }
         if (state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK) {
@@ -24476,10 +24477,6 @@ function playerIsOnTeam(username, team, log) {
      * @param username: The player's name.
      * @param team: The team to check against.
      */
-    if (username === "rossjrw") {
-        // Nobody tells me what to do except me
-        return true;
-    }
     const playerTeam = getPlayerTeam(username, log);
     if (playerTeam === undefined) {
         // A player who hasn't played yet is allowed on either team
