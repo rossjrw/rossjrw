@@ -24570,10 +24570,12 @@ function makeTeamListTable(log, hasPlayerLinks) {
 function makeTeamStats(log) {
     const players = [];
     log.internalLog.forEach(logItem => {
+        if (logItem.action === 'pass') {
+            return;
+        }
         const playerIndex = players.findIndex(player => {
             return (player.name === logItem.username
-                && player.team === logItem.team
-                && logItem.action !== 'pass');
+                && player.team === logItem.team);
         });
         if (playerIndex === -1) {
             players.push({
