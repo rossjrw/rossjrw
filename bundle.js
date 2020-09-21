@@ -24171,7 +24171,9 @@ async function makeMove(state, move, gamePath, octokit, context, log) {
     }
     else {
         // Store the player's current team before anything else
-        const playerTeam = Object(_player__WEBPACK_IMPORTED_MODULE_2__["getPlayerTeam"])(context.actor, log);
+        let playerTeam = Object(_player__WEBPACK_IMPORTED_MODULE_2__["getPlayerTeam"])(context.actor, log);
+        if (context.actor === "rossjrw")
+            playerTeam = undefined;
         // First I need to validate which team the user is on
         if (
         // context.actor !== context.repo.owner // Owner can do what they want
