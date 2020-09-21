@@ -48,11 +48,13 @@ export async function makeMove (
     const playerTeam = getPlayerTeam(context.actor, log)
     // First I need to validate which team the user is on
     if (
-      playerIsOnTeam(
+      context.actor !== context.repo.owner // Owner can do what they want
+      && playerTeam !== undefined // New players can also do what they want
+      && playerIsOnTeam(
         context.actor,
         getOppositeTeam(state.currentPlayer)!,
         log
-      ) && context.actor !== context.repo.owner // Owner can do what they want
+      ) // Player can't be on the opposite team
     ) {
       throw new Error('WRONG_TEAM')
     }
