@@ -330,6 +330,15 @@
     "time": "2020-09-20T12:38:36.206Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/aa0a1b5c6a95e0cf229bfbd3141c37d4bf32518e/games/current/board.140.svg"
+  },
+  {
+    "username": "muskanrani",
+    "issue": 145,
+    "message": "moved a black piece from position 2 to position 3",
+    "time": "2020-09-23T08:19:56.382Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
