@@ -339,6 +339,15 @@
     "time": "2020-09-23T08:19:56.382Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3a99cabf5650620170a131ab3377e8641646fdc2/games/current/board.145.svg"
+  },
+  {
+    "username": "gal-dahan",
+    "issue": 146,
+    "message": "moved a white piece from position 2 to position 6",
+    "time": "2020-09-23T15:33:55.059Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]
