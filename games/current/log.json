@@ -402,6 +402,15 @@
     "time": "2020-09-25T03:35:12.603Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/a76afe0e19420bc5081ce0767382748e6bff0e2e/games/current/board.153.svg"
+  },
+  {
+    "username": "diggerdu",
+    "issue": 154,
+    "message": "moved a white piece from position 6 to position 8 — claimed a rosette :rosette:",
+    "time": "2020-09-25T03:37:00.588Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]
