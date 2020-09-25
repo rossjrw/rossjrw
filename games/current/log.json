@@ -384,6 +384,15 @@
     "time": "2020-09-25T03:27:51.758Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/5a9a5438381c930ce5a20af4c6cec2fe7da0dd49/games/current/board.151.svg"
+  },
+  {
+    "username": "diggerdu",
+    "issue": 152,
+    "message": "moved a white piece from position 8 to position 11",
+    "time": "2020-09-25T03:29:59.040Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]
