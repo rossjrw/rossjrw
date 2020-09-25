@@ -357,6 +357,15 @@
     "time": "2020-09-24T13:55:51.309Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/79efba5e0aaf0c430bfd17a7cca5332b41600ac9/games/current/board.147.svg"
+  },
+  {
+    "username": "TheRaptor001",
+    "issue": 148,
+    "message": "moved a black piece onto the board to position 2",
+    "time": "2020-09-25T01:55:04.696Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
