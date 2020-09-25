@@ -420,6 +420,15 @@
     "time": "2020-09-25T03:38:12.130Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b7719d56d8d4e7a43eb73d67e591b5121934171a/games/current/board.155.svg"
+  },
+  {
+    "username": "JakeChampion",
+    "issue": 156,
+    "message": "moved a black piece from position 2 to position 5 — captured a white piece :crossed_swords:",
+    "time": "2020-09-25T15:02:13.431Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
