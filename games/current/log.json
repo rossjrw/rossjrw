@@ -519,6 +519,15 @@
     "time": "2020-09-29T11:46:02.310Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2dc962624f12a875d0fba61429bf1d22bcd4f3d9/games/current/board.165.svg"
+  },
+  {
+    "username": "Shing-Ho",
+    "issue": 166,
+    "message": "moved a white piece from position 2 to position 4 — claimed a rosette :rosette:",
+    "time": "2020-09-29T12:15:12.605Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]
