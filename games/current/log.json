@@ -474,6 +474,15 @@
     "time": "2020-09-29T04:55:15.007Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c35cf15a490ae24e95ae6f2619e904af63660426/games/current/board.161.svg"
+  },
+  {
+    "username": "max-radin",
+    "issue": 162,
+    "message": "moved a black piece from position 5 to position 7",
+    "time": "2020-09-29T04:57:55.500Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
