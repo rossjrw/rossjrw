@@ -438,6 +438,15 @@
     "time": "2020-09-27T22:44:43.758Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0a5a06edd254225323c79568cdd877ca9beeefcf/games/current/board.157.svg"
+  },
+  {
+    "username": "jackwilliamgray",
+    "issue": 158,
+    "message": "moved a black piece onto the board to position 2",
+    "time": "2020-09-29T00:08:23.021Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
