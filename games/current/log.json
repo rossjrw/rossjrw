@@ -537,6 +537,15 @@
     "time": "2020-09-29T16:31:07.893Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/9e83f495c6b39596bdbd41d2eaa2e0dc8030b99b/games/current/board.167.svg"
+  },
+  {
+    "username": "Unihedro",
+    "issue": 168,
+    "message": "moved a black piece from position 4 to position 9",
+    "time": "2020-10-01T01:58:45.315Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
