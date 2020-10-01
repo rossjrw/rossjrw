@@ -556,5 +556,23 @@
     "team": "w",
     "action": "move",
     "boardImage": null
+  },
+  {
+    "username": "acervenky",
+    "issue": 170,
+    "message": "moved a black piece onto the board to position 2",
+    "time": "2020-10-01T18:23:14.147Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/cb3b728bb75c88d325f4ec54c155fb8190dbb7c8/games/current/board.170.svg"
+  },
+  {
+    "username": "acervenky",
+    "issue": 170,
+    "message": "The white team rolled a 0 and their turn was automatically passed",
+    "time": "2020-10-01T18:23:14.147Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null
   }
 ]
