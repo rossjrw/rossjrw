@@ -582,6 +582,15 @@
     "time": "2020-10-02T16:56:53.997Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/478d5aef5d5c57d87d9bfede4a3a1c115f89747c/games/current/board.171.svg"
+  },
+  {
+    "username": "farish978",
+    "issue": 172,
+    "message": "moved a black piece from position 2 to position 6",
+    "time": "2020-10-03T09:54:32.820Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
