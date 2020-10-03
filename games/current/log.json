@@ -591,6 +591,15 @@
     "time": "2020-10-03T09:54:32.820Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8067be79d8758ded6d434ef6d6271491d27b889a/games/current/board.172.svg"
+  },
+  {
+    "username": "m1guelpf",
+    "issue": 173,
+    "message": "moved a white piece from position 3 to position 6 — captured a black piece :crossed_swords:",
+    "time": "2020-10-03T12:40:58.014Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]
