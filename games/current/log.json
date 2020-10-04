@@ -618,6 +618,15 @@
     "time": "2020-10-04T04:59:31.036Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b4b50f8641ee5561708427df33968e487a424c1c/games/current/board.175.svg"
+  },
+  {
+    "username": "thedoodler",
+    "issue": 176,
+    "message": "moved a black piece from position 11 to position 12",
+    "time": "2020-10-04T11:01:43.670Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
