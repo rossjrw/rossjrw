@@ -636,6 +636,15 @@
     "time": "2020-10-04T19:17:55.609Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d02d58aaf68f876c0e864b3fd14b6622cbf00c0e/games/current/board.177.svg"
+  },
+  {
+    "username": "Jighdan",
+    "issue": 178,
+    "message": "moved a black piece from position 4 to position 6",
+    "time": "2020-10-05T11:38:08.411Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
