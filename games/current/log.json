@@ -681,6 +681,15 @@
     "time": "2020-10-06T15:00:56.697Z",
     "team": "b",
     "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ab4fed24f19c2b658edbe49f37a101e7f4998110/games/current/board.184.svg"
+  },
+  {
+    "username": "1ethanhansen",
+    "issue": 185,
+    "message": "The white team rolled a 0 and their turn was automatically passed",
+    "time": "2020-10-06T18:26:18.941Z",
+    "team": "w",
+    "action": "pass",
     "boardImage": null
   }
 ]
