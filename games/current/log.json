@@ -664,5 +664,23 @@
     "team": "b",
     "action": "move",
     "boardImage": null
+  },
+  {
+    "username": "1ethanhansen",
+    "issue": 184,
+    "message": "moved a white piece from position 4 to position 6 — captured a black piece :crossed_swords:",
+    "time": "2020-10-06T15:00:56.697Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/a70086fc412435d950e2f1a57ad76868fbf44a80/games/current/board.184.svg"
+  },
+  {
+    "username": "1ethanhansen",
+    "issue": 184,
+    "message": "The black team rolled a 0 and their turn was automatically passed",
+    "time": "2020-10-06T15:00:56.697Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": null
   }
 ]
