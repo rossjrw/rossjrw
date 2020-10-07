@@ -24245,9 +24245,9 @@ async function makeMove(state, move, gamePath, octokit, context, log) {
             });
         }
     }
-    if (events && !events.gameWon &&
-        Object.keys(newState.possibleMoves).length === 0) {
-        // If a 0 was rolled, then the new turn should be passed
+    if (!(events === null || events === void 0 ? void 0 : events.gameWon) && Object.keys(newState.possibleMoves).length === 0) {
+        // If there are no possible moves, pass this turn, unless the game is done
+        // The events object is undefined if the last move was also a pass
         log.addToLog("pass", `The ${Object(_teams__WEBPACK_IMPORTED_MODULE_7__["teamName"])(newState.currentPlayer)} team rolled a ${newState.diceResult} and their turn was automatically passed`, newState.currentPlayer);
         changes = changes.concat(await makeMove(newState, "pass", gamePath, octokit, context, log));
     }
