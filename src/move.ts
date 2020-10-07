@@ -134,9 +134,9 @@ export async function makeMove (
     }
   }
 
-  if (events && !events.gameWon &&
-      Object.keys(newState.possibleMoves!).length === 0) {
-    // If a 0 was rolled, then the new turn should be passed
+  if (!events?.gameWon && Object.keys(newState.possibleMoves!).length === 0) {
+    // If there are no possible moves, pass this turn, unless the game is done
+    // The events object is undefined if the last move was also a pass
     log.addToLog(
       "pass",
       `The ${teamName(newState.currentPlayer)} team rolled a ${newState.diceResult} and their turn was automatically passed`,
