@@ -690,6 +690,15 @@
     "time": "2020-10-06T18:26:18.941Z",
     "team": "w",
     "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/31f751c4648b9fea2ca8e52fc605fd0e957df72c/games/current/board.185.svg"
+  },
+  {
+    "username": "ollelogdahl",
+    "issue": 186,
+    "message": "moved a black piece onto the board to position 2",
+    "time": "2020-10-08T15:25:30.566Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
