@@ -708,6 +708,15 @@
     "time": "2020-10-08T16:06:49.696Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3a7b16c1cede3bb1664fe1138ea972958421317e/games/current/board.187.svg"
+  },
+  {
+    "username": "andre-fajar-n",
+    "issue": 188,
+    "message": "ascended a black piece from position 13 :rocket:",
+    "time": "2020-10-09T04:26:37.197Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
