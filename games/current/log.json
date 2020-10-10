@@ -744,6 +744,15 @@
     "time": "2020-10-09T16:26:09.118Z",
     "team": "w",
     "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6e09339eccff00d6fb73c46bb7be14ccd9a62c8b/games/current/board.189.svg"
+  },
+  {
+    "username": "minji-o-j",
+    "issue": 190,
+    "message": "moved a black piece from position 2 to position 4 — claimed a rosette :rosette:",
+    "time": "2020-10-10T17:19:25.866Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
