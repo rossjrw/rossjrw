@@ -753,6 +753,15 @@
     "time": "2020-10-10T17:19:25.866Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e031fba1c0c644ddaa93b3d0b44b502c48047177/games/current/board.190.svg"
+  },
+  {
+    "username": "minji-o-j",
+    "issue": 191,
+    "message": "moved a black piece onto the board to position 3",
+    "time": "2020-10-11T13:44:49.557Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
