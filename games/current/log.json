@@ -888,6 +888,15 @@
     "time": "2020-10-14T06:04:58.908Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/fb76d17d1b09308f9b5e3b9d01f18783bf595750/games/current/board.204.svg"
+  },
+  {
+    "username": "PresentKim",
+    "issue": 205,
+    "message": "moved a black piece from position 9 to position 13",
+    "time": "2020-10-14T15:10:08.558Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
