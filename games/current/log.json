@@ -906,6 +906,15 @@
     "time": "2020-10-14T16:34:30.936Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/405db778c5307707b814354c9f9ff0ddcb09e8bc/games/current/board.206.svg"
+  },
+  {
+    "username": "minji-o-j",
+    "issue": 207,
+    "message": "ascended a black piece from position 13 :rocket:",
+    "time": "2020-10-16T02:31:22.536Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
