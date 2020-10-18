@@ -960,6 +960,15 @@
     "time": "2020-10-18T15:44:08.290Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/9e8d5f080f458a22b77ce625caf9013379b357ec/games/current/board.213.svg"
+  },
+  {
+    "username": "qbtl",
+    "issue": 214,
+    "message": "moved a white piece from position 11 to position 14 — claimed a rosette :rosette:",
+    "time": "2020-10-18T19:21:46.548Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]
