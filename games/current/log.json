@@ -951,6 +951,15 @@
     "time": "2020-10-18T04:21:50.725Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/dfe5b5078ab841624a833185af5e2d24d78df349/games/current/board.212.svg"
+  },
+  {
+    "username": "Nathan13888",
+    "issue": 213,
+    "message": "moved a black piece onto the board to position 1",
+    "time": "2020-10-18T15:44:08.290Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
