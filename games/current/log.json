@@ -1005,6 +1005,15 @@
     "time": "2020-10-19T11:24:10.614Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3b0e47bc2bcbe099810eb9903132c70ca0f05f25/games/current/board.218.svg"
+  },
+  {
+    "username": "1ethanhansen",
+    "issue": 219,
+    "message": "ascended a white piece from position 14 :rocket:",
+    "time": "2020-10-19T15:51:15.767Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]
