@@ -1014,6 +1014,15 @@
     "time": "2020-10-19T15:51:15.767Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b287637c8ab12fdfb2ffc4408257468f83049ac6/games/current/board.219.svg"
+  },
+  {
+    "username": "tobias-wilfert",
+    "issue": 220,
+    "message": "moved a black piece onto the board to position 2",
+    "time": "2020-10-23T08:56:32.675Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
