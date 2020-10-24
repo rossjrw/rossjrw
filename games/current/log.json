@@ -1032,6 +1032,15 @@
     "time": "2020-10-23T18:29:00.080Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8c8f83b8fa2cc038772daf356f42e126c1e30760/games/current/board.221.svg"
+  },
+  {
+    "username": "SirojiddinSaidmurodov",
+    "issue": 222,
+    "message": "moved a black piece from position 5 to position 9",
+    "time": "2020-10-24T06:21:29.390Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
