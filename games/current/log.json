@@ -1041,6 +1041,15 @@
     "time": "2020-10-24T06:21:29.390Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0ed324a351455633b7af85e1fd267d357f6f07a4/games/current/board.222.svg"
+  },
+  {
+    "username": "JRetza",
+    "issue": 223,
+    "message": "moved a white piece from position 3 to position 7",
+    "time": "2020-10-24T06:22:32.802Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]
