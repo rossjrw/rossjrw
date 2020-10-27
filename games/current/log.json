@@ -1050,6 +1050,15 @@
     "time": "2020-10-24T06:22:32.802Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/622b39ddd01ee72a5d2a15428dd277b7aefe3f08/games/current/board.223.svg"
+  },
+  {
+    "username": "thedoodler",
+    "issue": 224,
+    "message": "moved a black piece from position 2 to position 4 — claimed a rosette :rosette:",
+    "time": "2020-10-27T11:57:42.348Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
