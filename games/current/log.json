@@ -1095,6 +1095,15 @@
     "time": "2020-10-31T16:06:54.042Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/caef74536da2d700fb0c7ee979db371024fdb0c1/games/current/board.228.svg"
+  },
+  {
+    "username": "1ethanhansen",
+    "issue": 229,
+    "message": "moved a white piece from position 8 to position 12",
+    "time": "2020-10-31T16:08:33.410Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]
