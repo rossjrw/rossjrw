@@ -1104,6 +1104,15 @@
     "time": "2020-10-31T16:08:33.410Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d98e8a6213e123c5ec4b32a7a11e98c80ab28cdc/games/current/board.229.svg"
+  },
+  {
+    "username": "Hans5958",
+    "issue": 233,
+    "message": "moved a black piece from position 3 to position 4 — claimed a rosette :rosette:",
+    "time": "2020-11-05T06:14:40.608Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
