@@ -1158,6 +1158,15 @@
     "time": "2020-11-06T11:29:15.344Z",
     "team": "w",
     "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/dd7765d5a1839e7ffc9faf92e9d7f75a29c244c2/games/current/board.237.svg"
+  },
+  {
+    "username": "tikhsuP",
+    "issue": 238,
+    "message": "moved a black piece from position 4 to position 6",
+    "time": "2020-11-07T16:28:34.741Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
