@@ -1257,6 +1257,15 @@
     "time": "2020-11-17T20:59:05.732Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c59c7789154afcb78e0e8a6c6779bc571f8e32a9/games/current/board.250.svg"
+  },
+  {
+    "username": "KhanShaheb34",
+    "issue": 251,
+    "message": "moved a black piece from position 3 to position 5",
+    "time": "2020-11-18T17:04:14.988Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
