@@ -1293,6 +1293,15 @@
     "time": "2020-11-19T00:09:23.999Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1b923e97127a64730cae76b122909b0cc32a3962/games/current/board.254.svg"
+  },
+  {
+    "username": "NotAShelf",
+    "issue": 255,
+    "message": "moved a black piece from position 5 to position 6",
+    "time": "2020-11-26T14:56:44.666Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
