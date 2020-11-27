@@ -1311,6 +1311,15 @@
     "time": "2020-11-26T21:43:04.872Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b0f89eb8d31bad3ea53cf9a35efb271271a6b290/games/current/board.256.svg"
+  },
+  {
+    "username": "GamerBoomTV",
+    "issue": 257,
+    "message": "moved a black piece onto the board to position 2",
+    "time": "2020-11-27T12:03:23.098Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
