@@ -1339,5 +1339,23 @@
     "team": "w",
     "action": "pass",
     "boardImage": null
+  },
+  {
+    "username": "YonLiud",
+    "issue": 260,
+    "message": "moved a black piece onto the board to position 1",
+    "time": "2020-11-29T16:02:15.728Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/040f78ec3ab5dc44785d35c6ec5d53f97fa5c1f2/games/current/board.260.svg"
+  },
+  {
+    "username": "YonLiud",
+    "issue": 260,
+    "message": "The white team rolled a 2 and their turn was automatically passed",
+    "time": "2020-11-29T16:02:15.728Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null
   }
 ]
