@@ -1402,5 +1402,23 @@
     "team": "b",
     "action": "move",
     "boardImage": null
+  },
+  {
+    "username": "jffrydsr",
+    "issue": 264,
+    "message": "moved a black piece from position 6 to position 9",
+    "time": "2020-12-03T15:32:07.651Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6e3de345c3def3bb600c2bc2fa3fb650ff042851/games/current/board.264.svg"
+  },
+  {
+    "username": "jffrydsr",
+    "issue": 264,
+    "message": "The white team rolled a 2 and their turn was automatically passed",
+    "time": "2020-12-03T15:32:07.651Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null
   }
 ]
