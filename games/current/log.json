@@ -1392,6 +1392,15 @@
     "time": "2020-12-01T23:50:17.104Z",
     "team": "w",
     "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4269948cbaa685c81d2017dc6d2491adebe97798/games/current/board.262.svg"
+  },
+  {
+    "username": "Rohitesh-Kumar-Jain",
+    "issue": 263,
+    "message": "moved a black piece from position 2 to position 4 — claimed a rosette :rosette:",
+    "time": "2020-12-03T14:41:14.183Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
