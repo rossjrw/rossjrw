@@ -2,6 +2,7 @@ import { Octokit } from "@octokit/rest/index"
 import { Context } from "@actions/github/lib/context"
 import Ur from "ur-game"
 import ejs from "ejs"
+import { compress, compressTight } from "compress-tag"
 
 import { analyseMove } from '@/analyseMove'
 import { updateSvg } from '@/updateSvg'
@@ -63,7 +64,15 @@ export async function generateReadme (
     }).map(move => {
       const events = analyseMove(state, move.from, move.to)
       return {
-        text: `${events.ascensionHappened ? "Ascend" : "Move"} a ${move.from === 0 ? "new piece" : `piece from tile ${move.from}`}${events.ascensionHappened ? "" : ` to tile ${move.to}`}${events.rosetteClaimed ? " (:rosette:)" : ""}${events.captureHappened ? " (:crossed_swords:)" : ""}${events.ascensionHappened ? " (:rocket:)" : ""}${events.gameWon ? " (:crown:)" : ""}`,
+        text: compress`
+          ${events.ascensionHappened ? "Ascend" : "Move"}
+          a ${move.from === 0 ?  "new piece" : `piece from tile ${move.from}`}
+          ${events.ascensionHappened ? "" : `to tile ${move.to}`}
+          ${events.rosetteClaimed ? "(:rosette:)" : ""}
+          ${events.captureHappened ? "(:crossed_swords:)" : ""}
+          ${events.ascensionHappened ? "(:rocket:)" : ""}
+          ${events.gameWon ? "(:crown:)" : ""}
+        `,
         url: issueLink(
           `ur-move-${state.diceResult}%40${move.from}-0`,
           context,
@@ -86,7 +95,15 @@ export async function generateReadme (
   const logItems = log.internalLog.map(logItem => {
     return [
       `${logItem.time.split(".")[0].split("T").join(" ")}`,
-      `:${teamName(logItem.team)}_circle: ${logItem.action === "pass" ? "" : `**[@${logItem.username}](https://github.com/${logItem.username})**`} ${logItem.message}`,
+      compress`
+        :${teamName(logItem.team)}_circle:
+        ${
+          logItem.action === "pass" ?
+          "" :
+          `**[@${logItem.username}](https://github.com/${logItem.username})**`
+        }
+        ${logItem.message}
+      `,
       `[#${logItem.issue}](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${logItem.issue})`,
       `${logItem.boardImage === null ? "" : `[link](${logItem.boardImage})`}`,
     ]
@@ -125,5 +142,12 @@ function issueLink (
   issueTitle: string,
   context: Context,
 ): string {
-  return `https://github.com/${context.repo.owner}/${context.repo.repo}/issues/new?title=${issueTitle}&body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._`
+  return compressTight`
+    https://github.com/${context.repo.owner}/${context.repo.repo}/issues/new
+      ?title=${issueTitle}
+      &body=
+        Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.
+        %0D%0A%0D%0A
+        Be+aware+that+your+move+can+take+a+minute+or+two+to+process.
+  `
 }

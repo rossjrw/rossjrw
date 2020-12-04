@@ -1,6 +1,7 @@
 import { Octokit } from "@octokit/rest"
 import { Context } from "@actions/github/lib/context"
 import Ur from "ur-game"
+import { compress } from "compress-tag"
 
 import { getPlayerTeam } from '@/player'
 import { generateReadme } from '@/generateReadme'
@@ -75,7 +76,14 @@ export async function resetGame (
     owner: context.repo.owner,
     repo: context.repo.repo,
     issue_number: context.issue.number,
-    body: `@${context.actor} Done! You started a new game.\n\nIt's ${teamName(newState.currentPlayer)} to play! [Make the first move yourself](https://github.com/rossjrw/rossjrw), or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+started+a+new+game+%E2%80%94+take+the+first+turn+at+https://github.com/rossjrw+%23ur+%23github)`
+    body: compress`
+      @${context.actor}
+      Done! You started a new game.
+      \n\n
+      It's ${teamName(newState.currentPlayer)} to play!
+      [Make the first move yourself](https://github.com/rossjrw/rossjrw),
+      or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+started+a+new+game+%E2%80%94+take+the+first+turn+at+https://github.com/rossjrw+%23ur+%23github)
+    `
   })
   octokit.issues.update({
     owner: context.repo.owner,

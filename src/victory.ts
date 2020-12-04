@@ -23,7 +23,16 @@ export function makeVictoryMessage (
   const endingDate = new Date(log.internalLog[log.internalLog.length - 1].time)
   const hours = (endingDate.getTime() - startingDate.getTime()) / 1000 / 3600
 
-  return `This game has ended! Congratulations to the ${winningTeam} team for their victory.\n\nThis game had ${players.length} players, ${moves} moves, and took ${hours} hours.\n\n${makeTeamListTable(log, false)}`
+  return compress`
+    This game has ended!
+    Congratulations to the ${winningTeam} team for their victory.
+    \n\n
+    This game had ${players.length} players,
+    ${moves} moves,
+    and took ${hours} hours.
+    \n\n
+    ${makeTeamListTable(log, false)}
+  `
 }
 
 export async function listPreviousGames (
