@@ -1473,6 +1473,15 @@
     "time": "2020-12-04T06:55:12.981Z",
     "team": "w",
     "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/bf24800319906ebd41687f3dabab7e99805cfe8e/games/current/board.267.svg"
+  },
+  {
+    "username": "jffrydsr",
+    "issue": 268,
+    "message": "moved a black piece from position 8 to position 9",
+    "time": "2020-12-04T16:28:13.678Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
