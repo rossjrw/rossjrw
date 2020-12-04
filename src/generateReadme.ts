@@ -3,6 +3,7 @@ import { Context } from "@actions/github/lib/context"
 import Ur from "ur-game"
 import ejs from "ejs"
 import { compress, compressTight } from "compress-tag"
+import dateformat from "dateformat"
 
 import { analyseMove } from '@/analyseMove'
 import { updateSvg } from '@/updateSvg'
@@ -94,7 +95,7 @@ export async function generateReadme (
   // Make a list of moves that have happened so far this game, as markdown
   const logItems = log.internalLog.map(logItem => {
     return [
-      `${logItem.time.split(".")[0].split("T").join(" ")}`,
+      `${dateformat(new Date(logItem.time), "dS mmm yyyy HH:MM")}`,
       compress`
         :${teamName(logItem.team)}_circle:
         ${

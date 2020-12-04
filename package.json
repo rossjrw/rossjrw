@@ -20,6 +20,7 @@
   "homepage": "https://github.com/rossjrw/ur#readme",
   "devDependencies": {
     "@octokit/rest": "^16.43.2",
+    "@types/dateformat": "^3.0.1",
     "@types/ejs": "^3.0.4",
     "@types/humanize-duration": "^3.18.1",
     "@types/jest": "^26.0.5",
@@ -30,6 +31,7 @@
     "compress-tag": "^2.0.0",
     "core-js": "^3.6.5",
     "crypto-random-string": "^3.2.0",
+    "dateformat": "^4.2.2",
     "eslint": "^7.5.0",
     "github-script": "git+https://github.com/actions/github-script.git#v2.0.0",
     "humanize-duration": "^3.24.0",

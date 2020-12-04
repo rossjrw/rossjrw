@@ -3,6 +3,7 @@ import { Context } from "@actions/github/lib/context"
 import { compress } from "compress-tag"
 import { uniq } from "lodash"
 import humanizeDuration from "humanize-duration"
+import dateformat from "dateformat"
 
 import { Log, LogItem } from '@/log'
 import { teamName, makeTeamStats, makeTeamListTable } from '@/teams'
@@ -84,13 +85,10 @@ export async function listPreviousGames (
       playerCount: uniq(log.map(entry => entry.username)).length,
     }
     return compress`
-      A game started on ${new Date(game.firstMove.time).toUTCString()}
-      by <b>
-        <a href="https://github.com/${game.firstMove.username}">
-          @${game.firstMove.username}
-        </a>
-      </b>
-      and ended on ${new Date(game.lastMove.time).toUTCString()}
+      A game
+      was started on ${dateformat(new Date(game.firstMove.time), "dS mmm yyyy")}
+      by **[@${game.firstMove.username}](https://github.com/${game.firstMove.username})**
+      and ended on ${dateformat(new Date(game.lastMove.time), "dS mmm yyyy")}
       in a win for the ${
         game.lastMove.team === "b" ?
           ":black_circle:black" :
