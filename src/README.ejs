@@ -1,7 +1,7 @@
 Welcome to my Github profile!
 We're playing
 [The Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur).
-<%= state.currentPlayer ? "**Game #<%= previousGames.length + 1 %> is in progress,** but you can join!" : "**This game has ended!**" %>
+<%= state.currentPlayer ? `**Game #${previousGames.length + 1} is in progress,** but you can join!` : "**This game has ended!**" %>
 
 <% if (state.currentPlayer === undefined) { -%>
   This game has finished, so we're just waiting for someone to click _"Start a
