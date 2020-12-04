@@ -94,7 +94,7 @@ export async function generateReadme (
 
   const teamTable = makeTeamListTable(log, true)
 
-  const previousGames = listPreviousGames("games", octokit, context)
+  const previousGames = await listPreviousGames("games", octokit, context)
 
   const readme = ejs.render(
     template,
