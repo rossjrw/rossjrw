@@ -26,6 +26,7 @@
     "@typescript-eslint/eslint-plugin": "^3.7.0",
     "@typescript-eslint/parser": "^3.7.0",
     "clean-webpack-plugin": "^3.0.0",
+    "compress-tag": "^2.0.0",
     "core-js": "^3.6.5",
     "crypto-random-string": "^3.2.0",
     "eslint": "^7.5.0",
