@@ -1482,6 +1482,15 @@
     "time": "2020-12-04T16:28:13.678Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3fefae2e4f9a0d9d2abd9d21bad43382a7c14024/games/current/board.268.svg"
+  },
+  {
+    "username": "qbtl",
+    "issue": 269,
+    "message": "ascended a white piece from position 14 :rocket: — won the game :crown:",
+    "time": "2020-12-04T16:38:46.134Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]
