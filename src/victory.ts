@@ -50,21 +50,23 @@ export async function listPreviousGames (
     return dirObject.type === "file"
   })
 
-  const gameLogs: LogItem[][] = await Promise.all(gameFiles.map(async file => {
-    const gameFile = await octokit.repos.getContents({
-      owner: context.repo.owner,
-      repo: context.repo.repo,
-      ref: "play",
-      path: file.path,
-      mediaType: { format: "raw" },
-    })
-    if (Array.isArray(gameFile.data)) {
-      throw new Error("GAMEFILE_IS_DIR")
+  const gameLogs: LogItem[][] = await Promise.all(gameFiles.map(
+    async (file): Promise<LogItem[]> => {
+      const gameFile = await octokit.repos.getContents({
+        owner: context.repo.owner,
+        repo: context.repo.repo,
+        ref: "play",
+        path: file.path,
+        mediaType: { format: "raw" },
+      })
+      if (Array.isArray(gameFile.data)) {
+        throw new Error("GAMEFILE_IS_DIR")
+      }
+      return JSON.parse(
+        Buffer.from(gameFile.data.content!, "base64").toString()
+      )
     }
-    return JSON.parse(
-      Buffer.from(gameFile.data.content!, "base64").toString()
-    )
-  }))
+  ))
 
   const gameStrings = gameLogs.map(log => {
     const game = {
