@@ -96,6 +96,193 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/compress-tag/dist/index.js":
+/*!*************************************************!*\
+  !*** ./node_modules/compress-tag/dist/index.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @file **compress-tag** | Template literal tag to remove excess
+ * whitespace and newlines from strings.
+ * @author Ian Sanders
+ * @copyright 2019 Ian Sanders
+ * @license MIT
+ */
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const unraw_1 = __importDefault(__webpack_require__(/*! unraw */ "./node_modules/unraw/dist/index.js"));
+/**
+ * Zipper-merge two arrays together into string. Elements will be coerced to
+ * string values.
+ * @param a The array whose first element will be the first itme in the output
+ * string. Can be sparse.
+ * @param b The array to merge into `a`. Can be sparse.
+ * @example
+ * merge([1, 2, 3], ["A", "B", "C", "D", "E"]);
+ * // => "1A2B3CDE"
+ */
+function mergeAndReduceToString(a, b) {
+    let result = "";
+    for (let i = 0; i < Math.max(a.length, b.length); i++) {
+        if (i in a)
+            result += a[i];
+        if (i in b)
+            result += b[i];
+    }
+    return result;
+}
+/**
+ * Remove the linebreaks and their surrounding space from the passed string,
+ * replacing each with a single space if `tight` is false.
+ * @param text The string to process.
+ * @param tight If true, will *not* replace those breaks with a space.
+ */
+function removeLineBreaks(text, tight) {
+    return text.replace(/\s*[\r\n]+\s*/g, tight ? "" : " ");
+}
+/**
+ * Generate a template literal tag that compresses (AKA minifies) a template
+ * string. In this context, compress is defined as removing line breaks and
+ * trailing / leading spaces from each line.
+ *
+ * If you desire a linebreak to be present in the final result, you must provide
+ * it as a linebreak character. (`\n` or `\r\n`). If you desire indentation in
+ * the result, you must include that as a tab character `\t`.
+ * @param tight If `true`, will not include spaces where the line breaks used to
+ * be.
+ * @returns A template literal tag.
+ */
+function generateCompressTag(tight = false) {
+    return function (stringOrStrings, ...placeholders) {
+        // Only happens when used as a wrapper function
+        if (typeof stringOrStrings === "string") {
+            return removeLineBreaks(stringOrStrings, tight).trim();
+        }
+        // The raw strings must be compressed prior to merging with placeholders
+        // because you never want to compress the placeholders.
+        // The reason we remove leading and trailing whitespace prior to deescape
+        // is to avoid trimming deescaped trailing and leading linebreaks/tabs.
+        const compressedStrings = stringOrStrings.raw.map((rawString, index, list) => {
+            let compressedString = rawString;
+            if (index === 0) {
+                // Remove leading whitespace (includes leading linebreaks).
+                compressedString = compressedString.replace(/^\s+/, "");
+            }
+            if (index === list.length - 1) {
+                // Remove trailing whitespace (includes trailing linebreaks).
+                compressedString = compressedString.replace(/\s+$/, "");
+            }
+            compressedString = removeLineBreaks(compressedString, tight);
+            return unraw_1.default(compressedString);
+        });
+        return mergeAndReduceToString(compressedStrings, placeholders);
+    };
+}
+/**
+ * Parses the string and placeholders as normal, then removes any line breaks
+ * and the spaces surrounding each line (ie, indentation), replacing each line
+ * break with a single space. Empty lines are removed completely.
+ *
+ * Can be used either as a template literal tag or as a function that accepts
+ * a string. This section option is used when the template literal already must
+ * be tagged with some other tag.
+ *
+ * If you desire a linebreak to be present in the final result, you must provide
+ * it as a linebreak character. (`\n` or `\r\n`). If you desire indentation in
+ * the result, you must include that as a tab character `\t`.
+ * @example
+ * let sampleText = "This is some sample text."
+ * compress`
+ *   <div>
+ *     <span>${sampleText}</span>
+ *   </div>
+ * `
+ * // => "<div> <span>This is some sample text.</span> </div>"
+ * @example
+ * compress(uppercase`
+ *   This is some
+ *   sample text.
+ * `)
+ * // => "THIS IS SOME SAMPLE TEXT."
+ * @returns The processed, minified / compressed string.
+ * @param stringOrStrings A string to process, or (when used as a template
+ * literal tag), an automatically generated `TemplateStringsArray`.
+ *
+ * **Note:** If passing a string to this function directly, manual linebreaks
+ * will not be preserved.
+ *
+ * **Note:** You should typically not need to pass a `TemplateStringsArray`
+ * directly to the function. Instead, use it as a template literal tag per the
+ * example.
+ * @param placeholders Values of the placeholder expressions.
+ *
+ * **Note:** You should typically not need to pass this value directly to the
+ * function. Instead, use it as a template literal tag per the example.
+ */
+exports.compress = generateCompressTag();
+/**
+ * Acts exactly the same as `compress` except that it doesn't insert spaces
+ * where line breaks were removed. This makes it useful for code and URLs, for
+ * example.
+ * @see compress For full documentation.
+ *
+ * @example
+ * let sampleText = "This is some sample text."
+ * compressTight`
+ *   <div>
+ *     <span>${sampleText}</span>
+ *   </div>
+ * `
+ * // => "<div><span>This is some sample text.</span></div>"
+ *
+ * @example
+ * compressTight(uppercase`
+ *   This is some
+ *   sample text.
+ * `)
+ * // => "THIS IS SOMESAMPLE TEXT."
+ */
+exports.compressTight = generateCompressTag(true);
+/**
+ * Shorthand for `compress`.
+ * @see compress for full documentation.
+ *
+ * @example
+ * c`Example
+ * text.`
+ * // => Example text.
+ *
+ * @example
+ * c(capitalize`Example
+ * text.`)
+ * // => EXAMPLE TEXT.
+ */
+exports.c = exports.compress;
+/**
+ * Shorthand for `compressTight`.
+ * @see compressTight for full documentation.
+ *
+ * @example
+ * t`Example
+ * text.`
+ * // => Exampletext.
+ *
+ * @example
+ * t(capitalize`Example
+ * text.`)
+ * // => EXAMPLETEXT.
+ */
+exports.t = exports.compressTight;
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
 /***/ "./node_modules/ejs/lib/ejs.js":
 /*!*************************************!*\
   !*** ./node_modules/ejs/lib/ejs.js ***!
@@ -1233,6 +1420,1328 @@ exports.cache = {
 /***/ (function(module) {
 
 module.exports = JSON.parse("{\"_args\":[[\"ejs@3.1.3\",\"/home/runner/work/rossjrw/rossjrw\"]],\"_from\":\"ejs@3.1.3\",\"_id\":\"ejs@3.1.3\",\"_inBundle\":false,\"_integrity\":\"sha512-wmtrUGyfSC23GC/B1SMv2ogAUgbQEtDmTIhfqielrG5ExIM9TP4UoYdi90jLF1aTcsWCJNEO0UrgKzP0y3nTSg==\",\"_location\":\"/ejs\",\"_phantomChildren\":{},\"_requested\":{\"type\":\"version\",\"registry\":true,\"raw\":\"ejs@3.1.3\",\"name\":\"ejs\",\"escapedName\":\"ejs\",\"rawSpec\":\"3.1.3\",\"saveSpec\":null,\"fetchSpec\":\"3.1.3\"},\"_requiredBy\":[\"/\"],\"_resolved\":\"https://registry.npmjs.org/ejs/-/ejs-3.1.3.tgz\",\"_spec\":\"3.1.3\",\"_where\":\"/home/runner/work/rossjrw/rossjrw\",\"author\":{\"name\":\"Matthew Eernisse\",\"email\":\"mde@fleegix.org\",\"url\":\"http://fleegix.org\"},\"bin\":{\"ejs\":\"bin/cli.js\"},\"bugs\":{\"url\":\"https://github.com/mde/ejs/issues\"},\"dependencies\":{\"jake\":\"^10.6.1\"},\"description\":\"Embedded JavaScript templates\",\"devDependencies\":{\"browserify\":\"^16.5.1\",\"eslint\":\"^6.8.0\",\"git-directory-deploy\":\"^1.5.1\",\"jsdoc\":\"^3.6.4\",\"lru-cache\":\"^4.0.1\",\"mocha\":\"^7.1.1\",\"uglify-js\":\"^3.3.16\"},\"engines\":{\"node\":\">=0.10.0\"},\"homepage\":\"https://github.com/mde/ejs\",\"jsdelivr\":\"ejs.min.js\",\"keywords\":[\"template\",\"engine\",\"ejs\"],\"license\":\"Apache-2.0\",\"main\":\"./lib/ejs.js\",\"name\":\"ejs\",\"repository\":{\"type\":\"git\",\"url\":\"git://github.com/mde/ejs.git\"},\"scripts\":{\"postinstall\":\"node --harmony ./postinstall.js\",\"test\":\"mocha\"},\"unpkg\":\"ejs.min.js\",\"version\":\"3.1.3\"}");
+
+/***/ }),
+
+/***/ "./node_modules/humanize-duration/humanize-duration.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/humanize-duration/humanize-duration.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
+
+/* global define, module */
+
+(function () {
+  // This has to be defined separately because of a bug: we want to alias
+  // `gr` and `el` for backwards-compatiblity. In a breaking change, we can
+  // remove `gr` entirely.
+  // See https://github.com/EvanHahn/HumanizeDuration.js/issues/143 for more.
+  var greek = {
+    y: function (c) {
+      return c === 1 ? "χρόνος" : "χρόνια";
+    },
+    mo: function (c) {
+      return c === 1 ? "μήνας" : "μήνες";
+    },
+    w: function (c) {
+      return c === 1 ? "εβδομάδα" : "εβδομάδες";
+    },
+    d: function (c) {
+      return c === 1 ? "μέρα" : "μέρες";
+    },
+    h: function (c) {
+      return c === 1 ? "ώρα" : "ώρες";
+    },
+    m: function (c) {
+      return c === 1 ? "λεπτό" : "λεπτά";
+    },
+    s: function (c) {
+      return c === 1 ? "δευτερόλεπτο" : "δευτερόλεπτα";
+    },
+    ms: function (c) {
+      return c === 1
+        ? "χιλιοστό του δευτερολέπτου"
+        : "χιλιοστά του δευτερολέπτου";
+    },
+    decimal: ",",
+  };
+
+  var LANGUAGES = {
+    ar: {
+      y: function (c) {
+        return c === 1 ? "سنة" : "سنوات";
+      },
+      mo: function (c) {
+        return c === 1 ? "شهر" : "أشهر";
+      },
+      w: function (c) {
+        return c === 1 ? "أسبوع" : "أسابيع";
+      },
+      d: function (c) {
+        return c === 1 ? "يوم" : "أيام";
+      },
+      h: function (c) {
+        return c === 1 ? "ساعة" : "ساعات";
+      },
+      m: function (c) {
+        return c > 2 && c < 11 ? "دقائق" : "دقيقة";
+      },
+      s: function (c) {
+        return c === 1 ? "ثانية" : "ثواني";
+      },
+      ms: function (c) {
+        return c === 1 ? "جزء من الثانية" : "أجزاء من الثانية";
+      },
+      decimal: ",",
+    },
+    bg: {
+      y: function (c) {
+        return ["години", "година", "години"][getSlavicForm(c)];
+      },
+      mo: function (c) {
+        return ["месеца", "месец", "месеца"][getSlavicForm(c)];
+      },
+      w: function (c) {
+        return ["седмици", "седмица", "седмици"][getSlavicForm(c)];
+      },
+      d: function (c) {
+        return ["дни", "ден", "дни"][getSlavicForm(c)];
+      },
+      h: function (c) {
+        return ["часа", "час", "часа"][getSlavicForm(c)];
+      },
+      m: function (c) {
+        return ["минути", "минута", "минути"][getSlavicForm(c)];
+      },
+      s: function (c) {
+        return ["секунди", "секунда", "секунди"][getSlavicForm(c)];
+      },
+      ms: function (c) {
+        return ["милисекунди", "милисекунда", "милисекунди"][getSlavicForm(c)];
+      },
+      decimal: ",",
+    },
+    ca: {
+      y: function (c) {
+        return "any" + (c === 1 ? "" : "s");
+      },
+      mo: function (c) {
+        return "mes" + (c === 1 ? "" : "os");
+      },
+      w: function (c) {
+        return "setman" + (c === 1 ? "a" : "es");
+      },
+      d: function (c) {
+        return "di" + (c === 1 ? "a" : "es");
+      },
+      h: function (c) {
+        return "hor" + (c === 1 ? "a" : "es");
+      },
+      m: function (c) {
+        return "minut" + (c === 1 ? "" : "s");
+      },
+      s: function (c) {
+        return "segon" + (c === 1 ? "" : "s");
+      },
+      ms: function (c) {
+        return "milisegon" + (c === 1 ? "" : "s");
+      },
+      decimal: ",",
+    },
+    cs: {
+      y: function (c) {
+        return ["rok", "roku", "roky", "let"][getCzechOrSlovakForm(c)];
+      },
+      mo: function (c) {
+        return ["měsíc", "měsíce", "měsíce", "měsíců"][getCzechOrSlovakForm(c)];
+      },
+      w: function (c) {
+        return ["týden", "týdne", "týdny", "týdnů"][getCzechOrSlovakForm(c)];
+      },
+      d: function (c) {
+        return ["den", "dne", "dny", "dní"][getCzechOrSlovakForm(c)];
+      },
+      h: function (c) {
+        return ["hodina", "hodiny", "hodiny", "hodin"][getCzechOrSlovakForm(c)];
+      },
+      m: function (c) {
+        return ["minuta", "minuty", "minuty", "minut"][getCzechOrSlovakForm(c)];
+      },
+      s: function (c) {
+        return ["sekunda", "sekundy", "sekundy", "sekund"][
+          getCzechOrSlovakForm(c)
+        ];
+      },
+      ms: function (c) {
+        return ["milisekunda", "milisekundy", "milisekundy", "milisekund"][
+          getCzechOrSlovakForm(c)
+        ];
+      },
+      decimal: ",",
+    },
+    da: {
+      y: "år",
+      mo: function (c) {
+        return "måned" + (c === 1 ? "" : "er");
+      },
+      w: function (c) {
+        return "uge" + (c === 1 ? "" : "r");
+      },
+      d: function (c) {
+        return "dag" + (c === 1 ? "" : "e");
+      },
+      h: function (c) {
+        return "time" + (c === 1 ? "" : "r");
+      },
+      m: function (c) {
+        return "minut" + (c === 1 ? "" : "ter");
+      },
+      s: function (c) {
+        return "sekund" + (c === 1 ? "" : "er");
+      },
+      ms: function (c) {
+        return "millisekund" + (c === 1 ? "" : "er");
+      },
+      decimal: ",",
+    },
+    de: {
+      y: function (c) {
+        return "Jahr" + (c === 1 ? "" : "e");
+      },
+      mo: function (c) {
+        return "Monat" + (c === 1 ? "" : "e");
+      },
+      w: function (c) {
+        return "Woche" + (c === 1 ? "" : "n");
+      },
+      d: function (c) {
+        return "Tag" + (c === 1 ? "" : "e");
+      },
+      h: function (c) {
+        return "Stunde" + (c === 1 ? "" : "n");
+      },
+      m: function (c) {
+        return "Minute" + (c === 1 ? "" : "n");
+      },
+      s: function (c) {
+        return "Sekunde" + (c === 1 ? "" : "n");
+      },
+      ms: function (c) {
+        return "Millisekunde" + (c === 1 ? "" : "n");
+      },
+      decimal: ",",
+    },
+    el: greek,
+    en: {
+      y: function (c) {
+        return "year" + (c === 1 ? "" : "s");
+      },
+      mo: function (c) {
+        return "month" + (c === 1 ? "" : "s");
+      },
+      w: function (c) {
+        return "week" + (c === 1 ? "" : "s");
+      },
+      d: function (c) {
+        return "day" + (c === 1 ? "" : "s");
+      },
+      h: function (c) {
+        return "hour" + (c === 1 ? "" : "s");
+      },
+      m: function (c) {
+        return "minute" + (c === 1 ? "" : "s");
+      },
+      s: function (c) {
+        return "second" + (c === 1 ? "" : "s");
+      },
+      ms: function (c) {
+        return "millisecond" + (c === 1 ? "" : "s");
+      },
+      decimal: ".",
+    },
+    es: {
+      y: function (c) {
+        return "año" + (c === 1 ? "" : "s");
+      },
+      mo: function (c) {
+        return "mes" + (c === 1 ? "" : "es");
+      },
+      w: function (c) {
+        return "semana" + (c === 1 ? "" : "s");
+      },
+      d: function (c) {
+        return "día" + (c === 1 ? "" : "s");
+      },
+      h: function (c) {
+        return "hora" + (c === 1 ? "" : "s");
+      },
+      m: function (c) {
+        return "minuto" + (c === 1 ? "" : "s");
+      },
+      s: function (c) {
+        return "segundo" + (c === 1 ? "" : "s");
+      },
+      ms: function (c) {
+        return "milisegundo" + (c === 1 ? "" : "s");
+      },
+      decimal: ",",
+    },
+    et: {
+      y: function (c) {
+        return "aasta" + (c === 1 ? "" : "t");
+      },
+      mo: function (c) {
+        return "kuu" + (c === 1 ? "" : "d");
+      },
+      w: function (c) {
+        return "nädal" + (c === 1 ? "" : "at");
+      },
+      d: function (c) {
+        return "päev" + (c === 1 ? "" : "a");
+      },
+      h: function (c) {
+        return "tund" + (c === 1 ? "" : "i");
+      },
+      m: function (c) {
+        return "minut" + (c === 1 ? "" : "it");
+      },
+      s: function (c) {
+        return "sekund" + (c === 1 ? "" : "it");
+      },
+      ms: function (c) {
+        return "millisekund" + (c === 1 ? "" : "it");
+      },
+      decimal: ",",
+    },
+    fa: {
+      y: "سال",
+      mo: "ماه",
+      w: "هفته",
+      d: "روز",
+      h: "ساعت",
+      m: "دقیقه",
+      s: "ثانیه",
+      ms: "میلی ثانیه",
+      decimal: ".",
+    },
+    fi: {
+      y: function (c) {
+        return c === 1 ? "vuosi" : "vuotta";
+      },
+      mo: function (c) {
+        return c === 1 ? "kuukausi" : "kuukautta";
+      },
+      w: function (c) {
+        return "viikko" + (c === 1 ? "" : "a");
+      },
+      d: function (c) {
+        return "päivä" + (c === 1 ? "" : "ä");
+      },
+      h: function (c) {
+        return "tunti" + (c === 1 ? "" : "a");
+      },
+      m: function (c) {
+        return "minuutti" + (c === 1 ? "" : "a");
+      },
+      s: function (c) {
+        return "sekunti" + (c === 1 ? "" : "a");
+      },
+      ms: function (c) {
+        return "millisekunti" + (c === 1 ? "" : "a");
+      },
+      decimal: ",",
+    },
+    fo: {
+      y: "ár",
+      mo: function (c) {
+        return c === 1 ? "mánaður" : "mánaðir";
+      },
+      w: function (c) {
+        return c === 1 ? "vika" : "vikur";
+      },
+      d: function (c) {
+        return c === 1 ? "dagur" : "dagar";
+      },
+      h: function (c) {
+        return c === 1 ? "tími" : "tímar";
+      },
+      m: function (c) {
+        return c === 1 ? "minuttur" : "minuttir";
+      },
+      s: "sekund",
+      ms: "millisekund",
+      decimal: ",",
+    },
+    fr: {
+      y: function (c) {
+        return "an" + (c >= 2 ? "s" : "");
+      },
+      mo: "mois",
+      w: function (c) {
+        return "semaine" + (c >= 2 ? "s" : "");
+      },
+      d: function (c) {
+        return "jour" + (c >= 2 ? "s" : "");
+      },
+      h: function (c) {
+        return "heure" + (c >= 2 ? "s" : "");
+      },
+      m: function (c) {
+        return "minute" + (c >= 2 ? "s" : "");
+      },
+      s: function (c) {
+        return "seconde" + (c >= 2 ? "s" : "");
+      },
+      ms: function (c) {
+        return "milliseconde" + (c >= 2 ? "s" : "");
+      },
+      decimal: ",",
+    },
+    gr: greek,
+    he: {
+      y: function (c) {
+        return c === 1 ? "שנה" : "שנים";
+      },
+      mo: function (c) {
+        return c === 1 ? "חודש" : "חודשים";
+      },
+      w: function (c) {
+        return c === 1 ? "שבוע" : "שבועות";
+      },
+      d: function (c) {
+        return c === 1 ? "יום" : "ימים";
+      },
+      h: function (c) {
+        return c === 1 ? "שעה" : "שעות";
+      },
+      m: function (c) {
+        return c === 1 ? "דקה" : "דקות";
+      },
+      s: function (c) {
+        return c === 1 ? "שניה" : "שניות";
+      },
+      ms: function (c) {
+        return c === 1 ? "מילישנייה" : "מילישניות";
+      },
+      decimal: ".",
+    },
+    hr: {
+      y: function (c) {
+        if (c % 10 === 2 || c % 10 === 3 || c % 10 === 4) {
+          return "godine";
+        }
+        return "godina";
+      },
+      mo: function (c) {
+        if (c === 1) {
+          return "mjesec";
+        } else if (c === 2 || c === 3 || c === 4) {
+          return "mjeseca";
+        }
+        return "mjeseci";
+      },
+      w: function (c) {
+        if (c % 10 === 1 && c !== 11) {
+          return "tjedan";
+        }
+        return "tjedna";
+      },
+      d: function (c) {
+        return c === 1 ? "dan" : "dana";
+      },
+      h: function (c) {
+        if (c === 1) {
+          return "sat";
+        } else if (c === 2 || c === 3 || c === 4) {
+          return "sata";
+        }
+        return "sati";
+      },
+      m: function (c) {
+        var mod10 = c % 10;
+        if ((mod10 === 2 || mod10 === 3 || mod10 === 4) && (c < 10 || c > 14)) {
+          return "minute";
+        }
+        return "minuta";
+      },
+      s: function (c) {
+        if (
+          c === 10 ||
+          c === 11 ||
+          c === 12 ||
+          c === 13 ||
+          c === 14 ||
+          c === 16 ||
+          c === 17 ||
+          c === 18 ||
+          c === 19 ||
+          c % 10 === 5
+        ) {
+          return "sekundi";
+        } else if (c % 10 === 1) {
+          return "sekunda";
+        } else if (c % 10 === 2 || c % 10 === 3 || c % 10 === 4) {
+          return "sekunde";
+        }
+        return "sekundi";
+      },
+      ms: function (c) {
+        if (c === 1) {
+          return "milisekunda";
+        } else if (c % 10 === 2 || c % 10 === 3 || c % 10 === 4) {
+          return "milisekunde";
+        }
+        return "milisekundi";
+      },
+      decimal: ",",
+    },
+    hi: {
+      y: "साल",
+      mo: function (c) {
+        return c === 1 ? "महीना" : "महीने";
+      },
+      w: function (c) {
+        return c === 1 ? "हफ़्ता" : "हफ्ते";
+      },
+      d: "दिन",
+      h: function (c) {
+        return c === 1 ? "घंटा" : "घंटे";
+      },
+      m: "मिनट",
+      s: "सेकंड",
+      ms: "मिलीसेकंड",
+      decimal: ".",
+    },
+    hu: {
+      y: "év",
+      mo: "hónap",
+      w: "hét",
+      d: "nap",
+      h: "óra",
+      m: "perc",
+      s: "másodperc",
+      ms: "ezredmásodperc",
+      decimal: ",",
+    },
+    id: {
+      y: "tahun",
+      mo: "bulan",
+      w: "minggu",
+      d: "hari",
+      h: "jam",
+      m: "menit",
+      s: "detik",
+      ms: "milidetik",
+      decimal: ".",
+    },
+    is: {
+      y: "ár",
+      mo: function (c) {
+        return "mánuð" + (c === 1 ? "ur" : "ir");
+      },
+      w: function (c) {
+        return "vik" + (c === 1 ? "a" : "ur");
+      },
+      d: function (c) {
+        return "dag" + (c === 1 ? "ur" : "ar");
+      },
+      h: function (c) {
+        return "klukkutím" + (c === 1 ? "i" : "ar");
+      },
+      m: function (c) {
+        return "mínút" + (c === 1 ? "a" : "ur");
+      },
+      s: function (c) {
+        return "sekúnd" + (c === 1 ? "a" : "ur");
+      },
+      ms: function (c) {
+        return "millisekúnd" + (c === 1 ? "a" : "ur");
+      },
+      decimal: ".",
+    },
+    it: {
+      y: function (c) {
+        return "ann" + (c === 1 ? "o" : "i");
+      },
+      mo: function (c) {
+        return "mes" + (c === 1 ? "e" : "i");
+      },
+      w: function (c) {
+        return "settiman" + (c === 1 ? "a" : "e");
+      },
+      d: function (c) {
+        return "giorn" + (c === 1 ? "o" : "i");
+      },
+      h: function (c) {
+        return "or" + (c === 1 ? "a" : "e");
+      },
+      m: function (c) {
+        return "minut" + (c === 1 ? "o" : "i");
+      },
+      s: function (c) {
+        return "second" + (c === 1 ? "o" : "i");
+      },
+      ms: function (c) {
+        return "millisecond" + (c === 1 ? "o" : "i");
+      },
+      decimal: ",",
+    },
+    ja: {
+      y: "年",
+      mo: "月",
+      w: "週",
+      d: "日",
+      h: "時間",
+      m: "分",
+      s: "秒",
+      ms: "ミリ秒",
+      decimal: ".",
+    },
+    ko: {
+      y: "년",
+      mo: "개월",
+      w: "주일",
+      d: "일",
+      h: "시간",
+      m: "분",
+      s: "초",
+      ms: "밀리 초",
+      decimal: ".",
+    },
+    lo: {
+      y: "ປີ",
+      mo: "ເດືອນ",
+      w: "ອາທິດ",
+      d: "ມື້",
+      h: "ຊົ່ວໂມງ",
+      m: "ນາທີ",
+      s: "ວິນາທີ",
+      ms: "ມິນລິວິນາທີ",
+      decimal: ",",
+    },
+    lt: {
+      y: function (c) {
+        return c % 10 === 0 || (c % 100 >= 10 && c % 100 <= 20)
+          ? "metų"
+          : "metai";
+      },
+      mo: function (c) {
+        return ["mėnuo", "mėnesiai", "mėnesių"][getLithuanianForm(c)];
+      },
+      w: function (c) {
+        return ["savaitė", "savaitės", "savaičių"][getLithuanianForm(c)];
+      },
+      d: function (c) {
+        return ["diena", "dienos", "dienų"][getLithuanianForm(c)];
+      },
+      h: function (c) {
+        return ["valanda", "valandos", "valandų"][getLithuanianForm(c)];
+      },
+      m: function (c) {
+        return ["minutė", "minutės", "minučių"][getLithuanianForm(c)];
+      },
+      s: function (c) {
+        return ["sekundė", "sekundės", "sekundžių"][getLithuanianForm(c)];
+      },
+      ms: function (c) {
+        return ["milisekundė", "milisekundės", "milisekundžių"][
+          getLithuanianForm(c)
+        ];
+      },
+      decimal: ",",
+    },
+    lv: {
+      y: function (c) {
+        return getLatvianForm(c) ? "gads" : "gadi";
+      },
+      mo: function (c) {
+        return getLatvianForm(c) ? "mēnesis" : "mēneši";
+      },
+      w: function (c) {
+        return getLatvianForm(c) ? "nedēļa" : "nedēļas";
+      },
+      d: function (c) {
+        return getLatvianForm(c) ? "diena" : "dienas";
+      },
+      h: function (c) {
+        return getLatvianForm(c) ? "stunda" : "stundas";
+      },
+      m: function (c) {
+        return getLatvianForm(c) ? "minūte" : "minūtes";
+      },
+      s: function (c) {
+        return getLatvianForm(c) ? "sekunde" : "sekundes";
+      },
+      ms: function (c) {
+        return getLatvianForm(c) ? "milisekunde" : "milisekundes";
+      },
+      decimal: ",",
+    },
+    ms: {
+      y: "tahun",
+      mo: "bulan",
+      w: "minggu",
+      d: "hari",
+      h: "jam",
+      m: "minit",
+      s: "saat",
+      ms: "milisaat",
+      decimal: ".",
+    },
+    nl: {
+      y: "jaar",
+      mo: function (c) {
+        return c === 1 ? "maand" : "maanden";
+      },
+      w: function (c) {
+        return c === 1 ? "week" : "weken";
+      },
+      d: function (c) {
+        return c === 1 ? "dag" : "dagen";
+      },
+      h: "uur",
+      m: function (c) {
+        return c === 1 ? "minuut" : "minuten";
+      },
+      s: function (c) {
+        return c === 1 ? "seconde" : "seconden";
+      },
+      ms: function (c) {
+        return c === 1 ? "milliseconde" : "milliseconden";
+      },
+      decimal: ",",
+    },
+    no: {
+      y: "år",
+      mo: function (c) {
+        return "måned" + (c === 1 ? "" : "er");
+      },
+      w: function (c) {
+        return "uke" + (c === 1 ? "" : "r");
+      },
+      d: function (c) {
+        return "dag" + (c === 1 ? "" : "er");
+      },
+      h: function (c) {
+        return "time" + (c === 1 ? "" : "r");
+      },
+      m: function (c) {
+        return "minutt" + (c === 1 ? "" : "er");
+      },
+      s: function (c) {
+        return "sekund" + (c === 1 ? "" : "er");
+      },
+      ms: function (c) {
+        return "millisekund" + (c === 1 ? "" : "er");
+      },
+      decimal: ",",
+    },
+    pl: {
+      y: function (c) {
+        return ["rok", "roku", "lata", "lat"][getPolishForm(c)];
+      },
+      mo: function (c) {
+        return ["miesiąc", "miesiąca", "miesiące", "miesięcy"][
+          getPolishForm(c)
+        ];
+      },
+      w: function (c) {
+        return ["tydzień", "tygodnia", "tygodnie", "tygodni"][getPolishForm(c)];
+      },
+      d: function (c) {
+        return ["dzień", "dnia", "dni", "dni"][getPolishForm(c)];
+      },
+      h: function (c) {
+        return ["godzina", "godziny", "godziny", "godzin"][getPolishForm(c)];
+      },
+      m: function (c) {
+        return ["minuta", "minuty", "minuty", "minut"][getPolishForm(c)];
+      },
+      s: function (c) {
+        return ["sekunda", "sekundy", "sekundy", "sekund"][getPolishForm(c)];
+      },
+      ms: function (c) {
+        return ["milisekunda", "milisekundy", "milisekundy", "milisekund"][
+          getPolishForm(c)
+        ];
+      },
+      decimal: ",",
+    },
+    pt: {
+      y: function (c) {
+        return "ano" + (c === 1 ? "" : "s");
+      },
+      mo: function (c) {
+        return c === 1 ? "mês" : "meses";
+      },
+      w: function (c) {
+        return "semana" + (c === 1 ? "" : "s");
+      },
+      d: function (c) {
+        return "dia" + (c === 1 ? "" : "s");
+      },
+      h: function (c) {
+        return "hora" + (c === 1 ? "" : "s");
+      },
+      m: function (c) {
+        return "minuto" + (c === 1 ? "" : "s");
+      },
+      s: function (c) {
+        return "segundo" + (c === 1 ? "" : "s");
+      },
+      ms: function (c) {
+        return "milissegundo" + (c === 1 ? "" : "s");
+      },
+      decimal: ",",
+    },
+    ro: {
+      y: function (c) {
+        return c === 1 ? "an" : "ani";
+      },
+      mo: function (c) {
+        return c === 1 ? "lună" : "luni";
+      },
+      w: function (c) {
+        return c === 1 ? "săptămână" : "săptămâni";
+      },
+      d: function (c) {
+        return c === 1 ? "zi" : "zile";
+      },
+      h: function (c) {
+        return c === 1 ? "oră" : "ore";
+      },
+      m: function (c) {
+        return c === 1 ? "minut" : "minute";
+      },
+      s: function (c) {
+        return c === 1 ? "secundă" : "secunde";
+      },
+      ms: function (c) {
+        return c === 1 ? "milisecundă" : "milisecunde";
+      },
+      decimal: ",",
+    },
+    ru: {
+      y: function (c) {
+        return ["лет", "год", "года"][getSlavicForm(c)];
+      },
+      mo: function (c) {
+        return ["месяцев", "месяц", "месяца"][getSlavicForm(c)];
+      },
+      w: function (c) {
+        return ["недель", "неделя", "недели"][getSlavicForm(c)];
+      },
+      d: function (c) {
+        return ["дней", "день", "дня"][getSlavicForm(c)];
+      },
+      h: function (c) {
+        return ["часов", "час", "часа"][getSlavicForm(c)];
+      },
+      m: function (c) {
+        return ["минут", "минута", "минуты"][getSlavicForm(c)];
+      },
+      s: function (c) {
+        return ["секунд", "секунда", "секунды"][getSlavicForm(c)];
+      },
+      ms: function (c) {
+        return ["миллисекунд", "миллисекунда", "миллисекунды"][
+          getSlavicForm(c)
+        ];
+      },
+      decimal: ",",
+    },
+    uk: {
+      y: function (c) {
+        return ["років", "рік", "роки"][getSlavicForm(c)];
+      },
+      mo: function (c) {
+        return ["місяців", "місяць", "місяці"][getSlavicForm(c)];
+      },
+      w: function (c) {
+        return ["тижнів", "тиждень", "тижні"][getSlavicForm(c)];
+      },
+      d: function (c) {
+        return ["днів", "день", "дні"][getSlavicForm(c)];
+      },
+      h: function (c) {
+        return ["годин", "година", "години"][getSlavicForm(c)];
+      },
+      m: function (c) {
+        return ["хвилин", "хвилина", "хвилини"][getSlavicForm(c)];
+      },
+      s: function (c) {
+        return ["секунд", "секунда", "секунди"][getSlavicForm(c)];
+      },
+      ms: function (c) {
+        return ["мілісекунд", "мілісекунда", "мілісекунди"][getSlavicForm(c)];
+      },
+      decimal: ",",
+    },
+    ur: {
+      y: "سال",
+      mo: function (c) {
+        return c === 1 ? "مہینہ" : "مہینے";
+      },
+      w: function (c) {
+        return c === 1 ? "ہفتہ" : "ہفتے";
+      },
+      d: "دن",
+      h: function (c) {
+        return c === 1 ? "گھنٹہ" : "گھنٹے";
+      },
+      m: "منٹ",
+      s: "سیکنڈ",
+      ms: "ملی سیکنڈ",
+      decimal: ".",
+    },
+    sk: {
+      y: function (c) {
+        return ["rok", "roky", "roky", "rokov"][getCzechOrSlovakForm(c)];
+      },
+      mo: function (c) {
+        return ["mesiac", "mesiace", "mesiace", "mesiacov"][
+          getCzechOrSlovakForm(c)
+        ];
+      },
+      w: function (c) {
+        return ["týždeň", "týždne", "týždne", "týždňov"][
+          getCzechOrSlovakForm(c)
+        ];
+      },
+      d: function (c) {
+        return ["deň", "dni", "dni", "dní"][getCzechOrSlovakForm(c)];
+      },
+      h: function (c) {
+        return ["hodina", "hodiny", "hodiny", "hodín"][getCzechOrSlovakForm(c)];
+      },
+      m: function (c) {
+        return ["minúta", "minúty", "minúty", "minút"][getCzechOrSlovakForm(c)];
+      },
+      s: function (c) {
+        return ["sekunda", "sekundy", "sekundy", "sekúnd"][
+          getCzechOrSlovakForm(c)
+        ];
+      },
+      ms: function (c) {
+        return ["milisekunda", "milisekundy", "milisekundy", "milisekúnd"][
+          getCzechOrSlovakForm(c)
+        ];
+      },
+      decimal: ",",
+    },
+    sv: {
+      y: "år",
+      mo: function (c) {
+        return "månad" + (c === 1 ? "" : "er");
+      },
+      w: function (c) {
+        return "veck" + (c === 1 ? "a" : "or");
+      },
+      d: function (c) {
+        return "dag" + (c === 1 ? "" : "ar");
+      },
+      h: function (c) {
+        return "timm" + (c === 1 ? "e" : "ar");
+      },
+      m: function (c) {
+        return "minut" + (c === 1 ? "" : "er");
+      },
+      s: function (c) {
+        return "sekund" + (c === 1 ? "" : "er");
+      },
+      ms: function (c) {
+        return "millisekund" + (c === 1 ? "" : "er");
+      },
+      decimal: ",",
+    },
+    sw: {
+      y: function (c) {
+        return c === 1 ? "mwaka" : "miaka";
+      },
+      mo: function (c) {
+        return c === 1 ? "mwezi" : "miezi";
+      },
+      w: "wiki",
+      d: function (c) {
+        return c === 1 ? "siku" : "masiku";
+      },
+      h: function (c) {
+        return c === 1 ? "saa" : "masaa";
+      },
+      m: "dakika",
+      s: "sekunde",
+      ms: "milisekunde",
+      decimal: ".",
+    },
+    tr: {
+      y: "yıl",
+      mo: "ay",
+      w: "hafta",
+      d: "gün",
+      h: "saat",
+      m: "dakika",
+      s: "saniye",
+      ms: "milisaniye",
+      decimal: ",",
+    },
+    th: {
+      y: "ปี",
+      mo: "เดือน",
+      w: "อาทิตย์",
+      d: "วัน",
+      h: "ชั่วโมง",
+      m: "นาที",
+      s: "วินาที",
+      ms: "มิลลิวินาที",
+      decimal: ".",
+    },
+    vi: {
+      y: "năm",
+      mo: "tháng",
+      w: "tuần",
+      d: "ngày",
+      h: "giờ",
+      m: "phút",
+      s: "giây",
+      ms: "mili giây",
+      decimal: ",",
+    },
+    zh_CN: {
+      y: "年",
+      mo: "个月",
+      w: "周",
+      d: "天",
+      h: "小时",
+      m: "分钟",
+      s: "秒",
+      ms: "毫秒",
+      decimal: ".",
+    },
+    zh_TW: {
+      y: "年",
+      mo: "個月",
+      w: "周",
+      d: "天",
+      h: "小時",
+      m: "分鐘",
+      s: "秒",
+      ms: "毫秒",
+      decimal: ".",
+    },
+  };
+
+  // You can create a humanizer, which returns a function with default
+  // parameters.
+  function humanizer(passedOptions) {
+    var result = function humanizer(ms, humanizerOptions) {
+      var options = extend({}, result, humanizerOptions || {});
+      return doHumanization(ms, options);
+    };
+
+    return extend(
+      result,
+      {
+        language: "en",
+        delimiter: ", ",
+        spacer: " ",
+        conjunction: "",
+        serialComma: true,
+        units: ["y", "mo", "w", "d", "h", "m", "s"],
+        languages: {},
+        round: false,
+        unitMeasures: {
+          y: 31557600000,
+          mo: 2629800000,
+          w: 604800000,
+          d: 86400000,
+          h: 3600000,
+          m: 60000,
+          s: 1000,
+          ms: 1,
+        },
+      },
+      passedOptions
+    );
+  }
+
+  // The main function is just a wrapper around a default humanizer.
+  var humanizeDuration = humanizer({});
+
+  // Build dictionary from options
+  function getDictionary(options) {
+    var languagesFromOptions = [options.language];
+
+    if (has(options, "fallbacks")) {
+      if (isArray(options.fallbacks) && options.fallbacks.length) {
+        languagesFromOptions = languagesFromOptions.concat(options.fallbacks);
+      } else {
+        throw new Error("fallbacks must be an array with at least one element");
+      }
+    }
+
+    for (var i = 0; i < languagesFromOptions.length; i++) {
+      var languageToTry = languagesFromOptions[i];
+      if (has(options.languages, languageToTry)) {
+        return options.languages[languageToTry];
+      } else if (has(LANGUAGES, languageToTry)) {
+        return LANGUAGES[languageToTry];
+      }
+    }
+
+    throw new Error("No language found.");
+  }
+
+  // doHumanization does the bulk of the work.
+  function doHumanization(ms, options) {
+    var i, len, piece;
+
+    // Make sure we have a positive number.
+    // Has the nice sideffect of turning Number objects into primitives.
+    ms = Math.abs(ms);
+
+    var dictionary = getDictionary(options);
+    var pieces = [];
+
+    // Start at the top and keep removing units, bit by bit.
+    var unitName, unitMS, unitCount;
+    for (i = 0, len = options.units.length; i < len; i++) {
+      unitName = options.units[i];
+      unitMS = options.unitMeasures[unitName];
+
+      // What's the number of full units we can fit?
+      if (i + 1 === len) {
+        if (has(options, "maxDecimalPoints")) {
+          // We need to use this expValue to avoid rounding functionality of toFixed call
+          var expValue = Math.pow(10, options.maxDecimalPoints);
+          var unitCountFloat = ms / unitMS;
+          unitCount = parseFloat(
+            (Math.floor(expValue * unitCountFloat) / expValue).toFixed(
+              options.maxDecimalPoints
+            )
+          );
+        } else {
+          unitCount = ms / unitMS;
+        }
+      } else {
+        unitCount = Math.floor(ms / unitMS);
+      }
+
+      // Add the string.
+      pieces.push({
+        unitCount: unitCount,
+        unitName: unitName,
+      });
+
+      // Remove what we just figured out.
+      ms -= unitCount * unitMS;
+    }
+
+    var firstOccupiedUnitIndex = 0;
+    for (i = 0; i < pieces.length; i++) {
+      if (pieces[i].unitCount) {
+        firstOccupiedUnitIndex = i;
+        break;
+      }
+    }
+
+    if (options.round) {
+      var ratioToLargerUnit, previousPiece;
+      for (i = pieces.length - 1; i >= 0; i--) {
+        piece = pieces[i];
+        piece.unitCount = Math.round(piece.unitCount);
+
+        if (i === 0) {
+          break;
+        }
+
+        previousPiece = pieces[i - 1];
+
+        ratioToLargerUnit =
+          options.unitMeasures[previousPiece.unitName] /
+          options.unitMeasures[piece.unitName];
+        if (
+          piece.unitCount % ratioToLargerUnit === 0 ||
+          (options.largest && options.largest - 1 < i - firstOccupiedUnitIndex)
+        ) {
+          previousPiece.unitCount += piece.unitCount / ratioToLargerUnit;
+          piece.unitCount = 0;
+        }
+      }
+    }
+
+    var result = [];
+    for (i = 0, pieces.length; i < len; i++) {
+      piece = pieces[i];
+      if (piece.unitCount) {
+        result.push(
+          render(piece.unitCount, piece.unitName, dictionary, options)
+        );
+      }
+
+      if (result.length === options.largest) {
+        break;
+      }
+    }
+
+    if (result.length) {
+      if (!options.conjunction || result.length === 1) {
+        return result.join(options.delimiter);
+      } else if (result.length === 2) {
+        return result.join(options.conjunction);
+      } else if (result.length > 2) {
+        return (
+          result.slice(0, -1).join(options.delimiter) +
+          (options.serialComma ? "," : "") +
+          options.conjunction +
+          result.slice(-1)
+        );
+      }
+    } else {
+      return render(
+        0,
+        options.units[options.units.length - 1],
+        dictionary,
+        options
+      );
+    }
+  }
+
+  function render(count, type, dictionary, options) {
+    var decimal;
+    if (has(options, "decimal")) {
+      decimal = options.decimal;
+    } else if (has(dictionary, "decimal")) {
+      decimal = dictionary.decimal;
+    } else {
+      decimal = ".";
+    }
+
+    var countStr = count.toString().replace(".", decimal);
+
+    var dictionaryValue = dictionary[type];
+    var word;
+    if (typeof dictionaryValue === "function") {
+      word = dictionaryValue(count);
+    } else {
+      word = dictionaryValue;
+    }
+
+    return countStr + options.spacer + word;
+  }
+
+  function extend(destination) {
+    var source;
+    for (var i = 1; i < arguments.length; i++) {
+      source = arguments[i];
+      for (var prop in source) {
+        if (has(source, prop)) {
+          destination[prop] = source[prop];
+        }
+      }
+    }
+    return destination;
+  }
+
+  // Internal helper function for Polish language.
+  function getPolishForm(c) {
+    if (c === 1) {
+      return 0;
+    } else if (Math.floor(c) !== c) {
+      return 1;
+    } else if (c % 10 >= 2 && c % 10 <= 4 && !(c % 100 > 10 && c % 100 < 20)) {
+      return 2;
+    } else {
+      return 3;
+    }
+  }
+
+  // Internal helper function for Russian and Ukranian languages.
+  function getSlavicForm(c) {
+    if (Math.floor(c) !== c) {
+      return 2;
+    } else if (
+      (c % 100 >= 5 && c % 100 <= 20) ||
+      (c % 10 >= 5 && c % 10 <= 9) ||
+      c % 10 === 0
+    ) {
+      return 0;
+    } else if (c % 10 === 1) {
+      return 1;
+    } else if (c > 1) {
+      return 2;
+    } else {
+      return 0;
+    }
+  }
+
+  // Internal helper function for Slovak language.
+  function getCzechOrSlovakForm(c) {
+    if (c === 1) {
+      return 0;
+    } else if (Math.floor(c) !== c) {
+      return 1;
+    } else if (c % 10 >= 2 && c % 10 <= 4 && c % 100 < 10) {
+      return 2;
+    } else {
+      return 3;
+    }
+  }
+
+  // Internal helper function for Lithuanian language.
+  function getLithuanianForm(c) {
+    if (c === 1 || (c % 10 === 1 && c % 100 > 20)) {
+      return 0;
+    } else if (
+      Math.floor(c) !== c ||
+      (c % 10 >= 2 && c % 100 > 20) ||
+      (c % 10 >= 2 && c % 100 < 10)
+    ) {
+      return 1;
+    } else {
+      return 2;
+    }
+  }
+
+  // Internal helper function for Latvian language.
+  function getLatvianForm(c) {
+    return c % 10 === 1 && c % 100 !== 11;
+  }
+
+  // We need to make sure we support browsers that don't have
+  // `Array.isArray`, so we define a fallback here.
+  var isArray =
+    Array.isArray ||
+    function (arg) {
+      return Object.prototype.toString.call(arg) === "[object Array]";
+    };
+
+  function has(obj, key) {
+    return Object.prototype.hasOwnProperty.call(obj, key);
+  }
+
+  humanizeDuration.getSupportedLanguages = function getSupportedLanguages() {
+    var result = [];
+    for (var language in LANGUAGES) {
+      if (has(LANGUAGES, language) && language !== "gr") {
+        result.push(language);
+      }
+    }
+    return result;
+  };
+
+  humanizeDuration.humanizer = humanizer;
+
+  if (true) {
+    !(__WEBPACK_AMD_DEFINE_RESULT__ = (function () {
+      return humanizeDuration;
+    }).call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else {}
+})(); // eslint-disable-line semi
+
 
 /***/ }),
 
@@ -23387,6 +24896,290 @@ module.exports = JSON.parse("{\"_args\":[[\"ejs@3.1.3\",\"/home/runner/work/ross
 
 /***/ }),
 
+/***/ "./node_modules/unraw/dist/errors.js":
+/*!*******************************************!*\
+  !*** ./node_modules/unraw/dist/errors.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @file **unraw - errors.ts** | Error messages used by `unraw`.
+ * @author Ian Sanders
+ * @copyright 2019 Ian Sanders
+ * @license MIT
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+// NOTE: don't construct errors here or they'll have the wrong stack trace.
+// NOTE: don't make custom error class; the JS engines use `SyntaxError`
+/**
+ * Keys for possible error messages used by `unraw`.
+ * Note: These do _not_ map to actual error object types. All errors thrown
+ * are `SyntaxError`.
+ */
+// Don't use const enum or JS users won't be able to access the enum values
+var ErrorType;
+(function (ErrorType) {
+    /**
+     * Thrown when a badly formed Unicode escape sequence is found. Possible
+     * reasons include the code being too short (`"\u25"`) or having invalid
+     * characters (`"\u2$A5"`).
+     */
+    ErrorType["MalformedUnicode"] = "MALFORMED_UNICODE";
+    /**
+     * Thrown when a badly formed hexadecimal escape sequence is found. Possible
+     * reasons include the code being too short (`"\x2"`) or having invalid
+     * characters (`"\x2$"`).
+     */
+    ErrorType["MalformedHexadecimal"] = "MALFORMED_HEXADECIMAL";
+    /**
+     * Thrown when a Unicode code point escape sequence has too high of a code
+     * point. The maximum code point allowed is `\u{10FFFF}`, so `\u{110000}` and
+     * higher will throw this error.
+     */
+    ErrorType["CodePointLimit"] = "CODE_POINT_LIMIT";
+    /**
+     * Thrown when an octal escape sequences is encountered and `allowOctals` is
+     * `false`. For example, `unraw("\234", false)`.
+     */
+    ErrorType["OctalDeprecation"] = "OCTAL_DEPRECATION";
+    /**
+     * Thrown only when a single backslash is found at the end of a string. For
+     * example, `"\\"` or `"test\\x24\\"`.
+     */
+    ErrorType["EndOfString"] = "END_OF_STRING";
+})(ErrorType = exports.ErrorType || (exports.ErrorType = {}));
+/** Map of error message names to the full text of the message. */
+exports.errorMessages = new Map([
+    [ErrorType.MalformedUnicode, "malformed Unicode character escape sequence"],
+    [
+        ErrorType.MalformedHexadecimal,
+        "malformed hexadecimal character escape sequence"
+    ],
+    [
+        ErrorType.CodePointLimit,
+        "Unicode codepoint must not be greater than 0x10FFFF in escape sequence"
+    ],
+    [
+        ErrorType.OctalDeprecation,
+        '"0"-prefixed octal literals and octal escape sequences are deprecated; ' +
+            'for octal literals use the "0o" prefix instead'
+    ],
+    [ErrorType.EndOfString, "malformed escape sequence at end of string"]
+]);
+//# sourceMappingURL=errors.js.map
+
+/***/ }),
+
+/***/ "./node_modules/unraw/dist/index.js":
+/*!******************************************!*\
+  !*** ./node_modules/unraw/dist/index.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @file **unraw** | Convert raw escape sequences to their respective characters
+ * (undo `String.raw`).
+ * @author Ian Sanders
+ * @copyright 2019 Ian Sanders
+ * @license MIT
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+const errors_1 = __webpack_require__(/*! ./errors */ "./node_modules/unraw/dist/errors.js");
+exports.ErrorType = errors_1.ErrorType;
+exports.errorMessages = errors_1.errorMessages;
+/**
+ * Parse a string as a base-16 number. This is more strict than `parseInt` as it
+ * will not allow any other characters, including (for example) "+", "-", and
+ * ".".
+ * @param hex A string containing a hexadecimal number.
+ * @returns The parsed integer, or `NaN` if the string is not a valid hex
+ * number.
+ */
+function parseHexToInt(hex) {
+    const isOnlyHexChars = !hex.match(/[^a-f0-9]/i);
+    return isOnlyHexChars ? parseInt(hex, 16) : NaN;
+}
+/**
+ * Check the validity and length of a hexadecimal code and optionally enforces
+ * a specific number of hex digits.
+ * @param hex The string to validate and parse.
+ * @param errorName The name of the error message to throw a `SyntaxError` with
+ * if `hex` is invalid. This is used to index `errorMessages`.
+ * @param enforcedLength If provided, will throw an error if `hex` is not
+ * exactly this many characters.
+ * @returns The parsed hex number as a normal number.
+ * @throws {SyntaxError} If the code is not valid.
+ */
+function validateAndParseHex(hex, errorName, enforcedLength) {
+    const parsedHex = parseHexToInt(hex);
+    if (Number.isNaN(parsedHex) ||
+        (enforcedLength !== undefined && enforcedLength !== hex.length)) {
+        throw new SyntaxError(errors_1.errorMessages.get(errorName));
+    }
+    return parsedHex;
+}
+/**
+ * Parse a two-digit hexadecimal character escape code.
+ * @param code The two-digit hexadecimal number that represents the character to
+ * output.
+ * @returns The single character represented by the code.
+ * @throws {SyntaxError} If the code is not valid hex or is not the right
+ * length.
+ */
+function parseHexadecimalCode(code) {
+    const parsedCode = validateAndParseHex(code, errors_1.ErrorType.MalformedHexadecimal, 2);
+    return String.fromCharCode(parsedCode);
+}
+/**
+ * Parse a four-digit Unicode character escape code.
+ * @param code The four-digit unicode number that represents the character to
+ * output.
+ * @param surrogateCode Optional four-digit unicode surrogate that represents
+ * the other half of the character to output.
+ * @returns The single character represented by the code.
+ * @throws {SyntaxError} If the codes are not valid hex or are not the right
+ * length.
+ */
+function parseUnicodeCode(code, surrogateCode) {
+    const parsedCode = validateAndParseHex(code, errors_1.ErrorType.MalformedUnicode, 4);
+    if (surrogateCode !== undefined) {
+        const parsedSurrogateCode = validateAndParseHex(surrogateCode, errors_1.ErrorType.MalformedUnicode, 4);
+        return String.fromCharCode(parsedCode, parsedSurrogateCode);
+    }
+    return String.fromCharCode(parsedCode);
+}
+/**
+ * Test if the text is surrounded by curly braces (`{}`).
+ * @param text Text to check.
+ * @returns `true` if the text is in the form `{*}`.
+ */
+function isCurlyBraced(text) {
+    return text.charAt(0) === "{" && text.charAt(text.length - 1) === "}";
+}
+/**
+ * Parse a Unicode code point character escape code.
+ * @param codePoint A unicode escape code point, including the surrounding curly
+ * braces.
+ * @returns The single character represented by the code.
+ * @throws {SyntaxError} If the code is not valid hex or does not have the
+ * surrounding curly braces.
+ */
+function parseUnicodeCodePointCode(codePoint) {
+    if (!isCurlyBraced(codePoint)) {
+        throw new SyntaxError(errors_1.errorMessages.get(errors_1.ErrorType.MalformedUnicode));
+    }
+    const withoutBraces = codePoint.slice(1, -1);
+    const parsedCode = validateAndParseHex(withoutBraces, errors_1.ErrorType.MalformedUnicode);
+    try {
+        return String.fromCodePoint(parsedCode);
+    }
+    catch (err) {
+        throw err instanceof RangeError
+            ? new SyntaxError(errors_1.errorMessages.get(errors_1.ErrorType.CodePointLimit))
+            : err;
+    }
+}
+// Have to give overload that takes boolean for when compiler doesn't know if
+// true or false
+function parseOctalCode(code, error = false) {
+    if (error) {
+        throw new SyntaxError(errors_1.errorMessages.get(errors_1.ErrorType.OctalDeprecation));
+    }
+    // The original regex only allows digits so we don't need to have a strict
+    // octal parser like hexToInt. Length is not enforced for octals.
+    const parsedCode = parseInt(code, 8);
+    return String.fromCharCode(parsedCode);
+}
+/**
+ * Map of unescaped letters to their corresponding special JS escape characters.
+ * Intentionally does not include characters that map to themselves like "\'".
+ */
+const singleCharacterEscapes = new Map([
+    ["b", "\b"],
+    ["f", "\f"],
+    ["n", "\n"],
+    ["r", "\r"],
+    ["t", "\t"],
+    ["v", "\v"],
+    ["0", "\0"]
+]);
+/**
+ * Parse a single character escape sequence and return the matching character.
+ * If none is matched, defaults to `code`.
+ * @param code A single character code.
+ */
+function parseSingleCharacterCode(code) {
+    return singleCharacterEscapes.get(code) || code;
+}
+/**
+ * Matches every escape sequence possible, including invalid ones.
+ *
+ * All capture groups (described below) are unique (only one will match), except
+ * for 4, which can only potentially match if 3 does.
+ *
+ * **Capture Groups:**
+ * 0. A single backslash
+ * 1. Hexadecimal code
+ * 2. Unicode code point code with surrounding curly braces
+ * 3. Unicode escape code with surrogate
+ * 4. Surrogate code
+ * 5. Unicode escape code without surrogate
+ * 6. Octal code _NOTE: includes "0"._
+ * 7. A single character (will never be \, x, u, or 0-3)
+ */
+const escapeMatch = /\\(?:(\\)|x([\s\S]{0,2})|u(\{[^}]*\}?)|u([\s\S]{4})\\u([^{][\s\S]{0,3})|u([\s\S]{0,4})|([0-3]?[0-7]{1,2})|([\s\S])|$)/g;
+/**
+ * Replace raw escape character strings with their escape characters.
+ * @param raw A string where escape characters are represented as raw string
+ * values like `\'` rather than `'`.
+ * @param allowOctals If `true`, will process the now-deprecated octal escape
+ * sequences (ie, `\111`).
+ * @returns The processed string, with escape characters replaced by their
+ * respective actual Unicode characters.
+ */
+function unraw(raw, allowOctals = false) {
+    return raw.replace(escapeMatch, function (_, backslash, hex, codePoint, unicodeWithSurrogate, surrogate, unicode, octal, singleCharacter) {
+        // Compare groups to undefined because empty strings mean different errors
+        // Otherwise, `\u` would fail the same as `\` which is wrong.
+        if (backslash !== undefined) {
+            return "\\";
+        }
+        if (hex !== undefined) {
+            return parseHexadecimalCode(hex);
+        }
+        if (codePoint !== undefined) {
+            return parseUnicodeCodePointCode(codePoint);
+        }
+        if (unicodeWithSurrogate !== undefined) {
+            return parseUnicodeCode(unicodeWithSurrogate, surrogate);
+        }
+        if (unicode !== undefined) {
+            return parseUnicodeCode(unicode);
+        }
+        if (octal === "0") {
+            return "\0";
+        }
+        if (octal !== undefined) {
+            return parseOctalCode(octal, !allowOctals);
+        }
+        if (singleCharacter !== undefined) {
+            return parseSingleCharacterCode(singleCharacter);
+        }
+        throw new SyntaxError(errors_1.errorMessages.get(errors_1.ErrorType.EndOfString));
+    });
+}
+exports.unraw = unraw;
+exports.default = unraw;
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
 /***/ "./node_modules/ur-game/src/game.js":
 /*!******************************************!*\
   !*** ./node_modules/ur-game/src/game.js ***!
@@ -23832,6 +25625,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _analyseMove__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/analyseMove */ "./src/analyseMove.ts");
 /* harmony import */ var _updateSvg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/updateSvg */ "./src/updateSvg.ts");
 /* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
+/* harmony import */ var _victory__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/victory */ "./src/victory.ts");
+
 
 
 
@@ -23898,7 +25693,8 @@ async function generateReadme(state, gamePath, octokit, context, log) {
         ];
     });
     const teamTable = Object(_teams__WEBPACK_IMPORTED_MODULE_3__["makeTeamListTable"])(log, true);
-    const readme = ejs__WEBPACK_IMPORTED_MODULE_0___default.a.render(template, { actions, state, logItems, context, teamTable });
+    const previousGames = Object(_victory__WEBPACK_IMPORTED_MODULE_4__["listPreviousGames"])("games", octokit, context);
+    const readme = ejs__WEBPACK_IMPORTED_MODULE_0___default.a.render(template, { actions, state, logItems, context, teamTable, previousGames });
     const currentReadmeFile = await octokit.repos.getContents({
         owner: context.repo.owner,
         repo: context.repo.repo,
@@ -24760,26 +26556,94 @@ function hideSvgElement(svg, elementId) {
 /*!************************!*\
   !*** ./src/victory.ts ***!
   \************************/
-/*! exports provided: makeVictoryMessage */
+/*! exports provided: makeVictoryMessage, listPreviousGames */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "makeVictoryMessage", function() { return makeVictoryMessage; });
-/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "listPreviousGames", function() { return listPreviousGames; });
+/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! compress-tag */ "./node_modules/compress-tag/dist/index.js");
+/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(compress_tag__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var humanize_duration__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! humanize-duration */ "./node_modules/humanize-duration/humanize-duration.js");
+/* harmony import */ var humanize_duration__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(humanize_duration__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
+
+
+
 
 function makeVictoryMessage(log) {
     /**
      * Called at the end of a game. Produces a message to ping participants in a
      * game, show teams, give stats, etc.
      */
-    const players = Object(_teams__WEBPACK_IMPORTED_MODULE_0__["makeTeamStats"])(log);
-    const winningTeam = Object(_teams__WEBPACK_IMPORTED_MODULE_0__["teamName"])(log.internalLog[log.internalLog.length - 1].team);
+    const players = Object(_teams__WEBPACK_IMPORTED_MODULE_3__["makeTeamStats"])(log);
+    const winningTeam = Object(_teams__WEBPACK_IMPORTED_MODULE_3__["teamName"])(log.internalLog[log.internalLog.length - 1].team);
     const moves = players.reduce((moves, player) => moves + player.moves, 0);
     const startingDate = new Date(log.internalLog[0].time);
     const endingDate = new Date(log.internalLog[log.internalLog.length - 1].time);
     const hours = (endingDate.getTime() - startingDate.getTime()) / 1000 / 3600;
-    return `This game has ended! Congratulations to the ${winningTeam} team for their victory.\n\nThis game had ${players.length} players, ${moves} moves, and took ${hours} hours.\n\n${Object(_teams__WEBPACK_IMPORTED_MODULE_0__["makeTeamListTable"])(log, false)}`;
+    return `This game has ended! Congratulations to the ${winningTeam} team for their victory.\n\nThis game had ${players.length} players, ${moves} moves, and took ${hours} hours.\n\n${Object(_teams__WEBPACK_IMPORTED_MODULE_3__["makeTeamListTable"])(log, false)}`;
+}
+async function listPreviousGames(gamePath, octokit, context) {
+    /**
+     * Generates a list of previous games.
+     */
+    const gameDirPath = gamePath.substring(0, gamePath.lastIndexOf("/"));
+    const logDir = await octokit.repos.getContents({
+        owner: context.repo.owner,
+        repo: context.repo.repo,
+        ref: "play",
+        path: gameDirPath,
+        mediaType: { format: "raw" },
+    });
+    if (!Array.isArray(logDir.data)) {
+        throw new Error("GAMEDIR_IS_FILE");
+    }
+    const gameFiles = logDir.data.filter(dirObject => {
+        return dirObject.type === "file";
+    });
+    const gameLogs = await Promise.all(gameFiles.map(async (file) => {
+        const gameFile = await octokit.repos.getContents({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            ref: "play",
+            path: file.path,
+            mediaType: { format: "raw" },
+        });
+        if (Array.isArray(gameFile.data)) {
+            throw new Error("GAMEFILE_IS_DIR");
+        }
+        return JSON.parse(Buffer.from(gameFile.data.content, "base64").toString());
+    }));
+    const gameStrings = gameLogs.map(log => {
+        const game = {
+            firstMove: log[0],
+            lastMove: log[log.length - 1],
+            playerCount: Object(lodash__WEBPACK_IMPORTED_MODULE_1__["uniq"])(log.map(entry => entry.username)).length,
+        };
+        return compress_tag__WEBPACK_IMPORTED_MODULE_0__["compress"] `
+      A game started on ${new Date(game.firstMove.time).toUTCString()}
+      by <b>
+        <a href="https://github.com/${game.firstMove.username}">
+          @${game.firstMove.username}
+        </a>
+      </b>
+      and ended on ${new Date(game.lastMove.time).toUTCString()}
+      in a win for the ${game.lastMove.team === "b" ?
+            ":black_circle:black" :
+            ":white_circle:white"} team.
+      ${game.playerCount} players
+      played ${log.length} moves
+      across ${humanize_duration__WEBPACK_IMPORTED_MODULE_2___default()(new Date(game.lastMove.time).getTime() -
+            new Date(game.firstMove.time).getTime(), { largest: 2, delimiter: " and " })}.
+      Winning move:
+      [#${game.lastMove.issue}](https://github.com/rossjrw/rossjrw/issues/${game.lastMove.issue})
+    `;
+    });
+    return gameStrings;
 }
 
 
