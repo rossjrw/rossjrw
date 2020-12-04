@@ -26616,6 +26616,7 @@ async function listPreviousGames(gamePath, octokit, context) {
         if (Array.isArray(gameFile.data)) {
             throw new Error("GAMEFILE_IS_DIR");
         }
+        console.log(gameFile.data.content);
         return JSON.parse(Buffer.from(gameFile.data.content, "base64").toString());
     }));
     const gameStrings = gameLogs.map(log => {
