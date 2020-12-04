@@ -283,6 +283,19 @@ exports.t = exports.compressTight;
 
 /***/ }),
 
+/***/ "./node_modules/dateformat/lib/dateformat.js":
+/*!***************************************************!*\
+  !*** ./node_modules/dateformat/lib/dateformat.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var __WEBPACK_AMD_DEFINE_RESULT__;function _typeof(obj){"@babel/helpers - typeof";if(typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"){_typeof=function _typeof(obj){return typeof obj}}else{_typeof=function _typeof(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj}}return _typeof(obj)}(function(global){"use strict";var _arguments=arguments;var dateFormat=function(){var token=/d{1,4}|m{1,4}|yy(?:yy)?|([HhMsTt])\1?|[LloSZWN]|"[^"]*"|'[^']*'/g;var timezone=/\b(?:[PMCEA][SDP]T|(?:Pacific|Mountain|Central|Eastern|Atlantic) (?:Standard|Daylight|Prevailing) Time|(?:GMT|UTC)(?:[-+]\d{4})?)\b/g;var timezoneClip=/[^-+\dA-Z]/g;return function(date,mask,utc,gmt){if(_arguments.length===1&&kindOf(date)==="string"&&!/\d/.test(date)){mask=date;date=undefined}date=date||date===0?date:new Date;if(!(date instanceof Date)){date=new Date(date)}if(isNaN(date)){throw TypeError("Invalid date")}mask=String(dateFormat.masks[mask]||mask||dateFormat.masks["default"]);var maskSlice=mask.slice(0,4);if(maskSlice==="UTC:"||maskSlice==="GMT:"){mask=mask.slice(4);utc=true;if(maskSlice==="GMT:"){gmt=true}}var _=function _(){return utc?"getUTC":"get"};var _d=function d(){return date[_()+"Date"]()};var D=function D(){return date[_()+"Day"]()};var _m=function m(){return date[_()+"Month"]()};var y=function y(){return date[_()+"FullYear"]()};var _H=function H(){return date[_()+"Hours"]()};var _M=function M(){return date[_()+"Minutes"]()};var _s=function s(){return date[_()+"Seconds"]()};var _L=function L(){return date[_()+"Milliseconds"]()};var _o=function o(){return utc?0:date.getTimezoneOffset()};var _W=function W(){return getWeek(date)};var _N=function N(){return getDayOfWeek(date)};var flags={d:function d(){return _d()},dd:function dd(){return pad(_d())},ddd:function ddd(){return dateFormat.i18n.dayNames[D()]},dddd:function dddd(){return dateFormat.i18n.dayNames[D()+7]},m:function m(){return _m()+1},mm:function mm(){return pad(_m()+1)},mmm:function mmm(){return dateFormat.i18n.monthNames[_m()]},mmmm:function mmmm(){return dateFormat.i18n.monthNames[_m()+12]},yy:function yy(){return String(y()).slice(2)},yyyy:function yyyy(){return pad(y(),4)},h:function h(){return _H()%12||12},hh:function hh(){return pad(_H()%12||12)},H:function H(){return _H()},HH:function HH(){return pad(_H())},M:function M(){return _M()},MM:function MM(){return pad(_M())},s:function s(){return _s()},ss:function ss(){return pad(_s())},l:function l(){return pad(_L(),3)},L:function L(){return pad(Math.floor(_L()/10))},t:function t(){return _H()<12?dateFormat.i18n.timeNames[0]:dateFormat.i18n.timeNames[1]},tt:function tt(){return _H()<12?dateFormat.i18n.timeNames[2]:dateFormat.i18n.timeNames[3]},T:function T(){return _H()<12?dateFormat.i18n.timeNames[4]:dateFormat.i18n.timeNames[5]},TT:function TT(){return _H()<12?dateFormat.i18n.timeNames[6]:dateFormat.i18n.timeNames[7]},Z:function Z(){return gmt?"GMT":utc?"UTC":(String(date).match(timezone)||[""]).pop().replace(timezoneClip,"").replace(/GMT\+0000/g,"UTC")},o:function o(){return(_o()>0?"-":"+")+pad(Math.floor(Math.abs(_o())/60)*100+Math.abs(_o())%60,4)},S:function S(){return["th","st","nd","rd"][_d()%10>3?0:(_d()%100-_d()%10!=10)*_d()%10]},W:function W(){return _W()},N:function N(){return _N()}};return mask.replace(token,function(match){if(match in flags){return flags[match]()}return match.slice(1,match.length-1)})}}();dateFormat.masks={default:"ddd mmm dd yyyy HH:MM:ss",shortDate:"m/d/yy",paddedShortDate:"mm/dd/yyyy",mediumDate:"mmm d, yyyy",longDate:"mmmm d, yyyy",fullDate:"dddd, mmmm d, yyyy",shortTime:"h:MM TT",mediumTime:"h:MM:ss TT",longTime:"h:MM:ss TT Z",isoDate:"yyyy-mm-dd",isoTime:"HH:MM:ss",isoDateTime:"yyyy-mm-dd'T'HH:MM:sso",isoUtcDateTime:"UTC:yyyy-mm-dd'T'HH:MM:ss'Z'",expiresHeaderFormat:"ddd, dd mmm yyyy HH:MM:ss Z"};dateFormat.i18n={dayNames:["Sun","Mon","Tue","Wed","Thu","Fri","Sat","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],monthNames:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec","January","February","March","April","May","June","July","August","September","October","November","December"],timeNames:["a","p","am","pm","A","P","AM","PM"]};var pad=function pad(val,len){val=String(val);len=len||2;while(val.length<len){val="0"+val}return val};var getWeek=function getWeek(date){var targetThursday=new Date(date.getFullYear(),date.getMonth(),date.getDate());targetThursday.setDate(targetThursday.getDate()-(targetThursday.getDay()+6)%7+3);var firstThursday=new Date(targetThursday.getFullYear(),0,4);firstThursday.setDate(firstThursday.getDate()-(firstThursday.getDay()+6)%7+3);var ds=targetThursday.getTimezoneOffset()-firstThursday.getTimezoneOffset();targetThursday.setHours(targetThursday.getHours()-ds);var weekDiff=(targetThursday-firstThursday)/(864e5*7);return 1+Math.floor(weekDiff)};var getDayOfWeek=function getDayOfWeek(date){var dow=date.getDay();if(dow===0){dow=7}return dow};var kindOf=function kindOf(val){if(val===null){return"null"}if(val===undefined){return"undefined"}if(_typeof(val)!=="object"){return _typeof(val)}if(Array.isArray(val)){return"array"}return{}.toString.call(val).slice(8,-1).toLowerCase()};if(true){!(__WEBPACK_AMD_DEFINE_RESULT__ = (function(){return dateFormat}).call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))}else {}})(void 0);
+
+/***/ }),
+
 /***/ "./node_modules/ejs/lib/ejs.js":
 /*!*************************************!*\
   !*** ./node_modules/ejs/lib/ejs.js ***!
@@ -25622,10 +25635,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "generateReadme", function() { return generateReadme; });
 /* harmony import */ var ejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ejs */ "./node_modules/ejs/lib/ejs.js");
 /* harmony import */ var ejs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ejs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _analyseMove__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/analyseMove */ "./src/analyseMove.ts");
-/* harmony import */ var _updateSvg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/updateSvg */ "./src/updateSvg.ts");
-/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
-/* harmony import */ var _victory__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/victory */ "./src/victory.ts");
+/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! compress-tag */ "./node_modules/compress-tag/dist/index.js");
+/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(compress_tag__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var dateformat__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! dateformat */ "./node_modules/dateformat/lib/dateformat.js");
+/* harmony import */ var dateformat__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(dateformat__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _analyseMove__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/analyseMove */ "./src/analyseMove.ts");
+/* harmony import */ var _updateSvg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/updateSvg */ "./src/updateSvg.ts");
+/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
+/* harmony import */ var _victory__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/victory */ "./src/victory.ts");
+
+
 
 
 
@@ -25641,7 +25660,7 @@ async function generateReadme(state, gamePath, octokit, context, log) {
      */
     let changes = [];
     // Update the SVG to represent the new game board
-    changes = changes.concat(await Object(_updateSvg__WEBPACK_IMPORTED_MODULE_2__["updateSvg"])(state, gamePath, "assets/board.optimised.svg", // TODO change for compiled branch
+    changes = changes.concat(await Object(_updateSvg__WEBPACK_IMPORTED_MODULE_4__["updateSvg"])(state, gamePath, "assets/board.optimised.svg", // TODO change for compiled branch
     octokit, context));
     // Grab the EJS template
     const readmeFile = await octokit.repos.getContents({
@@ -25666,9 +25685,17 @@ async function generateReadme(state, gamePath, octokit, context, log) {
                 to: state.possibleMoves[key],
             };
         }).map(move => {
-            const events = Object(_analyseMove__WEBPACK_IMPORTED_MODULE_1__["analyseMove"])(state, move.from, move.to);
+            const events = Object(_analyseMove__WEBPACK_IMPORTED_MODULE_3__["analyseMove"])(state, move.from, move.to);
             return {
-                text: `${events.ascensionHappened ? "Ascend" : "Move"} a ${move.from === 0 ? "new piece" : `piece from tile ${move.from}`}${events.ascensionHappened ? "" : ` to tile ${move.to}`}${events.rosetteClaimed ? " (:rosette:)" : ""}${events.captureHappened ? " (:crossed_swords:)" : ""}${events.ascensionHappened ? " (:rocket:)" : ""}${events.gameWon ? " (:crown:)" : ""}`,
+                text: compress_tag__WEBPACK_IMPORTED_MODULE_1__["compress"] `
+          ${events.ascensionHappened ? "Ascend" : "Move"}
+          a ${move.from === 0 ? "new piece" : `piece from tile ${move.from}`}
+          ${events.ascensionHappened ? "" : `to tile ${move.to}`}
+          ${events.rosetteClaimed ? "(:rosette:)" : ""}
+          ${events.captureHappened ? "(:crossed_swords:)" : ""}
+          ${events.ascensionHappened ? "(:rocket:)" : ""}
+          ${events.gameWon ? "(:crown:)" : ""}
+        `,
                 url: issueLink(`ur-move-${state.diceResult}%40${move.from}-0`, context),
             };
         });
@@ -25686,14 +25713,20 @@ async function generateReadme(state, gamePath, octokit, context, log) {
     // Make a list of moves that have happened so far this game, as markdown
     const logItems = log.internalLog.map(logItem => {
         return [
-            `${logItem.time.split(".")[0].split("T").join(" ")}`,
-            `:${Object(_teams__WEBPACK_IMPORTED_MODULE_3__["teamName"])(logItem.team)}_circle: ${logItem.action === "pass" ? "" : `**[@${logItem.username}](https://github.com/${logItem.username})**`} ${logItem.message}`,
+            `${dateformat__WEBPACK_IMPORTED_MODULE_2___default()(new Date(logItem.time), "d-mmm-yy HH:MM")}`,
+            compress_tag__WEBPACK_IMPORTED_MODULE_1__["compress"] `
+        :${Object(_teams__WEBPACK_IMPORTED_MODULE_5__["teamName"])(logItem.team)}_circle:
+        ${logItem.action === "pass" ?
+                "" :
+                `**[@${logItem.username}](https://github.com/${logItem.username})**`}
+        ${logItem.message}
+      `,
             `[#${logItem.issue}](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${logItem.issue})`,
             `${logItem.boardImage === null ? "" : `[link](${logItem.boardImage})`}`,
         ];
     });
-    const teamTable = Object(_teams__WEBPACK_IMPORTED_MODULE_3__["makeTeamListTable"])(log, true);
-    const previousGames = await Object(_victory__WEBPACK_IMPORTED_MODULE_4__["listPreviousGames"])(gamePath, octokit, context);
+    const teamTable = Object(_teams__WEBPACK_IMPORTED_MODULE_5__["makeTeamListTable"])(log, true);
+    const previousGames = await Object(_victory__WEBPACK_IMPORTED_MODULE_6__["listPreviousGames"])(gamePath, octokit, context);
     const readme = ejs__WEBPACK_IMPORTED_MODULE_0___default.a.render(template, { actions, state, logItems, context, teamTable, previousGames });
     const currentReadmeFile = await octokit.repos.getContents({
         owner: context.repo.owner,
@@ -25713,7 +25746,14 @@ async function generateReadme(state, gamePath, octokit, context, log) {
     return changes;
 }
 function issueLink(issueTitle, context) {
-    return `https://github.com/${context.repo.owner}/${context.repo.repo}/issues/new?title=${issueTitle}&body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._`;
+    return compress_tag__WEBPACK_IMPORTED_MODULE_1__["compressTight"] `
+    https://github.com/${context.repo.owner}/${context.repo.repo}/issues/new
+      ?title=${issueTitle}
+      &body=
+        Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.
+        %0D%0A%0D%0A
+        Be+aware+that+your+move+can+take+a+minute+or+two+to+process.
+  `;
 }
 
 
@@ -25929,12 +25969,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ur_game__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/player */ "./src/player.ts");
-/* harmony import */ var _issues__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/issues */ "./src/issues.ts");
-/* harmony import */ var _analyseMove__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/analyseMove */ "./src/analyseMove.ts");
-/* harmony import */ var _generateReadme__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/generateReadme */ "./src/generateReadme.ts");
-/* harmony import */ var _victory__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/victory */ "./src/victory.ts");
-/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
+/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! compress-tag */ "./node_modules/compress-tag/dist/index.js");
+/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(compress_tag__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/player */ "./src/player.ts");
+/* harmony import */ var _issues__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/issues */ "./src/issues.ts");
+/* harmony import */ var _analyseMove__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/analyseMove */ "./src/analyseMove.ts");
+/* harmony import */ var _generateReadme__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/generateReadme */ "./src/generateReadme.ts");
+/* harmony import */ var _victory__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/victory */ "./src/victory.ts");
+/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
+
 
 
 
@@ -25967,19 +26010,19 @@ async function makeMove(state, move, gamePath, octokit, context, log) {
     }
     else {
         // Store the player's current team before anything else
-        const playerTeam = Object(_player__WEBPACK_IMPORTED_MODULE_2__["getPlayerTeam"])(context.actor, log);
+        const playerTeam = Object(_player__WEBPACK_IMPORTED_MODULE_3__["getPlayerTeam"])(context.actor, log);
         // First I need to validate which team the user is on
         if (context.actor !== context.repo.owner // Owner can do what they want
             && playerTeam !== undefined // New players can also do what they want
-            && Object(_player__WEBPACK_IMPORTED_MODULE_2__["playerIsOnTeam"])(context.actor, Object(_teams__WEBPACK_IMPORTED_MODULE_7__["getOppositeTeam"])(state.currentPlayer), log) // Player can't be on the opposite team
+            && Object(_player__WEBPACK_IMPORTED_MODULE_3__["playerIsOnTeam"])(context.actor, Object(_teams__WEBPACK_IMPORTED_MODULE_8__["getOppositeTeam"])(state.currentPlayer), log) // Player can't be on the opposite team
         ) {
             throw new Error('WRONG_TEAM');
         }
         if (state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK) {
-            Object(_issues__WEBPACK_IMPORTED_MODULE_3__["addLabels"])(["Black team"], octokit, context);
+            Object(_issues__WEBPACK_IMPORTED_MODULE_4__["addLabels"])(["Black team"], octokit, context);
         }
         else {
-            Object(_issues__WEBPACK_IMPORTED_MODULE_3__["addLabels"])(["White team"], octokit, context);
+            Object(_issues__WEBPACK_IMPORTED_MODULE_4__["addLabels"])(["White team"], octokit, context);
         }
         // The move should be 'a@b' where a is the dice count and b is the position
         // The given diceResult must match the internal diceResult
@@ -26003,25 +26046,54 @@ async function makeMove(state, move, gamePath, octokit, context, log) {
         // Move has been performed and the result has been saved.
         // All that remains is to report back to the issue and update the README.
         // Let's detect what happened in that move
-        events = Object(_analyseMove__WEBPACK_IMPORTED_MODULE_4__["analyseMove"])(state, fromPosition, toPosition);
+        events = Object(_analyseMove__WEBPACK_IMPORTED_MODULE_5__["analyseMove"])(state, fromPosition, toPosition);
         if (events.rosetteClaimed) {
-            Object(_issues__WEBPACK_IMPORTED_MODULE_3__["addLabels"])([":rosette: Rosette!"], octokit, context);
+            Object(_issues__WEBPACK_IMPORTED_MODULE_4__["addLabels"])([":rosette: Rosette!"], octokit, context);
         }
         if (events.captureHappened) {
-            Object(_issues__WEBPACK_IMPORTED_MODULE_3__["addLabels"])([":crossed_swords: Capture!"], octokit, context);
+            Object(_issues__WEBPACK_IMPORTED_MODULE_4__["addLabels"])([":crossed_swords: Capture!"], octokit, context);
         }
         if (events.ascensionHappened) {
-            Object(_issues__WEBPACK_IMPORTED_MODULE_3__["addLabels"])([":rocket: Ascension!"], octokit, context);
+            Object(_issues__WEBPACK_IMPORTED_MODULE_4__["addLabels"])([":rocket: Ascension!"], octokit, context);
         }
         if (events.gameWon) {
-            Object(_issues__WEBPACK_IMPORTED_MODULE_3__["addLabels"])([":crown: Winner!"], octokit, context);
+            Object(_issues__WEBPACK_IMPORTED_MODULE_4__["addLabels"])([":crown: Winner!"], octokit, context);
         }
         // Add a comment to the issue to indicate that the move was successful
         await octokit.issues.createComment({
             owner: context.repo.owner,
             repo: context.repo.repo,
             issue_number: context.issue.number,
-            body: `@${context.actor} Done! You ${events.ascensionHappened ? "ascended" : "moved"} a ${Object(_teams__WEBPACK_IMPORTED_MODULE_7__["teamName"])(state.currentPlayer)} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`}${events.ascensionHappened ? ". " : ` to position ${toPosition}${events.captureHappened ? ", capturing the opponents' piece! " : ". "}`}${events.rosetteClaimed ? "You claimed a rosette, meaning that your team gets to take another turn! " : ""}${events.gameWon ? "This was the winning move! " : ""}\n\n${playerTeam === undefined ? `You've joined the ${Object(_teams__WEBPACK_IMPORTED_MODULE_7__["teamName"])(state.currentPlayer)} team! This will be your team until this game ends.` : `The ${Object(_teams__WEBPACK_IMPORTED_MODULE_7__["teamName"])(state.currentPlayer)} team thanks you for your continued participation!`}\n\nAsk a friend to ${events.gameWon ? "start the next game" : "make the next move"}: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+${events.gameWon ? "won+a+game" : "moved"}+%E2%80%94+${events.gameWon ? "start+the+next+one" : "take+your+turn"}+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)`
+            body: compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"] `
+        @${context.actor} Done!
+        You ${events.ascensionHappened ? "ascended" : "moved"}
+        a ${Object(_teams__WEBPACK_IMPORTED_MODULE_8__["teamName"])(state.currentPlayer)} piece
+        ${events.ascensionHappened ?
+                `from position ${fromPosition}.` :
+                `
+            ${fromPosition === 0 ?
+                    "onto the board" :
+                    `from position ${fromPosition}`}
+            to position ${toPosition}.
+          `}
+        ${events.captureHappened ? "You captured the opponents' piece!" : ""}
+        ${events.rosetteClaimed ? "You claimed a rosette, so you can take another turn!" : ""}
+        ${events.gameWon ? "This was the winning move!" : ""}
+        \n\n
+        ${playerTeam === undefined ?
+                `
+            You've joined the ${Object(_teams__WEBPACK_IMPORTED_MODULE_8__["teamName"])(state.currentPlayer)} team!
+            This will be your team until this game ends.
+          ` :
+                `
+            The ${Object(_teams__WEBPACK_IMPORTED_MODULE_8__["teamName"])(state.currentPlayer)} team
+            thanks you for your continued participation!
+          `}
+        \n\n
+        Ask a friend to
+        ${events.gameWon ? "start the next game" : "make the next move"}:
+        [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+${events.gameWon ? "won+a+game" : "moved"}+%E2%80%94+${events.gameWon ? "start+the+next+one" : "take+your+turn"}+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)
+      `
         });
         octokit.issues.update({
             owner: context.repo.owner,
@@ -26030,26 +26102,40 @@ async function makeMove(state, move, gamePath, octokit, context, log) {
             state: "closed",
         });
         // Update the log with this action
-        log.addToLog("move", `${events.ascensionHappened ? "ascended" : "moved"} a ${Object(_teams__WEBPACK_IMPORTED_MODULE_7__["teamName"])(state.currentPlayer)} piece ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`} ${events.ascensionHappened ? ":rocket:" : `to position ${toPosition}${events.captureHappened ? ` — captured a ${Object(_teams__WEBPACK_IMPORTED_MODULE_7__["teamName"])(Object(_teams__WEBPACK_IMPORTED_MODULE_7__["getOppositeTeam"])(state.currentPlayer))} piece :crossed_swords:` : ""}`}${events.rosetteClaimed ? " — claimed a rosette :rosette:" : ""}${events.gameWon ? " — won the game :crown:" : ""}`, state.currentPlayer);
+        log.addToLog("move", compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"] `
+        ${events.ascensionHappened ? "ascended" : "moved"}
+        a ${Object(_teams__WEBPACK_IMPORTED_MODULE_8__["teamName"])(state.currentPlayer)} piece
+        ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`}
+        ${events.ascensionHappened ?
+            ":rocket:" :
+            `to position ${toPosition}`}
+        ${events.captureHappened ? `— captured a ${Object(_teams__WEBPACK_IMPORTED_MODULE_8__["teamName"])(Object(_teams__WEBPACK_IMPORTED_MODULE_8__["getOppositeTeam"])(state.currentPlayer))} piece :crossed_swords:` : ""}
+        ${events.rosetteClaimed ? "— claimed a rosette :rosette:" : ""}
+        ${events.gameWon ? "— won the game :crown:" : ""}
+      `, state.currentPlayer);
         // If the game was won, leave a message to let everyone know
         if (events.gameWon) {
             await octokit.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: context.issue.number,
-                body: Object(_victory__WEBPACK_IMPORTED_MODULE_6__["makeVictoryMessage"])(log),
+                body: Object(_victory__WEBPACK_IMPORTED_MODULE_7__["makeVictoryMessage"])(log),
             });
         }
     }
     if (!(events === null || events === void 0 ? void 0 : events.gameWon) && Object.keys(newState.possibleMoves).length === 0) {
         // If there are no possible moves, pass this turn, unless the game is done
         // The events object is undefined if the last move was also a pass
-        log.addToLog("pass", `The ${Object(_teams__WEBPACK_IMPORTED_MODULE_7__["teamName"])(newState.currentPlayer)} team rolled a ${newState.diceResult} and their turn was automatically passed`, newState.currentPlayer);
+        log.addToLog("pass", compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"] `
+        The ${Object(_teams__WEBPACK_IMPORTED_MODULE_8__["teamName"])(newState.currentPlayer)} team
+        rolled a ${newState.diceResult}
+        and their turn was automatically passed
+      `, newState.currentPlayer);
         changes = changes.concat(await makeMove(newState, "pass", gamePath, octokit, context, log));
     }
     else {
         // Update README.md with the new state
-        changes = changes.concat(await Object(_generateReadme__WEBPACK_IMPORTED_MODULE_5__["generateReadme"])(newState, gamePath, octokit, context, log));
+        changes = changes.concat(await Object(_generateReadme__WEBPACK_IMPORTED_MODULE_6__["generateReadme"])(newState, gamePath, octokit, context, log));
         // Replace the contents of the current game state file with the new state
         changes.push({
             path: `${gamePath}/state.json`,
@@ -26074,9 +26160,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "resetGame", function() { return resetGame; });
 /* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ur-game */ "./node_modules/ur-game/src/game.js");
 /* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ur_game__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/player */ "./src/player.ts");
-/* harmony import */ var _generateReadme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/generateReadme */ "./src/generateReadme.ts");
-/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
+/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! compress-tag */ "./node_modules/compress-tag/dist/index.js");
+/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(compress_tag__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/player */ "./src/player.ts");
+/* harmony import */ var _generateReadme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/generateReadme */ "./src/generateReadme.ts");
+/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
+
 
 
 
@@ -26104,7 +26193,7 @@ async function resetGame(gamePath, oldGamePath, octokit, context, log) {
     // The starting team should be the same team as the initiating player, so
     // that they can immediately play, but as of rossjrw/rossjrw#133 that team
     // should always be null
-    const startingPlayerTeam = Object(_player__WEBPACK_IMPORTED_MODULE_1__["getPlayerTeam"])(context.actor, log);
+    const startingPlayerTeam = Object(_player__WEBPACK_IMPORTED_MODULE_2__["getPlayerTeam"])(context.actor, log);
     let gameStartTeam;
     if (startingPlayerTeam === undefined) {
         // If the team is null, which it should be, white plays first
@@ -26124,13 +26213,20 @@ async function resetGame(gamePath, oldGamePath, octokit, context, log) {
     // Update the log with this action
     log.addToLog("new", "started a new game", newState.currentPlayer);
     // Update README.md with the new state
-    changes = changes.concat(await Object(_generateReadme__WEBPACK_IMPORTED_MODULE_2__["generateReadme"])(newState, gamePath, octokit, context, log));
+    changes = changes.concat(await Object(_generateReadme__WEBPACK_IMPORTED_MODULE_3__["generateReadme"])(newState, gamePath, octokit, context, log));
     // Add a comment to the issue to indicate that a new board was made
     octokit.issues.createComment({
         owner: context.repo.owner,
         repo: context.repo.repo,
         issue_number: context.issue.number,
-        body: `@${context.actor} Done! You started a new game.\n\nIt's ${Object(_teams__WEBPACK_IMPORTED_MODULE_3__["teamName"])(newState.currentPlayer)} to play! [Make the first move yourself](https://github.com/rossjrw/rossjrw), or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+started+a+new+game+%E2%80%94+take+the+first+turn+at+https://github.com/rossjrw+%23ur+%23github)`
+        body: compress_tag__WEBPACK_IMPORTED_MODULE_1__["compress"] `
+      @${context.actor}
+      Done! You started a new game.
+      \n\n
+      It's ${Object(_teams__WEBPACK_IMPORTED_MODULE_4__["teamName"])(newState.currentPlayer)} to play!
+      [Make the first move yourself](https://github.com/rossjrw/rossjrw),
+      or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+started+a+new+game+%E2%80%94+take+the+first+turn+at+https://github.com/rossjrw+%23ur+%23github)
+    `
     });
     octokit.issues.update({
         owner: context.repo.owner,
@@ -26569,7 +26665,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var humanize_duration__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! humanize-duration */ "./node_modules/humanize-duration/humanize-duration.js");
 /* harmony import */ var humanize_duration__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(humanize_duration__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
+/* harmony import */ var dateformat__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! dateformat */ "./node_modules/dateformat/lib/dateformat.js");
+/* harmony import */ var dateformat__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(dateformat__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
+
 
 
 
@@ -26579,13 +26678,22 @@ function makeVictoryMessage(log) {
      * Called at the end of a game. Produces a message to ping participants in a
      * game, show teams, give stats, etc.
      */
-    const players = Object(_teams__WEBPACK_IMPORTED_MODULE_3__["makeTeamStats"])(log);
-    const winningTeam = Object(_teams__WEBPACK_IMPORTED_MODULE_3__["teamName"])(log.internalLog[log.internalLog.length - 1].team);
+    const players = Object(_teams__WEBPACK_IMPORTED_MODULE_4__["makeTeamStats"])(log);
+    const winningTeam = Object(_teams__WEBPACK_IMPORTED_MODULE_4__["teamName"])(log.internalLog[log.internalLog.length - 1].team);
     const moves = players.reduce((moves, player) => moves + player.moves, 0);
     const startingDate = new Date(log.internalLog[0].time);
     const endingDate = new Date(log.internalLog[log.internalLog.length - 1].time);
     const hours = (endingDate.getTime() - startingDate.getTime()) / 1000 / 3600;
-    return `This game has ended! Congratulations to the ${winningTeam} team for their victory.\n\nThis game had ${players.length} players, ${moves} moves, and took ${hours} hours.\n\n${Object(_teams__WEBPACK_IMPORTED_MODULE_3__["makeTeamListTable"])(log, false)}`;
+    return compress_tag__WEBPACK_IMPORTED_MODULE_0__["compress"] `
+    This game has ended!
+    Congratulations to the ${winningTeam} team for their victory.
+    \n\n
+    This game had ${players.length} players,
+    ${moves} moves,
+    and took ${hours} hours.
+    \n\n
+    ${Object(_teams__WEBPACK_IMPORTED_MODULE_4__["makeTeamListTable"])(log, false)}
+  `;
 }
 async function listPreviousGames(gamePath, octokit, context) {
     /**
@@ -26625,13 +26733,10 @@ async function listPreviousGames(gamePath, octokit, context) {
             playerCount: Object(lodash__WEBPACK_IMPORTED_MODULE_1__["uniq"])(log.map(entry => entry.username)).length,
         };
         return compress_tag__WEBPACK_IMPORTED_MODULE_0__["compress"] `
-      A game started on ${new Date(game.firstMove.time).toUTCString()}
-      by <b>
-        <a href="https://github.com/${game.firstMove.username}">
-          @${game.firstMove.username}
-        </a>
-      </b>
-      and ended on ${new Date(game.lastMove.time).toUTCString()}
+      A game
+      was started on ${dateformat__WEBPACK_IMPORTED_MODULE_3___default()(new Date(game.firstMove.time), "d-mmm-yy")}
+      by **[@${game.firstMove.username}](https://github.com/${game.firstMove.username})**
+      and ended on ${dateformat__WEBPACK_IMPORTED_MODULE_3___default()(new Date(game.lastMove.time), "d-mmm-yy")}
       in a win for the ${game.lastMove.team === "b" ?
             ":black_circle:black" :
             ":white_circle:white"} team.
