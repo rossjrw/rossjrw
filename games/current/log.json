@@ -1456,5 +1456,23 @@
     "team": "w",
     "action": "pass",
     "boardImage": null
+  },
+  {
+    "username": "YonLiud",
+    "issue": 267,
+    "message": "ascended a black piece from position 12 :rocket:",
+    "time": "2020-12-04T06:55:12.981Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/a97b28ce8d8344aa96e4e3ac05f5b4eede1e1b12/games/current/board.267.svg"
+  },
+  {
+    "username": "YonLiud",
+    "issue": 267,
+    "message": "The white team rolled a 3 and their turn was automatically passed",
+    "time": "2020-12-04T06:55:12.981Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null
   }
 ]
