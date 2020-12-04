@@ -25693,7 +25693,7 @@ async function generateReadme(state, gamePath, octokit, context, log) {
         ];
     });
     const teamTable = Object(_teams__WEBPACK_IMPORTED_MODULE_3__["makeTeamListTable"])(log, true);
-    const previousGames = await Object(_victory__WEBPACK_IMPORTED_MODULE_4__["listPreviousGames"])("games", octokit, context);
+    const previousGames = await Object(_victory__WEBPACK_IMPORTED_MODULE_4__["listPreviousGames"])(gamePath, octokit, context);
     const readme = ejs__WEBPACK_IMPORTED_MODULE_0___default.a.render(template, { actions, state, logItems, context, teamTable, previousGames });
     const currentReadmeFile = await octokit.repos.getContents({
         owner: context.repo.owner,
@@ -26616,7 +26616,6 @@ async function listPreviousGames(gamePath, octokit, context) {
         if (Array.isArray(gameFile.data)) {
             throw new Error("GAMEFILE_IS_DIR");
         }
-        console.log(gameFile.data.content);
         return JSON.parse(Buffer.from(gameFile.data.content, "base64").toString());
     }));
     const gameStrings = gameLogs.map(log => {
