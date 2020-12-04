@@ -95,7 +95,7 @@ export async function generateReadme (
 
   const readme = ejs.render(
     template,
-    { actions, state, logItems, context, teamTable }
+    { actions, state, logItems, context, teamTable, previousGames }
   )
 
   const currentReadmeFile = await octokit.repos.getContents({
