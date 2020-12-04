@@ -1,6 +1,8 @@
 import { Octokit } from "@octokit/rest/index"
 import { Context } from "@actions/github/lib/context"
 import { compress } from "compress-tag"
+import { uniq } from "lodash"
+import humanizeDuration from "humanize-duration"
 
 import { Log, LogItem } from '@/log'
 import { teamName, makeTeamStats, makeTeamListTable } from '@/teams'
@@ -67,7 +69,8 @@ export async function listPreviousGames (
   const gameStrings = gameLogs.map(log => {
     const game = {
       firstMove: log[0],
-      lastMove: log[log.length - 1]
+      lastMove: log[log.length - 1],
+      playerCount: uniq(log.map(entry => entry.username)).length,
     }
     return compress`
       A game started on ${new Date(game.firstMove.time).toUTCString()}
@@ -82,6 +85,16 @@ export async function listPreviousGames (
           ":black_circle:black" :
           ":white_circle:white"
       } team.
+      ${game.playerCount} players
+      played ${log.length} moves
+      across ${
+        humanizeDuration(
+          new Date(game.lastMove.time).getTime() -
+            new Date(game.firstMove.time).getTime(),
+          { largest: 2, delimiter: " and " }
+        )
+      }.
+      Winning move:
       [#${game.lastMove.issue}](https://github.com/rossjrw/rossjrw/issues/${game.lastMove.issue})
     `
   })
