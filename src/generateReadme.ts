@@ -8,6 +8,7 @@ import { updateSvg } from '@/updateSvg'
 import { Change } from '@/play'
 import { Log } from '@/log'
 import { makeTeamListTable, teamName } from '@/teams'
+import { listPreviousGames } from '@/victory'
 
 export async function generateReadme (
   state: Ur.State,
@@ -92,6 +93,8 @@ export async function generateReadme (
   })
 
   const teamTable = makeTeamListTable(log, true)
+
+  const previousGames = listPreviousGames("games", octokit, context)
 
   const readme = ejs.render(
     template,

@@ -57,12 +57,8 @@ What would you like to do?
 
 ## Previous games
 
-<% previousGames.forEach((game, index) => { -%>
-1. A game started on <%= game.startDate %> by <%= game.startUser %>, and
-   ended on <%= game.endDate %> in a win for the
-   <%= game.winner === "b" ? ":black_circle:black" : ":white_circle:white" %>
-   team.
-   [See the winning issue!](https://github.com/rossjrw/rossjrw/issues/269)
+<% previousGames.forEach(summary => { -%>
+1. <%= summary %>
 <% }) -%>
 
 </details>
