@@ -1,11 +1,11 @@
 Welcome to my Github profile!
 We're playing
 [The Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur).
-**This game is in progress,** but you can join!
+**Game #2 is in progress,** but you can join!
 
 <p align="center">
   <b>It's the
-  :black_circle:black
+  :white_circle:white
   team's turn.</b>
 </p>
 
@@ -17,23 +17,22 @@ If it's not your turn, check back later, or
 [ask a friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)
 to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-:black_circle:black
+:white_circle:white
 team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.273.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.280.svg"></p>
 
-  **:black_circle:Black team:**
-  You rolled a 3!
+  **:white_circle:White team:**
+  You rolled a 1!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a new piece to tile 3](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%400-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
-  | [Move a piece from tile 2 to tile 5](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%402-0&amp;body=_Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else._%0D%0A%0D%0A_Be+aware+that+your+move+can+take+a+minute+or+two+to+process._) |
+  | [Move a piece from tile 2 to tile 3    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%402-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
-<details><summary>The game so far</summary>
+<details><summary>Game #2 so far</summary>
 
 ## Who's on each team?
 
@@ -47,7 +46,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td><b><a href="https://github.com/bejoistic">@bejoistic</a></b> (1)</td>
+        <td><b><a href="https://github.com/bejoistic">@bejoistic</a></b> (1)<br><b><a href="https://github.com/rossjrw">@rossjrw</a></b> (1)</td>
         <td><b><a href="https://github.com/1ethanhansen">@1ethanhansen</a></b> (3)</td>
       </tr>
     </tbody>
@@ -57,10 +56,15 @@ What would you like to do?
 
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
-  | 2020-12-04 16:40:10 | **0** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** started a new game | [#270](https://github.com/rossjrw/rossjrw/issues/270) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/3053a47c0e6594cd8395007bb8c73615d1f6045c/games/current/board.270.svg) |
-  | 2020-12-04 16:41:54 | **1** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** moved a white piece onto the board to position 2 | [#271](https://github.com/rossjrw/rossjrw/issues/271) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/0c75bbcd05af6eff999befba8ee62e8ef8b4a12d/games/current/board.271.svg) |
-  | 2020-12-04 17:10:31 | **2** | :black_circle: **[@bejoistic](https://github.com/bejoistic)** moved a black piece onto the board to position 2 | [#272](https://github.com/rossjrw/rossjrw/issues/272) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/206286cf466ef4022044b68cd05c0d237726f82a/games/current/board.272.svg) |
-  | 2020-12-04 18:05:21 | **3** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** moved a white piece onto the board to position 1 | [#273](https://github.com/rossjrw/rossjrw/issues/273) |  |
+  | 4-Dec-20 16:40 | **0** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** started a new game | [#270](https://github.com/rossjrw/rossjrw/issues/270) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/3053a47c0e6594cd8395007bb8c73615d1f6045c/games/current/board.270.svg) |
+  | 4-Dec-20 16:41 | **1** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** moved a white piece onto the board to position 2 | [#271](https://github.com/rossjrw/rossjrw/issues/271) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/0c75bbcd05af6eff999befba8ee62e8ef8b4a12d/games/current/board.271.svg) |
+  | 4-Dec-20 17:10 | **2** | :black_circle: **[@bejoistic](https://github.com/bejoistic)** moved a black piece onto the board to position 2 | [#272](https://github.com/rossjrw/rossjrw/issues/272) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/206286cf466ef4022044b68cd05c0d237726f82a/games/current/board.272.svg) |
+  | 4-Dec-20 18:05 | **3** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** moved a white piece onto the board to position 1 | [#273](https://github.com/rossjrw/rossjrw/issues/273) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/278ed5038c299f889804029b35efd72014e3a5eb/games/current/board.273.svg) |
+  | 5-Dec-20 00:25 | **4** | :black_circle: **[@rossjrw](https://github.com/rossjrw)** moved a black piece onto the board to position 3    | [#280](https://github.com/rossjrw/rossjrw/issues/280) |  |
+
+## Previous games
+
+1. A game was started on 30-Jul-20 by **[@rossjrw](https://github.com/rossjrw)** and ended on 4-Dec-20 in a win for the :white_circle:white team. 64 players played 166 moves across 4 months and 5 days. Winning move: [#269](https://github.com/rossjrw/rossjrw/issues/269)
 
 </details>
 
