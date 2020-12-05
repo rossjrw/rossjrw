@@ -69,6 +69,15 @@
     "time": "2020-12-05T11:41:24.094Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ebb79274bc099b21635d1539b75730bac10ff7f1/games/current/board.283.svg"
+  },
+  {
+    "username": "IRHM",
+    "issue": 284,
+    "message": "moved a white piece onto the board to position 2   ",
+    "time": "2020-12-05T22:37:07.604Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]
