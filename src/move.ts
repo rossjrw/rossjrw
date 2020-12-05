@@ -115,7 +115,7 @@ export async function makeMove (
         ${
           events.ascensionHappened ?
           `from position ${fromPosition}.` :
-          `
+          compress`
             ${
               fromPosition === 0 ?
               "onto the board" :
@@ -129,11 +129,11 @@ export async function makeMove (
         ${events.gameWon ? "This was the winning move!" : ""}
         \n\n
         ${playerTeam === undefined ?
-          `
+          compress`
             You've joined the ${teamName(state.currentPlayer)} team!
             This will be your team until this game ends.
           ` :
-          `
+          compress`
             The ${teamName(state.currentPlayer)} team
             thanks you for your continued participation!
           `
