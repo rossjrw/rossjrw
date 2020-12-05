@@ -26070,7 +26070,7 @@ async function makeMove(state, move, gamePath, octokit, context, log) {
         a ${Object(_teams__WEBPACK_IMPORTED_MODULE_8__["teamName"])(state.currentPlayer)} piece
         ${events.ascensionHappened ?
                 `from position ${fromPosition}.` :
-                `
+                compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"] `
             ${fromPosition === 0 ?
                     "onto the board" :
                     `from position ${fromPosition}`}
@@ -26081,11 +26081,11 @@ async function makeMove(state, move, gamePath, octokit, context, log) {
         ${events.gameWon ? "This was the winning move!" : ""}
         \n\n
         ${playerTeam === undefined ?
-                `
+                compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"] `
             You've joined the ${Object(_teams__WEBPACK_IMPORTED_MODULE_8__["teamName"])(state.currentPlayer)} team!
             This will be your team until this game ends.
           ` :
-                `
+                compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"] `
             The ${Object(_teams__WEBPACK_IMPORTED_MODULE_8__["teamName"])(state.currentPlayer)} team
             thanks you for your continued participation!
           `}
