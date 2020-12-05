@@ -25713,7 +25713,7 @@ async function generateReadme(state, gamePath, octokit, context, log) {
     // Make a list of moves that have happened so far this game, as markdown
     const logItems = log.internalLog.map(logItem => {
         return [
-            `${dateformat__WEBPACK_IMPORTED_MODULE_2___default()(new Date(logItem.time), "d-mmm-yy HH:MM")}`,
+            `${dateformat__WEBPACK_IMPORTED_MODULE_2___default()(new Date(logItem.time), "dS mmm yyyy HH:MM")}`,
             compress_tag__WEBPACK_IMPORTED_MODULE_1__["compress"] `
         :${Object(_teams__WEBPACK_IMPORTED_MODULE_5__["teamName"])(logItem.team)}_circle:
         ${logItem.action === "pass" ?
@@ -26734,9 +26734,9 @@ async function listPreviousGames(gamePath, octokit, context) {
         };
         return compress_tag__WEBPACK_IMPORTED_MODULE_0__["compress"] `
       A game
-      was started on ${dateformat__WEBPACK_IMPORTED_MODULE_3___default()(new Date(game.firstMove.time), "d-mmm-yy")}
+      was started on ${dateformat__WEBPACK_IMPORTED_MODULE_3___default()(new Date(game.firstMove.time), "dS mmm yyyy")}
       by **[@${game.firstMove.username}](https://github.com/${game.firstMove.username})**
-      and ended on ${dateformat__WEBPACK_IMPORTED_MODULE_3___default()(new Date(game.lastMove.time), "d-mmm-yy")}
+      and ended on ${dateformat__WEBPACK_IMPORTED_MODULE_3___default()(new Date(game.lastMove.time), "dS mmm yyyy")}
       in a win for the ${game.lastMove.team === "b" ?
             ":black_circle:black" :
             ":white_circle:white"} team.
