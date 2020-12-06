@@ -78,6 +78,15 @@
     "time": "2020-12-05T22:37:07.604Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/54d70ced309619b8c45c369dcfb9527a568b8664/games/current/board.284.svg"
+  },
+  {
+    "username": "rossjrw",
+    "issue": 285,
+    "message": "moved a black piece from position 4 to position 8  — claimed a rosette :rosette: ",
+    "time": "2020-12-06T21:05:26.509Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
