@@ -123,6 +123,15 @@
     "time": "2020-12-06T21:10:45.693Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e085b921ad1c17fbd4a5dc3ee4ed5b2c51895b5e/games/current/board.289.svg"
+  },
+  {
+    "username": "lukew3",
+    "issue": 290,
+    "message": "moved a black piece from position 3 to position 6   ",
+    "time": "2020-12-10T21:46:32.672Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
