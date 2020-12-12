@@ -77,7 +77,6 @@ export async function resetGame (
     repo: context.repo.repo,
     issue_number: context.issue.number,
     body: compress`
-      @${context.actor}
       Done! You started a new game.
       \n\n
       It's ${teamName(newState.currentPlayer)} to play!

@@ -49,7 +49,7 @@ export function handleError(
     owner: context.repo.owner,
     repo: context.repo.repo,
     issue_number: context.issue.number,
-    body: `@${context.actor} ${get(ERROR_DESC, error.message, ERROR_DEFAULT + error.message)}`,
+    body: get(ERROR_DESC, error.message, ERROR_DEFAULT + error.message),
   })
   addLabels(["Unsuccessful"], octokit, context)
   octokit.issues.update({

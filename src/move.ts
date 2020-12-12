@@ -109,8 +109,7 @@ export async function makeMove (
       repo: context.repo.repo,
       issue_number: context.issue.number,
       body: compress`
-        @${context.actor} Done!
-        You ${events.ascensionHappened ? "ascended" : "moved"}
+        Done! You ${events.ascensionHappened ? "ascended" : "moved"}
         a ${teamName(state.currentPlayer)} piece
         ${
           events.ascensionHappened ?
