@@ -60,8 +60,8 @@ export function handleError(
   })
 
   // Only raise an error if there was an actual uncaught problem
-  if (error.message in ERROR_DESC) {
-    core.error(error) 
+  if (!(error.message in ERROR_DESC)) {
+    core.error(error)
     // Seems like this is the only reliable way for me to know what actually
     // caused the error
     throw error
