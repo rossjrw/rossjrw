@@ -25602,7 +25602,7 @@ function handleError(error, log, octokit, context, core) {
         owner: context.repo.owner,
         repo: context.repo.repo,
         issue_number: context.issue.number,
-        body: `@${context.actor} ${Object(lodash__WEBPACK_IMPORTED_MODULE_0__["get"])(ERROR_DESC, error.message, ERROR_DEFAULT + error.message)}`,
+        body: Object(lodash__WEBPACK_IMPORTED_MODULE_0__["get"])(ERROR_DESC, error.message, ERROR_DEFAULT + error.message),
     });
     Object(_issues__WEBPACK_IMPORTED_MODULE_1__["addLabels"])(["Unsuccessful"], octokit, context);
     octokit.issues.update({
@@ -25612,7 +25612,7 @@ function handleError(error, log, octokit, context, core) {
         state: "closed",
     });
     // Only raise an error if there was an actual uncaught problem
-    if (error.message in ERROR_DESC) {
+    if (!(error.message in ERROR_DESC)) {
         core.error(error);
         // Seems like this is the only reliable way for me to know what actually
         // caused the error
@@ -26065,8 +26065,7 @@ async function makeMove(state, move, gamePath, octokit, context, log) {
             repo: context.repo.repo,
             issue_number: context.issue.number,
             body: compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"] `
-        @${context.actor} Done!
-        You ${events.ascensionHappened ? "ascended" : "moved"}
+        Done! You ${events.ascensionHappened ? "ascended" : "moved"}
         a ${Object(_teams__WEBPACK_IMPORTED_MODULE_8__["teamName"])(state.currentPlayer)} piece
         ${events.ascensionHappened ?
                 `from position ${fromPosition}.` :
@@ -26220,7 +26219,6 @@ async function resetGame(gamePath, oldGamePath, octokit, context, log) {
         repo: context.repo.repo,
         issue_number: context.issue.number,
         body: compress_tag__WEBPACK_IMPORTED_MODULE_1__["compress"] `
-      @${context.actor}
       Done! You started a new game.
       \n\n
       It's ${Object(_teams__WEBPACK_IMPORTED_MODULE_4__["teamName"])(newState.currentPlayer)} to play!
