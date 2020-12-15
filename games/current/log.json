@@ -213,6 +213,15 @@
     "time": "2020-12-13T05:52:25.903Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/207f76427e569611dea0734effb34fb07319a0d3/games/current/board.299.svg"
+  },
+  {
+    "username": "shaplykon",
+    "issue": 300,
+    "message": "moved a black piece onto the board to position 3   ",
+    "time": "2020-12-15T16:23:11.570Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
