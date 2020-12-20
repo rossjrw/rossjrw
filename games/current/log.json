@@ -276,6 +276,15 @@
     "time": "2020-12-19T11:44:05.916Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1c0ee46451ae0a1d7a26f50ce415c488c760e753/games/current/board.306.svg"
+  },
+  {
+    "username": "1ethanhansen",
+    "issue": 310,
+    "message": "moved a white piece from position 1 to position 4  — claimed a rosette :rosette: ",
+    "time": "2020-12-20T02:30:11.121Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]

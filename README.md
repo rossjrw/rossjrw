@@ -20,7 +20,7 @@ to make a move.
 :white_circle:white
 team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.306.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.310.svg"></p>
 
   **:white_circle:White team:**
   You rolled a 3!
@@ -29,7 +29,7 @@ What would you like to do?
 | Choices *(click one of them!)* |
 | --- |
   | [Move a new piece to tile 3    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [Move a piece from tile 1 to tile 4 (:rosette:)   ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%401-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a piece from tile 4 to tile 7    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%404-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -48,7 +48,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/rossjrw">@rossjrw</a></b> (7)<br><b><a href="https://github.com/KhanShaheb34">@KhanShaheb34</a></b> (2)<br><b><a href="https://github.com/bejoistic">@bejoistic</a></b> (1)<br><b><a href="https://github.com/lukew3">@lukew3</a></b> (1)<br><b><a href="https://github.com/maximilianschmelzer">@maximilianschmelzer</a></b> (1)<br><b><a href="https://github.com/mblemberg">@mblemberg</a></b> (1)<br><b><a href="https://github.com/shaplykon">@shaplykon</a></b> (1)<br><b><a href="https://github.com/jtrent238">@jtrent238</a></b> (1)<br><b><a href="https://github.com/HeinKhantZaw">@HeinKhantZaw</a></b> (1)</td>
-        <td><b><a href="https://github.com/1ethanhansen">@1ethanhansen</a></b> (14)<br><b><a href="https://github.com/IRHM">@IRHM</a></b> (1)</td>
+        <td><b><a href="https://github.com/1ethanhansen">@1ethanhansen</a></b> (15)<br><b><a href="https://github.com/IRHM">@IRHM</a></b> (1)</td>
       </tr>
     </tbody>
   </table>
@@ -87,7 +87,8 @@ What would you like to do?
   | 16th Dec 2020 16:44 | **27** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** moved a white piece from position 11 to position 13    | [#303](https://github.com/rossjrw/rossjrw/issues/303) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/297d62bc5a928f1282a250abc7d2fe27c0bd61e8/games/current/board.303.svg) |
   | 19th Dec 2020 01:53 | **28** | :black_circle: **[@jtrent238](https://github.com/jtrent238)** moved a black piece onto the board to position 1    | [#304](https://github.com/rossjrw/rossjrw/issues/304) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/764ba69ca3f0a07e415f36d814a6d52a7d694e3e/games/current/board.304.svg) |
   | 19th Dec 2020 02:24 | **29** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** ascended a white piece from position 14 :rocket:    | [#305](https://github.com/rossjrw/rossjrw/issues/305) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/3604e4af9e4962c16d621ce2612c4ef7116c7fc9/games/current/board.305.svg) |
-  | 19th Dec 2020 11:44 | **30** | :black_circle: **[@HeinKhantZaw](https://github.com/HeinKhantZaw)** moved a black piece from position 4 to position 5    | [#306](https://github.com/rossjrw/rossjrw/issues/306) |  |
+  | 19th Dec 2020 11:44 | **30** | :black_circle: **[@HeinKhantZaw](https://github.com/HeinKhantZaw)** moved a black piece from position 4 to position 5    | [#306](https://github.com/rossjrw/rossjrw/issues/306) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/1c0ee46451ae0a1d7a26f50ce415c488c760e753/games/current/board.306.svg) |
+  | 20th Dec 2020 02:30 | **31** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** moved a white piece from position 1 to position 4  — claimed a rosette :rosette:  | [#310](https://github.com/rossjrw/rossjrw/issues/310) |  |
 
 ## Previous games
 
