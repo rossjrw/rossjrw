@@ -321,6 +321,15 @@
     "time": "2020-12-21T02:50:53.814Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/86bc97c49e2824adba9b665b3187101fb6a06614/games/current/board.314.svg"
+  },
+  {
+    "username": "quantumporium",
+    "issue": 315,
+    "message": "moved a black piece from position 2 to position 4  — claimed a rosette :rosette: ",
+    "time": "2020-12-21T17:14:33.102Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
