@@ -2,25 +2,14 @@
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "./dist/",
-    "noImplicitAny": true,
-    "module": "esnext",
-    "target": "es2018",
     "strict": true,
+    "module": "esnext",
     "importHelpers": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "lib": [
-      "es2020"
-    ],
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    "lib": [ "esnext" ],
+    "paths": { "@/*": ["src/*"] }
   },
-  "include": [
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": [ "src/**/*.ts" ]
 }
