@@ -24909,6 +24909,260 @@ var __WEBPACK_AMD_DEFINE_RESULT__;// HumanizeDuration.js - https://git.io/j0HgmQ
 
 /***/ }),
 
+/***/ "./node_modules/tslib/tslib.es6.js":
+/*!*****************************************!*\
+  !*** ./node_modules/tslib/tslib.es6.js ***!
+  \*****************************************/
+/*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __createBinding, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault, __classPrivateFieldGet, __classPrivateFieldSet */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__extends", function() { return __extends; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__assign", function() { return __assign; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__rest", function() { return __rest; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__decorate", function() { return __decorate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__param", function() { return __param; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__metadata", function() { return __metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__awaiter", function() { return __awaiter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__generator", function() { return __generator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__createBinding", function() { return __createBinding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__exportStar", function() { return __exportStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__values", function() { return __values; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__read", function() { return __read; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spread", function() { return __spread; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spreadArrays", function() { return __spreadArrays; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__await", function() { return __await; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncGenerator", function() { return __asyncGenerator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncDelegator", function() { return __asyncDelegator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncValues", function() { return __asyncValues; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__makeTemplateObject", function() { return __makeTemplateObject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importStar", function() { return __importStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importDefault", function() { return __importDefault; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldGet", function() { return __classPrivateFieldGet; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldSet", function() { return __classPrivateFieldSet; });
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+/* global Reflect, Promise */
+
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return extendStatics(d, b);
+};
+
+function __extends(d, b) {
+    extendStatics(d, b);
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    }
+    return __assign.apply(this, arguments);
+}
+
+function __rest(s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+}
+
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+
+function __param(paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+}
+
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+
+function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+
+function __generator(thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+}
+
+function __createBinding(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}
+
+function __exportStar(m, exports) {
+    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+function __values(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+}
+
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+}
+
+function __spread() {
+    for (var ar = [], i = 0; i < arguments.length; i++)
+        ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+
+function __spreadArrays() {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
+    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
+    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
+    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
+    function fulfill(value) { resume("next", value); }
+    function reject(value) { resume("throw", value); }
+    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
+}
+
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+}
+
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
+}
+
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result.default = mod;
+    return result;
+}
+
+function __importDefault(mod) {
+    return (mod && mod.__esModule) ? mod : { default: mod };
+}
+
+function __classPrivateFieldGet(receiver, privateMap) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to get private field on non-instance");
+    }
+    return privateMap.get(receiver);
+}
+
+function __classPrivateFieldSet(receiver, privateMap, value) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to set private field on non-instance");
+    }
+    privateMap.set(receiver, value);
+    return value;
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/unraw/dist/errors.js":
 /*!*******************************************!*\
   !*** ./node_modules/unraw/dist/errors.js ***!
@@ -25470,8 +25724,8 @@ function analyseMove(state, fromPosition, toPosition) {
      * @param toPosition: The position that a pice is moving to.
      * @returns A dict of events that could happen and whether or not they did.
      */
-    const newState = ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.takeTurn(state, state.currentPlayer, fromPosition);
-    const events = {
+    var newState = ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.takeTurn(state, state.currentPlayer, fromPosition);
+    var events = {
         // Was a rosette claimed?
         rosetteClaimed: [4, 8, 14].includes(toPosition),
         // Did a capture happen?
@@ -25498,56 +25752,68 @@ function analyseMove(state, fromPosition, toPosition) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "makeCommit", function() { return makeCommit; });
-async function makeCommit(message, changes, octokit, context) {
-    /**
-     * From the given list of changes, makes a single commit to implement them.
-     *
-     * @param changes: The list of changes to make.
-     */
-    // Grab the SHA of the latest commit
-    const remoteCommits = await octokit.repos.listCommits({
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        sha: "play",
-        per_page: 1,
-    });
-    let latestCommitSha = remoteCommits.data[0].sha;
-    const treeSha = remoteCommits.data[0].commit.tree.sha;
-    // Make a new tree for these changes
-    const newTree = await octokit.git.createTree({
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        base_tree: treeSha,
-        tree: changes.map(change => {
-            const subTree = {
-                path: change.path,
-                mode: '100644',
-            };
-            if (change.content) {
-                subTree.content = change.content;
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
+function makeCommit(message, changes, octokit, context) {
+    return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function () {
+        var remoteCommits, latestCommitSha, treeSha, newTree, newTreeSha, newCommit;
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"])(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, octokit.repos.listCommits({
+                        owner: context.repo.owner,
+                        repo: context.repo.repo,
+                        sha: "play",
+                        per_page: 1,
+                    })];
+                case 1:
+                    remoteCommits = _a.sent();
+                    latestCommitSha = remoteCommits.data[0].sha;
+                    treeSha = remoteCommits.data[0].commit.tree.sha;
+                    return [4 /*yield*/, octokit.git.createTree({
+                            owner: context.repo.owner,
+                            repo: context.repo.repo,
+                            base_tree: treeSha,
+                            tree: changes.map(function (change) {
+                                var subTree = {
+                                    path: change.path,
+                                    mode: '100644',
+                                };
+                                if (change.content) {
+                                    subTree.content = change.content;
+                                }
+                                else {
+                                    //@ts-expect-error
+                                    subTree.sha = null;
+                                }
+                                return subTree;
+                            })
+                        })];
+                case 2:
+                    newTree = _a.sent();
+                    newTreeSha = newTree.data.sha;
+                    return [4 /*yield*/, octokit.git.createCommit({
+                            owner: context.repo.owner,
+                            repo: context.repo.repo,
+                            message: message,
+                            tree: newTreeSha,
+                            parents: [latestCommitSha]
+                        })];
+                case 3:
+                    newCommit = _a.sent();
+                    latestCommitSha = newCommit.data.sha;
+                    // Set HEAD of play branch to the new commit
+                    return [4 /*yield*/, octokit.git.updateRef({
+                            owner: context.repo.owner,
+                            repo: context.repo.repo,
+                            sha: latestCommitSha,
+                            ref: "heads/play",
+                        })];
+                case 4:
+                    // Set HEAD of play branch to the new commit
+                    _a.sent();
+                    return [2 /*return*/];
             }
-            else {
-                //@ts-expect-error
-                subTree.sha = null;
-            }
-            return subTree;
-        })
-    });
-    const newTreeSha = newTree.data.sha;
-    const newCommit = await octokit.git.createCommit({
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        message,
-        tree: newTreeSha,
-        parents: [latestCommitSha]
-    });
-    latestCommitSha = newCommit.data.sha;
-    // Set HEAD of play branch to the new commit
-    await octokit.git.updateRef({
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        sha: latestCommitSha,
-        ref: "heads/play",
+        });
     });
 }
 
@@ -25580,8 +25846,8 @@ function handleError(error, log, octokit, context, core) {
      *
      * @param error: The error to report with an ID matching the desc object.
      */
-    const playerTeam = Object(_player__WEBPACK_IMPORTED_MODULE_2__["getPlayerTeam"])(context.actor, log);
-    const ERROR_DESC = {
+    var playerTeam = Object(_player__WEBPACK_IMPORTED_MODULE_2__["getPlayerTeam"])(context.actor, log);
+    var ERROR_DESC = {
         // Action parsing
         WRONG_GAME: "Sorry, I only know how to play Ur.",
         UNKNOWN_COMMAND: "I'm not sure what you're asking me to do — the only commands I know are 'new' and 'move'.",
@@ -25591,12 +25857,12 @@ function handleError(error, log, octokit, context, core) {
         NON_NUMERIC_ID: "You've told me what move to make, but the game ID you've given me isn't a number.",
         // Execution errors
         MOVE_WHEN_GAME_ENDED: "You can't make a move when the game has finished! You'll have to start a new game instead.",
-        WRONG_TEAM: `Sorry, you're on the ${Object(_teams__WEBPACK_IMPORTED_MODULE_3__["teamName"])(playerTeam)} team, but it's ${Object(_teams__WEBPACK_IMPORTED_MODULE_3__["teamName"])(Object(_teams__WEBPACK_IMPORTED_MODULE_3__["getOppositeTeam"])(playerTeam))} to play. You'll have to wait until it's the ${Object(_teams__WEBPACK_IMPORTED_MODULE_3__["teamName"])(playerTeam)} team's turn before you can make a move.`,
+        WRONG_TEAM: "Sorry, you're on the " + Object(_teams__WEBPACK_IMPORTED_MODULE_3__["teamName"])(playerTeam) + " team, but it's " + Object(_teams__WEBPACK_IMPORTED_MODULE_3__["teamName"])(Object(_teams__WEBPACK_IMPORTED_MODULE_3__["getOppositeTeam"])(playerTeam)) + " to play. You'll have to wait until it's the " + Object(_teams__WEBPACK_IMPORTED_MODULE_3__["teamName"])(playerTeam) + " team's turn before you can make a move.",
         WRONG_DICE_COUNT: "You tried to move a piece by the wrong number of places. Check the dice roll!",
         NO_MOVE_POSITION: "I can't tell which piece you want to move.",
         IMPOSSIBLE_MOVE: "Woah, that's not a legal move! Maybe someone snuck in a move before yours.",
     };
-    const ERROR_DEFAULT = "Something went wrong, but I'm not sure exactly what.\n\n@rossjrw ";
+    var ERROR_DEFAULT = "Something went wrong, but I'm not sure exactly what.\n\n@rossjrw ";
     Object(_issues__WEBPACK_IMPORTED_MODULE_1__["addReaction"])("confused", octokit, context);
     octokit.issues.createComment({
         owner: context.repo.owner,
@@ -25633,16 +25899,17 @@ function handleError(error, log, octokit, context, core) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "generateReadme", function() { return generateReadme; });
-/* harmony import */ var ejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ejs */ "./node_modules/ejs/lib/ejs.js");
-/* harmony import */ var ejs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ejs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! compress-tag */ "./node_modules/compress-tag/dist/index.js");
-/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(compress_tag__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var dateformat__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! dateformat */ "./node_modules/dateformat/lib/dateformat.js");
-/* harmony import */ var dateformat__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(dateformat__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _analyseMove__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/analyseMove */ "./src/analyseMove.ts");
-/* harmony import */ var _updateSvg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/updateSvg */ "./src/updateSvg.ts");
-/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
-/* harmony import */ var _victory__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/victory */ "./src/victory.ts");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var ejs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ejs */ "./node_modules/ejs/lib/ejs.js");
+/* harmony import */ var ejs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(ejs__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! compress-tag */ "./node_modules/compress-tag/dist/index.js");
+/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(compress_tag__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var dateformat__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! dateformat */ "./node_modules/dateformat/lib/dateformat.js");
+/* harmony import */ var dateformat__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(dateformat__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _analyseMove__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/analyseMove */ "./src/analyseMove.ts");
+/* harmony import */ var _updateSvg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/updateSvg */ "./src/updateSvg.ts");
+/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
+/* harmony import */ var _victory__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/victory */ "./src/victory.ts");
 
 
 
@@ -25650,111 +25917,104 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-async function generateReadme(state, gamePath, octokit, context, log) {
-    /**
-     * Generates the new README file based on the current state of the game.
-     *
-     * @param state: The current state of the board, as of right now.
-     * @param gamePath: The location of the current game's state file.
-     * @returns An array of changes to add to the commit.
-     */
-    let changes = [];
-    // Update the SVG to represent the new game board
-    changes = changes.concat(await Object(_updateSvg__WEBPACK_IMPORTED_MODULE_4__["updateSvg"])(state, gamePath, "assets/board.optimised.svg", // TODO change for compiled branch
-    octokit, context));
-    // Grab the EJS template
-    const readmeFile = await octokit.repos.getContents({
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        ref: "source",
-        path: "src/README.ejs",
-        mediaType: { format: "raw" },
-    });
-    // If a file was queried then data is not an array
-    if (Array.isArray(readmeFile.data)) {
-        throw new Error('FILE_IS_DIR');
-    }
-    const template = Buffer.from(readmeFile.data.content, "base64").toString();
-    // Make a list of possible actions that can be taken this turn, structured
-    // into an array of links
-    let actions;
-    if (state.possibleMoves) {
-        actions = Object.keys(state.possibleMoves).map(key => {
-            return {
-                from: Number(key),
-                to: state.possibleMoves[key],
-            };
-        }).map(move => {
-            const events = Object(_analyseMove__WEBPACK_IMPORTED_MODULE_3__["analyseMove"])(state, move.from, move.to);
-            return {
-                text: compress_tag__WEBPACK_IMPORTED_MODULE_1__["compress"] `
-          ${events.ascensionHappened ? "Ascend" : "Move"}
-          a ${move.from === 0 ? "new piece" : `piece from tile ${move.from}`}
-          ${events.ascensionHappened ? "" : `to tile ${move.to}`}
-          ${events.rosetteClaimed ? "(:rosette:)" : ""}
-          ${events.captureHappened ? "(:crossed_swords:)" : ""}
-          ${events.ascensionHappened ? "(:rocket:)" : ""}
-          ${events.gameWon ? "(:crown:)" : ""}
-        `,
-                url: issueLink(`ur-move-${state.diceResult}%40${move.from}-0`, context),
-            };
-        });
-    }
-    else {
-        actions = [
-            {
-                text: "Start a new game",
-                url: issueLink("ur-new", context)
+
+function generateReadme(state, gamePath, octokit, context, log) {
+    return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function () {
+        var changes, _a, _b, readmeFile, template, actions, logItems, teamTable, previousGames, readme, currentReadmeFile;
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"])(this, function (_c) {
+            switch (_c.label) {
+                case 0:
+                    changes = [];
+                    _b = (_a = changes).concat;
+                    return [4 /*yield*/, Object(_updateSvg__WEBPACK_IMPORTED_MODULE_5__["updateSvg"])(state, gamePath, "assets/board.optimised.svg", // TODO change for compiled branch
+                        octokit, context)];
+                case 1:
+                    // Update the SVG to represent the new game board
+                    changes = _b.apply(_a, [_c.sent()]);
+                    return [4 /*yield*/, octokit.repos.getContents({
+                            owner: context.repo.owner,
+                            repo: context.repo.repo,
+                            ref: "source",
+                            path: "src/README.ejs",
+                            mediaType: { format: "raw" },
+                        })
+                        // If a file was queried then data is not an array
+                    ];
+                case 2:
+                    readmeFile = _c.sent();
+                    // If a file was queried then data is not an array
+                    if (Array.isArray(readmeFile.data)) {
+                        throw new Error('FILE_IS_DIR');
+                    }
+                    template = Buffer.from(readmeFile.data.content, "base64").toString();
+                    if (state.possibleMoves) {
+                        actions = Object.keys(state.possibleMoves).map(function (key) {
+                            return {
+                                from: Number(key),
+                                to: state.possibleMoves[key],
+                            };
+                        }).map(function (move) {
+                            var events = Object(_analyseMove__WEBPACK_IMPORTED_MODULE_4__["analyseMove"])(state, move.from, move.to);
+                            return {
+                                text: Object(compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"])(templateObject_1 || (templateObject_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n          ", "\n          a ", "\n          ", "\n          ", "\n          ", "\n          ", "\n          ", "\n        "], ["\n          ", "\n          a ", "\n          ", "\n          ", "\n          ", "\n          ", "\n          ", "\n        "])), events.ascensionHappened ? "Ascend" : "Move", move.from === 0 ? "new piece" : "piece from tile " + move.from, events.ascensionHappened ? "" : "to tile " + move.to, events.rosetteClaimed ? "(:rosette:)" : "", events.captureHappened ? "(:crossed_swords:)" : "", events.ascensionHappened ? "(:rocket:)" : "", events.gameWon ? "(:crown:)" : ""),
+                                url: issueLink("ur-move-" + state.diceResult + "%40" + move.from + "-0", context),
+                            };
+                        });
+                    }
+                    else {
+                        actions = [
+                            {
+                                text: "Start a new game",
+                                url: issueLink("ur-new", context)
+                            }
+                        ];
+                    }
+                    // Trigger the log to update the second-to-last board image URL
+                    log.linkPreviousBoardState();
+                    logItems = log.internalLog.map(function (logItem) {
+                        return [
+                            "" + dateformat__WEBPACK_IMPORTED_MODULE_3___default()(new Date(logItem.time), "dS mmm yyyy HH:MM"),
+                            Object(compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"])(templateObject_2 || (templateObject_2 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n        :", "_circle:\n        ", "\n        ", "\n      "], ["\n        :", "_circle:\n        ",
+                                "\n        ", "\n      "])), Object(_teams__WEBPACK_IMPORTED_MODULE_6__["teamName"])(logItem.team), logItem.action === "pass" ?
+                                "" :
+                                "**[@" + logItem.username + "](https://github.com/" + logItem.username + ")**", logItem.message),
+                            "[#" + logItem.issue + "](https://github.com/" + context.repo.owner + "/" + context.repo.repo + "/issues/" + logItem.issue + ")",
+                            "" + (logItem.boardImage === null ? "" : "[link](" + logItem.boardImage + ")"),
+                        ];
+                    });
+                    teamTable = Object(_teams__WEBPACK_IMPORTED_MODULE_6__["makeTeamListTable"])(log, true);
+                    return [4 /*yield*/, Object(_victory__WEBPACK_IMPORTED_MODULE_7__["listPreviousGames"])(gamePath, octokit, context)];
+                case 3:
+                    previousGames = _c.sent();
+                    readme = ejs__WEBPACK_IMPORTED_MODULE_1___default.a.render(template, { actions: actions, state: state, logItems: logItems, context: context, teamTable: teamTable, previousGames: previousGames });
+                    return [4 /*yield*/, octokit.repos.getContents({
+                            owner: context.repo.owner,
+                            repo: context.repo.repo,
+                            ref: "play",
+                            path: "README.md",
+                            mediaType: { format: "raw" },
+                        })
+                        // If a file was queried then data is not an array
+                    ];
+                case 4:
+                    currentReadmeFile = _c.sent();
+                    // If a file was queried then data is not an array
+                    if (Array.isArray(currentReadmeFile.data)) {
+                        throw new Error('FILE_IS_DIR');
+                    }
+                    changes.push({
+                        path: "README.md",
+                        content: readme,
+                    });
+                    return [2 /*return*/, changes];
             }
-        ];
-    }
-    // Trigger the log to update the second-to-last board image URL
-    log.linkPreviousBoardState();
-    // Make a list of moves that have happened so far this game, as markdown
-    const logItems = log.internalLog.map(logItem => {
-        return [
-            `${dateformat__WEBPACK_IMPORTED_MODULE_2___default()(new Date(logItem.time), "dS mmm yyyy HH:MM")}`,
-            compress_tag__WEBPACK_IMPORTED_MODULE_1__["compress"] `
-        :${Object(_teams__WEBPACK_IMPORTED_MODULE_5__["teamName"])(logItem.team)}_circle:
-        ${logItem.action === "pass" ?
-                "" :
-                `**[@${logItem.username}](https://github.com/${logItem.username})**`}
-        ${logItem.message}
-      `,
-            `[#${logItem.issue}](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${logItem.issue})`,
-            `${logItem.boardImage === null ? "" : `[link](${logItem.boardImage})`}`,
-        ];
+        });
     });
-    const teamTable = Object(_teams__WEBPACK_IMPORTED_MODULE_5__["makeTeamListTable"])(log, true);
-    const previousGames = await Object(_victory__WEBPACK_IMPORTED_MODULE_6__["listPreviousGames"])(gamePath, octokit, context);
-    const readme = ejs__WEBPACK_IMPORTED_MODULE_0___default.a.render(template, { actions, state, logItems, context, teamTable, previousGames });
-    const currentReadmeFile = await octokit.repos.getContents({
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        ref: "play",
-        path: "README.md",
-        mediaType: { format: "raw" },
-    });
-    // If a file was queried then data is not an array
-    if (Array.isArray(currentReadmeFile.data)) {
-        throw new Error('FILE_IS_DIR');
-    }
-    changes.push({
-        path: "README.md",
-        content: readme,
-    });
-    return changes;
 }
 function issueLink(issueTitle, context) {
-    return compress_tag__WEBPACK_IMPORTED_MODULE_1__["compressTight"] `
-    https://github.com/${context.repo.owner}/${context.repo.repo}/issues/new
-      ?title=${issueTitle}
-      &body=
-        Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.
-        %0D%0A%0D%0A
-        Be+aware+that+your+move+can+take+a+minute+or+two+to+process.
-  `;
+    return Object(compress_tag__WEBPACK_IMPORTED_MODULE_2__["compressTight"])(templateObject_3 || (templateObject_3 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n    https://github.com/", "/", "/issues/new\n      ?title=", "\n      &body=\n        Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.\n        %0D%0A%0D%0A\n        Be+aware+that+your+move+can+take+a+minute+or+two+to+process.\n  "], ["\n    https://github.com/", "/", "/issues/new\n      ?title=", "\n      &body=\n        Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.\n        %0D%0A%0D%0A\n        Be+aware+that+your+move+can+take+a+minute+or+two+to+process.\n  "])), context.repo.owner, context.repo.repo, issueTitle);
 }
+var templateObject_1, templateObject_2, templateObject_3;
 
 
 /***/ }),
@@ -25769,29 +26029,37 @@ function issueLink(issueTitle, context) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getFile", function() { return getFile; });
-async function getFile(branch, gamePath, filename, octokit, context) {
-    /**
-     * Gets the content of a file, or returns null if it doesn't exist.
-     */
-    // Grab the content of the current board from file
-    try {
-        return await octokit.repos.getContents({
-            owner: context.issue.owner,
-            repo: context.issue.repo,
-            ref: branch,
-            path: `${gamePath}${filename === null ? "" : `/${filename}`}`,
-            mediaType: { format: "raw" },
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
+function getFile(branch, gamePath, filename, octokit, context) {
+    return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function () {
+        var error_1;
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"])(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    _a.trys.push([0, 2, , 3]);
+                    return [4 /*yield*/, octokit.repos.getContents({
+                            owner: context.issue.owner,
+                            repo: context.issue.repo,
+                            ref: branch,
+                            path: "" + gamePath + (filename === null ? "" : "/" + filename),
+                            mediaType: { format: "raw" },
+                        })];
+                case 1: return [2 /*return*/, _a.sent()];
+                case 2:
+                    error_1 = _a.sent();
+                    if (error_1.status === 404) {
+                        // There's no game file! That's probably fine
+                        return [2 /*return*/, null];
+                    }
+                    else {
+                        throw error_1;
+                    }
+                    return [3 /*break*/, 3];
+                case 3: return [2 /*return*/];
+            }
         });
-    }
-    catch (error) {
-        if (error.status === 404) {
-            // There's no game file! That's probably fine
-            return null;
-        }
-        else {
-            throw error;
-        }
-    }
+    });
 }
 
 
@@ -25844,8 +26112,10 @@ function addLabels(labels, octokit, context) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Log", function() { return Log; });
-class Log {
-    constructor(gamePath, octokit, context) {
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
+var Log = /** @class */ (function () {
+    function Log(gamePath, octokit, context) {
         this.gamePath = gamePath;
         this.octokit = octokit;
         this.context = context;
@@ -25857,32 +26127,38 @@ class Log {
         this.internalLog = [];
         this.lastCommitSha = null;
     }
-    async prepareInitialLog() {
-        /**
-         * Grabs the contents of the log file and puts it into the internal log.
-         * This function should be called only once, before any extra log items
-         * have been added.
-         */
-        const logFile = await this.octokit.repos.getContents({
-            owner: this.context.repo.owner,
-            repo: this.context.repo.repo,
-            ref: "play",
-            path: `${this.gamePath}/log.json`,
-            mediaType: { format: "raw" },
+    Log.prototype.prepareInitialLog = function () {
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function () {
+            var logFile, lastCommit;
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"])(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.octokit.repos.getContents({
+                            owner: this.context.repo.owner,
+                            repo: this.context.repo.repo,
+                            ref: "play",
+                            path: this.gamePath + "/log.json",
+                            mediaType: { format: "raw" },
+                        })];
+                    case 1:
+                        logFile = _a.sent();
+                        if (Array.isArray(logFile.data)) {
+                            throw new Error("FILE_IS_DIR");
+                        }
+                        this.internalLog = JSON.parse(Buffer.from(logFile.data.content, "base64").toString());
+                        return [4 /*yield*/, this.octokit.git.getRef({
+                                owner: this.context.repo.owner,
+                                repo: this.context.repo.repo,
+                                ref: "heads/play",
+                            })];
+                    case 2:
+                        lastCommit = _a.sent();
+                        this.lastCommitSha = lastCommit.data.object.sha;
+                        return [2 /*return*/];
+                }
+            });
         });
-        if (Array.isArray(logFile.data)) {
-            throw new Error("FILE_IS_DIR");
-        }
-        this.internalLog = JSON.parse(Buffer.from(logFile.data.content, "base64").toString());
-        // Get the SHA of the latest commit
-        const lastCommit = await this.octokit.git.getRef({
-            owner: this.context.repo.owner,
-            repo: this.context.repo.repo,
-            ref: "heads/play",
-        });
-        this.lastCommitSha = lastCommit.data.object.sha;
-    }
-    addToLog(action, message, team) {
+    };
+    Log.prototype.addToLog = function (action, message, team) {
         /**
          * Adds an item to the internal log.
          *
@@ -25891,18 +26167,18 @@ class Log {
          * @param team: The team that this player is on.
          * @returns An array of changes to add to the commit.
          */
-        const logItem = {
+        var logItem = {
             username: this.username,
             issue: this.issue,
             message: message,
             time: new Date().toISOString(),
-            team,
-            action,
+            team: team,
+            action: action,
             boardImage: null,
         };
         this.internalLog.push(logItem);
-    }
-    linkPreviousBoardState() {
+    };
+    Log.prototype.linkPreviousBoardState = function () {
         /**
          * Creates an absolute reference for the previous board's image and adds
          * that value to the log.
@@ -25928,29 +26204,31 @@ class Log {
         // second-to-last image needs to be linked
         if (this.internalLog.length >= 2 &&
             this.internalLog[this.internalLog.length - 2].boardImage === null) {
-            this.internalLog[this.internalLog.length - 2].boardImage = `https://raw.githubusercontent.com/${this.context.repo.owner}/${this.context.repo.repo}/${this.lastCommitSha}/${this.gamePath}/board.${this.internalLog[this.internalLog.length - 2].issue}.svg`;
+            this.internalLog[this.internalLog.length - 2].boardImage = "https://raw.githubusercontent.com/" + this.context.repo.owner + "/" + this.context.repo.repo + "/" + this.lastCommitSha + "/" + this.gamePath + "/board." + this.internalLog[this.internalLog.length - 2].issue + ".svg";
         }
         else {
             // The second-to-last image should have had a null address, but it's not
             // absolutely critical to execution
             console.error("Second-to-last image was not null");
         }
-    }
-    makeLogChanges() {
+    };
+    Log.prototype.makeLogChanges = function () {
         /**
          * Make the changes to the log file as described by the internal log. This
          * method should be called only once all log items have been added.
          *
          * @returns An array of changes to add to the commit.
          */
-        const changes = [];
+        var changes = [];
         changes.push({
-            path: `${this.gamePath}/log.json`,
+            path: this.gamePath + "/log.json",
             content: JSON.stringify(this.internalLog, null, 2),
         });
         return changes;
-    }
-}
+    };
+    return Log;
+}());
+
 
 
 /***/ }),
@@ -25965,18 +26243,19 @@ class Log {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "makeMove", function() { return makeMove; });
-/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ur-game */ "./node_modules/ur-game/src/game.js");
-/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ur_game__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! compress-tag */ "./node_modules/compress-tag/dist/index.js");
-/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(compress_tag__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/player */ "./src/player.ts");
-/* harmony import */ var _issues__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/issues */ "./src/issues.ts");
-/* harmony import */ var _analyseMove__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/analyseMove */ "./src/analyseMove.ts");
-/* harmony import */ var _generateReadme__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/generateReadme */ "./src/generateReadme.ts");
-/* harmony import */ var _victory__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/victory */ "./src/victory.ts");
-/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ur-game */ "./node_modules/ur-game/src/game.js");
+/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(ur_game__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! compress-tag */ "./node_modules/compress-tag/dist/index.js");
+/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(compress_tag__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/player */ "./src/player.ts");
+/* harmony import */ var _issues__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/issues */ "./src/issues.ts");
+/* harmony import */ var _analyseMove__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/analyseMove */ "./src/analyseMove.ts");
+/* harmony import */ var _generateReadme__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/generateReadme */ "./src/generateReadme.ts");
+/* harmony import */ var _victory__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @/victory */ "./src/victory.ts");
+/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
 
 
 
@@ -25986,163 +26265,136 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-async function makeMove(state, move, gamePath, octokit, context, log) {
-    /**
-     * Called when a player uses the "move" command. Executes that move onto the
-     * current state.
-     *
-     * @param state: The current state of the game.
-     * @param move: The move the player wants to make.
-     * @param gamePath: The location of the current game's state file.
-     * @returns An array of changes to add to the commit.
-     */
-    let changes = [];
-    if (!state.currentPlayer) {
-        throw new Error('MOVE_WHEN_GAME_ENDED');
-    }
-    let newState;
-    let events;
-    if (move === "pass") {
-        // If we are just passing, then void the turn and skip all checks
-        // This should be safe - pass can only be called internally, it should not
-        // be possible for a player to pass
-        newState = ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.voidTurn(state, state.currentPlayer);
-    }
-    else {
-        // Store the player's current team before anything else
-        const playerTeam = Object(_player__WEBPACK_IMPORTED_MODULE_3__["getPlayerTeam"])(context.actor, log);
-        // First I need to validate which team the user is on
-        if (context.actor !== context.repo.owner // Owner can do what they want
-            && playerTeam !== undefined // New players can also do what they want
-            && Object(_player__WEBPACK_IMPORTED_MODULE_3__["playerIsOnTeam"])(context.actor, Object(_teams__WEBPACK_IMPORTED_MODULE_8__["getOppositeTeam"])(state.currentPlayer), log) // Player can't be on the opposite team
-        ) {
-            throw new Error('WRONG_TEAM');
-        }
-        if (state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK) {
-            Object(_issues__WEBPACK_IMPORTED_MODULE_4__["addLabels"])(["Black team"], octokit, context);
-        }
-        else {
-            Object(_issues__WEBPACK_IMPORTED_MODULE_4__["addLabels"])(["White team"], octokit, context);
-        }
-        // The move should be 'a@b' where a is the dice count and b is the position
-        // The given diceResult must match the internal diceResult
-        const [diceResult, fromPosition] = move.split('@').map(a => parseInt(a));
-        if (diceResult === undefined || diceResult !== state.diceResult) {
-            throw new Error('WRONG_DICE_COUNT');
-        }
-        if (fromPosition === undefined) {
-            throw new Error('NO_MOVE_POSITION');
-        }
-        // The fromPosition must be a key of one of the possibleMoves
-        // However, there may be no possible moves, in which case possibleMoves is
-        // an empty object, in which case any move is "allowed"
-        if (!(`${fromPosition}` in state.possibleMoves)
-            && !Object(lodash__WEBPACK_IMPORTED_MODULE_1__["isEmpty"])(state.possibleMoves)) {
-            throw new Error('IMPOSSIBLE_MOVE');
-        }
-        const toPosition = state.possibleMoves[`${fromPosition}`];
-        // Everything seems ok, so execute the move
-        newState = ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.takeTurn(state, state.currentPlayer, fromPosition);
-        // Move has been performed and the result has been saved.
-        // All that remains is to report back to the issue and update the README.
-        // Let's detect what happened in that move
-        events = Object(_analyseMove__WEBPACK_IMPORTED_MODULE_5__["analyseMove"])(state, fromPosition, toPosition);
-        if (events.rosetteClaimed) {
-            Object(_issues__WEBPACK_IMPORTED_MODULE_4__["addLabels"])([":rosette: Rosette!"], octokit, context);
-        }
-        if (events.captureHappened) {
-            Object(_issues__WEBPACK_IMPORTED_MODULE_4__["addLabels"])([":crossed_swords: Capture!"], octokit, context);
-        }
-        if (events.ascensionHappened) {
-            Object(_issues__WEBPACK_IMPORTED_MODULE_4__["addLabels"])([":rocket: Ascension!"], octokit, context);
-        }
-        if (events.gameWon) {
-            Object(_issues__WEBPACK_IMPORTED_MODULE_4__["addLabels"])([":crown: Winner!"], octokit, context);
-        }
-        // Add a comment to the issue to indicate that the move was successful
-        await octokit.issues.createComment({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            issue_number: context.issue.number,
-            body: compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"] `
-        Done! You ${events.ascensionHappened ? "ascended" : "moved"}
-        a ${Object(_teams__WEBPACK_IMPORTED_MODULE_8__["teamName"])(state.currentPlayer)} piece
-        ${events.ascensionHappened ?
-                `from position ${fromPosition}.` :
-                compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"] `
-            ${fromPosition === 0 ?
-                    "onto the board" :
-                    `from position ${fromPosition}`}
-            to position ${toPosition}.
-          `}
-        ${events.captureHappened ? "You captured the opponents' piece!" : ""}
-        ${events.rosetteClaimed ? "You claimed a rosette, so you can take another turn!" : ""}
-        ${events.gameWon ? "This was the winning move!" : ""}
-        \n\n
-        ${playerTeam === undefined ?
-                compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"] `
-            You've joined the ${Object(_teams__WEBPACK_IMPORTED_MODULE_8__["teamName"])(state.currentPlayer)} team!
-            This will be your team until this game ends.
-          ` :
-                compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"] `
-            The ${Object(_teams__WEBPACK_IMPORTED_MODULE_8__["teamName"])(state.currentPlayer)} team
-            thanks you for your continued participation!
-          `}
-        \n\n
-        Ask a friend to
-        ${events.gameWon ? "start the next game" : "make the next move"}:
-        [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+${events.gameWon ? "won+a+game" : "moved"}+%E2%80%94+${events.gameWon ? "start+the+next+one" : "take+your+turn"}+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)
-      `
+
+function makeMove(state, move, gamePath, octokit, context, log) {
+    return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function () {
+        var changes, newState, events, playerTeam, _a, diceResult, fromPosition, toPosition, _b, _c, _d, _e;
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"])(this, function (_f) {
+            switch (_f.label) {
+                case 0:
+                    changes = [];
+                    if (!state.currentPlayer) {
+                        throw new Error('MOVE_WHEN_GAME_ENDED');
+                    }
+                    if (!(move === "pass")) return [3 /*break*/, 1];
+                    // If we are just passing, then void the turn and skip all checks
+                    // This should be safe - pass can only be called internally, it should not
+                    // be possible for a player to pass
+                    newState = ur_game__WEBPACK_IMPORTED_MODULE_1___default.a.voidTurn(state, state.currentPlayer);
+                    return [3 /*break*/, 4];
+                case 1:
+                    playerTeam = Object(_player__WEBPACK_IMPORTED_MODULE_4__["getPlayerTeam"])(context.actor, log);
+                    // First I need to validate which team the user is on
+                    if (context.actor !== context.repo.owner // Owner can do what they want
+                        && playerTeam !== undefined // New players can also do what they want
+                        && Object(_player__WEBPACK_IMPORTED_MODULE_4__["playerIsOnTeam"])(context.actor, Object(_teams__WEBPACK_IMPORTED_MODULE_9__["getOppositeTeam"])(state.currentPlayer), log) // Player can't be on the opposite team
+                    ) {
+                        throw new Error('WRONG_TEAM');
+                    }
+                    if (state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_1___default.a.BLACK) {
+                        Object(_issues__WEBPACK_IMPORTED_MODULE_5__["addLabels"])(["Black team"], octokit, context);
+                    }
+                    else {
+                        Object(_issues__WEBPACK_IMPORTED_MODULE_5__["addLabels"])(["White team"], octokit, context);
+                    }
+                    _a = move.split('@').map(function (a) { return parseInt(a); }), diceResult = _a[0], fromPosition = _a[1];
+                    if (diceResult === undefined || diceResult !== state.diceResult) {
+                        throw new Error('WRONG_DICE_COUNT');
+                    }
+                    if (fromPosition === undefined) {
+                        throw new Error('NO_MOVE_POSITION');
+                    }
+                    // The fromPosition must be a key of one of the possibleMoves
+                    // However, there may be no possible moves, in which case possibleMoves is
+                    // an empty object, in which case any move is "allowed"
+                    if (!("" + fromPosition in state.possibleMoves)
+                        && !Object(lodash__WEBPACK_IMPORTED_MODULE_2__["isEmpty"])(state.possibleMoves)) {
+                        throw new Error('IMPOSSIBLE_MOVE');
+                    }
+                    toPosition = state.possibleMoves["" + fromPosition];
+                    // Everything seems ok, so execute the move
+                    newState = ur_game__WEBPACK_IMPORTED_MODULE_1___default.a.takeTurn(state, state.currentPlayer, fromPosition);
+                    // Move has been performed and the result has been saved.
+                    // All that remains is to report back to the issue and update the README.
+                    // Let's detect what happened in that move
+                    events = Object(_analyseMove__WEBPACK_IMPORTED_MODULE_6__["analyseMove"])(state, fromPosition, toPosition);
+                    if (events.rosetteClaimed) {
+                        Object(_issues__WEBPACK_IMPORTED_MODULE_5__["addLabels"])([":rosette: Rosette!"], octokit, context);
+                    }
+                    if (events.captureHappened) {
+                        Object(_issues__WEBPACK_IMPORTED_MODULE_5__["addLabels"])([":crossed_swords: Capture!"], octokit, context);
+                    }
+                    if (events.ascensionHappened) {
+                        Object(_issues__WEBPACK_IMPORTED_MODULE_5__["addLabels"])([":rocket: Ascension!"], octokit, context);
+                    }
+                    if (events.gameWon) {
+                        Object(_issues__WEBPACK_IMPORTED_MODULE_5__["addLabels"])([":crown: Winner!"], octokit, context);
+                    }
+                    // Add a comment to the issue to indicate that the move was successful
+                    return [4 /*yield*/, octokit.issues.createComment({
+                            owner: context.repo.owner,
+                            repo: context.repo.repo,
+                            issue_number: context.issue.number,
+                            body: Object(compress_tag__WEBPACK_IMPORTED_MODULE_3__["compress"])(templateObject_4 || (templateObject_4 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n        Done! You ", "\n        a ", " piece\n        ", "\n        ", "\n        ", "\n        ", "\n        \n\n\n        ", "\n        \n\n\n        Ask a friend to\n        ", ":\n        [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+", "+%E2%80%94+", "+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)\n      "], ["\n        Done! You ", "\n        a ", " piece\n        ",
+                                "\n        ", "\n        ", "\n        ", "\n        \\n\\n\n        ",
+                                "\n        \\n\\n\n        Ask a friend to\n        ", ":\n        [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+", "+%E2%80%94+", "+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)\n      "])), events.ascensionHappened ? "ascended" : "moved", Object(_teams__WEBPACK_IMPORTED_MODULE_9__["teamName"])(state.currentPlayer), events.ascensionHappened ?
+                                "from position " + fromPosition + "." : Object(compress_tag__WEBPACK_IMPORTED_MODULE_3__["compress"])(templateObject_1 || (templateObject_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n            ", "\n            to position ", ".\n          "], ["\n            ",
+                                "\n            to position ", ".\n          "])), fromPosition === 0 ?
+                                "onto the board" :
+                                "from position " + fromPosition, toPosition), events.captureHappened ? "You captured the opponents' piece!" : "", events.rosetteClaimed ? "You claimed a rosette, so you can take another turn!" : "", events.gameWon ? "This was the winning move!" : "", playerTeam === undefined ? Object(compress_tag__WEBPACK_IMPORTED_MODULE_3__["compress"])(templateObject_2 || (templateObject_2 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n            You've joined the ", " team!\n            This will be your team until this game ends.\n          "], ["\n            You've joined the ", " team!\n            This will be your team until this game ends.\n          "])), Object(_teams__WEBPACK_IMPORTED_MODULE_9__["teamName"])(state.currentPlayer)) : Object(compress_tag__WEBPACK_IMPORTED_MODULE_3__["compress"])(templateObject_3 || (templateObject_3 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n            The ", " team\n            thanks you for your continued participation!\n          "], ["\n            The ", " team\n            thanks you for your continued participation!\n          "])), Object(_teams__WEBPACK_IMPORTED_MODULE_9__["teamName"])(state.currentPlayer)), events.gameWon ? "start the next game" : "make the next move", events.gameWon ? "won+a+game" : "moved", events.gameWon ? "start+the+next+one" : "take+your+turn")
+                        })];
+                case 2:
+                    // Add a comment to the issue to indicate that the move was successful
+                    _f.sent();
+                    octokit.issues.update({
+                        owner: context.repo.owner,
+                        repo: context.repo.repo,
+                        issue_number: context.issue.number,
+                        state: "closed",
+                    });
+                    // Update the log with this action
+                    log.addToLog("move", Object(compress_tag__WEBPACK_IMPORTED_MODULE_3__["compress"])(templateObject_5 || (templateObject_5 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n        ", "\n        a ", " piece\n        ", "\n        ", "\n        ", "\n        ", "\n        ", "\n      "], ["\n        ", "\n        a ", " piece\n        ", "\n        ",
+                        "\n        ", "\n        ", "\n        ", "\n      "])), events.ascensionHappened ? "ascended" : "moved", Object(_teams__WEBPACK_IMPORTED_MODULE_9__["teamName"])(state.currentPlayer), fromPosition === 0 ? "onto the board" : "from position " + fromPosition, events.ascensionHappened ?
+                        ":rocket:" :
+                        "to position " + toPosition, events.captureHappened ? "\u2014 captured a " + Object(_teams__WEBPACK_IMPORTED_MODULE_9__["teamName"])(Object(_teams__WEBPACK_IMPORTED_MODULE_9__["getOppositeTeam"])(state.currentPlayer)) + " piece :crossed_swords:" : "", events.rosetteClaimed ? "— claimed a rosette :rosette:" : "", events.gameWon ? "— won the game :crown:" : ""), state.currentPlayer);
+                    if (!events.gameWon) return [3 /*break*/, 4];
+                    return [4 /*yield*/, octokit.issues.createComment({
+                            owner: context.repo.owner,
+                            repo: context.repo.repo,
+                            issue_number: context.issue.number,
+                            body: Object(_victory__WEBPACK_IMPORTED_MODULE_8__["makeVictoryMessage"])(log),
+                        })];
+                case 3:
+                    _f.sent();
+                    _f.label = 4;
+                case 4:
+                    if (!(!(events === null || events === void 0 ? void 0 : events.gameWon) && Object.keys(newState.possibleMoves).length === 0)) return [3 /*break*/, 6];
+                    // If there are no possible moves, pass this turn, unless the game is done
+                    // The events object is undefined if the last move was also a pass
+                    log.addToLog("pass", Object(compress_tag__WEBPACK_IMPORTED_MODULE_3__["compress"])(templateObject_6 || (templateObject_6 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n        The ", " team\n        rolled a ", "\n        and their turn was automatically passed\n      "], ["\n        The ", " team\n        rolled a ", "\n        and their turn was automatically passed\n      "])), Object(_teams__WEBPACK_IMPORTED_MODULE_9__["teamName"])(newState.currentPlayer), newState.diceResult), newState.currentPlayer);
+                    _c = (_b = changes).concat;
+                    return [4 /*yield*/, makeMove(newState, "pass", gamePath, octokit, context, log)];
+                case 5:
+                    changes = _c.apply(_b, [_f.sent()]);
+                    return [3 /*break*/, 8];
+                case 6:
+                    _e = (_d = changes).concat;
+                    return [4 /*yield*/, Object(_generateReadme__WEBPACK_IMPORTED_MODULE_7__["generateReadme"])(newState, gamePath, octokit, context, log)];
+                case 7:
+                    // Update README.md with the new state
+                    changes = _e.apply(_d, [_f.sent()]);
+                    // Replace the contents of the current game state file with the new state
+                    changes.push({
+                        path: gamePath + "/state.json",
+                        content: JSON.stringify(newState),
+                    });
+                    _f.label = 8;
+                case 8: return [2 /*return*/, changes];
+            }
         });
-        octokit.issues.update({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            issue_number: context.issue.number,
-            state: "closed",
-        });
-        // Update the log with this action
-        log.addToLog("move", compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"] `
-        ${events.ascensionHappened ? "ascended" : "moved"}
-        a ${Object(_teams__WEBPACK_IMPORTED_MODULE_8__["teamName"])(state.currentPlayer)} piece
-        ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`}
-        ${events.ascensionHappened ?
-            ":rocket:" :
-            `to position ${toPosition}`}
-        ${events.captureHappened ? `— captured a ${Object(_teams__WEBPACK_IMPORTED_MODULE_8__["teamName"])(Object(_teams__WEBPACK_IMPORTED_MODULE_8__["getOppositeTeam"])(state.currentPlayer))} piece :crossed_swords:` : ""}
-        ${events.rosetteClaimed ? "— claimed a rosette :rosette:" : ""}
-        ${events.gameWon ? "— won the game :crown:" : ""}
-      `, state.currentPlayer);
-        // If the game was won, leave a message to let everyone know
-        if (events.gameWon) {
-            await octokit.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: context.issue.number,
-                body: Object(_victory__WEBPACK_IMPORTED_MODULE_7__["makeVictoryMessage"])(log),
-            });
-        }
-    }
-    if (!(events === null || events === void 0 ? void 0 : events.gameWon) && Object.keys(newState.possibleMoves).length === 0) {
-        // If there are no possible moves, pass this turn, unless the game is done
-        // The events object is undefined if the last move was also a pass
-        log.addToLog("pass", compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"] `
-        The ${Object(_teams__WEBPACK_IMPORTED_MODULE_8__["teamName"])(newState.currentPlayer)} team
-        rolled a ${newState.diceResult}
-        and their turn was automatically passed
-      `, newState.currentPlayer);
-        changes = changes.concat(await makeMove(newState, "pass", gamePath, octokit, context, log));
-    }
-    else {
-        // Update README.md with the new state
-        changes = changes.concat(await Object(_generateReadme__WEBPACK_IMPORTED_MODULE_6__["generateReadme"])(newState, gamePath, octokit, context, log));
-        // Replace the contents of the current game state file with the new state
-        changes.push({
-            path: `${gamePath}/state.json`,
-            content: JSON.stringify(newState),
-        });
-    }
-    return changes;
+    });
 }
+var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6;
 
 
 /***/ }),
@@ -26157,83 +26409,75 @@ async function makeMove(state, move, gamePath, octokit, context, log) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "resetGame", function() { return resetGame; });
-/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ur-game */ "./node_modules/ur-game/src/game.js");
-/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ur_game__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! compress-tag */ "./node_modules/compress-tag/dist/index.js");
-/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(compress_tag__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/player */ "./src/player.ts");
-/* harmony import */ var _generateReadme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/generateReadme */ "./src/generateReadme.ts");
-/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ur-game */ "./node_modules/ur-game/src/game.js");
+/* harmony import */ var ur_game__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(ur_game__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! compress-tag */ "./node_modules/compress-tag/dist/index.js");
+/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(compress_tag__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _player__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/player */ "./src/player.ts");
+/* harmony import */ var _generateReadme__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/generateReadme */ "./src/generateReadme.ts");
+/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
 
 
 
 
 
-async function resetGame(gamePath, oldGamePath, octokit, context, log) {
-    /**
-     * Called when a player uses the "new" command.
-     *
-     * I don't want this to happen willy-nilly, so I might add some restriction
-     * here - maybe no moves for a few hours or something.
-     *
-     * @param gamePath: The location of the current game.
-     * @param oldGamePath: Where old games should be kept.
-     */
-    let changes = [];
-    // Move the old log.json to another directory - don't care about state
-    // Get the contents of the log from the log object
-    changes.push({
-        path: `${oldGamePath}/log.${log.internalLog[0].time}.json`,
-        content: JSON.stringify(log.internalLog, null, 2),
+
+function resetGame(gamePath, oldGamePath, octokit, context, log) {
+    return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function () {
+        var changes, startingPlayerTeam, gameStartTeam, newState, _a, _b;
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"])(this, function (_c) {
+            switch (_c.label) {
+                case 0:
+                    changes = [];
+                    // Move the old log.json to another directory - don't care about state
+                    // Get the contents of the log from the log object
+                    changes.push({
+                        path: oldGamePath + "/log." + log.internalLog[0].time + ".json",
+                        content: JSON.stringify(log.internalLog, null, 2),
+                    });
+                    startingPlayerTeam = Object(_player__WEBPACK_IMPORTED_MODULE_3__["getPlayerTeam"])(context.actor, log);
+                    if (startingPlayerTeam === undefined) {
+                        // If the team is null, which it should be, white plays first
+                        gameStartTeam = ur_game__WEBPACK_IMPORTED_MODULE_1___default.a.WHITE;
+                    }
+                    else {
+                        gameStartTeam = startingPlayerTeam;
+                    }
+                    newState = ur_game__WEBPACK_IMPORTED_MODULE_1___default.a.startGame(7, 4, gameStartTeam);
+                    // Save the new state
+                    changes.push({
+                        path: gamePath + "/state.json",
+                        content: JSON.stringify(newState),
+                    });
+                    // Wipe the log for the new game
+                    log.internalLog = [];
+                    // Update the log with this action
+                    log.addToLog("new", "started a new game", newState.currentPlayer);
+                    _b = (_a = changes).concat;
+                    return [4 /*yield*/, Object(_generateReadme__WEBPACK_IMPORTED_MODULE_4__["generateReadme"])(newState, gamePath, octokit, context, log)];
+                case 1:
+                    // Update README.md with the new state
+                    changes = _b.apply(_a, [_c.sent()]);
+                    // Add a comment to the issue to indicate that a new board was made
+                    octokit.issues.createComment({
+                        owner: context.repo.owner,
+                        repo: context.repo.repo,
+                        issue_number: context.issue.number,
+                        body: Object(compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"])(templateObject_1 || (templateObject_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n      Done! You started a new game.\n      \n\n\n      It's ", " to play!\n      [Make the first move yourself](https://github.com/rossjrw/rossjrw),\n      or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+started+a+new+game+%E2%80%94+take+the+first+turn+at+https://github.com/rossjrw+%23ur+%23github)\n    "], ["\n      Done! You started a new game.\n      \\n\\n\n      It's ", " to play!\n      [Make the first move yourself](https://github.com/rossjrw/rossjrw),\n      or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+started+a+new+game+%E2%80%94+take+the+first+turn+at+https://github.com/rossjrw+%23ur+%23github)\n    "])), Object(_teams__WEBPACK_IMPORTED_MODULE_5__["teamName"])(newState.currentPlayer))
+                    });
+                    octokit.issues.update({
+                        owner: context.repo.owner,
+                        repo: context.repo.repo,
+                        issue_number: context.issue.number,
+                        state: "closed",
+                    });
+                    return [2 /*return*/, changes];
+            }
+        });
     });
-    // This only creates a new file with the same content, but that's okay,
-    // because the old file is about to be overwritten with a new log
-    // Make a new game state
-    // The starting team should be the same team as the initiating player, so
-    // that they can immediately play, but as of rossjrw/rossjrw#133 that team
-    // should always be null
-    const startingPlayerTeam = Object(_player__WEBPACK_IMPORTED_MODULE_2__["getPlayerTeam"])(context.actor, log);
-    let gameStartTeam;
-    if (startingPlayerTeam === undefined) {
-        // If the team is null, which it should be, white plays first
-        gameStartTeam = ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.WHITE;
-    }
-    else {
-        gameStartTeam = startingPlayerTeam;
-    }
-    const newState = ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.startGame(7, 4, gameStartTeam);
-    // Save the new state
-    changes.push({
-        path: `${gamePath}/state.json`,
-        content: JSON.stringify(newState),
-    });
-    // Wipe the log for the new game
-    log.internalLog = [];
-    // Update the log with this action
-    log.addToLog("new", "started a new game", newState.currentPlayer);
-    // Update README.md with the new state
-    changes = changes.concat(await Object(_generateReadme__WEBPACK_IMPORTED_MODULE_3__["generateReadme"])(newState, gamePath, octokit, context, log));
-    // Add a comment to the issue to indicate that a new board was made
-    octokit.issues.createComment({
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        issue_number: context.issue.number,
-        body: compress_tag__WEBPACK_IMPORTED_MODULE_1__["compress"] `
-      Done! You started a new game.
-      \n\n
-      It's ${Object(_teams__WEBPACK_IMPORTED_MODULE_4__["teamName"])(newState.currentPlayer)} to play!
-      [Make the first move yourself](https://github.com/rossjrw/rossjrw),
-      or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+started+a+new+game+%E2%80%94+take+the+first+turn+at+https://github.com/rossjrw+%23ur+%23github)
-    `
-    });
-    octokit.issues.update({
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        issue_number: context.issue.number,
-        state: "closed",
-    });
-    return changes;
 }
+var templateObject_1;
 
 
 /***/ }),
@@ -26248,14 +26492,15 @@ async function resetGame(gamePath, oldGamePath, octokit, context, log) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return play; });
-/* harmony import */ var _issues__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/issues */ "./src/issues.ts");
-/* harmony import */ var _error__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/error */ "./src/error.ts");
-/* harmony import */ var _new__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/new */ "./src/new.ts");
-/* harmony import */ var _move__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/move */ "./src/move.ts");
-/* harmony import */ var _commit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/commit */ "./src/commit.ts");
-/* harmony import */ var _log__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/log */ "./src/log.ts");
-/* harmony import */ var _getFile__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/getFile */ "./src/getFile.ts");
-/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _issues__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/issues */ "./src/issues.ts");
+/* harmony import */ var _error__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/error */ "./src/error.ts");
+/* harmony import */ var _new__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/new */ "./src/new.ts");
+/* harmony import */ var _move__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/move */ "./src/move.ts");
+/* harmony import */ var _commit__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/commit */ "./src/commit.ts");
+/* harmony import */ var _log__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/log */ "./src/log.ts");
+/* harmony import */ var _getFile__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/getFile */ "./src/getFile.ts");
+/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
 
 
 
@@ -26264,58 +26509,67 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-async function play(title, octokit, context, core) {
-    /**
-     * Let's play Ur!
-     *
-     * This project is inspired by timburgan/timburgan - thank you Tim!
-     *
-     * Recieves parameters from actions/github-script:
-     * @param title: The title of the triggering issue.
-     * @param octokit: octokit/rest.js client.
-     * @param context: Workflow context object.
-     * @returns void: At least until I work out what this should do!
-     */
-    // The Octokit client comes pre-authenticated, so there's no need to
-    // instantiate it.
-    const gamePath = "games/current";
-    const oldGamePath = "games";
-    // Prepare a list of changes, which will be made into a single commit to the
-    // play branch
-    let changes = [];
-    // Prepare a log object, which will be used to merge log entries into a
-    // single change
-    const log = new _log__WEBPACK_IMPORTED_MODULE_5__["Log"](gamePath, octokit, context);
-    await log.prepareInitialLog();
-    try {
-        Object(_issues__WEBPACK_IMPORTED_MODULE_0__["addReaction"])("eyes", octokit, context);
-        const [command, move] = parseIssueTitle(title);
-        // Get the current game state file, but it's null if the file doesn't exist
-        const stateFile = await Object(_getFile__WEBPACK_IMPORTED_MODULE_6__["getFile"])("play", gamePath, "state.json", octokit, context);
-        if (!stateFile) {
-            throw new Error('MOVE_WHEN_EMPTY_GAME');
-        }
-        if (Array.isArray(stateFile.data)) {
-            throw new Error('FILE_IS_DIR');
-        }
-        const state = JSON.parse(Buffer.from(stateFile.data.content, "base64").toString());
-        if (command === "new") {
-            changes = changes.concat(await Object(_new__WEBPACK_IMPORTED_MODULE_2__["resetGame"])(gamePath, oldGamePath, octokit, context, log));
-        }
-        else if (command === "move") {
-            changes = changes.concat(await Object(_move__WEBPACK_IMPORTED_MODULE_3__["makeMove"])(state, move, gamePath, octokit, context, log));
-        }
-        // Extract changes from the log
-        changes = changes.concat(log.makeLogChanges());
-        // All the changes have been collected - commit them
-        await Object(_commit__WEBPACK_IMPORTED_MODULE_4__["makeCommit"])(`@${context.actor} ${command === "new" ? "Start a new game" : `Move ${Object(_teams__WEBPACK_IMPORTED_MODULE_7__["teamName"])(state.currentPlayer)} ${move}`} (#${context.issue.number})`, changes, octokit, context);
-        Object(_issues__WEBPACK_IMPORTED_MODULE_0__["addReaction"])("rocket", octokit, context);
-    }
-    catch (error) {
-        // If there was an error, forward it to the user, then stop
-        Object(_error__WEBPACK_IMPORTED_MODULE_1__["handleError"])(error, log, octokit, context, core);
-        return;
-    }
+
+function play(title, octokit, context, core) {
+    return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function () {
+        var gamePath, oldGamePath, changes, log, _a, command, move, stateFile, state, _b, _c, _d, _e, error_1;
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"])(this, function (_f) {
+            switch (_f.label) {
+                case 0:
+                    gamePath = "games/current";
+                    oldGamePath = "games";
+                    changes = [];
+                    log = new _log__WEBPACK_IMPORTED_MODULE_6__["Log"](gamePath, octokit, context);
+                    return [4 /*yield*/, log.prepareInitialLog()];
+                case 1:
+                    _f.sent();
+                    _f.label = 2;
+                case 2:
+                    _f.trys.push([2, 9, , 10]);
+                    Object(_issues__WEBPACK_IMPORTED_MODULE_1__["addReaction"])("eyes", octokit, context);
+                    _a = parseIssueTitle(title), command = _a[0], move = _a[1];
+                    return [4 /*yield*/, Object(_getFile__WEBPACK_IMPORTED_MODULE_7__["getFile"])("play", gamePath, "state.json", octokit, context)];
+                case 3:
+                    stateFile = _f.sent();
+                    if (!stateFile) {
+                        throw new Error('MOVE_WHEN_EMPTY_GAME');
+                    }
+                    if (Array.isArray(stateFile.data)) {
+                        throw new Error('FILE_IS_DIR');
+                    }
+                    state = JSON.parse(Buffer.from(stateFile.data.content, "base64").toString());
+                    if (!(command === "new")) return [3 /*break*/, 5];
+                    _c = (_b = changes).concat;
+                    return [4 /*yield*/, Object(_new__WEBPACK_IMPORTED_MODULE_3__["resetGame"])(gamePath, oldGamePath, octokit, context, log)];
+                case 4:
+                    changes = _c.apply(_b, [_f.sent()]);
+                    return [3 /*break*/, 7];
+                case 5:
+                    if (!(command === "move")) return [3 /*break*/, 7];
+                    _e = (_d = changes).concat;
+                    return [4 /*yield*/, Object(_move__WEBPACK_IMPORTED_MODULE_4__["makeMove"])(state, move, gamePath, octokit, context, log)];
+                case 6:
+                    changes = _e.apply(_d, [_f.sent()]);
+                    _f.label = 7;
+                case 7:
+                    // Extract changes from the log
+                    changes = changes.concat(log.makeLogChanges());
+                    // All the changes have been collected - commit them
+                    return [4 /*yield*/, Object(_commit__WEBPACK_IMPORTED_MODULE_5__["makeCommit"])("@" + context.actor + " " + (command === "new" ? "Start a new game" : "Move " + Object(_teams__WEBPACK_IMPORTED_MODULE_8__["teamName"])(state.currentPlayer) + " " + move) + " (#" + context.issue.number + ")", changes, octokit, context)];
+                case 8:
+                    // All the changes have been collected - commit them
+                    _f.sent();
+                    Object(_issues__WEBPACK_IMPORTED_MODULE_1__["addReaction"])("rocket", octokit, context);
+                    return [3 /*break*/, 10];
+                case 9:
+                    error_1 = _f.sent();
+                    // If there was an error, forward it to the user, then stop
+                    Object(_error__WEBPACK_IMPORTED_MODULE_2__["handleError"])(error_1, log, octokit, context, core);
+                    return [2 /*return*/];
+                case 10: return [2 /*return*/];
+            }
+        });
+    });
 }
 function parseIssueTitle(title) {
     /**
@@ -26323,7 +26577,7 @@ function parseIssueTitle(title) {
      *
      * @param title: The title of the issue.
      */
-    const [gamename, command, move, gameId] = title.split("-");
+    var _a = title.split("-"), gamename = _a[0], command = _a[1], move = _a[2], gameId = _a[3];
     if (!gamename || gamename !== "ur") {
         throw new Error('WRONG_GAME');
     }
@@ -26369,7 +26623,7 @@ function playerIsOnTeam(username, team, log) {
      * @param username: The player's name.
      * @param team: The team to check against.
      */
-    const playerTeam = getPlayerTeam(username, log);
+    var playerTeam = getPlayerTeam(username, log);
     if (playerTeam === undefined) {
         // A player who hasn't played yet is allowed on either team
         return true;
@@ -26382,14 +26636,14 @@ function getPlayerTeam(username, log) {
     /**
      * Checks what team a player is on.
      */
-    return (_a = log.internalLog.find(item => item.username === username)) === null || _a === void 0 ? void 0 : _a.team;
+    return (_a = log.internalLog.find(function (item) { return item.username === username; })) === null || _a === void 0 ? void 0 : _a.team;
 }
 function getPlayerTeamSource(username, log) {
     var _a;
     /**
      * Returns the issue number that determined a player's team for this game.
      */
-    return (_a = log.internalLog.find(item => item.username === username)) === null || _a === void 0 ? void 0 : _a.issue;
+    return (_a = log.internalLog.find(function (item) { return item.username === username; })) === null || _a === void 0 ? void 0 : _a.issue;
 }
 
 
@@ -26439,33 +26693,19 @@ function makeTeamListTable(log, hasPlayerLinks) {
      * @param hasPlayerLinks: Players as hyperlinks? Required for README, but not
      * required for issues.
      */
-    const PLAYERS_TABLE = `<table>
-    <thead>
-      <tr><th colspan=2>Players in this game</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td align="right"><b>Black team</b> :black_circle:</td>
-        <td>:white_circle: <b> White team</b></td>
-      </tr>
-      <tr align="center">
-        <td><%- blackPlayers.join("<br>") %></td>
-        <td><%- whitePlayers.join("<br>") %></td>
-      </tr>
-    </tbody>
-  </table>`;
-    const players = makeTeamStats(log);
-    const blackPlayers = makeTeamListColumn(players, ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK, hasPlayerLinks);
-    const whitePlayers = makeTeamListColumn(players, ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.WHITE, hasPlayerLinks);
-    return ejs__WEBPACK_IMPORTED_MODULE_1___default.a.render(PLAYERS_TABLE, { blackPlayers, whitePlayers });
+    var PLAYERS_TABLE = "<table>\n    <thead>\n      <tr><th colspan=2>Players in this game</th></tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td align=\"right\"><b>Black team</b> :black_circle:</td>\n        <td>:white_circle: <b> White team</b></td>\n      </tr>\n      <tr align=\"center\">\n        <td><%- blackPlayers.join(\"<br>\") %></td>\n        <td><%- whitePlayers.join(\"<br>\") %></td>\n      </tr>\n    </tbody>\n  </table>";
+    var players = makeTeamStats(log);
+    var blackPlayers = makeTeamListColumn(players, ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.BLACK, hasPlayerLinks);
+    var whitePlayers = makeTeamListColumn(players, ur_game__WEBPACK_IMPORTED_MODULE_0___default.a.WHITE, hasPlayerLinks);
+    return ejs__WEBPACK_IMPORTED_MODULE_1___default.a.render(PLAYERS_TABLE, { blackPlayers: blackPlayers, whitePlayers: whitePlayers });
 }
 function makeTeamStats(log) {
-    const players = [];
-    log.internalLog.forEach(logItem => {
+    var players = [];
+    log.internalLog.forEach(function (logItem) {
         if (logItem.action === 'pass') {
             return;
         }
-        const playerIndex = players.findIndex(player => {
+        var playerIndex = players.findIndex(function (player) {
             return (player.name === logItem.username
                 && player.team === logItem.team);
         });
@@ -26483,20 +26723,20 @@ function makeTeamStats(log) {
     return players;
 }
 function makeTeamListColumn(players, team, hasLinks) {
-    return players.filter(player => {
+    return players.filter(function (player) {
         return player.team === team;
-    }).sort((a, b) => {
+    }).sort(function (a, b) {
         if (a.moves > b.moves)
             return -1;
         if (a.moves < b.moves)
             return 1;
         return 0;
-    }).map(player => {
+    }).map(function (player) {
         if (hasLinks) {
-            return `<b><a href="https://github.com/${player.name}">@${player.name}</a></b> (${player.moves})`;
+            return "<b><a href=\"https://github.com/" + player.name + "\">@" + player.name + "</a></b> (" + player.moves + ")";
         }
         else {
-            return `@${player.name} (${player.moves})`;
+            return "@" + player.name + " (" + player.moves + ")";
         }
     });
 }
@@ -26514,94 +26754,98 @@ function makeTeamListColumn(players, team, hasLinks) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateSvg", function() { return updateSvg; });
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _getFile__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/getFile */ "./src/getFile.ts");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _getFile__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/getFile */ "./src/getFile.ts");
 
 
-async function updateSvg(state, gamePath, baseSvgPath, octokit, context) {
-    /**
-     * Generates an SVG to visually represent the current board state.
-     *
-     * Saves the resulting SVG to games/current/board.svg.
-     *
-     * @param state: The current state of the game board.
-     * @param gamePath: The path to the current game's info dir.
-     * @param baseSvgPath: The path to the SVG template file.
-     * @returns An array of changes to add to the commit.
-     */
-    const changes = [];
-    // Delete the old board image
-    const gameFiles = await Object(_getFile__WEBPACK_IMPORTED_MODULE_1__["getFile"])("play", gamePath, null, octokit, context);
-    if (gameFiles) {
-        if (!Array.isArray(gameFiles.data)) {
-            throw new Error('GAME_DIR_IS_FILE');
-        }
-        gameFiles.data.forEach(gameFile => {
-            if (/^board\.[0-9]+\.svg$/.test(gameFile.name)) {
-                changes.push({
-                    path: gameFile.path,
-                    content: null,
-                });
+
+function updateSvg(state, gamePath, baseSvgPath, octokit, context) {
+    return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function () {
+        var changes, gameFiles, svgFile, svg;
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"])(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    changes = [];
+                    return [4 /*yield*/, Object(_getFile__WEBPACK_IMPORTED_MODULE_2__["getFile"])("play", gamePath, null, octokit, context)];
+                case 1:
+                    gameFiles = _a.sent();
+                    if (gameFiles) {
+                        if (!Array.isArray(gameFiles.data)) {
+                            throw new Error('GAME_DIR_IS_FILE');
+                        }
+                        gameFiles.data.forEach(function (gameFile) {
+                            if (/^board\.[0-9]+\.svg$/.test(gameFile.name)) {
+                                changes.push({
+                                    path: gameFile.path,
+                                    content: null,
+                                });
+                            }
+                        });
+                    }
+                    return [4 /*yield*/, octokit.repos.getContents({
+                            owner: context.repo.owner,
+                            repo: context.repo.repo,
+                            ref: "source",
+                            path: baseSvgPath,
+                            mediaType: { format: "raw" },
+                        })
+                        // If a file was queried then data is not an array
+                    ];
+                case 2:
+                    svgFile = _a.sent();
+                    // If a file was queried then data is not an array
+                    if (Array.isArray(svgFile.data)) {
+                        throw new Error('FILE_IS_DIR');
+                    }
+                    svg = Buffer.from(svgFile.data.content, "base64").toString();
+                    // Hide elements that should not be visible for this board
+                    // Tokens: tileN-T and tile0-TN, tile15-TN
+                    // Dice spots: diceN-spot-on and/or diceN-spot-off
+                    state.board.forEach(function (field, fieldIndex) {
+                        if (fieldIndex === 0 || fieldIndex === 15) {
+                            Object(lodash__WEBPACK_IMPORTED_MODULE_1__["range"])(field.b, 7).forEach(function (tokenIndex) {
+                                svg = hideSvgElement(svg, "tile" + fieldIndex + "-b" + tokenIndex);
+                            });
+                            Object(lodash__WEBPACK_IMPORTED_MODULE_1__["range"])(field.w, 7).forEach(function (tokenIndex) {
+                                svg = hideSvgElement(svg, "tile" + fieldIndex + "-w" + tokenIndex);
+                            });
+                        }
+                        else {
+                            if (field.b === 0) {
+                                svg = hideSvgElement(svg, "tile" + fieldIndex + "-b");
+                            }
+                            if (field.w === 0) {
+                                svg = hideSvgElement(svg, "tile" + fieldIndex + "-w");
+                            }
+                        }
+                    });
+                    if (state.dice) {
+                        state.dice.forEach(function (diceResult, index) {
+                            if (diceResult) {
+                                svg = hideSvgElement(svg, "dice" + index + "-spot-off");
+                            }
+                            else {
+                                svg = hideSvgElement(svg, "dice" + index + "-spot-on");
+                            }
+                        });
+                    }
+                    else {
+                        svg = hideSvgElement(svg, "dice0");
+                        svg = hideSvgElement(svg, "dice1");
+                        svg = hideSvgElement(svg, "dice2");
+                        svg = hideSvgElement(svg, "dice3");
+                    }
+                    // Save the new SVG to a file
+                    changes.push({
+                        path: gamePath + "/board." + context.issue.number + ".svg",
+                        content: svg,
+                    });
+                    return [2 /*return*/, changes];
             }
         });
-    }
-    // Get the contents of the template SVG
-    const svgFile = await octokit.repos.getContents({
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        ref: "source",
-        path: baseSvgPath,
-        mediaType: { format: "raw" },
     });
-    // If a file was queried then data is not an array
-    if (Array.isArray(svgFile.data)) {
-        throw new Error('FILE_IS_DIR');
-    }
-    let svg = Buffer.from(svgFile.data.content, "base64").toString();
-    // Hide elements that should not be visible for this board
-    // Tokens: tileN-T and tile0-TN, tile15-TN
-    // Dice spots: diceN-spot-on and/or diceN-spot-off
-    state.board.forEach((field, fieldIndex) => {
-        if (fieldIndex === 0 || fieldIndex === 15) {
-            Object(lodash__WEBPACK_IMPORTED_MODULE_0__["range"])(field.b, 7).forEach(tokenIndex => {
-                svg = hideSvgElement(svg, `tile${fieldIndex}-b${tokenIndex}`);
-            });
-            Object(lodash__WEBPACK_IMPORTED_MODULE_0__["range"])(field.w, 7).forEach(tokenIndex => {
-                svg = hideSvgElement(svg, `tile${fieldIndex}-w${tokenIndex}`);
-            });
-        }
-        else {
-            if (field.b === 0) {
-                svg = hideSvgElement(svg, `tile${fieldIndex}-b`);
-            }
-            if (field.w === 0) {
-                svg = hideSvgElement(svg, `tile${fieldIndex}-w`);
-            }
-        }
-    });
-    if (state.dice) {
-        state.dice.forEach((diceResult, index) => {
-            if (diceResult) {
-                svg = hideSvgElement(svg, `dice${index}-spot-off`);
-            }
-            else {
-                svg = hideSvgElement(svg, `dice${index}-spot-on`);
-            }
-        });
-    }
-    else {
-        svg = hideSvgElement(svg, "dice0");
-        svg = hideSvgElement(svg, "dice1");
-        svg = hideSvgElement(svg, "dice2");
-        svg = hideSvgElement(svg, "dice3");
-    }
-    // Save the new SVG to a file
-    changes.push({
-        path: `${gamePath}/board.${context.issue.number}.svg`,
-        content: svg,
-    });
-    return changes;
 }
 function hideSvgElement(svg, elementId) {
     /**
@@ -26620,22 +26864,22 @@ function hideSvgElement(svg, elementId) {
     // The ID is always the first attribute in a node, thankfully
     // Also, all nodes are written on a single line
     // Pattern to match the node with the wanted ID
-    const nodePattern = new RegExp(`<[A-z]+ id="${elementId}"[^>]*>`);
-    svg = svg.replace(nodePattern, (node) => {
+    var nodePattern = new RegExp("<[A-z]+ id=\"" + elementId + "\"[^>]*>");
+    svg = svg.replace(nodePattern, function (node) {
         if (node.includes("style=")) {
             // There is a style attribute - modify it
-            const stylePattern = /style="([^"]*)"/;
-            node = node.replace(stylePattern, (_, styleValue) => {
-                return `style="display:none;${styleValue}"`;
+            var stylePattern = /style="([^"]*)"/;
+            node = node.replace(stylePattern, function (_, styleValue) {
+                return "style=\"display:none;" + styleValue + "\"";
             });
             return node;
         }
         else {
             // There is no style attribute - add one
             // Add the new attribute before the ">" or "/>" at the end
-            const endPattern = /\/?>$/;
-            node = node.replace(endPattern, (endBracket) => {
-                return ` style="display:none;"${endBracket}`;
+            var endPattern = /\/?>$/;
+            node = node.replace(endPattern, function (endBracket) {
+                return " style=\"display:none;\"" + endBracket;
             });
             return node;
         }
@@ -26657,15 +26901,17 @@ function hideSvgElement(svg, elementId) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "makeVictoryMessage", function() { return makeVictoryMessage; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "listPreviousGames", function() { return listPreviousGames; });
-/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! compress-tag */ "./node_modules/compress-tag/dist/index.js");
-/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(compress_tag__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
-/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var humanize_duration__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! humanize-duration */ "./node_modules/humanize-duration/humanize-duration.js");
-/* harmony import */ var humanize_duration__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(humanize_duration__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var dateformat__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! dateformat */ "./node_modules/dateformat/lib/dateformat.js");
-/* harmony import */ var dateformat__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(dateformat__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! compress-tag */ "./node_modules/compress-tag/dist/index.js");
+/* harmony import */ var compress_tag__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(compress_tag__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var humanize_duration__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! humanize-duration */ "./node_modules/humanize-duration/humanize-duration.js");
+/* harmony import */ var humanize_duration__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(humanize_duration__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var dateformat__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! dateformat */ "./node_modules/dateformat/lib/dateformat.js");
+/* harmony import */ var dateformat__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(dateformat__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _teams__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/teams */ "./src/teams.ts");
+
 
 
 
@@ -26676,78 +26922,78 @@ function makeVictoryMessage(log) {
      * Called at the end of a game. Produces a message to ping participants in a
      * game, show teams, give stats, etc.
      */
-    const players = Object(_teams__WEBPACK_IMPORTED_MODULE_4__["makeTeamStats"])(log);
-    const winningTeam = Object(_teams__WEBPACK_IMPORTED_MODULE_4__["teamName"])(log.internalLog[log.internalLog.length - 1].team);
-    const moves = players.reduce((moves, player) => moves + player.moves, 0);
-    const startingDate = new Date(log.internalLog[0].time);
-    const endingDate = new Date(log.internalLog[log.internalLog.length - 1].time);
-    const hours = (endingDate.getTime() - startingDate.getTime()) / 1000 / 3600;
-    return compress_tag__WEBPACK_IMPORTED_MODULE_0__["compress"] `
-    This game has ended!
-    Congratulations to the ${winningTeam} team for their victory.
-    \n\n
-    This game had ${players.length} players,
-    ${moves} moves,
-    and took ${hours} hours.
-    \n\n
-    ${Object(_teams__WEBPACK_IMPORTED_MODULE_4__["makeTeamListTable"])(log, false)}
-  `;
+    var players = Object(_teams__WEBPACK_IMPORTED_MODULE_5__["makeTeamStats"])(log);
+    var winningTeam = Object(_teams__WEBPACK_IMPORTED_MODULE_5__["teamName"])(log.internalLog[log.internalLog.length - 1].team);
+    var moves = players.reduce(function (moves, player) { return moves + player.moves; }, 0);
+    var startingDate = new Date(log.internalLog[0].time);
+    var endingDate = new Date(log.internalLog[log.internalLog.length - 1].time);
+    var hours = (endingDate.getTime() - startingDate.getTime()) / 1000 / 3600;
+    return Object(compress_tag__WEBPACK_IMPORTED_MODULE_1__["compress"])(templateObject_1 || (templateObject_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n    This game has ended!\n    Congratulations to the ", " team for their victory.\n    \n\n\n    This game had ", " players,\n    ", " moves,\n    and took ", " hours.\n    \n\n\n    ", "\n  "], ["\n    This game has ended!\n    Congratulations to the ", " team for their victory.\n    \\n\\n\n    This game had ", " players,\n    ", " moves,\n    and took ", " hours.\n    \\n\\n\n    ", "\n  "])), winningTeam, players.length, moves, hours, Object(_teams__WEBPACK_IMPORTED_MODULE_5__["makeTeamListTable"])(log, false));
 }
-async function listPreviousGames(gamePath, octokit, context) {
-    /**
-     * Generates a list of previous games.
-     */
-    const gameDirPath = gamePath.substring(0, gamePath.lastIndexOf("/"));
-    const logDir = await octokit.repos.getContents({
-        owner: context.repo.owner,
-        repo: context.repo.repo,
-        ref: "play",
-        path: gameDirPath,
-        mediaType: { format: "raw" },
-    });
-    if (!Array.isArray(logDir.data)) {
-        throw new Error("GAMEDIR_IS_FILE");
-    }
-    const gameFiles = logDir.data.filter(dirObject => {
-        return dirObject.type === "file";
-    });
-    const gameLogs = await Promise.all(gameFiles.map(async (file) => {
-        const gameFile = await octokit.repos.getContents({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            ref: "play",
-            path: file.path,
-            mediaType: { format: "raw" },
+function listPreviousGames(gamePath, octokit, context) {
+    return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function () {
+        var gameDirPath, logDir, gameFiles, gameLogs, gameStrings;
+        var _this = this;
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"])(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    gameDirPath = gamePath.substring(0, gamePath.lastIndexOf("/"));
+                    return [4 /*yield*/, octokit.repos.getContents({
+                            owner: context.repo.owner,
+                            repo: context.repo.repo,
+                            ref: "play",
+                            path: gameDirPath,
+                            mediaType: { format: "raw" },
+                        })];
+                case 1:
+                    logDir = _a.sent();
+                    if (!Array.isArray(logDir.data)) {
+                        throw new Error("GAMEDIR_IS_FILE");
+                    }
+                    gameFiles = logDir.data.filter(function (dirObject) {
+                        return dirObject.type === "file";
+                    });
+                    return [4 /*yield*/, Promise.all(gameFiles.map(function (file) { return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this, void 0, void 0, function () {
+                            var gameFile;
+                            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"])(this, function (_a) {
+                                switch (_a.label) {
+                                    case 0: return [4 /*yield*/, octokit.repos.getContents({
+                                            owner: context.repo.owner,
+                                            repo: context.repo.repo,
+                                            ref: "play",
+                                            path: file.path,
+                                            mediaType: { format: "raw" },
+                                        })];
+                                    case 1:
+                                        gameFile = _a.sent();
+                                        if (Array.isArray(gameFile.data)) {
+                                            throw new Error("GAMEFILE_IS_DIR");
+                                        }
+                                        return [2 /*return*/, JSON.parse(Buffer.from(gameFile.data.content, "base64").toString())];
+                                }
+                            });
+                        }); }))];
+                case 2:
+                    gameLogs = _a.sent();
+                    gameStrings = gameLogs.map(function (log) {
+                        var game = {
+                            firstMove: log[0],
+                            lastMove: log[log.length - 1],
+                            playerCount: Object(lodash__WEBPACK_IMPORTED_MODULE_2__["uniq"])(log.map(function (entry) { return entry.username; })).length,
+                        };
+                        return Object(compress_tag__WEBPACK_IMPORTED_MODULE_1__["compress"])(templateObject_2 || (templateObject_2 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n      A game\n      was started on ", "\n      by **[@", "](https://github.com/", ")**\n      and ended on ", "\n      in a win for the ", " team.\n      ", " players\n      played ", " moves\n      across ", ".\n      Winning move:\n      [#", "](https://github.com/rossjrw/rossjrw/issues/", ")\n    "], ["\n      A game\n      was started on ", "\n      by **[@", "](https://github.com/", ")**\n      and ended on ", "\n      in a win for the ",
+                            " team.\n      ", " players\n      played ", " moves\n      across ",
+                            ".\n      Winning move:\n      [#", "](https://github.com/rossjrw/rossjrw/issues/", ")\n    "])), dateformat__WEBPACK_IMPORTED_MODULE_4___default()(new Date(game.firstMove.time), "dS mmm yyyy"), game.firstMove.username, game.firstMove.username, dateformat__WEBPACK_IMPORTED_MODULE_4___default()(new Date(game.lastMove.time), "dS mmm yyyy"), game.lastMove.team === "b" ?
+                            ":black_circle:black" :
+                            ":white_circle:white", game.playerCount, log.length, humanize_duration__WEBPACK_IMPORTED_MODULE_3___default()(new Date(game.lastMove.time).getTime() -
+                            new Date(game.firstMove.time).getTime(), { largest: 2, delimiter: " and " }), game.lastMove.issue, game.lastMove.issue);
+                    });
+                    return [2 /*return*/, gameStrings];
+            }
         });
-        if (Array.isArray(gameFile.data)) {
-            throw new Error("GAMEFILE_IS_DIR");
-        }
-        return JSON.parse(Buffer.from(gameFile.data.content, "base64").toString());
-    }));
-    const gameStrings = gameLogs.map(log => {
-        const game = {
-            firstMove: log[0],
-            lastMove: log[log.length - 1],
-            playerCount: Object(lodash__WEBPACK_IMPORTED_MODULE_1__["uniq"])(log.map(entry => entry.username)).length,
-        };
-        return compress_tag__WEBPACK_IMPORTED_MODULE_0__["compress"] `
-      A game
-      was started on ${dateformat__WEBPACK_IMPORTED_MODULE_3___default()(new Date(game.firstMove.time), "dS mmm yyyy")}
-      by **[@${game.firstMove.username}](https://github.com/${game.firstMove.username})**
-      and ended on ${dateformat__WEBPACK_IMPORTED_MODULE_3___default()(new Date(game.lastMove.time), "dS mmm yyyy")}
-      in a win for the ${game.lastMove.team === "b" ?
-            ":black_circle:black" :
-            ":white_circle:white"} team.
-      ${game.playerCount} players
-      played ${log.length} moves
-      across ${humanize_duration__WEBPACK_IMPORTED_MODULE_2___default()(new Date(game.lastMove.time).getTime() -
-            new Date(game.firstMove.time).getTime(), { largest: 2, delimiter: " and " })}.
-      Winning move:
-      [#${game.lastMove.issue}](https://github.com/rossjrw/rossjrw/issues/${game.lastMove.issue})
-    `;
     });
-    return gameStrings;
 }
+var templateObject_1, templateObject_2;
 
 
 /***/ }),
