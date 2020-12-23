@@ -385,5 +385,23 @@
     "team": "b",
     "action": "move",
     "boardImage": null
+  },
+  {
+    "username": "1ethanhansen",
+    "issue": 322,
+    "message": "moved a white piece onto the board to position 4  — claimed a rosette :rosette: ",
+    "time": "2020-12-23T02:01:49.552Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/34006269248188877ac170c28128079eae77f44e/games/current/board.322.svg"
+  },
+  {
+    "username": "1ethanhansen",
+    "issue": 322,
+    "message": "The white team rolled a 0 and their turn was automatically passed",
+    "time": "2020-12-23T02:01:49.552Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null
   }
 ]
