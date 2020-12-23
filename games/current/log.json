@@ -375,6 +375,15 @@
     "time": "2020-12-23T01:46:28.239Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ee53b7e89150fa845366635fc68791386a5e47f2/games/current/board.320.svg"
+  },
+  {
+    "username": "shpatrickguo",
+    "issue": 321,
+    "message": "ascended a black piece from position 12 :rocket:   ",
+    "time": "2020-12-23T01:54:30.627Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
