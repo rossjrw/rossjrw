@@ -402,6 +402,15 @@
     "time": "2020-12-23T02:01:49.552Z",
     "team": "w",
     "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b8070036aac00c969901a3770558d7fe6742bf47/games/current/board.322.svg"
+  },
+  {
+    "username": "shpatrickguo",
+    "issue": 323,
+    "message": "moved a black piece from position 8 to position 11   ",
+    "time": "2020-12-23T22:53:44.633Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null
   }
 ]
