@@ -411,6 +411,15 @@
     "time": "2020-12-23T22:53:44.633Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d53fef8d6638e9b0866299e6aff7ef3208846425/games/current/board.323.svg"
+  },
+  {
+    "username": "1ethanhansen",
+    "issue": 324,
+    "message": "moved a white piece from position 4 to position 7 — captured a black piece :crossed_swords:  ",
+    "time": "2020-12-23T23:13:26.218Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]
