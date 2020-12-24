@@ -447,6 +447,15 @@
     "time": "2020-12-24T10:34:29.838Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3d17b2e87da20ec74aef464d7688548a855b7841/games/current/board.327.svg"
+  },
+  {
+    "username": "Baptiste-Martinet",
+    "issue": 331,
+    "message": "moved a white piece onto the board to position 3   ",
+    "time": "2020-12-24T14:26:17.406Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null
   }
 ]
