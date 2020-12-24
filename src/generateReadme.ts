@@ -9,7 +9,7 @@ import { analyseMove } from '@/analyseMove'
 import { updateSvg } from '@/updateSvg'
 import { Change } from '@/play'
 import { Log } from '@/log'
-import { makeTeamListTable, teamName } from '@/teams'
+import { getOppositeTeam, makeTeamListTable, teamName } from '@/teams'
 import { listPreviousGames } from '@/victory'
 
 export async function generateReadme (
@@ -103,7 +103,33 @@ export async function generateReadme (
           "" :
           `**[@${logItem.username}](https://github.com/${logItem.username})**`
         }
-        ${logItem.message}
+        ${
+          {
+            new: "started a new game",
+            pass: compress`
+              The ${teamName(logItem.team)} team rolled a ${logItem.roll}
+              and their turn was automatically passed
+            `,
+            move: compress`
+              ${logItem.events?.ascensionHappened ? "ascended" : "moved"}
+              a ${teamName(state.currentPlayer)} piece
+              ${logItem.fromPosition === 0 ?
+                "onto the board" : `from position ${logItem.fromPosition}`}
+              ${logItem.events?.ascensionHappened ?
+                ":rocket:" : `to position ${logItem.toPosition}`}
+              ${
+                logItem.events?.captureHappened ? compress`
+                  — captured a
+                  ${teamName(getOppositeTeam(state.currentPlayer))} piece
+                  :crossed_swords:
+                ` : ""
+              }
+              ${logItem.events?.rosetteClaimed ?
+                "— claimed a rosette :rosette:" : ""}
+              ${logItem.events?.gameWon ? "— won the game :crown:" : ""}
+            `,
+          }[logItem.action]
+        }
       `,
       `[#${logItem.issue}](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${logItem.issue})`,
       `${logItem.boardImage === null ? "" : `[link](${logItem.boardImage})`}`,
