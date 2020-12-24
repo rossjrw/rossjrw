@@ -1,7 +1,10 @@
 import { Octokit } from "@octokit/rest/index"
 import { Context } from "@actions/github/lib/context"
 import { compress } from "compress-tag"
-import { uniq } from "lodash"
+import {
+  countBy, entries, flow, head, last, maxBy, partialRight,
+  uniq
+} from "lodash"
 import humanizeDuration from "humanize-duration"
 import dateformat from "dateformat"
 
@@ -42,7 +45,10 @@ export async function listPreviousGames (
   context: Context,
 ): Promise<string[]> {
   /**
-   * Generates a list of previous games.
+   * Generates a list of previous games from the logs in the game directory.
+   *
+   * @param gamePath: The path to the directory that contains the current game.
+   * This is expected to be inside the directory that contains previous games.
    */
   const gameDirPath = gamePath.substring(0, gamePath.lastIndexOf("/"))
   const logDir = await octokit.repos.getContents({
@@ -79,32 +85,59 @@ export async function listPreviousGames (
   ))
 
   const gameStrings = gameLogs.map(log => {
-    const game = {
-      firstMove: log[0],
-      lastMove: log[log.length - 1],
-      playerCount: uniq(log.map(entry => entry.username)).length,
-    }
+    const firstMove = log[0]
+    const lastMove = log[log.length - 1]
+    const playerCount = uniq(log.map(entry => entry.username)).length
+    const mvp = flow(countBy, entries, partialRight(maxBy, last), head)(
+      log.filter(
+        logItem => logItem.team === lastMove.team
+      ).map(logItem => logItem.username)
+    )
     return compress`
-      A game
-      was started on ${dateformat(new Date(game.firstMove.time), "dS mmm yyyy")}
-      by **[@${game.firstMove.username}](https://github.com/${game.firstMove.username})**
-      and ended on ${dateformat(new Date(game.lastMove.time), "dS mmm yyyy")}
+      A game was started
+      on ${dateformat(new Date(firstMove.time), "dS mmm yyyy")}
+      by **[@${firstMove.username}](https://github.com/${firstMove.username})**
+      and ended on ${dateformat(new Date(lastMove.time), "dS mmm yyyy")}
       in a win for the ${
-        game.lastMove.team === "b" ?
+        lastMove.team === "b" ?
           ":black_circle:black" :
           ":white_circle:white"
       } team.
-      ${game.playerCount} players
+      ${playerCount} players
       played ${log.length} moves
       across ${
         humanizeDuration(
-          new Date(game.lastMove.time).getTime() -
-            new Date(game.firstMove.time).getTime(),
+          new Date(lastMove.time).getTime() -
+            new Date(firstMove.time).getTime(),
           { largest: 2, delimiter: " and " }
         )
       }.
-      Winning move:
-      [#${game.lastMove.issue}](https://github.com/rossjrw/rossjrw/issues/${game.lastMove.issue})
+      The :black_circle:black team captured ${
+        log.filter(logItem => {
+          return logItem.team === "b" && logItem.events?.captureHappened
+        }).length
+      } white pieces and claimed ${
+        log.filter(logItem => {
+          return logItem.team === "b" && logItem.events?.rosetteClaimed
+        }).length
+      } rosettes.
+      The :white_circle:white team captured ${
+        log.filter(logItem => {
+          return logItem.team === "w" && logItem.events?.captureHappened
+        }).length
+      } black pieces and claimed ${
+        log.filter(logItem => {
+          return logItem.team === "w" && logItem.events?.rosetteClaimed
+        }).length
+      } rosettes.
+      The MVP of the winning team was
+      by **[@${mvp}](https://github.com/${mvp})**,
+      who played ${
+        log.filter(logItem => logItem.username === mvp).length
+      } moves.
+      The winning move was made
+      by **[@${lastMove.username}](https://github.com/${lastMove.username})**
+      ([#${lastMove.issue}](https://github.com/rossjrw/rossjrw/issues/${lastMove.issue})).
     `
   })
 
