@@ -25972,12 +25972,25 @@ function generateReadme(state, gamePath, octokit, context, log) {
                     // Trigger the log to update the second-to-last board image URL
                     log.linkPreviousBoardState();
                     logItems = log.internalLog.map(function (logItem) {
+                        var _a, _b, _c, _d, _e;
                         return [
                             "" + dateformat__WEBPACK_IMPORTED_MODULE_3___default()(new Date(logItem.time), "dS mmm yyyy HH:MM"),
-                            Object(compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"])(templateObject_2 || (templateObject_2 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n        :", "_circle:\n        ", "\n        ", "\n      "], ["\n        :", "_circle:\n        ",
-                                "\n        ", "\n      "])), Object(_teams__WEBPACK_IMPORTED_MODULE_6__["teamName"])(logItem.team), logItem.action === "pass" ?
+                            Object(compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"])(templateObject_5 || (templateObject_5 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n        :", "_circle:\n        ", "\n        ", "\n      "], ["\n        :", "_circle:\n        ",
+                                "\n        ",
+                                "\n      "])), Object(_teams__WEBPACK_IMPORTED_MODULE_6__["teamName"])(logItem.team), logItem.action === "pass" ?
                                 "" :
-                                "**[@" + logItem.username + "](https://github.com/" + logItem.username + ")**", logItem.message),
+                                "**[@" + logItem.username + "](https://github.com/" + logItem.username + ")**", {
+                                "new": "started a new game",
+                                pass: Object(compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"])(templateObject_2 || (templateObject_2 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n              The ", " team rolled a ", "\n              and their turn was automatically passed\n            "], ["\n              The ", " team rolled a ", "\n              and their turn was automatically passed\n            "])), Object(_teams__WEBPACK_IMPORTED_MODULE_6__["teamName"])(logItem.team), logItem.roll),
+                                move: Object(compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"])(templateObject_4 || (templateObject_4 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n              ", "\n              a ", " piece\n              ", "\n              ", "\n              ", "\n              ", "\n              ", "\n            "], ["\n              ", "\n              a ", " piece\n              ",
+                                    "\n              ",
+                                    "\n              ",
+                                    "\n              ",
+                                    "\n              ", "\n            "])), ((_a = logItem.events) === null || _a === void 0 ? void 0 : _a.ascensionHappened) ? "ascended" : "moved", Object(_teams__WEBPACK_IMPORTED_MODULE_6__["teamName"])(state.currentPlayer), logItem.fromPosition === 0 ?
+                                    "onto the board" : "from position " + logItem.fromPosition, ((_b = logItem.events) === null || _b === void 0 ? void 0 : _b.ascensionHappened) ?
+                                    ":rocket:" : "to position " + logItem.toPosition, ((_c = logItem.events) === null || _c === void 0 ? void 0 : _c.captureHappened) ? Object(compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"])(templateObject_3 || (templateObject_3 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n                  \u2014 captured a\n                  ", " piece\n                  :crossed_swords:\n                "], ["\n                  \u2014 captured a\n                  ", " piece\n                  :crossed_swords:\n                "])), Object(_teams__WEBPACK_IMPORTED_MODULE_6__["teamName"])(Object(_teams__WEBPACK_IMPORTED_MODULE_6__["getOppositeTeam"])(state.currentPlayer))) : "", ((_d = logItem.events) === null || _d === void 0 ? void 0 : _d.rosetteClaimed) ?
+                                    "— claimed a rosette :rosette:" : "", ((_e = logItem.events) === null || _e === void 0 ? void 0 : _e.gameWon) ? "— won the game :crown:" : ""),
+                            }[logItem.action]),
                             "[#" + logItem.issue + "](https://github.com/" + context.repo.owner + "/" + context.repo.repo + "/issues/" + logItem.issue + ")",
                             "" + (logItem.boardImage === null ? "" : "[link](" + logItem.boardImage + ")"),
                         ];
@@ -26012,9 +26025,9 @@ function generateReadme(state, gamePath, octokit, context, log) {
     });
 }
 function issueLink(issueTitle, context) {
-    return Object(compress_tag__WEBPACK_IMPORTED_MODULE_2__["compressTight"])(templateObject_3 || (templateObject_3 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n    https://github.com/", "/", "/issues/new\n      ?title=", "\n      &body=\n        Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.\n        %0D%0A%0D%0A\n        Be+aware+that+your+move+can+take+a+minute+or+two+to+process.\n  "], ["\n    https://github.com/", "/", "/issues/new\n      ?title=", "\n      &body=\n        Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.\n        %0D%0A%0D%0A\n        Be+aware+that+your+move+can+take+a+minute+or+two+to+process.\n  "])), context.repo.owner, context.repo.repo, issueTitle);
+    return Object(compress_tag__WEBPACK_IMPORTED_MODULE_2__["compressTight"])(templateObject_6 || (templateObject_6 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n    https://github.com/", "/", "/issues/new\n      ?title=", "\n      &body=\n        Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.\n        %0D%0A%0D%0A\n        Be+aware+that+your+move+can+take+a+minute+or+two+to+process.\n  "], ["\n    https://github.com/", "/", "/issues/new\n      ?title=", "\n      &body=\n        Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.\n        %0D%0A%0D%0A\n        Be+aware+that+your+move+can+take+a+minute+or+two+to+process.\n  "])), context.repo.owner, context.repo.repo, issueTitle);
 }
-var templateObject_1, templateObject_2, templateObject_3;
+var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6;
 
 
 /***/ }),
@@ -26158,7 +26171,7 @@ var Log = /** @class */ (function () {
             });
         });
     };
-    Log.prototype.addToLog = function (action, message, team) {
+    Log.prototype.addToLog = function (action, team, roll, fromPosition, toPosition, events) {
         /**
          * Adds an item to the internal log.
          *
@@ -26170,11 +26183,14 @@ var Log = /** @class */ (function () {
         var logItem = {
             username: this.username,
             issue: this.issue,
-            message: message,
             time: new Date().toISOString(),
             team: team,
             action: action,
             boardImage: null,
+            events: events,
+            fromPosition: fromPosition,
+            toPosition: toPosition,
+            roll: roll
         };
         this.internalLog.push(logItem);
     };
@@ -26353,10 +26369,7 @@ function makeMove(state, move, gamePath, octokit, context, log) {
                         state: "closed",
                     });
                     // Update the log with this action
-                    log.addToLog("move", Object(compress_tag__WEBPACK_IMPORTED_MODULE_3__["compress"])(templateObject_5 || (templateObject_5 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n        ", "\n        a ", " piece\n        ", "\n        ", "\n        ", "\n        ", "\n        ", "\n      "], ["\n        ", "\n        a ", " piece\n        ", "\n        ",
-                        "\n        ", "\n        ", "\n        ", "\n      "])), events.ascensionHappened ? "ascended" : "moved", Object(_teams__WEBPACK_IMPORTED_MODULE_9__["teamName"])(state.currentPlayer), fromPosition === 0 ? "onto the board" : "from position " + fromPosition, events.ascensionHappened ?
-                        ":rocket:" :
-                        "to position " + toPosition, events.captureHappened ? "\u2014 captured a " + Object(_teams__WEBPACK_IMPORTED_MODULE_9__["teamName"])(Object(_teams__WEBPACK_IMPORTED_MODULE_9__["getOppositeTeam"])(state.currentPlayer)) + " piece :crossed_swords:" : "", events.rosetteClaimed ? "— claimed a rosette :rosette:" : "", events.gameWon ? "— won the game :crown:" : ""), state.currentPlayer);
+                    log.addToLog("move", state.currentPlayer, fromPosition, toPosition, state.diceResult, events);
                     if (!events.gameWon) return [3 /*break*/, 4];
                     return [4 /*yield*/, octokit.issues.createComment({
                             owner: context.repo.owner,
@@ -26371,7 +26384,7 @@ function makeMove(state, move, gamePath, octokit, context, log) {
                     if (!(!(events === null || events === void 0 ? void 0 : events.gameWon) && Object.keys(newState.possibleMoves).length === 0)) return [3 /*break*/, 6];
                     // If there are no possible moves, pass this turn, unless the game is done
                     // The events object is undefined if the last move was also a pass
-                    log.addToLog("pass", Object(compress_tag__WEBPACK_IMPORTED_MODULE_3__["compress"])(templateObject_6 || (templateObject_6 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n        The ", " team\n        rolled a ", "\n        and their turn was automatically passed\n      "], ["\n        The ", " team\n        rolled a ", "\n        and their turn was automatically passed\n      "])), Object(_teams__WEBPACK_IMPORTED_MODULE_9__["teamName"])(newState.currentPlayer), newState.diceResult), newState.currentPlayer);
+                    log.addToLog("pass", newState.currentPlayer, newState.diceResult, null, null, null);
                     _c = (_b = changes).concat;
                     return [4 /*yield*/, makeMove(newState, "pass", gamePath, octokit, context, log)];
                 case 5:
@@ -26394,7 +26407,7 @@ function makeMove(state, move, gamePath, octokit, context, log) {
         });
     });
 }
-var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6;
+var templateObject_1, templateObject_2, templateObject_3, templateObject_4;
 
 
 /***/ }),
@@ -26453,7 +26466,7 @@ function resetGame(gamePath, oldGamePath, octokit, context, log) {
                     // Wipe the log for the new game
                     log.internalLog = [];
                     // Update the log with this action
-                    log.addToLog("new", "started a new game", newState.currentPlayer);
+                    log.addToLog("new", newState.currentPlayer, null, null, null, null);
                     _b = (_a = changes).concat;
                     return [4 /*yield*/, Object(_generateReadme__WEBPACK_IMPORTED_MODULE_4__["generateReadme"])(newState, gamePath, octokit, context, log)];
                 case 1:
