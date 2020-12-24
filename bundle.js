@@ -26989,17 +26989,33 @@ function listPreviousGames(gamePath, octokit, context) {
                 case 2:
                     gameLogs = _a.sent();
                     gameStrings = gameLogs.map(function (log) {
-                        var game = {
-                            firstMove: log[0],
-                            lastMove: log[log.length - 1],
-                            playerCount: Object(lodash__WEBPACK_IMPORTED_MODULE_2__["uniq"])(log.map(function (entry) { return entry.username; })).length,
-                        };
-                        return Object(compress_tag__WEBPACK_IMPORTED_MODULE_1__["compress"])(templateObject_2 || (templateObject_2 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n      A game\n      was started on ", "\n      by **[@", "](https://github.com/", ")**\n      and ended on ", "\n      in a win for the ", " team.\n      ", " players\n      played ", " moves\n      across ", ".\n      Winning move:\n      [#", "](https://github.com/rossjrw/rossjrw/issues/", ")\n    "], ["\n      A game\n      was started on ", "\n      by **[@", "](https://github.com/", ")**\n      and ended on ", "\n      in a win for the ",
+                        var firstMove = log[0];
+                        var lastMove = log[log.length - 1];
+                        var playerCount = Object(lodash__WEBPACK_IMPORTED_MODULE_2__["uniq"])(log.map(function (entry) { return entry.username; })).length;
+                        var mvp = Object(lodash__WEBPACK_IMPORTED_MODULE_2__["flow"])(lodash__WEBPACK_IMPORTED_MODULE_2__["countBy"], lodash__WEBPACK_IMPORTED_MODULE_2__["entries"], Object(lodash__WEBPACK_IMPORTED_MODULE_2__["partialRight"])(lodash__WEBPACK_IMPORTED_MODULE_2__["maxBy"], lodash__WEBPACK_IMPORTED_MODULE_2__["last"]), lodash__WEBPACK_IMPORTED_MODULE_2__["head"])(log.filter(function (logItem) { return logItem.team === lastMove.team; }).map(function (logItem) { return logItem.username; }));
+                        return Object(compress_tag__WEBPACK_IMPORTED_MODULE_1__["compress"])(templateObject_2 || (templateObject_2 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n      A game was started\n      on ", "\n      by **[@", "](https://github.com/", ")**\n      and ended on ", "\n      in a win for the ", " team.\n      ", " players\n      played ", " moves\n      across ", ".\n      The :black_circle:black team captured ", " white pieces and claimed ", " rosettes.\n      The :white_circle:white team captured ", " black pieces and claimed ", " rosettes.\n      The MVP of the winning team was\n      by **[@", "](https://github.com/", ")**,\n      who played ", " moves.\n      The winning move was made\n      by **[@", "](https://github.com/", ")**\n      ([#", "](https://github.com/rossjrw/rossjrw/issues/", ")).\n    "], ["\n      A game was started\n      on ", "\n      by **[@", "](https://github.com/", ")**\n      and ended on ", "\n      in a win for the ",
                             " team.\n      ", " players\n      played ", " moves\n      across ",
-                            ".\n      Winning move:\n      [#", "](https://github.com/rossjrw/rossjrw/issues/", ")\n    "])), dateformat__WEBPACK_IMPORTED_MODULE_4___default()(new Date(game.firstMove.time), "dS mmm yyyy"), game.firstMove.username, game.firstMove.username, dateformat__WEBPACK_IMPORTED_MODULE_4___default()(new Date(game.lastMove.time), "dS mmm yyyy"), game.lastMove.team === "b" ?
+                            ".\n      The :black_circle:black team captured ",
+                            " white pieces and claimed ",
+                            " rosettes.\n      The :white_circle:white team captured ",
+                            " black pieces and claimed ",
+                            " rosettes.\n      The MVP of the winning team was\n      by **[@", "](https://github.com/", ")**,\n      who played ",
+                            " moves.\n      The winning move was made\n      by **[@", "](https://github.com/", ")**\n      ([#", "](https://github.com/rossjrw/rossjrw/issues/", ")).\n    "])), dateformat__WEBPACK_IMPORTED_MODULE_4___default()(new Date(firstMove.time), "dS mmm yyyy"), firstMove.username, firstMove.username, dateformat__WEBPACK_IMPORTED_MODULE_4___default()(new Date(lastMove.time), "dS mmm yyyy"), lastMove.team === "b" ?
                             ":black_circle:black" :
-                            ":white_circle:white", game.playerCount, log.length, humanize_duration__WEBPACK_IMPORTED_MODULE_3___default()(new Date(game.lastMove.time).getTime() -
-                            new Date(game.firstMove.time).getTime(), { largest: 2, delimiter: " and " }), game.lastMove.issue, game.lastMove.issue);
+                            ":white_circle:white", playerCount, log.length, humanize_duration__WEBPACK_IMPORTED_MODULE_3___default()(new Date(lastMove.time).getTime() -
+                            new Date(firstMove.time).getTime(), { largest: 2, delimiter: " and " }), log.filter(function (logItem) {
+                            var _a;
+                            return logItem.team === "b" && ((_a = logItem.events) === null || _a === void 0 ? void 0 : _a.captureHappened);
+                        }).length, log.filter(function (logItem) {
+                            var _a;
+                            return logItem.team === "b" && ((_a = logItem.events) === null || _a === void 0 ? void 0 : _a.rosetteClaimed);
+                        }).length, log.filter(function (logItem) {
+                            var _a;
+                            return logItem.team === "w" && ((_a = logItem.events) === null || _a === void 0 ? void 0 : _a.captureHappened);
+                        }).length, log.filter(function (logItem) {
+                            var _a;
+                            return logItem.team === "w" && ((_a = logItem.events) === null || _a === void 0 ? void 0 : _a.rosetteClaimed);
+                        }).length, mvp, mvp, log.filter(function (logItem) { return logItem.username === mvp; }).length, lastMove.username, lastMove.username, lastMove.issue, lastMove.issue);
                     });
                     return [2 /*return*/, gameStrings];
             }
