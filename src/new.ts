@@ -62,8 +62,11 @@ export async function resetGame (
   // Update the log with this action
   log.addToLog(
     "new",
-    "started a new game",
     newState.currentPlayer!,
+    null,
+    null,
+    null,
+    null,
   )
 
   // Update README.md with the new state

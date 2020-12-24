@@ -1,7 +1,7 @@
 import Ur from "ur-game"
 import { values, sum } from "lodash"
 
-interface Events {
+export interface Events {
   rosetteClaimed: boolean,
   captureHappened: boolean,
   ascensionHappened: boolean,

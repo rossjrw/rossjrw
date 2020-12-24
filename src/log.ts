@@ -3,15 +3,19 @@ import { Context } from "@actions/github/lib/context"
 import Ur from "ur-game"
 
 import { Change } from '@/play'
+import { Events } from '@/analyseMove'
 
 export interface LogItem {
   username: string
   issue: number
-  message: string
   time: string
   team: Ur.Player
   action: "new" | "move" | "pass"
   boardImage: string | null
+  events: Events | null
+  fromPosition: number | null
+  toPosition: number | null
+  roll: number | null
 }
 
 export class Log {
@@ -75,8 +79,11 @@ export class Log {
 
   addToLog (
     action: "new" | "move" | "pass",
-    message: string,
     team: Ur.Player,
+    roll: number | null,
+    fromPosition: number | null,
+    toPosition: number | null,
+    events: Events | null,
   ): void {
     /**
      * Adds an item to the internal log.
@@ -89,11 +96,14 @@ export class Log {
     const logItem: LogItem = {
       username: this.username,
       issue: this.issue,
-      message: message,
       time: new Date().toISOString(),
       team,
       action,
       boardImage: null,
+      events,
+      fromPosition,
+      toPosition,
+      roll
     }
     this.internalLog.push(logItem)
   }

@@ -153,20 +153,11 @@ export async function makeMove (
     // Update the log with this action
     log.addToLog(
       "move",
-      compress`
-        ${events.ascensionHappened ? "ascended" : "moved"}
-        a ${teamName(state.currentPlayer)} piece
-        ${fromPosition === 0 ? "onto the board" : `from position ${fromPosition}`}
-        ${
-          events.ascensionHappened ?
-          ":rocket:" :
-          `to position ${toPosition}`
-        }
-        ${events.captureHappened ? `— captured a ${teamName(getOppositeTeam(state.currentPlayer))} piece :crossed_swords:` : ""}
-        ${events.rosetteClaimed ? "— claimed a rosette :rosette:" : ""}
-        ${events.gameWon ? "— won the game :crown:" : ""}
-      `,
       state.currentPlayer,
+      fromPosition,
+      toPosition,
+      state.diceResult,
+      events,
     )
 
     // If the game was won, leave a message to let everyone know
@@ -185,12 +176,11 @@ export async function makeMove (
     // The events object is undefined if the last move was also a pass
     log.addToLog(
       "pass",
-      compress`
-        The ${teamName(newState.currentPlayer)} team
-        rolled a ${newState.diceResult}
-        and their turn was automatically passed
-      `,
       newState.currentPlayer!,
+      newState.diceResult!,
+      null,
+      null,
+      null,
     )
     changes = changes.concat(
       await makeMove(newState, "pass", gamePath, octokit, context, log)
