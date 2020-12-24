@@ -923,7 +923,7 @@
     "time": "2020-12-24T18:53:00.309Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e8dc57454d16f232288192765a40bf79c8a59647/games/current/board.337.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -933,5 +933,22 @@
     "fromPosition": 10,
     "toPosition": 3,
     "roll": 7
+  },
+  {
+    "username": "rossjrw",
+    "issue": 338,
+    "time": "2020-12-24T18:59:46.013Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 2,
+    "roll": 8
   }
 ]
