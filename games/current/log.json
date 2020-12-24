@@ -2,460 +2,868 @@
   {
     "username": "1ethanhansen",
     "issue": 270,
-    "message": "started a new game",
     "time": "2020-12-04T16:40:10.452Z",
     "team": "w",
     "action": "new",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3053a47c0e6594cd8395007bb8c73615d1f6045c/games/current/board.270.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3053a47c0e6594cd8395007bb8c73615d1f6045c/games/current/board.270.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": null
   },
   {
     "username": "1ethanhansen",
     "issue": 271,
-    "message": "moved a white piece onto the board to position 2",
     "time": "2020-12-04T16:41:54.379Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0c75bbcd05af6eff999befba8ee62e8ef8b4a12d/games/current/board.271.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0c75bbcd05af6eff999befba8ee62e8ef8b4a12d/games/current/board.271.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   },
   {
     "username": "bejoistic",
     "issue": 272,
-    "message": "moved a black piece onto the board to position 2",
     "time": "2020-12-04T17:10:31.112Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/206286cf466ef4022044b68cd05c0d237726f82a/games/current/board.272.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/206286cf466ef4022044b68cd05c0d237726f82a/games/current/board.272.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   },
   {
     "username": "1ethanhansen",
     "issue": 273,
-    "message": "moved a white piece onto the board to position 1",
     "time": "2020-12-04T18:05:21.416Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/278ed5038c299f889804029b35efd72014e3a5eb/games/current/board.273.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/278ed5038c299f889804029b35efd72014e3a5eb/games/current/board.273.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
   },
   {
     "username": "rossjrw",
     "issue": 280,
-    "message": "moved a black piece onto the board to position 3   ",
     "time": "2020-12-05T00:25:16.889Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ad7c8f7e3e8e03c628177fff51a45617e0d90044/games/current/board.280.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ad7c8f7e3e8e03c628177fff51a45617e0d90044/games/current/board.280.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   },
   {
     "username": "1ethanhansen",
     "issue": 281,
-    "message": "moved a white piece from position 2 to position 3   ",
     "time": "2020-12-05T08:42:09.235Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/daadc30e49be00b38cf81278a2ecb1073ec806d7/games/current/board.281.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/daadc30e49be00b38cf81278a2ecb1073ec806d7/games/current/board.281.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 3,
+    "roll": 1
   },
   {
     "username": "KhanShaheb34",
     "issue": 282,
-    "message": "moved a black piece from position 2 to position 4  — claimed a rosette :rosette: ",
     "time": "2020-12-05T11:39:23.512Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/292d49ef61a09186854fa4ad16c8c0fe16ccd781/games/current/board.282.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/292d49ef61a09186854fa4ad16c8c0fe16ccd781/games/current/board.282.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
   },
   {
     "username": "KhanShaheb34",
     "issue": 283,
-    "message": "moved a black piece onto the board to position 1   ",
     "time": "2020-12-05T11:41:24.094Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ebb79274bc099b21635d1539b75730bac10ff7f1/games/current/board.283.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ebb79274bc099b21635d1539b75730bac10ff7f1/games/current/board.283.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
   },
   {
     "username": "IRHM",
     "issue": 284,
-    "message": "moved a white piece onto the board to position 2   ",
     "time": "2020-12-05T22:37:07.604Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/54d70ced309619b8c45c369dcfb9527a568b8664/games/current/board.284.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/54d70ced309619b8c45c369dcfb9527a568b8664/games/current/board.284.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   },
   {
     "username": "rossjrw",
     "issue": 285,
-    "message": "moved a black piece from position 4 to position 8  — claimed a rosette :rosette: ",
     "time": "2020-12-06T21:05:26.509Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2ff09875dcab436be0a4ec67435f548d292214df/games/current/board.285.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2ff09875dcab436be0a4ec67435f548d292214df/games/current/board.285.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 8,
+    "roll": 4
   },
   {
     "username": "rossjrw",
     "issue": 286,
-    "message": "moved a black piece from position 1 to position 4  — claimed a rosette :rosette: ",
     "time": "2020-12-06T21:06:19.629Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d77c18f12449c838fb9c91678410c1eaab4a77a2/games/current/board.286.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d77c18f12449c838fb9c91678410c1eaab4a77a2/games/current/board.286.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 4,
+    "roll": 3
   },
   {
     "username": "rossjrw",
     "issue": 287,
-    "message": "moved a black piece onto the board to position 2   ",
     "time": "2020-12-06T21:06:53.538Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/be32ef1f1cfc61b6bb657278ae71fdadf09b07bf/games/current/board.287.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/be32ef1f1cfc61b6bb657278ae71fdadf09b07bf/games/current/board.287.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   },
   {
     "username": "1ethanhansen",
     "issue": 288,
-    "message": "moved a white piece from position 2 to position 4  — claimed a rosette :rosette: ",
     "time": "2020-12-06T21:08:32.947Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b30861b3c7e1bc06c1b3037f0c316bc9ccfa91e6/games/current/board.288.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b30861b3c7e1bc06c1b3037f0c316bc9ccfa91e6/games/current/board.288.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
   },
   {
     "username": "1ethanhansen",
     "issue": 289,
-    "message": "moved a white piece from position 4 to position 9   ",
     "time": "2020-12-06T21:10:45.693Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e085b921ad1c17fbd4a5dc3ee4ed5b2c51895b5e/games/current/board.289.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e085b921ad1c17fbd4a5dc3ee4ed5b2c51895b5e/games/current/board.289.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 9,
+    "roll": 5
   },
   {
     "username": "lukew3",
     "issue": 290,
-    "message": "moved a black piece from position 3 to position 6   ",
     "time": "2020-12-10T21:46:32.672Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3f9d4bc6ab813ef829e9aff7b384f9215f8467fe/games/current/board.290.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3f9d4bc6ab813ef829e9aff7b384f9215f8467fe/games/current/board.290.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
   },
   {
     "username": "1ethanhansen",
     "issue": 291,
-    "message": "moved a white piece from position 9 to position 11   ",
     "time": "2020-12-10T21:48:08.638Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8dc1d83cc961ea81612a43c25ff7a38ad48adf81/games/current/board.291.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8dc1d83cc961ea81612a43c25ff7a38ad48adf81/games/current/board.291.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 11,
+    "roll": 2
   },
   {
     "username": "maximilianschmelzer",
     "issue": 292,
-    "message": "moved a black piece from position 8 to position 10   ",
     "time": "2020-12-11T10:15:46.305Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/bff6a5044be6a6980ae36bd3da87b2fe24c255f3/games/current/board.292.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/bff6a5044be6a6980ae36bd3da87b2fe24c255f3/games/current/board.292.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 10,
+    "roll": 2
   },
   {
     "username": "1ethanhansen",
     "issue": 293,
-    "message": "moved a white piece from position 3 to position 4  — claimed a rosette :rosette: ",
     "time": "2020-12-11T16:37:45.155Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/823d1abe9eb191553f45aade24fa52f3ead27c38/games/current/board.293.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/823d1abe9eb191553f45aade24fa52f3ead27c38/games/current/board.293.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 4,
+    "roll": 1
   },
   {
     "username": "1ethanhansen",
     "issue": 294,
-    "message": "moved a white piece from position 11 to position 14  — claimed a rosette :rosette: ",
     "time": "2020-12-11T16:38:16.865Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7d0b1f831d4c0f77515b6cb122923b7a81456449/games/current/board.294.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7d0b1f831d4c0f77515b6cb122923b7a81456449/games/current/board.294.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 14,
+    "roll": 3
   },
   {
     "username": "1ethanhansen",
     "issue": 295,
-    "message": "moved a white piece from position 4 to position 7   ",
     "time": "2020-12-11T16:39:04.746Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3fe691a88b9aaf65c4532929803293c718fde1d9/games/current/board.295.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3fe691a88b9aaf65c4532929803293c718fde1d9/games/current/board.295.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 7,
+    "roll": 3
   },
   {
     "username": "rossjrw",
     "issue": 296,
-    "message": "moved a black piece from position 6 to position 8  — claimed a rosette :rosette: ",
     "time": "2020-12-12T21:09:18.626Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e401c764be86d58bfc168f4a386c6cf802e123cc/games/current/board.296.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e401c764be86d58bfc168f4a386c6cf802e123cc/games/current/board.296.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 8,
+    "roll": 2
   },
   {
     "username": "rossjrw",
     "issue": 297,
-    "message": "moved a black piece from position 10 to position 12   ",
     "time": "2020-12-12T21:09:49.295Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/fe410bd85e05097d79bc3e4545e269df09eff706/games/current/board.297.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/fe410bd85e05097d79bc3e4545e269df09eff706/games/current/board.297.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 12,
+    "roll": 2
   },
   {
     "username": "1ethanhansen",
     "issue": 298,
-    "message": "moved a white piece from position 7 to position 9   ",
     "time": "2020-12-12T23:55:11.843Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2bd88bf26ddf9662cd886226df1ee940ac83e1fc/games/current/board.298.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2bd88bf26ddf9662cd886226df1ee940ac83e1fc/games/current/board.298.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 9,
+    "roll": 2
   },
   {
     "username": "mblemberg",
     "issue": 299,
-    "message": "moved a black piece from position 12 to position 14  — claimed a rosette :rosette: ",
     "time": "2020-12-13T05:52:25.903Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/207f76427e569611dea0734effb34fb07319a0d3/games/current/board.299.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/207f76427e569611dea0734effb34fb07319a0d3/games/current/board.299.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 12,
+    "toPosition": 14,
+    "roll": 2
   },
   {
     "username": "shaplykon",
     "issue": 300,
-    "message": "moved a black piece onto the board to position 3   ",
     "time": "2020-12-15T16:23:11.570Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/9b31b60b2096e7941d4c46c23861f526eb114260/games/current/board.300.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/9b31b60b2096e7941d4c46c23861f526eb114260/games/current/board.300.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   },
   {
     "username": "1ethanhansen",
     "issue": 301,
-    "message": "moved a white piece from position 9 to position 11   ",
     "time": "2020-12-15T16:35:01.468Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2d53c800cf3ae91999cc733da9be92056afd7729/games/current/board.301.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2d53c800cf3ae91999cc733da9be92056afd7729/games/current/board.301.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 11,
+    "roll": 2
   },
   {
     "username": "rossjrw",
     "issue": 302,
-    "message": "moved a black piece from position 8 to position 9   ",
     "time": "2020-12-16T10:27:14.353Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/68e6070ca51fe8d292fde75a664ff7fdf0bf2afb/games/current/board.302.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/68e6070ca51fe8d292fde75a664ff7fdf0bf2afb/games/current/board.302.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 9,
+    "roll": 1
   },
   {
     "username": "1ethanhansen",
     "issue": 303,
-    "message": "moved a white piece from position 11 to position 13   ",
     "time": "2020-12-16T16:44:46.173Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/297d62bc5a928f1282a250abc7d2fe27c0bd61e8/games/current/board.303.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/297d62bc5a928f1282a250abc7d2fe27c0bd61e8/games/current/board.303.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 13,
+    "roll": 2
   },
   {
     "username": "jtrent238",
     "issue": 304,
-    "message": "moved a black piece onto the board to position 1   ",
     "time": "2020-12-19T01:53:51.116Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/764ba69ca3f0a07e415f36d814a6d52a7d694e3e/games/current/board.304.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/764ba69ca3f0a07e415f36d814a6d52a7d694e3e/games/current/board.304.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
   },
   {
     "username": "1ethanhansen",
     "issue": 305,
-    "message": "ascended a white piece from position 14 :rocket:   ",
     "time": "2020-12-19T02:24:35.045Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3604e4af9e4962c16d621ce2612c4ef7116c7fc9/games/current/board.305.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3604e4af9e4962c16d621ce2612c4ef7116c7fc9/games/current/board.305.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
+    "roll": 1
   },
   {
     "username": "HeinKhantZaw",
     "issue": 306,
-    "message": "moved a black piece from position 4 to position 5   ",
     "time": "2020-12-19T11:44:05.916Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1c0ee46451ae0a1d7a26f50ce415c488c760e753/games/current/board.306.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1c0ee46451ae0a1d7a26f50ce415c488c760e753/games/current/board.306.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
+    "roll": 1
   },
   {
     "username": "1ethanhansen",
     "issue": 310,
-    "message": "moved a white piece from position 1 to position 4  — claimed a rosette :rosette: ",
     "time": "2020-12-20T02:30:11.121Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/65741ccc7bef535f9dae3ce1726cf250fa92e958/games/current/board.310.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/65741ccc7bef535f9dae3ce1726cf250fa92e958/games/current/board.310.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 4,
+    "roll": 3
   },
   {
     "username": "1ethanhansen",
     "issue": 311,
-    "message": "moved a white piece from position 4 to position 7   ",
     "time": "2020-12-20T02:32:50.174Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6dcf970993e1e66c08fa6cec2b6de773048dfe04/games/current/board.311.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6dcf970993e1e66c08fa6cec2b6de773048dfe04/games/current/board.311.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 7,
+    "roll": 3
   },
   {
     "username": "shpatrickguo",
     "issue": 312,
-    "message": "moved a black piece from position 1 to position 4  — claimed a rosette :rosette: ",
     "time": "2020-12-20T06:20:55.616Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/9dbf33253cccf795237cf9e48a9c9d66029ba817/games/current/board.312.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/9dbf33253cccf795237cf9e48a9c9d66029ba817/games/current/board.312.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 4,
+    "roll": 3
   },
   {
     "username": "shpatrickguo",
     "issue": 313,
-    "message": "moved a black piece from position 4 to position 7 — captured a white piece :crossed_swords:  ",
     "time": "2020-12-21T02:40:47.598Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/be8bb59da0cbf5bf7efeaa0a703a50840c47614a/games/current/board.313.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/be8bb59da0cbf5bf7efeaa0a703a50840c47614a/games/current/board.313.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 7,
+    "roll": 3
   },
   {
     "username": "1ethanhansen",
     "issue": 314,
-    "message": "moved a white piece onto the board to position 1   ",
     "time": "2020-12-21T02:50:53.814Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/86bc97c49e2824adba9b665b3187101fb6a06614/games/current/board.314.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/86bc97c49e2824adba9b665b3187101fb6a06614/games/current/board.314.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
   },
   {
     "username": "quantumporium",
     "issue": 315,
-    "message": "moved a black piece from position 2 to position 4  — claimed a rosette :rosette: ",
     "time": "2020-12-21T17:14:33.102Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6cf7dfbb5b9a96211ce4c32bf23b3ae7868e0fb4/games/current/board.315.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6cf7dfbb5b9a96211ce4c32bf23b3ae7868e0fb4/games/current/board.315.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
   },
   {
     "username": "shpatrickguo",
     "issue": 316,
-    "message": "moved a black piece from position 5 to position 8  — claimed a rosette :rosette: ",
     "time": "2020-12-21T18:21:23.354Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/39a2f86c04d12ddb8a6f8233d1cda3374d8f22dd/games/current/board.316.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/39a2f86c04d12ddb8a6f8233d1cda3374d8f22dd/games/current/board.316.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 8,
+    "roll": 3
   },
   {
     "username": "shpatrickguo",
     "issue": 317,
-    "message": "moved a black piece from position 9 to position 12   ",
     "time": "2020-12-22T02:47:56.965Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/01013e71140862491b7551e39129e35b6144235b/games/current/board.317.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/01013e71140862491b7551e39129e35b6144235b/games/current/board.317.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 12,
+    "roll": 3
   },
   {
     "username": "1ethanhansen",
     "issue": 318,
-    "message": "moved a white piece from position 1 to position 3   ",
     "time": "2020-12-23T01:06:39.874Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/fccea7e62b03e07b4a349e959bdee40752f51bfc/games/current/board.318.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/fccea7e62b03e07b4a349e959bdee40752f51bfc/games/current/board.318.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 3,
+    "roll": 2
   },
   {
     "username": "shpatrickguo",
     "issue": 319,
-    "message": "ascended a black piece from position 14 :rocket:   ",
     "time": "2020-12-23T01:31:38.306Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2e76a25246e0324db4b3cef9e304fe4eeb188c40/games/current/board.319.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2e76a25246e0324db4b3cef9e304fe4eeb188c40/games/current/board.319.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
+    "roll": 1
   },
   {
     "username": "1ethanhansen",
     "issue": 320,
-    "message": "moved a white piece onto the board to position 2   ",
     "time": "2020-12-23T01:46:28.239Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ee53b7e89150fa845366635fc68791386a5e47f2/games/current/board.320.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ee53b7e89150fa845366635fc68791386a5e47f2/games/current/board.320.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   },
   {
     "username": "shpatrickguo",
     "issue": 321,
-    "message": "ascended a black piece from position 12 :rocket:   ",
     "time": "2020-12-23T01:54:30.627Z",
     "team": "b",
     "action": "move",
-    "boardImage": null
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 12,
+    "toPosition": 15,
+    "roll": 3
   },
   {
     "username": "1ethanhansen",
     "issue": 322,
-    "message": "moved a white piece onto the board to position 4  — claimed a rosette :rosette: ",
     "time": "2020-12-23T02:01:49.552Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/34006269248188877ac170c28128079eae77f44e/games/current/board.322.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/34006269248188877ac170c28128079eae77f44e/games/current/board.322.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 4,
+    "roll": 4
   },
   {
     "username": "1ethanhansen",
     "issue": 322,
-    "message": "The white team rolled a 0 and their turn was automatically passed",
     "time": "2020-12-23T02:01:49.552Z",
     "team": "w",
     "action": "pass",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b8070036aac00c969901a3770558d7fe6742bf47/games/current/board.322.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b8070036aac00c969901a3770558d7fe6742bf47/games/current/board.322.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   },
   {
     "username": "shpatrickguo",
     "issue": 323,
-    "message": "moved a black piece from position 8 to position 11   ",
     "time": "2020-12-23T22:53:44.633Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d53fef8d6638e9b0866299e6aff7ef3208846425/games/current/board.323.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d53fef8d6638e9b0866299e6aff7ef3208846425/games/current/board.323.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 11,
+    "roll": 3
   },
   {
     "username": "1ethanhansen",
     "issue": 324,
-    "message": "moved a white piece from position 4 to position 7 — captured a black piece :crossed_swords:  ",
     "time": "2020-12-23T23:13:26.218Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0be05ee4b6092afe5fafe72b603c98de1645120e/games/current/board.324.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0be05ee4b6092afe5fafe72b603c98de1645120e/games/current/board.324.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 7,
+    "roll": 3
   },
   {
     "username": "shpatrickguo",
     "issue": 325,
-    "message": "moved a black piece from position 11 to position 13   ",
     "time": "2020-12-24T05:42:27.156Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/24e92a22cb97e2fc1a7315236e5255c6f5289baf/games/current/board.325.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/24e92a22cb97e2fc1a7315236e5255c6f5289baf/games/current/board.325.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 13,
+    "roll": 2
   },
   {
     "username": "1ethanhansen",
     "issue": 326,
-    "message": "moved a white piece from position 3 to position 6   ",
     "time": "2020-12-24T05:48:48.697Z",
     "team": "w",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6acacf7025a4190b3d5704e2f8486b973e54660b/games/current/board.326.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6acacf7025a4190b3d5704e2f8486b973e54660b/games/current/board.326.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
   },
   {
     "username": "kristianrose",
     "issue": 327,
-    "message": "moved a black piece from position 3 to position 6 — captured a white piece :crossed_swords:  ",
     "time": "2020-12-24T10:34:29.838Z",
     "team": "b",
     "action": "move",
-    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3d17b2e87da20ec74aef464d7688548a855b7841/games/current/board.327.svg"
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3d17b2e87da20ec74aef464d7688548a855b7841/games/current/board.327.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
   },
   {
     "username": "Baptiste-Martinet",
     "issue": 331,
-    "message": "moved a white piece onto the board to position 3   ",
     "time": "2020-12-24T14:26:17.406Z",
     "team": "w",
     "action": "move",
-    "boardImage": null
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   }
 ]
