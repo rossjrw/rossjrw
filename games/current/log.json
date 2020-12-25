@@ -984,5 +984,34 @@
     "fromPosition": 7,
     "toPosition": 3,
     "roll": 4
+  },
+  {
+    "username": "Scan0r",
+    "issue": 341,
+    "time": "2020-12-25T20:50:58.286Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4cf5be4b90db66068fa87cd8e71750043ccb06b7/games/current/board.341.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 3,
+    "roll": 1
+  },
+  {
+    "username": "Scan0r",
+    "issue": 341,
+    "time": "2020-12-25T20:50:58.286Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
