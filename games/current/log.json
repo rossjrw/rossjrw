@@ -1037,7 +1037,7 @@
     "time": "2020-12-27T10:49:19.402Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/dfcb597e09114ddc0f2332d28e4f89876dec33f4/games/current/board.343.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -1047,5 +1047,22 @@
     "fromPosition": 6,
     "toPosition": 2,
     "roll": 4
+  },
+  {
+    "username": "bejoistic",
+    "issue": 344,
+    "time": "2020-12-27T11:42:43.608Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 15,
+    "toPosition": 2,
+    "roll": 13
   }
 ]
