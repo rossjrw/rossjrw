@@ -154,9 +154,9 @@ export async function makeMove (
     log.addToLog(
       "move",
       state.currentPlayer,
+      state.diceResult,
       fromPosition,
       toPosition,
-      state.diceResult,
       events,
     )
 
