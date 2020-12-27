@@ -1054,7 +1054,7 @@
     "time": "2020-12-27T11:42:43.608Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d1ccd8a08a32d35535e38f506f602e2deb39c615/games/current/board.344.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1064,5 +1064,22 @@
     "fromPosition": 15,
     "toPosition": 2,
     "roll": 13
+  },
+  {
+    "username": "racheloveyou",
+    "issue": 345,
+    "time": "2020-12-27T11:44:34.854Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 3,
+    "roll": 6
   }
 ]
