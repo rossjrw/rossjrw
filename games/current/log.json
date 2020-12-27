@@ -1020,7 +1020,7 @@
     "time": "2020-12-25T22:08:42.769Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/aa0698102588ccafc24aeaad604f6f68e1ddf218/games/current/board.342.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1030,5 +1030,22 @@
     "fromPosition": 6,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "sampreets3",
+    "issue": 343,
+    "time": "2020-12-27T10:49:19.402Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 2,
+    "roll": 4
   }
 ]
