@@ -26369,7 +26369,7 @@ function makeMove(state, move, gamePath, octokit, context, log) {
                         state: "closed",
                     });
                     // Update the log with this action
-                    log.addToLog("move", state.currentPlayer, fromPosition, toPosition, state.diceResult, events);
+                    log.addToLog("move", state.currentPlayer, state.diceResult, fromPosition, toPosition, events);
                     if (!events.gameWon) return [3 /*break*/, 4];
                     return [4 /*yield*/, octokit.issues.createComment({
                             owner: context.repo.owner,
