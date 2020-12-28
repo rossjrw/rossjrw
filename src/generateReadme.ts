@@ -112,7 +112,7 @@ export async function generateReadme (
             `,
             move: compress`
               ${logItem.events?.ascensionHappened ? "ascended" : "moved"}
-              a ${teamName(state.currentPlayer)} piece
+              a ${teamName(logItem.team)} piece
               ${logItem.fromPosition === 0 ?
                 "onto the board" : `from position ${logItem.fromPosition}`}
               ${logItem.events?.ascensionHappened ?
@@ -120,7 +120,7 @@ export async function generateReadme (
               ${
                 logItem.events?.captureHappened ? compress`
                   — captured a
-                  ${teamName(getOppositeTeam(state.currentPlayer))} piece
+                  ${teamName(getOppositeTeam(logItem.team))} piece
                   :crossed_swords:
                 ` : ""
               }
