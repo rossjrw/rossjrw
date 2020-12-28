@@ -879,9 +879,9 @@
       "ascensionHappened": false,
       "gameWon": false
     },
-    "fromPosition": 8,
-    "toPosition": 2,
-    "roll": 6
+    "toPosition": 8,
+    "roll": 2,
+    "fromPosition": 6
   },
   {
     "username": "rossjrw",
@@ -896,9 +896,9 @@
       "ascensionHappened": false,
       "gameWon": false
     },
-    "fromPosition": 3,
     "toPosition": 3,
-    "roll": 0
+    "roll": 3,
+    "fromPosition": 0
   },
   {
     "username": "1ethanhansen",
@@ -913,9 +913,9 @@
       "ascensionHappened": false,
       "gameWon": false
     },
-    "fromPosition": 14,
-    "toPosition": 1,
-    "roll": 13
+    "toPosition": 14,
+    "roll": 1,
+    "fromPosition": 13
   },
   {
     "username": "1ethanhansen",
@@ -930,9 +930,9 @@
       "ascensionHappened": false,
       "gameWon": false
     },
-    "fromPosition": 10,
-    "toPosition": 3,
-    "roll": 7
+    "toPosition": 10,
+    "roll": 3,
+    "fromPosition": 7
   },
   {
     "username": "rossjrw",
@@ -947,9 +947,9 @@
       "ascensionHappened": false,
       "gameWon": false
     },
-    "fromPosition": 10,
-    "toPosition": 2,
-    "roll": 8
+    "toPosition": 10,
+    "roll": 2,
+    "fromPosition": 8
   },
   {
     "username": "1ethanhansen",
@@ -964,9 +964,9 @@
       "ascensionHappened": false,
       "gameWon": false
     },
-    "fromPosition": 1,
     "toPosition": 1,
-    "roll": 0
+    "roll": 1,
+    "fromPosition": 0
   },
   {
     "username": "shpatrickguo",
@@ -981,9 +981,9 @@
       "ascensionHappened": false,
       "gameWon": false
     },
-    "fromPosition": 7,
-    "toPosition": 3,
-    "roll": 4
+    "toPosition": 7,
+    "roll": 3,
+    "fromPosition": 4
   },
   {
     "username": "Scan0r",
@@ -998,9 +998,9 @@
       "ascensionHappened": false,
       "gameWon": false
     },
-    "fromPosition": 4,
-    "toPosition": 3,
-    "roll": 1
+    "toPosition": 4,
+    "roll": 3,
+    "fromPosition": 1
   },
   {
     "username": "Scan0r",
@@ -1010,9 +1010,9 @@
     "action": "pass",
     "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/814d25e48a4a7d09bad9de54dafb4ce2164cd99a/games/current/board.341.svg",
     "events": null,
-    "fromPosition": null,
     "toPosition": null,
-    "roll": 0
+    "roll": null,
+    "fromPosition": 0
   },
   {
     "username": "shpatrickguo",
@@ -1027,9 +1027,9 @@
       "ascensionHappened": false,
       "gameWon": false
     },
-    "fromPosition": 6,
-    "toPosition": 3,
-    "roll": 3
+    "toPosition": 6,
+    "roll": 3,
+    "fromPosition": 3
   },
   {
     "username": "sampreets3",
@@ -1044,9 +1044,9 @@
       "ascensionHappened": false,
       "gameWon": false
     },
-    "fromPosition": 6,
-    "toPosition": 2,
-    "roll": 4
+    "toPosition": 6,
+    "roll": 2,
+    "fromPosition": 4
   },
   {
     "username": "bejoistic",
@@ -1061,9 +1061,9 @@
       "ascensionHappened": true,
       "gameWon": false
     },
-    "fromPosition": 15,
-    "toPosition": 2,
-    "roll": 13
+    "toPosition": 15,
+    "roll": 2,
+    "fromPosition": 13
   },
   {
     "username": "racheloveyou",
@@ -1078,9 +1078,9 @@
       "ascensionHappened": false,
       "gameWon": false
     },
-    "fromPosition": 9,
-    "toPosition": 3,
-    "roll": 6
+    "toPosition": 9,
+    "roll": 3,
+    "fromPosition": 6
   },
   {
     "username": "bejoistic",
@@ -1095,9 +1095,9 @@
       "ascensionHappened": false,
       "gameWon": false
     },
-    "fromPosition": 9,
-    "toPosition": 2,
-    "roll": 7
+    "toPosition": 9,
+    "roll": 2,
+    "fromPosition": 7
   },
   {
     "username": "1ethanhansen",
@@ -1112,9 +1112,9 @@
       "ascensionHappened": false,
       "gameWon": false
     },
-    "fromPosition": 6,
-    "toPosition": 3,
-    "roll": 3
+    "toPosition": 6,
+    "roll": 3,
+    "fromPosition": 3
   },
   {
     "username": "shpatrickguo",
@@ -1129,9 +1129,9 @@
       "ascensionHappened": false,
       "gameWon": false
     },
-    "fromPosition": 12,
-    "toPosition": 2,
-    "roll": 10
+    "toPosition": 12,
+    "roll": 2,
+    "fromPosition": 10
   },
   {
     "username": "1ethanhansen",
@@ -1146,9 +1146,9 @@
       "ascensionHappened": false,
       "gameWon": false
     },
-    "fromPosition": 1,
     "toPosition": 1,
-    "roll": 0
+    "roll": 1,
+    "fromPosition": 0
   },
   {
     "username": "shpatrickguo",
@@ -1163,9 +1163,9 @@
       "ascensionHappened": true,
       "gameWon": false
     },
-    "fromPosition": 15,
-    "toPosition": 3,
-    "roll": 12
+    "toPosition": 15,
+    "roll": 3,
+    "fromPosition": 12
   },
   {
     "username": "1ethanhansen",
@@ -1180,9 +1180,9 @@
       "ascensionHappened": false,
       "gameWon": false
     },
-    "fromPosition": 9,
-    "toPosition": 3,
-    "roll": 6
+    "toPosition": 9,
+    "roll": 3,
+    "fromPosition": 6
   },
   {
     "username": "rossjrw",
@@ -1197,9 +1197,9 @@
       "ascensionHappened": false,
       "gameWon": false
     },
-    "fromPosition": 2,
     "toPosition": 2,
-    "roll": 0
+    "roll": 2,
+    "fromPosition": 0
   },
   {
     "username": "1ethanhansen",
@@ -1214,9 +1214,9 @@
       "ascensionHappened": false,
       "gameWon": false
     },
-    "fromPosition": 4,
     "toPosition": 4,
-    "roll": 0
+    "roll": 4,
+    "fromPosition": 0
   },
   {
     "username": "1ethanhansen",
@@ -1231,8 +1231,8 @@
       "ascensionHappened": false,
       "gameWon": false
     },
-    "fromPosition": 12,
-    "toPosition": 3,
-    "roll": 9
+    "toPosition": 12,
+    "roll": 3,
+    "fromPosition": 9
   }
 ]
