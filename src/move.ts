@@ -193,7 +193,7 @@ export async function makeMove (
     // Replace the contents of the current game state file with the new state
     changes.push({
       path: `${gamePath}/state.json`,
-      content: JSON.stringify(newState),
+      content: JSON.stringify(newState, null, 2),
     })
   }
 

@@ -53,7 +53,7 @@ export async function resetGame (
   // Save the new state
   changes.push({
     path: `${gamePath}/state.json`,
-    content: JSON.stringify(newState),
+    content: JSON.stringify(newState, null, 2),
   })
 
   // Wipe the log for the new game
