@@ -26399,7 +26399,7 @@ function makeMove(state, move, gamePath, octokit, context, log) {
                     // Replace the contents of the current game state file with the new state
                     changes.push({
                         path: gamePath + "/state.json",
-                        content: JSON.stringify(newState),
+                        content: JSON.stringify(newState, null, 2),
                     });
                     _f.label = 8;
                 case 8: return [2 /*return*/, changes];
@@ -26461,7 +26461,7 @@ function resetGame(gamePath, oldGamePath, octokit, context, log) {
                     // Save the new state
                     changes.push({
                         path: gamePath + "/state.json",
-                        content: JSON.stringify(newState),
+                        content: JSON.stringify(newState, null, 2),
                     });
                     // Wipe the log for the new game
                     log.internalLog = [];
