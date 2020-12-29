@@ -1268,5 +1268,34 @@
     "fromPosition": 0,
     "toPosition": 2,
     "roll": 2
+  },
+  {
+    "username": "HAUDRAUFHAUN",
+    "issue": 357,
+    "time": "2020-12-29T18:07:53.958Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/03f32a1a5e9babff3dbdb1498160f22f8b99e280/games/current/board.357.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 12,
+    "toPosition": 15,
+    "roll": 3
+  },
+  {
+    "username": "HAUDRAUFHAUN",
+    "issue": 357,
+    "time": "2020-12-29T18:07:53.958Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
