@@ -1418,7 +1418,7 @@
     "time": "2020-12-31T19:38:21.701Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/9f758d266c2dff846120f62fb71e8191c35c3e82/games/current/board.364.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1428,5 +1428,22 @@
     "fromPosition": 7,
     "toPosition": 9,
     "roll": 2
+  },
+  {
+    "username": "shpatrickguo",
+    "issue": 365,
+    "time": "2020-12-31T22:51:21.841Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 5,
+    "roll": 3
   }
 ]
