@@ -1726,7 +1726,7 @@
     "time": "2021-01-04T04:51:03.506Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/26587e5cd1197d41569f7ad682937f634365a930/games/current/board.380.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1735,6 +1735,23 @@
     },
     "fromPosition": 14,
     "toPosition": 15,
+    "roll": 1
+  },
+  {
+    "username": "pedromlsreis",
+    "issue": 381,
+    "time": "2021-01-04T09:34:05.164Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 3,
     "roll": 1
   }
 ]
