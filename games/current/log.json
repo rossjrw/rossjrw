@@ -1998,7 +1998,7 @@
     "time": "2021-01-08T02:21:59.798Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ba3c9c8205a70212eaa7cf4beffe3c08374c9b4a/games/current/board.396.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2008,5 +2008,22 @@
     "fromPosition": 0,
     "toPosition": 2,
     "roll": 2
+  },
+  {
+    "username": "deep5050",
+    "issue": 397,
+    "time": "2021-01-08T06:38:11.332Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 8,
+    "roll": 3
   }
 ]
