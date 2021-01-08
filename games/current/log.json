@@ -2015,7 +2015,7 @@
     "time": "2021-01-08T06:38:11.332Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/911c5df8b69fe4b8040fd470b71a2f3a5cad2e87/games/current/board.397.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -2024,6 +2024,23 @@
     },
     "fromPosition": 5,
     "toPosition": 8,
+    "roll": 3
+  },
+  {
+    "username": "jeelpatel1612",
+    "issue": 398,
+    "time": "2021-01-08T17:05:27.316Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 7,
     "roll": 3
   }
 ]
