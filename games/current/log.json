@@ -2209,7 +2209,7 @@
     "time": "2021-01-09T02:55:58.662Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/afd8f1aa49aa864461e6842a6d1ef3ffe988e6b1/games/current/board.409.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2218,6 +2218,23 @@
     },
     "fromPosition": 8,
     "toPosition": 9,
+    "roll": 1
+  },
+  {
+    "username": "cosmoglint",
+    "issue": 410,
+    "time": "2021-01-09T10:34:36.604Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
     "roll": 1
   }
 ]
