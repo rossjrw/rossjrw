@@ -5,7 +5,7 @@ We're playing
 
 <p align="center">
   <b>It's the
-  :white_circle:white
+  :black_circle:black
   team's turn.</b>
 </p>
 
@@ -17,19 +17,18 @@ If it's not your turn, check back later, or
 [ask a friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)
 to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-:white_circle:white
+:black_circle:black
 team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.412.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.419.svg"></p>
 
-  **:white_circle:White team:**
+  **:black_circle:Black team:**
   You rolled a 2!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a piece from tile 5 to tile 7    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%405-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [Ascend a piece from tile 13    (:rocket:) ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%4013-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a piece from tile 12 to tile 14 (:rosette:)   ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%4012-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -48,7 +47,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/shpatrickguo">@shpatrickguo</a></b> (22)<br><b><a href="https://github.com/rossjrw">@rossjrw</a></b> (12)<br><b><a href="https://github.com/bejoistic">@bejoistic</a></b> (4)<br><b><a href="https://github.com/BaptisteMartinet">@BaptisteMartinet</a></b> (4)<br><b><a href="https://github.com/willdoescode">@willdoescode</a></b> (4)<br><b><a href="https://github.com/KhanShaheb34">@KhanShaheb34</a></b> (2)<br><b><a href="https://github.com/pedromlsreis">@pedromlsreis</a></b> (2)<br><b><a href="https://github.com/tassiaaccioly">@tassiaaccioly</a></b> (2)<br><b><a href="https://github.com/lukew3">@lukew3</a></b> (1)<br><b><a href="https://github.com/maximilianschmelzer">@maximilianschmelzer</a></b> (1)<br><b><a href="https://github.com/mblemberg">@mblemberg</a></b> (1)<br><b><a href="https://github.com/shaplykon">@shaplykon</a></b> (1)<br><b><a href="https://github.com/jtrent238">@jtrent238</a></b> (1)<br><b><a href="https://github.com/HeinKhantZaw">@HeinKhantZaw</a></b> (1)<br><b><a href="https://github.com/quantumporium">@quantumporium</a></b> (1)<br><b><a href="https://github.com/kristianrose">@kristianrose</a></b> (1)<br><b><a href="https://github.com/ammongit">@ammongit</a></b> (1)<br><b><a href="https://github.com/deep5050">@deep5050</a></b> (1)<br><b><a href="https://github.com/jeelpatel1612">@jeelpatel1612</a></b> (1)<br><b><a href="https://github.com/cosmoglint">@cosmoglint</a></b> (1)</td>
-        <td><b><a href="https://github.com/1ethanhansen">@1ethanhansen</a></b> (57)<br><b><a href="https://github.com/IRHM">@IRHM</a></b> (1)<br><b><a href="https://github.com/Baptiste-Martinet">@Baptiste-Martinet</a></b> (1)<br><b><a href="https://github.com/Scan0r">@Scan0r</a></b> (1)<br><b><a href="https://github.com/sampreets3">@sampreets3</a></b> (1)<br><b><a href="https://github.com/racheloveyou">@racheloveyou</a></b> (1)<br><b><a href="https://github.com/HAUDRAUFHAUN">@HAUDRAUFHAUN</a></b> (1)</td>
+        <td><b><a href="https://github.com/1ethanhansen">@1ethanhansen</a></b> (58)<br><b><a href="https://github.com/IRHM">@IRHM</a></b> (1)<br><b><a href="https://github.com/Baptiste-Martinet">@Baptiste-Martinet</a></b> (1)<br><b><a href="https://github.com/Scan0r">@Scan0r</a></b> (1)<br><b><a href="https://github.com/sampreets3">@sampreets3</a></b> (1)<br><b><a href="https://github.com/racheloveyou">@racheloveyou</a></b> (1)<br><b><a href="https://github.com/HAUDRAUFHAUN">@HAUDRAUFHAUN</a></b> (1)</td>
       </tr>
     </tbody>
   </table>
@@ -192,7 +191,8 @@ What would you like to do?
   | 9th Jan 2021 02:55 | **132** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** moved a white piece from position 8 to position 9    | [#409](https://github.com/rossjrw/rossjrw/issues/409) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/afd8f1aa49aa864461e6842a6d1ef3ffe988e6b1/games/current/board.409.svg) |
   | 9th Jan 2021 10:34 | **133** | :black_circle: **[@cosmoglint](https://github.com/cosmoglint)** ascended a black piece from position 14 :rocket:    | [#410](https://github.com/rossjrw/rossjrw/issues/410) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/debe926058e4b73a836df380d3056d58a4f1007e/games/current/board.410.svg) |
   | 9th Jan 2021 19:55 | **134** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** moved a white piece from position 9 to position 13    | [#411](https://github.com/rossjrw/rossjrw/issues/411) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/b15f486c6a1132eadea83f7431d8479edca4c3ea/games/current/board.411.svg) |
-  | 9th Jan 2021 22:59 | **135** | :black_circle: **[@willdoescode](https://github.com/willdoescode)** moved a black piece from position 11 to position 12    | [#412](https://github.com/rossjrw/rossjrw/issues/412) |  |
+  | 9th Jan 2021 22:59 | **135** | :black_circle: **[@willdoescode](https://github.com/willdoescode)** moved a black piece from position 11 to position 12    | [#412](https://github.com/rossjrw/rossjrw/issues/412) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/88bc838523446027bbada334ad69fb4aed079be0/games/current/board.412.svg) |
+  | 9th Jan 2021 23:02 | **136** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** ascended a white piece from position 13 :rocket:    | [#419](https://github.com/rossjrw/rossjrw/issues/419) |  |
 
 </details>
 
