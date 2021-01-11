@@ -1,11 +1,11 @@
 Welcome to my Github profile!
 We're playing
 [The Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur).
-**Game #2 is in progress,** but you can join!
+**Game #3 is in progress,** but you can join!
 
 <p align="center">
   <b>It's the
-  :black_circle:black
+  :white_circle:white
   team's turn.</b>
 </p>
 
@@ -17,12 +17,12 @@ If it's not your turn, check back later, or
 [ask a friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)
 to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-:black_circle:black
+:white_circle:white
 team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.425.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.426.svg"></p>
 
-  **:black_circle:Black team:**
+  **:white_circle:White team:**
   You rolled a 1!
 What would you like to do?
 
@@ -32,7 +32,7 @@ What would you like to do?
 
 -----
 
-<details><summary>Game #2 so far</summary>
+<details><summary>Game #3 so far</summary>
 
 ## Who's on each team?
 
@@ -46,7 +46,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td><b><a href="https://github.com/BaptisteMartinet">@BaptisteMartinet</a></b> (1)</td>
+        <td><b><a href="https://github.com/BaptisteMartinet">@BaptisteMartinet</a></b> (2)</td>
         <td></td>
       </tr>
     </tbody>
@@ -56,7 +56,8 @@ What would you like to do?
 
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
-  | 11th Jan 2021 18:53 | **0** | :black_circle: **[@BaptisteMartinet](https://github.com/BaptisteMartinet)** started a new game | [#425](https://github.com/rossjrw/rossjrw/issues/425) |  |
+  | 11th Jan 2021 18:53 | **0** | :black_circle: **[@BaptisteMartinet](https://github.com/BaptisteMartinet)** started a new game | [#425](https://github.com/rossjrw/rossjrw/issues/425) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/2e4658022b4eb7f8104666e9a88e8250643c9383/games/current/board.425.svg) |
+  | 11th Jan 2021 18:54 | **1** | :black_circle: **[@BaptisteMartinet](https://github.com/BaptisteMartinet)** moved a black piece onto the board to position 1    | [#426](https://github.com/rossjrw/rossjrw/issues/426) |  |
 
 </details>
 
@@ -65,6 +66,7 @@ What would you like to do?
 ## Previous games
 
 1. A game was started on 30th Jul 2020 by **[@rossjrw](https://github.com/rossjrw)** and ended on 4th Dec 2020 in a win for the :white_circle:white team. 64 players played 166 moves across 4 months and 5 days. The :black_circle:black team captured 9 white pieces and claimed 12 rosettes. The :white_circle:white team captured 10 black pieces and claimed 18 rosettes. The MVP of the winning team was by **[@1ethanhansen](https://github.com/1ethanhansen)**, who played 48 moves. The winning move was made by **[@qbtl](https://github.com/qbtl)** ([#269](https://github.com/rossjrw/rossjrw/issues/269)).
+1. A game was started on 4th Dec 2020 by **[@1ethanhansen](https://github.com/1ethanhansen)** and ended on 11th Jan 2021 in a win for the :black_circle:black team. 27 players played 145 moves across 1 month and 1 week. The :black_circle:black team captured 7 white pieces and claimed 16 rosettes. The :white_circle:white team captured 6 black pieces and claimed 14 rosettes. The MVP of the winning team was by **[@shpatrickguo](https://github.com/shpatrickguo)**, who played 26 moves. The winning move was made by **[@shpatrickguo](https://github.com/shpatrickguo)** ([#424](https://github.com/rossjrw/rossjrw/issues/424)).
 
 </details>
 
