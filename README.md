@@ -5,7 +5,7 @@ We're playing
 
 <p align="center">
   <b>It's the
-  :white_circle:white
+  :black_circle:black
   team's turn.</b>
 </p>
 
@@ -17,18 +17,18 @@ If it's not your turn, check back later, or
 [ask a friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)
 to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-:white_circle:white
+:black_circle:black
 team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.426.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.427.svg"></p>
 
-  **:white_circle:White team:**
+  **:black_circle:Black team:**
   You rolled a 1!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a new piece to tile 1    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a piece from tile 1 to tile 2    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%401-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -47,7 +47,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/BaptisteMartinet">@BaptisteMartinet</a></b> (2)</td>
-        <td></td>
+        <td><b><a href="https://github.com/shpatrickguo">@shpatrickguo</a></b> (1)</td>
       </tr>
     </tbody>
   </table>
@@ -57,7 +57,8 @@ What would you like to do?
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
   | 11th Jan 2021 18:53 | **0** | :black_circle: **[@BaptisteMartinet](https://github.com/BaptisteMartinet)** started a new game | [#425](https://github.com/rossjrw/rossjrw/issues/425) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/2e4658022b4eb7f8104666e9a88e8250643c9383/games/current/board.425.svg) |
-  | 11th Jan 2021 18:54 | **1** | :black_circle: **[@BaptisteMartinet](https://github.com/BaptisteMartinet)** moved a black piece onto the board to position 1    | [#426](https://github.com/rossjrw/rossjrw/issues/426) |  |
+  | 11th Jan 2021 18:54 | **1** | :black_circle: **[@BaptisteMartinet](https://github.com/BaptisteMartinet)** moved a black piece onto the board to position 1    | [#426](https://github.com/rossjrw/rossjrw/issues/426) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/a934bcece1bb80caea7dd9911616969452437f3f/games/current/board.426.svg) |
+  | 11th Jan 2021 22:08 | **2** | :white_circle: **[@shpatrickguo](https://github.com/shpatrickguo)** moved a white piece onto the board to position 1    | [#427](https://github.com/rossjrw/rossjrw/issues/427) |  |
 
 </details>
 
