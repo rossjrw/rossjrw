@@ -20,15 +20,15 @@ to make a move.
 :white_circle:white
 team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.420.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.421.svg"></p>
 
   **:white_circle:White team:**
-  You rolled a 2!
+  You rolled a 3!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a piece from tile 5 to tile 7    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%405-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a piece from tile 7 to tile 10    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%407-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -47,7 +47,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/shpatrickguo">@shpatrickguo</a></b> (23)<br><b><a href="https://github.com/rossjrw">@rossjrw</a></b> (12)<br><b><a href="https://github.com/bejoistic">@bejoistic</a></b> (4)<br><b><a href="https://github.com/BaptisteMartinet">@BaptisteMartinet</a></b> (4)<br><b><a href="https://github.com/willdoescode">@willdoescode</a></b> (4)<br><b><a href="https://github.com/KhanShaheb34">@KhanShaheb34</a></b> (2)<br><b><a href="https://github.com/pedromlsreis">@pedromlsreis</a></b> (2)<br><b><a href="https://github.com/tassiaaccioly">@tassiaaccioly</a></b> (2)<br><b><a href="https://github.com/lukew3">@lukew3</a></b> (1)<br><b><a href="https://github.com/maximilianschmelzer">@maximilianschmelzer</a></b> (1)<br><b><a href="https://github.com/mblemberg">@mblemberg</a></b> (1)<br><b><a href="https://github.com/shaplykon">@shaplykon</a></b> (1)<br><b><a href="https://github.com/jtrent238">@jtrent238</a></b> (1)<br><b><a href="https://github.com/HeinKhantZaw">@HeinKhantZaw</a></b> (1)<br><b><a href="https://github.com/quantumporium">@quantumporium</a></b> (1)<br><b><a href="https://github.com/kristianrose">@kristianrose</a></b> (1)<br><b><a href="https://github.com/ammongit">@ammongit</a></b> (1)<br><b><a href="https://github.com/deep5050">@deep5050</a></b> (1)<br><b><a href="https://github.com/jeelpatel1612">@jeelpatel1612</a></b> (1)<br><b><a href="https://github.com/cosmoglint">@cosmoglint</a></b> (1)</td>
-        <td><b><a href="https://github.com/1ethanhansen">@1ethanhansen</a></b> (58)<br><b><a href="https://github.com/IRHM">@IRHM</a></b> (1)<br><b><a href="https://github.com/Baptiste-Martinet">@Baptiste-Martinet</a></b> (1)<br><b><a href="https://github.com/Scan0r">@Scan0r</a></b> (1)<br><b><a href="https://github.com/sampreets3">@sampreets3</a></b> (1)<br><b><a href="https://github.com/racheloveyou">@racheloveyou</a></b> (1)<br><b><a href="https://github.com/HAUDRAUFHAUN">@HAUDRAUFHAUN</a></b> (1)</td>
+        <td><b><a href="https://github.com/1ethanhansen">@1ethanhansen</a></b> (59)<br><b><a href="https://github.com/IRHM">@IRHM</a></b> (1)<br><b><a href="https://github.com/Baptiste-Martinet">@Baptiste-Martinet</a></b> (1)<br><b><a href="https://github.com/Scan0r">@Scan0r</a></b> (1)<br><b><a href="https://github.com/sampreets3">@sampreets3</a></b> (1)<br><b><a href="https://github.com/racheloveyou">@racheloveyou</a></b> (1)<br><b><a href="https://github.com/HAUDRAUFHAUN">@HAUDRAUFHAUN</a></b> (1)</td>
       </tr>
     </tbody>
   </table>
@@ -195,6 +195,8 @@ What would you like to do?
   | 9th Jan 2021 23:02 | **136** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** ascended a white piece from position 13 :rocket:    | [#419](https://github.com/rossjrw/rossjrw/issues/419) |  |
   | 11th Jan 2021 03:56 | **137** | :black_circle: **[@shpatrickguo](https://github.com/shpatrickguo)** moved a black piece from position 12 to position 14  — claimed a rosette :rosette:  | [#420](https://github.com/rossjrw/rossjrw/issues/420) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/20200aff87eeadafe1654bbc4fbeb9f5e3e8fcca/games/current/board.420.svg) |
   | 11th Jan 2021 03:56 | **138** | :black_circle:  The black team rolled a 2 and their turn was automatically passed | [#420](https://github.com/rossjrw/rossjrw/issues/420) |  |
+  | 11th Jan 2021 05:45 | **139** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** moved a white piece from position 5 to position 7    | [#421](https://github.com/rossjrw/rossjrw/issues/421) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/6be6aa940b1a90d9b8047a1e7411e8380c83c122/games/current/board.421.svg) |
+  | 11th Jan 2021 05:45 | **140** | :black_circle:  The black team rolled a 2 and their turn was automatically passed | [#421](https://github.com/rossjrw/rossjrw/issues/421) |  |
 
 </details>
 
