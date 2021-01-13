@@ -131,7 +131,7 @@
     "time": "2021-01-12T18:00:17.387Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/014ac3a454cd31667735a39216d1503a010315d1/games/current/board.432.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -141,5 +141,22 @@
     "fromPosition": 0,
     "toPosition": 1,
     "roll": 1
+  },
+  {
+    "username": "DiogoTofuMartins",
+    "issue": 433,
+    "time": "2021-01-13T00:01:43.682Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
   }
 ]
