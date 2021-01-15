@@ -260,5 +260,34 @@
     "fromPosition": 4,
     "toPosition": 6,
     "roll": 2
+  },
+  {
+    "username": "jtrent238",
+    "issue": 441,
+    "time": "2021-01-15T16:29:21.507Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0ed9adc147e32099b31a788bfba00440ea8ccf3d/games/current/board.441.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "jtrent238",
+    "issue": 441,
+    "time": "2021-01-15T16:29:21.507Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
