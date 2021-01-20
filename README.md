@@ -5,7 +5,7 @@ We're playing
 
 <p align="center">
   <b>It's the
-  :white_circle:white
+  :black_circle:black
   team's turn.</b>
 </p>
 
@@ -14,24 +14,24 @@ You're on a team! :wave:
 * If you've already played a turn this game, you know which team you're on!
 (_you can't change it!_)
 If it's not your turn, check back later, or
-[ask a friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)
+[ask a
+friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)
 to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-:white_circle:white
+:black_circle:black
 team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.461.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.463.svg"></p>
 
-  **:white_circle:White team:**
-  You rolled a 3!
+  **:black_circle:Black team:**
+  You rolled a 1!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a piece from tile 1 to tile 4 (:rosette:)   ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%401-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [Move a piece from tile 2 to tile 5    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%402-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [Move a piece from tile 6 to tile 9    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%406-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [Ascend a piece from tile 12    (:rocket:) ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%4012-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a new piece to tile 1    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a piece from tile 3 to tile 4 (:rosette:)   ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%403-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a piece from tile 10 to tile 11    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%4010-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -50,7 +50,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/BaptisteMartinet">@BaptisteMartinet</a></b> (12)<br><b><a href="https://github.com/tassiaaccioly">@tassiaaccioly</a></b> (2)<br><b><a href="https://github.com/DiogoTofuMartins">@DiogoTofuMartins</a></b> (1)<br><b><a href="https://github.com/jackwilliamgray">@jackwilliamgray</a></b> (1)<br><b><a href="https://github.com/jackcarey">@jackcarey</a></b> (1)</td>
-        <td><b><a href="https://github.com/1ethanhansen">@1ethanhansen</a></b> (13)<br><b><a href="https://github.com/jtrent238">@jtrent238</a></b> (3)<br><b><a href="https://github.com/shpatrickguo">@shpatrickguo</a></b> (2)<br><b><a href="https://github.com/The-Coding-Classroom">@The-Coding-Classroom</a></b> (1)</td>
+        <td><b><a href="https://github.com/1ethanhansen">@1ethanhansen</a></b> (14)<br><b><a href="https://github.com/jtrent238">@jtrent238</a></b> (3)<br><b><a href="https://github.com/shpatrickguo">@shpatrickguo</a></b> (2)<br><b><a href="https://github.com/The-Coding-Classroom">@The-Coding-Classroom</a></b> (1)</td>
       </tr>
     </tbody>
   </table>
@@ -96,7 +96,8 @@ What would you like to do?
   | 19th Jan 2021 12:50 | **34** | :white_circle: **[@The-Coding-Classroom](https://github.com/The-Coding-Classroom)** moved a white piece from position 8 to position 12    | [#458](https://github.com/rossjrw/rossjrw/issues/458) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/68a1ecdb1c161324ee7af463312cf8276f060348/games/current/board.458.svg) |
   | 20th Jan 2021 00:46 | **35** | :black_circle: **[@jackcarey](https://github.com/jackcarey)** moved a black piece from position 4 to position 7    | [#459](https://github.com/rossjrw/rossjrw/issues/459) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/190776b448a5d5b45c5e9ebb31bd2937d8015d94/games/current/board.459.svg) |
   | 20th Jan 2021 00:57 | **36** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** moved a white piece from position 4 to position 6    | [#460](https://github.com/rossjrw/rossjrw/issues/460) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/d44b1a98c19f77fb6e63cdee86cb1dca7e6ea22b/games/current/board.460.svg) |
-  | 20th Jan 2021 10:37 | **37** | :black_circle: **[@BaptisteMartinet](https://github.com/BaptisteMartinet)** moved a black piece from position 7 to position 10    | [#461](https://github.com/rossjrw/rossjrw/issues/461) |  |
+  | 20th Jan 2021 10:37 | **37** | :black_circle: **[@BaptisteMartinet](https://github.com/BaptisteMartinet)** moved a black piece from position 7 to position 10    | [#461](https://github.com/rossjrw/rossjrw/issues/461) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/2179e7fa83918a6f18ac24b30ad513c43ec91d22/games/current/board.461.svg) |
+  | 20th Jan 2021 18:49 | **38** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** ascended a white piece from position 12 :rocket:    | [#463](https://github.com/rossjrw/rossjrw/issues/463) |  |
 
 </details>
 
@@ -104,8 +105,20 @@ What would you like to do?
 
 ## Previous games
 
-1. A game was started on 30th Jul 2020 by **[@rossjrw](https://github.com/rossjrw)** and ended on 4th Dec 2020 in a win for the :white_circle:white team. 64 players played 166 moves across 4 months and 5 days. The :black_circle:black team captured 9 white pieces and claimed 12 rosettes. The :white_circle:white team captured 10 black pieces and claimed 18 rosettes. The MVP of the winning team was by **[@1ethanhansen](https://github.com/1ethanhansen)**, who played 48 moves. The winning move was made by **[@qbtl](https://github.com/qbtl)** ([#269](https://github.com/rossjrw/rossjrw/issues/269)).
-1. A game was started on 4th Dec 2020 by **[@1ethanhansen](https://github.com/1ethanhansen)** and ended on 11th Jan 2021 in a win for the :black_circle:black team. 27 players played 145 moves across 1 month and 1 week. The :black_circle:black team captured 7 white pieces and claimed 16 rosettes. The :white_circle:white team captured 6 black pieces and claimed 14 rosettes. The MVP of the winning team was by **[@shpatrickguo](https://github.com/shpatrickguo)**, who played 26 moves. The winning move was made by **[@shpatrickguo](https://github.com/shpatrickguo)** ([#424](https://github.com/rossjrw/rossjrw/issues/424)).
+1. A game was started on 30th Jul 2020 by **[@rossjrw](https://github.com/rossjrw)** and ended on 4th Dec 2020. 
+   * The :white_circle:white team won. 
+   * 64 players played 166 moves across 4 months and 5 days. 
+   * The :black_circle:black team captured 9 white pieces and claimed 12 rosettes. 
+   * The :white_circle:white team captured 10 black pieces and claimed 18 rosettes. 
+   * The MVP of the winning team was **[@1ethanhansen](https://github.com/1ethanhansen)**, who played 48 moves. 
+   * The winning move was made by **[@qbtl](https://github.com/qbtl)** ([#269](https://github.com/rossjrw/rossjrw/issues/269)).
+1. A game was started on 4th Dec 2020 by **[@1ethanhansen](https://github.com/1ethanhansen)** and ended on 11th Jan 2021. 
+   * The :black_circle:black team won. 
+   * 27 players played 145 moves across 1 month and 1 week. 
+   * The :black_circle:black team captured 7 white pieces and claimed 16 rosettes. 
+   * The :white_circle:white team captured 6 black pieces and claimed 14 rosettes. 
+   * The MVP of the winning team was **[@shpatrickguo](https://github.com/shpatrickguo)**, who played 26 moves. 
+   * The winning move was made by **[@shpatrickguo](https://github.com/shpatrickguo)** ([#424](https://github.com/rossjrw/rossjrw/issues/424)).
 
 </details>
 
