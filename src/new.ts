@@ -83,8 +83,8 @@ export async function resetGame (
       Done! You started a new game.
       \n\n
       It's ${teamName(newState.currentPlayer)} to play!
-      [Make the first move yourself](https://github.com/rossjrw/rossjrw),
-      or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+started+a+new+game+%E2%80%94+take+the+first+turn+at+https://github.com/rossjrw+%23ur+%23github)
+      [Make the first move yourself](https://github.com/${context.repo.owner}/${context.repo.repo}),
+      or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+started+a+new+game+%E2%80%94+take+the+first+turn+at+https://github.com/${context.repo.owner}+%23ur+%23github)
     `
   })
   octokit.issues.update({

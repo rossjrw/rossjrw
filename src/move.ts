@@ -140,7 +140,7 @@ export async function makeMove (
         \n\n
         Ask a friend to
         ${events.gameWon ? "start the next game" : "make the next move"}:
-        [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+${events.gameWon ? "won+a+game" : "moved"}+%E2%80%94+${events.gameWon ? "start+the+next+one" : "take+your+turn" }+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)
+        [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+${events.gameWon ? "won+a+game" : "moved"}+%E2%80%94+${events.gameWon ? "start+the+next+one" : "take+your+turn" }+at+https://github.com/${context.repo.owner}/${context.repo.repo}+%23RoyalGameOfUr+%23github)
       `
     })
     octokit.issues.update({

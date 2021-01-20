@@ -18,14 +18,18 @@ You're on a team! :wave:
 * If you've already played a turn this game, you know which team you're on!
 (_you can't change it!_)
 If it's not your turn, check back later, or
-[ask a friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)
+[ask a
+friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/<%=
+context.repo.owner %>/<%= context.repo.repo %>+%23RoyalGameOfUr+%23github)
 to make a move.
 * If you've not yet played a turn this game, make a move now to join the
 <%= state.currentPlayer === "b" ? ":black_circle:black" : ":white_circle:white" %>
 team.
 <% } -%>
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/ur/play/games/current/board.<%= context.issue.number %>.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/<%=
+context.repo.owner %>/<%= context.repo.repo %>/play/games/current/board.<%=
+context.issue.number %>.svg"></p>
 
 <% if (state.currentPlayer) { -%>
   **<%= state.currentPlayer === "b" ? ":black_circle:Black" : ":white_circle:White" %> team:**
@@ -130,7 +134,7 @@ What would you like to do?
   know that your move was successful.
 
   If you don't see any of that, then something went wrong. Ping me in your
-  issue by typing `cc @rossjrw`, and I'll take a look.
+  issue by typing `cc @<%= context.repo.owner %>`, and I'll take a look.
 
   Note that if your team has no possible moves — for example by rolling a 0 —
   your turn will be automatically skipped. The event log will let you know if
@@ -146,10 +150,10 @@ What would you like to do?
 -----
 
 <p align="right">
-  <a href="https://github.com/rossjrw/rossjrw/actions?query=workflow:build">
-    <img src="https://github.com/rossjrw/rossjrw/workflows/build/badge.svg?branch=source"/>
+  <a href="https://github.com/<%= context.repo.owner %>/<%= context.repo.repo %>/actions?query=workflow:build">
+    <img src="https://github.com/<%= context.repo.owner %>/<%= context.repo.repo %>/workflows/build/badge.svg?branch=source"/>
   </a>
-  <a href="https://github.com/rossjrw/rossjrw/actions?query=workflow:play">
-    <img src="https://github.com/rossjrw/rossjrw/workflows/play/badge.svg?branch=play"/>
+  <a href="https://github.com/<%= context.repo.owner %>/<%= context.repo.repo %>/actions?query=workflow:play">
+    <img src="https://github.com/<%= context.repo.owner %>/<%= context.repo.repo %>/workflows/play/badge.svg?branch=play"/>
   </a>
 </p>

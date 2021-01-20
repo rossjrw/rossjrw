@@ -42,7 +42,7 @@ export function handleError(
     NO_MOVE_POSITION: "I can't tell which piece you want to move.",
     IMPOSSIBLE_MOVE: "Woah, that's not a legal move! Maybe someone snuck in a move before yours.",
   }
-  const ERROR_DEFAULT = "Something went wrong, but I'm not sure exactly what.\n\n@rossjrw "
+  const ERROR_DEFAULT = `Something went wrong, but I'm not sure exactly what.\n\n@${context.repo.owner}`
 
   addReaction("confused", octokit, context)
   octokit.issues.createComment({

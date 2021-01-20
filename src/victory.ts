@@ -137,7 +137,7 @@ export async function listPreviousGames (
       } moves.
       The winning move was made
       by **[@${lastMove.username}](https://github.com/${lastMove.username})**
-      ([#${lastMove.issue}](https://github.com/rossjrw/rossjrw/issues/${lastMove.issue})).
+      ([#${lastMove.issue}](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${lastMove.issue})).
     `
   })
 
