@@ -97,22 +97,20 @@ export async function listPreviousGames (
       A game was started
       on ${dateformat(new Date(firstMove.time), "dS mmm yyyy")}
       by **[@${firstMove.username}](https://github.com/${firstMove.username})**
-      and ended on ${dateformat(new Date(lastMove.time), "dS mmm yyyy")}
-      in a win for the ${
+      and ended on ${dateformat(new Date(lastMove.time), "dS mmm yyyy")}.
+      <> The ${
         lastMove.team === "b" ?
           ":black_circle:black" :
           ":white_circle:white"
-      } team.
-      ${playerCount} players
-      played ${log.length} moves
-      across ${
+      } team won.
+      <> ${playerCount} players played ${log.length} moves across ${
         humanizeDuration(
           new Date(lastMove.time).getTime() -
             new Date(firstMove.time).getTime(),
           { largest: 2, delimiter: " and " }
         )
       }.
-      The :black_circle:black team captured ${
+      <> The :black_circle:black team captured ${
         log.filter(logItem => {
           return logItem.team === "b" && logItem.events?.captureHappened
         }).length
@@ -121,7 +119,7 @@ export async function listPreviousGames (
           return logItem.team === "b" && logItem.events?.rosetteClaimed
         }).length
       } rosettes.
-      The :white_circle:white team captured ${
+      <> The :white_circle:white team captured ${
         log.filter(logItem => {
           return logItem.team === "w" && logItem.events?.captureHappened
         }).length
@@ -130,15 +128,15 @@ export async function listPreviousGames (
           return logItem.team === "w" && logItem.events?.rosetteClaimed
         }).length
       } rosettes.
-      The MVP of the winning team was
-      by **[@${mvp}](https://github.com/${mvp})**,
+      <> The MVP of the winning team was
+      **[@${mvp}](https://github.com/${mvp})**,
       who played ${
         log.filter(logItem => logItem.username === mvp).length
       } moves.
-      The winning move was made
+      <> The winning move was made
       by **[@${lastMove.username}](https://github.com/${lastMove.username})**
       ([#${lastMove.issue}](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${lastMove.issue})).
-    `
+    `.replace(/<>/g, "\n   *")
   })
 
   return gameStrings
