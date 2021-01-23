@@ -653,7 +653,7 @@
     "time": "2021-01-22T08:16:32.391Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/82dd4a4ec2eea12ea3d6820159ab3a2330023bef/games/current/board.464.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -663,5 +663,22 @@
     "fromPosition": 3,
     "toPosition": 4,
     "roll": 1
+  },
+  {
+    "username": "kinduff",
+    "issue": 465,
+    "time": "2021-01-23T19:08:41.652Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 7,
+    "roll": 3
   }
 ]
