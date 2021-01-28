@@ -874,7 +874,7 @@
     "time": "2021-01-27T17:59:04.741Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/06bb9f827f0bf1e643251a417522d6383b0b4da5/games/current/board.477.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -883,6 +883,23 @@
     },
     "fromPosition": 3,
     "toPosition": 6,
+    "roll": 3
+  },
+  {
+    "username": "AfterWorld",
+    "issue": 478,
+    "time": "2021-01-28T06:44:24.142Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
     "roll": 3
   }
 ]
