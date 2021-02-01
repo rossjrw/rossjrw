@@ -1010,7 +1010,7 @@
     "time": "2021-02-01T00:10:27.934Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/68c6caaa4e4b4715f4f73ed1dd37cd0cd09f64db/games/current/board.485.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -1020,5 +1020,22 @@
     "fromPosition": 8,
     "toPosition": 9,
     "roll": 1
+  },
+  {
+    "username": "BaptisteMartinet",
+    "issue": 486,
+    "time": "2021-02-01T08:55:13.632Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   }
 ]
