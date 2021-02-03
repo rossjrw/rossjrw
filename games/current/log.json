@@ -1175,7 +1175,7 @@
     "time": "2021-02-03T01:42:13.414Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2a2c34f99bef6ea6d48ffef83271e859622f988f/games/current/board.494.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1185,5 +1185,22 @@
     "fromPosition": 5,
     "toPosition": 8,
     "roll": 3
+  },
+  {
+    "username": "chekos",
+    "issue": 495,
+    "time": "2021-02-03T01:43:53.792Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 10,
+    "roll": 2
   }
 ]
