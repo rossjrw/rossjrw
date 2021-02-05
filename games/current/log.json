@@ -1369,10 +1369,27 @@
     "time": "2021-02-05T19:16:54.884Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/10b79dc7f9797fc8ff31ae05a3cb23f1f7a5850d/games/current/board.504.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 7,
+    "roll": 3
+  },
+  {
+    "username": "1ethanhansen",
+    "issue": 505,
+    "time": "2021-02-05T19:37:54.173Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
       "ascensionHappened": false,
       "gameWon": false
     },
