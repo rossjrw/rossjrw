@@ -1857,5 +1857,46 @@
     "fromPosition": 1,
     "toPosition": 2,
     "roll": 1
+  },
+  {
+    "username": "1ethanhansen",
+    "issue": 532,
+    "time": "2021-02-11T18:11:17.719Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 11,
+    "roll": 1
+  },
+  {
+    "username": "1ethanhansen",
+    "issue": 532,
+    "time": "2021-02-11T18:11:17.719Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4f90017019ea182f64d11d1783b266d6d92994ce/games/current/board.532.svg",
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
+  },
+  {
+    "username": "1ethanhansen",
+    "issue": 532,
+    "time": "2021-02-11T18:11:17.720Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
