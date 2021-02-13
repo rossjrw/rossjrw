@@ -228,7 +228,7 @@
     "time": "2021-02-13T00:02:25.060Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/43c9acf2987051f5806be60d3ac78ae6e916f897/games/current/board.550.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -237,6 +237,23 @@
     },
     "fromPosition": 4,
     "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "shpatrickguo",
+    "issue": 551,
+    "time": "2021-02-13T03:14:12.711Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 9,
     "roll": 2
   }
 ]
