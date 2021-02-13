@@ -262,7 +262,7 @@
     "time": "2021-02-13T03:18:11.207Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/96ee36bff762370b21a49129afa3f6ed5eb348c9/games/current/board.552.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -271,6 +271,23 @@
     },
     "fromPosition": 0,
     "toPosition": 1,
+    "roll": 1
+  },
+  {
+    "username": "Devansh3712",
+    "issue": 553,
+    "time": "2021-02-13T12:45:15.611Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 10,
     "roll": 1
   }
 ]
