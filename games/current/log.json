@@ -330,7 +330,7 @@
     "time": "2021-02-13T18:27:31.467Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d3b79ea51c9be4fdffa6ce7e9178d181c0fd0ed8/games/current/board.556.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -340,5 +340,22 @@
     "fromPosition": 10,
     "toPosition": 11,
     "roll": 1
+  },
+  {
+    "username": "dit7ya",
+    "issue": 557,
+    "time": "2021-02-16T14:12:31.522Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 11,
+    "roll": 3
   }
 ]
