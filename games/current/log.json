@@ -507,7 +507,7 @@
     "time": "2021-02-17T06:00:25.066Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8ad15acc849fed5852055a71c55cac8f0a9eabfd/games/current/board.565.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -517,5 +517,22 @@
     "fromPosition": 0,
     "toPosition": 1,
     "roll": 1
+  },
+  {
+    "username": "venashial",
+    "issue": 566,
+    "time": "2021-02-17T06:02:32.037Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
   }
 ]
