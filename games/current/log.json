@@ -966,7 +966,7 @@
     "time": "2021-02-18T17:20:41.058Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4cf51eb5c5cbc4dc6aa752713562ac6e9c957f21/games/current/board.592.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -975,6 +975,23 @@
     },
     "fromPosition": 10,
     "toPosition": 13,
+    "roll": 3
+  },
+  {
+    "username": "KnlnKS",
+    "issue": 593,
+    "time": "2021-02-19T00:57:58.984Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 5,
     "roll": 3
   }
 ]
