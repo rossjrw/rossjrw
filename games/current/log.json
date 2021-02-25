@@ -1794,5 +1794,34 @@
     "fromPosition": 8,
     "toPosition": 12,
     "roll": 4
+  },
+  {
+    "username": "hellosurbhi",
+    "issue": 639,
+    "time": "2021-02-25T23:22:13.986Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/88957df6fd2d852136046dc40d7ced97f6050984/games/current/board.639.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "hellosurbhi",
+    "issue": 639,
+    "time": "2021-02-25T23:22:13.986Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
