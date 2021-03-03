@@ -2488,7 +2488,7 @@
     "time": "2021-03-03T19:16:24.456Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/db88f19dd45fa1c766e19cc71098dfb90d48c1b1/games/current/board.679.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -2498,5 +2498,22 @@
     "fromPosition": 2,
     "toPosition": 4,
     "roll": 2
+  },
+  {
+    "username": "DevTony101",
+    "issue": 680,
+    "time": "2021-03-03T20:10:43.559Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 2,
+    "roll": 1
   }
 ]
