@@ -102,7 +102,7 @@
     "time": "2021-03-11T22:43:05.137Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d054a2bf424ff1273bb4280e6d90b23f55cc6851/games/current/board.709.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -112,5 +112,22 @@
     "fromPosition": 7,
     "toPosition": 8,
     "roll": 1
+  },
+  {
+    "username": "shravankb",
+    "issue": 710,
+    "time": "2021-03-12T05:15:53.070Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
   }
 ]
