@@ -187,7 +187,7 @@
     "time": "2021-03-14T20:27:44.086Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4f9347c7c4d0264f8e98da975f2c5a7b5fa471ed/games/current/board.714.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -196,6 +196,23 @@
     },
     "fromPosition": 4,
     "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "LucioFex",
+    "issue": 715,
+    "time": "2021-03-16T22:04:45.108Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
     "roll": 2
   }
 ]
