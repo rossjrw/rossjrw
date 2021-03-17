@@ -204,7 +204,7 @@
     "time": "2021-03-16T22:04:45.108Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e662f4f7c500ad8ecc6eb24ba013919b70197e12/games/current/board.715.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -214,5 +214,22 @@
     "fromPosition": 3,
     "toPosition": 5,
     "roll": 2
+  },
+  {
+    "username": "brandonpittman",
+    "issue": 716,
+    "time": "2021-03-17T05:24:22.300Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 14,
+    "roll": 4
   }
 ]
