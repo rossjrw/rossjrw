@@ -267,7 +267,7 @@
     "time": "2021-03-20T06:48:04.022Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7b901772bdaa5596d8a5629996ab900278029b4f/games/current/board.719.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -277,5 +277,22 @@
     "fromPosition": 6,
     "toPosition": 9,
     "roll": 3
+  },
+  {
+    "username": "sampoder",
+    "issue": 720,
+    "time": "2021-03-23T02:02:58.404Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   }
 ]
