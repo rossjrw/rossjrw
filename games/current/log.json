@@ -318,7 +318,7 @@
     "time": "2021-03-23T22:32:35.808Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8de583709b459f2edc23d258e182dbab81775c85/games/current/board.722.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -327,6 +327,23 @@
     },
     "fromPosition": 5,
     "toPosition": 6,
+    "roll": 1
+  },
+  {
+    "username": "RayhanADev",
+    "issue": 723,
+    "time": "2021-03-23T23:10:39.312Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
     "roll": 1
   }
 ]
