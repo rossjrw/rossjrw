@@ -301,7 +301,7 @@
     "time": "2021-03-23T10:20:29.729Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b0ffacf13719586eb74460bc317ff3814ec82a99/games/current/board.721.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -311,5 +311,22 @@
     "fromPosition": 3,
     "toPosition": 6,
     "roll": 3
+  },
+  {
+    "username": "lynxaegon",
+    "issue": 722,
+    "time": "2021-03-23T22:32:35.808Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 6,
+    "roll": 1
   }
 ]
