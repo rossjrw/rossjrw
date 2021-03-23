@@ -284,7 +284,7 @@
     "time": "2021-03-23T02:02:58.404Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3357a86aa99c54a14e890675cb5ef34b808f1591/games/current/board.720.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -294,5 +294,22 @@
     "fromPosition": 0,
     "toPosition": 2,
     "roll": 2
+  },
+  {
+    "username": "ShapManasick",
+    "issue": 721,
+    "time": "2021-03-23T10:20:29.729Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
   }
 ]
