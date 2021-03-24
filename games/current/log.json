@@ -352,7 +352,7 @@
     "time": "2021-03-24T09:56:51.021Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/80fa97eff6cb1319aaa362894acafdd53e4875da/games/current/board.724.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -361,6 +361,23 @@
     },
     "fromPosition": 2,
     "toPosition": 4,
+    "roll": 2
+  },
+  {
+    "username": "JohanDev6",
+    "issue": 725,
+    "time": "2021-03-24T23:13:59.071Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
     "roll": 2
   }
 ]
