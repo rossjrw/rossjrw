@@ -386,6 +386,23 @@
     "time": "2021-03-25T05:02:10.455Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7588240755c04f3bf645f0ef68f0482cd3851dbf/games/current/board.727.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
+  },
+  {
+    "username": "brunocampos01",
+    "issue": 728,
+    "time": "2021-03-26T14:40:08.115Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null,
     "events": {
       "rosetteClaimed": false,
