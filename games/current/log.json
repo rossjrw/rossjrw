@@ -471,7 +471,7 @@
     "time": "2021-03-29T06:47:00.669Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/28a1e91ffc984feb127bb114e2b6afd251a78069/games/current/board.732.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -481,5 +481,22 @@
     "fromPosition": 7,
     "toPosition": 8,
     "roll": 1
+  },
+  {
+    "username": "Kishan2029",
+    "issue": 733,
+    "time": "2021-03-29T07:25:27.688Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   }
 ]
