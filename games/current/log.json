@@ -539,7 +539,7 @@
     "time": "2021-03-30T20:47:40.483Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b0a791f5d446cfc0d587d4ad09e186825e1f2e0b/games/current/board.736.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -549,5 +549,22 @@
     "fromPosition": 8,
     "toPosition": 11,
     "roll": 3
+  },
+  {
+    "username": "nhcarrigan",
+    "issue": 737,
+    "time": "2021-03-30T22:49:39.947Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 2,
+    "roll": 1
   }
 ]
