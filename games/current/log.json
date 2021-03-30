@@ -505,7 +505,7 @@
     "time": "2021-03-30T14:42:41.240Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/55e1071c03cc04facf09f69ab0f24e04b3be7c28/games/current/board.734.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -515,5 +515,22 @@
     "fromPosition": 1,
     "toPosition": 4,
     "roll": 3
+  },
+  {
+    "username": "Rayyan06",
+    "issue": 735,
+    "time": "2021-03-30T14:43:47.727Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
   }
 ]
