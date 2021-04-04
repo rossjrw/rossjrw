@@ -704,7 +704,7 @@
     "time": "2021-04-03T15:47:09.459Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ea41df4732b4e67cec01f4d8b86015f33378dd69/games/current/board.746.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -714,5 +714,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "KennyOliver",
+    "issue": 747,
+    "time": "2021-04-04T09:51:33.888Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 9,
+    "roll": 2
   }
 ]
