@@ -755,7 +755,7 @@
     "time": "2021-04-05T15:58:43.652Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ca7f99a72b30e0adcdb68e9296ee72cfc1ca32d4/games/current/board.749.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -764,6 +764,23 @@
     },
     "fromPosition": 9,
     "toPosition": 11,
+    "roll": 2
+  },
+  {
+    "username": "BraianMendes",
+    "issue": 750,
+    "time": "2021-04-05T17:30:30.364Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 10,
     "roll": 2
   }
 ]
