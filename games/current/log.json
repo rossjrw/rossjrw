@@ -721,7 +721,7 @@
     "time": "2021-04-04T09:51:33.888Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ae71266d87d3e449d7adcff5a0a0d715befed88a/games/current/board.747.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -731,5 +731,22 @@
     "fromPosition": 6,
     "toPosition": 9,
     "roll": 2
+  },
+  {
+    "username": "ArmTimDev",
+    "issue": 748,
+    "time": "2021-04-05T04:55:37.217Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
   }
 ]
