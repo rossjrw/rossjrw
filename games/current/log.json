@@ -1044,7 +1044,7 @@
     "time": "2021-04-07T12:36:45.176Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b4b4854fe119c9e2a03c7d76c3881696ce19358b/games/current/board.766.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1053,6 +1053,23 @@
     },
     "fromPosition": 0,
     "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "MatthewOliverCode",
+    "issue": 767,
+    "time": "2021-04-07T14:39:40.090Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 9,
     "roll": 2
   }
 ]
