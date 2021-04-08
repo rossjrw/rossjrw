@@ -1095,6 +1095,23 @@
     "time": "2021-04-07T19:31:19.380Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/bfec5b11de13e05c30588e1fda5967dbaf090058/games/current/board.769.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "HAUDRAUFHAUN",
+    "issue": 770,
+    "time": "2021-04-08T10:16:56.658Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null,
     "events": {
       "rosetteClaimed": false,
