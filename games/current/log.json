@@ -1248,7 +1248,7 @@
     "time": "2021-04-10T02:06:22.700Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/bad5eb3b4aae1cb15bf9b3f3e2dc09a6e7217a90/games/current/board.778.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1258,5 +1258,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "Rohan-Bansal",
+    "issue": 779,
+    "time": "2021-04-10T03:24:50.214Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
   }
 ]
