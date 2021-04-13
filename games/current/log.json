@@ -1265,10 +1265,27 @@
     "time": "2021-04-10T03:24:50.214Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/559dcb0dfb682d0723c4743385cbc3cca39d5cf9/games/current/board.779.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "HAUDRAUFHAUN",
+    "issue": 780,
+    "time": "2021-04-13T06:20:44.137Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
       "ascensionHappened": false,
       "gameWon": false
     },
