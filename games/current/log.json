@@ -1435,7 +1435,7 @@
     "time": "2021-04-19T13:14:06.522Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/33f70f65a3dc315e59a3a09cf8830fa766fb01ff/games/current/board.789.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -1444,6 +1444,23 @@
     },
     "fromPosition": 4,
     "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "grau-maus",
+    "issue": 790,
+    "time": "2021-04-19T20:47:04.327Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
     "roll": 2
   }
 ]
