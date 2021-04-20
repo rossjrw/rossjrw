@@ -1503,7 +1503,7 @@
     "time": "2021-04-20T10:07:53.266Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4bc21aa65bd30879f3e95fee33048512e6577a63/games/current/board.793.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -1513,5 +1513,22 @@
     "fromPosition": 4,
     "toPosition": 6,
     "roll": 2
+  },
+  {
+    "username": "AndreM-Gomes",
+    "issue": 794,
+    "time": "2021-04-20T21:31:15.974Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 13,
+    "roll": 4
   }
 ]
