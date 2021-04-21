@@ -1537,7 +1537,7 @@
     "time": "2021-04-20T21:46:54.399Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7c9f0698a021f2c430991c1d2eb5ddf14ed06f2b/games/current/board.795.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1547,5 +1547,22 @@
     "fromPosition": 0,
     "toPosition": 1,
     "roll": 1
+  },
+  {
+    "username": "azminewasi",
+    "issue": 796,
+    "time": "2021-04-21T18:42:06.706Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 13,
+    "toPosition": 15,
+    "roll": 2
   }
 ]
