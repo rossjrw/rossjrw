@@ -1605,7 +1605,7 @@
     "time": "2021-04-22T09:17:38.352Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/aacfb02c108467b61b24b9f3159428ff00611e34/games/current/board.800.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1615,5 +1615,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "rishabhc32",
+    "issue": 801,
+    "time": "2021-04-22T19:22:29.143Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 13,
+    "roll": 2
   }
 ]
