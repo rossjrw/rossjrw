@@ -1724,10 +1724,27 @@
     "time": "2021-04-23T18:11:41.162Z",
     "team": "b",
     "action": "pass",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f6fd8d0486f28ac86198637a9cfcc292c27d62c0/games/current/board.806.svg",
     "events": null,
     "fromPosition": null,
     "toPosition": null,
     "roll": 0
+  },
+  {
+    "username": "BaptisteMartinet",
+    "issue": 808,
+    "time": "2021-04-25T10:10:02.279Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 9,
+    "roll": 2
   }
 ]
