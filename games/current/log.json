@@ -1736,7 +1736,7 @@
     "time": "2021-04-25T10:10:02.279Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0c53b9e2ee98177309e68fdbfa447a2e662acbb7/games/current/board.808.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1745,6 +1745,23 @@
     },
     "fromPosition": 7,
     "toPosition": 9,
+    "roll": 2
+  },
+  {
+    "username": "ErickOF",
+    "issue": 809,
+    "time": "2021-04-26T02:59:38.747Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 3,
     "roll": 2
   }
 ]
