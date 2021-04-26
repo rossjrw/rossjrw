@@ -1770,7 +1770,7 @@
     "time": "2021-04-26T07:48:02.689Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6357018b6b64b6ecac4ef657c9184a7358da6e0a/games/current/board.810.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1780,5 +1780,22 @@
     "fromPosition": 9,
     "toPosition": 10,
     "roll": 1
+  },
+  {
+    "username": "RebTaylor",
+    "issue": 811,
+    "time": "2021-04-26T18:12:41.212Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
   }
 ]
