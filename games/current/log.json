@@ -2071,7 +2071,7 @@
     "time": "2021-04-30T18:10:36.299Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0bb9b51ba1c0bbb63fa24c9f44612b7be7fc79bd/games/current/board.827.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2080,6 +2080,23 @@
     },
     "fromPosition": 8,
     "toPosition": 10,
+    "roll": 2
+  },
+  {
+    "username": "WeslleyNasRocha",
+    "issue": 828,
+    "time": "2021-04-30T21:02:26.737Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 12,
+    "toPosition": 14,
     "roll": 2
   }
 ]
