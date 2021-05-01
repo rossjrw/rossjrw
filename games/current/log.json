@@ -2139,7 +2139,7 @@
     "time": "2021-05-01T06:25:32.252Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f000118c40151eea37c717420f0841555e9662d2/games/current/board.831.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -2149,5 +2149,22 @@
     "fromPosition": 4,
     "toPosition": 8,
     "roll": 4
+  },
+  {
+    "username": "MrNereof",
+    "issue": 832,
+    "time": "2021-05-01T06:26:26.244Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 10,
+    "roll": 2
   }
 ]
