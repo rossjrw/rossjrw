@@ -2316,7 +2316,7 @@
     "time": "2021-05-04T12:43:37.269Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6b7595ec528de4d3b85d35dcc3d76d7cd39a780c/games/current/board.840.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2326,5 +2326,22 @@
     "fromPosition": 4,
     "toPosition": 6,
     "roll": 2
+  },
+  {
+    "username": "vikassbadami",
+    "issue": 841,
+    "time": "2021-05-05T17:47:21.869Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 6,
+    "roll": 4
   }
 ]
