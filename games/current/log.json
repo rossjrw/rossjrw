@@ -2350,7 +2350,7 @@
     "time": "2021-05-05T21:18:36.482Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d2a5d2669325444007d1394877b21c8df23052b9/games/current/board.842.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2360,5 +2360,22 @@
     "fromPosition": 12,
     "toPosition": 15,
     "roll": 3
+  },
+  {
+    "username": "crxssed7",
+    "issue": 843,
+    "time": "2021-05-06T13:06:48.310Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 10,
+    "roll": 2
   }
 ]
