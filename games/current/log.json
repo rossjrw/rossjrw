@@ -2622,7 +2622,7 @@
     "time": "2021-05-07T16:01:05.222Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b15a0ac4e83b2e990b6c16fe11ecf3d965c39981/games/current/board.859.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2631,6 +2631,23 @@
     },
     "fromPosition": 9,
     "toPosition": 10,
+    "roll": 1
+  },
+  {
+    "username": "KubaRocks",
+    "issue": 860,
+    "time": "2021-05-09T13:17:53.213Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 3,
     "roll": 1
   }
 ]
