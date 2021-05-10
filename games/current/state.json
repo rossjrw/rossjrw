@@ -1,5 +1,5 @@
 {
-  "currentPlayer": "w",
+  "currentPlayer": "b",
   "dice": [
     1,
     0,
@@ -13,11 +13,11 @@
   },
   "board": [
     {
-      "w": 6,
+      "w": 5,
       "b": 6
     },
     {
-      "w": 0,
+      "w": 1,
       "b": 0
     },
     {

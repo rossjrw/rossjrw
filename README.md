@@ -5,7 +5,7 @@ We're playing
 
 <p align="center">
   <b>It's the
-  :white_circle:white
+  :black_circle:black
   team's turn.</b>
 </p>
 
@@ -18,12 +18,12 @@ If it's not your turn, check back later, or
 friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)
 to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-:white_circle:white
+:black_circle:black
 team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.868.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.869.svg"></p>
 
-  **:white_circle:White team:**
+  **:black_circle:Black team:**
   You rolled a 1!
 What would you like to do?
 
@@ -49,7 +49,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/HAUDRAUFHAUN">@HAUDRAUFHAUN</a></b> (2)<br><b><a href="https://github.com/Gitleptune">@Gitleptune</a></b> (1)</td>
-        <td><b><a href="https://github.com/crxssed7">@crxssed7</a></b> (1)</td>
+        <td><b><a href="https://github.com/crxssed7">@crxssed7</a></b> (1)<br><b><a href="https://github.com/WeslleyNasRocha">@WeslleyNasRocha</a></b> (1)</td>
       </tr>
     </tbody>
   </table>
@@ -61,7 +61,8 @@ What would you like to do?
   | 10th May 2021 11:08 | **0** | :black_circle: **[@HAUDRAUFHAUN](https://github.com/HAUDRAUFHAUN)** started a new game | [#865](https://github.com/rossjrw/rossjrw/issues/865) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/af5ebe8f8045f3f392be05326d1aa1fe815b98a4/games/current/board.865.svg) |
   | 10th May 2021 11:09 | **1** | :black_circle: **[@HAUDRAUFHAUN](https://github.com/HAUDRAUFHAUN)** moved a black piece onto the board to position 1    | [#866](https://github.com/rossjrw/rossjrw/issues/866) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/9e19f01d588dffa9badf17211e5f1b441f21d4ca/games/current/board.866.svg) |
   | 10th May 2021 12:02 | **2** | :white_circle: **[@crxssed7](https://github.com/crxssed7)** moved a white piece onto the board to position 2    | [#867](https://github.com/rossjrw/rossjrw/issues/867) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/0bc41b4e5c9c5b906d3b8a215176f6cd8e20758f/games/current/board.867.svg) |
-  | 10th May 2021 13:44 | **3** | :black_circle: **[@Gitleptune](https://github.com/Gitleptune)** moved a black piece from position 1 to position 2    | [#868](https://github.com/rossjrw/rossjrw/issues/868) |  |
+  | 10th May 2021 13:44 | **3** | :black_circle: **[@Gitleptune](https://github.com/Gitleptune)** moved a black piece from position 1 to position 2    | [#868](https://github.com/rossjrw/rossjrw/issues/868) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/1854cfb50013fb86617c5067d6ef54a5d999f693/games/current/board.868.svg) |
+  | 10th May 2021 18:54 | **4** | :white_circle: **[@WeslleyNasRocha](https://github.com/WeslleyNasRocha)** moved a white piece onto the board to position 1    | [#869](https://github.com/rossjrw/rossjrw/issues/869) |  |
 
 </details>
 
