@@ -34,7 +34,7 @@
     "time": "2021-05-10T12:02:34.307Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0bc41b4e5c9c5b906d3b8a215176f6cd8e20758f/games/current/board.867.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -44,5 +44,22 @@
     "fromPosition": 0,
     "toPosition": 2,
     "roll": 2
+  },
+  {
+    "username": "Gitleptune",
+    "issue": 868,
+    "time": "2021-05-10T13:44:04.669Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 2,
+    "roll": 1
   }
 ]
