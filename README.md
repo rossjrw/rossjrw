@@ -21,7 +21,7 @@ to make a move.
 :white_circle:white
 team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.870.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.871.svg"></p>
 
   **:white_circle:White team:**
   You rolled a 3!
@@ -30,8 +30,8 @@ What would you like to do?
 | Choices *(click one of them!)* |
 | --- |
   | [Move a new piece to tile 3    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [Move a piece from tile 1 to tile 4 (:rosette:)   ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%401-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
   | [Move a piece from tile 2 to tile 5    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%402-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a piece from tile 4 to tile 7    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%404-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -50,7 +50,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/HAUDRAUFHAUN">@HAUDRAUFHAUN</a></b> (2)<br><b><a href="https://github.com/Gitleptune">@Gitleptune</a></b> (1)<br><b><a href="https://github.com/shpatrickguo">@shpatrickguo</a></b> (1)</td>
-        <td><b><a href="https://github.com/crxssed7">@crxssed7</a></b> (1)<br><b><a href="https://github.com/WeslleyNasRocha">@WeslleyNasRocha</a></b> (1)</td>
+        <td><b><a href="https://github.com/WeslleyNasRocha">@WeslleyNasRocha</a></b> (2)<br><b><a href="https://github.com/crxssed7">@crxssed7</a></b> (1)</td>
       </tr>
     </tbody>
   </table>
@@ -64,7 +64,8 @@ What would you like to do?
   | 10th May 2021 12:02 | **2** | :white_circle: **[@crxssed7](https://github.com/crxssed7)** moved a white piece onto the board to position 2    | [#867](https://github.com/rossjrw/rossjrw/issues/867) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/0bc41b4e5c9c5b906d3b8a215176f6cd8e20758f/games/current/board.867.svg) |
   | 10th May 2021 13:44 | **3** | :black_circle: **[@Gitleptune](https://github.com/Gitleptune)** moved a black piece from position 1 to position 2    | [#868](https://github.com/rossjrw/rossjrw/issues/868) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/1854cfb50013fb86617c5067d6ef54a5d999f693/games/current/board.868.svg) |
   | 10th May 2021 18:54 | **4** | :white_circle: **[@WeslleyNasRocha](https://github.com/WeslleyNasRocha)** moved a white piece onto the board to position 1    | [#869](https://github.com/rossjrw/rossjrw/issues/869) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/e82b7e165293737099b1b3e5337741f0c7b0e5e7/games/current/board.869.svg) |
-  | 11th May 2021 21:05 | **5** | :black_circle: **[@shpatrickguo](https://github.com/shpatrickguo)** moved a black piece onto the board to position 1    | [#870](https://github.com/rossjrw/rossjrw/issues/870) |  |
+  | 11th May 2021 21:05 | **5** | :black_circle: **[@shpatrickguo](https://github.com/shpatrickguo)** moved a black piece onto the board to position 1    | [#870](https://github.com/rossjrw/rossjrw/issues/870) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/d7478920029d077d73da3b9028e99fe570f1ab02/games/current/board.870.svg) |
+  | 12th May 2021 13:58 | **6** | :white_circle: **[@WeslleyNasRocha](https://github.com/WeslleyNasRocha)** moved a white piece from position 1 to position 4  — claimed a rosette :rosette:  | [#871](https://github.com/rossjrw/rossjrw/issues/871) |  |
 
 </details>
 
