@@ -238,7 +238,7 @@
     "time": "2021-05-15T09:30:50.372Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7e076ff555c5bc7c001d6f225a5c9520bdf25678/games/current/board.879.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -247,6 +247,23 @@
     },
     "fromPosition": 4,
     "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "Tresquel",
+    "issue": 880,
+    "time": "2021-05-16T15:20:47.220Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
     "roll": 2
   }
 ]
