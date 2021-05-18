@@ -323,7 +323,7 @@
     "time": "2021-05-18T08:52:04.840Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e07e23f84cc87836480e04abe1122cb9823c761e/games/current/board.884.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -333,5 +333,22 @@
     "fromPosition": 10,
     "toPosition": 12,
     "roll": 2
+  },
+  {
+    "username": "svigstol",
+    "issue": 885,
+    "time": "2021-05-18T13:45:12.621Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   }
 ]
