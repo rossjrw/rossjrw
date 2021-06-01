@@ -757,7 +757,7 @@
     "time": "2021-05-30T20:21:41.889Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2db7260e6c39d0a9923a1b9919ee7e43a506cfd7/games/current/board.906.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -767,5 +767,22 @@
     "fromPosition": 3,
     "toPosition": 5,
     "roll": 2
+  },
+  {
+    "username": "wesmuehlhausen",
+    "issue": 907,
+    "time": "2021-06-01T01:10:11.063Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 5,
+    "roll": 3
   }
 ]
