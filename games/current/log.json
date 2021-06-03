@@ -854,7 +854,7 @@
     "time": "2021-06-03T02:11:36.351Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f72c4f9c8f7187924d70191557c8ac374b9bea98/games/current/board.911.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -864,5 +864,22 @@
     "fromPosition": 4,
     "toPosition": 5,
     "roll": 1
+  },
+  {
+    "username": "mishmanners",
+    "issue": 912,
+    "time": "2021-06-03T04:32:30.255Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
+    "roll": 2
   }
 ]
