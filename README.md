@@ -21,17 +21,17 @@ to make a move.
 :black_circle:black
 team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.918.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.919.svg"></p>
 
   **:black_circle:Black team:**
-  You rolled a 3!
+  You rolled a 1!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a new piece to tile 3    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [Move a piece from tile 1 to tile 4 (:rosette:)   ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%401-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [Move a piece from tile 2 to tile 5    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%402-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a new piece to tile 1    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a piece from tile 2 to tile 3    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%402-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a piece from tile 4 to tile 5    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%404-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -49,7 +49,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td><b><a href="https://github.com/shpatrickguo">@shpatrickguo</a></b> (14)<br><b><a href="https://github.com/realicraft">@realicraft</a></b> (3)<br><b><a href="https://github.com/HAUDRAUFHAUN">@HAUDRAUFHAUN</a></b> (2)<br><b><a href="https://github.com/Gitleptune">@Gitleptune</a></b> (1)<br><b><a href="https://github.com/marvelman3284">@marvelman3284</a></b> (1)<br><b><a href="https://github.com/Tresquel">@Tresquel</a></b> (1)<br><b><a href="https://github.com/svigstol">@svigstol</a></b> (1)<br><b><a href="https://github.com/NotAJumbleOfNumbers">@NotAJumbleOfNumbers</a></b> (1)<br><b><a href="https://github.com/BaptisteMartinet">@BaptisteMartinet</a></b> (1)<br><b><a href="https://github.com/tassiaaccioly">@tassiaaccioly</a></b> (1)</td>
+        <td><b><a href="https://github.com/shpatrickguo">@shpatrickguo</a></b> (15)<br><b><a href="https://github.com/realicraft">@realicraft</a></b> (3)<br><b><a href="https://github.com/HAUDRAUFHAUN">@HAUDRAUFHAUN</a></b> (2)<br><b><a href="https://github.com/Gitleptune">@Gitleptune</a></b> (1)<br><b><a href="https://github.com/marvelman3284">@marvelman3284</a></b> (1)<br><b><a href="https://github.com/Tresquel">@Tresquel</a></b> (1)<br><b><a href="https://github.com/svigstol">@svigstol</a></b> (1)<br><b><a href="https://github.com/NotAJumbleOfNumbers">@NotAJumbleOfNumbers</a></b> (1)<br><b><a href="https://github.com/BaptisteMartinet">@BaptisteMartinet</a></b> (1)<br><b><a href="https://github.com/tassiaaccioly">@tassiaaccioly</a></b> (1)</td>
         <td><b><a href="https://github.com/crxssed7">@crxssed7</a></b> (9)<br><b><a href="https://github.com/WeslleyNasRocha">@WeslleyNasRocha</a></b> (5)<br><b><a href="https://github.com/tb148">@tb148</a></b> (4)<br><b><a href="https://github.com/mishmanners">@mishmanners</a></b> (3)<br><b><a href="https://github.com/1ethanhansen">@1ethanhansen</a></b> (2)<br><b><a href="https://github.com/BrentonHershner">@BrentonHershner</a></b> (1)<br><b><a href="https://github.com/wesmuehlhausen">@wesmuehlhausen</a></b> (1)<br><b><a href="https://github.com/dhyeythumar">@dhyeythumar</a></b> (1)</td>
       </tr>
     </tbody>
@@ -117,7 +117,8 @@ What would you like to do?
   | 4th Jun 2021 05:49 | **55** | :white_circle: **[@mishmanners](https://github.com/mishmanners)** moved a white piece from position 5 to position 8  — claimed a rosette :rosette:  | [#915](https://github.com/rossjrw/rossjrw/issues/915) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/31a03552b1a15a0d6ed855447b075185bf5f86a3/games/current/board.915.svg) |
   | 4th Jun 2021 05:49 | **56** | :white_circle:  The white team rolled a 0 and their turn was automatically passed | [#915](https://github.com/rossjrw/rossjrw/issues/915) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/8a6dfd9c078864ee764c5745073944764383869a/games/current/board.915.svg) |
   | 5th Jun 2021 17:30 | **57** | :black_circle: **[@shpatrickguo](https://github.com/shpatrickguo)** moved a black piece onto the board to position 2    | [#917](https://github.com/rossjrw/rossjrw/issues/917) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/0901e66b64c25fa65eb0903a487da9ddce875ecd/games/current/board.917.svg) |
-  | 6th Jun 2021 07:19 | **58** | :white_circle: **[@dhyeythumar](https://github.com/dhyeythumar)** moved a white piece from position 7 to position 10    | [#918](https://github.com/rossjrw/rossjrw/issues/918) |  |
+  | 6th Jun 2021 07:19 | **58** | :white_circle: **[@dhyeythumar](https://github.com/dhyeythumar)** moved a white piece from position 7 to position 10    | [#918](https://github.com/rossjrw/rossjrw/issues/918) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/117f0bc1fcd6d0215d3a6440f2b4809f0d166827/games/current/board.918.svg) |
+  | 6th Jun 2021 16:32 | **59** | :black_circle: **[@shpatrickguo](https://github.com/shpatrickguo)** moved a black piece from position 1 to position 4  — claimed a rosette :rosette:  | [#919](https://github.com/rossjrw/rossjrw/issues/919) |  |
 
 </details>
 
