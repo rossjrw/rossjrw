@@ -934,7 +934,7 @@
     "time": "2021-06-05T17:30:47.205Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0901e66b64c25fa65eb0903a487da9ddce875ecd/games/current/board.917.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -944,5 +944,22 @@
     "fromPosition": 0,
     "toPosition": 2,
     "roll": 2
+  },
+  {
+    "username": "dhyeythumar",
+    "issue": 918,
+    "time": "2021-06-06T07:19:07.683Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 10,
+    "roll": 3
   }
 ]
