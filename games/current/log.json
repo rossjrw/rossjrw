@@ -1116,7 +1116,7 @@
     "time": "2021-06-13T13:21:16.856Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c3e39287ebd5017b13891410591f1148a83942f2/games/current/board.927.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1126,5 +1126,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "SiderealArt",
+    "issue": 929,
+    "time": "2021-06-13T14:24:43.339Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 9,
+    "roll": 2
   }
 ]
