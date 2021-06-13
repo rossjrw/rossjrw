@@ -1099,7 +1099,7 @@
     "time": "2021-06-11T17:12:38.826Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/19cc318509b22774a5065aaf735ad4a94e4e4512/games/current/board.926.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1109,5 +1109,22 @@
     "fromPosition": 0,
     "toPosition": 2,
     "roll": 2
+  },
+  {
+    "username": "ming-tsai",
+    "issue": 927,
+    "time": "2021-06-13T13:21:16.856Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   }
 ]
