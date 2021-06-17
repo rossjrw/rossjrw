@@ -21,7 +21,7 @@ to make a move.
 :black_circle:black
 team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.940.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.941.svg"></p>
 
   **:black_circle:Black team:**
   You rolled a 2!
@@ -29,7 +29,8 @@ What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a piece from tile 2 to tile 4 (:rosette:)   ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%402-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a new piece to tile 2    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a piece from tile 4 to tile 6    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%404-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
   | [Move a piece from tile 11 to tile 13    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%4011-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
@@ -48,7 +49,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td><b><a href="https://github.com/shpatrickguo">@shpatrickguo</a></b> (22)<br><b><a href="https://github.com/realicraft">@realicraft</a></b> (3)<br><b><a href="https://github.com/HAUDRAUFHAUN">@HAUDRAUFHAUN</a></b> (2)<br><b><a href="https://github.com/Byron-Inc">@Byron-Inc</a></b> (2)<br><b><a href="https://github.com/Gitleptune">@Gitleptune</a></b> (1)<br><b><a href="https://github.com/marvelman3284">@marvelman3284</a></b> (1)<br><b><a href="https://github.com/Tresquel">@Tresquel</a></b> (1)<br><b><a href="https://github.com/svigstol">@svigstol</a></b> (1)<br><b><a href="https://github.com/NotAJumbleOfNumbers">@NotAJumbleOfNumbers</a></b> (1)<br><b><a href="https://github.com/BaptisteMartinet">@BaptisteMartinet</a></b> (1)<br><b><a href="https://github.com/tassiaaccioly">@tassiaaccioly</a></b> (1)<br><b><a href="https://github.com/SiderealArt">@SiderealArt</a></b> (1)<br><b><a href="https://github.com/Goldy98">@Goldy98</a></b> (1)</td>
+        <td><b><a href="https://github.com/shpatrickguo">@shpatrickguo</a></b> (22)<br><b><a href="https://github.com/realicraft">@realicraft</a></b> (3)<br><b><a href="https://github.com/Byron-Inc">@Byron-Inc</a></b> (3)<br><b><a href="https://github.com/HAUDRAUFHAUN">@HAUDRAUFHAUN</a></b> (2)<br><b><a href="https://github.com/Gitleptune">@Gitleptune</a></b> (1)<br><b><a href="https://github.com/marvelman3284">@marvelman3284</a></b> (1)<br><b><a href="https://github.com/Tresquel">@Tresquel</a></b> (1)<br><b><a href="https://github.com/svigstol">@svigstol</a></b> (1)<br><b><a href="https://github.com/NotAJumbleOfNumbers">@NotAJumbleOfNumbers</a></b> (1)<br><b><a href="https://github.com/BaptisteMartinet">@BaptisteMartinet</a></b> (1)<br><b><a href="https://github.com/tassiaaccioly">@tassiaaccioly</a></b> (1)<br><b><a href="https://github.com/SiderealArt">@SiderealArt</a></b> (1)<br><b><a href="https://github.com/Goldy98">@Goldy98</a></b> (1)</td>
         <td><b><a href="https://github.com/crxssed7">@crxssed7</a></b> (16)<br><b><a href="https://github.com/WeslleyNasRocha">@WeslleyNasRocha</a></b> (5)<br><b><a href="https://github.com/tb148">@tb148</a></b> (4)<br><b><a href="https://github.com/1ethanhansen">@1ethanhansen</a></b> (3)<br><b><a href="https://github.com/mishmanners">@mishmanners</a></b> (3)<br><b><a href="https://github.com/BrentonHershner">@BrentonHershner</a></b> (1)<br><b><a href="https://github.com/wesmuehlhausen">@wesmuehlhausen</a></b> (1)<br><b><a href="https://github.com/dhyeythumar">@dhyeythumar</a></b> (1)<br><b><a href="https://github.com/ming-tsai">@ming-tsai</a></b> (1)</td>
       </tr>
     </tbody>
@@ -138,7 +139,8 @@ What would you like to do?
   | 16th Jun 2021 11:01 | **77** | :white_circle: **[@crxssed7](https://github.com/crxssed7)** ascended a white piece from position 12 :rocket:    | [#937](https://github.com/rossjrw/rossjrw/issues/937) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/7240adb9b90e673a34a6d502558dbb198fe3c620/games/current/board.937.svg) |
   | 16th Jun 2021 16:12 | **78** | :black_circle: **[@shpatrickguo](https://github.com/shpatrickguo)** moved a black piece from position 6 to position 8  — claimed a rosette :rosette:  | [#938](https://github.com/rossjrw/rossjrw/issues/938) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/8b76bc9da867bd34e84b7bf6e85970a6bad9e6ba/games/current/board.938.svg) |
   | 17th Jun 2021 06:13 | **79** | :black_circle: **[@shpatrickguo](https://github.com/shpatrickguo)** moved a black piece from position 8 to position 11    | [#939](https://github.com/rossjrw/rossjrw/issues/939) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/c76eaa67b9b898c9bc04a7edcf330093eebdcedd/games/current/board.939.svg) |
-  | 17th Jun 2021 07:49 | **80** | :white_circle: **[@crxssed7](https://github.com/crxssed7)** moved a white piece onto the board to position 1    | [#940](https://github.com/rossjrw/rossjrw/issues/940) |  |
+  | 17th Jun 2021 07:49 | **80** | :white_circle: **[@crxssed7](https://github.com/crxssed7)** moved a white piece onto the board to position 1    | [#940](https://github.com/rossjrw/rossjrw/issues/940) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/97eed961b6ab9aa7a7d76e2686bc7d8adc04ffe7/games/current/board.940.svg) |
+  | 17th Jun 2021 13:04 | **81** | :black_circle: **[@Byron-Inc](https://github.com/Byron-Inc)** moved a black piece from position 2 to position 4  — claimed a rosette :rosette:  | [#941](https://github.com/rossjrw/rossjrw/issues/941) |  |
 
 </details>
 

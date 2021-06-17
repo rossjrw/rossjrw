@@ -1320,7 +1320,7 @@
     "time": "2021-06-17T07:49:50.693Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/97eed961b6ab9aa7a7d76e2686bc7d8adc04ffe7/games/current/board.940.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1330,5 +1330,22 @@
     "fromPosition": 0,
     "toPosition": 1,
     "roll": 1
+  },
+  {
+    "username": "Byron-Inc",
+    "issue": 941,
+    "time": "2021-06-17T13:04:03.506Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
   }
 ]
