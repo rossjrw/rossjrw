@@ -1371,7 +1371,7 @@
     "time": "2021-06-19T13:59:57.049Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/678ebeed4b5f1ad2521d08bd6aba0e5bbc94f873/games/current/board.943.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1380,6 +1380,23 @@
     },
     "fromPosition": 1,
     "toPosition": 3,
+    "roll": 2
+  },
+  {
+    "username": "Tr1angular",
+    "issue": 944,
+    "time": "2021-06-19T14:02:18.758Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
     "roll": 2
   }
 ]
