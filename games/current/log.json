@@ -1422,7 +1422,7 @@
     "time": "2021-06-20T07:25:57.662Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f363b3e319c2abb577aeda697b4fb5f231766219/games/current/board.946.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1431,6 +1431,23 @@
     },
     "fromPosition": 13,
     "toPosition": 15,
+    "roll": 2
+  },
+  {
+    "username": "nclsbayona",
+    "issue": 947,
+    "time": "2021-06-20T21:47:28.615Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 8,
     "roll": 2
   }
 ]
