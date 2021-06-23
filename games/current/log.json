@@ -1507,7 +1507,7 @@
     "time": "2021-06-22T09:05:50.909Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4ac319dc83eb7d0ba444e622daf5d40d992198c3/games/current/board.952.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1517,5 +1517,22 @@
     "fromPosition": 9,
     "toPosition": 11,
     "roll": 2
+  },
+  {
+    "username": "cheraphp",
+    "issue": 953,
+    "time": "2021-06-23T16:01:20.433Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
   }
 ]
