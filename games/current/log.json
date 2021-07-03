@@ -2094,7 +2094,7 @@
     "time": "2021-07-02T19:29:28.230Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4f6a5ce9df7e56e9c246607c0ef6e379e409ec98/games/current/board.986.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -2103,6 +2103,23 @@
     },
     "fromPosition": 4,
     "toPosition": 7,
+    "roll": 3
+  },
+  {
+    "username": "mthsmb",
+    "issue": 987,
+    "time": "2021-07-03T01:39:55.620Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
     "roll": 3
   }
 ]
