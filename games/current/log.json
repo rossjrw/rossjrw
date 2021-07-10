@@ -2230,7 +2230,7 @@
     "time": "2021-07-09T17:31:13.547Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8ca562e413a32eb6eb73097eb48c9d261176748c/games/current/board.994.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2239,6 +2239,23 @@
     },
     "fromPosition": 9,
     "toPosition": 11,
+    "roll": 2
+  },
+  {
+    "username": "PolandBOX",
+    "issue": 995,
+    "time": "2021-07-10T09:12:07.450Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
     "roll": 2
   }
 ]
