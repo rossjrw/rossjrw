@@ -2264,7 +2264,7 @@
     "time": "2021-07-10T14:50:45.232Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2d82e215bc732873a8df0e62a46afe243fd9839f/games/current/board.996.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -2274,5 +2274,22 @@
     "fromPosition": 3,
     "toPosition": 5,
     "roll": 2
+  },
+  {
+    "username": "shaunakg",
+    "issue": 997,
+    "time": "2021-07-11T10:49:14.220Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
+    "roll": 1
   }
 ]
