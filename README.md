@@ -5,7 +5,7 @@ We're playing
 
 <p align="center">
   <b>It's the
-  :black_circle:black
+  :white_circle:white
   team's turn.</b>
 </p>
 
@@ -18,19 +18,19 @@ If it's not your turn, check back later, or
 friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)
 to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-:black_circle:black
+:white_circle:white
 team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1014.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1015.svg"></p>
 
-  **:black_circle:Black team:**
+  **:white_circle:White team:**
   You rolled a 1!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a piece from tile 1 to tile 2    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%401-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [Move a piece from tile 6 to tile 7    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%406-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a piece from tile 11 to tile 12    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%4011-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a piece from tile 13 to tile 14 (:rosette:)   ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%4013-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -48,7 +48,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td><b><a href="https://github.com/shpatrickguo">@shpatrickguo</a></b> (27)<br><b><a href="https://github.com/antjacquemin">@antjacquemin</a></b> (15)<br><b><a href="https://github.com/Byron-Inc">@Byron-Inc</a></b> (5)<br><b><a href="https://github.com/realicraft">@realicraft</a></b> (3)<br><b><a href="https://github.com/Tr1angular">@Tr1angular</a></b> (3)<br><b><a href="https://github.com/HAUDRAUFHAUN">@HAUDRAUFHAUN</a></b> (2)<br><b><a href="https://github.com/mthsmb">@mthsmb</a></b> (2)<br><b><a href="https://github.com/Gitleptune">@Gitleptune</a></b> (1)<br><b><a href="https://github.com/marvelman3284">@marvelman3284</a></b> (1)<br><b><a href="https://github.com/Tresquel">@Tresquel</a></b> (1)<br><b><a href="https://github.com/svigstol">@svigstol</a></b> (1)<br><b><a href="https://github.com/NotAJumbleOfNumbers">@NotAJumbleOfNumbers</a></b> (1)<br><b><a href="https://github.com/BaptisteMartinet">@BaptisteMartinet</a></b> (1)<br><b><a href="https://github.com/tassiaaccioly">@tassiaaccioly</a></b> (1)<br><b><a href="https://github.com/SiderealArt">@SiderealArt</a></b> (1)<br><b><a href="https://github.com/Goldy98">@Goldy98</a></b> (1)<br><b><a href="https://github.com/Hans5958">@Hans5958</a></b> (1)<br><b><a href="https://github.com/cheraphp">@cheraphp</a></b> (1)<br><b><a href="https://github.com/AnshumanMahato">@AnshumanMahato</a></b> (1)<br><b><a href="https://github.com/kerolloz">@kerolloz</a></b> (1)</td>
+        <td><b><a href="https://github.com/shpatrickguo">@shpatrickguo</a></b> (27)<br><b><a href="https://github.com/antjacquemin">@antjacquemin</a></b> (16)<br><b><a href="https://github.com/Byron-Inc">@Byron-Inc</a></b> (5)<br><b><a href="https://github.com/realicraft">@realicraft</a></b> (3)<br><b><a href="https://github.com/Tr1angular">@Tr1angular</a></b> (3)<br><b><a href="https://github.com/HAUDRAUFHAUN">@HAUDRAUFHAUN</a></b> (2)<br><b><a href="https://github.com/mthsmb">@mthsmb</a></b> (2)<br><b><a href="https://github.com/Gitleptune">@Gitleptune</a></b> (1)<br><b><a href="https://github.com/marvelman3284">@marvelman3284</a></b> (1)<br><b><a href="https://github.com/Tresquel">@Tresquel</a></b> (1)<br><b><a href="https://github.com/svigstol">@svigstol</a></b> (1)<br><b><a href="https://github.com/NotAJumbleOfNumbers">@NotAJumbleOfNumbers</a></b> (1)<br><b><a href="https://github.com/BaptisteMartinet">@BaptisteMartinet</a></b> (1)<br><b><a href="https://github.com/tassiaaccioly">@tassiaaccioly</a></b> (1)<br><b><a href="https://github.com/SiderealArt">@SiderealArt</a></b> (1)<br><b><a href="https://github.com/Goldy98">@Goldy98</a></b> (1)<br><b><a href="https://github.com/Hans5958">@Hans5958</a></b> (1)<br><b><a href="https://github.com/cheraphp">@cheraphp</a></b> (1)<br><b><a href="https://github.com/AnshumanMahato">@AnshumanMahato</a></b> (1)<br><b><a href="https://github.com/kerolloz">@kerolloz</a></b> (1)</td>
         <td><b><a href="https://github.com/crxssed7">@crxssed7</a></b> (24)<br><b><a href="https://github.com/1ethanhansen">@1ethanhansen</a></b> (24)<br><b><a href="https://github.com/WeslleyNasRocha">@WeslleyNasRocha</a></b> (5)<br><b><a href="https://github.com/tb148">@tb148</a></b> (4)<br><b><a href="https://github.com/mishmanners">@mishmanners</a></b> (3)<br><b><a href="https://github.com/MatthewOliverCode">@MatthewOliverCode</a></b> (2)<br><b><a href="https://github.com/BrentonHershner">@BrentonHershner</a></b> (1)<br><b><a href="https://github.com/wesmuehlhausen">@wesmuehlhausen</a></b> (1)<br><b><a href="https://github.com/dhyeythumar">@dhyeythumar</a></b> (1)<br><b><a href="https://github.com/ming-tsai">@ming-tsai</a></b> (1)<br><b><a href="https://github.com/nclsbayona">@nclsbayona</a></b> (1)<br><b><a href="https://github.com/the-rebooted-coder">@the-rebooted-coder</a></b> (1)<br><b><a href="https://github.com/PolandBOX">@PolandBOX</a></b> (1)<br><b><a href="https://github.com/shaunakg">@shaunakg</a></b> (1)</td>
       </tr>
     </tbody>
@@ -212,7 +212,8 @@ What would you like to do?
   | 15th Jul 2021 18:51 | **151** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** moved a white piece from position 7 to position 8  — claimed a rosette :rosette:  | [#1012](https://github.com/rossjrw/rossjrw/issues/1012) |  |
   | 15th Jul 2021 18:51 | **152** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** moved a white piece from position 11 to position 13    | [#1013](https://github.com/rossjrw/rossjrw/issues/1013) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/cee89c77a727fb07a1df318207df1d3a52db224d/games/current/board.1013.svg) |
   | 15th Jul 2021 18:51 | **153** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#1013](https://github.com/rossjrw/rossjrw/issues/1013) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/21d9dd70a7d329ff0661eaed4c4bfd006aa3e3d4/games/current/board.1013.svg) |
-  | 15th Jul 2021 19:33 | **154** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** moved a white piece from position 8 to position 11    | [#1014](https://github.com/rossjrw/rossjrw/issues/1014) |  |
+  | 15th Jul 2021 19:33 | **154** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** moved a white piece from position 8 to position 11    | [#1014](https://github.com/rossjrw/rossjrw/issues/1014) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/6cff88d89a094015170d5bc8d6e33a082bf68003/games/current/board.1014.svg) |
+  | 15th Jul 2021 21:17 | **155** | :black_circle: **[@antjacquemin](https://github.com/antjacquemin)** moved a black piece from position 1 to position 2    | [#1015](https://github.com/rossjrw/rossjrw/issues/1015) |  |
 
 </details>
 
