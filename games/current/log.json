@@ -2708,10 +2708,27 @@
     "time": "2021-07-16T23:45:11.070Z",
     "team": "w",
     "action": "pass",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/83e438ec350f7d86b002a51472063a15b263e973/games/current/board.1022.svg",
     "events": null,
     "fromPosition": null,
     "toPosition": null,
     "roll": 4
+  },
+  {
+    "username": "antjacquemin",
+    "issue": 1023,
+    "time": "2021-07-16T23:46:04.645Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
   }
 ]
