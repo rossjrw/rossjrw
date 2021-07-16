@@ -2611,7 +2611,7 @@
     "time": "2021-07-16T22:00:53.640Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b4f5fbeade996feab2dcce5bf267f5e119879558/games/current/board.1018.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -2621,5 +2621,22 @@
     "fromPosition": 2,
     "toPosition": 4,
     "roll": 2
+  },
+  {
+    "username": "antjacquemin",
+    "issue": 1019,
+    "time": "2021-07-16T22:01:39.346Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 7,
+    "roll": 1
   }
 ]
