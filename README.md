@@ -5,7 +5,7 @@ We're playing
 
 <p align="center">
   <b>It's the
-  :black_circle:black
+  :white_circle:white
   team's turn.</b>
 </p>
 
@@ -18,19 +18,19 @@ If it's not your turn, check back later, or
 friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)
 to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-:black_circle:black
+:white_circle:white
 team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1028.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1029.svg"></p>
 
-  **:black_circle:Black team:**
-  You rolled a 3!
+  **:white_circle:White team:**
+  You rolled a 2!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a new piece to tile 3    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [Move a piece from tile 2 to tile 5    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%402-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a new piece to tile 2    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a piece from tile 3 to tile 5    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%403-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -48,7 +48,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td><b><a href="https://github.com/realicraft">@realicraft</a></b> (1)</td>
+        <td><b><a href="https://github.com/realicraft">@realicraft</a></b> (1)<br><b><a href="https://github.com/Byron-Inc">@Byron-Inc</a></b> (1)</td>
         <td><b><a href="https://github.com/1ethanhansen">@1ethanhansen</a></b> (3)</td>
       </tr>
     </tbody>
@@ -63,7 +63,8 @@ What would you like to do?
   | 17th Jul 2021 00:18 | **2** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#1026](https://github.com/rossjrw/rossjrw/issues/1026) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/11ee80b710ada31deff86dd61b2986f317bdb700/games/current/board.1026.svg) |
   | 17th Jul 2021 00:19 | **3** | :white_circle: **[@1ethanhansen](https://github.com/1ethanhansen)** moved a white piece from position 1 to position 3    | [#1027](https://github.com/rossjrw/rossjrw/issues/1027) |  |
   | 17th Jul 2021 00:31 | **4** | :black_circle: **[@realicraft](https://github.com/realicraft)** moved a black piece onto the board to position 2    | [#1028](https://github.com/rossjrw/rossjrw/issues/1028) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/4cad9c3a688b19f0ba6363cde476bc8f6462744e/games/current/board.1028.svg) |
-  | 17th Jul 2021 00:31 | **5** | :white_circle:  The white team rolled a 0 and their turn was automatically passed | [#1028](https://github.com/rossjrw/rossjrw/issues/1028) |  |
+  | 17th Jul 2021 00:31 | **5** | :white_circle:  The white team rolled a 0 and their turn was automatically passed | [#1028](https://github.com/rossjrw/rossjrw/issues/1028) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/ca61406d388d3b2dd8e70fae47d6715169662569/games/current/board.1028.svg) |
+  | 17th Jul 2021 01:18 | **6** | :black_circle: **[@Byron-Inc](https://github.com/Byron-Inc)** moved a black piece onto the board to position 3    | [#1029](https://github.com/rossjrw/rossjrw/issues/1029) |  |
 
 </details>
 
