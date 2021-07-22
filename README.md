@@ -5,7 +5,7 @@ We're playing
 
 <p align="center">
   <b>It's the
-  :white_circle:white
+  :black_circle:black
   team's turn.</b>
 </p>
 
@@ -18,19 +18,19 @@ If it's not your turn, check back later, or
 friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)
 to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-:white_circle:white
+:black_circle:black
 team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1037.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1038.svg"></p>
 
-  **:white_circle:White team:**
+  **:black_circle:Black team:**
   You rolled a 3!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a piece from tile 2 to tile 5    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%402-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [Move a piece from tile 3 to tile 6  (:crossed_swords:)  ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%403-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a new piece to tile 3    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a piece from tile 10 to tile 13    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%4010-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -49,7 +49,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/Byron-Inc">@Byron-Inc</a></b> (2)<br><b><a href="https://github.com/PkmnQ">@PkmnQ</a></b> (2)<br><b><a href="https://github.com/realicraft">@realicraft</a></b> (1)<br><b><a href="https://github.com/teharsingh">@teharsingh</a></b> (1)</td>
-        <td><b><a href="https://github.com/1ethanhansen">@1ethanhansen</a></b> (4)<br><b><a href="https://github.com/tb148">@tb148</a></b> (2)</td>
+        <td><b><a href="https://github.com/1ethanhansen">@1ethanhansen</a></b> (4)<br><b><a href="https://github.com/tb148">@tb148</a></b> (3)</td>
       </tr>
     </tbody>
   </table>
@@ -72,7 +72,8 @@ What would you like to do?
   | 22nd Jul 2021 00:36 | **11** | :white_circle: **[@tb148](https://github.com/tb148)** moved a white piece from position 3 to position 6    | [#1035](https://github.com/rossjrw/rossjrw/issues/1035) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/e1ca22e68e54e83f9bc064b4e98323865ac8e9c0/games/current/board.1035.svg) |
   | 22nd Jul 2021 05:44 | **12** | :black_circle: **[@PkmnQ](https://github.com/PkmnQ)** moved a black piece from position 3 to position 6 — captured a white piece :crossed_swords:   | [#1036](https://github.com/rossjrw/rossjrw/issues/1036) |  |
   | 22nd Jul 2021 07:35 | **13** | :white_circle: **[@tb148](https://github.com/tb148)** moved a white piece onto the board to position 3    | [#1037](https://github.com/rossjrw/rossjrw/issues/1037) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/38078a5f6cf8f21719cbe593a28372a148edce47/games/current/board.1037.svg) |
-  | 22nd Jul 2021 07:35 | **14** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#1037](https://github.com/rossjrw/rossjrw/issues/1037) |  |
+  | 22nd Jul 2021 07:35 | **14** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#1037](https://github.com/rossjrw/rossjrw/issues/1037) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/03a36dd19208b5e6d4d0c17283542a5b35716dfd/games/current/board.1037.svg) |
+  | 22nd Jul 2021 07:38 | **15** | :white_circle: **[@tb148](https://github.com/tb148)** moved a white piece from position 3 to position 6 — captured a black piece :crossed_swords:   | [#1038](https://github.com/rossjrw/rossjrw/issues/1038) |  |
 
 </details>
 
