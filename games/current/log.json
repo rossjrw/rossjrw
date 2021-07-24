@@ -417,7 +417,7 @@
     "time": "2021-07-24T01:21:15.261Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c7eb3af18c65a3d61775c65b8e862b1779a516ae/games/current/board.1048.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -427,5 +427,22 @@
     "fromPosition": 4,
     "toPosition": 6,
     "roll": 2
+  },
+  {
+    "username": "homemadestea58",
+    "issue": 1049,
+    "time": "2021-07-24T01:35:09.818Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 10,
+    "roll": 3
   }
 ]
