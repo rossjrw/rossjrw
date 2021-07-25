@@ -570,7 +570,7 @@
     "time": "2021-07-25T02:14:17.472Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/316b5d734e365144a2cacec555cb1088e4ea9868/games/current/board.1058.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -580,5 +580,22 @@
     "fromPosition": 9,
     "toPosition": 10,
     "roll": 1
+  },
+  {
+    "username": "PkmnQ",
+    "issue": 1059,
+    "time": "2021-07-25T04:43:11.150Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 8,
+    "roll": 4
   }
 ]
