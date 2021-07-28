@@ -655,7 +655,7 @@
     "time": "2021-07-26T08:07:11.606Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e82a2acccc77684b71d1267eaafc7ac500ab17a9/games/current/board.1063.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -665,5 +665,22 @@
     "fromPosition": 3,
     "toPosition": 6,
     "roll": 3
+  },
+  {
+    "username": "bloedboemmel",
+    "issue": 1064,
+    "time": "2021-07-28T17:44:49.367Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
   }
 ]
