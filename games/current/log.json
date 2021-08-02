@@ -757,7 +757,7 @@
     "time": "2021-08-02T05:34:49.668Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d15b9d1eb0fb5ab67264c5adbd9347468a180bdd/games/current/board.1069.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -767,5 +767,22 @@
     "fromPosition": 7,
     "toPosition": 9,
     "roll": 2
+  },
+  {
+    "username": "Tijil2111",
+    "issue": 1070,
+    "time": "2021-08-02T06:40:43.580Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 3,
+    "roll": 1
   }
 ]
