@@ -791,7 +791,7 @@
     "time": "2021-08-02T09:48:30.061Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/786491b5dcd699ab94b444c38a4ab429aae136d7/games/current/board.1071.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -800,6 +800,23 @@
     },
     "fromPosition": 9,
     "toPosition": 11,
+    "roll": 2
+  },
+  {
+    "username": "jash-desai",
+    "issue": 1072,
+    "time": "2021-08-02T10:37:46.113Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
     "roll": 2
   }
 ]
