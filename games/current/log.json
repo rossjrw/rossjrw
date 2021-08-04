@@ -852,5 +852,34 @@
     "fromPosition": 2,
     "toPosition": 4,
     "roll": 2
+  },
+  {
+    "username": "shpatrickguo",
+    "issue": 1075,
+    "time": "2021-08-04T22:40:56.868Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/656141f997a6a7b3c07b053bee594780c89c40d7/games/current/board.1075.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
+    "roll": 1
+  },
+  {
+    "username": "shpatrickguo",
+    "issue": 1075,
+    "time": "2021-08-04T22:40:56.868Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
