@@ -876,10 +876,27 @@
     "time": "2021-08-04T22:40:56.868Z",
     "team": "w",
     "action": "pass",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3a692396fc3f92e0a349cb47f35a68ddb8b9b9e0/games/current/board.1075.svg",
     "events": null,
     "fromPosition": null,
     "toPosition": null,
     "roll": 0
+  },
+  {
+    "username": "LuciFR1809",
+    "issue": 1076,
+    "time": "2021-08-05T08:47:34.456Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 7,
+    "roll": 2
   }
 ]
