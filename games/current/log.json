@@ -939,7 +939,7 @@
     "time": "2021-08-06T07:53:56.954Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b13e8b42887c6b4fe39d6f5420e0bccecf5aef89/games/current/board.1079.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -949,5 +949,22 @@
     "fromPosition": 0,
     "toPosition": 4,
     "roll": 4
+  },
+  {
+    "username": "jah-edw",
+    "issue": 1080,
+    "time": "2021-08-06T07:55:53.171Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 10,
+    "roll": 3
   }
 ]
