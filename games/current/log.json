@@ -973,7 +973,7 @@
     "time": "2021-08-07T07:32:52.335Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4300432bbd73559d1b1f7d305516f41c015b0537/games/current/board.1081.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -983,5 +983,22 @@
     "fromPosition": 0,
     "toPosition": 2,
     "roll": 2
+  },
+  {
+    "username": "akshat-jjain",
+    "issue": 1082,
+    "time": "2021-08-07T16:48:08.475Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
   }
 ]
