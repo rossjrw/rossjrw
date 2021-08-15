@@ -1075,7 +1075,7 @@
     "time": "2021-08-15T05:18:11.705Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c096ec916919596325eda07206dd2cc86efdf871/games/current/board.1087.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1085,5 +1085,22 @@
     "fromPosition": 11,
     "toPosition": 12,
     "roll": 1
+  },
+  {
+    "username": "abhishek-singh77",
+    "issue": 1088,
+    "time": "2021-08-15T17:43:48.669Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 8,
+    "roll": 2
   }
 ]
