@@ -1109,7 +1109,7 @@
     "time": "2021-08-18T11:35:41.369Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6d4bc0acec8136cd38ce31edfcb26ab65bc8006f/games/current/board.1089.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1119,5 +1119,22 @@
     "fromPosition": 14,
     "toPosition": 15,
     "roll": 1
+  },
+  {
+    "username": "hhej",
+    "issue": 1090,
+    "time": "2021-08-18T15:02:00.236Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 12,
+    "toPosition": 15,
+    "roll": 3
   }
 ]
