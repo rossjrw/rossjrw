@@ -1092,7 +1092,7 @@
     "time": "2021-08-15T17:43:48.669Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0571364e16b73a114fa70ad0a4c786c71937e67f/games/current/board.1088.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1102,5 +1102,22 @@
     "fromPosition": 6,
     "toPosition": 8,
     "roll": 2
+  },
+  {
+    "username": "tb148",
+    "issue": 1089,
+    "time": "2021-08-18T11:35:41.369Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
+    "roll": 1
   }
 ]
