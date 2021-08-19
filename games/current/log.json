@@ -1160,7 +1160,7 @@
     "time": "2021-08-19T12:14:11.356Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/04a63857613f23cc8525f62e39a30ae1b2515fd3/games/current/board.1092.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1170,5 +1170,22 @@
     "fromPosition": 4,
     "toPosition": 7,
     "roll": 3
+  },
+  {
+    "username": "cadox8",
+    "issue": 1093,
+    "time": "2021-08-19T18:20:01.037Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
   }
 ]
