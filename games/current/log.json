@@ -1563,7 +1563,7 @@
     "time": "2021-08-30T12:11:37.043Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/08edfe38a1ac1963e6dd55e6a25923dddc9c102f/games/current/board.1117.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1572,6 +1572,23 @@
     },
     "fromPosition": 6,
     "toPosition": 8,
+    "roll": 2
+  },
+  {
+    "username": "kallyas",
+    "issue": 1118,
+    "time": "2021-08-30T12:13:13.272Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 10,
     "roll": 2
   }
 ]
