@@ -1789,5 +1789,34 @@
     "fromPosition": 4,
     "toPosition": 6,
     "roll": 2
+  },
+  {
+    "username": "TheDevilOfJesters",
+    "issue": 1132,
+    "time": "2021-09-14T13:51:22.395Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c7c9d5b019243c2113667e68b4717cfbad1ccbbe/games/current/board.1132.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "TheDevilOfJesters",
+    "issue": 1132,
+    "time": "2021-09-14T13:51:22.395Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
