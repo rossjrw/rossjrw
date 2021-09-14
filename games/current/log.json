@@ -1762,7 +1762,7 @@
     "time": "2021-09-13T16:23:51.515Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/67c172e0ab1b75b59c4b86929ea7f91fa3ad30d2/games/current/board.1130.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1772,5 +1772,22 @@
     "fromPosition": 8,
     "toPosition": 11,
     "roll": 3
+  },
+  {
+    "username": "Akankshaaaa",
+    "issue": 1131,
+    "time": "2021-09-14T11:46:36.063Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
   }
 ]
