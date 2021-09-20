@@ -1893,7 +1893,7 @@
     "time": "2021-09-20T06:19:11.004Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6d05bcbe5fc32dc986b2a1d3a134c076cd2e61df/games/current/board.1138.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1903,5 +1903,22 @@
     "fromPosition": 8,
     "toPosition": 10,
     "roll": 2
+  },
+  {
+    "username": "HorebParraud",
+    "issue": 1139,
+    "time": "2021-09-20T09:49:37.992Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 7,
+    "roll": 1
   }
 ]
