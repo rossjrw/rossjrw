@@ -2012,7 +2012,7 @@
     "time": "2021-09-26T18:10:56.766Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b5edcbabbcfa3a7ee2dc1d8d3ddf00ef4b13d078/games/current/board.1148.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2021,6 +2021,23 @@
     },
     "fromPosition": 7,
     "toPosition": 9,
+    "roll": 2
+  },
+  {
+    "username": "OmarAEH",
+    "issue": 1150,
+    "time": "2021-09-30T04:56:10.499Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
     "roll": 2
   }
 ]
