@@ -2046,7 +2046,7 @@
     "time": "2021-09-30T12:10:46.164Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/45c92aa1bb1f3d4ca52f5f12408713f9f68b04a0/games/current/board.1151.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2056,5 +2056,22 @@
     "fromPosition": 3,
     "toPosition": 6,
     "roll": 3
+  },
+  {
+    "username": "Mbarmem",
+    "issue": 1152,
+    "time": "2021-10-04T22:59:10.382Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 11,
+    "roll": 1
   }
 ]
