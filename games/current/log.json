@@ -2296,7 +2296,7 @@
     "time": "2021-10-11T14:30:51.167Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/abea6db683489e190ad03d22c488ae444bed473a/games/current/board.1166.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2305,6 +2305,23 @@
     },
     "fromPosition": 5,
     "toPosition": 7,
+    "roll": 2
+  },
+  {
+    "username": "OmKakatkar",
+    "issue": 1167,
+    "time": "2021-10-11T15:31:27.245Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 12,
+    "toPosition": 14,
     "roll": 2
   }
 ]
