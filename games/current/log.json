@@ -2192,5 +2192,34 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "roryclaasen",
+    "issue": 1161,
+    "time": "2021-10-11T09:33:26.407Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/fc22935663bf37518cad647c804852cf46ddff50/games/current/board.1161.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 7,
+    "roll": 2
+  },
+  {
+    "username": "roryclaasen",
+    "issue": 1161,
+    "time": "2021-10-11T09:33:26.407Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
