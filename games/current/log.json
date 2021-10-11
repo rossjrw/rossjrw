@@ -2165,7 +2165,7 @@
     "time": "2021-10-11T08:14:49.051Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/01841d2b8156758e1c6f5b1ca48a6da35c23c217/games/current/board.1159.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2175,5 +2175,22 @@
     "fromPosition": 9,
     "toPosition": 11,
     "roll": 2
+  },
+  {
+    "username": "enkr1",
+    "issue": 1160,
+    "time": "2021-10-11T09:17:50.493Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   }
 ]
