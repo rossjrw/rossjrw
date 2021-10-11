@@ -2245,7 +2245,7 @@
     "time": "2021-10-11T09:34:54.681Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/9eb97b416389ccedbb2d59cf5a8a89ab9206b2a6/games/current/board.1163.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2254,6 +2254,23 @@
     },
     "fromPosition": 8,
     "toPosition": 10,
+    "roll": 2
+  },
+  {
+    "username": "pjalsGit",
+    "issue": 1164,
+    "time": "2021-10-11T12:17:01.335Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
     "roll": 2
   }
 ]
