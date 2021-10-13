@@ -2330,7 +2330,7 @@
     "time": "2021-10-11T15:32:32.574Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/67c714596c7475fd2063e0ecd2a8ec505640123e/games/current/board.1168.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2339,6 +2339,23 @@
     },
     "fromPosition": 10,
     "toPosition": 12,
+    "roll": 2
+  },
+  {
+    "username": "import-brain",
+    "issue": 1169,
+    "time": "2021-10-13T01:08:16.625Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 3,
     "roll": 2
   }
 ]
