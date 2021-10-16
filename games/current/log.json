@@ -2374,5 +2374,34 @@
     "fromPosition": 12,
     "toPosition": 15,
     "roll": 3
+  },
+  {
+    "username": "ISCybercoreSI",
+    "issue": 1171,
+    "time": "2021-10-16T05:40:52.353Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/25f479a012e2c58e2817752f87e462a1258cbff8/games/current/board.1171.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
+    "roll": 2
+  },
+  {
+    "username": "ISCybercoreSI",
+    "issue": 1171,
+    "time": "2021-10-16T05:40:52.353Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 4
   }
 ]
