@@ -1,7 +1,7 @@
 Welcome to my Github profile!
 We're playing
 [The Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur).
-**Game #7 is in progress,** but you can join!
+**Game #8 is in progress,** but you can join!
 
 <p align="center">
   <b>It's the
@@ -21,19 +21,20 @@ to make a move.
 :black_circle:black
 team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1176.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1177.svg"></p>
 
   **:black_circle:Black team:**
-  You rolled a 4!
+  You rolled a 3!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a new piece to tile 4 (:rosette:)   ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-4%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a new piece to tile 3    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a piece from tile 4 to tile 7    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%404-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
-<details><summary>Game #7 so far</summary>
+<details><summary>Game #8 so far</summary>
 
 ## Who's on each team?
 
@@ -47,7 +48,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td><b><a href="https://github.com/OmKakatkar">@OmKakatkar</a></b> (1)</td>
+        <td><b><a href="https://github.com/OmKakatkar">@OmKakatkar</a></b> (2)</td>
         <td></td>
       </tr>
     </tbody>
@@ -57,7 +58,8 @@ What would you like to do?
 
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
-  | 19th Oct 2021 14:29 | **0** | :black_circle: **[@OmKakatkar](https://github.com/OmKakatkar)** started a new game | [#1176](https://github.com/rossjrw/rossjrw/issues/1176) |  |
+  | 19th Oct 2021 14:29 | **0** | :black_circle: **[@OmKakatkar](https://github.com/OmKakatkar)** started a new game | [#1176](https://github.com/rossjrw/rossjrw/issues/1176) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/a44208b2568ff566e7f93fb4cfab7886b5671318/games/current/board.1176.svg) |
+  | 19th Oct 2021 14:30 | **1** | :black_circle: **[@OmKakatkar](https://github.com/OmKakatkar)** moved a black piece onto the board to position 4  — claimed a rosette :rosette:  | [#1177](https://github.com/rossjrw/rossjrw/issues/1177) |  |
 
 </details>
 
@@ -107,6 +109,13 @@ What would you like to do?
    * The :white_circle:white team captured 10 black pieces and claimed 18 rosettes. 
    * The MVP of the winning team was **[@1ethanhansen](https://github.com/1ethanhansen)**, who played 31 moves. 
    * The winning move was made by **[@1ethanhansen](https://github.com/1ethanhansen)** ([#1024](https://github.com/rossjrw/rossjrw/issues/1024)).
+1. A game was started on 17th Jul 2021 by **[@1ethanhansen](https://github.com/1ethanhansen)** and ended on 19th Oct 2021. 
+   * The :black_circle:black team won. 
+   * 48 players played 153 moves across 3 months and 3 days. 
+   * The :black_circle:black team captured 6 white pieces and claimed 17 rosettes. 
+   * The :white_circle:white team captured 6 black pieces and claimed 15 rosettes. 
+   * The MVP of the winning team was **[@PkmnQ](https://github.com/PkmnQ)**, who played 13 moves. 
+   * The winning move was made by **[@OmKakatkar](https://github.com/OmKakatkar)** ([#1175](https://github.com/rossjrw/rossjrw/issues/1175)).
 
 </details>
 
