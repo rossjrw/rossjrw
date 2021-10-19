@@ -2403,5 +2403,34 @@
     "fromPosition": null,
     "toPosition": null,
     "roll": 4
+  },
+  {
+    "username": "israelss",
+    "issue": 1172,
+    "time": "2021-10-19T12:58:46.911Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/5cbba6bf33068f57dd1194967047eaa0c9e1fa69/games/current/board.1172.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 9,
+    "roll": 2
+  },
+  {
+    "username": "israelss",
+    "issue": 1172,
+    "time": "2021-10-19T12:58:46.911Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 3
   }
 ]
