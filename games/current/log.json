@@ -199,7 +199,7 @@
     "time": "2021-10-24T17:34:09.029Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/a1ee56b4d0deae54c6bc73ddb9087eee0bf2d695/games/current/board.1187.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -209,5 +209,22 @@
     "fromPosition": 2,
     "toPosition": 3,
     "roll": 1
+  },
+  {
+    "username": "Sothatsit",
+    "issue": 1188,
+    "time": "2021-10-25T10:37:12.930Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   }
 ]
