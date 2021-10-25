@@ -21,17 +21,18 @@ to make a move.
 :white_circle:white
 team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1204.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1205.svg"></p>
 
   **:white_circle:White team:**
-  You rolled a 1!
+  You rolled a 3!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Move a new piece to tile 1    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [Move a piece from tile 3 to tile 4 (:rosette:)   ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%403-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [Move a piece from tile 8 to tile 9    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%408-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a new piece to tile 3    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a piece from tile 2 to tile 5    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%402-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a piece from tile 4 to tile 7    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%404-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a piece from tile 8 to tile 11    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%408-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -50,7 +51,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/OmKakatkar">@OmKakatkar</a></b> (4)<br><b><a href="https://github.com/jbmagination">@jbmagination</a></b> (2)<br><b><a href="https://github.com/shpatrickguo">@shpatrickguo</a></b> (1)<br><b><a href="https://github.com/rumbogs">@rumbogs</a></b> (1)<br><b><a href="https://github.com/kallyas">@kallyas</a></b> (1)<br><b><a href="https://github.com/KANG-NEWBIE">@KANG-NEWBIE</a></b> (1)</td>
-        <td><b><a href="https://github.com/roryclaasen">@roryclaasen</a></b> (2)<br><b><a href="https://github.com/nirakon">@nirakon</a></b> (2)<br><b><a href="https://github.com/HorebParraud">@HorebParraud</a></b> (1)<br><b><a href="https://github.com/Sothatsit">@Sothatsit</a></b> (1)</td>
+        <td><b><a href="https://github.com/nirakon">@nirakon</a></b> (3)<br><b><a href="https://github.com/roryclaasen">@roryclaasen</a></b> (2)<br><b><a href="https://github.com/HorebParraud">@HorebParraud</a></b> (1)<br><b><a href="https://github.com/Sothatsit">@Sothatsit</a></b> (1)</td>
       </tr>
     </tbody>
   </table>
@@ -75,7 +76,8 @@ What would you like to do?
   | 25th Oct 2021 10:37 | **13** | :white_circle: **[@Sothatsit](https://github.com/Sothatsit)** moved a white piece onto the board to position 3    | [#1188](https://github.com/rossjrw/rossjrw/issues/1188) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/36b643bca1f0ef215dd14e371ab017f89cc43310/games/current/board.1188.svg) |
   | 25th Oct 2021 13:24 | **14** | :black_circle: **[@jbmagination](https://github.com/jbmagination)** moved a black piece from position 3 to position 4  — claimed a rosette :rosette:  | [#1189](https://github.com/rossjrw/rossjrw/issues/1189) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/67f37d4c30fe47ec828ad3d657c9a0eb0409ec8d/games/current/board.1189.svg) |
   | 25th Oct 2021 13:27 | **15** | :black_circle: **[@jbmagination](https://github.com/jbmagination)** moved a black piece from position 10 to position 13    | [#1190](https://github.com/rossjrw/rossjrw/issues/1190) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/f3e633ac3ce76724a46512f8c7e49ba247aa05cd/games/current/board.1190.svg) |
-  | 25th Oct 2021 16:47 | **16** | :white_circle: **[@nirakon](https://github.com/nirakon)** moved a white piece from position 4 to position 8  — claimed a rosette :rosette:  | [#1204](https://github.com/rossjrw/rossjrw/issues/1204) |  |
+  | 25th Oct 2021 16:47 | **16** | :white_circle: **[@nirakon](https://github.com/nirakon)** moved a white piece from position 4 to position 8  — claimed a rosette :rosette:  | [#1204](https://github.com/rossjrw/rossjrw/issues/1204) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/b0bdeef7be4a63c12dfeb2a4f42ad2e99cc29f2e/games/current/board.1204.svg) |
+  | 25th Oct 2021 16:48 | **17** | :white_circle: **[@nirakon](https://github.com/nirakon)** moved a white piece from position 3 to position 4  — claimed a rosette :rosette:  | [#1205](https://github.com/rossjrw/rossjrw/issues/1205) |  |
 
 </details>
 
