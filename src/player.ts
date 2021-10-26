@@ -1,11 +1,11 @@
 import Ur from "ur-game"
 
-import { Log } from '@/log'
+import { Log } from "@/log"
 
-export function playerIsOnTeam (
+export function playerIsOnTeam(
   username: string,
   team: Ur.Player,
-  log: Log,
+  log: Log
 ): boolean {
   /**
    * Checks if a player is on the given team.
@@ -22,22 +22,22 @@ export function playerIsOnTeam (
   return playerTeam === team
 }
 
-export function getPlayerTeam (
+export function getPlayerTeam(
   username: string,
-  log: Log,
+  log: Log
 ): Ur.Player | undefined {
   /**
    * Checks what team a player is on.
    */
-  return log.internalLog.find(item => item.username === username)?.team
+  return log.internalLog.find((item) => item.username === username)?.team
 }
 
-export function getPlayerTeamSource (
+export function getPlayerTeamSource(
   username: string,
-  log: Log,
+  log: Log
 ): number | undefined {
   /**
    * Returns the issue number that determined a player's team for this game.
    */
-  return log.internalLog.find(item => item.username === username)?.issue
+  return log.internalLog.find((item) => item.username === username)?.issue
 }
