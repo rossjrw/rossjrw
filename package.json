@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "build": "webpack --config webpack.config.js --mode development",
-    "build-production": "webpack --config webpack.config.js --mode production"
+    "build-production": "webpack --config webpack.config.js --mode production",
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
