@@ -8,8 +8,8 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "lib": [ "esnext" ],
+    "lib": ["esnext"],
     "paths": { "@/*": ["src/*"] }
   },
-  "include": [ "src/**/*.ts" ]
+  "include": ["src/**/*.ts"]
 }

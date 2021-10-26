@@ -2,8 +2,8 @@ import { Octokit } from "@octokit/rest/index"
 import { Context } from "@actions/github/lib/context"
 import Ur from "ur-game"
 
-import { Change } from '@/play'
-import { Events } from '@/analyseMove'
+import { Change } from "@/play"
+import { Events } from "@/analyseMove"
 
 export interface LogItem {
   username: string
@@ -30,11 +30,7 @@ export class Log {
   internalLog: LogItem[]
   lastCommitSha: string | null
 
-  constructor (
-    gamePath: string,
-    octokit: Octokit,
-    context: Context,
-  ) {
+  constructor(gamePath: string, octokit: Octokit, context: Context) {
     this.gamePath = gamePath
     this.octokit = octokit
     this.context = context
@@ -48,7 +44,7 @@ export class Log {
     this.lastCommitSha = null
   }
 
-  async prepareInitialLog (): Promise<void> {
+  async prepareInitialLog(): Promise<void> {
     /**
      * Grabs the contents of the log file and puts it into the internal log.
      * This function should be called only once, before any extra log items
@@ -77,13 +73,13 @@ export class Log {
     this.lastCommitSha = lastCommit.data.object.sha
   }
 
-  addToLog (
+  addToLog(
     action: "new" | "move" | "pass",
     team: Ur.Player,
     roll: number | null,
     fromPosition: number | null,
     toPosition: number | null,
-    events: Events | null,
+    events: Events | null
   ): void {
     /**
      * Adds an item to the internal log.
@@ -103,12 +99,12 @@ export class Log {
       events,
       fromPosition,
       toPosition,
-      roll
+      roll,
     }
     this.internalLog.push(logItem)
   }
 
-  linkPreviousBoardState (): void {
+  linkPreviousBoardState(): void {
     /**
      * Creates an absolute reference for the previous board's image and adds
      * that value to the log.
@@ -133,9 +129,17 @@ export class Log {
 
     // The board image for the current round has already been added, so the
     // second-to-last image needs to be linked
-    if (this.internalLog.length >= 2 &&
-        this.internalLog[this.internalLog.length - 2].boardImage === null) {
-      this.internalLog[this.internalLog.length - 2].boardImage = `https://raw.githubusercontent.com/${this.context.repo.owner}/${this.context.repo.repo}/${this.lastCommitSha}/${this.gamePath}/board.${this.internalLog[this.internalLog.length - 2].issue}.svg`
+    if (
+      this.internalLog.length >= 2 &&
+      this.internalLog[this.internalLog.length - 2].boardImage === null
+    ) {
+      this.internalLog[
+        this.internalLog.length - 2
+      ].boardImage = `https://raw.githubusercontent.com/${
+        this.context.repo.owner
+      }/${this.context.repo.repo}/${this.lastCommitSha}/${
+        this.gamePath
+      }/board.${this.internalLog[this.internalLog.length - 2].issue}.svg`
     } else {
       // The second-to-last image should have had a null address, but it's not
       // absolutely critical to execution
@@ -143,7 +147,7 @@ export class Log {
     }
   }
 
-  makeLogChanges (): Change[] {
+  makeLogChanges(): Change[] {
     /**
      * Make the changes to the log file as described by the internal log. This
      * method should be called only once all log items have been added.
