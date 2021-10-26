@@ -62,6 +62,7 @@ export async function resetGame(
   // Update the log with this action
   log.addToLog({
     action: "new",
+    initiatedByPlayer: false,
     team: newState.currentPlayer!,
     roll: null,
     fromPosition: null,

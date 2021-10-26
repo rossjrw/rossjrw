@@ -168,6 +168,7 @@ export async function makeMove(
     // Update the log with this action
     log.addToLog({
       action: "move",
+      initiatedByPlayer: true,
       team: state.currentPlayer,
       roll: state.diceResult,
       fromPosition,
@@ -196,6 +197,7 @@ export async function makeMove(
   ) {
     log.addToLog({
       action: "pass",
+      initiatedByPlayer: false,
       team: newState.currentPlayer!,
       roll: newState.diceResult!,
       fromPosition: null,

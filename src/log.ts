@@ -11,6 +11,7 @@ export interface LogItem {
   time: string
   team: Ur.Player
   action: "new" | "move" | "pass"
+  initiatedByPlayer: boolean
   boardImage: string | null
   events: Events | null
   fromPosition: number | null
@@ -33,6 +34,7 @@ export interface LogItem {
  */
 export type LogEntryNew = {
   action: "new" | "move" | "pass"
+  initiatedByPlayer: boolean
   team: Ur.Player
   roll: number | null
   fromPosition: number | null
