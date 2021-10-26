@@ -21,7 +21,7 @@ export async function getFile(
       path: `${gamePath}${filename === null ? "" : `/${filename}`}`,
       mediaType: { format: "raw" },
     })
-  } catch (error) {
+  } catch (error: any) {
     if (error.status === 404) {
       // There's no game file! That's probably fine
       return null
