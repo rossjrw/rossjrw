@@ -3,18 +3,18 @@ import { Context } from "@actions/github/lib/context"
 import Ur from "ur-game"
 import { compress } from "compress-tag"
 
-import { getPlayerTeam } from '@/player'
-import { generateReadme } from '@/generateReadme'
-import { Change } from '@/play'
-import { Log } from '@/log'
-import { teamName } from '@/teams'
+import { getPlayerTeam } from "@/player"
+import { generateReadme } from "@/generateReadme"
+import { Change } from "@/play"
+import { Log } from "@/log"
+import { teamName } from "@/teams"
 
-export async function resetGame (
+export async function resetGame(
   gamePath: string,
   oldGamePath: string,
   octokit: Octokit,
   context: Context,
-  log: Log,
+  log: Log
 ): Promise<Change[]> {
   /**
    * Called when a player uses the "new" command.
@@ -60,14 +60,7 @@ export async function resetGame (
   log.internalLog = []
 
   // Update the log with this action
-  log.addToLog(
-    "new",
-    newState.currentPlayer!,
-    null,
-    null,
-    null,
-    null,
-  )
+  log.addToLog("new", newState.currentPlayer!, null, null, null, null)
 
   // Update README.md with the new state
   changes = changes.concat(
@@ -83,9 +76,13 @@ export async function resetGame (
       Done! You started a new game.
       \n\n
       It's ${teamName(newState.currentPlayer)} to play!
-      [Make the first move yourself](https://github.com/${context.repo.owner}/${context.repo.repo}),
-      or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+started+a+new+game+%E2%80%94+take+the+first+turn+at+https://github.com/${context.repo.owner}+%23ur+%23github)
-    `
+      [Make the first move yourself](https://github.com/${
+        context.repo.owner
+      }/${context.repo.repo}),
+      or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+started+a+new+game+%E2%80%94+take+the+first+turn+at+https://github.com/${
+        context.repo.owner
+      }+%23ur+%23github)
+    `,
   })
   octokit.issues.update({
     owner: context.repo.owner,

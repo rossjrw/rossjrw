@@ -1,13 +1,13 @@
 import { Octokit } from "@octokit/rest/index"
 import { Context } from "@actions/github/lib/context"
 
-import { Change } from '@/play'
+import { Change } from "@/play"
 
-export async function makeCommit (
+export async function makeCommit(
   message: string,
   changes: Change[],
   octokit: Octokit,
-  context: Context,
+  context: Context
 ): Promise<void> {
   /**
    * From the given list of changes, makes a single commit to implement them.
@@ -30,10 +30,10 @@ export async function makeCommit (
     owner: context.repo.owner,
     repo: context.repo.repo,
     base_tree: treeSha,
-    tree: changes.map(change => {
+    tree: changes.map((change) => {
       const subTree: Octokit.GitCreateTreeParamsTree = {
         path: change.path,
-        mode: '100644',
+        mode: "100644",
       }
       if (change.content) {
         subTree.content = change.content
@@ -42,7 +42,7 @@ export async function makeCommit (
         subTree.sha = null
       }
       return subTree
-    })
+    }),
   })
   const newTreeSha = newTree.data.sha
 
@@ -51,7 +51,7 @@ export async function makeCommit (
     repo: context.repo.repo,
     message,
     tree: newTreeSha,
-    parents: [latestCommitSha]
+    parents: [latestCommitSha],
   })
   latestCommitSha = newCommit.data.sha
 

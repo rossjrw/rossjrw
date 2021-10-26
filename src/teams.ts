@@ -1,7 +1,7 @@
 import Ur from "ur-game"
 import ejs from "ejs"
 
-import { Log } from '@/log'
+import { Log } from "@/log"
 
 interface TeamPlayer {
   name: string
@@ -9,9 +9,7 @@ interface TeamPlayer {
   moves: number
 }
 
-export function teamName (
-  team: Ur.Player | undefined
-): string {
+export function teamName(team: Ur.Player | undefined): string {
   if (team === Ur.BLACK) {
     return "black"
   }
@@ -21,7 +19,7 @@ export function teamName (
   return "unknown"
 }
 
-export function getOppositeTeam (
+export function getOppositeTeam(
   team: Ur.Player | undefined
 ): Ur.Player | undefined {
   if (team === Ur.BLACK) {
@@ -33,9 +31,9 @@ export function getOppositeTeam (
   return undefined
 }
 
-export function makeTeamListTable (
+export function makeTeamListTable(
   log: Log,
-  hasPlayerLinks: boolean,
+  hasPlayerLinks: boolean
 ): string {
   /**
    * Makes a table containing team members.
@@ -67,21 +65,15 @@ export function makeTeamListTable (
   return ejs.render(PLAYERS_TABLE, { blackPlayers, whitePlayers })
 }
 
-export function makeTeamStats (
-  log: Log,
-): TeamPlayer[] {
-
+export function makeTeamStats(log: Log): TeamPlayer[] {
   const players: TeamPlayer[] = []
 
-  log.internalLog.forEach(logItem => {
-    if (logItem.action === 'pass') {
+  log.internalLog.forEach((logItem) => {
+    if (logItem.action === "pass") {
       return
     }
-    const playerIndex = players.findIndex(player => {
-      return (
-        player.name === logItem.username
-        && player.team === logItem.team
-      )
+    const playerIndex = players.findIndex((player) => {
+      return player.name === logItem.username && player.team === logItem.team
     })
     if (playerIndex === -1) {
       players.push({
@@ -97,22 +89,25 @@ export function makeTeamStats (
   return players
 }
 
-function makeTeamListColumn (
+function makeTeamListColumn(
   players: TeamPlayer[],
   team: Ur.Player,
-  hasLinks: boolean,
+  hasLinks: boolean
 ): string[] {
-  return players.filter(player => {
-    return player.team === team
-  }).sort((a, b) => {
-    if (a.moves > b.moves) return -1
-    if (a.moves < b.moves) return 1
-    return 0
-  }).map(player => {
-    if (hasLinks) {
-      return `<b><a href="https://github.com/${player.name}">@${player.name}</a></b> (${player.moves})`
-    } else {
-      return `@${player.name} (${player.moves})`
-    }
-  })
+  return players
+    .filter((player) => {
+      return player.team === team
+    })
+    .sort((a, b) => {
+      if (a.moves > b.moves) return -1
+      if (a.moves < b.moves) return 1
+      return 0
+    })
+    .map((player) => {
+      if (hasLinks) {
+        return `<b><a href="https://github.com/${player.name}">@${player.name}</a></b> (${player.moves})`
+      } else {
+        return `@${player.name} (${player.moves})`
+      }
+    })
 }

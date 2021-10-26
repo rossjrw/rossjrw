@@ -26,10 +26,7 @@ declare module "ur-game" {
     numDice: number,
     player: Player
   ): State
-  export function voidTurn(
-    state: State,
-    player: Player
-  ): State
+  export function voidTurn(state: State, player: Player): State
   export function takeTurn(
     state: State,
     player: Player,
