@@ -8,20 +8,20 @@ export interface Events {
   gameWon: boolean
 }
 
+/**
+ * Analyses what events happened, or predicts what events will happen, for a
+ * given move.
+ *
+ * @param state: The current state of the board.
+ * @param fromPosition: The position that a piece is moving from.
+ * @param toPosition: The position that a pice is moving to.
+ * @returns A dict of events that could happen and whether or not they did.
+ */
 export function analyseMove(
   state: Ur.State,
   fromPosition: number,
   toPosition: number
 ): Events {
-  /**
-   * Analyses what events happened, or predicts what events will happen, for a
-   * given move.
-   *
-   * @param state: The current state of the board.
-   * @param fromPosition: The position that a piece is moving from.
-   * @param toPosition: The position that a pice is moving to.
-   * @returns A dict of events that could happen and whether or not they did.
-   */
   const newState = Ur.takeTurn(state, state.currentPlayer!, fromPosition)
   const events = {
     // Was a rosette claimed?

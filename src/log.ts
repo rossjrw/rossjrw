@@ -68,12 +68,12 @@ export class Log {
     this.lastCommitSha = null
   }
 
+  /**
+   * Grabs the contents of the log file and puts it into the internal log.
+   * This function should be called only once, before any extra log items
+   * have been added.
+   */
   async prepareInitialLog(): Promise<void> {
-    /**
-     * Grabs the contents of the log file and puts it into the internal log.
-     * This function should be called only once, before any extra log items
-     * have been added.
-     */
     const logFile = await this.octokit.repos.getContents({
       owner: this.context.repo.owner,
       repo: this.context.repo.repo,
@@ -97,12 +97,12 @@ export class Log {
     this.lastCommitSha = lastCommit.data.object.sha
   }
 
+  /**
+   * Adds an item to the internal log.
+   *
+   * @returns An array of changes to add to the commit.
+   */
   addToLog(entry: LogEntryNew): void {
-    /**
-     * Adds an item to the internal log.
-     *
-     * @returns An array of changes to add to the commit.
-     */
     const logItem: LogItem = Object.assign(entry, {
       username: this.username,
       issue: this.issue,
@@ -112,29 +112,28 @@ export class Log {
     this.internalLog.push(logItem)
   }
 
+  /**
+   * Creates an absolute reference for the previous board's image and adds
+   * that value to the log.
+   *
+   * I want to retain an image for every state of the board. In order to do
+   * that I will be associating each move in the log with the image of the
+   * board state that it resulted in. These images will be provided by URL
+   * using the commit SHA as an absolute reference.
+   *
+   * When any given action is logged for the first time, at that point in
+   * time, the SHA of that commit is not known as it has not yet been made,
+   * so there's no point adding the image to the log at that time - I mark
+   * it null.
+   *
+   * On the next action, this function should be called to add the previous
+   * commit's SHA - which is now known - to the image. This will enable the
+   * creation of an absolute link to the board state at that action. Even if
+   * more commits are added in between, so long as the image was not changed,
+   * the image will still work. The only thing that could break it is
+   * rewriting history - but even then those commits might still be saved.
+   */
   linkPreviousBoardState(): void {
-    /**
-     * Creates an absolute reference for the previous board's image and adds
-     * that value to the log.
-     *
-     * I want to retain an image for every state of the board. In order to do
-     * that I will be associating each move in the log with the image of the
-     * board state that it resulted in. These images will be provided by URL
-     * using the commit SHA as an absolute reference.
-     *
-     * When any given action is logged for the first time, at that point in
-     * time, the SHA of that commit is not known as it has not yet been made,
-     * so there's no point adding the image to the log at that time - I mark
-     * it null.
-     *
-     * On the next action, this function should be called to add the previous
-     * commit's SHA - which is now known - to the image. This will enable the
-     * creation of an absolute link to the board state at that action. Even if
-     * more commits are added in between, so long as the image was not changed,
-     * the image will still work. The only thing that could break it is
-     * rewriting history - but even then those commits might still be saved.
-     */
-
     // The board image for the current round has already been added, so the
     // second-to-last image needs to be linked
     if (
@@ -155,13 +154,13 @@ export class Log {
     }
   }
 
+  /**
+   * Make the changes to the log file as described by the internal log. This
+   * method should be called only once all log items have been added.
+   *
+   * @returns An array of changes to add to the commit.
+   */
   makeLogChanges(): Change[] {
-    /**
-     * Make the changes to the log file as described by the internal log. This
-     * method should be called only once all log items have been added.
-     *
-     * @returns An array of changes to add to the commit.
-     */
     const changes: Change[] = []
 
     changes.push({

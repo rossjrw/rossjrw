@@ -13,6 +13,15 @@ import { Log } from "@/log"
 import { makeVictoryMessage } from "@/victory"
 import { getOppositeTeam, teamName } from "@/teams"
 
+/**
+ * Called when a player uses the "move" command. Executes that move onto the
+ * current state.
+ *
+ * @param state: The current state of the game.
+ * @param move: The move the player wants to make.
+ * @param gamePath: The location of the current game's state file.
+ * @returns An array of changes to add to the commit.
+ */
 export async function makeMove(
   state: Ur.State,
   move: string,
@@ -21,15 +30,6 @@ export async function makeMove(
   context: Context,
   log: Log
 ): Promise<Change[]> {
-  /**
-   * Called when a player uses the "move" command. Executes that move onto the
-   * current state.
-   *
-   * @param state: The current state of the game.
-   * @param move: The move the player wants to make.
-   * @param gamePath: The location of the current game's state file.
-   * @returns An array of changes to add to the commit.
-   */
   let changes: Change[] = []
 
   if (!state.currentPlayer) {

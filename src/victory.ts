@@ -17,11 +17,11 @@ import dateformat from "dateformat"
 import { Log, LogItem } from "@/log"
 import { teamName, makeTeamStats, makeTeamListTable } from "@/teams"
 
+/**
+ * Called at the end of a game. Produces a message to ping participants in a
+ * game, show teams, give stats, etc.
+ */
 export function makeVictoryMessage(log: Log): string {
-  /**
-   * Called at the end of a game. Produces a message to ping participants in a
-   * game, show teams, give stats, etc.
-   */
   const players = makeTeamStats(log)
 
   const winningTeam = teamName(
@@ -47,17 +47,17 @@ export function makeVictoryMessage(log: Log): string {
   `
 }
 
+/**
+ * Generates a list of previous games from the logs in the game directory.
+ *
+ * @param gamePath: The path to the directory that contains the current game.
+ * This is expected to be inside the directory that contains previous games.
+ */
 export async function listPreviousGames(
   gamePath: string,
   octokit: Octokit,
   context: Context
 ): Promise<string[]> {
-  /**
-   * Generates a list of previous games from the logs in the game directory.
-   *
-   * @param gamePath: The path to the directory that contains the current game.
-   * This is expected to be inside the directory that contains previous games.
-   */
   const gameDirPath = gamePath.substring(0, gamePath.lastIndexOf("/"))
   const logDir = await octokit.repos.getContents({
     owner: context.repo.owner,

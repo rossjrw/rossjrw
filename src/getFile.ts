@@ -1,6 +1,9 @@
 import { Octokit } from "@octokit/rest/index"
 import { Context } from "@actions/github/lib/context"
 
+/**
+ * Gets the content of a file, or returns null if it doesn't exist.
+ */
 export async function getFile(
   branch: "source" | "play",
   gamePath: string,
@@ -8,10 +11,6 @@ export async function getFile(
   octokit: Octokit,
   context: Context
 ): Promise<Octokit.Response<Octokit.ReposGetContentsResponse> | null> {
-  /**
-   * Gets the content of a file, or returns null if it doesn't exist.
-   */
-
   // Grab the content of the current board from file
   try {
     return await octokit.repos.getContents({

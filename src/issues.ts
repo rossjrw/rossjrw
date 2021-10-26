@@ -1,6 +1,9 @@
 import { Octokit } from "@octokit/rest/index"
 import { Context } from "@actions/github/lib/context"
 
+/**
+ * Adds a reaction to the triggering issue.
+ */
 export function addReaction(
   reaction: NonNullable<
     Parameters<typeof octokit.reactions.createForIssue>[0]
@@ -8,9 +11,6 @@ export function addReaction(
   octokit: Octokit,
   context: Context
 ): void {
-  /**
-   * Adds a reaction to the triggering issue.
-   */
   octokit.reactions.createForIssue({
     owner: context.repo.owner,
     repo: context.repo.repo,
@@ -19,14 +19,14 @@ export function addReaction(
   })
 }
 
+/**
+ * Adds labels to the triggering issue.
+ */
 export function addLabels(
   labels: string[],
   octokit: Octokit,
   context: Context
 ): void {
-  /**
-   * Adds labels to the triggering issue.
-   */
   octokit.issues.addLabels({
     owner: context.repo.owner,
     repo: context.repo.repo,
