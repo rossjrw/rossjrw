@@ -18,6 +18,28 @@ export interface LogItem {
   roll: number | null
 }
 
+/**
+ * A new entry to be added to the log.
+ *
+ * @property action - The name of the action.
+ * @property team - The team of the current turn.
+ *
+ * If the action is a move, the following properties must not be null:
+ *
+ * @property roll - The value of the current dice roll.
+ * @property fromPosition - The starting position of the piece that moved.
+ * @property toPosition - The final position of the piece that moved.
+ * @property events - Object of events that happened during the turn.
+ */
+export type LogEntryNew = {
+  action: "new" | "move" | "pass"
+  team: Ur.Player
+  roll: number | null
+  fromPosition: number | null
+  toPosition: number | null
+  events: Events | null
+}
+
 export class Log {
   username: string
   issue: number
@@ -73,34 +95,18 @@ export class Log {
     this.lastCommitSha = lastCommit.data.object.sha
   }
 
-  addToLog(
-    action: "new" | "move" | "pass",
-    team: Ur.Player,
-    roll: number | null,
-    fromPosition: number | null,
-    toPosition: number | null,
-    events: Events | null
-  ): void {
+  addToLog(entry: LogEntryNew): void {
     /**
      * Adds an item to the internal log.
      *
-     * @param action: The action this player took.
-     * @param message: A verbose description of the action.
-     * @param team: The team that this player is on.
      * @returns An array of changes to add to the commit.
      */
-    const logItem: LogItem = {
+    const logItem: LogItem = Object.assign(entry, {
       username: this.username,
       issue: this.issue,
       time: new Date().toISOString(),
-      team,
-      action,
       boardImage: null,
-      events,
-      fromPosition,
-      toPosition,
-      roll,
-    }
+    })
     this.internalLog.push(logItem)
   }
 

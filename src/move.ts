@@ -166,14 +166,14 @@ export async function makeMove(
     })
 
     // Update the log with this action
-    log.addToLog(
-      "move",
-      state.currentPlayer,
-      state.diceResult,
+    log.addToLog({
+      action: "move",
+      team: state.currentPlayer,
+      roll: state.diceResult,
       fromPosition,
       toPosition,
-      events
-    )
+      events,
+    })
 
     // If the game was won, leave a message to let everyone know
     if (events.gameWon) {
@@ -194,14 +194,14 @@ export async function makeMove(
     !events?.gameWon &&
     Object.keys(newState.possibleMoves!).length === 0
   ) {
-    log.addToLog(
-      "pass",
-      newState.currentPlayer!,
-      newState.diceResult!,
-      null,
-      null,
-      null
-    )
+    log.addToLog({
+      action: "pass",
+      team: newState.currentPlayer!,
+      roll: newState.diceResult!,
+      fromPosition: null,
+      toPosition: null,
+      events: null,
+    })
     changes = changes.concat(
       await makeMove(newState, "pass", gamePath, octokit, context, log)
     )

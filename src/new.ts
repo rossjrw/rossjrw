@@ -60,7 +60,14 @@ export async function resetGame(
   log.internalLog = []
 
   // Update the log with this action
-  log.addToLog("new", newState.currentPlayer!, null, null, null, null)
+  log.addToLog({
+    action: "new",
+    team: newState.currentPlayer!,
+    roll: null,
+    fromPosition: null,
+    toPosition: null,
+    events: null,
+  })
 
   // Update README.md with the new state
   changes = changes.concat(
