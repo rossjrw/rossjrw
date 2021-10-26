@@ -18,7 +18,7 @@ Chess was a very good choice. I considered draughts/checkers, but I think
 that's a step down from chess. Othello/Reversi would probably have been pretty
 fun to implement, but I only thought of it just now as I'm writing this. I
 totally would've gone for Go, but I tried playing that a few years ago and did
-not come even close to understanding it.
+not come even close to understanding it. 
 
 I checked my cupboard full of board games and discovered that they were all
 vastly more complicated than I wanted. The simplest I found was

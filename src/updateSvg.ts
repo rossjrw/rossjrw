@@ -3,15 +3,15 @@ import { Context } from "@actions/github/lib/context"
 import { State } from "ur-game"
 import { range } from "lodash"
 
-import { Change } from "@/play"
-import { getFile } from "@/getFile"
+import { Change } from '@/play'
+import { getFile } from '@/getFile'
 
 export async function updateSvg(
   state: State,
   gamePath: string,
   baseSvgPath: string,
   octokit: Octokit,
-  context: Context
+  context: Context,
 ): Promise<Change[]> {
   /**
    * Generates an SVG to visually represent the current board state.
@@ -26,12 +26,14 @@ export async function updateSvg(
   const changes: Change[] = []
 
   // Delete the old board image
-  const gameFiles = await getFile("play", gamePath, null, octokit, context)
+  const gameFiles = await getFile(
+    "play", gamePath, null, octokit, context
+  )
   if (gameFiles) {
     if (!Array.isArray(gameFiles.data)) {
-      throw new Error("GAME_DIR_IS_FILE")
+      throw new Error('GAME_DIR_IS_FILE')
     }
-    gameFiles.data.forEach((gameFile) => {
+    gameFiles.data.forEach(gameFile => {
       if (/^board\.[0-9]+\.svg$/.test(gameFile.name)) {
         changes.push({
           path: gameFile.path,
@@ -50,8 +52,8 @@ export async function updateSvg(
     mediaType: { format: "raw" },
   })
   // If a file was queried then data is not an array
-  if (Array.isArray(svgFile.data)) {
-    throw new Error("FILE_IS_DIR")
+  if(Array.isArray(svgFile.data)) {
+    throw new Error('FILE_IS_DIR')
   }
 
   let svg = Buffer.from(svgFile.data.content!, "base64").toString()
@@ -59,31 +61,35 @@ export async function updateSvg(
   // Hide elements that should not be visible for this board
   // Tokens: tileN-T and tile0-TN, tile15-TN
   // Dice spots: diceN-spot-on and/or diceN-spot-off
-  state.board.forEach((field, fieldIndex) => {
-    if (fieldIndex === 0 || fieldIndex === 15) {
-      range(field.b, 7).forEach((tokenIndex) => {
-        svg = hideSvgElement(svg, `tile${fieldIndex}-b${tokenIndex}`)
-      })
-      range(field.w, 7).forEach((tokenIndex) => {
-        svg = hideSvgElement(svg, `tile${fieldIndex}-w${tokenIndex}`)
-      })
-    } else {
-      if (field.b === 0) {
-        svg = hideSvgElement(svg, `tile${fieldIndex}-b`)
-      }
-      if (field.w === 0) {
-        svg = hideSvgElement(svg, `tile${fieldIndex}-w`)
+  state.board.forEach(
+    (field, fieldIndex) => {
+      if (fieldIndex === 0 || fieldIndex === 15) {
+        range(field.b, 7).forEach(tokenIndex => {
+          svg = hideSvgElement(svg, `tile${fieldIndex}-b${tokenIndex}`)
+        })
+        range(field.w, 7).forEach(tokenIndex => {
+          svg = hideSvgElement(svg, `tile${fieldIndex}-w${tokenIndex}`)
+        })
+      } else {
+        if (field.b === 0) {
+          svg = hideSvgElement(svg, `tile${fieldIndex}-b`)
+        }
+        if (field.w === 0) {
+          svg = hideSvgElement(svg, `tile${fieldIndex}-w`)
+        }
       }
     }
-  })
+  )
   if (state.dice) {
-    state.dice.forEach((diceResult, index) => {
-      if (diceResult) {
-        svg = hideSvgElement(svg, `dice${index}-spot-off`)
-      } else {
-        svg = hideSvgElement(svg, `dice${index}-spot-on`)
+    state.dice.forEach(
+      (diceResult, index) => {
+        if (diceResult) {
+          svg = hideSvgElement(svg, `dice${index}-spot-off`)
+        } else {
+          svg = hideSvgElement(svg, `dice${index}-spot-on`)
+        }
       }
-    })
+    )
   } else {
     svg = hideSvgElement(svg, "dice0")
     svg = hideSvgElement(svg, "dice1")
@@ -100,7 +106,10 @@ export async function updateSvg(
   return changes
 }
 
-function hideSvgElement(svg: string, elementId: string): string {
+function hideSvgElement(
+  svg: string,
+  elementId: string,
+): string {
   /**
    * Hides the SVG element that has the given ID.
    *

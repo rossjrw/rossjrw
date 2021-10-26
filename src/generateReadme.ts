@@ -5,19 +5,19 @@ import ejs from "ejs"
 import { compress, compressTight } from "compress-tag"
 import dateformat from "dateformat"
 
-import { analyseMove } from "@/analyseMove"
-import { updateSvg } from "@/updateSvg"
-import { Change } from "@/play"
-import { Log } from "@/log"
-import { getOppositeTeam, makeTeamListTable, teamName } from "@/teams"
-import { listPreviousGames } from "@/victory"
+import { analyseMove } from '@/analyseMove'
+import { updateSvg } from '@/updateSvg'
+import { Change } from '@/play'
+import { Log } from '@/log'
+import { getOppositeTeam, makeTeamListTable, teamName } from '@/teams'
+import { listPreviousGames } from '@/victory'
 
-export async function generateReadme(
+export async function generateReadme (
   state: Ur.State,
   gamePath: string,
   octokit: Octokit,
   context: Context,
-  log: Log
+  log: Log,
 ): Promise<Change[]> {
   /**
    * Generates the new README file based on the current state of the game.
@@ -48,8 +48,8 @@ export async function generateReadme(
     mediaType: { format: "raw" },
   })
   // If a file was queried then data is not an array
-  if (Array.isArray(readmeFile.data)) {
-    throw new Error("FILE_IS_DIR")
+  if(Array.isArray(readmeFile.data)) {
+    throw new Error('FILE_IS_DIR')
   }
   const template = Buffer.from(readmeFile.data.content!, "base64").toString()
 
@@ -57,37 +57,35 @@ export async function generateReadme(
   // into an array of links
   let actions
   if (state.possibleMoves) {
-    actions = Object.keys(state.possibleMoves)
-      .map((key) => {
-        return {
-          from: Number(key),
-          to: state.possibleMoves![key],
-        }
-      })
-      .map((move) => {
-        const events = analyseMove(state, move.from, move.to)
-        return {
-          text: compress`
+    actions = Object.keys(state.possibleMoves).map(key => {
+      return {
+        from: Number(key),
+        to: state.possibleMoves![key],
+      }
+    }).map(move => {
+      const events = analyseMove(state, move.from, move.to)
+      return {
+        text: compress`
           ${events.ascensionHappened ? "Ascend" : "Move"}
-          a ${move.from === 0 ? "new piece" : `piece from tile ${move.from}`}
+          a ${move.from === 0 ?  "new piece" : `piece from tile ${move.from}`}
           ${events.ascensionHappened ? "" : `to tile ${move.to}`}
           ${events.rosetteClaimed ? "(:rosette:)" : ""}
           ${events.captureHappened ? "(:crossed_swords:)" : ""}
           ${events.ascensionHappened ? "(:rocket:)" : ""}
           ${events.gameWon ? "(:crown:)" : ""}
         `,
-          url: issueLink(
-            `ur-move-${state.diceResult}%40${move.from}-0`,
-            context
-          ),
-        }
-      })
+        url: issueLink(
+          `ur-move-${state.diceResult}%40${move.from}-0`,
+          context,
+        ),
+      }
+    })
   } else {
     actions = [
       {
         text: "Start a new game",
-        url: issueLink("ur-new", context),
-      },
+        url: issueLink("ur-new", context)
+      }
     ]
   }
 
@@ -95,15 +93,15 @@ export async function generateReadme(
   log.linkPreviousBoardState()
 
   // Make a list of moves that have happened so far this game, as markdown
-  const logItems = log.internalLog.map((logItem) => {
+  const logItems = log.internalLog.map(logItem => {
     return [
       `${dateformat(new Date(logItem.time), "dS mmm yyyy HH:MM")}`,
       compress`
         :${teamName(logItem.team)}_circle:
         ${
-          logItem.action === "pass"
-            ? ""
-            : `**[@${logItem.username}](https://github.com/${logItem.username})**`
+          logItem.action === "pass" ?
+          "" :
+          `**[@${logItem.username}](https://github.com/${logItem.username})**`
         }
         ${
           {
@@ -115,39 +113,26 @@ export async function generateReadme(
             move: compress`
               ${logItem.events?.ascensionHappened ? "ascended" : "moved"}
               a ${teamName(logItem.team)} piece
+              ${logItem.fromPosition === 0 ?
+                "onto the board" : `from position ${logItem.fromPosition}`}
+              ${logItem.events?.ascensionHappened ?
+                ":rocket:" : `to position ${logItem.toPosition}`}
               ${
-                logItem.fromPosition === 0
-                  ? "onto the board"
-                  : `from position ${logItem.fromPosition}`
-              }
-              ${
-                logItem.events?.ascensionHappened
-                  ? ":rocket:"
-                  : `to position ${logItem.toPosition}`
-              }
-              ${
-                logItem.events?.captureHappened
-                  ? compress`
+                logItem.events?.captureHappened ? compress`
                   — captured a
                   ${teamName(getOppositeTeam(logItem.team))} piece
                   :crossed_swords:
-                `
-                  : ""
+                ` : ""
               }
-              ${
-                logItem.events?.rosetteClaimed
-                  ? "— claimed a rosette :rosette:"
-                  : ""
-              }
+              ${logItem.events?.rosetteClaimed ?
+                "— claimed a rosette :rosette:" : ""}
               ${logItem.events?.gameWon ? "— won the game :crown:" : ""}
             `,
           }[logItem.action]
         }
       `,
       `[#${logItem.issue}](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${logItem.issue})`,
-      `${
-        logItem.boardImage === null ? "" : `[link](${logItem.boardImage})`
-      }`,
+      `${logItem.boardImage === null ? "" : `[link](${logItem.boardImage})`}`,
     ]
   })
 
@@ -155,14 +140,10 @@ export async function generateReadme(
 
   const previousGames = await listPreviousGames(gamePath, octokit, context)
 
-  const readme = ejs.render(template, {
-    actions,
-    state,
-    logItems,
-    context,
-    teamTable,
-    previousGames,
-  })
+  const readme = ejs.render(
+    template,
+    { actions, state, logItems, context, teamTable, previousGames }
+  )
 
   const currentReadmeFile = await octokit.repos.getContents({
     owner: context.repo.owner,
@@ -172,8 +153,8 @@ export async function generateReadme(
     mediaType: { format: "raw" },
   })
   // If a file was queried then data is not an array
-  if (Array.isArray(currentReadmeFile.data)) {
-    throw new Error("FILE_IS_DIR")
+  if(Array.isArray(currentReadmeFile.data)) {
+    throw new Error('FILE_IS_DIR')
   }
 
   changes.push({
@@ -184,7 +165,10 @@ export async function generateReadme(
   return changes
 }
 
-function issueLink(issueTitle: string, context: Context): string {
+function issueLink (
+  issueTitle: string,
+  context: Context,
+): string {
   return compressTight`
     https://github.com/${context.repo.owner}/${context.repo.repo}/issues/new
       ?title=${issueTitle}

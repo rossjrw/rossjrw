@@ -2,25 +2,25 @@ import { Octokit } from "@octokit/rest/index"
 import { Context } from "@actions/github/lib/context"
 import { default as _core } from "@actions/core"
 
-import { addReaction } from "@/issues"
-import { handleError } from "@/error"
-import { resetGame } from "@/new"
-import { makeMove } from "@/move"
-import { makeCommit } from "@/commit"
-import { Log } from "@/log"
-import { getFile } from "@/getFile"
-import { teamName } from "@/teams"
+import { addReaction } from '@/issues'
+import { handleError } from '@/error'
+import { resetGame } from '@/new'
+import { makeMove } from '@/move'
+import { makeCommit } from '@/commit'
+import { Log } from '@/log'
+import { getFile } from '@/getFile'
+import { teamName } from '@/teams'
 
 export interface Change {
   path: string
   content: string | null
 }
 
-export default async function play(
+export default async function play (
   title: string,
   octokit: Octokit,
   context: Context,
-  core: typeof _core
+  core: typeof _core,
 ): Promise<void> {
   /**
    * Let's play Ur!
@@ -55,17 +55,13 @@ export default async function play(
 
     // Get the current game state file, but it's null if the file doesn't exist
     const stateFile = await getFile(
-      "play",
-      gamePath,
-      "state.json",
-      octokit,
-      context
+      "play", gamePath, "state.json", octokit, context
     )
     if (!stateFile) {
-      throw new Error("MOVE_WHEN_EMPTY_GAME")
+      throw new Error('MOVE_WHEN_EMPTY_GAME')
     }
     if (Array.isArray(stateFile.data)) {
-      throw new Error("FILE_IS_DIR")
+      throw new Error('FILE_IS_DIR')
     }
     const state = JSON.parse(
       Buffer.from(stateFile.data.content!, "base64").toString()
@@ -86,14 +82,10 @@ export default async function play(
 
     // All the changes have been collected - commit them
     await makeCommit(
-      `@${context.actor} ${
-        command === "new"
-          ? "Start a new game"
-          : `Move ${teamName(state.currentPlayer)} ${move}`
-      } (#${context.issue.number})`,
+      `@${context.actor} ${command === "new" ? "Start a new game" : `Move ${teamName(state.currentPlayer)} ${move}`} (#${context.issue.number})`,
       changes,
       octokit,
-      context
+      context,
     )
 
     addReaction("rocket", octokit, context)
@@ -104,7 +96,9 @@ export default async function play(
   }
 }
 
-function parseIssueTitle(title: string): ["new" | "move", string, number] {
+function parseIssueTitle (
+  title: string,
+): ["new" | "move", string, number] {
   /**
    * Parses the issue title into move instructions.
    *
@@ -112,23 +106,23 @@ function parseIssueTitle(title: string): ["new" | "move", string, number] {
    */
   const [gamename, command, move, gameId] = title.split("-")
   if (!gamename || gamename !== "ur") {
-    throw new Error("WRONG_GAME")
+    throw new Error('WRONG_GAME')
   }
   if (!command || !["new", "move"].includes(command)) {
-    throw new Error("UNKNOWN_COMMAND")
+    throw new Error('UNKNOWN_COMMAND')
   }
   if (command === "move") {
     if (!move) {
-      throw new Error("NO_MOVE_GIVEN")
+      throw new Error('NO_MOVE_GIVEN')
     }
     if (!gameId) {
-      throw new Error("NO_ID_GIVEN")
+      throw new Error('NO_ID_GIVEN')
     }
     if (!/\d+@\d+/.test(move)) {
-      throw new Error("MOVE_BAD_FORMAT")
+      throw new Error('MOVE_BAD_FORMAT')
     }
-    if (isNaN(parseInt(gameId))) {
-      throw new Error("NON_NUMERIC_ID")
+    if(isNaN(parseInt(gameId))) {
+      throw new Error('NON_NUMERIC_ID')
     }
   }
   return [command as "new" | "move", move, parseInt(gameId)]

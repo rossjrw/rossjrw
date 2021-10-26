@@ -2,16 +2,16 @@ import Ur from "ur-game"
 import { values, sum } from "lodash"
 
 export interface Events {
-  rosetteClaimed: boolean
-  captureHappened: boolean
-  ascensionHappened: boolean
-  gameWon: boolean
+  rosetteClaimed: boolean,
+  captureHappened: boolean,
+  ascensionHappened: boolean,
+  gameWon: boolean,
 }
 
-export function analyseMove(
+export function analyseMove (
   state: Ur.State,
   fromPosition: number,
-  toPosition: number
+  toPosition: number,
 ): Events {
   /**
    * Analyses what events happened, or predicts what events will happen, for a

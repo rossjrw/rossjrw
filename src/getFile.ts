@@ -1,12 +1,12 @@
 import { Octokit } from "@octokit/rest/index"
 import { Context } from "@actions/github/lib/context"
 
-export async function getFile(
+export async function getFile (
   branch: "source" | "play",
   gamePath: string,
   filename: string | null,
   octokit: Octokit,
-  context: Context
+  context: Context,
 ): Promise<Octokit.Response<Octokit.ReposGetContentsResponse> | null> {
   /**
    * Gets the content of a file, or returns null if it doesn't exist.

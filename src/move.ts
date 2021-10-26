@@ -4,22 +4,22 @@ import Ur from "ur-game"
 import { isEmpty } from "lodash"
 import { compress } from "compress-tag"
 
-import { playerIsOnTeam, getPlayerTeam } from "@/player"
-import { addLabels } from "@/issues"
-import { analyseMove } from "@/analyseMove"
-import { generateReadme } from "@/generateReadme"
-import { Change } from "@/play"
-import { Log } from "@/log"
-import { makeVictoryMessage } from "@/victory"
-import { getOppositeTeam, teamName } from "@/teams"
+import { playerIsOnTeam, getPlayerTeam } from '@/player'
+import { addLabels } from '@/issues'
+import { analyseMove } from '@/analyseMove'
+import { generateReadme } from '@/generateReadme'
+import { Change } from '@/play'
+import { Log } from '@/log'
+import { makeVictoryMessage } from '@/victory'
+import { getOppositeTeam, teamName } from '@/teams'
 
-export async function makeMove(
+export async function makeMove (
   state: Ur.State,
   move: string,
   gamePath: string,
   octokit: Octokit,
   context: Context,
-  log: Log
+  log: Log,
 ): Promise<Change[]> {
   /**
    * Called when a player uses the "move" command. Executes that move onto the
@@ -33,7 +33,7 @@ export async function makeMove(
   let changes: Change[] = []
 
   if (!state.currentPlayer) {
-    throw new Error("MOVE_WHEN_GAME_ENDED")
+    throw new Error('MOVE_WHEN_GAME_ENDED')
   }
 
   let newState
@@ -49,15 +49,15 @@ export async function makeMove(
     const playerTeam = getPlayerTeam(context.actor, log)
     // First I need to validate which team the user is on
     if (
-      context.actor !== context.repo.owner && // Owner can do what they want
-      playerTeam !== undefined && // New players can also do what they want
-      playerIsOnTeam(
+      context.actor !== context.repo.owner // Owner can do what they want
+      && playerTeam !== undefined // New players can also do what they want
+      && playerIsOnTeam(
         context.actor,
         getOppositeTeam(state.currentPlayer)!,
         log
       ) // Player can't be on the opposite team
     ) {
-      throw new Error("WRONG_TEAM")
+      throw new Error('WRONG_TEAM')
     }
     if (state.currentPlayer === Ur.BLACK) {
       addLabels(["Black team"], octokit, context)
@@ -66,23 +66,19 @@ export async function makeMove(
     }
     // The move should be 'a@b' where a is the dice count and b is the position
     // The given diceResult must match the internal diceResult
-    const [diceResult, fromPosition] = move
-      .split("@")
-      .map((a) => parseInt(a))
+    const [diceResult, fromPosition] = move.split('@').map(a => parseInt(a))
     if (diceResult === undefined || diceResult !== state.diceResult) {
-      throw new Error("WRONG_DICE_COUNT")
+      throw new Error('WRONG_DICE_COUNT')
     }
     if (fromPosition === undefined) {
-      throw new Error("NO_MOVE_POSITION")
+      throw new Error('NO_MOVE_POSITION')
     }
     // The fromPosition must be a key of one of the possibleMoves
     // However, there may be no possible moves, in which case possibleMoves is
     // an empty object, in which case any move is "allowed"
-    if (
-      !(`${fromPosition}` in state.possibleMoves!) &&
-      !isEmpty(state.possibleMoves!)
-    ) {
-      throw new Error("IMPOSSIBLE_MOVE")
+    if(!(`${fromPosition}` in state.possibleMoves!)
+       && !isEmpty(state.possibleMoves!)) {
+      throw new Error('IMPOSSIBLE_MOVE')
     }
     const toPosition = state.possibleMoves![`${fromPosition}`]
 
@@ -116,32 +112,27 @@ export async function makeMove(
         Done! You ${events.ascensionHappened ? "ascended" : "moved"}
         a ${teamName(state.currentPlayer)} piece
         ${
-          events.ascensionHappened
-            ? `from position ${fromPosition}.`
-            : compress`
+          events.ascensionHappened ?
+          `from position ${fromPosition}.` :
+          compress`
             ${
-              fromPosition === 0
-                ? "onto the board"
-                : `from position ${fromPosition}`
+              fromPosition === 0 ?
+              "onto the board" :
+              `from position ${fromPosition}`
             }
             to position ${toPosition}.
           `
         }
         ${events.captureHappened ? "You captured the opponents' piece!" : ""}
-        ${
-          events.rosetteClaimed
-            ? "You claimed a rosette, so you can take another turn!"
-            : ""
-        }
+        ${events.rosetteClaimed ? "You claimed a rosette, so you can take another turn!" : ""}
         ${events.gameWon ? "This was the winning move!" : ""}
         \n\n
-        ${
-          playerTeam === undefined
-            ? compress`
+        ${playerTeam === undefined ?
+          compress`
             You've joined the ${teamName(state.currentPlayer)} team!
             This will be your team until this game ends.
-          `
-            : compress`
+          ` :
+          compress`
             The ${teamName(state.currentPlayer)} team
             thanks you for your continued participation!
           `
@@ -149,14 +140,8 @@ export async function makeMove(
         \n\n
         Ask a friend to
         ${events.gameWon ? "start the next game" : "make the next move"}:
-        [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+${
-          events.gameWon ? "won+a+game" : "moved"
-        }+%E2%80%94+${
-        events.gameWon ? "start+the+next+one" : "take+your+turn"
-      }+at+https://github.com/${context.repo.owner}/${
-        context.repo.repo
-      }+%23RoyalGameOfUr+%23github)
-      `,
+        [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+${events.gameWon ? "won+a+game" : "moved"}+%E2%80%94+${events.gameWon ? "start+the+next+one" : "take+your+turn" }+at+https://github.com/${context.repo.owner}/${context.repo.repo}+%23RoyalGameOfUr+%23github)
+      `
     })
     octokit.issues.update({
       owner: context.repo.owner,
@@ -172,7 +157,7 @@ export async function makeMove(
       state.diceResult,
       fromPosition,
       toPosition,
-      events
+      events,
     )
 
     // If the game was won, leave a message to let everyone know
@@ -186,10 +171,7 @@ export async function makeMove(
     }
   }
 
-  if (
-    !events?.gameWon &&
-    Object.keys(newState.possibleMoves!).length === 0
-  ) {
+  if (!events?.gameWon && Object.keys(newState.possibleMoves!).length === 0) {
     // If there are no possible moves, pass this turn, unless the game is done
     // The events object is undefined if the last move was also a pass
     log.addToLog(
@@ -198,7 +180,7 @@ export async function makeMove(
       newState.diceResult!,
       null,
       null,
-      null
+      null,
     )
     changes = changes.concat(
       await makeMove(newState, "pass", gamePath, octokit, context, log)

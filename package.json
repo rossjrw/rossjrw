@@ -6,8 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "webpack --config webpack.config.js --mode development",
-    "build-production": "webpack --config webpack.config.js --mode production",
-    "format": "prettier --write ."
+    "build-production": "webpack --config webpack.config.js --mode production"
   },
   "repository": {
     "type": "git",
@@ -37,7 +36,6 @@
     "github-script": "git+https://github.com/actions/github-script.git#v2.0.0",
     "humanize-duration": "^3.24.0",
     "jest": "^26.1.0",
-    "prettier": "2.4.1",
     "source-map-loader": "^1.0.1",
     "svgo": "^1.3.2",
     "ts-loader": "^8.0.1",
