@@ -186,12 +186,14 @@ export async function makeMove(
     }
   }
 
+  // Execute automatic moves
+
+  // If there are no possible moves and the game is not finished, pass.
+  // Note that the events object is undefined if the last move was also a pass
   if (
     !events?.gameWon &&
     Object.keys(newState.possibleMoves!).length === 0
   ) {
-    // If there are no possible moves, pass this turn, unless the game is done
-    // The events object is undefined if the last move was also a pass
     log.addToLog(
       "pass",
       newState.currentPlayer!,
@@ -213,6 +215,15 @@ export async function makeMove(
       path: `${gamePath}/state.json`,
       content: JSON.stringify(newState, null, 2),
     })
+  }
+
+  // If there is only one possible move and that move is not a winning
+  // move, execute it without asking for player input.
+  if (Object.keys(newState.possibleMoves!).length === 1) {
+    const move = Object.entries(newState.possibleMoves!)[0]
+    const moveEvents = analyseMove(newState, parseInt(move[0]), move[1])
+    if (!moveEvents.gameWon) {
+    }
   }
 
   return changes
