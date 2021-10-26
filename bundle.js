@@ -25776,7 +25776,7 @@ function makeCommit(message, changes, octokit, context) {
                             tree: changes.map(function (change) {
                                 var subTree = {
                                     path: change.path,
-                                    mode: "100644",
+                                    mode: '100644',
                                 };
                                 if (change.content) {
                                     subTree.content = change.content;
@@ -25786,7 +25786,7 @@ function makeCommit(message, changes, octokit, context) {
                                     subTree.sha = null;
                                 }
                                 return subTree;
-                            }),
+                            })
                         })];
                 case 2:
                     newTree = _a.sent();
@@ -25796,7 +25796,7 @@ function makeCommit(message, changes, octokit, context) {
                             repo: context.repo.repo,
                             message: message,
                             tree: newTreeSha,
-                            parents: [latestCommitSha],
+                            parents: [latestCommitSha]
                         })];
                 case 3:
                     newCommit = _a.sent();
@@ -25944,18 +25944,16 @@ function generateReadme(state, gamePath, octokit, context, log) {
                     readmeFile = _c.sent();
                     // If a file was queried then data is not an array
                     if (Array.isArray(readmeFile.data)) {
-                        throw new Error("FILE_IS_DIR");
+                        throw new Error('FILE_IS_DIR');
                     }
                     template = Buffer.from(readmeFile.data.content, "base64").toString();
                     if (state.possibleMoves) {
-                        actions = Object.keys(state.possibleMoves)
-                            .map(function (key) {
+                        actions = Object.keys(state.possibleMoves).map(function (key) {
                             return {
                                 from: Number(key),
                                 to: state.possibleMoves[key],
                             };
-                        })
-                            .map(function (move) {
+                        }).map(function (move) {
                             var events = Object(_analyseMove__WEBPACK_IMPORTED_MODULE_4__["analyseMove"])(state, move.from, move.to);
                             return {
                                 text: Object(compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"])(templateObject_1 || (templateObject_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n          ", "\n          a ", "\n          ", "\n          ", "\n          ", "\n          ", "\n          ", "\n        "], ["\n          ", "\n          a ", "\n          ", "\n          ", "\n          ", "\n          ", "\n          ", "\n        "])), events.ascensionHappened ? "Ascend" : "Move", move.from === 0 ? "new piece" : "piece from tile " + move.from, events.ascensionHappened ? "" : "to tile " + move.to, events.rosetteClaimed ? "(:rosette:)" : "", events.captureHappened ? "(:crossed_swords:)" : "", events.ascensionHappened ? "(:rocket:)" : "", events.gameWon ? "(:crown:)" : ""),
@@ -25967,8 +25965,8 @@ function generateReadme(state, gamePath, octokit, context, log) {
                         actions = [
                             {
                                 text: "Start a new game",
-                                url: issueLink("ur-new", context),
-                            },
+                                url: issueLink("ur-new", context)
+                            }
                         ];
                     }
                     // Trigger the log to update the second-to-last board image URL
@@ -25979,20 +25977,19 @@ function generateReadme(state, gamePath, octokit, context, log) {
                             "" + dateformat__WEBPACK_IMPORTED_MODULE_3___default()(new Date(logItem.time), "dS mmm yyyy HH:MM"),
                             Object(compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"])(templateObject_5 || (templateObject_5 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n        :", "_circle:\n        ", "\n        ", "\n      "], ["\n        :", "_circle:\n        ",
                                 "\n        ",
-                                "\n      "])), Object(_teams__WEBPACK_IMPORTED_MODULE_6__["teamName"])(logItem.team), logItem.action === "pass"
-                                ? ""
-                                : "**[@" + logItem.username + "](https://github.com/" + logItem.username + ")**", {
+                                "\n      "])), Object(_teams__WEBPACK_IMPORTED_MODULE_6__["teamName"])(logItem.team), logItem.action === "pass" ?
+                                "" :
+                                "**[@" + logItem.username + "](https://github.com/" + logItem.username + ")**", {
                                 "new": "started a new game",
                                 pass: Object(compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"])(templateObject_2 || (templateObject_2 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n              The ", " team rolled a ", "\n              and their turn was automatically passed\n            "], ["\n              The ", " team rolled a ", "\n              and their turn was automatically passed\n            "])), Object(_teams__WEBPACK_IMPORTED_MODULE_6__["teamName"])(logItem.team), logItem.roll),
                                 move: Object(compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"])(templateObject_4 || (templateObject_4 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n              ", "\n              a ", " piece\n              ", "\n              ", "\n              ", "\n              ", "\n              ", "\n            "], ["\n              ", "\n              a ", " piece\n              ",
                                     "\n              ",
                                     "\n              ",
                                     "\n              ",
-                                    "\n              ", "\n            "])), ((_a = logItem.events) === null || _a === void 0 ? void 0 : _a.ascensionHappened) ? "ascended" : "moved", Object(_teams__WEBPACK_IMPORTED_MODULE_6__["teamName"])(logItem.team), logItem.fromPosition === 0
-                                    ? "onto the board"
-                                    : "from position " + logItem.fromPosition, ((_b = logItem.events) === null || _b === void 0 ? void 0 : _b.ascensionHappened) ? ":rocket:"
-                                    : "to position " + logItem.toPosition, ((_c = logItem.events) === null || _c === void 0 ? void 0 : _c.captureHappened) ? Object(compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"])(templateObject_3 || (templateObject_3 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n                  \u2014 captured a\n                  ", " piece\n                  :crossed_swords:\n                "], ["\n                  \u2014 captured a\n                  ", " piece\n                  :crossed_swords:\n                "])), Object(_teams__WEBPACK_IMPORTED_MODULE_6__["teamName"])(Object(_teams__WEBPACK_IMPORTED_MODULE_6__["getOppositeTeam"])(logItem.team))) : "", ((_d = logItem.events) === null || _d === void 0 ? void 0 : _d.rosetteClaimed) ? "— claimed a rosette :rosette:"
-                                    : "", ((_e = logItem.events) === null || _e === void 0 ? void 0 : _e.gameWon) ? "— won the game :crown:" : ""),
+                                    "\n              ", "\n            "])), ((_a = logItem.events) === null || _a === void 0 ? void 0 : _a.ascensionHappened) ? "ascended" : "moved", Object(_teams__WEBPACK_IMPORTED_MODULE_6__["teamName"])(logItem.team), logItem.fromPosition === 0 ?
+                                    "onto the board" : "from position " + logItem.fromPosition, ((_b = logItem.events) === null || _b === void 0 ? void 0 : _b.ascensionHappened) ?
+                                    ":rocket:" : "to position " + logItem.toPosition, ((_c = logItem.events) === null || _c === void 0 ? void 0 : _c.captureHappened) ? Object(compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"])(templateObject_3 || (templateObject_3 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n                  \u2014 captured a\n                  ", " piece\n                  :crossed_swords:\n                "], ["\n                  \u2014 captured a\n                  ", " piece\n                  :crossed_swords:\n                "])), Object(_teams__WEBPACK_IMPORTED_MODULE_6__["teamName"])(Object(_teams__WEBPACK_IMPORTED_MODULE_6__["getOppositeTeam"])(logItem.team))) : "", ((_d = logItem.events) === null || _d === void 0 ? void 0 : _d.rosetteClaimed) ?
+                                    "— claimed a rosette :rosette:" : "", ((_e = logItem.events) === null || _e === void 0 ? void 0 : _e.gameWon) ? "— won the game :crown:" : ""),
                             }[logItem.action]),
                             "[#" + logItem.issue + "](https://github.com/" + context.repo.owner + "/" + context.repo.repo + "/issues/" + logItem.issue + ")",
                             "" + (logItem.boardImage === null ? "" : "[link](" + logItem.boardImage + ")"),
@@ -26002,14 +25999,7 @@ function generateReadme(state, gamePath, octokit, context, log) {
                     return [4 /*yield*/, Object(_victory__WEBPACK_IMPORTED_MODULE_7__["listPreviousGames"])(gamePath, octokit, context)];
                 case 3:
                     previousGames = _c.sent();
-                    readme = ejs__WEBPACK_IMPORTED_MODULE_1___default.a.render(template, {
-                        actions: actions,
-                        state: state,
-                        logItems: logItems,
-                        context: context,
-                        teamTable: teamTable,
-                        previousGames: previousGames,
-                    });
+                    readme = ejs__WEBPACK_IMPORTED_MODULE_1___default.a.render(template, { actions: actions, state: state, logItems: logItems, context: context, teamTable: teamTable, previousGames: previousGames });
                     return [4 /*yield*/, octokit.repos.getContents({
                             owner: context.repo.owner,
                             repo: context.repo.repo,
@@ -26023,7 +26013,7 @@ function generateReadme(state, gamePath, octokit, context, log) {
                     currentReadmeFile = _c.sent();
                     // If a file was queried then data is not an array
                     if (Array.isArray(currentReadmeFile.data)) {
-                        throw new Error("FILE_IS_DIR");
+                        throw new Error('FILE_IS_DIR');
                     }
                     changes.push({
                         path: "README.md",
@@ -26200,7 +26190,7 @@ var Log = /** @class */ (function () {
             events: events,
             fromPosition: fromPosition,
             toPosition: toPosition,
-            roll: roll,
+            roll: roll
         };
         this.internalLog.push(logItem);
     };
@@ -26300,7 +26290,7 @@ function makeMove(state, move, gamePath, octokit, context, log) {
                 case 0:
                     changes = [];
                     if (!state.currentPlayer) {
-                        throw new Error("MOVE_WHEN_GAME_ENDED");
+                        throw new Error('MOVE_WHEN_GAME_ENDED');
                     }
                     if (!(move === "pass")) return [3 /*break*/, 1];
                     // If we are just passing, then void the turn and skip all checks
@@ -26311,11 +26301,11 @@ function makeMove(state, move, gamePath, octokit, context, log) {
                 case 1:
                     playerTeam = Object(_player__WEBPACK_IMPORTED_MODULE_4__["getPlayerTeam"])(context.actor, log);
                     // First I need to validate which team the user is on
-                    if (context.actor !== context.repo.owner && // Owner can do what they want
-                        playerTeam !== undefined && // New players can also do what they want
-                        Object(_player__WEBPACK_IMPORTED_MODULE_4__["playerIsOnTeam"])(context.actor, Object(_teams__WEBPACK_IMPORTED_MODULE_9__["getOppositeTeam"])(state.currentPlayer), log) // Player can't be on the opposite team
+                    if (context.actor !== context.repo.owner // Owner can do what they want
+                        && playerTeam !== undefined // New players can also do what they want
+                        && Object(_player__WEBPACK_IMPORTED_MODULE_4__["playerIsOnTeam"])(context.actor, Object(_teams__WEBPACK_IMPORTED_MODULE_9__["getOppositeTeam"])(state.currentPlayer), log) // Player can't be on the opposite team
                     ) {
-                        throw new Error("WRONG_TEAM");
+                        throw new Error('WRONG_TEAM');
                     }
                     if (state.currentPlayer === ur_game__WEBPACK_IMPORTED_MODULE_1___default.a.BLACK) {
                         Object(_issues__WEBPACK_IMPORTED_MODULE_5__["addLabels"])(["Black team"], octokit, context);
@@ -26323,21 +26313,19 @@ function makeMove(state, move, gamePath, octokit, context, log) {
                     else {
                         Object(_issues__WEBPACK_IMPORTED_MODULE_5__["addLabels"])(["White team"], octokit, context);
                     }
-                    _a = move
-                        .split("@")
-                        .map(function (a) { return parseInt(a); }), diceResult = _a[0], fromPosition = _a[1];
+                    _a = move.split('@').map(function (a) { return parseInt(a); }), diceResult = _a[0], fromPosition = _a[1];
                     if (diceResult === undefined || diceResult !== state.diceResult) {
-                        throw new Error("WRONG_DICE_COUNT");
+                        throw new Error('WRONG_DICE_COUNT');
                     }
                     if (fromPosition === undefined) {
-                        throw new Error("NO_MOVE_POSITION");
+                        throw new Error('NO_MOVE_POSITION');
                     }
                     // The fromPosition must be a key of one of the possibleMoves
                     // However, there may be no possible moves, in which case possibleMoves is
                     // an empty object, in which case any move is "allowed"
-                    if (!("" + fromPosition in state.possibleMoves) &&
-                        !Object(lodash__WEBPACK_IMPORTED_MODULE_2__["isEmpty"])(state.possibleMoves)) {
-                        throw new Error("IMPOSSIBLE_MOVE");
+                    if (!("" + fromPosition in state.possibleMoves)
+                        && !Object(lodash__WEBPACK_IMPORTED_MODULE_2__["isEmpty"])(state.possibleMoves)) {
+                        throw new Error('IMPOSSIBLE_MOVE');
                     }
                     toPosition = state.possibleMoves["" + fromPosition];
                     // Everything seems ok, so execute the move
@@ -26364,20 +26352,12 @@ function makeMove(state, move, gamePath, octokit, context, log) {
                             repo: context.repo.repo,
                             issue_number: context.issue.number,
                             body: Object(compress_tag__WEBPACK_IMPORTED_MODULE_3__["compress"])(templateObject_4 || (templateObject_4 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n        Done! You ", "\n        a ", " piece\n        ", "\n        ", "\n        ", "\n        ", "\n        \n\n\n        ", "\n        \n\n\n        Ask a friend to\n        ", ":\n        [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+", "+%E2%80%94+", "+at+https://github.com/", "/", "+%23RoyalGameOfUr+%23github)\n      "], ["\n        Done! You ", "\n        a ", " piece\n        ",
-                                "\n        ", "\n        ",
-                                "\n        ", "\n        \\n\\n\n        ",
-                                "\n        \\n\\n\n        Ask a friend to\n        ", ":\n        [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+",
-                                "+%E2%80%94+",
-                                "+at+https://github.com/", "/",
-                                "+%23RoyalGameOfUr+%23github)\n      "])), events.ascensionHappened ? "ascended" : "moved", Object(_teams__WEBPACK_IMPORTED_MODULE_9__["teamName"])(state.currentPlayer), events.ascensionHappened
-                                ? "from position " + fromPosition + "."
-                                : Object(compress_tag__WEBPACK_IMPORTED_MODULE_3__["compress"])(templateObject_1 || (templateObject_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n            ", "\n            to position ", ".\n          "], ["\n            ",
-                                    "\n            to position ", ".\n          "])), fromPosition === 0
-                                    ? "onto the board"
-                                    : "from position " + fromPosition, toPosition), events.captureHappened ? "You captured the opponents' piece!" : "", events.rosetteClaimed
-                                ? "You claimed a rosette, so you can take another turn!"
-                                : "", events.gameWon ? "This was the winning move!" : "", playerTeam === undefined
-                                ? Object(compress_tag__WEBPACK_IMPORTED_MODULE_3__["compress"])(templateObject_2 || (templateObject_2 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n            You've joined the ", " team!\n            This will be your team until this game ends.\n          "], ["\n            You've joined the ", " team!\n            This will be your team until this game ends.\n          "])), Object(_teams__WEBPACK_IMPORTED_MODULE_9__["teamName"])(state.currentPlayer)) : Object(compress_tag__WEBPACK_IMPORTED_MODULE_3__["compress"])(templateObject_3 || (templateObject_3 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n            The ", " team\n            thanks you for your continued participation!\n          "], ["\n            The ", " team\n            thanks you for your continued participation!\n          "])), Object(_teams__WEBPACK_IMPORTED_MODULE_9__["teamName"])(state.currentPlayer)), events.gameWon ? "start the next game" : "make the next move", events.gameWon ? "won+a+game" : "moved", events.gameWon ? "start+the+next+one" : "take+your+turn", context.repo.owner, context.repo.repo),
+                                "\n        ", "\n        ", "\n        ", "\n        \\n\\n\n        ",
+                                "\n        \\n\\n\n        Ask a friend to\n        ", ":\n        [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+", "+%E2%80%94+", "+at+https://github.com/", "/", "+%23RoyalGameOfUr+%23github)\n      "])), events.ascensionHappened ? "ascended" : "moved", Object(_teams__WEBPACK_IMPORTED_MODULE_9__["teamName"])(state.currentPlayer), events.ascensionHappened ?
+                                "from position " + fromPosition + "." : Object(compress_tag__WEBPACK_IMPORTED_MODULE_3__["compress"])(templateObject_1 || (templateObject_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n            ", "\n            to position ", ".\n          "], ["\n            ",
+                                "\n            to position ", ".\n          "])), fromPosition === 0 ?
+                                "onto the board" :
+                                "from position " + fromPosition, toPosition), events.captureHappened ? "You captured the opponents' piece!" : "", events.rosetteClaimed ? "You claimed a rosette, so you can take another turn!" : "", events.gameWon ? "This was the winning move!" : "", playerTeam === undefined ? Object(compress_tag__WEBPACK_IMPORTED_MODULE_3__["compress"])(templateObject_2 || (templateObject_2 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n            You've joined the ", " team!\n            This will be your team until this game ends.\n          "], ["\n            You've joined the ", " team!\n            This will be your team until this game ends.\n          "])), Object(_teams__WEBPACK_IMPORTED_MODULE_9__["teamName"])(state.currentPlayer)) : Object(compress_tag__WEBPACK_IMPORTED_MODULE_3__["compress"])(templateObject_3 || (templateObject_3 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n            The ", " team\n            thanks you for your continued participation!\n          "], ["\n            The ", " team\n            thanks you for your continued participation!\n          "])), Object(_teams__WEBPACK_IMPORTED_MODULE_9__["teamName"])(state.currentPlayer)), events.gameWon ? "start the next game" : "make the next move", events.gameWon ? "won+a+game" : "moved", events.gameWon ? "start+the+next+one" : "take+your+turn", context.repo.owner, context.repo.repo)
                         })];
                 case 2:
                     // Add a comment to the issue to indicate that the move was successful
@@ -26401,8 +26381,7 @@ function makeMove(state, move, gamePath, octokit, context, log) {
                     _f.sent();
                     _f.label = 4;
                 case 4:
-                    if (!(!(events === null || events === void 0 ? void 0 : events.gameWon) &&
-                        Object.keys(newState.possibleMoves).length === 0)) return [3 /*break*/, 6];
+                    if (!(!(events === null || events === void 0 ? void 0 : events.gameWon) && Object.keys(newState.possibleMoves).length === 0)) return [3 /*break*/, 6];
                     // If there are no possible moves, pass this turn, unless the game is done
                     // The events object is undefined if the last move was also a pass
                     log.addToLog("pass", newState.currentPlayer, newState.diceResult, null, null, null);
@@ -26498,9 +26477,7 @@ function resetGame(gamePath, oldGamePath, octokit, context, log) {
                         owner: context.repo.owner,
                         repo: context.repo.repo,
                         issue_number: context.issue.number,
-                        body: Object(compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"])(templateObject_1 || (templateObject_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n      Done! You started a new game.\n      \n\n\n      It's ", " to play!\n      [Make the first move yourself](https://github.com/", "/", "),\n      or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+started+a+new+game+%E2%80%94+take+the+first+turn+at+https://github.com/", "+%23ur+%23github)\n    "], ["\n      Done! You started a new game.\n      \\n\\n\n      It's ", " to play!\n      [Make the first move yourself](https://github.com/",
-                            "/", "),\n      or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+started+a+new+game+%E2%80%94+take+the+first+turn+at+https://github.com/",
-                            "+%23ur+%23github)\n    "])), Object(_teams__WEBPACK_IMPORTED_MODULE_5__["teamName"])(newState.currentPlayer), context.repo.owner, context.repo.repo, context.repo.owner),
+                        body: Object(compress_tag__WEBPACK_IMPORTED_MODULE_2__["compress"])(templateObject_1 || (templateObject_1 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n      Done! You started a new game.\n      \n\n\n      It's ", " to play!\n      [Make the first move yourself](https://github.com/", "/", "),\n      or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+started+a+new+game+%E2%80%94+take+the+first+turn+at+https://github.com/", "+%23ur+%23github)\n    "], ["\n      Done! You started a new game.\n      \\n\\n\n      It's ", " to play!\n      [Make the first move yourself](https://github.com/", "/", "),\n      or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+started+a+new+game+%E2%80%94+take+the+first+turn+at+https://github.com/", "+%23ur+%23github)\n    "])), Object(_teams__WEBPACK_IMPORTED_MODULE_5__["teamName"])(newState.currentPlayer), context.repo.owner, context.repo.repo, context.repo.owner)
                     });
                     octokit.issues.update({
                         owner: context.repo.owner,
@@ -26568,10 +26545,10 @@ function play(title, octokit, context, core) {
                 case 3:
                     stateFile = _f.sent();
                     if (!stateFile) {
-                        throw new Error("MOVE_WHEN_EMPTY_GAME");
+                        throw new Error('MOVE_WHEN_EMPTY_GAME');
                     }
                     if (Array.isArray(stateFile.data)) {
-                        throw new Error("FILE_IS_DIR");
+                        throw new Error('FILE_IS_DIR');
                     }
                     state = JSON.parse(Buffer.from(stateFile.data.content, "base64").toString());
                     if (!(command === "new")) return [3 /*break*/, 5];
@@ -26591,9 +26568,7 @@ function play(title, octokit, context, core) {
                     // Extract changes from the log
                     changes = changes.concat(log.makeLogChanges());
                     // All the changes have been collected - commit them
-                    return [4 /*yield*/, Object(_commit__WEBPACK_IMPORTED_MODULE_5__["makeCommit"])("@" + context.actor + " " + (command === "new"
-                            ? "Start a new game"
-                            : "Move " + Object(_teams__WEBPACK_IMPORTED_MODULE_8__["teamName"])(state.currentPlayer) + " " + move) + " (#" + context.issue.number + ")", changes, octokit, context)];
+                    return [4 /*yield*/, Object(_commit__WEBPACK_IMPORTED_MODULE_5__["makeCommit"])("@" + context.actor + " " + (command === "new" ? "Start a new game" : "Move " + Object(_teams__WEBPACK_IMPORTED_MODULE_8__["teamName"])(state.currentPlayer) + " " + move) + " (#" + context.issue.number + ")", changes, octokit, context)];
                 case 8:
                     // All the changes have been collected - commit them
                     _f.sent();
@@ -26617,23 +26592,23 @@ function parseIssueTitle(title) {
      */
     var _a = title.split("-"), gamename = _a[0], command = _a[1], move = _a[2], gameId = _a[3];
     if (!gamename || gamename !== "ur") {
-        throw new Error("WRONG_GAME");
+        throw new Error('WRONG_GAME');
     }
     if (!command || !["new", "move"].includes(command)) {
-        throw new Error("UNKNOWN_COMMAND");
+        throw new Error('UNKNOWN_COMMAND');
     }
     if (command === "move") {
         if (!move) {
-            throw new Error("NO_MOVE_GIVEN");
+            throw new Error('NO_MOVE_GIVEN');
         }
         if (!gameId) {
-            throw new Error("NO_ID_GIVEN");
+            throw new Error('NO_ID_GIVEN');
         }
         if (!/\d+@\d+/.test(move)) {
-            throw new Error("MOVE_BAD_FORMAT");
+            throw new Error('MOVE_BAD_FORMAT');
         }
         if (isNaN(parseInt(gameId))) {
-            throw new Error("NON_NUMERIC_ID");
+            throw new Error('NON_NUMERIC_ID');
         }
     }
     return [command, move, parseInt(gameId)];
@@ -26740,11 +26715,12 @@ function makeTeamListTable(log, hasPlayerLinks) {
 function makeTeamStats(log) {
     var players = [];
     log.internalLog.forEach(function (logItem) {
-        if (logItem.action === "pass") {
+        if (logItem.action === 'pass') {
             return;
         }
         var playerIndex = players.findIndex(function (player) {
-            return player.name === logItem.username && player.team === logItem.team;
+            return (player.name === logItem.username
+                && player.team === logItem.team);
         });
         if (playerIndex === -1) {
             players.push({
@@ -26760,18 +26736,15 @@ function makeTeamStats(log) {
     return players;
 }
 function makeTeamListColumn(players, team, hasLinks) {
-    return players
-        .filter(function (player) {
+    return players.filter(function (player) {
         return player.team === team;
-    })
-        .sort(function (a, b) {
+    }).sort(function (a, b) {
         if (a.moves > b.moves)
             return -1;
         if (a.moves < b.moves)
             return 1;
         return 0;
-    })
-        .map(function (player) {
+    }).map(function (player) {
         if (hasLinks) {
             return "<b><a href=\"https://github.com/" + player.name + "\">@" + player.name + "</a></b> (" + player.moves + ")";
         }
@@ -26813,7 +26786,7 @@ function updateSvg(state, gamePath, baseSvgPath, octokit, context) {
                     gameFiles = _a.sent();
                     if (gameFiles) {
                         if (!Array.isArray(gameFiles.data)) {
-                            throw new Error("GAME_DIR_IS_FILE");
+                            throw new Error('GAME_DIR_IS_FILE');
                         }
                         gameFiles.data.forEach(function (gameFile) {
                             if (/^board\.[0-9]+\.svg$/.test(gameFile.name)) {
@@ -26837,7 +26810,7 @@ function updateSvg(state, gamePath, baseSvgPath, octokit, context) {
                     svgFile = _a.sent();
                     // If a file was queried then data is not an array
                     if (Array.isArray(svgFile.data)) {
-                        throw new Error("FILE_IS_DIR");
+                        throw new Error('FILE_IS_DIR');
                     }
                     svg = Buffer.from(svgFile.data.content, "base64").toString();
                     // Hide elements that should not be visible for this board
@@ -27019,20 +26992,18 @@ function listPreviousGames(gamePath, octokit, context) {
                         var firstMove = log[0];
                         var lastMove = log[log.length - 1];
                         var playerCount = Object(lodash__WEBPACK_IMPORTED_MODULE_2__["uniq"])(log.map(function (entry) { return entry.username; })).length;
-                        var mvp = Object(lodash__WEBPACK_IMPORTED_MODULE_2__["flow"])(lodash__WEBPACK_IMPORTED_MODULE_2__["countBy"], lodash__WEBPACK_IMPORTED_MODULE_2__["entries"], Object(lodash__WEBPACK_IMPORTED_MODULE_2__["partialRight"])(lodash__WEBPACK_IMPORTED_MODULE_2__["maxBy"], lodash__WEBPACK_IMPORTED_MODULE_2__["last"]), lodash__WEBPACK_IMPORTED_MODULE_2__["head"])(log
-                            .filter(function (logItem) { return logItem.team === lastMove.team; })
-                            .map(function (logItem) { return logItem.username; }));
-                        return Object(compress_tag__WEBPACK_IMPORTED_MODULE_1__["compress"])(templateObject_2 || (templateObject_2 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n      A game was started\n      on ", "\n      by **[@", "](https://github.com/", ")**\n      and ended on ", ".\n      <> The ", " team won.\n      <> ", " players played ", " moves across ", ".\n      <> The :black_circle:black team captured ", " white pieces and claimed ", " rosettes.\n      <> The :white_circle:white team captured ", " black pieces and claimed ", " rosettes.\n      <> The MVP of the winning team was\n      **[@", "](https://github.com/", ")**,\n      who played ", " moves.\n      <> The winning move was made\n      by **[@", "](https://github.com/", ")**\n      ([#", "](https://github.com/", "/", "/issues/", ")).\n    "], ["\n      A game was started\n      on ", "\n      by **[@", "](https://github.com/",
-                            ")**\n      and ended on ", ".\n      <> The ",
-                            " team won.\n      <> ", " players played ",
-                            " moves across ",
+                        var mvp = Object(lodash__WEBPACK_IMPORTED_MODULE_2__["flow"])(lodash__WEBPACK_IMPORTED_MODULE_2__["countBy"], lodash__WEBPACK_IMPORTED_MODULE_2__["entries"], Object(lodash__WEBPACK_IMPORTED_MODULE_2__["partialRight"])(lodash__WEBPACK_IMPORTED_MODULE_2__["maxBy"], lodash__WEBPACK_IMPORTED_MODULE_2__["last"]), lodash__WEBPACK_IMPORTED_MODULE_2__["head"])(log.filter(function (logItem) { return logItem.team === lastMove.team; }).map(function (logItem) { return logItem.username; }));
+                        return Object(compress_tag__WEBPACK_IMPORTED_MODULE_1__["compress"])(templateObject_2 || (templateObject_2 = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__makeTemplateObject"])(["\n      A game was started\n      on ", "\n      by **[@", "](https://github.com/", ")**\n      and ended on ", ".\n      <> The ", " team won.\n      <> ", " players played ", " moves across ", ".\n      <> The :black_circle:black team captured ", " white pieces and claimed ", " rosettes.\n      <> The :white_circle:white team captured ", " black pieces and claimed ", " rosettes.\n      <> The MVP of the winning team was\n      **[@", "](https://github.com/", ")**,\n      who played ", " moves.\n      <> The winning move was made\n      by **[@", "](https://github.com/", ")**\n      ([#", "](https://github.com/", "/", "/issues/", ")).\n    "], ["\n      A game was started\n      on ", "\n      by **[@", "](https://github.com/", ")**\n      and ended on ", ".\n      <> The ",
+                            " team won.\n      <> ", " players played ", " moves across ",
                             ".\n      <> The :black_circle:black team captured ",
                             " white pieces and claimed ",
                             " rosettes.\n      <> The :white_circle:white team captured ",
                             " black pieces and claimed ",
                             " rosettes.\n      <> The MVP of the winning team was\n      **[@", "](https://github.com/", ")**,\n      who played ",
-                            " moves.\n      <> The winning move was made\n      by **[@", "](https://github.com/", ")**\n      ([#", "](https://github.com/", "/",
-                            "/issues/", ")).\n    "])), dateformat__WEBPACK_IMPORTED_MODULE_4___default()(new Date(firstMove.time), "dS mmm yyyy"), firstMove.username, firstMove.username, dateformat__WEBPACK_IMPORTED_MODULE_4___default()(new Date(lastMove.time), "dS mmm yyyy"), lastMove.team === "b" ? ":black_circle:black" : ":white_circle:white", playerCount, log.length, humanize_duration__WEBPACK_IMPORTED_MODULE_3___default()(new Date(lastMove.time).getTime() - new Date(firstMove.time).getTime(), { largest: 2, delimiter: " and " }), log.filter(function (logItem) {
+                            " moves.\n      <> The winning move was made\n      by **[@", "](https://github.com/", ")**\n      ([#", "](https://github.com/", "/", "/issues/", ")).\n    "])), dateformat__WEBPACK_IMPORTED_MODULE_4___default()(new Date(firstMove.time), "dS mmm yyyy"), firstMove.username, firstMove.username, dateformat__WEBPACK_IMPORTED_MODULE_4___default()(new Date(lastMove.time), "dS mmm yyyy"), lastMove.team === "b" ?
+                            ":black_circle:black" :
+                            ":white_circle:white", playerCount, log.length, humanize_duration__WEBPACK_IMPORTED_MODULE_3___default()(new Date(lastMove.time).getTime() -
+                            new Date(firstMove.time).getTime(), { largest: 2, delimiter: " and " }), log.filter(function (logItem) {
                             var _a;
                             return logItem.team === "b" && ((_a = logItem.events) === null || _a === void 0 ? void 0 : _a.captureHappened);
                         }).length, log.filter(function (logItem) {
