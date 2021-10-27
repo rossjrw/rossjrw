@@ -1066,7 +1066,7 @@
     "time": "2021-10-27T00:30:30.796Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/63a060eef62fac3862cdc4fcf9e1e97d24196872/games/current/board.1264.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1075,6 +1075,23 @@
     },
     "fromPosition": 2,
     "toPosition": 4,
+    "roll": 2
+  },
+  {
+    "username": "Shah0912",
+    "issue": 1269,
+    "time": "2021-10-27T04:28:56.294Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
     "roll": 2
   }
 ]
