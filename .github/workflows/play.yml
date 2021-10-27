@@ -9,6 +9,11 @@ on:
 jobs:
   play:
     runs-on: ubuntu-latest
+    # Restrict permissions for the action
+    # All others are disabled by default
+    permissions:
+      contents: write
+      issues: write
     # Only do anything if the issue says it's a move
     if: startsWith(github.event.issue.title, 'ur-')
     steps:
