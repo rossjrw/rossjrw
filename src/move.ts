@@ -14,6 +14,15 @@ import { makeVictoryMessage } from "@/victory"
 import { getOppositeTeam, teamName } from "@/teams"
 
 /**
+ * A single move. The distance to move a given piece on the board, and the
+ * identifying position from which to move that piece.
+ */
+export type Move = {
+  fromPosition: number
+  distance: number
+}
+
+/**
  * Called when a player uses the "move" command. Executes that move onto the
  * current state.
  *
@@ -24,7 +33,7 @@ import { getOppositeTeam, teamName } from "@/teams"
  */
 export async function makeMove(
   state: Ur.State,
-  move: string,
+  move: Move | "pass",
   gamePath: string,
   octokit: Octokit,
   context: Context,
@@ -45,7 +54,6 @@ export async function makeMove(
     // be possible for a player to pass
     newState = Ur.voidTurn(state, state.currentPlayer)
   } else {
-    // Store the player's current team before anything else
     const playerTeam = getPlayerTeam(context.actor, log)
     // First I need to validate which team the user is on
     if (
@@ -64,36 +72,29 @@ export async function makeMove(
     } else {
       addLabels(["White team"], octokit, context)
     }
-    // The move should be 'a@b' where a is the dice count and b is the position
-    // The given diceResult must match the internal diceResult
-    const [diceResult, fromPosition] = move
-      .split("@")
-      .map((a) => parseInt(a))
-    if (diceResult === undefined || diceResult !== state.diceResult) {
+    // The distance given in the move must match the state's dice result
+    if (move.distance !== state.diceResult) {
       throw new Error("WRONG_DICE_COUNT")
-    }
-    if (fromPosition === undefined) {
-      throw new Error("NO_MOVE_POSITION")
     }
     // The fromPosition must be a key of one of the possibleMoves
     // However, there may be no possible moves, in which case possibleMoves is
     // an empty object, in which case any move is "allowed"
     if (
-      !(`${fromPosition}` in state.possibleMoves!) &&
+      !(`${move.fromPosition}` in state.possibleMoves!) &&
       !isEmpty(state.possibleMoves!)
     ) {
       throw new Error("IMPOSSIBLE_MOVE")
     }
-    const toPosition = state.possibleMoves![`${fromPosition}`]
+    const toPosition = state.possibleMoves![`${move.fromPosition}`]
 
     // Everything seems ok, so execute the move
-    newState = Ur.takeTurn(state, state.currentPlayer, fromPosition)
+    newState = Ur.takeTurn(state, state.currentPlayer, move.fromPosition)
 
     // Move has been performed and the result has been saved.
     // All that remains is to report back to the issue and update the README.
 
     // Let's detect what happened in that move
-    events = analyseMove(state, fromPosition, toPosition)
+    events = analyseMove(state, move.fromPosition, toPosition)
     if (events.rosetteClaimed) {
       addLabels([":rosette: Rosette!"], octokit, context)
     }
@@ -117,12 +118,12 @@ export async function makeMove(
         a ${teamName(state.currentPlayer)} piece
         ${
           events.ascensionHappened
-            ? `from position ${fromPosition}.`
+            ? `from position ${move.fromPosition}.`
             : compress`
             ${
-              fromPosition === 0
+              move.fromPosition === 0
                 ? "onto the board"
-                : `from position ${fromPosition}`
+                : `from position ${move.fromPosition}`
             }
             to position ${toPosition}.
           `
@@ -171,7 +172,7 @@ export async function makeMove(
       initiatedByPlayer: true,
       team: state.currentPlayer,
       roll: state.diceResult,
-      fromPosition,
+      fromPosition: move.fromPosition,
       toPosition,
       events,
     })
