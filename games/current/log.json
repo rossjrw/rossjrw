@@ -913,7 +913,7 @@
     "time": "2021-10-27T00:22:38.917Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d2aefdef74b66b610b5aae3e9f2630a6875b50de/games/current/board.1255.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -923,5 +923,22 @@
     "fromPosition": 0,
     "toPosition": 1,
     "roll": 1
+  },
+  {
+    "username": "jbmagination",
+    "issue": 1256,
+    "time": "2021-10-27T00:23:13.621Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 3,
+    "roll": 2
   }
 ]
