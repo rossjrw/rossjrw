@@ -26591,7 +26591,7 @@ function play(title, octokit, context, core) {
                     // Extract changes from the log
                     changes = changes.concat(log.makeLogChanges());
                     // All the changes have been collected - commit them
-                    return [4 /*yield*/, Object(_commit__WEBPACK_IMPORTED_MODULE_5__["makeCommit"])("@" + context.actor + " " + (command === "new"
+                    return [4 /*yield*/, Object(_commit__WEBPACK_IMPORTED_MODULE_5__["makeCommit"])("(" + context.actor + ") " + (command === "new"
                             ? "Start a new game"
                             : "Move " + Object(_teams__WEBPACK_IMPORTED_MODULE_8__["teamName"])(state.currentPlayer) + " " + move) + " (#" + context.issue.number + ")", changes, octokit, context)];
                 case 8:
