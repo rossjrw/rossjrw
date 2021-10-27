@@ -1338,7 +1338,7 @@
     "time": "2021-10-27T16:03:44.501Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3102fb3963696622e8697542e4d7ded01ff4421f/games/current/board.1287.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1348,5 +1348,22 @@
     "fromPosition": 2,
     "toPosition": 3,
     "roll": 1
+  },
+  {
+    "username": "Timemaster111",
+    "issue": 1288,
+    "time": "2021-10-27T16:05:22.671Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 13,
+    "roll": 2
   }
 ]
