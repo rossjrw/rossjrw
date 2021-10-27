@@ -86,7 +86,7 @@ export default async function play(
 
     // All the changes have been collected - commit them
     await makeCommit(
-      `@${context.actor} ${
+      `(${context.actor}) ${
         command === "new"
           ? "Start a new game"
           : `Move ${teamName(state.currentPlayer)} ${move}`
