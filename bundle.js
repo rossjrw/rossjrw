@@ -25868,7 +25868,7 @@ function handleError(error, log, octokit, context, core) {
         owner: context.repo.owner,
         repo: context.repo.repo,
         issue_number: context.issue.number,
-        body: Object(lodash__WEBPACK_IMPORTED_MODULE_0__["get"])(ERROR_DESC, error.message, ERROR_DEFAULT + error.message),
+        body: Object(lodash__WEBPACK_IMPORTED_MODULE_0__["get"])(ERROR_DESC, error.message, ERROR_DEFAULT + ' ' + error.message),
     });
     Object(_issues__WEBPACK_IMPORTED_MODULE_1__["addLabels"])(["Unsuccessful"], octokit, context);
     octokit.issues.update({
