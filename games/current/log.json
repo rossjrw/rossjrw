@@ -2008,7 +2008,7 @@
     "time": "2021-10-28T16:31:40.041Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c648920b240a050481fd158a57f19b53e5c1957f/games/current/board.1331.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2017,6 +2017,23 @@
     },
     "fromPosition": 14,
     "toPosition": 15,
+    "roll": 1
+  },
+  {
+    "username": "jbmagination",
+    "issue": 1332,
+    "time": "2021-10-28T19:23:03.362Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 11,
     "roll": 1
   }
 ]
