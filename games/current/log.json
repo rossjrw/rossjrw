@@ -1940,7 +1940,7 @@
     "time": "2021-10-28T13:58:35.927Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/228d17b205538cae8b0d1388568286d1534d4a06/games/current/board.1327.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1950,5 +1950,22 @@
     "fromPosition": 2,
     "toPosition": 5,
     "roll": 3
+  },
+  {
+    "username": "jbmagination",
+    "issue": 1328,
+    "time": "2021-10-28T13:59:39.942Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
+    "roll": 2
   }
 ]
