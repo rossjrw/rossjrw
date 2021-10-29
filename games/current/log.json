@@ -51,7 +51,7 @@
     "time": "2021-10-29T17:50:19.302Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4fe9d33b9a8ef0ae0ddb61787ae66fbb2ea467ec/games/current/board.1347.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -61,5 +61,22 @@
     "fromPosition": 1,
     "toPosition": 2,
     "roll": 1
+  },
+  {
+    "username": "Bombniks",
+    "issue": 1348,
+    "time": "2021-10-29T17:51:12.622Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   }
 ]
