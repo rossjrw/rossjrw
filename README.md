@@ -1,35 +1,18 @@
 Welcome to my Github profile!
 We're playing
 [The Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur).
-**Game #8 is in progress,** but you can join!
+**This game has ended!**
 
-<p align="center">
-  <b>It's the
-  :white_circle:white
-  team's turn.</b>
-</p>
+  This game has finished, so we're just waiting for someone to click _"Start a
+  new game"._ That could be you!
 
-You're on a team! :wave:
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1342.svg"></p>
 
-* If you've already played a turn this game, you know which team you're on!
-(_you can't change it!_)
-If it's not your turn, check back later, or
-[ask a
-friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)
-to make a move.
-* If you've not yet played a turn this game, make a move now to join the
-:white_circle:white
-team.
-
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1341.svg"></p>
-
-  **:white_circle:White team:**
-  You rolled a 1!
 What would you like to do?
 
 | Choices *(click one of them!)* |
 | --- |
-  | [Ascend a piece from tile 14    (:rocket:) (:crown:)](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%4014-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Start a new game](https://github.com/rossjrw/rossjrw/issues/new?title=ur-new&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -48,7 +31,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/jbmagination">@jbmagination</a></b> (53)<br><b><a href="https://github.com/OmKakatkar">@OmKakatkar</a></b> (4)<br><b><a href="https://github.com/shpatrickguo">@shpatrickguo</a></b> (2)<br><b><a href="https://github.com/rumbogs">@rumbogs</a></b> (1)<br><b><a href="https://github.com/kallyas">@kallyas</a></b> (1)<br><b><a href="https://github.com/KANG-NEWBIE">@KANG-NEWBIE</a></b> (1)<br><b><a href="https://github.com/Tijil2111">@Tijil2111</a></b> (1)</td>
-        <td><b><a href="https://github.com/Timemaster111">@Timemaster111</a></b> (41)<br><b><a href="https://github.com/nirakon">@nirakon</a></b> (16)<br><b><a href="https://github.com/Sothatsit">@Sothatsit</a></b> (3)<br><b><a href="https://github.com/roryclaasen">@roryclaasen</a></b> (2)<br><b><a href="https://github.com/HorebParraud">@HorebParraud</a></b> (1)<br><b><a href="https://github.com/Shah0912">@Shah0912</a></b> (1)</td>
+        <td><b><a href="https://github.com/Timemaster111">@Timemaster111</a></b> (42)<br><b><a href="https://github.com/nirakon">@nirakon</a></b> (16)<br><b><a href="https://github.com/Sothatsit">@Sothatsit</a></b> (3)<br><b><a href="https://github.com/roryclaasen">@roryclaasen</a></b> (2)<br><b><a href="https://github.com/HorebParraud">@HorebParraud</a></b> (1)<br><b><a href="https://github.com/Shah0912">@Shah0912</a></b> (1)</td>
       </tr>
     </tbody>
   </table>
@@ -190,7 +173,8 @@ What would you like to do?
   | 29th Oct 2021 17:46 | **130** | :white_circle:  The white team rolled a 4 and their turn was automatically passed | [#1340](https://github.com/rossjrw/rossjrw/issues/1340) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/631d3257aa1acd8ebfe8dd22947c8a29674a8ba3/games/current/board.1340.svg) |
   | 29th Oct 2021 17:46 | **131** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#1340](https://github.com/rossjrw/rossjrw/issues/1340) |  |
   | 29th Oct 2021 17:46 | **132** | :white_circle: **[@Timemaster111](https://github.com/Timemaster111)** ascended a white piece from position 12 :rocket:    | [#1341](https://github.com/rossjrw/rossjrw/issues/1341) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/d5d6838ffa3ae1b542b161a533cdf1c938e28ad0/games/current/board.1341.svg) |
-  | 29th Oct 2021 17:46 | **133** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#1341](https://github.com/rossjrw/rossjrw/issues/1341) |  |
+  | 29th Oct 2021 17:46 | **133** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#1341](https://github.com/rossjrw/rossjrw/issues/1341) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/a4e7ff6e58298d4c03821d6ce4c8b1b959bc0822/games/current/board.1341.svg) |
+  | 29th Oct 2021 17:47 | **134** | :white_circle: **[@Timemaster111](https://github.com/Timemaster111)** ascended a white piece from position 14 :rocket:   — won the game :crown: | [#1342](https://github.com/rossjrw/rossjrw/issues/1342) |  |
 
 </details>
 
