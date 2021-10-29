@@ -5,7 +5,7 @@ We're playing
 
 <p align="center">
   <b>It's the
-  :black_circle:black
+  :white_circle:white
   team's turn.</b>
 </p>
 
@@ -18,12 +18,12 @@ If it's not your turn, check back later, or
 friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)
 to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-:black_circle:black
+:white_circle:white
 team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1352.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1354.svg"></p>
 
-  **:black_circle:Black team:**
+  **:white_circle:White team:**
   You rolled a 2!
 What would you like to do?
 
@@ -31,6 +31,7 @@ What would you like to do?
 | --- |
   | [Move a new piece to tile 2    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
   | [Move a piece from tile 3 to tile 5    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%403-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Move a piece from tile 7 to tile 9    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%407-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -48,7 +49,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td><b><a href="https://github.com/jbmagination">@jbmagination</a></b> (4)</td>
+        <td><b><a href="https://github.com/jbmagination">@jbmagination</a></b> (5)</td>
         <td><b><a href="https://github.com/Timemaster111">@Timemaster111</a></b> (3)<br><b><a href="https://github.com/Bombniks">@Bombniks</a></b> (1)</td>
       </tr>
     </tbody>
@@ -65,7 +66,8 @@ What would you like to do?
   | 29th Oct 2021 17:51 | **4** | :white_circle: **[@Bombniks](https://github.com/Bombniks)** moved a white piece onto the board to position 3    | [#1348](https://github.com/rossjrw/rossjrw/issues/1348) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/96ae3ffb34d41968a2623cd0a91fbf75e3cd7357/games/current/board.1348.svg) |
   | 29th Oct 2021 17:52 | **5** | :black_circle: **[@jbmagination](https://github.com/jbmagination)** moved a black piece from position 2 to position 3    | [#1350](https://github.com/rossjrw/rossjrw/issues/1350) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/7c9caf0aa370287e8c892708080a6d93c0d14b4e/games/current/board.1350.svg) |
   | 29th Oct 2021 17:52 | **6** | :white_circle: **[@Timemaster111](https://github.com/Timemaster111)** moved a white piece from position 2 to position 4  — claimed a rosette :rosette:  | [#1351](https://github.com/rossjrw/rossjrw/issues/1351) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/dbe39f656766742fef3f6aaba0f741556867d70a/games/current/board.1351.svg) |
-  | 29th Oct 2021 17:53 | **7** | :white_circle: **[@Timemaster111](https://github.com/Timemaster111)** moved a white piece from position 4 to position 7    | [#1352](https://github.com/rossjrw/rossjrw/issues/1352) |  |
+  | 29th Oct 2021 17:53 | **7** | :white_circle: **[@Timemaster111](https://github.com/Timemaster111)** moved a white piece from position 4 to position 7    | [#1352](https://github.com/rossjrw/rossjrw/issues/1352) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/01fc3e3464b779ecee9578d239b99e23e067f3a9/games/current/board.1352.svg) |
+  | 29th Oct 2021 17:53 | **8** | :black_circle: **[@jbmagination](https://github.com/jbmagination)** moved a black piece onto the board to position 2    | [#1354](https://github.com/rossjrw/rossjrw/issues/1354) |  |
 
 </details>
 
