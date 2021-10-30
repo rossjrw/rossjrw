@@ -1,11 +1,11 @@
 Welcome to my Github profile!
 We're playing
-[The Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur).
+[the Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur).
 <%= state.currentPlayer ? `**Game #${previousGames.length + 1} is in progress,** but you can join!` : "**This game has ended!**" %>
 
 <% if (state.currentPlayer === undefined) { -%>
   This game has finished, so we're just waiting for someone to click _"Start a
-  new game"._ That could be you!
+  new game"._ Could that someone be you?
 <% } else { -%>
 <p align="center">
   <b>It's the
@@ -85,64 +85,82 @@ What would you like to do?
 <details>
 <summary><b>How do I play?</b></summary>
 
+## Rules of the game
+
 It's the **:white_circle:white** team versus the **:black_circle:black**
 team.
 
-The turn starts by rolling 4 binary dice, which results in a number from 0
+The first team to **:rocket:ascend** all 7 of their pieces **:crown:wins**.
+Your goal is to achieve that, and to block the other team from doing the
+same.
+
+_(Learn more about the rules of the Royal Game of Ur at
+[RoyalUr.net/learn](https://royalur.net/learn/), or watch [Tom Scott play
+against Irving Finkel](https://www.youtube.com/watch?v=WZskjLq040I) in
+2017.)_
+
+### Movement
+
+Each turn starts by rolling 4 binary dice, which results in a number from 0
 to 4. The current team gets to move one of their pieces by that many tiles.
 
-All of your pieces start on position 0 (the space just before tile 1). Your
-goal is to get all seven of them off the board by moving them onto position
-15 (the space just after tile 14). This is called **:rocket:ascending** a
-piece. You also want to prevent your opponent from :rocket:ascending their
-pieces.
+All 14 pieces start on position 0 (the space just before tile 1).
 
-You will move your pieces along the tiles from tile 1 to tile 14. The tiles
-on your side of the board (tiles 1 through 4, 13, and 14) are safe — only
-your pieces can be there. However, the tiles in the middle (tiles 5 through
-12) are unsafe — your opponent's pieces can also be here. If one team's
-piece lands on the same tile as another team's piece, the piece that was
-landed on is **:crossed_swords:captured**! It goes all the way back to
-position 0.
+### :rocket:Ascension
 
-If you land on a **:rosette:rosette** (tiles 4, 8, and 14), your team gets
-to take another turn. Also, a piece that is on the :rosette:rosette on tile
-8 *cannot be :crossed_swords:captured*. A piece that's trying to capture it
-will simply bounce off onto tile 9.
+Moving a piece onto position 15 (the imaginary space after tile 14) causes
+that piece to leave the board forever. This is **:rocket:ascension**, and
+is the goal of the game &mdash; the first team to ascend all 7 of their
+pieces wins.
 
-The first team to **:rocket:ascend** all seven of their pieces — that is,
-move them off the board onto position 15 — :crown:wins!
+### :crossed_swords:Capturing
 
-Watch [Tom Scott play against Irving
-Finkel](https://www.youtube.com/watch?v=WZskjLq040I) in 2017.
+You will move your pieces along the tiles from tile 1 to tile 14.
 
------
+The tiles on your side of the board (tiles 1 through 4, 13, and 14) are
+safe &mdash; only your pieces can be there. However, the tiles in the
+middle (tiles 5 through 12) are unsafe &mdash; your opponent's pieces can
+also be here. If one team's piece lands on the same tile as another team's
+piece, the piece that was landed on is **:crossed_swords:captured**! It
+goes all the way back to position 0.
+
+### :rosette:Rosettes
+
+If a piece lands on a **:rosette:rosette** (tiles 4, 8, and 14), that team
+gets to immediately take another turn.
+
+A piece that is on the rosette on tile 8 *cannot be
+**:crossed_swords:captured***. A piece trying to capture it will simply
+bounce off onto tile 9.
+
+## How to play
 
 Playing Ur on my GitHub profile is easy. The dice have already been rolled
-for you — all you have to do is decide what to do with them.
+for you &mdash; all you have to do is decide what to do with them. Anyone
+with a GitHub account can play.
 
 Anyone can join either team at any time, but once you're in a team, you're
-locked into it until the game ends. You can't play a move when it's the
-other team's turn.
+locked into it until the game ends. You won't be able to play a move when
+it's the other team's turn.
 
-There will be a list of links below the board image with each possible
-move. Clicking one of those will take you to a page where you can create an
-Issue in this repository. The fields will already be filled in and all you
-have to do is click Submit.
+The list of links below the board image shows each possible move. Clicking
+one of those will take you to a page where you can create an issue in this
+repository, where all you have to do is click submit to play your move.
 
 It will take a moment for Github Actions to acknowledge your move, but once
-it does, you'll see it react with the 'eyes' emoji (:eyes:). No more than a
-minute later it should react with the 'rocket' emoji (:rocket:) to let you
-know that your move was successful.
+it does, you'll see it react with the 'eyes' emoji (:eyes:). A few seconds
+later it will react with the 'rocket' emoji (:rocket:) to let you know that
+your move was successful, then leave a comment explaining what happened,
+and it'll also make a commit to record your move.
 
-If you don't see any of that, then something went wrong. Ping me in your
-issue by typing `cc @<%= context.repo.owner %>`, and I'll take a look.
+_(If you don't see any of that, then something went wrong. Ping me in your
+issue by typing `cc @<%= context.repo.owner %>`, and I'll take a look.)_
 
-Note that if your team has no possible moves — for example by rolling a 0 —
-your turn will be automatically skipped. The event log will let you know if
-this has happened.
+Note that if your team has no possible moves &mdash; for example by rolling a 0
+&mdash; your turn will be automatically skipped. The event log will let you
+know if this has happened.
 
------
+## Behind the scenes
 
 Check out the `source` branch of this repository for the source code and a
 little commentary on the inspiration behind this project.
