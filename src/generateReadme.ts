@@ -68,13 +68,13 @@ export async function generateReadme(
         const events = analyseMove(state, move.from, move.to)
         return {
           text: compress`
+          ${events.rosetteClaimed ? ":rosette:" : ""}
+          ${events.captureHappened ? ":crossed_swords:" : ""}
+          ${events.ascensionHappened ? ":rocket:" : ""}
+          ${events.gameWon ? ":crown:" : ""}
           ${events.ascensionHappened ? "Ascend" : "Move"}
           a ${move.from === 0 ? "new piece" : `piece from tile ${move.from}`}
           ${events.ascensionHappened ? "" : `to tile ${move.to}`}
-          ${events.rosetteClaimed ? "(:rosette:)" : ""}
-          ${events.captureHappened ? "(:crossed_swords:)" : ""}
-          ${events.ascensionHappened ? "(:rocket:)" : ""}
-          ${events.gameWon ? "(:crown:)" : ""}
         `,
           url: issueLink(
             `ur-move-${state.diceResult}%40${move.from}-0`,
