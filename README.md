@@ -1,41 +1,39 @@
 Welcome to my Github profile!
 We're playing
-[The Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur).
+[the Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur).
 **Game #9 is in progress,** but you can join!
 
 <p align="center">
   <b>It's the
-  :white_circle:white
+  :black_circle:black
   team's turn.</b>
 </p>
 
 You're on a team! :wave:
 
-* If you've already played a turn this game, you know which team you're on!
-(_you can't change it!_)
-If it's not your turn, check back later, or
-[ask a
-friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github)
-to make a move.
+* If you've already played a turn this game, you're already on a team
+  &mdash; check the game log below for a reminder. If it's not your turn,
+  check back later, or [ask a
+  friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github) to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-:white_circle:white
-team.
+  **:black_circle:black** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1365.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1367.svg"></p>
 
-  **:white_circle:White team:**
-  You rolled a 1!
+  **:black_circle:Black team:**
+  You rolled a 2!
 What would you like to do?
 
-| Choices *(click one of them!)* |
+| Choices *(pick one of them!)* |
 | --- |
-  | [Move a new piece to tile 1    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [Move a piece from tile 4 to tile 5  (:crossed_swords:)  ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%404-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [Move a piece from tile 10 to tile 11    ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%4010-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move a new piece to tile 2](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [ :crossed_swords:   Move a piece from tile 3 to tile 5](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%403-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move a piece from tile 9 to tile 11](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%409-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
-<details><summary>Game #9 so far</summary>
+<details>
+<summary><b>Game #9 so far</b></summary>
 
 ## Who's on each team?
 
@@ -50,7 +48,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/jbmagination">@jbmagination</a></b> (9)<br><b><a href="https://github.com/rossjrw">@rossjrw</a></b> (2)</td>
-        <td><b><a href="https://github.com/Timemaster111">@Timemaster111</a></b> (7)<br><b><a href="https://github.com/Bombniks">@Bombniks</a></b> (1)<br><b><a href="https://github.com/nirakon">@nirakon</a></b> (1)</td>
+        <td><b><a href="https://github.com/Timemaster111">@Timemaster111</a></b> (7)<br><b><a href="https://github.com/Bombniks">@Bombniks</a></b> (1)<br><b><a href="https://github.com/nirakon">@nirakon</a></b> (1)<br><b><a href="https://github.com/VinayakBector2002">@VinayakBector2002</a></b> (1)</td>
       </tr>
     </tbody>
   </table>
@@ -78,11 +76,13 @@ What would you like to do?
   | 30th Oct 2021 00:31 | **16** | :black_circle: **[@jbmagination](https://github.com/jbmagination)** moved a black piece from position 2 to position 5    | [#1362](https://github.com/rossjrw/rossjrw/issues/1362) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/535eb5531a5283f965a0d28808f72aeb2522f22c/games/current/board.1362.svg) |
   | 30th Oct 2021 08:09 | **17** | :white_circle: **[@nirakon](https://github.com/nirakon)** moved a white piece from position 9 to position 10    | [#1363](https://github.com/rossjrw/rossjrw/issues/1363) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/ae33c330f7ad5da0cf677fdd7edd5eb2ff638355/games/current/board.1363.svg) |
   | 30th Oct 2021 15:55 | **18** | :black_circle: **[@rossjrw](https://github.com/rossjrw)** moved a black piece from position 4 to position 8  — claimed a rosette :rosette:  | [#1364](https://github.com/rossjrw/rossjrw/issues/1364) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/4980d6eaa57032542a9437b4304820b0e274dbba/games/current/board.1364.svg) |
-  | 30th Oct 2021 15:58 | **19** | :black_circle: **[@rossjrw](https://github.com/rossjrw)** moved a black piece from position 8 to position 9    | [#1365](https://github.com/rossjrw/rossjrw/issues/1365) |  |
+  | 30th Oct 2021 15:58 | **19** | :black_circle: **[@rossjrw](https://github.com/rossjrw)** moved a black piece from position 8 to position 9    | [#1365](https://github.com/rossjrw/rossjrw/issues/1365) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/121c0adfd9d8059bd450337d464198915413e1ee/games/current/board.1365.svg) |
+  | 31st Oct 2021 05:58 | **20** | :white_circle: **[@VinayakBector2002](https://github.com/VinayakBector2002)** moved a white piece from position 4 to position 5 — captured a black piece :crossed_swords:   | [#1367](https://github.com/rossjrw/rossjrw/issues/1367) |  |
 
 </details>
 
-<details><summary>Previous games</summary>
+<details>
+<summary><b>Previous games</b></summary>
 
 ## Previous games
 
@@ -153,71 +153,94 @@ What would you like to do?
 
 -----
 
-<details><summary>How do I play?</summary>
+<details>
+<summary><b>How do I play?</b></summary>
 
-  It's the :white_circle:white team versus the :black_circle:black team.
+## Rules of the game
 
-  The turn starts by rolling 4 binary dice, which
-  results in a number from 0 to 4. The current team gets to move one of their
-  pieces by that many tiles.
+It's the **:white_circle:white** team versus the **:black_circle:black**
+team.
 
-  All of your pieces start on position 0 (the space just before tile 1). Your
-  goal is to get all seven of them off the board by moving them onto position
-  15 (the space just after tile 14). This is called **:rocket:ascending** a
-  piece. You also want to prevent your opponent from :rocket:ascending their
-  pieces.
+The first team to **:rocket:ascend** all 7 of their pieces **:crown:wins**.
+Your goal is to achieve that, and to block the other team from doing the
+same.
 
-  You will move your pieces along the tiles from tile 1 to tile 14. The tiles
-  on your side of the board (tiles 1 through 4, 13, and 14) are safe — only
-  your pieces can be there. However, the tiles in the middle (tiles 5 through
-  12) are unsafe — your opponent's pieces can also be here. If one team's piece
-  lands on the same tile as another team's piece, the piece that was landed on
-  is **:crossed_swords:captured**! It goes all the way back to position 0.
+_(Learn more about the rules of the Royal Game of Ur at
+[RoyalUr.net/learn](https://royalur.net/learn/), or watch [Tom Scott play
+against Irving Finkel](https://www.youtube.com/watch?v=WZskjLq040I) in
+2017.)_
 
-  If you land on a **:rosette:rosette** (tiles 4, 8, and 14), your team gets to
-  take another turn. Also, a piece that is on the :rosette:rosette on tile 8
-  *cannot be :crossed_swords:captured*. A piece that's trying to capture it will
-  simply bounce off onto tile 9.
+### Movement
 
-  The first team to **:rocket:ascend** all seven of their pieces — that is,
-  move them off the board onto position 15 — :crown:wins!
+Each turn starts by rolling 4 binary dice, which results in a number from 0
+to 4. The current team gets to move one of their pieces by that many tiles.
 
-  Watch [Tom Scott play against Irving
-  Finkel](https://www.youtube.com/watch?v=WZskjLq040I) in 2017.
+All 14 pieces start on position 0 (the space just before tile 1).
 
-  -----
+### :rocket:Ascension
 
-  Playing Ur on my GitHub profile is easy. The dice have already been rolled
-  for you — all you have to do is decide what to do with them.
+Moving a piece onto position 15 (the imaginary space after tile 14) causes
+that piece to leave the board forever. This is **:rocket:ascension**, and
+is the goal of the game &mdash; the first team to ascend all 7 of their
+pieces wins.
 
-  Anyone can join either team at any time, but once you're in a team, you're
-  locked into it until the game ends. You can't play a move when it's the
-  other team's turn.
+### :crossed_swords:Capturing
 
-  _([Before 2020-09-19](https://github.com/rossjrw/rossjrw/pull/133), your team
-  was determined by your username. This is no longer the case.)_
+You will move your pieces along the tiles from tile 1 to tile 14.
 
-  There will be a list of links below the board image with each possible move.
-  Clicking one of those will take you to a page where you can create an Issue
-  in this repository. The fields will already be filled in and all you have to
-  do is click Submit.
+The tiles on your side of the board (tiles 1 through 4, 13, and 14) are
+safe &mdash; only your pieces can be there. However, the tiles in the
+middle (tiles 5 through 12) are unsafe &mdash; your opponent's pieces can
+also be here. If one team's piece lands on the same tile as another team's
+piece, the piece that was landed on is **:crossed_swords:captured**! It
+goes all the way back to position 0.
 
-  It will take a moment for Github Actions to acknowledge your move, but once
-  it does, you'll see it react with the 'eyes' emoji (:eyes:). No more than a
-  minute later it should react with the 'rocket' emoji (:rocket:) to let you
-  know that your move was successful.
+### :rosette:Rosettes
 
-  If you don't see any of that, then something went wrong. Ping me in your
-  issue by typing `cc @rossjrw`, and I'll take a look.
+If a piece lands on a **:rosette:rosette** (tiles 4, 8, and 14), that team
+gets to immediately take another turn.
 
-  Note that if your team has no possible moves — for example by rolling a 0 —
-  your turn will be automatically skipped. The event log will let you know if
-  this has happened.
+A piece that is on the rosette on tile 8 *cannot be
+**:crossed_swords:captured***. A piece trying to capture it will simply
+bounce off onto tile 9.
 
-  -----
+## How to play
 
-  Check out the `source` branch of this repository for the source code and a
-  little commentary on the inspiration behind this project.
+Playing Ur on my GitHub profile is easy. The dice have already been rolled
+for you &mdash; all you have to do is decide what to do with them. Anyone
+with a GitHub account can play.
+
+Anyone can join either team at any time, but once you're in a team, you're
+locked into it until the game ends. You won't be able to play a move when
+it's the other team's turn.
+
+The list of links below the board image shows each possible move. Clicking
+one of those will take you to a page where you can create an issue in this
+repository, where all you have to do is click submit to play your move.
+
+It will take a moment for Github Actions to acknowledge your move, but once
+it does, you'll see it react with the 'eyes' emoji (:eyes:). A few seconds
+later it will react with the 'rocket' emoji (:rocket:) to let you know that
+your move was successful, then leave a comment explaining what happened,
+and it'll also make a commit to record your move.
+
+_(If you don't see any of that, then something went wrong. Ping me in your
+issue by typing `cc @rossjrw`, and I'll take a look.)_
+
+Note that if your team has no possible moves &mdash; for example by rolling a 0
+&mdash; your turn will be automatically skipped. The event log will let you
+know if this has happened.
+
+## Behind the scenes
+
+Check out the [`source` branch of this repository](https://github.com/rossjrw/rossjrw/tree/source) for the source
+code and a little commentary on the inspiration behind this project.
+
+### Contributing
+
+I welcome bug reports, feature suggestions and pull requests! Just make
+sure you ping me in your issue or PR by adding `cc @rossjrw`, as I don't receive notifications for new issues in this repository
+(for hopefully obvious reasons).
 
 </details>
 
