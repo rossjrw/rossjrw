@@ -796,7 +796,7 @@
     "time": "2021-11-10T17:24:51.127Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/87230364bb2ce36116a477b0a05a864a047ed1b8/games/current/board.1392.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -806,5 +806,22 @@
     "fromPosition": 6,
     "toPosition": 8,
     "roll": 2
+  },
+  {
+    "username": "nirakon",
+    "issue": 1393,
+    "time": "2021-11-10T17:25:38.483Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 4,
+    "roll": 4
   }
 ]
