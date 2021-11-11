@@ -830,7 +830,7 @@
     "time": "2021-11-10T17:27:10.717Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f79f080d96a5ec64f06f9cb70b5d661b6bd9ec32/games/current/board.1394.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -839,6 +839,23 @@
     },
     "fromPosition": 14,
     "toPosition": 15,
+    "roll": 1
+  },
+  {
+    "username": "mraihan19",
+    "issue": 1395,
+    "time": "2021-11-11T04:42:48.772Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 11,
     "roll": 1
   }
 ]
