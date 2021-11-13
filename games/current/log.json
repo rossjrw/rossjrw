@@ -932,7 +932,7 @@
     "time": "2021-11-12T16:29:06.249Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e830ab6b322771299790a08ef170be36909a5000/games/current/board.1400.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -942,5 +942,22 @@
     "fromPosition": 5,
     "toPosition": 7,
     "roll": 2
+  },
+  {
+    "username": "temps1101",
+    "issue": 1401,
+    "time": "2021-11-13T15:07:19.637Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
   }
 ]
