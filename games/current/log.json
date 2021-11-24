@@ -1034,7 +1034,7 @@
     "time": "2021-11-18T08:21:29.595Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c6cc2884d9c5c50295ac89638daf877d6a651fa3/games/current/board.1406.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1044,5 +1044,22 @@
     "fromPosition": 2,
     "toPosition": 4,
     "roll": 2
+  },
+  {
+    "username": "midori-fukami",
+    "issue": 1407,
+    "time": "2021-11-24T01:35:32.915Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 9,
+    "roll": 3
   }
 ]
