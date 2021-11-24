@@ -1051,7 +1051,7 @@
     "time": "2021-11-24T01:35:32.915Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/41849118c36fbf8ebda01e26bfce40bab0bc8f73/games/current/board.1407.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -1061,5 +1061,22 @@
     "fromPosition": 6,
     "toPosition": 9,
     "roll": 3
+  },
+  {
+    "username": "CyberFlameGO",
+    "issue": 1408,
+    "time": "2021-11-24T07:49:08.427Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   }
 ]
