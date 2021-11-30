@@ -1119,7 +1119,7 @@
     "time": "2021-11-28T14:41:42.512Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ec9b4b8be6efd122f847ff1b35e051c2f3f09c56/games/current/board.1411.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1129,5 +1129,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "Potherca",
+    "issue": 1413,
+    "time": "2021-11-30T20:33:46.612Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 11,
+    "roll": 1
   }
 ]
