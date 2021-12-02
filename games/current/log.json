@@ -1136,7 +1136,7 @@
     "time": "2021-11-30T20:33:46.612Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b5336a105dbf9cc87e87e14ba7f0e8ac03b1f2a7/games/current/board.1413.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1146,5 +1146,22 @@
     "fromPosition": 10,
     "toPosition": 11,
     "roll": 1
+  },
+  {
+    "username": "Ashu-Barnwal",
+    "issue": 1414,
+    "time": "2021-12-02T01:54:27.944Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
   }
 ]
