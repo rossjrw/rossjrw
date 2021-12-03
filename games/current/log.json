@@ -1170,7 +1170,7 @@
     "time": "2021-12-03T16:22:01.529Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/acd6a9bf413eae9e36c6f63b0a55236d5065f05a/games/current/board.1416.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -1180,5 +1180,22 @@
     "fromPosition": 4,
     "toPosition": 6,
     "roll": 2
+  },
+  {
+    "username": "Dumkaaa",
+    "issue": 1417,
+    "time": "2021-12-03T22:11:39.728Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
+    "roll": 1
   }
 ]
