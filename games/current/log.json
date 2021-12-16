@@ -1221,7 +1221,7 @@
     "time": "2021-12-15T19:32:51.818Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4e95499bc7e5fa40b8f7d77c352d45d9e369e79f/games/current/board.1420.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1230,6 +1230,23 @@
     },
     "fromPosition": 0,
     "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "JBYT27",
+    "issue": 1421,
+    "time": "2021-12-16T12:44:19.767Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 8,
     "roll": 2
   }
 ]
