@@ -1272,10 +1272,27 @@
     "time": "2021-12-16T12:45:05.826Z",
     "team": "w",
     "action": "pass",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/04345003ab5c71bc57632cd708de0623cb0d0ca2/games/current/board.1422.svg",
     "events": null,
     "fromPosition": null,
     "toPosition": null,
     "roll": 0
+  },
+  {
+    "username": "anthonymesa",
+    "issue": 1423,
+    "time": "2021-12-17T19:18:24.070Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 4,
+    "roll": 3
   }
 ]
