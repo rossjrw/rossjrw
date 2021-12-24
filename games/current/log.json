@@ -1335,7 +1335,7 @@
     "time": "2021-12-19T09:10:53.289Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f778c21af03de7600f98ed3290f9b0efae1d54ff/games/current/board.1426.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1345,5 +1345,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "YogPanjarale",
+    "issue": 1427,
+    "time": "2021-12-24T16:48:04.035Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   }
 ]
