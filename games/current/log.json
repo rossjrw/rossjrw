@@ -1369,7 +1369,7 @@
     "time": "2021-12-25T04:30:00.355Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1f0db7f2c328b8617d7573f960907ad9c5737a32/games/current/board.1429.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -1379,5 +1379,22 @@
     "fromPosition": 3,
     "toPosition": 5,
     "roll": 2
+  },
+  {
+    "username": "agrazda",
+    "issue": 1430,
+    "time": "2021-12-29T05:02:18.281Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   }
 ]
