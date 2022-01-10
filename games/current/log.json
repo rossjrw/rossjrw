@@ -1437,7 +1437,7 @@
     "time": "2022-01-10T02:03:57.388Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/131d9b1e7307a58cd291e9ab3a0bb32793e34ade/games/current/board.1434.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1447,5 +1447,22 @@
     "fromPosition": 6,
     "toPosition": 7,
     "roll": 1
+  },
+  {
+    "username": "arjvik",
+    "issue": 1435,
+    "time": "2022-01-10T17:31:26.169Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
   }
 ]
