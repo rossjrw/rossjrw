@@ -1464,5 +1464,34 @@
     "fromPosition": 2,
     "toPosition": 4,
     "roll": 2
+  },
+  {
+    "username": "shpatrickguo",
+    "issue": 1436,
+    "time": "2022-01-12T01:57:51.219Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b3613b55005858ae9fc93fb1996f0bcb304b52ec/games/current/board.1436.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 7,
+    "roll": 2
+  },
+  {
+    "username": "shpatrickguo",
+    "issue": 1436,
+    "time": "2022-01-12T01:57:51.219Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
