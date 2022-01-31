@@ -1597,7 +1597,7 @@
     "time": "2022-01-31T04:19:36.721Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0cdef54e13537e2c12b9ee32962c9bc376e9ac64/games/current/board.1442.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1607,5 +1607,22 @@
     "fromPosition": 2,
     "toPosition": 3,
     "roll": 1
+  },
+  {
+    "username": "SantanaDeveloper",
+    "issue": 1443,
+    "time": "2022-01-31T16:10:06.665Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 9,
+    "roll": 2
   }
 ]
