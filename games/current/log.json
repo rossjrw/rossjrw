@@ -1580,7 +1580,7 @@
     "time": "2022-01-29T19:18:02.924Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e2b9b9378d54b544ebce2d8547388c5762433e4d/games/current/board.1441.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1590,5 +1590,22 @@
     "fromPosition": 10,
     "toPosition": 13,
     "roll": 3
+  },
+  {
+    "username": "ravithemore",
+    "issue": 1442,
+    "time": "2022-01-31T04:19:36.721Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 3,
+    "roll": 1
   }
 ]
