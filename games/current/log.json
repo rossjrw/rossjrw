@@ -1687,5 +1687,34 @@
     "fromPosition": 5,
     "toPosition": 9,
     "roll": 3
+  },
+  {
+    "username": "GabrielTheophilo",
+    "issue": 1447,
+    "time": "2022-02-03T13:59:20.947Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/87a187b44030d020bd841745e6459ac0aaf31389/games/current/board.1447.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 15,
+    "roll": 4
+  },
+  {
+    "username": "GabrielTheophilo",
+    "issue": 1447,
+    "time": "2022-02-03T13:59:20.947Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
