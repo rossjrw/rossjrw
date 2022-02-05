@@ -1723,7 +1723,7 @@
     "time": "2022-02-03T14:00:36.830Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/87fac54261d95a875188fac19d45dee519ba4f0e/games/current/board.1448.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1733,5 +1733,22 @@
     "fromPosition": 13,
     "toPosition": 15,
     "roll": 2
+  },
+  {
+    "username": "prakarsh17",
+    "issue": 1449,
+    "time": "2022-02-05T08:49:33.702Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
   }
 ]
