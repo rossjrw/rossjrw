@@ -1757,7 +1757,7 @@
     "time": "2022-02-07T21:29:18.913Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/809b86cb0162de8e9a3135ee3b1d7937fbf63e8d/games/current/board.1450.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1767,5 +1767,22 @@
     "fromPosition": 0,
     "toPosition": 2,
     "roll": 2
+  },
+  {
+    "username": "smjcrane",
+    "issue": 1451,
+    "time": "2022-02-08T23:41:19.245Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 10,
+    "roll": 1
   }
 ]
