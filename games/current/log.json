@@ -1801,5 +1801,34 @@
     "fromPosition": 8,
     "toPosition": 10,
     "roll": 2
+  },
+  {
+    "username": "kokonut27",
+    "issue": 1454,
+    "time": "2022-02-11T18:23:55.725Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/15c03147a8936b53e869bb8984d0e947f6b4f8a7/games/current/board.1454.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 8,
+    "roll": 2
+  },
+  {
+    "username": "kokonut27",
+    "issue": 1454,
+    "time": "2022-02-11T18:23:55.725Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
