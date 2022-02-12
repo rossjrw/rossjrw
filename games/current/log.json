@@ -1830,5 +1830,34 @@
     "fromPosition": null,
     "toPosition": null,
     "roll": 0
+  },
+  {
+    "username": "OggyP",
+    "issue": 1455,
+    "time": "2022-02-12T06:44:19.856Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0fcc48e49e2d329fd6131a4911ea0a7f8dafe8b1/games/current/board.1455.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
+  },
+  {
+    "username": "OggyP",
+    "issue": 1455,
+    "time": "2022-02-12T06:44:19.856Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
