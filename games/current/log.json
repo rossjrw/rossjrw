@@ -1895,7 +1895,7 @@
     "time": "2022-02-21T18:38:24.040Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/5ffa3a7b822dbdef15928c04f1c99da4b34faf8e/games/current/board.1458.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1905,5 +1905,22 @@
     "fromPosition": 0,
     "toPosition": 1,
     "roll": 1
+  },
+  {
+    "username": "runxel",
+    "issue": 1459,
+    "time": "2022-02-22T17:33:11.660Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 7,
+    "roll": 3
   }
 ]
