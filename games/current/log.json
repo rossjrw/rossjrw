@@ -1912,7 +1912,7 @@
     "time": "2022-02-22T17:33:11.660Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/a0788b5c48ede0afe8ceb82a1465cda40b0c9864/games/current/board.1459.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1921,6 +1921,23 @@
     },
     "fromPosition": 4,
     "toPosition": 7,
+    "roll": 3
+  },
+  {
+    "username": "HugoRodriguesQW",
+    "issue": 1460,
+    "time": "2022-02-24T00:55:50.660Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 11,
     "roll": 3
   }
 ]
