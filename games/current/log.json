@@ -1929,7 +1929,7 @@
     "time": "2022-02-24T00:55:50.660Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/31acad9c54b051f611e779009c49cd667a54772e/games/current/board.1460.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1939,5 +1939,22 @@
     "fromPosition": 8,
     "toPosition": 11,
     "roll": 3
+  },
+  {
+    "username": "chawlajay",
+    "issue": 1461,
+    "time": "2022-02-24T16:05:51.502Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
+    "roll": 1
   }
 ]
