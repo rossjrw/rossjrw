@@ -1946,7 +1946,7 @@
     "time": "2022-02-24T16:05:51.502Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/31413c4ca3bd832c88fd2b9029edc9f5b9afed38/games/current/board.1461.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1956,5 +1956,22 @@
     "fromPosition": 14,
     "toPosition": 15,
     "roll": 1
+  },
+  {
+    "username": "alanczeme",
+    "issue": 1462,
+    "time": "2022-02-25T20:11:53.729Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   }
 ]
