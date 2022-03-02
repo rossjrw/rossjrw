@@ -1990,5 +1990,46 @@
     "fromPosition": 10,
     "toPosition": 12,
     "roll": 2
+  },
+  {
+    "username": "oof2win2",
+    "issue": 1466,
+    "time": "2022-03-02T22:15:59.606Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 12,
+    "roll": 1
+  },
+  {
+    "username": "oof2win2",
+    "issue": 1466,
+    "time": "2022-03-02T22:15:59.606Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/58779b1247ebec7a2a77b9cb0cdfc40b017503d4/games/current/board.1466.svg",
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
+  },
+  {
+    "username": "oof2win2",
+    "issue": 1466,
+    "time": "2022-03-02T22:15:59.607Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
