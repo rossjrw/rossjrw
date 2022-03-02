@@ -1963,7 +1963,7 @@
     "time": "2022-02-25T20:11:53.729Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/68428f3b6ee3813bf5560d38d69b5ffda1942e45/games/current/board.1462.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1972,6 +1972,23 @@
     },
     "fromPosition": 0,
     "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "robles-jonathan",
+    "issue": 1465,
+    "time": "2022-03-02T14:23:06.123Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 12,
     "roll": 2
   }
 ]
