@@ -2072,7 +2072,7 @@
     "time": "2022-03-17T12:36:55.090Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1749e26b974333e55c9b4c24e2ae0769f3b385e7/games/current/board.1469.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2082,5 +2082,22 @@
     "fromPosition": 3,
     "toPosition": 5,
     "roll": 2
+  },
+  {
+    "username": "crimsonshade",
+    "issue": 1470,
+    "time": "2022-03-17T16:02:17.725Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
   }
 ]
