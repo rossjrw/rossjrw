@@ -2089,7 +2089,7 @@
     "time": "2022-03-17T16:02:17.725Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c428f2fc93dfe8f3bcb0bd43d833ff2af7b86096/games/current/board.1470.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2099,5 +2099,22 @@
     "fromPosition": 3,
     "toPosition": 6,
     "roll": 3
+  },
+  {
+    "username": "chuangyu-hscy",
+    "issue": 1471,
+    "time": "2022-03-18T11:48:09.009Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
   }
 ]
