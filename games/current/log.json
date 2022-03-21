@@ -2106,7 +2106,7 @@
     "time": "2022-03-18T11:48:09.009Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/64ea1d62fd3ede78e1460ac169c7ddbe33b0d919/games/current/board.1471.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -2116,5 +2116,22 @@
     "fromPosition": 4,
     "toPosition": 6,
     "roll": 2
+  },
+  {
+    "username": "Ljames666",
+    "issue": 1472,
+    "time": "2022-03-21T14:01:47.431Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   }
 ]
