@@ -2157,7 +2157,7 @@
     "time": "2022-03-22T21:27:14.208Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2bb3a4426bd4488f729b131520fbae6d95a5f06f/games/current/board.1474.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -2167,5 +2167,22 @@
     "fromPosition": 3,
     "toPosition": 6,
     "roll": 3
+  },
+  {
+    "username": "The-True-Hooha",
+    "issue": 1475,
+    "time": "2022-03-23T00:11:02.577Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
   }
 ]
