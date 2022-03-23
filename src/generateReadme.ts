@@ -73,7 +73,7 @@ export async function generateReadme(
           ${events.ascensionHappened ? ":rocket:" : ""}
           ${events.gameWon ? ":crown:" : ""}
           ${events.ascensionHappened ? "Ascend" : "Move"}
-          a ${move.from === 0 ? "new piece" : `piece from tile ${move.from}`}
+          ${move.from === 0 ? "a new piece" : `the piece on tile ${move.from}`}
           ${events.ascensionHappened ? "" : `to tile ${move.to}`}
         `,
           url: issueLink(
