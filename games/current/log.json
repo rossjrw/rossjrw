@@ -2191,6 +2191,23 @@
     "time": "2022-03-24T10:55:55.896Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/24eb71b724a3cc044ceb078ac7a312a1efd44a86/games/current/board.1476.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "virajsabhaya23",
+    "issue": 1478,
+    "time": "2022-03-26T03:03:33.384Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null,
     "events": {
       "rosetteClaimed": false,
