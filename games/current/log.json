@@ -2208,7 +2208,7 @@
     "time": "2022-03-26T03:03:33.384Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6b99d8a5fe09f4a299a765830dced4ddc7366d93/games/current/board.1478.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2218,5 +2218,22 @@
     "fromPosition": 0,
     "toPosition": 2,
     "roll": 2
+  },
+  {
+    "username": "e-hamza",
+    "issue": 1479,
+    "time": "2022-03-27T10:58:00.363Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 6,
+    "roll": 4
   }
 ]
