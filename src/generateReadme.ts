@@ -12,6 +12,13 @@ import { Log } from "@/log"
 import { getOppositeTeam, makeTeamListTable, teamName } from "@/teams"
 import { listPreviousGames } from "@/victory"
 
+/**
+ * Generates the new README file based on the current state of the game.
+ *
+ * @param state: The current state of the board, as of right now.
+ * @param gamePath: The location of the current game's state file.
+ * @returns An array of changes to add to the commit.
+ */
 export async function generateReadme(
   state: Ur.State,
   gamePath: string,
@@ -19,13 +26,6 @@ export async function generateReadme(
   context: Context,
   log: Log
 ): Promise<Change[]> {
-  /**
-   * Generates the new README file based on the current state of the game.
-   *
-   * @param state: The current state of the board, as of right now.
-   * @param gamePath: The location of the current game's state file.
-   * @returns An array of changes to add to the commit.
-   */
   let changes: Change[] = []
 
   // Update the SVG to represent the new game board

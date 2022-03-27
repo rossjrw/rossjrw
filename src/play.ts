@@ -16,23 +16,23 @@ export interface Change {
   content: string | null
 }
 
+/**
+ * Let's play Ur!
+ *
+ * This project is inspired by timburgan/timburgan - thank you Tim!
+ *
+ * Recieves parameters from actions/github-script:
+ * @param title: The title of the triggering issue.
+ * @param octokit: octokit/rest.js client.
+ * @param context: Workflow context object.
+ * @returns void: At least until I work out what this should do!
+ */
 export default async function play(
   title: string,
   octokit: Octokit,
   context: Context,
   core: typeof _core
 ): Promise<void> {
-  /**
-   * Let's play Ur!
-   *
-   * This project is inspired by timburgan/timburgan - thank you Tim!
-   *
-   * Recieves parameters from actions/github-script:
-   * @param title: The title of the triggering issue.
-   * @param octokit: octokit/rest.js client.
-   * @param context: Workflow context object.
-   * @returns void: At least until I work out what this should do!
-   */
   // The Octokit client comes pre-authenticated, so there's no need to
   // instantiate it.
 
@@ -97,19 +97,19 @@ export default async function play(
     )
 
     addReaction("rocket", octokit, context)
-  } catch (error) {
+  } catch (error: any) {
     // If there was an error, forward it to the user, then stop
     handleError(error, log, octokit, context, core)
     return
   }
 }
 
+/**
+ * Parses the issue title into move instructions.
+ *
+ * @param title: The title of the issue.
+ */
 function parseIssueTitle(title: string): ["new" | "move", string, number] {
-  /**
-   * Parses the issue title into move instructions.
-   *
-   * @param title: The title of the issue.
-   */
   const [gamename, command, move, gameId] = title.split("-")
   if (!gamename || gamename !== "ur") {
     throw new Error("WRONG_GAME")

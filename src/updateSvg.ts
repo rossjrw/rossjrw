@@ -6,6 +6,16 @@ import { range } from "lodash"
 import { Change } from "@/play"
 import { getFile } from "@/getFile"
 
+/**
+ * Generates an SVG to visually represent the current board state.
+ *
+ * Saves the resulting SVG to games/current/board.svg.
+ *
+ * @param state: The current state of the game board.
+ * @param gamePath: The path to the current game's info dir.
+ * @param baseSvgPath: The path to the SVG template file.
+ * @returns An array of changes to add to the commit.
+ */
 export async function updateSvg(
   state: State,
   gamePath: string,
@@ -13,16 +23,6 @@ export async function updateSvg(
   octokit: Octokit,
   context: Context
 ): Promise<Change[]> {
-  /**
-   * Generates an SVG to visually represent the current board state.
-   *
-   * Saves the resulting SVG to games/current/board.svg.
-   *
-   * @param state: The current state of the game board.
-   * @param gamePath: The path to the current game's info dir.
-   * @param baseSvgPath: The path to the SVG template file.
-   * @returns An array of changes to add to the commit.
-   */
   const changes: Change[] = []
 
   // Delete the old board image
@@ -100,20 +100,20 @@ export async function updateSvg(
   return changes
 }
 
+/**
+ * Hides the SVG element that has the given ID.
+ *
+ * All elements in the SVG are displayed by default, and must be turned off
+ * in order to produce a coherent image. The reason that the far more
+ * sensible approach of turning things on has not been taken is because a) it
+ * makes it hard to edit the base file when everything is hidden by default
+ * b) the base file just looks way cooler now
+ *
+ * @param svg: The contents of the SVG as text.
+ * @param elementId: The ID to find.
+ * @returns The updated contents of the SVG.
+ */
 function hideSvgElement(svg: string, elementId: string): string {
-  /**
-   * Hides the SVG element that has the given ID.
-   *
-   * All elements in the SVG are displayed by default, and must be turned off
-   * in order to produce a coherent image. The reason that the far more
-   * sensible approach of turning things on has not been taken is because a) it
-   * makes it hard to edit the base file when everything is hidden by default
-   * b) the base file just looks way cooler now
-   *
-   * @param svg: The contents of the SVG as text.
-   * @param elementId: The ID to find.
-   * @returns The updated contents of the SVG.
-   */
   // The ID is always the first attribute in a node, thankfully
   // Also, all nodes are written on a single line
 

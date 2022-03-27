@@ -3,18 +3,17 @@ import { Context } from "@actions/github/lib/context"
 
 import { Change } from "@/play"
 
+/**
+ * From the given list of changes, makes a single commit to implement them.
+ *
+ * @param changes: The list of changes to make.
+ */
 export async function makeCommit(
   message: string,
   changes: Change[],
   octokit: Octokit,
   context: Context
 ): Promise<void> {
-  /**
-   * From the given list of changes, makes a single commit to implement them.
-   *
-   * @param changes: The list of changes to make.
-   */
-
   // Grab the SHA of the latest commit
   const remoteCommits = await octokit.repos.listCommits({
     owner: context.repo.owner,

@@ -12,6 +12,12 @@ interface ErrorDescriptions {
   [error_type: string]: string
 }
 
+/**
+ * Handles execution errors by reporting the problem back to the user and
+ * closing the issue.
+ *
+ * @param error: The error to report with an ID matching the desc object.
+ */
 export function handleError(
   error: Error,
   log: Log,
@@ -19,12 +25,6 @@ export function handleError(
   context: Context,
   core: typeof _core
 ): void {
-  /**
-   * Handles execution errors by reporting the problem back to the user and
-   * closing the issue.
-   *
-   * @param error: The error to report with an ID matching the desc object.
-   */
   const playerTeam = getPlayerTeam(context.actor, log)
 
   const ERROR_DESC: ErrorDescriptions = {

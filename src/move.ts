@@ -13,6 +13,15 @@ import { Log } from "@/log"
 import { makeVictoryMessage } from "@/victory"
 import { getOppositeTeam, teamName } from "@/teams"
 
+/**
+ * Called when a player uses the "move" command. Executes that move onto the
+ * current state.
+ *
+ * @param state: The current state of the game.
+ * @param move: The move the player wants to make.
+ * @param gamePath: The location of the current game's state file.
+ * @returns An array of changes to add to the commit.
+ */
 export async function makeMove(
   state: Ur.State,
   move: string,
@@ -21,15 +30,6 @@ export async function makeMove(
   context: Context,
   log: Log
 ): Promise<Change[]> {
-  /**
-   * Called when a player uses the "move" command. Executes that move onto the
-   * current state.
-   *
-   * @param state: The current state of the game.
-   * @param move: The move the player wants to make.
-   * @param gamePath: The location of the current game's state file.
-   * @returns An array of changes to add to the commit.
-   */
   let changes: Change[] = []
 
   if (!state.currentPlayer) {
@@ -166,14 +166,15 @@ export async function makeMove(
     })
 
     // Update the log with this action
-    log.addToLog(
-      "move",
-      state.currentPlayer,
-      state.diceResult,
+    log.addToLog({
+      action: "move",
+      initiatedByPlayer: true,
+      team: state.currentPlayer,
+      roll: state.diceResult,
       fromPosition,
       toPosition,
-      events
-    )
+      events,
+    })
 
     // If the game was won, leave a message to let everyone know
     if (events.gameWon) {
@@ -186,20 +187,23 @@ export async function makeMove(
     }
   }
 
+  // Execute automatic moves
+
+  // If there are no possible moves and the game is not finished, pass.
+  // Note that the events object is undefined if the last move was also a pass
   if (
     !events?.gameWon &&
     Object.keys(newState.possibleMoves!).length === 0
   ) {
-    // If there are no possible moves, pass this turn, unless the game is done
-    // The events object is undefined if the last move was also a pass
-    log.addToLog(
-      "pass",
-      newState.currentPlayer!,
-      newState.diceResult!,
-      null,
-      null,
-      null
-    )
+    log.addToLog({
+      action: "pass",
+      initiatedByPlayer: false,
+      team: newState.currentPlayer!,
+      roll: newState.diceResult!,
+      fromPosition: null,
+      toPosition: null,
+      events: null,
+    })
     changes = changes.concat(
       await makeMove(newState, "pass", gamePath, octokit, context, log)
     )
@@ -213,6 +217,15 @@ export async function makeMove(
       path: `${gamePath}/state.json`,
       content: JSON.stringify(newState, null, 2),
     })
+  }
+
+  // If there is only one possible move and that move is not a winning
+  // move, execute it without asking for player input.
+  if (Object.keys(newState.possibleMoves!).length === 1) {
+    const move = Object.entries(newState.possibleMoves!)[0]
+    const moveEvents = analyseMove(newState, parseInt(move[0]), move[1])
+    if (!moveEvents.gameWon) {
+    }
   }
 
   return changes

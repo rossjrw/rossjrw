@@ -9,6 +9,15 @@ import { Change } from "@/play"
 import { Log } from "@/log"
 import { teamName } from "@/teams"
 
+/**
+ * Called when a player uses the "new" command.
+ *
+ * I don't want this to happen willy-nilly, so I might add some restriction
+ * here - maybe no moves for a few hours or something.
+ *
+ * @param gamePath: The location of the current game.
+ * @param oldGamePath: Where old games should be kept.
+ */
 export async function resetGame(
   gamePath: string,
   oldGamePath: string,
@@ -16,15 +25,6 @@ export async function resetGame(
   context: Context,
   log: Log
 ): Promise<Change[]> {
-  /**
-   * Called when a player uses the "new" command.
-   *
-   * I don't want this to happen willy-nilly, so I might add some restriction
-   * here - maybe no moves for a few hours or something.
-   *
-   * @param gamePath: The location of the current game.
-   * @param oldGamePath: Where old games should be kept.
-   */
   let changes: Change[] = []
 
   // Move the old log.json to another directory - don't care about state
@@ -60,7 +60,15 @@ export async function resetGame(
   log.internalLog = []
 
   // Update the log with this action
-  log.addToLog("new", newState.currentPlayer!, null, null, null, null)
+  log.addToLog({
+    action: "new",
+    initiatedByPlayer: false,
+    team: newState.currentPlayer!,
+    roll: null,
+    fromPosition: null,
+    toPosition: null,
+    events: null,
+  })
 
   // Update README.md with the new state
   changes = changes.concat(

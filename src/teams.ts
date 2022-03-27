@@ -31,16 +31,16 @@ export function getOppositeTeam(
   return undefined
 }
 
+/**
+ * Makes a table containing team members.
+ *
+ * @param hasPlayerLinks: Players as hyperlinks? Required for README, but not
+ * required for issues.
+ */
 export function makeTeamListTable(
   log: Log,
   hasPlayerLinks: boolean
 ): string {
-  /**
-   * Makes a table containing team members.
-   *
-   * @param hasPlayerLinks: Players as hyperlinks? Required for README, but not
-   * required for issues.
-   */
   const PLAYERS_TABLE = `<table>
     <thead>
       <tr><th colspan=2>Players in this game</th></tr>
