@@ -2276,7 +2276,7 @@
     "time": "2022-03-31T22:24:55.570Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/67a43ed0aeb580f8b2a751fd6f448485f7bf4b09/games/current/board.1483.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2286,5 +2286,22 @@
     "fromPosition": 0,
     "toPosition": 2,
     "roll": 2
+  },
+  {
+    "username": "donadev",
+    "issue": 1484,
+    "time": "2022-04-05T10:53:04.936Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
   }
 ]
