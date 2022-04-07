@@ -2344,10 +2344,27 @@
     "time": "2022-04-07T03:34:18.559Z",
     "team": "w",
     "action": "pass",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/800020abe0950e2e28929a38eef6ca310029cd87/games/current/board.1487.svg",
     "events": null,
     "fromPosition": null,
     "toPosition": null,
     "roll": 0
+  },
+  {
+    "username": "iamfaith",
+    "issue": 1488,
+    "time": "2022-04-07T04:00:52.931Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 3,
+    "roll": 1
   }
 ]
