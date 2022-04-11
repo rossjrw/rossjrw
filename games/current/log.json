@@ -2407,7 +2407,7 @@
     "time": "2022-04-11T18:35:36.590Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/122eb5c6225a0ecdeacba5c5a4558ad4c8f89490/games/current/board.1491.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2417,5 +2417,22 @@
     "fromPosition": 8,
     "toPosition": 10,
     "roll": 2
+  },
+  {
+    "username": "Zidri",
+    "issue": 1492,
+    "time": "2022-04-11T18:55:40.997Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 8,
+    "roll": 4
   }
 ]
