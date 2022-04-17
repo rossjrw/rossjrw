@@ -2441,7 +2441,7 @@
     "time": "2022-04-17T00:23:39.433Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/27dce4b8565320919fc061a0dd73e1b952965f2f/games/current/board.1494.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -2451,5 +2451,22 @@
     "fromPosition": 8,
     "toPosition": 10,
     "roll": 2
+  },
+  {
+    "username": "VikashPR",
+    "issue": 1495,
+    "time": "2022-04-17T05:19:31.014Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 2,
+    "roll": 1
   }
 ]
