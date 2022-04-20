@@ -6,9 +6,7 @@ import { compress } from "compress-tag"
 
 import { playerIsOnTeam, getPlayerTeam } from "@/player"
 import { addLabels } from "@/issues"
-import { analyseMove } from "@/analyseMove"
-import { generateReadme } from "@/generateReadme"
-import { Change } from "@/play"
+import { analyseMove, Events } from "@/analyseMove"
 import { Log } from "@/log"
 import { makeVictoryMessage } from "@/victory"
 import { getOppositeTeam, teamName } from "@/teams"
@@ -24,12 +22,14 @@ export type Move = {
 
 /**
  * Called when a player uses the "move" command. Executes that move onto the
- * current state.
+ * given state.
  *
- * @param state: The current state of the game.
- * @param move: The move the player wants to make.
- * @param gamePath: The location of the current game's state file.
- * @returns An array of changes to add to the commit.
+ * May also execute additional moves. Adds all executed moves to the log.
+ *
+ * @param state - The current state of the game.
+ * @param move - The move the player wants to make.
+ * @param gamePath - The location of the current game's state file.
+ * @returns The modified game state.
  */
 export async function makeMove(
   state: Ur.State,
@@ -38,21 +38,20 @@ export async function makeMove(
   octokit: Octokit,
   context: Context,
   log: Log
-): Promise<Change[]> {
-  let changes: Change[] = []
-
+): Promise<Ur.State> {
   if (!state.currentPlayer) {
     throw new Error("MOVE_WHEN_GAME_ENDED")
   }
 
-  let newState
-  let events
+  let newState: Ur.State
+  let events: Events | null
 
   if (move === "pass") {
     // If we are just passing, then void the turn and skip all checks
     // This should be safe - pass can only be called internally, it should not
     // be possible for a player to pass
     newState = Ur.voidTurn(state, state.currentPlayer)
+    events = null
   } else {
     const playerTeam = getPlayerTeam(context.actor, log)
     // First I need to validate which team the user is on
@@ -205,19 +204,15 @@ export async function makeMove(
       toPosition: null,
       events: null,
     })
-    changes = changes.concat(
-      await makeMove(newState, "pass", gamePath, octokit, context, log)
+    newState = await makeMove(
+      newState,
+      "pass",
+      gamePath,
+      octokit,
+      context,
+      log
     )
   } else {
-    // Update README.md with the new state
-    changes = changes.concat(
-      await generateReadme(newState, gamePath, octokit, context, log)
-    )
-    // Replace the contents of the current game state file with the new state
-    changes.push({
-      path: `${gamePath}/state.json`,
-      content: JSON.stringify(newState, null, 2),
-    })
   }
 
   // If there is only one possible move and that move is not a winning
@@ -229,5 +224,5 @@ export async function makeMove(
     }
   }
 
-  return changes
+  return newState
 }

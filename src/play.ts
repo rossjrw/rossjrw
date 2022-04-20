@@ -1,6 +1,8 @@
 import { Octokit } from "@octokit/rest/index"
 import { Context } from "@actions/github/lib/context"
 import { default as _core } from "@actions/core"
+import { compress } from "compress-tag"
+import Ur from "ur-game"
 
 import { addReaction } from "@/issues"
 import { handleError } from "@/error"
@@ -10,7 +12,7 @@ import { makeCommit } from "@/commit"
 import { Log } from "@/log"
 import { getFile } from "@/getFile"
 import { teamName } from "@/teams"
-import { compress } from "compress-tag"
+import { generateReadme } from "@/generateReadme"
 
 export interface Change {
   path: string
@@ -50,9 +52,8 @@ export default async function play(
   await log.prepareInitialLog()
 
   try {
+    // Immediately add the eyes reaction to indicate acknowledgement
     addReaction("eyes", octokit, context)
-
-    const action = parseIssueTitle(title)
 
     // Get the current game state file, but it's null if the file doesn't exist
     const stateFile = await getFile(
@@ -68,18 +69,34 @@ export default async function play(
     if (Array.isArray(stateFile.data)) {
       throw new Error("FILE_IS_DIR")
     }
-    const state = JSON.parse(
-      Buffer.from(stateFile.data.content!, "base64").toString()
+    let state = <Ur.State>(
+      JSON.parse(Buffer.from(stateFile.data.content!, "base64").toString())
     )
+
+    const action = parseIssueTitle(title)
 
     if (action.command === "new") {
       changes = changes.concat(
         await resetGame(gamePath, oldGamePath, octokit, context, log)
       )
     } else if (action.command === "move") {
-      changes = changes.concat(
-        await makeMove(state, action.move, gamePath, octokit, context, log)
+      state = await makeMove(
+        state,
+        action.move,
+        gamePath,
+        octokit,
+        context,
+        log
       )
+      // Update README.md with the new state
+      changes = changes.concat(
+        await generateReadme(state, gamePath, octokit, context, log)
+      )
+      // Replace the contents of the current game state file with the new state
+      changes.push({
+        path: `${gamePath}/state.json`,
+        content: JSON.stringify(state, null, 2),
+      })
     }
 
     // Extract changes from the log
