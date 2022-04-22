@@ -2676,7 +2676,7 @@
     "time": "2022-04-22T18:13:07.614Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/246fb49c7499c8f30957bdcbd281f43d43804cd2/games/current/board.1507.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -2685,6 +2685,23 @@
     },
     "fromPosition": 12,
     "toPosition": 14,
+    "roll": 2
+  },
+  {
+    "username": "diogo-luz",
+    "issue": 1508,
+    "time": "2022-04-22T18:13:51.530Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
     "roll": 2
   }
 ]
