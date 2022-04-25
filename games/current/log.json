@@ -2737,5 +2737,34 @@
     "fromPosition": 14,
     "toPosition": 15,
     "roll": 1
+  },
+  {
+    "username": "jbmagination",
+    "issue": 1512,
+    "time": "2022-04-25T23:50:27.140Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/eb7b9aa363146be2c81873a96be7f887ba13653f/games/current/board.1512.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
+  },
+  {
+    "username": "jbmagination",
+    "issue": 1512,
+    "time": "2022-04-25T23:50:27.140Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
