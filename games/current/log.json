@@ -2693,7 +2693,7 @@
     "time": "2022-04-22T18:13:51.530Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/cd0c0dd66c8c24cd422f5d4dfa82084cccdcbf81/games/current/board.1508.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2702,6 +2702,23 @@
     },
     "fromPosition": 4,
     "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "sddwt",
+    "issue": 1510,
+    "time": "2022-04-25T06:35:49.386Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
     "roll": 2
   }
 ]
