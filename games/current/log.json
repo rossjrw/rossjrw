@@ -2824,7 +2824,7 @@
     "time": "2022-05-02T00:29:28.711Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f845f11a84f8fa198a6877bc1a8f608206a1668b/games/current/board.1518.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2834,5 +2834,22 @@
     "fromPosition": 11,
     "toPosition": 12,
     "roll": 1
+  },
+  {
+    "username": "pierre-manchon",
+    "issue": 1519,
+    "time": "2022-05-05T11:20:09.111Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 3,
+    "roll": 2
   }
 ]
