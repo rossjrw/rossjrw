@@ -2875,7 +2875,7 @@
     "time": "2022-05-05T21:38:57.765Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/98dcf97f076933c30f4c2726a2ed20886b5e03b0/games/current/board.1521.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -2884,6 +2884,23 @@
     },
     "fromPosition": 6,
     "toPosition": 8,
+    "roll": 2
+  },
+  {
+    "username": "jbmagination",
+    "issue": 1522,
+    "time": "2022-05-05T21:39:36.352Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 10,
     "roll": 2
   }
 ]
