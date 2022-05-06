@@ -2909,7 +2909,7 @@
     "time": "2022-05-06T07:50:51.069Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c1ae6e78ee9f3ce9d413b47d5a64ad55a97cb4da/games/current/board.1523.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -2918,6 +2918,23 @@
     },
     "fromPosition": 3,
     "toPosition": 5,
+    "roll": 2
+  },
+  {
+    "username": "NekrodNIK",
+    "issue": 1524,
+    "time": "2022-05-06T10:05:45.124Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 12,
     "roll": 2
   }
 ]
