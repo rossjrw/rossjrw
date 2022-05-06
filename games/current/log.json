@@ -2892,7 +2892,7 @@
     "time": "2022-05-05T21:39:36.352Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3f0b38cbae9735606a708743a08cbc7e26389928/games/current/board.1522.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2901,6 +2901,23 @@
     },
     "fromPosition": 8,
     "toPosition": 10,
+    "roll": 2
+  },
+  {
+    "username": "tobias-wilfert",
+    "issue": 1523,
+    "time": "2022-05-06T07:50:51.069Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
     "roll": 2
   }
 ]
