@@ -2943,7 +2943,7 @@
     "time": "2022-05-07T16:55:02.027Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7f9511be21b8d01daf5d25520fdcd80ec9a950e1/games/current/board.1526.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2952,6 +2952,23 @@
     },
     "fromPosition": 5,
     "toPosition": 6,
+    "roll": 1
+  },
+  {
+    "username": "Carol42",
+    "issue": 1527,
+    "time": "2022-05-07T22:21:05.782Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
     "roll": 1
   }
 ]
