@@ -2926,7 +2926,7 @@
     "time": "2022-05-06T10:05:45.124Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f13bcbe06e4930b49d75a9734fbfe78e2d850813/games/current/board.1524.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2936,5 +2936,22 @@
     "fromPosition": 10,
     "toPosition": 12,
     "roll": 2
+  },
+  {
+    "username": "KieranK07",
+    "issue": 1526,
+    "time": "2022-05-07T16:55:02.027Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 6,
+    "roll": 1
   }
 ]
