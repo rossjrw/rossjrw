@@ -2960,7 +2960,7 @@
     "time": "2022-05-07T22:21:05.782Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7a0af500bf5bf9b73e70e88266c7b9ae86cd66b4/games/current/board.1527.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2970,5 +2970,22 @@
     "fromPosition": 14,
     "toPosition": 15,
     "roll": 1
+  },
+  {
+    "username": "Luckyluka17",
+    "issue": 1528,
+    "time": "2022-05-08T12:04:40.785Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 8,
+    "roll": 2
   }
 ]
