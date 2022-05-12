@@ -2994,7 +2994,7 @@
     "time": "2022-05-08T12:05:33.225Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/85dd4a26981fe50946e1358e6ea7f280adf0ceff/games/current/board.1529.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -3004,5 +3004,22 @@
     "fromPosition": 8,
     "toPosition": 10,
     "roll": 2
+  },
+  {
+    "username": "Sam948-byte",
+    "issue": 1531,
+    "time": "2022-05-12T02:31:32.564Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 12,
+    "toPosition": 13,
+    "roll": 1
   }
 ]
