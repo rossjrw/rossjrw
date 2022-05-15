@@ -3045,12 +3045,29 @@
     "time": "2022-05-14T19:59:55.727Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/18daecff2b71b790651232a68b4030c0faf827ff/games/current/board.1533.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
       "ascensionHappened": true,
       "gameWon": false
+    },
+    "fromPosition": 13,
+    "toPosition": 15,
+    "roll": 2
+  },
+  {
+    "username": "Madflows",
+    "issue": 1534,
+    "time": "2022-05-15T03:38:00.800Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": true
     },
     "fromPosition": 13,
     "toPosition": 15,
