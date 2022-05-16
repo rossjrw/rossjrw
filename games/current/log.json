@@ -34,7 +34,7 @@
     "time": "2022-05-15T23:54:23.452Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b3022fb39b738640ec603248a5611e9293d72b5b/games/current/board.1538.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -43,6 +43,23 @@
     },
     "fromPosition": 0,
     "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "roryclaasen",
+    "issue": 1539,
+    "time": "2022-05-16T12:01:48.705Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
     "roll": 2
   }
 ]
