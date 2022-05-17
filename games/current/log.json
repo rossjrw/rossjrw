@@ -85,7 +85,7 @@
     "time": "2022-05-17T11:03:17.394Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b32cd75295ad06e821538eb4dde46360b6b8cc9c/games/current/board.1541.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -95,5 +95,22 @@
     "fromPosition": 2,
     "toPosition": 4,
     "roll": 2
+  },
+  {
+    "username": "MathieuIko",
+    "issue": 1542,
+    "time": "2022-05-17T11:07:38.180Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   }
 ]
