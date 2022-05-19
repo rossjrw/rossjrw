@@ -136,7 +136,7 @@
     "time": "2022-05-19T07:30:32.241Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/29613806d94a173cf50518825b284531f429ac11/games/current/board.1544.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -146,5 +146,22 @@
     "fromPosition": 4,
     "toPosition": 8,
     "roll": 4
+  },
+  {
+    "username": "ShahriarKh",
+    "issue": 1545,
+    "time": "2022-05-19T10:56:23.037Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 10,
+    "roll": 2
   }
 ]
