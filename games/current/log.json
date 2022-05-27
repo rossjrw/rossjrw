@@ -255,7 +255,7 @@
     "time": "2022-05-22T19:58:01.803Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/15a210996e663809f2c6213eafbefc7655d4d68e/games/current/board.1552.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -265,5 +265,22 @@
     "fromPosition": 2,
     "toPosition": 4,
     "roll": 2
+  },
+  {
+    "username": "Eive1Me",
+    "issue": 1555,
+    "time": "2022-05-27T16:56:47.482Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 12,
+    "toPosition": 13,
+    "roll": 1
   }
 ]
