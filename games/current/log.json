@@ -289,7 +289,7 @@
     "time": "2022-05-28T06:32:59.648Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/869ce82caefbd3dca0f1676ab950b99daccc2102/games/current/board.1556.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -298,6 +298,23 @@
     },
     "fromPosition": 3,
     "toPosition": 4,
+    "roll": 1
+  },
+  {
+    "username": "Vleezy",
+    "issue": 1557,
+    "time": "2022-05-30T02:43:07.874Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 2,
     "roll": 1
   }
 ]
