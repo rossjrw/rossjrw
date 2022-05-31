@@ -340,7 +340,7 @@
     "time": "2022-05-30T22:51:23.596Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/5f0189be003b1230c6c3a5d89ed16a8c7f8e5ff0/games/current/board.1560.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -350,5 +350,22 @@
     "fromPosition": 4,
     "toPosition": 8,
     "roll": 4
+  },
+  {
+    "username": "adoreblvnk",
+    "issue": 1561,
+    "time": "2022-05-31T10:11:05.633Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 9,
+    "roll": 3
   }
 ]
