@@ -391,7 +391,7 @@
     "time": "2022-06-01T02:36:47.857Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/097e37a85431ca433a3221cd3091cb81ae045d12/games/current/board.1563.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -400,6 +400,23 @@
     },
     "fromPosition": 8,
     "toPosition": 10,
+    "roll": 2
+  },
+  {
+    "username": "alexchunlin",
+    "issue": 1564,
+    "time": "2022-06-01T17:47:25.088Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 8,
     "roll": 2
   }
 ]
