@@ -459,7 +459,7 @@
     "time": "2022-06-02T10:14:00.472Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c5b328d33a099009ff83f671f8effc271ec466fb/games/current/board.1567.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -469,5 +469,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "BartvanMaarschalkerweerd",
+    "issue": 1568,
+    "time": "2022-06-04T17:48:29.682Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 9,
+    "roll": 2
   }
 ]
