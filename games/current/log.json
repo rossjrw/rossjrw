@@ -493,7 +493,7 @@
     "time": "2022-06-05T07:26:36.805Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/36349767bccb4de138a5b969753189516d30298b/games/current/board.1569.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -503,5 +503,22 @@
     "fromPosition": 3,
     "toPosition": 4,
     "roll": 1
+  },
+  {
+    "username": "torcoste",
+    "issue": 1570,
+    "time": "2022-06-06T10:39:25.722Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
   }
 ]
