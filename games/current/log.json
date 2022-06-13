@@ -561,7 +561,7 @@
     "time": "2022-06-13T07:25:35.465Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/5debfdbf29bf01145495406a518b5c448998615d/games/current/board.1573.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -571,5 +571,22 @@
     "fromPosition": 9,
     "toPosition": 12,
     "roll": 3
+  },
+  {
+    "username": "Qiamast",
+    "issue": 1574,
+    "time": "2022-06-13T07:38:28.526Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 8,
+    "roll": 2
   }
 ]
