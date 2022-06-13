@@ -544,7 +544,7 @@
     "time": "2022-06-10T08:07:25.870Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/858d587834ea11a3874b4343d3eb1ecf19345d31/games/current/board.1572.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -554,5 +554,22 @@
     "fromPosition": 10,
     "toPosition": 12,
     "roll": 2
+  },
+  {
+    "username": "handyaputra",
+    "issue": 1573,
+    "time": "2022-06-13T07:25:35.465Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 12,
+    "roll": 3
   }
 ]
