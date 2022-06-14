@@ -578,7 +578,7 @@
     "time": "2022-06-13T07:38:28.526Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/64930e9213e5330d2e929059be39107befd10aed/games/current/board.1574.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -588,5 +588,22 @@
     "fromPosition": 6,
     "toPosition": 8,
     "roll": 2
+  },
+  {
+    "username": "gavinmasese",
+    "issue": 1575,
+    "time": "2022-06-14T12:22:40.000Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   }
 ]
