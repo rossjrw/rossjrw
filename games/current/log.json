@@ -646,7 +646,7 @@
     "time": "2022-06-15T03:11:55.898Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6ddea4796749831613fd27b46797c63a2bc15860/games/current/board.1578.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -656,5 +656,22 @@
     "fromPosition": 14,
     "toPosition": 15,
     "roll": 1
+  },
+  {
+    "username": "srThibaultP",
+    "issue": 1579,
+    "time": "2022-06-16T19:07:46.612Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 11,
+    "roll": 3
   }
 ]
