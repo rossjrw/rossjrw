@@ -680,7 +680,7 @@
     "time": "2022-06-16T19:24:30.920Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d5a08f04f527457bcf4da2d44df05a798823b689/games/current/board.1580.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -690,5 +690,22 @@
     "fromPosition": 4,
     "toPosition": 6,
     "roll": 2
+  },
+  {
+    "username": "camicelinski",
+    "issue": 1581,
+    "time": "2022-07-02T13:47:40.418Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 12,
+    "roll": 1
   }
 ]
