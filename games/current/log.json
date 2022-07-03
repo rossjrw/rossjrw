@@ -697,7 +697,7 @@
     "time": "2022-07-02T13:47:40.418Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/5729fa1132d914980d7913f5ef7e6149725d24e4/games/current/board.1581.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -707,5 +707,22 @@
     "fromPosition": 11,
     "toPosition": 12,
     "roll": 1
+  },
+  {
+    "username": "BolaGhaly",
+    "issue": 1582,
+    "time": "2022-07-03T05:25:12.210Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 8,
+    "roll": 2
   }
 ]
