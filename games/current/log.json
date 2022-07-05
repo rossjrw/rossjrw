@@ -714,7 +714,7 @@
     "time": "2022-07-03T05:25:12.210Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/5789a8b84d033e692224406ddb1760a6d8764c31/games/current/board.1582.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -724,5 +724,22 @@
     "fromPosition": 6,
     "toPosition": 8,
     "roll": 2
+  },
+  {
+    "username": "Luigibei",
+    "issue": 1584,
+    "time": "2022-07-05T04:28:40.834Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 11,
+    "roll": 3
   }
 ]
