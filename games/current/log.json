@@ -792,5 +792,46 @@
     "fromPosition": 3,
     "toPosition": 5,
     "roll": 2
+  },
+  {
+    "username": "BlimblimCFT",
+    "issue": 1588,
+    "time": "2022-07-17T18:28:48.006Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 15,
+    "roll": 4
+  },
+  {
+    "username": "BlimblimCFT",
+    "issue": 1588,
+    "time": "2022-07-17T18:28:48.006Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f8b99aa340bd303bb09f8b26d79a5535d58b3345/games/current/board.1588.svg",
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
+  },
+  {
+    "username": "BlimblimCFT",
+    "issue": 1588,
+    "time": "2022-07-17T18:28:48.007Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
