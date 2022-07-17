@@ -765,7 +765,7 @@
     "time": "2022-07-17T08:26:11.159Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c2d4099e49ea64e13df348fff3ac1124ca5a4e82/games/current/board.1586.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -774,6 +774,23 @@
     },
     "fromPosition": 12,
     "toPosition": 14,
+    "roll": 2
+  },
+  {
+    "username": "TheramReddy",
+    "issue": 1587,
+    "time": "2022-07-17T09:07:17.165Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
     "roll": 2
   }
 ]
