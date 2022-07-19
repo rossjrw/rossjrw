@@ -828,10 +828,27 @@
     "time": "2022-07-17T18:28:48.007Z",
     "team": "w",
     "action": "pass",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/36f5c9edfc719f2c533862ea6c2aea9835c3f2c5/games/current/board.1588.svg",
     "events": null,
     "fromPosition": null,
     "toPosition": null,
     "roll": 0
+  },
+  {
+    "username": "danielchandg",
+    "issue": 1589,
+    "time": "2022-07-19T17:52:07.973Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 8,
+    "roll": 4
   }
 ]
