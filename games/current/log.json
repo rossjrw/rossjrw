@@ -903,7 +903,7 @@
     "time": "2022-07-27T13:44:14.762Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/156be372c6192d34dbe5d79554409bed63c4a670/games/current/board.1593.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -913,5 +913,22 @@
     "fromPosition": 5,
     "toPosition": 7,
     "roll": 2
+  },
+  {
+    "username": "mmoizulhaq",
+    "issue": 1594,
+    "time": "2022-08-02T09:39:53.271Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   }
 ]
