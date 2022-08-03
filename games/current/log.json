@@ -920,7 +920,7 @@
     "time": "2022-08-02T09:39:53.271Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ea6791b764917ae61d267ff415253424a103659f/games/current/board.1594.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -930,5 +930,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "Samoz93",
+    "issue": 1596,
+    "time": "2022-08-03T14:31:43.268Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
   }
 ]
