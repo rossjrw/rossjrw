@@ -954,7 +954,7 @@
     "time": "2022-08-03T19:55:56.060Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d35a908f6c6bfa4a8362644d3e57aeaf64549c5b/games/current/board.1597.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -964,5 +964,22 @@
     "fromPosition": 3,
     "toPosition": 5,
     "roll": 2
+  },
+  {
+    "username": "beckerrobin",
+    "issue": 1599,
+    "time": "2022-08-23T12:02:12.559Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 10,
+    "roll": 3
   }
 ]
