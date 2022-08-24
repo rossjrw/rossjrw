@@ -988,7 +988,7 @@
     "time": "2022-08-23T17:24:36.011Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7d7c3ba32c622321962c70b481c219a8c888d782/games/current/board.1600.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -998,5 +998,22 @@
     "fromPosition": 0,
     "toPosition": 4,
     "roll": 4
+  },
+  {
+    "username": "Buashei",
+    "issue": 1601,
+    "time": "2022-08-24T10:39:07.084Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 6,
+    "roll": 1
   }
 ]
