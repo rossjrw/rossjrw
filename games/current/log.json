@@ -1039,7 +1039,7 @@
     "time": "2022-08-24T12:32:12.437Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/eaddd188de2556f6851f9f0b5b68328114f5e88f/games/current/board.1604.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1049,5 +1049,22 @@
     "fromPosition": 6,
     "toPosition": 9,
     "roll": 2
+  },
+  {
+    "username": "tovVAar",
+    "issue": 1605,
+    "time": "2022-08-24T20:26:45.755Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
+    "roll": 1
   }
 ]
