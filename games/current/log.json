@@ -1022,7 +1022,7 @@
     "time": "2022-08-24T11:10:41.834Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/fa7773e97dd3c4a2d77289f6ff64736b34677f98/games/current/board.1603.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1031,6 +1031,23 @@
     },
     "fromPosition": 1,
     "toPosition": 3,
+    "roll": 2
+  },
+  {
+    "username": "seyfer",
+    "issue": 1604,
+    "time": "2022-08-24T12:32:12.437Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 9,
     "roll": 2
   }
 ]
