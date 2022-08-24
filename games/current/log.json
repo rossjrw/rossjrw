@@ -1005,7 +1005,7 @@
     "time": "2022-08-24T10:39:07.084Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c6beda908d2d97692a747c36dc3b0843f12f6953/games/current/board.1601.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1015,5 +1015,22 @@
     "fromPosition": 5,
     "toPosition": 6,
     "roll": 1
+  },
+  {
+    "username": "joaotd",
+    "issue": 1603,
+    "time": "2022-08-24T11:10:41.834Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 3,
+    "roll": 2
   }
 ]
