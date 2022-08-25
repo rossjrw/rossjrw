@@ -1056,7 +1056,7 @@
     "time": "2022-08-24T20:26:45.755Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f5b4be72a1fd344ff18c1da63229e4f5770611af/games/current/board.1605.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1065,6 +1065,23 @@
     },
     "fromPosition": 4,
     "toPosition": 5,
+    "roll": 1
+  },
+  {
+    "username": "thetbw",
+    "issue": 1606,
+    "time": "2022-08-25T02:22:54.726Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
     "roll": 1
   }
 ]
