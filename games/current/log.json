@@ -1073,7 +1073,7 @@
     "time": "2022-08-25T02:22:54.726Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/16158c80831020db7417a0c23bec69ce5907de8d/games/current/board.1606.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1082,6 +1082,23 @@
     },
     "fromPosition": 0,
     "toPosition": 1,
+    "roll": 1
+  },
+  {
+    "username": "Mangor1no",
+    "issue": 1607,
+    "time": "2022-08-25T03:52:02.664Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 11,
     "roll": 1
   }
 ]
