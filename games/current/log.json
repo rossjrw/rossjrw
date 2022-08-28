@@ -1107,7 +1107,7 @@
     "time": "2022-08-27T08:47:44.078Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d2bd921dd56c917960684e46a47bdf8f316b8f17/games/current/board.1608.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -1117,5 +1117,22 @@
     "fromPosition": 2,
     "toPosition": 5,
     "roll": 3
+  },
+  {
+    "username": "Hrushal-Nikhare",
+    "issue": 1609,
+    "time": "2022-08-28T13:33:49.940Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
+    "roll": 2
   }
 ]
