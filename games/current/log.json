@@ -1141,7 +1141,7 @@
     "time": "2022-08-30T00:49:42.839Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7c322a5ad3c7fd89ae21f3860f12eccd1b3a7ae8/games/current/board.1610.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1151,5 +1151,22 @@
     "fromPosition": 1,
     "toPosition": 2,
     "roll": 1
+  },
+  {
+    "username": "onz3",
+    "issue": 1612,
+    "time": "2022-08-30T13:48:02.867Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   }
 ]
