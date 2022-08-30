@@ -1158,7 +1158,7 @@
     "time": "2022-08-30T13:48:02.867Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f97f1fcf7d03ae71ac16c11c1d353cc9f08c10bb/games/current/board.1612.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1168,5 +1168,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "distro104",
+    "issue": 1613,
+    "time": "2022-08-30T15:00:31.731Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 11,
+    "roll": 2
   }
 ]
