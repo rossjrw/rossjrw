@@ -1301,10 +1301,27 @@
     "time": "2022-09-02T15:28:18.432Z",
     "team": "b",
     "action": "pass",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/532415a23707cf3bcac0829c37fef8d44861072c/games/current/board.1624.svg",
     "events": null,
     "fromPosition": null,
     "toPosition": null,
     "roll": 0
+  },
+  {
+    "username": "IbimsnicesYolo",
+    "issue": 1625,
+    "time": "2022-09-05T14:31:14.360Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 7,
+    "roll": 2
   }
 ]
