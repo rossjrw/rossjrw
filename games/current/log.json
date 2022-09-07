@@ -1313,7 +1313,7 @@
     "time": "2022-09-05T14:31:14.360Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b6ca882bb8e7e67bc895cb019d544e242794e5f1/games/current/board.1625.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1322,6 +1322,23 @@
     },
     "fromPosition": 5,
     "toPosition": 7,
+    "roll": 2
+  },
+  {
+    "username": "SpotlightForBugs",
+    "issue": 1626,
+    "time": "2022-09-07T15:01:45.426Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 10,
     "roll": 2
   }
 ]
