@@ -1347,7 +1347,7 @@
     "time": "2022-09-09T15:16:53.624Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b4ba2524ae6c025e218c1b05ccaed01568e209fe/games/current/board.1628.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1357,5 +1357,22 @@
     "fromPosition": 0,
     "toPosition": 2,
     "roll": 2
+  },
+  {
+    "username": "EmannFatima",
+    "issue": 1629,
+    "time": "2022-09-09T21:27:02.723Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 9,
+    "roll": 3
   }
 ]
