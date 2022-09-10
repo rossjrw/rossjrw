@@ -1364,7 +1364,7 @@
     "time": "2022-09-09T21:27:02.723Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/98fa8f57bf4ea097cc4e949d5ec8c617b0378c16/games/current/board.1629.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1374,5 +1374,22 @@
     "fromPosition": 6,
     "toPosition": 9,
     "roll": 3
+  },
+  {
+    "username": "SubGplayz",
+    "issue": 1631,
+    "time": "2022-09-10T11:23:18.949Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 8,
+    "roll": 1
   }
 ]
