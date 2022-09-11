@@ -1381,7 +1381,7 @@
     "time": "2022-09-10T11:23:18.949Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/74984de886b1728a0a86748b4870476266bc17b5/games/current/board.1631.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1391,5 +1391,22 @@
     "fromPosition": 7,
     "toPosition": 8,
     "roll": 1
+  },
+  {
+    "username": "marius-leica",
+    "issue": 1633,
+    "time": "2022-09-11T22:15:05.101Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   }
 ]
