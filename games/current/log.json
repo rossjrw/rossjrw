@@ -1398,7 +1398,7 @@
     "time": "2022-09-11T22:15:05.101Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6e22e87df7ac9e88675673ed00d09c13f068cad9/games/current/board.1633.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1408,5 +1408,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "Redf0xD",
+    "issue": 1634,
+    "time": "2022-09-14T23:00:43.238Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 15,
+    "roll": 4
   }
 ]
