@@ -1432,7 +1432,7 @@
     "time": "2022-09-17T23:33:35.458Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/bc0416516489b4309193fee48d3cd85615f5e76e/games/current/board.1635.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1442,5 +1442,22 @@
     "fromPosition": 2,
     "toPosition": 5,
     "roll": 3
+  },
+  {
+    "username": "RicardoGaitan93",
+    "issue": 1636,
+    "time": "2022-09-23T20:00:08.123Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
   }
 ]
