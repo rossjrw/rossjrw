@@ -1466,7 +1466,7 @@
     "time": "2022-09-23T23:18:56.097Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/068ff1c5b6fced5e28633b40ffa46501759e3354/games/current/board.1637.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -1475,6 +1475,23 @@
     },
     "fromPosition": 8,
     "toPosition": 9,
+    "roll": 1
+  },
+  {
+    "username": "RatchanonDev",
+    "issue": 1639,
+    "time": "2022-09-27T07:38:45.809Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 4,
     "roll": 1
   }
 ]
