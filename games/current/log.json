@@ -1500,7 +1500,7 @@
     "time": "2022-10-09T19:25:25.848Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b857cf1a5f298341dcdb7709a42c71edd5b5f1e4/games/current/board.1640.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1510,5 +1510,22 @@
     "fromPosition": 1,
     "toPosition": 3,
     "roll": 2
+  },
+  {
+    "username": "thenithinbalaji",
+    "issue": 1641,
+    "time": "2022-10-10T04:33:28.293Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
   }
 ]
