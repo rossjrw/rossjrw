@@ -1551,7 +1551,7 @@
     "time": "2022-10-14T05:21:32.047Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ec557a199404fd5b427f65bad2671cd22d6180ac/games/current/board.1646.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1561,5 +1561,22 @@
     "fromPosition": 6,
     "toPosition": 7,
     "roll": 1
+  },
+  {
+    "username": "jiny2021",
+    "issue": 1647,
+    "time": "2022-10-14T23:39:37.082Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 7,
+    "roll": 2
   }
 ]
