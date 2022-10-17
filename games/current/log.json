@@ -1585,7 +1585,7 @@
     "time": "2022-10-16T18:20:46.199Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/904c5c9f1944983176b845b92fc9edd5bb9af972/games/current/board.1648.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1595,5 +1595,22 @@
     "fromPosition": 9,
     "toPosition": 12,
     "roll": 3
+  },
+  {
+    "username": "younesbram",
+    "issue": 1649,
+    "time": "2022-10-17T18:58:40.405Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 8,
+    "roll": 4
   }
 ]
