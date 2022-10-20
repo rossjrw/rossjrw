@@ -1602,7 +1602,7 @@
     "time": "2022-10-17T18:58:40.405Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ea039a94ce3253986341a2ca9f917e824620e323/games/current/board.1649.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1612,5 +1612,22 @@
     "fromPosition": 4,
     "toPosition": 8,
     "roll": 4
+  },
+  {
+    "username": "ThomasBacheley",
+    "issue": 1650,
+    "time": "2022-10-20T06:09:21.069Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   }
 ]
