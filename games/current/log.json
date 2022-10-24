@@ -1653,10 +1653,27 @@
     "time": "2022-10-20T22:28:26.089Z",
     "team": "w",
     "action": "pass",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7f4d1bd015472b731d29cbcb0d9e40384b2fb186/games/current/board.1651.svg",
     "events": null,
     "fromPosition": null,
     "toPosition": null,
     "roll": 0
+  },
+  {
+    "username": "solomonshalom",
+    "issue": 1652,
+    "time": "2022-10-24T13:03:04.540Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 5,
+    "roll": 3
   }
 ]
