@@ -1682,7 +1682,7 @@
     "time": "2022-11-04T05:42:32.314Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/96b53ce535dcf53e4b0b9802e27ebdfc93be2ab9/games/current/board.1653.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1691,6 +1691,23 @@
     },
     "fromPosition": 12,
     "toPosition": 14,
+    "roll": 2
+  },
+  {
+    "username": "joaodavidsilva",
+    "issue": 1654,
+    "time": "2022-11-04T22:56:58.103Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
     "roll": 2
   }
 ]
