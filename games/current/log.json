@@ -1665,7 +1665,7 @@
     "time": "2022-10-24T13:03:04.540Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f1f764c40d7892c9586ef048878c3e3061406264/games/current/board.1652.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1675,5 +1675,22 @@
     "fromPosition": 2,
     "toPosition": 5,
     "roll": 3
+  },
+  {
+    "username": "wychwitch",
+    "issue": 1653,
+    "time": "2022-11-04T05:42:32.314Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 12,
+    "toPosition": 14,
+    "roll": 2
   }
 ]
