@@ -1733,7 +1733,7 @@
     "time": "2022-11-08T13:33:32.066Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4bc68078b41429070423c22d5c33465aeaf89c19/games/current/board.1656.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1743,5 +1743,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "QuesadaJon",
+    "issue": 1657,
+    "time": "2022-11-11T11:14:40.748Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 6,
+    "roll": 1
   }
 ]
