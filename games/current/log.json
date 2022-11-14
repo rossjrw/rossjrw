@@ -1767,7 +1767,7 @@
     "time": "2022-11-11T15:55:23.558Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/37b87bb713a7c0b43ece51e310dcab813d40a214/games/current/board.1658.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1776,6 +1776,23 @@
     },
     "fromPosition": 0,
     "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "lmxti",
+    "issue": 1659,
+    "time": "2022-11-14T22:24:06.903Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 9,
     "roll": 2
   }
 ]
