@@ -1801,7 +1801,7 @@
     "time": "2022-11-16T14:38:36.731Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c75a027f6b601dfc1fad43f21d2cf0759318a8a6/games/current/board.1660.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1811,5 +1811,22 @@
     "fromPosition": 2,
     "toPosition": 4,
     "roll": 2
+  },
+  {
+    "username": "lucaspmedina",
+    "issue": 1661,
+    "time": "2022-11-22T12:53:29.117Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
   }
 ]
