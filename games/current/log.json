@@ -1818,7 +1818,7 @@
     "time": "2022-11-22T12:53:29.117Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ca0e5fb6b57626f9670494361f09ae3fd9cfb54d/games/current/board.1661.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -1828,5 +1828,22 @@
     "fromPosition": 3,
     "toPosition": 6,
     "roll": 3
+  },
+  {
+    "username": "plungarini",
+    "issue": 1662,
+    "time": "2022-11-23T22:02:12.140Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 10,
+    "roll": 1
   }
 ]
