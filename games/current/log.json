@@ -1869,7 +1869,7 @@
     "time": "2022-11-28T11:26:45.565Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/56f3b57cbd05256d0485e3ad6b1e4811c42a6943/games/current/board.1665.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1879,5 +1879,22 @@
     "fromPosition": 0,
     "toPosition": 2,
     "roll": 2
+  },
+  {
+    "username": "withrvr",
+    "issue": 1666,
+    "time": "2022-11-28T11:27:45.212Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
+    "roll": 1
   }
 ]
