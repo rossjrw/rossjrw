@@ -1852,6 +1852,23 @@
     "time": "2022-11-28T11:20:01.645Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2f903c9fa19e7db362582453039555cf46d7bb01/games/current/board.1663.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "RVR-Dummy",
+    "issue": 1665,
+    "time": "2022-11-28T11:26:45.565Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null,
     "events": {
       "rosetteClaimed": false,
