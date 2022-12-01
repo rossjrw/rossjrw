@@ -1949,6 +1949,23 @@
     "time": "2022-12-01T03:44:34.677Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f5a98d23af8fc8fb36b40246b770e2dd15b845ab/games/current/board.1669.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "timothygao8710",
+    "issue": 1670,
+    "time": "2022-12-01T04:20:34.099Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null,
     "events": {
       "rosetteClaimed": false,
