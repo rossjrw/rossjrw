@@ -2046,7 +2046,7 @@
     "time": "2022-12-02T20:35:37.004Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1c854557d81760de2fe2b069a505a4464dc2c9ad/games/current/board.1674.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -2056,5 +2056,22 @@
     "fromPosition": 6,
     "toPosition": 8,
     "roll": 2
+  },
+  {
+    "username": "BazzerDv",
+    "issue": 1675,
+    "time": "2022-12-02T20:36:19.105Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 9,
+    "roll": 1
   }
 ]
