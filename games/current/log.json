@@ -2000,10 +2000,27 @@
     "time": "2022-12-01T07:08:23.153Z",
     "team": "w",
     "action": "pass",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ad326f018b46640566996adc4b63649f64741add/games/current/board.1671.svg",
     "events": null,
     "fromPosition": null,
     "toPosition": null,
     "roll": 0
+  },
+  {
+    "username": "ottomicheletti",
+    "issue": 1672,
+    "time": "2022-12-02T06:15:35.845Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 14,
+    "roll": 4
   }
 ]
