@@ -2097,7 +2097,7 @@
     "time": "2022-12-03T15:49:04.045Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e9a29ada5c34bf102cb0b4a4859a6d78e03ea93b/games/current/board.1677.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -2107,5 +2107,22 @@
     "fromPosition": 9,
     "toPosition": 12,
     "roll": 3
+  },
+  {
+    "username": "mehmetkirlak",
+    "issue": 1678,
+    "time": "2022-12-04T16:37:49.402Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   }
 ]
