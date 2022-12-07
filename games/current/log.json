@@ -2262,7 +2262,7 @@
     "time": "2022-12-07T23:08:57.146Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/42503a578c7ffa4cc4ceee18d1f7f4f6b2d021d3/games/current/board.1686.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -2272,5 +2272,22 @@
     "fromPosition": 13,
     "toPosition": 14,
     "roll": 1
+  },
+  {
+    "username": "ZacharyCrespin",
+    "issue": 1687,
+    "time": "2022-12-07T23:09:52.666Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 8,
+    "roll": 4
   }
 ]
