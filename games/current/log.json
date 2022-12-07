@@ -2165,7 +2165,7 @@
     "time": "2022-12-07T07:25:48.828Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b1c044884f458c0e38d863b0ae4d11060d34da16/games/current/board.1681.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -2175,5 +2175,22 @@
     "fromPosition": 2,
     "toPosition": 4,
     "roll": 2
+  },
+  {
+    "username": "beckerin",
+    "issue": 1682,
+    "time": "2022-12-07T15:30:31.815Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 8,
+    "roll": 4
   }
 ]
