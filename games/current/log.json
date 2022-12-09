@@ -2313,7 +2313,7 @@
     "time": "2022-12-08T22:25:37.013Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2926ba51677eda4048ec8f6a81223915471ca270/games/current/board.1689.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2322,6 +2322,23 @@
     },
     "fromPosition": 0,
     "toPosition": 1,
+    "roll": 1
+  },
+  {
+    "username": "Bryan-Herrera-DEV",
+    "issue": 1690,
+    "time": "2022-12-09T02:13:13.998Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
     "roll": 1
   }
 ]
