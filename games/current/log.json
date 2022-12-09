@@ -2347,7 +2347,7 @@
     "time": "2022-12-09T10:49:47.787Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/df3f5a5d19323e6bd9960ce9318092089c21f731/games/current/board.1691.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2356,6 +2356,23 @@
     },
     "fromPosition": 1,
     "toPosition": 2,
+    "roll": 1
+  },
+  {
+    "username": "sohanasserr",
+    "issue": 1692,
+    "time": "2022-12-09T13:25:11.083Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
     "roll": 1
   }
 ]
