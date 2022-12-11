@@ -2398,7 +2398,7 @@
     "time": "2022-12-11T10:42:10.125Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/707a5a553664a258c6a1d50e6a1fb14739b89805/games/current/board.1695.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -2407,6 +2407,23 @@
     },
     "fromPosition": 1,
     "toPosition": 4,
+    "roll": 3
+  },
+  {
+    "username": "LAPCoder",
+    "issue": 1696,
+    "time": "2022-12-11T10:42:42.511Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 13,
     "roll": 3
   }
 ]
