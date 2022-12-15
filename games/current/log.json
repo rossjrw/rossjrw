@@ -2517,7 +2517,7 @@
     "time": "2022-12-15T16:10:48.610Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/04cfba9ba10b6a78af6618fee84be6562d0e8b4a/games/current/board.1702.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -2527,5 +2527,22 @@
     "fromPosition": 7,
     "toPosition": 9,
     "roll": 2
+  },
+  {
+    "username": "s06a",
+    "issue": 1703,
+    "time": "2022-12-15T18:37:28.694Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 3,
+    "roll": 1
   }
 ]
