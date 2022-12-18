@@ -2602,7 +2602,7 @@
     "time": "2022-12-17T20:16:33.348Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e8ef9a1e46ead7399107d9a282d4dcab598c1bb9/games/current/board.1707.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2612,5 +2612,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "HeavenlyEntity",
+    "issue": 1708,
+    "time": "2022-12-18T06:01:41.797Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   }
 ]
