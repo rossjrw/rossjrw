@@ -2619,7 +2619,7 @@
     "time": "2022-12-18T06:01:41.797Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/20874b151012f7f33375cd324ce1120f055b8c5f/games/current/board.1708.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2629,5 +2629,22 @@
     "fromPosition": 0,
     "toPosition": 2,
     "roll": 2
+  },
+  {
+    "username": "benhalasi",
+    "issue": 1710,
+    "time": "2022-12-19T07:31:00.886Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 8,
+    "roll": 3
   }
 ]
