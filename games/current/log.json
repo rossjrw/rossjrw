@@ -2636,7 +2636,7 @@
     "time": "2022-12-19T07:31:00.886Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/35d77ff4e72a29de64f33e155e1d60777d26dc61/games/current/board.1710.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -2646,5 +2646,22 @@
     "fromPosition": 5,
     "toPosition": 8,
     "roll": 3
+  },
+  {
+    "username": "Kage0923",
+    "issue": 1711,
+    "time": "2022-12-19T09:34:49.419Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
   }
 ]
