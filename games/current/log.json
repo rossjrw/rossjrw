@@ -2653,7 +2653,7 @@
     "time": "2022-12-19T09:34:49.419Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/31b38892ebb693acabe29299c456de8d7f55168b/games/current/board.1711.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2663,5 +2663,22 @@
     "fromPosition": 0,
     "toPosition": 1,
     "roll": 1
+  },
+  {
+    "username": "GL4D1AT0R",
+    "issue": 1712,
+    "time": "2022-12-21T00:51:33.916Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
   }
 ]
