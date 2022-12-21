@@ -2670,7 +2670,7 @@
     "time": "2022-12-21T00:51:33.916Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6cde64ab6abf4c78dea2d88b578cd97a45682147/games/current/board.1712.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -2679,6 +2679,23 @@
     },
     "fromPosition": 2,
     "toPosition": 4,
+    "roll": 2
+  },
+  {
+    "username": "GingerJakeDaBoi",
+    "issue": 1713,
+    "time": "2022-12-21T07:00:38.022Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 13,
     "roll": 2
   }
 ]
