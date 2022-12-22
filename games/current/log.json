@@ -2687,7 +2687,7 @@
     "time": "2022-12-21T07:00:38.022Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/bf98f325bc0ca29e21f5ff93bd1f0050797dc8a4/games/current/board.1713.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2697,5 +2697,22 @@
     "fromPosition": 11,
     "toPosition": 13,
     "roll": 2
+  },
+  {
+    "username": "lntruong181",
+    "issue": 1714,
+    "time": "2022-12-22T09:09:57.887Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 2,
+    "roll": 1
   }
 ]
