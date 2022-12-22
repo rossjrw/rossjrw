@@ -2704,7 +2704,7 @@
     "time": "2022-12-22T09:09:57.887Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ac7a6e7b188be806b3430b3381c52ba84a372af6/games/current/board.1714.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2714,5 +2714,22 @@
     "fromPosition": 1,
     "toPosition": 2,
     "roll": 1
+  },
+  {
+    "username": "Sothatsit",
+    "issue": 1715,
+    "time": "2022-12-22T10:03:22.856Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 13,
+    "toPosition": 15,
+    "roll": 2
   }
 ]
