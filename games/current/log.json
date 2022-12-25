@@ -2784,7 +2784,7 @@
     "time": "2022-12-22T10:14:59.352Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/a27533ea3ceef59a13acdba10fac9c0948e29acb/games/current/board.1718.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2793,6 +2793,23 @@
     },
     "fromPosition": 10,
     "toPosition": 12,
+    "roll": 2
+  },
+  {
+    "username": "QIANJINYDX",
+    "issue": 1719,
+    "time": "2022-12-25T12:46:31.930Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
     "roll": 2
   }
 ]
