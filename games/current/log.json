@@ -2835,10 +2835,27 @@
     "time": "2022-12-25T14:37:17.704Z",
     "team": "b",
     "action": "pass",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1d106126a7f5b4ebbc7fdbbc31302d1902b64931/games/current/board.1720.svg",
     "events": null,
     "fromPosition": null,
     "toPosition": null,
     "roll": 0
+  },
+  {
+    "username": "jhoitenga",
+    "issue": 1721,
+    "time": "2022-12-29T12:27:48.283Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 9,
+    "roll": 2
   }
 ]
