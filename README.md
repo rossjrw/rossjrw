@@ -5,7 +5,7 @@ We're playing
 
 <p align="center">
   <b>It's the
-  :black_circle:black
+  :white_circle:white
   team's turn.</b>
 </p>
 
@@ -16,17 +16,18 @@ You're on a team! :wave:
   check back later, or [ask a
   friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github) to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-  **:black_circle:black** team.
+  **:white_circle:white** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1846.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1847.svg"></p>
 
-  **:black_circle:Black team:**
+  **:white_circle:White team:**
   You rolled a 1!
 What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
   | [    Move a new piece to tile 1](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [:rosette:    Move the piece on tile 3 to tile 4](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%403-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -45,7 +46,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td></td>
+        <td><b><a href="https://github.com/mari1647iv">@mari1647iv</a></b> (1)</td>
         <td><b><a href="https://github.com/TejaTadepalli">@TejaTadepalli</a></b> (2)</td>
       </tr>
     </tbody>
@@ -56,7 +57,8 @@ What would you like to do?
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
   | 30th Dec 2022 14:05 | **0** | :white_circle: **[@TejaTadepalli](https://github.com/TejaTadepalli)** started a new game | [#1845](https://github.com/rossjrw/rossjrw/issues/1845) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/57ccb413b922933e18cffd8a801d6bdad0d41f43/games/current/board.1845.svg) |
-  | 30th Dec 2022 14:05 | **1** | :white_circle: **[@TejaTadepalli](https://github.com/TejaTadepalli)** moved a white piece onto the board to position 3    | [#1846](https://github.com/rossjrw/rossjrw/issues/1846) |  |
+  | 30th Dec 2022 14:05 | **1** | :white_circle: **[@TejaTadepalli](https://github.com/TejaTadepalli)** moved a white piece onto the board to position 3    | [#1846](https://github.com/rossjrw/rossjrw/issues/1846) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/f0b0cf2e7c75051f5368712d935423fac712b223/games/current/board.1846.svg) |
+  | 30th Dec 2022 14:06 | **2** | :black_circle: **[@mari1647iv](https://github.com/mari1647iv)** moved a black piece onto the board to position 1    | [#1847](https://github.com/rossjrw/rossjrw/issues/1847) |  |
 
 </details>
 
