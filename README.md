@@ -1,11 +1,11 @@
 Welcome to my Github profile!
 We're playing
 [the Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur).
-**Game #11 is in progress,** but you can join!
+**Game #12 is in progress,** but you can join!
 
 <p align="center">
   <b>It's the
-  :white_circle:white
+  :black_circle:black
   team's turn.</b>
 </p>
 
@@ -16,22 +16,22 @@ You're on a team! :wave:
   check back later, or [ask a
   friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github) to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-  **:white_circle:white** team.
+  **:black_circle:black** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1845.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1846.svg"></p>
 
-  **:white_circle:White team:**
-  You rolled a 3!
+  **:black_circle:Black team:**
+  You rolled a 1!
 What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
-  | [    Move a new piece to tile 3](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move a new piece to tile 1](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
 <details>
-<summary><b>Game #11 so far</b></summary>
+<summary><b>Game #12 so far</b></summary>
 
 ## Who's on each team?
 
@@ -46,7 +46,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td></td>
-        <td><b><a href="https://github.com/TejaTadepalli">@TejaTadepalli</a></b> (1)</td>
+        <td><b><a href="https://github.com/TejaTadepalli">@TejaTadepalli</a></b> (2)</td>
       </tr>
     </tbody>
   </table>
@@ -55,7 +55,8 @@ What would you like to do?
 
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
-  | 30th Dec 2022 14:05 | **0** | :white_circle: **[@TejaTadepalli](https://github.com/TejaTadepalli)** started a new game | [#1845](https://github.com/rossjrw/rossjrw/issues/1845) |  |
+  | 30th Dec 2022 14:05 | **0** | :white_circle: **[@TejaTadepalli](https://github.com/TejaTadepalli)** started a new game | [#1845](https://github.com/rossjrw/rossjrw/issues/1845) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/57ccb413b922933e18cffd8a801d6bdad0d41f43/games/current/board.1845.svg) |
+  | 30th Dec 2022 14:05 | **1** | :white_circle: **[@TejaTadepalli](https://github.com/TejaTadepalli)** moved a white piece onto the board to position 3    | [#1846](https://github.com/rossjrw/rossjrw/issues/1846) |  |
 
 </details>
 
@@ -134,6 +135,13 @@ What would you like to do?
    * The :white_circle:white team captured 11 black pieces and claimed 19 rosettes. 
    * The MVP of the winning team was **[@LAPCoder](https://github.com/LAPCoder)**, who played 11 moves. 
    * The winning move was made by **[@LAPCoder](https://github.com/LAPCoder)** ([#1726](https://github.com/rossjrw/rossjrw/issues/1726)).
+1. A game was started on 29th Dec 2022 by **[@CostasAK](https://github.com/CostasAK)** and ended on 30th Dec 2022. 
+   * The :black_circle:black team won. 
+   * 4 players played 121 moves across 19 hours and 41 minutes. 
+   * The :black_circle:black team captured 6 white pieces and claimed 14 rosettes. 
+   * The :white_circle:white team captured 4 black pieces and claimed 15 rosettes. 
+   * The MVP of the winning team was **[@CostasAK](https://github.com/CostasAK)**, who played 59 moves. 
+   * The winning move was made by **[@CostasAK](https://github.com/CostasAK)** ([#1844](https://github.com/rossjrw/rossjrw/issues/1844)).
 
 </details>
 
