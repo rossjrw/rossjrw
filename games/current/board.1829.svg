@@ -802,7 +802,7 @@
     <path id="path857-4-3-1-0-4-6" d="m32.5 36.3c-3.3e-5 0.94-0.844 1.7-1.88 1.7-1.04-1.2e-5 -1.88-0.762-1.88-1.7 3.3e-5 -0.94 0.844-1.7 1.88-1.7 1.04 1.3e-5 1.88 0.762 1.88 1.7"/>
    </g>
   </g>
-  <g id="tile13-w" transform="translate(122 -67.3)" style="display:none;">
+  <g id="tile13-w" transform="translate(122 -67.3)">
    <circle id="path1055-3-6" cx="46.5" cy="91" r="7.68" fill="url(#radialGradient1075)" filter="url(#filter1435-94-0)" stroke="#000" stroke-width=".948"/>
    <g id="g917-7-1-3" transform="matrix(.319 .418 -.463 .354 53.8 65.4)" fill="#717171">
     <path id="path857-5-7-5" d="m26.2 30.9c-3.4e-5 0.94-0.844 1.7-1.88 1.7-1.04-1.3e-5 -1.88-0.762-1.88-1.7 3.4e-5 -0.94 0.844-1.7 1.88-1.7 1.04 1.4e-5 1.88 0.762 1.88 1.7"/>
@@ -962,7 +962,7 @@
     <path id="path857-4-3-1-0-5-6-0" d="m32.5 36.3c-3.3e-5 0.94-0.844 1.7-1.88 1.7-1.04-1.2e-5 -1.88-0.762-1.88-1.7 3.3e-5 -0.94 0.844-1.7 1.88-1.7 1.04 1.3e-5 1.88 0.762 1.88 1.7"/>
    </g>
   </g>
-  <g id="tile10-w" transform="translate(78.3 -47.4)">
+  <g id="tile10-w" transform="translate(78.3 -47.4)" style="display:none;">
    <circle id="path1055-6" cx="46.5" cy="91" r="7.68" fill="url(#radialGradient1075)" filter="url(#filter1435-2)" stroke="#000" stroke-width=".948"/>
    <g id="g917-7-3" transform="matrix(.526 0 0 .583 30.6 69.8)" fill="#717171">
     <path id="path857-5-5" d="m26.2 30.9c-3.4e-5 0.94-0.844 1.7-1.88 1.7-1.04-1.3e-5 -1.88-0.762-1.88-1.7 3.4e-5 -0.94 0.844-1.7 1.88-1.7 1.04 1.4e-5 1.88 0.762 1.88 1.7"/>
@@ -1311,8 +1311,8 @@
    </g>
    <g id="dice1-spots" clip-path="url(#clipPath7619)" fill="#fff" fill-rule="evenodd">
     <circle id="path7086-0-4-53" transform="rotate(-15.6)" cx="15.1" cy="110" r="1.8" opacity=".534"/>
-    <circle id="dice1-spot-off" transform="rotate(-15.6)" cx="33.9" cy="119" r="1.8" opacity=".534" style="display:none;"/>
-    <circle id="dice1-spot-on" transform="rotate(-15.6)" cx="28.3" cy="109" r="1.8" opacity=".534"/>
+    <circle id="dice1-spot-off" transform="rotate(-15.6)" cx="33.9" cy="119" r="1.8" opacity=".534"/>
+    <circle id="dice1-spot-on" transform="rotate(-15.6)" cx="28.3" cy="109" r="1.8" opacity=".534" style="display:none;"/>
    </g>
    <path id="path4949-1" transform="rotate(237 46 115)" d="m64.3 141c-0.903 0.943-20.8-3.93-21.1-5.18-0.365-1.25 13.8-16 15.1-15.7 1.27 0.311 6.98 20 6.08 20.9z" fill="none" stroke="#000"/>
   </g>
