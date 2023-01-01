@@ -114,7 +114,7 @@
     "time": "2023-01-01T12:30:07.960Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/30967845e7430be961e54e4f2cd054fa57098748/games/current/board.1852.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -124,5 +124,22 @@
     "fromPosition": 0,
     "toPosition": 1,
     "roll": 1
+  },
+  {
+    "username": "srThibaultP",
+    "issue": 1853,
+    "time": "2023-01-01T18:42:40.197Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 3,
+    "roll": 2
   }
 ]
