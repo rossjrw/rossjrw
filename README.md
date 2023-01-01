@@ -5,7 +5,7 @@ We're playing
 
 <p align="center">
   <b>It's the
-  :black_circle:black
+  :white_circle:white
   team's turn.</b>
 </p>
 
@@ -16,11 +16,11 @@ You're on a team! :wave:
   check back later, or [ask a
   friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github) to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-  **:black_circle:black** team.
+  **:white_circle:white** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1850.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1851.svg"></p>
 
-  **:black_circle:Black team:**
+  **:white_circle:White team:**
   You rolled a 1!
 What would you like to do?
 
@@ -46,7 +46,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td><b><a href="https://github.com/mari1647iv">@mari1647iv</a></b> (2)</td>
+        <td><b><a href="https://github.com/mari1647iv">@mari1647iv</a></b> (3)</td>
         <td><b><a href="https://github.com/TejaTadepalli">@TejaTadepalli</a></b> (2)<br><b><a href="https://github.com/Hrushal-Nikhare">@Hrushal-Nikhare</a></b> (1)</td>
       </tr>
     </tbody>
@@ -61,7 +61,8 @@ What would you like to do?
   | 30th Dec 2022 14:06 | **2** | :black_circle: **[@mari1647iv](https://github.com/mari1647iv)** moved a black piece onto the board to position 1    | [#1847](https://github.com/rossjrw/rossjrw/issues/1847) |  |
   | 1st Jan 2023 07:02 | **3** | :white_circle: **[@Hrushal-Nikhare](https://github.com/Hrushal-Nikhare)** moved a white piece from position 3 to position 4  — claimed a rosette :rosette:  | [#1848](https://github.com/rossjrw/rossjrw/issues/1848) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/9333f396a5fc50699e6ac570e472fc9d27305156/games/current/board.1848.svg) |
   | 1st Jan 2023 07:02 | **4** | :white_circle:  The white team rolled a 0 and their turn was automatically passed | [#1848](https://github.com/rossjrw/rossjrw/issues/1848) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/66b9669221aa17f2870e05316dc72e749c821b5f/games/current/board.1848.svg) |
-  | 1st Jan 2023 12:20 | **5** | :black_circle: **[@mari1647iv](https://github.com/mari1647iv)** moved a black piece from position 1 to position 4  — claimed a rosette :rosette:  | [#1850](https://github.com/rossjrw/rossjrw/issues/1850) |  |
+  | 1st Jan 2023 12:20 | **5** | :black_circle: **[@mari1647iv](https://github.com/mari1647iv)** moved a black piece from position 1 to position 4  — claimed a rosette :rosette:  | [#1850](https://github.com/rossjrw/rossjrw/issues/1850) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/21789b9dc02ed4358f6ae6449fd5271ba509ccb3/games/current/board.1850.svg) |
+  | 1st Jan 2023 12:22 | **6** | :black_circle: **[@mari1647iv](https://github.com/mari1647iv)** moved a black piece onto the board to position 1    | [#1851](https://github.com/rossjrw/rossjrw/issues/1851) |  |
 
 </details>
 
