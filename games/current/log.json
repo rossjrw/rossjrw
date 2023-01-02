@@ -182,7 +182,7 @@
     "time": "2023-01-02T17:56:21.648Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d09d3337b687a67cb0d13d2d25bac0526b0d58bc/games/current/board.1856.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -192,5 +192,22 @@
     "fromPosition": 4,
     "toPosition": 5,
     "roll": 1
+  },
+  {
+    "username": "miliansolberg",
+    "issue": 1857,
+    "time": "2023-01-02T20:37:55.347Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
+    "roll": 2
   }
 ]
