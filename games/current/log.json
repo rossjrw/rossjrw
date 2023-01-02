@@ -148,7 +148,7 @@
     "time": "2023-01-02T08:19:33.138Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f87b48c433a2464f478ed35afae31fecf9a6cd70/games/current/board.1854.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -158,5 +158,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1855,
+    "time": "2023-01-02T16:09:51.433Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   }
 ]
