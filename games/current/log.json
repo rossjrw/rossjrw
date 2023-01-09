@@ -573,7 +573,7 @@
     "time": "2023-01-09T04:26:54.072Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f356af4e6063739ad4a1f89be098977052322b67/games/current/board.1879.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -583,5 +583,22 @@
     "fromPosition": 2,
     "toPosition": 6,
     "roll": 4
+  },
+  {
+    "username": "rfoel",
+    "issue": 1880,
+    "time": "2023-01-09T14:19:29.440Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
   }
 ]
