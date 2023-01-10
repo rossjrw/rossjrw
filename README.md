@@ -18,16 +18,16 @@ You're on a team! :wave:
 * If you've not yet played a turn this game, make a move now to join the
   **:black_circle:black** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1894.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1895.svg"></p>
 
   **:black_circle:Black team:**
-  You rolled a 1!
+  You rolled a 3!
 What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
-  | [    Move a new piece to tile 1](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [    Move the piece on tile 9 to tile 10](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%409-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move a new piece to tile 3](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move the piece on tile 10 to tile 13](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%4010-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -46,7 +46,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td><b><a href="https://github.com/mari1647iv">@mari1647iv</a></b> (19)<br><b><a href="https://github.com/srThibaultP">@srThibaultP</a></b> (1)<br><b><a href="https://github.com/miliansolberg">@miliansolberg</a></b> (1)<br><b><a href="https://github.com/rfoel">@rfoel</a></b> (1)</td>
+        <td><b><a href="https://github.com/mari1647iv">@mari1647iv</a></b> (20)<br><b><a href="https://github.com/srThibaultP">@srThibaultP</a></b> (1)<br><b><a href="https://github.com/miliansolberg">@miliansolberg</a></b> (1)<br><b><a href="https://github.com/rfoel">@rfoel</a></b> (1)</td>
         <td><b><a href="https://github.com/TejaTadepalli">@TejaTadepalli</a></b> (15)<br><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (10)<br><b><a href="https://github.com/Hrushal-Nikhare">@Hrushal-Nikhare</a></b> (1)<br><b><a href="https://github.com/Sam948-byte">@Sam948-byte</a></b> (1)</td>
       </tr>
     </tbody>
@@ -107,6 +107,8 @@ What would you like to do?
   | 10th Jan 2023 16:41 | **48** | :black_circle: **[@mari1647iv](https://github.com/mari1647iv)** moved a black piece from position 4 to position 9    | [#1892](https://github.com/rossjrw/rossjrw/issues/1892) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/0edd42a6f828b26d153ee1335b7fc2a12cf0827b/games/current/board.1892.svg) |
   | 10th Jan 2023 17:12 | **49** | :white_circle: **[@CostasAK](https://github.com/CostasAK)** moved a white piece from position 11 to position 14  — claimed a rosette :rosette:  | [#1893](https://github.com/rossjrw/rossjrw/issues/1893) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/ce63d259114bc7b70eba05f60f56ce25ff277a29/games/current/board.1893.svg) |
   | 10th Jan 2023 17:14 | **50** | :white_circle: **[@CostasAK](https://github.com/CostasAK)** moved a white piece from position 5 to position 7    | [#1894](https://github.com/rossjrw/rossjrw/issues/1894) |  |
+  | 10th Jan 2023 17:46 | **51** | :black_circle: **[@mari1647iv](https://github.com/mari1647iv)** moved a black piece from position 9 to position 10    | [#1895](https://github.com/rossjrw/rossjrw/issues/1895) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/b9b3ed74f503e2dcd526cf5188e570cea924c72e/games/current/board.1895.svg) |
+  | 10th Jan 2023 17:46 | **52** | :white_circle:  The white team rolled a 0 and their turn was automatically passed | [#1895](https://github.com/rossjrw/rossjrw/issues/1895) |  |
 
 </details>
 
