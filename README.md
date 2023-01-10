@@ -18,7 +18,7 @@ You're on a team! :wave:
 * If you've not yet played a turn this game, make a move now to join the
   **:white_circle:white** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1896.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.1897.svg"></p>
 
   **:white_circle:White team:**
   You rolled a 2!
@@ -26,7 +26,7 @@ What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
-  | [    Move a new piece to tile 2](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [:rosette:    Move the piece on tile 2 to tile 4](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%402-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
   | [    Move the piece on tile 7 to tile 9](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%407-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
   | [    Move the piece on tile 8 to tile 10](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%408-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
@@ -48,7 +48,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/mari1647iv">@mari1647iv</a></b> (21)<br><b><a href="https://github.com/srThibaultP">@srThibaultP</a></b> (1)<br><b><a href="https://github.com/miliansolberg">@miliansolberg</a></b> (1)<br><b><a href="https://github.com/rfoel">@rfoel</a></b> (1)</td>
-        <td><b><a href="https://github.com/TejaTadepalli">@TejaTadepalli</a></b> (15)<br><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (10)<br><b><a href="https://github.com/Hrushal-Nikhare">@Hrushal-Nikhare</a></b> (1)<br><b><a href="https://github.com/Sam948-byte">@Sam948-byte</a></b> (1)</td>
+        <td><b><a href="https://github.com/TejaTadepalli">@TejaTadepalli</a></b> (16)<br><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (10)<br><b><a href="https://github.com/Hrushal-Nikhare">@Hrushal-Nikhare</a></b> (1)<br><b><a href="https://github.com/Sam948-byte">@Sam948-byte</a></b> (1)</td>
       </tr>
     </tbody>
   </table>
@@ -111,6 +111,8 @@ What would you like to do?
   | 10th Jan 2023 17:46 | **51** | :black_circle: **[@mari1647iv](https://github.com/mari1647iv)** moved a black piece from position 9 to position 10    | [#1895](https://github.com/rossjrw/rossjrw/issues/1895) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/b9b3ed74f503e2dcd526cf5188e570cea924c72e/games/current/board.1895.svg) |
   | 10th Jan 2023 17:46 | **52** | :white_circle:  The white team rolled a 0 and their turn was automatically passed | [#1895](https://github.com/rossjrw/rossjrw/issues/1895) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/5a21aac55bb3cde44eea86abc58d13a606f10cdd/games/current/board.1895.svg) |
   | 10th Jan 2023 17:47 | **53** | :black_circle: **[@mari1647iv](https://github.com/mari1647iv)** moved a black piece from position 10 to position 13    | [#1896](https://github.com/rossjrw/rossjrw/issues/1896) |  |
+  | 10th Jan 2023 18:06 | **54** | :white_circle: **[@TejaTadepalli](https://github.com/TejaTadepalli)** moved a white piece onto the board to position 2    | [#1897](https://github.com/rossjrw/rossjrw/issues/1897) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/5b4b345f3044c90737490b8f53389d2ea9ed5543/games/current/board.1897.svg) |
+  | 10th Jan 2023 18:06 | **55** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#1897](https://github.com/rossjrw/rossjrw/issues/1897) |  |
 
 </details>
 
