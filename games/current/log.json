@@ -1248,5 +1248,34 @@
     "fromPosition": 0,
     "toPosition": 4,
     "roll": 4
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1917,
+    "time": "2023-01-11T18:41:56.316Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f2228342473db18723ebd71e622814ebfd0bef51/games/current/board.1917.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 12,
+    "toPosition": 15,
+    "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1917,
+    "time": "2023-01-11T18:41:56.316Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
