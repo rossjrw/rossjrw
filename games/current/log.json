@@ -1789,6 +1789,23 @@
     "time": "2023-01-14T16:58:24.393Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0e80199ceb770253a67396c7a1147ce15d93ef6c/games/current/board.1947.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "jjvbarbosa",
+    "issue": 1948,
+    "time": "2023-01-14T19:00:08.813Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null,
     "events": {
       "rosetteClaimed": false,
