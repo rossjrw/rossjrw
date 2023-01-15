@@ -1874,7 +1874,7 @@
     "time": "2023-01-15T16:41:51.591Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/5c83e86196e786094bdef950db1109bcce86552a/games/current/board.1952.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1884,5 +1884,22 @@
     "fromPosition": 2,
     "toPosition": 3,
     "roll": 1
+  },
+  {
+    "username": "OpenSauce",
+    "issue": 1953,
+    "time": "2023-01-15T21:17:05.024Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
   }
 ]
