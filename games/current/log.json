@@ -1840,7 +1840,7 @@
     "time": "2023-01-15T06:11:03.559Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/fa65598965fdbef6f0e9230efd8d2eaa980a2dc1/games/current/board.1950.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1850,5 +1850,22 @@
     "fromPosition": 12,
     "toPosition": 15,
     "roll": 3
+  },
+  {
+    "username": "soominkiminsoo",
+    "issue": 1951,
+    "time": "2023-01-15T15:07:00.383Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 4,
+    "roll": 1
   }
 ]
