@@ -1976,7 +1976,7 @@
     "time": "2023-01-17T04:36:00.922Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/bf971c90e860c4aa5401579eb923f2e315921b87/games/current/board.1958.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1985,6 +1985,23 @@
     },
     "fromPosition": 12,
     "toPosition": 14,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1959,
+    "time": "2023-01-17T04:37:53.482Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
     "roll": 2
   }
 ]
