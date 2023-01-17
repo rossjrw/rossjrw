@@ -2010,7 +2010,7 @@
     "time": "2023-01-17T14:00:20.920Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1d0c08101ae92560bf78a35f483752236081a26c/games/current/board.1960.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -2020,5 +2020,22 @@
     "fromPosition": 3,
     "toPosition": 5,
     "roll": 2
+  },
+  {
+    "username": "guru2050",
+    "issue": 1961,
+    "time": "2023-01-17T23:40:20.476Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
+    "roll": 1
   }
 ]
