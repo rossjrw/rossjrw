@@ -2027,7 +2027,7 @@
     "time": "2023-01-17T23:40:20.476Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c1d840e5ccc5057d4344db83979cb1f26331e8df/games/current/board.1961.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -2037,5 +2037,22 @@
     "fromPosition": 4,
     "toPosition": 5,
     "roll": 1
+  },
+  {
+    "username": "tikocty",
+    "issue": 1962,
+    "time": "2023-01-18T17:21:30.987Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   }
 ]
