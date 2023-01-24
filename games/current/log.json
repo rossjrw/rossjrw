@@ -2435,6 +2435,23 @@
     "time": "2023-01-23T02:22:18.162Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/773442e64a2073f4a28b13d09fb314bfe5100dcf/games/current/board.1985.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 13,
+    "toPosition": 15,
+    "roll": 2
+  },
+  {
+    "username": "Fabianofski",
+    "issue": 1986,
+    "time": "2023-01-24T20:29:27.363Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null,
     "events": {
       "rosetteClaimed": false,
