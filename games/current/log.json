@@ -2486,7 +2486,7 @@
     "time": "2023-01-25T04:43:23.470Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b1080a6d8af396c56dc395bc3a39458828876bc0/games/current/board.1988.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2495,6 +2495,23 @@
     },
     "fromPosition": 8,
     "toPosition": 11,
+    "roll": 3
+  },
+  {
+    "username": "fakeYanss",
+    "issue": 1989,
+    "time": "2023-01-25T11:44:23.944Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
     "roll": 3
   }
 ]
