@@ -1,0 +1,2638 @@
+[
+  {
+    "username": "TejaTadepalli",
+    "issue": 1845,
+    "time": "2022-12-30T14:05:12.278Z",
+    "team": "w",
+    "action": "new",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/57ccb413b922933e18cffd8a801d6bdad0d41f43/games/current/board.1845.svg",
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": null
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1846,
+    "time": "2022-12-30T14:05:40.237Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f0b0cf2e7c75051f5368712d935423fac712b223/games/current/board.1846.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1847,
+    "time": "2022-12-30T14:06:55.288Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
+  },
+  {
+    "username": "Hrushal-Nikhare",
+    "issue": 1848,
+    "time": "2023-01-01T07:02:07.339Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/9333f396a5fc50699e6ac570e472fc9d27305156/games/current/board.1848.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 4,
+    "roll": 1
+  },
+  {
+    "username": "Hrushal-Nikhare",
+    "issue": 1848,
+    "time": "2023-01-01T07:02:07.339Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/66b9669221aa17f2870e05316dc72e749c821b5f/games/current/board.1848.svg",
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1850,
+    "time": "2023-01-01T12:20:53.786Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/21789b9dc02ed4358f6ae6449fd5271ba509ccb3/games/current/board.1850.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 4,
+    "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1851,
+    "time": "2023-01-01T12:22:02.330Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/938bbcf55112fbd53559851b486a2273d03dd77b/games/current/board.1851.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
+  },
+  {
+    "username": "CostasAK",
+    "issue": 1852,
+    "time": "2023-01-01T12:30:07.960Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/30967845e7430be961e54e4f2cd054fa57098748/games/current/board.1852.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
+  },
+  {
+    "username": "srThibaultP",
+    "issue": 1853,
+    "time": "2023-01-01T18:42:40.197Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/71bfe628cf36f3724bbe079d2ea71c77d8d0782c/games/current/board.1853.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 3,
+    "roll": 2
+  },
+  {
+    "username": "CostasAK",
+    "issue": 1854,
+    "time": "2023-01-02T08:19:33.138Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f87b48c433a2464f478ed35afae31fecf9a6cd70/games/current/board.1854.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1855,
+    "time": "2023-01-02T16:09:51.433Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8bc8350a38225bac405d062dd332decf3fdaaa88/games/current/board.1855.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1856,
+    "time": "2023-01-02T17:56:21.648Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d09d3337b687a67cb0d13d2d25bac0526b0d58bc/games/current/board.1856.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
+    "roll": 1
+  },
+  {
+    "username": "miliansolberg",
+    "issue": 1857,
+    "time": "2023-01-02T20:37:55.347Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/59c756357bfd1061b061ab93fa4126fc28e1dfa9/games/current/board.1857.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1858,
+    "time": "2023-01-03T02:57:00.798Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/589283b397b0322ab9d6a9e00d64a5be2089e066/games/current/board.1858.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 4,
+    "roll": 3
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1859,
+    "time": "2023-01-03T02:57:48.823Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e20f22764a79568b86c217e51e5898fa71ad3652/games/current/board.1859.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
+    "roll": 1
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1860,
+    "time": "2023-01-03T09:25:52.409Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ab6d2e787baeaba233fcc69449124264d9bc7ba5/games/current/board.1860.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 8,
+    "roll": 4
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1861,
+    "time": "2023-01-03T09:27:16.432Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/729f157d8c8ea919375ff0286bab22a4a79cbbde/games/current/board.1861.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
+  },
+  {
+    "username": "CostasAK",
+    "issue": 1862,
+    "time": "2023-01-03T10:49:35.837Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0984743c19e4f0b570c994a897e699cc280e404e/games/current/board.1862.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 9,
+    "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1863,
+    "time": "2023-01-03T11:28:41.739Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/69645bdb7c6030be292e0871d6cd8117e8be213d/games/current/board.1863.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 9,
+    "roll": 1
+  },
+  {
+    "username": "Sam948-byte",
+    "issue": 1864,
+    "time": "2023-01-03T14:54:51.424Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e354c02507b9dfa2481413c1ed52d2175744608c/games/current/board.1864.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1865,
+    "time": "2023-01-04T07:19:51.042Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6816d147997c216f1884a7d31a92c032971a82ef/games/current/board.1865.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 10,
+    "roll": 1
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1866,
+    "time": "2023-01-04T07:37:06.785Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/998510ad9843ac13dad3a77b2dc58ec0a4711ffa/games/current/board.1866.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1867,
+    "time": "2023-01-05T20:47:07.906Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/32cd897762a57f03e1fb45751b74cfe516c320e1/games/current/board.1867.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 12,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1868,
+    "time": "2023-01-06T03:20:40.850Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1a0c62db44a6eae17f516c1743f31635a80b5f4b/games/current/board.1868.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 4,
+    "roll": 4
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1869,
+    "time": "2023-01-06T03:21:12.398Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/30ffca4d85e04fbe285135d2a6aee6a84ea027e3/games/current/board.1869.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 8,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1870,
+    "time": "2023-01-06T03:21:39.458Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/da4f828076a4f4008831c1db312834f6c6af1ce1/games/current/board.1870.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 12,
+    "roll": 4
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1871,
+    "time": "2023-01-06T10:22:44.633Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d6f8dd029731b489fef07508e405f27b73a81a04/games/current/board.1871.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1872,
+    "time": "2023-01-06T10:23:23.119Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/097d984c7a64f30f30590091191b2f69d346276d/games/current/board.1872.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 2,
+    "roll": 1
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1873,
+    "time": "2023-01-06T13:36:39.238Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/bc1c1d1c1bcd6273a8e4aba8e0dbe4db243e31cc/games/current/board.1873.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 12,
+    "toPosition": 15,
+    "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1874,
+    "time": "2023-01-07T00:37:49.375Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e4a6d77c944761c57e2047a7e3370db40c0b1956/games/current/board.1874.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 3,
+    "roll": 1
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1875,
+    "time": "2023-01-07T04:59:19.939Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/748e013993bb447ec19d2a92516d411aae35ac0a/games/current/board.1875.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1876,
+    "time": "2023-01-08T16:47:04.065Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/93578caa1c08a82371a6a6ae27fee4d03ae85fa5/games/current/board.1876.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "CostasAK",
+    "issue": 1877,
+    "time": "2023-01-08T19:17:37.478Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/de5a101b539199283307db848fb2fa14b8e615aa/games/current/board.1877.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1878,
+    "time": "2023-01-08T19:20:41.760Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8d016152350ecdbd62441c14c5db4127684bc3c9/games/current/board.1878.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1879,
+    "time": "2023-01-09T04:26:54.072Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f356af4e6063739ad4a1f89be098977052322b67/games/current/board.1879.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 6,
+    "roll": 4
+  },
+  {
+    "username": "rfoel",
+    "issue": 1880,
+    "time": "2023-01-09T14:19:29.440Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e4b4d2f89e7674e6f396191afa1b23152fa1c22b/games/current/board.1880.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "CostasAK",
+    "issue": 1881,
+    "time": "2023-01-09T15:50:03.777Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d8d9415aebe6a25c1498e09fee34059a57a1985c/games/current/board.1881.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1882,
+    "time": "2023-01-09T18:21:00.736Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d53e6e9698ce579147f4441070e07b2007a3c4bf/games/current/board.1882.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1883,
+    "time": "2023-01-09T18:22:38.413Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8713cae4f7e4113dd4e355018c70a75e0d0754e2/games/current/board.1883.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1884,
+    "time": "2023-01-09T18:36:28.036Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/5a551c715a15cac8b91718c6934b75bfdddbf6f4/games/current/board.1884.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1885,
+    "time": "2023-01-09T18:38:54.254Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/215e0c0640256a7124087f6dba81ffbf7bc8ac66/games/current/board.1885.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
+    "roll": 1
+  },
+  {
+    "username": "CostasAK",
+    "issue": 1886,
+    "time": "2023-01-10T14:46:44.690Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/22401dce3b59590e73333b8b0056e285d13e82e9/games/current/board.1886.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 4,
+    "roll": 4
+  },
+  {
+    "username": "CostasAK",
+    "issue": 1887,
+    "time": "2023-01-10T14:47:49.993Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 8,
+    "roll": 2
+  },
+  {
+    "username": "CostasAK",
+    "issue": 1888,
+    "time": "2023-01-10T14:48:30.746Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2a05d9bb6fbd11cf53fff5e1820d371204e8ac83/games/current/board.1888.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 11,
+    "roll": 3
+  },
+  {
+    "username": "CostasAK",
+    "issue": 1888,
+    "time": "2023-01-10T14:48:30.746Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c799a5905e7eccd22f8763a84413b81bff224cd4/games/current/board.1888.svg",
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1889,
+    "time": "2023-01-10T15:09:02.812Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/de30648481e9f22fbf2b0030b9191ddec8ba1371/games/current/board.1889.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 8,
+    "roll": 4
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1890,
+    "time": "2023-01-10T15:09:32.591Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/a6a648759ba38380d243c0d867cc49d041f19137/games/current/board.1890.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
+    "roll": 2
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1891,
+    "time": "2023-01-10T16:40:36.680Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/08d195555f56dd3b135b2aa500bb26db684b8649/games/current/board.1891.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 4,
+    "roll": 1
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1892,
+    "time": "2023-01-10T16:41:55.337Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0edd42a6f828b26d153ee1335b7fc2a12cf0827b/games/current/board.1892.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 9,
+    "roll": 4
+  },
+  {
+    "username": "CostasAK",
+    "issue": 1893,
+    "time": "2023-01-10T17:12:54.266Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ce63d259114bc7b70eba05f60f56ce25ff277a29/games/current/board.1893.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 14,
+    "roll": 3
+  },
+  {
+    "username": "CostasAK",
+    "issue": 1894,
+    "time": "2023-01-10T17:14:04.327Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 7,
+    "roll": 2
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1895,
+    "time": "2023-01-10T17:46:33.399Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b9b3ed74f503e2dcd526cf5188e570cea924c72e/games/current/board.1895.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 10,
+    "roll": 1
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1895,
+    "time": "2023-01-10T17:46:33.399Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/5a21aac55bb3cde44eea86abc58d13a606f10cdd/games/current/board.1895.svg",
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1896,
+    "time": "2023-01-10T17:47:41.534Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 13,
+    "roll": 3
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1897,
+    "time": "2023-01-10T18:06:26.022Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/5b4b345f3044c90737490b8f53389d2ea9ed5543/games/current/board.1897.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1897,
+    "time": "2023-01-10T18:06:26.022Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d477aa6ffec8816a4fcd861c1268df7040c0d5a9/games/current/board.1897.svg",
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1898,
+    "time": "2023-01-10T18:07:35.344Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/514e61cdb70a1388bb36a115441e6bb2c012ba09/games/current/board.1898.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1899,
+    "time": "2023-01-10T18:08:19.882Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c33baa6cf643286d7120a7e48c979219a34def2b/games/current/board.1899.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 10,
+    "roll": 2
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1900,
+    "time": "2023-01-10T18:22:17.582Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6152f90135f8d4be043e464b9cc8906be3668007/games/current/board.1900.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1901,
+    "time": "2023-01-10T19:01:24.752Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c244fdd99ee5e458fa4b2a1addda6674cc5c1cb5/games/current/board.1901.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 13,
+    "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1902,
+    "time": "2023-01-10T19:13:00.963Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c4bf5ee4958f8ee6adae61f9057bec273b960db4/games/current/board.1902.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "CostasAK",
+    "issue": 1903,
+    "time": "2023-01-10T21:00:03.939Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6f76ae784f147cd202b85a18dc029b10acd0bb11/games/current/board.1903.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 9,
+    "roll": 2
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1904,
+    "time": "2023-01-11T00:10:32.740Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b28b6ec9eac9d88b4a439746ca80bc904fa893ba/games/current/board.1904.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 4,
+    "roll": 4
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1905,
+    "time": "2023-01-11T00:11:11.011Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3a0a6b2bb725d624fb0c3eb619bc044cb782d9e4/games/current/board.1905.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 13,
+    "toPosition": 14,
+    "roll": 1
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1906,
+    "time": "2023-01-11T00:11:55.517Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/59e3d40667fbc0f7281b6abdac23115c7cc6a851/games/current/board.1906.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1907,
+    "time": "2023-01-11T04:11:11.245Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6312f2b8ba7c149ffbea32b228055bc6e9ec9b9c/games/current/board.1907.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
+    "roll": 1
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1908,
+    "time": "2023-01-11T09:07:05.551Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c3af93c3201519c359097b99cbdcd6123d6982d9/games/current/board.1908.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 4,
+    "roll": 4
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1909,
+    "time": "2023-01-11T09:07:45.868Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/de24f733382cc0191a7fceafccff673c4d284efa/games/current/board.1909.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 9,
+    "roll": 3
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1910,
+    "time": "2023-01-11T09:09:05.957Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/905db53fb94b95119e6d3eb22a10b1950c9ded13/games/current/board.1910.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 13,
+    "toPosition": 14,
+    "roll": 1
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1911,
+    "time": "2023-01-11T09:09:46.385Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/a4d1efba52920a4b5ed1693fed25c410b7af8eb7/games/current/board.1911.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1912,
+    "time": "2023-01-11T09:11:08.044Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/00dd590851bb5376e1c526a794857461cb4b8900/games/current/board.1912.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 12,
+    "roll": 3
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1913,
+    "time": "2023-01-11T13:40:08.306Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/5b13aca4d52407891c5a9d94eb6b0dfb21793fa6/games/current/board.1913.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
+    "roll": 1
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1914,
+    "time": "2023-01-11T16:12:50.482Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/5a4a5f69ba7837b655477c514df5cdbf6323ebfe/games/current/board.1914.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1915,
+    "time": "2023-01-11T18:36:16.823Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ac2b4d1ec8df55240ad3f82a30123bac9ad73ade/games/current/board.1915.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 6,
+    "roll": 4
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1916,
+    "time": "2023-01-11T18:38:42.811Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 4,
+    "roll": 4
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1917,
+    "time": "2023-01-11T18:41:56.316Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f2228342473db18723ebd71e622814ebfd0bef51/games/current/board.1917.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 12,
+    "toPosition": 15,
+    "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1917,
+    "time": "2023-01-11T18:41:56.316Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0f75b5a79185cf3008f263b425c622d42224804d/games/current/board.1917.svg",
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1918,
+    "time": "2023-01-11T18:42:51.547Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/77862a13b905f50194f303b085d70f7554ded6f1/games/current/board.1918.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1919,
+    "time": "2023-01-11T19:26:49.986Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/fb30572638e9540d3e1d5b96321dbc18613a803f/games/current/board.1919.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1920,
+    "time": "2023-01-11T19:35:20.170Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4d790a3204f942e2aaf8deb9b0282d1dcef5c4db/games/current/board.1920.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 8,
+    "roll": 2
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1921,
+    "time": "2023-01-11T19:36:39.350Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/03a648187d0e93bcc007b9c56908384b2b1f9f90/games/current/board.1921.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 4,
+    "roll": 4
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1922,
+    "time": "2023-01-11T19:37:22.772Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0a94d16bd172af83c4d7328340d50b369077c54f/games/current/board.1922.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
+    "roll": 1
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1923,
+    "time": "2023-01-11T19:39:11.903Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/bb6bb7dc0fe9489d397ae7bd67b05fee91c4cc24/games/current/board.1923.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1924,
+    "time": "2023-01-11T19:40:06.174Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/9f9a2082ba831e0d9f4a44589c0fa0e6d70bfb32/games/current/board.1924.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 10,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1925,
+    "time": "2023-01-11T19:43:09.482Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1b31aa351d375814e9f8d53dd326f8a6ea765c97/games/current/board.1925.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1926,
+    "time": "2023-01-11T19:45:27.731Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/14ae59bb68e918f586cbbfba801d9358f7a22084/games/current/board.1926.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 13,
+    "roll": 3
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1927,
+    "time": "2023-01-11T19:46:43.494Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/fc907567712d572d9531bae129050294afb20ac6/games/current/board.1927.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
+    "roll": 1
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1928,
+    "time": "2023-01-11T21:14:47.250Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6ed1459d6f2c76135d8838e19d039d66f3ea2422/games/current/board.1928.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 5,
+    "roll": 3
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1929,
+    "time": "2023-01-12T03:22:44.504Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e501fb7475455675b1745b72dd97e730b7eb1610/games/current/board.1929.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1930,
+    "time": "2023-01-12T03:24:08.915Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/bb2aba8f88f8cebbf936b4b8f538241d23490405/games/current/board.1930.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
+    "roll": 2
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1931,
+    "time": "2023-01-12T12:20:39.144Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/844e4a0c0754ea5367ec16a779c2066ed252c75e/games/current/board.1931.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 7,
+    "roll": 3
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1932,
+    "time": "2023-01-12T14:04:00.928Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6f6e349c689a117a867bec37a85cb1a88048ad8e/games/current/board.1932.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 6,
+    "roll": 1
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1933,
+    "time": "2023-01-12T14:52:17.842Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f890b76b8b67fd15dcc83c960e06e7ecf144dca4/games/current/board.1933.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 9,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1934,
+    "time": "2023-01-13T02:56:40.841Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ee7814691c581a95d839f44dbde36763fe9493e4/games/current/board.1934.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 9,
+    "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1935,
+    "time": "2023-01-13T12:04:55.352Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/92ed673defcd8904dfb3bb172a730ee102f058b0/games/current/board.1935.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 4,
+    "roll": 1
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1936,
+    "time": "2023-01-13T12:05:41.223Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/46d5053d520b8d8296cc4390bcf3febb6bbd783a/games/current/board.1936.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 7,
+    "roll": 3
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1937,
+    "time": "2023-01-13T14:33:31.226Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/70a18c5afea532851079a056df13f0cb3a0873cd/games/current/board.1937.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
+    "roll": 1
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1938,
+    "time": "2023-01-13T15:10:37.864Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/79d25d342de5865633022c93478fc3ac2c9ec634/games/current/board.1938.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 4,
+    "roll": 4
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1939,
+    "time": "2023-01-13T15:11:58.738Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/bb8e96a13c07386a7dcf113af3d4eb474c428aba/games/current/board.1939.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 10,
+    "roll": 3
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1940,
+    "time": "2023-01-13T16:58:04.151Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7d4870af7e97ffea096425c6c1c9979adb82e4c6/games/current/board.1940.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 3,
+    "roll": 2
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1941,
+    "time": "2023-01-13T18:53:34.906Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d39090cd4996e4cb982b7bab35870a0fbae63f3d/games/current/board.1941.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 12,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1942,
+    "time": "2023-01-13T23:50:15.128Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/894cd83c3aac196f8ba02aa3d6af23cdca432c2d/games/current/board.1942.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 12,
+    "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1943,
+    "time": "2023-01-13T23:52:07.819Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 13,
+    "toPosition": 15,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1944,
+    "time": "2023-01-14T02:23:04.062Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/69a4de68e83bda548ba25591cc79cd283730e843/games/current/board.1944.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 8,
+    "roll": 3
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1944,
+    "time": "2023-01-14T02:23:04.062Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ebd04237ea6005b93dab880edd924840c6c9f09b/games/current/board.1944.svg",
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
+  },
+  {
+    "username": "MaqC254",
+    "issue": 1945,
+    "time": "2023-01-14T05:54:20.870Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/dc6ceacc0d4abf7b96a88c20da077f297b9dd424/games/current/board.1945.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 9,
+    "roll": 4
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1946,
+    "time": "2023-01-14T15:29:53.584Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/31274314553287c18aa335cc06c367e2c367d3eb/games/current/board.1946.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 9,
+    "roll": 1
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1947,
+    "time": "2023-01-14T16:58:24.393Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0e80199ceb770253a67396c7a1147ce15d93ef6c/games/current/board.1947.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "jjvbarbosa",
+    "issue": 1948,
+    "time": "2023-01-14T19:00:08.813Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c6daf2903c70ab76e2bb5f156e178fcb8f987ad4/games/current/board.1948.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1949,
+    "time": "2023-01-14T21:25:06.056Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/93df26906ce4ffc8cd747e2d163c71713177b31a/games/current/board.1949.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1950,
+    "time": "2023-01-15T06:11:03.559Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/fa65598965fdbef6f0e9230efd8d2eaa980a2dc1/games/current/board.1950.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 12,
+    "toPosition": 15,
+    "roll": 3
+  },
+  {
+    "username": "soominkiminsoo",
+    "issue": 1951,
+    "time": "2023-01-15T15:07:00.383Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/fa680652ed88e1aa2800893ef1ea6ce0e7fd6e57/games/current/board.1951.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 4,
+    "roll": 1
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1952,
+    "time": "2023-01-15T16:41:51.591Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/5c83e86196e786094bdef950db1109bcce86552a/games/current/board.1952.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 3,
+    "roll": 1
+  },
+  {
+    "username": "OpenSauce",
+    "issue": 1953,
+    "time": "2023-01-15T21:17:05.024Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/95ecf0cfe5f9c20dd9ee453edb258ed0ecfb8309/games/current/board.1953.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1954,
+    "time": "2023-01-16T06:15:58.592Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/622cbe91d58edbb5c0dfb47d6750258355930214/games/current/board.1954.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 11,
+    "roll": 2
+  },
+  {
+    "username": "tikocty",
+    "issue": 1955,
+    "time": "2023-01-16T17:58:41.246Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/dfc46d4c80dfbec13b63a6832a54e46528fb9469/games/current/board.1955.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 7,
+    "roll": 3
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1956,
+    "time": "2023-01-16T18:41:13.198Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8f9415920aa163ee139cb9a1de7b7f8449a53234/games/current/board.1956.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 12,
+    "roll": 1
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1957,
+    "time": "2023-01-16T23:38:04.754Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c585300e78306021ef13ae9bc17f5536846644f0/games/current/board.1957.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 10,
+    "roll": 3
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1958,
+    "time": "2023-01-17T04:36:00.922Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/bf971c90e860c4aa5401579eb923f2e315921b87/games/current/board.1958.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 12,
+    "toPosition": 14,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1959,
+    "time": "2023-01-17T04:37:53.482Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/595d682cd16779aaf9f404ce21c59c33f3a18a1d/games/current/board.1959.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
+    "roll": 2
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1960,
+    "time": "2023-01-17T14:00:20.920Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1d0c08101ae92560bf78a35f483752236081a26c/games/current/board.1960.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
+    "roll": 2
+  },
+  {
+    "username": "guru2050",
+    "issue": 1961,
+    "time": "2023-01-17T23:40:20.476Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c1d840e5ccc5057d4344db83979cb1f26331e8df/games/current/board.1961.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
+    "roll": 1
+  },
+  {
+    "username": "tikocty",
+    "issue": 1962,
+    "time": "2023-01-18T17:21:30.987Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e5910145fd536fff2e00538f4446f786941bbbf7/games/current/board.1962.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1963,
+    "time": "2023-01-18T18:11:43.428Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1f6e25e87c68d845288bcbb30c8790a0dff53bcd/games/current/board.1963.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 8,
+    "roll": 3
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1964,
+    "time": "2023-01-18T18:12:20.504Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/76591ee520a10ef0d83fe9f6379a3c7f3b2a1cce/games/current/board.1964.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
+    "roll": 1
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1965,
+    "time": "2023-01-18T18:12:51.078Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b02ee5949d09f87775a20361d0d7ab089699d984/games/current/board.1965.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1966,
+    "time": "2023-01-18T18:13:27.802Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8e66364ae3940c7e9656b4499e72334be4059bf0/games/current/board.1966.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
+    "roll": 1
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1967,
+    "time": "2023-01-18T18:43:55.875Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/a9a1bc394b0b1319edc93cd6f01a49f79d8852c3/games/current/board.1967.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1968,
+    "time": "2023-01-18T19:06:39.207Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/80a3c0e599cd927d00b6a255ebc7f8808036ab93/games/current/board.1968.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 13,
+    "roll": 3
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1969,
+    "time": "2023-01-18T19:50:06.659Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/05984c4a5f3a977c87dfcceb723c938982abb2cc/games/current/board.1969.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
+    "roll": 2
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1970,
+    "time": "2023-01-18T23:37:31.932Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8020762b7116aa9f23a51ecf740ab7554f62a736/games/current/board.1970.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1971,
+    "time": "2023-01-19T04:38:33.259Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3bde50080cc656e88587c785e5b06c485f054db5/games/current/board.1971.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 7,
+    "roll": 2
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1972,
+    "time": "2023-01-19T11:36:04.633Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7aa68b65464f39d60ef0f8093ac1f2819dd0e646/games/current/board.1972.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 13,
+    "toPosition": 14,
+    "roll": 1
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1973,
+    "time": "2023-01-19T12:11:56.941Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2803191972615b740bed42faf47959fdb8dbe49c/games/current/board.1973.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1974,
+    "time": "2023-01-19T12:12:54.045Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/91d02aff2e6d0b405241a6d515f96a28bd250e90/games/current/board.1974.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
+    "roll": 1
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1975,
+    "time": "2023-01-19T16:45:05.384Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6f2a9032672f348dbdc54c1f70304a47f116be0f/games/current/board.1975.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 11,
+    "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1976,
+    "time": "2023-01-20T15:01:51.991Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2dd10daff649d2298a3b12d5f0dd1ca0bea75fa5/games/current/board.1976.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 7,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1977,
+    "time": "2023-01-20T15:16:20.319Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7453291d3408e619fd0bdfa71f7a8b068a1c6505/games/current/board.1977.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 13,
+    "roll": 2
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1978,
+    "time": "2023-01-20T20:38:32.743Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/276407bc6999f217f0bea047816723e538d37a2c/games/current/board.1978.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 8,
+    "roll": 1
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1979,
+    "time": "2023-01-20T20:39:20.182Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1cba72cb585c2934eb0f46498b58b1e9b9a7f4ef/games/current/board.1979.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
+    "roll": 1
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1980,
+    "time": "2023-01-21T04:54:54.062Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/781baf24a5fa90519c8d0f1d56959950e41455a0/games/current/board.1980.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1981,
+    "time": "2023-01-21T18:24:33.966Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2169dd24792b69bc57b9e919740b284e672ad678/games/current/board.1981.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 11,
+    "roll": 3
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1982,
+    "time": "2023-01-21T18:42:02.911Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/667f46b4df7348ef3def0e446ae0216129afe3d0/games/current/board.1982.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 4,
+    "roll": 1
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1983,
+    "time": "2023-01-21T18:55:57.069Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/632af413f64cbb04cf31d3a11ec3641b0250ac97/games/current/board.1983.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 7,
+    "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1984,
+    "time": "2023-01-23T00:09:54.274Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/eab9c47daac919d6b09a95124f52d018f809da83/games/current/board.1984.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 13,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1985,
+    "time": "2023-01-23T02:22:18.162Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/773442e64a2073f4a28b13d09fb314bfe5100dcf/games/current/board.1985.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 13,
+    "toPosition": 15,
+    "roll": 2
+  },
+  {
+    "username": "Fabianofski",
+    "issue": 1986,
+    "time": "2023-01-24T20:29:27.363Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7df71fd951d73616a9a155c54889f310b010941b/games/current/board.1986.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 13,
+    "toPosition": 15,
+    "roll": 2
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1987,
+    "time": "2023-01-25T04:32:08.796Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3ad35128f8e35a5f7aafccd63cff5eb2cd0d5c64/games/current/board.1987.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 8,
+    "roll": 1
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1988,
+    "time": "2023-01-25T04:43:23.470Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b1080a6d8af396c56dc395bc3a39458828876bc0/games/current/board.1988.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 11,
+    "roll": 3
+  },
+  {
+    "username": "fakeYanss",
+    "issue": 1989,
+    "time": "2023-01-25T11:44:23.944Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b842c7f93b8274fb99f7d2a3de9701189deaa8e4/games/current/board.1989.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "CostasAK",
+    "issue": 1990,
+    "time": "2023-01-25T13:21:12.059Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 13,
+    "roll": 2
+  },
+  {
+    "username": "End3r6",
+    "issue": 1991,
+    "time": "2023-01-27T04:25:50.740Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
+  },
+  {
+    "username": "End3r6",
+    "issue": 1991,
+    "time": "2023-01-27T04:25:50.740Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 3
+  },
+  {
+    "username": "End3r6",
+    "issue": 1991,
+    "time": "2023-01-27T04:25:50.740Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/768be6cdb7c0fd62e79d520c15acb86df7de964e/games/current/board.1991.svg",
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
+  },
+  {
+    "username": "End3r6",
+    "issue": 1991,
+    "time": "2023-01-27T04:25:50.741Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/81cda4ce78aec45c3c172557e2f7c2b083c19e86/games/current/board.1991.svg",
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 3
+  },
+  {
+    "username": "mari1647iv",
+    "issue": 1992,
+    "time": "2023-01-27T15:41:50.402Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/9257ef66f84409641cf3e2c7acceb8c934aa5d6f/games/current/board.1992.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 7,
+    "roll": 1
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1993,
+    "time": "2023-01-27T15:58:40.045Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b6ac5827f14f44993fae66cd11664e36be85eb71/games/current/board.1993.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 13,
+    "toPosition": 14,
+    "roll": 1
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 1994,
+    "time": "2023-01-27T15:59:08.388Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": true
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
+    "roll": 1
+  }
+]
