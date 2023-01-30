@@ -114,6 +114,23 @@
     "time": "2023-01-30T15:54:02.344Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c6c2d9ee7ea2d8e26165e756e58df7cdea096e95/games/current/board.2001.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "congthanhng",
+    "issue": 2002,
+    "time": "2023-01-30T16:50:32.808Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null,
     "events": {
       "rosetteClaimed": false,
