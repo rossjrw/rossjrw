@@ -78,5 +78,34 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "congthanhng",
+    "issue": 2000,
+    "time": "2023-01-30T15:36:28.021Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/742dda9192b1c7bf36198cc00b803c7104fde3a0/games/current/board.2000.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 4,
+    "roll": 3
+  },
+  {
+    "username": "congthanhng",
+    "issue": 2000,
+    "time": "2023-01-30T15:36:28.021Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
