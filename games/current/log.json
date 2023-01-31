@@ -192,5 +192,46 @@
     "fromPosition": 2,
     "toPosition": 4,
     "roll": 2
+  },
+  {
+    "username": "Hrushal-Nikhare",
+    "issue": 2006,
+    "time": "2023-01-31T07:56:18.798Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 10,
+    "roll": 2
+  },
+  {
+    "username": "Hrushal-Nikhare",
+    "issue": 2006,
+    "time": "2023-01-31T07:56:18.798Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/313500b9a30c47ab16b1062984af401ec984d7fe/games/current/board.2006.svg",
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
+  },
+  {
+    "username": "Hrushal-Nikhare",
+    "issue": 2006,
+    "time": "2023-01-31T07:56:18.799Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
