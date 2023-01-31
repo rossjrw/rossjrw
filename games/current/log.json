@@ -131,7 +131,7 @@
     "time": "2023-01-30T16:50:32.808Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ad5f67e27e76d4b848966307d54ebbe8684903d0/games/current/board.2002.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -140,6 +140,23 @@
     },
     "fromPosition": 0,
     "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "beingmerry",
+    "issue": 2003,
+    "time": "2023-01-31T00:38:11.989Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
     "roll": 2
   }
 ]
