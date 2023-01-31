@@ -148,7 +148,7 @@
     "time": "2023-01-31T00:38:11.989Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ef5bbf883ed0b12ee760106aae84dde94d1553a3/games/current/board.2003.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -158,5 +158,22 @@
     "fromPosition": 3,
     "toPosition": 5,
     "roll": 2
+  },
+  {
+    "username": "congthanhng",
+    "issue": 2004,
+    "time": "2023-01-31T05:50:55.732Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 8,
+    "roll": 4
   }
 ]
