@@ -240,7 +240,7 @@
     "time": "2023-02-01T13:09:46.291Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f317dafda8426fe6393df8d8c8961ae624341be0/games/current/board.2007.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -249,6 +249,23 @@
     },
     "fromPosition": 5,
     "toPosition": 8,
+    "roll": 3
+  },
+  {
+    "username": "TejaTadepalli",
+    "issue": 2008,
+    "time": "2023-02-01T13:10:26.411Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
     "roll": 3
   }
 ]
