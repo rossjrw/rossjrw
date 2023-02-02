@@ -325,7 +325,7 @@
     "time": "2023-02-02T15:52:36.850Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/78b57ca2c41eea1a2a27e032e386345ee7e1bfba/games/current/board.2012.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -334,6 +334,23 @@
     },
     "fromPosition": 10,
     "toPosition": 12,
+    "roll": 2
+  },
+  {
+    "username": "Christian-Seiler",
+    "issue": 2013,
+    "time": "2023-02-02T17:38:28.500Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
     "roll": 2
   }
 ]
