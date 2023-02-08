@@ -444,7 +444,7 @@
     "time": "2023-02-08T15:18:41.411Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/65316672f66ed81f3bdcd03741bc8730b3a99684/games/current/board.2020.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -454,5 +454,22 @@
     "fromPosition": 2,
     "toPosition": 5,
     "roll": 3
+  },
+  {
+    "username": "DannyDoneva96",
+    "issue": 2021,
+    "time": "2023-02-08T19:09:01.813Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
   }
 ]
