@@ -461,7 +461,7 @@
     "time": "2023-02-08T19:09:01.813Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3e4daf8709c22c6d0f453660476f36cd104fa644/games/current/board.2021.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -471,5 +471,22 @@
     "fromPosition": 2,
     "toPosition": 4,
     "roll": 2
+  },
+  {
+    "username": "Christian-Seiler",
+    "issue": 2022,
+    "time": "2023-02-09T17:06:23.134Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 7,
+    "roll": 3
   }
 ]
