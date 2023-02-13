@@ -563,7 +563,7 @@
     "time": "2023-02-12T16:52:08.698Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8a110f446f9c51b811e807518a5588d5212ba800/games/current/board.2030.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -573,5 +573,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "sagodi97",
+    "issue": 2031,
+    "time": "2023-02-13T02:52:36.290Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
   }
 ]
