@@ -631,7 +631,7 @@
     "time": "2023-02-15T23:15:52.331Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c271c5cbcdc1ab9b4870ee82d711ba53def1a44b/games/current/board.2034.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -641,5 +641,22 @@
     "fromPosition": 4,
     "toPosition": 6,
     "roll": 2
+  },
+  {
+    "username": "tygutowski",
+    "issue": 2035,
+    "time": "2023-02-16T00:16:22.838Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
+    "roll": 1
   }
 ]
