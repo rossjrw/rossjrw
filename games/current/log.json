@@ -784,7 +784,7 @@
     "time": "2023-02-19T13:52:58.603Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8913f6119d88f00c308d717e148f891ef92858d0/games/current/board.2043.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -793,6 +793,23 @@
     },
     "fromPosition": 4,
     "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "normalwalrus",
+    "issue": 2044,
+    "time": "2023-02-20T07:59:22.303Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
     "roll": 2
   }
 ]
