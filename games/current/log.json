@@ -869,7 +869,7 @@
     "time": "2023-02-20T14:43:02.661Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3245a01bca5cc953ee51c62c77739862aa2ab1ce/games/current/board.2048.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -879,5 +879,22 @@
     "fromPosition": 7,
     "toPosition": 10,
     "roll": 3
+  },
+  {
+    "username": "spetz83",
+    "issue": 2050,
+    "time": "2023-02-21T05:23:07.301Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 10,
+    "roll": 1
   }
 ]
