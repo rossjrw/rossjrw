@@ -1068,7 +1068,7 @@
     "time": "2023-02-24T13:46:04.711Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e53dbdc70254f83599a7c52ea3e7249f596af6d0/games/current/board.2060.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1078,5 +1078,22 @@
     "fromPosition": 2,
     "toPosition": 4,
     "roll": 2
+  },
+  {
+    "username": "le2sky",
+    "issue": 2061,
+    "time": "2023-02-25T03:26:49.090Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   }
 ]
