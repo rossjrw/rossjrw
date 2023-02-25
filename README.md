@@ -5,7 +5,7 @@ We're playing
 
 <p align="center">
   <b>It's the
-  :black_circle:black
+  :white_circle:white
   team's turn.</b>
 </p>
 
@@ -16,18 +16,18 @@ You're on a team! :wave:
   check back later, or [ask a
   friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github) to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-  **:black_circle:black** team.
+  **:white_circle:white** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2064.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2065.svg"></p>
 
-  **:black_circle:Black team:**
-  You rolled a 1!
+  **:white_circle:White team:**
+  You rolled a 3!
 What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
-  | [    Move a new piece to tile 1](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [    Move the piece on tile 4 to tile 5](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%404-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move a new piece to tile 3](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move the piece on tile 6 to tile 9](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%406-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -46,7 +46,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td><b><a href="https://github.com/Murdeala">@Murdeala</a></b> (9)<br><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (8)<br><b><a href="https://github.com/congthanhng">@congthanhng</a></b> (4)<br><b><a href="https://github.com/Christian-Seiler">@Christian-Seiler</a></b> (2)<br><b><a href="https://github.com/Hrushal-Nikhare">@Hrushal-Nikhare</a></b> (1)<br><b><a href="https://github.com/DannyDoneva96">@DannyDoneva96</a></b> (1)<br><b><a href="https://github.com/shpatrickguo">@shpatrickguo</a></b> (1)<br><b><a href="https://github.com/tb148">@tb148</a></b> (1)<br><b><a href="https://github.com/sagodi97">@sagodi97</a></b> (1)<br><b><a href="https://github.com/bnidevs">@bnidevs</a></b> (1)<br><b><a href="https://github.com/le2sky">@le2sky</a></b> (1)</td>
+        <td><b><a href="https://github.com/Murdeala">@Murdeala</a></b> (10)<br><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (8)<br><b><a href="https://github.com/congthanhng">@congthanhng</a></b> (4)<br><b><a href="https://github.com/Christian-Seiler">@Christian-Seiler</a></b> (2)<br><b><a href="https://github.com/Hrushal-Nikhare">@Hrushal-Nikhare</a></b> (1)<br><b><a href="https://github.com/DannyDoneva96">@DannyDoneva96</a></b> (1)<br><b><a href="https://github.com/shpatrickguo">@shpatrickguo</a></b> (1)<br><b><a href="https://github.com/tb148">@tb148</a></b> (1)<br><b><a href="https://github.com/sagodi97">@sagodi97</a></b> (1)<br><b><a href="https://github.com/bnidevs">@bnidevs</a></b> (1)<br><b><a href="https://github.com/le2sky">@le2sky</a></b> (1)</td>
         <td><b><a href="https://github.com/TejaTadepalli">@TejaTadepalli</a></b> (30)<br><b><a href="https://github.com/Sam948-byte">@Sam948-byte</a></b> (1)<br><b><a href="https://github.com/beingmerry">@beingmerry</a></b> (1)<br><b><a href="https://github.com/tygutowski">@tygutowski</a></b> (1)<br><b><a href="https://github.com/normalwalrus">@normalwalrus</a></b> (1)<br><b><a href="https://github.com/spetz83">@spetz83</a></b> (1)</td>
       </tr>
     </tbody>
@@ -124,7 +124,8 @@ What would you like to do?
   | 25th Feb 2023 03:26 | **65** | :black_circle: **[@le2sky](https://github.com/le2sky)** moved a black piece onto the board to position 3    | [#2061](https://github.com/rossjrw/rossjrw/issues/2061) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/7f5e17f06da5d4de06541d885969934a543c3403/games/current/board.2061.svg) |
   | 25th Feb 2023 09:43 | **66** | :white_circle: **[@TejaTadepalli](https://github.com/TejaTadepalli)** moved a white piece from position 10 to position 14  — claimed a rosette :rosette:  | [#2062](https://github.com/rossjrw/rossjrw/issues/2062) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/0806b9ce65c3de899883bd7d3f0f740e79da6896/games/current/board.2062.svg) |
   | 25th Feb 2023 09:44 | **67** | :white_circle: **[@TejaTadepalli](https://github.com/TejaTadepalli)** moved a white piece from position 6 to position 8  — claimed a rosette :rosette:  | [#2063](https://github.com/rossjrw/rossjrw/issues/2063) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/fa345d75ddcb0ac7a443646389b3916790be53ab/games/current/board.2063.svg) |
-  | 25th Feb 2023 09:45 | **68** | :white_circle: **[@TejaTadepalli](https://github.com/TejaTadepalli)** moved a white piece from position 3 to position 6    | [#2064](https://github.com/rossjrw/rossjrw/issues/2064) |  |
+  | 25th Feb 2023 09:45 | **68** | :white_circle: **[@TejaTadepalli](https://github.com/TejaTadepalli)** moved a white piece from position 3 to position 6    | [#2064](https://github.com/rossjrw/rossjrw/issues/2064) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/b11774492f8bc85cda6180bdcf7e0df7398fd574/games/current/board.2064.svg) |
+  | 25th Feb 2023 13:41 | **69** | :black_circle: **[@Murdeala](https://github.com/Murdeala)** moved a black piece onto the board to position 1    | [#2065](https://github.com/rossjrw/rossjrw/issues/2065) |  |
 
 </details>
 
