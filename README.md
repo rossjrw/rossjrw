@@ -18,7 +18,7 @@ You're on a team! :wave:
 * If you've not yet played a turn this game, make a move now to join the
   **:black_circle:black** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2082.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2083.svg"></p>
 
   **:black_circle:Black team:**
   You rolled a 1!
@@ -28,7 +28,7 @@ What would you like to do?
 | --- |
   | [    Move the piece on tile 1 to tile 2](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%401-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
   | [    Move the piece on tile 4 to tile 5](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%404-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [:rosette:    Move the piece on tile 13 to tile 14](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%4013-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [  :rocket:  Ascend the piece on tile 14 ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%4014-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -47,7 +47,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (13)<br><b><a href="https://github.com/Murdeala">@Murdeala</a></b> (11)<br><b><a href="https://github.com/congthanhng">@congthanhng</a></b> (4)<br><b><a href="https://github.com/Christian-Seiler">@Christian-Seiler</a></b> (2)<br><b><a href="https://github.com/Hrushal-Nikhare">@Hrushal-Nikhare</a></b> (1)<br><b><a href="https://github.com/DannyDoneva96">@DannyDoneva96</a></b> (1)<br><b><a href="https://github.com/shpatrickguo">@shpatrickguo</a></b> (1)<br><b><a href="https://github.com/tb148">@tb148</a></b> (1)<br><b><a href="https://github.com/sagodi97">@sagodi97</a></b> (1)<br><b><a href="https://github.com/bnidevs">@bnidevs</a></b> (1)<br><b><a href="https://github.com/le2sky">@le2sky</a></b> (1)</td>
+        <td><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (14)<br><b><a href="https://github.com/Murdeala">@Murdeala</a></b> (11)<br><b><a href="https://github.com/congthanhng">@congthanhng</a></b> (4)<br><b><a href="https://github.com/Christian-Seiler">@Christian-Seiler</a></b> (2)<br><b><a href="https://github.com/Hrushal-Nikhare">@Hrushal-Nikhare</a></b> (1)<br><b><a href="https://github.com/DannyDoneva96">@DannyDoneva96</a></b> (1)<br><b><a href="https://github.com/shpatrickguo">@shpatrickguo</a></b> (1)<br><b><a href="https://github.com/tb148">@tb148</a></b> (1)<br><b><a href="https://github.com/sagodi97">@sagodi97</a></b> (1)<br><b><a href="https://github.com/bnidevs">@bnidevs</a></b> (1)<br><b><a href="https://github.com/le2sky">@le2sky</a></b> (1)</td>
         <td><b><a href="https://github.com/TejaTadepalli">@TejaTadepalli</a></b> (36)<br><b><a href="https://github.com/Sam948-byte">@Sam948-byte</a></b> (1)<br><b><a href="https://github.com/beingmerry">@beingmerry</a></b> (1)<br><b><a href="https://github.com/tygutowski">@tygutowski</a></b> (1)<br><b><a href="https://github.com/normalwalrus">@normalwalrus</a></b> (1)<br><b><a href="https://github.com/spetz83">@spetz83</a></b> (1)<br><b><a href="https://github.com/visualdoj">@visualdoj</a></b> (1)<br><b><a href="https://github.com/aquila-const">@aquila-const</a></b> (1)</td>
       </tr>
     </tbody>
@@ -141,7 +141,8 @@ What would you like to do?
   | 1st Mar 2023 06:05 | **81** | :white_circle: **[@aquila-const](https://github.com/aquila-const)** moved a white piece onto the board to position 2    | [#2079](https://github.com/rossjrw/rossjrw/issues/2079) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/0ca9b2afe3eb9002447293bf30882a29bc5b95cc/games/current/board.2079.svg) |
   | 1st Mar 2023 17:20 | **82** | :black_circle: **[@CostasAK](https://github.com/CostasAK)** moved a black piece from position 11 to position 13    | [#2080](https://github.com/rossjrw/rossjrw/issues/2080) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/48f1096c2a20c3a30ae724e0bd3ed2e6d862dcb8/games/current/board.2080.svg) |
   | 1st Mar 2023 18:02 | **83** | :white_circle: **[@TejaTadepalli](https://github.com/TejaTadepalli)** moved a white piece from position 2 to position 4  — claimed a rosette :rosette:  | [#2081](https://github.com/rossjrw/rossjrw/issues/2081) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/a28190bb9e892804849aa1a4bf0112b6d0a6c754/games/current/board.2081.svg) |
-  | 1st Mar 2023 18:11 | **84** | :white_circle: **[@TejaTadepalli](https://github.com/TejaTadepalli)** moved a white piece from position 8 to position 10    | [#2082](https://github.com/rossjrw/rossjrw/issues/2082) |  |
+  | 1st Mar 2023 18:11 | **84** | :white_circle: **[@TejaTadepalli](https://github.com/TejaTadepalli)** moved a white piece from position 8 to position 10    | [#2082](https://github.com/rossjrw/rossjrw/issues/2082) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/55738c1d7f12aecee27fd64b2d39eb9473cc0840/games/current/board.2082.svg) |
+  | 2nd Mar 2023 13:28 | **85** | :black_circle: **[@CostasAK](https://github.com/CostasAK)** moved a black piece from position 13 to position 14  — claimed a rosette :rosette:  | [#2083](https://github.com/rossjrw/rossjrw/issues/2083) |  |
 
 </details>
 
