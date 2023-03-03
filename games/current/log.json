@@ -1556,7 +1556,7 @@
     "time": "2023-03-03T14:08:10.449Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/017edf4ad4137af5df4d33b3dc5772bd779d6965/games/current/board.2092.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1565,6 +1565,23 @@
     },
     "fromPosition": 8,
     "toPosition": 10,
+    "roll": 2
+  },
+  {
+    "username": "bnidevs",
+    "issue": 2093,
+    "time": "2023-03-03T17:50:47.641Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
     "roll": 2
   }
 ]
