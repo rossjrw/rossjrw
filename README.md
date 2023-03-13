@@ -5,7 +5,7 @@ We're playing
 
 <p align="center">
   <b>It's the
-  :black_circle:black
+  :white_circle:white
   team's turn.</b>
 </p>
 
@@ -16,18 +16,17 @@ You're on a team! :wave:
   check back later, or [ask a
   friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github) to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-  **:black_circle:black** team.
+  **:white_circle:white** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2127.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2128.svg"></p>
 
-  **:black_circle:Black team:**
-  You rolled a 4!
+  **:white_circle:White team:**
+  You rolled a 2!
 What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
-  | [    Move the piece on tile 3 to tile 7](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-4%403-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [    Move the piece on tile 8 to tile 12](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-4%408-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [:rosette:    Move the piece on tile 6 to tile 8](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%406-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -46,7 +45,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (27)<br><b><a href="https://github.com/Murdeala">@Murdeala</a></b> (16)<br><b><a href="https://github.com/congthanhng">@congthanhng</a></b> (4)<br><b><a href="https://github.com/Christian-Seiler">@Christian-Seiler</a></b> (2)<br><b><a href="https://github.com/bnidevs">@bnidevs</a></b> (2)<br><b><a href="https://github.com/Hrushal-Nikhare">@Hrushal-Nikhare</a></b> (1)<br><b><a href="https://github.com/DannyDoneva96">@DannyDoneva96</a></b> (1)<br><b><a href="https://github.com/shpatrickguo">@shpatrickguo</a></b> (1)<br><b><a href="https://github.com/tb148">@tb148</a></b> (1)<br><b><a href="https://github.com/sagodi97">@sagodi97</a></b> (1)<br><b><a href="https://github.com/le2sky">@le2sky</a></b> (1)<br><b><a href="https://github.com/zackfall">@zackfall</a></b> (1)</td>
+        <td><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (28)<br><b><a href="https://github.com/Murdeala">@Murdeala</a></b> (16)<br><b><a href="https://github.com/congthanhng">@congthanhng</a></b> (4)<br><b><a href="https://github.com/Christian-Seiler">@Christian-Seiler</a></b> (2)<br><b><a href="https://github.com/bnidevs">@bnidevs</a></b> (2)<br><b><a href="https://github.com/Hrushal-Nikhare">@Hrushal-Nikhare</a></b> (1)<br><b><a href="https://github.com/DannyDoneva96">@DannyDoneva96</a></b> (1)<br><b><a href="https://github.com/shpatrickguo">@shpatrickguo</a></b> (1)<br><b><a href="https://github.com/tb148">@tb148</a></b> (1)<br><b><a href="https://github.com/sagodi97">@sagodi97</a></b> (1)<br><b><a href="https://github.com/le2sky">@le2sky</a></b> (1)<br><b><a href="https://github.com/zackfall">@zackfall</a></b> (1)</td>
         <td><b><a href="https://github.com/TejaTadepalli">@TejaTadepalli</a></b> (55)<br><b><a href="https://github.com/Sam948-byte">@Sam948-byte</a></b> (1)<br><b><a href="https://github.com/beingmerry">@beingmerry</a></b> (1)<br><b><a href="https://github.com/tygutowski">@tygutowski</a></b> (1)<br><b><a href="https://github.com/normalwalrus">@normalwalrus</a></b> (1)<br><b><a href="https://github.com/spetz83">@spetz83</a></b> (1)<br><b><a href="https://github.com/visualdoj">@visualdoj</a></b> (1)<br><b><a href="https://github.com/aquila-const">@aquila-const</a></b> (1)</td>
       </tr>
     </tbody>
@@ -183,7 +182,8 @@ What would you like to do?
   | 12th Mar 2023 13:23 | **124** | :white_circle: **[@TejaTadepalli](https://github.com/TejaTadepalli)** moved a white piece onto the board to position 3    | [#2123](https://github.com/rossjrw/rossjrw/issues/2123) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/f38e8eb023bbd8892b1a815ebff7b098f3e0a9a1/games/current/board.2123.svg) |
   | 12th Mar 2023 14:10 | **125** | :black_circle: **[@CostasAK](https://github.com/CostasAK)** moved a black piece from position 11 to position 12    | [#2124](https://github.com/rossjrw/rossjrw/issues/2124) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/4606c4c8cb10308fe9f4e778504c7d0360ed4fef/games/current/board.2124.svg) |
   | 12th Mar 2023 19:19 | **126** | :white_circle: **[@TejaTadepalli](https://github.com/TejaTadepalli)** moved a white piece from position 3 to position 6    | [#2126](https://github.com/rossjrw/rossjrw/issues/2126) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/4cc2d24118cf187d2a5ff2898e6338901ccf1d5d/games/current/board.2126.svg) |
-  | 13th Mar 2023 10:41 | **127** | :black_circle: **[@CostasAK](https://github.com/CostasAK)** moved a black piece from position 12 to position 14  — claimed a rosette :rosette:  | [#2127](https://github.com/rossjrw/rossjrw/issues/2127) |  |
+  | 13th Mar 2023 10:41 | **127** | :black_circle: **[@CostasAK](https://github.com/CostasAK)** moved a black piece from position 12 to position 14  — claimed a rosette :rosette:  | [#2127](https://github.com/rossjrw/rossjrw/issues/2127) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/7ba2fb6472a8490ab754ff573ddd1710d8a9d50a/games/current/board.2127.svg) |
+  | 13th Mar 2023 10:41 | **128** | :black_circle: **[@CostasAK](https://github.com/CostasAK)** moved a black piece from position 8 to position 12    | [#2128](https://github.com/rossjrw/rossjrw/issues/2128) |  |
 
 </details>
 
