@@ -5,7 +5,7 @@ We're playing
 
 <p align="center">
   <b>It's the
-  :white_circle:white
+  :black_circle:black
   team's turn.</b>
 </p>
 
@@ -16,18 +16,18 @@ You're on a team! :wave:
   check back later, or [ask a
   friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github) to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-  **:white_circle:white** team.
+  **:black_circle:black** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2151.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2152.svg"></p>
 
-  **:white_circle:White team:**
-  You rolled a 1!
+  **:black_circle:Black team:**
+  You rolled a 3!
 What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
-  | [    Move a new piece to tile 1](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [    Move the piece on tile 4 to tile 5](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%404-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move the piece on tile 2 to tile 5](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%402-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move the piece on tile 3 to tile 6](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%403-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -47,7 +47,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/Murdeala">@Murdeala</a></b> (2)<br><b><a href="https://github.com/zackfall">@zackfall</a></b> (1)</td>
-        <td><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (3)</td>
+        <td><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (4)</td>
       </tr>
     </tbody>
   </table>
@@ -62,7 +62,8 @@ What would you like to do?
   | 15th Mar 2023 12:57 | **3** | :white_circle: **[@CostasAK](https://github.com/CostasAK)** moved a white piece onto the board to position 2    | [#2149](https://github.com/rossjrw/rossjrw/issues/2149) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/41d739fe50b8b6ee3d48c696a350782128852145/games/current/board.2149.svg) |
   | 15th Mar 2023 13:53 | **4** | :black_circle: **[@Murdeala](https://github.com/Murdeala)** moved a black piece onto the board to position 2    | [#2150](https://github.com/rossjrw/rossjrw/issues/2150) |  |
   | 15th Mar 2023 16:31 | **5** | :white_circle: **[@CostasAK](https://github.com/CostasAK)** moved a white piece onto the board to position 3    | [#2151](https://github.com/rossjrw/rossjrw/issues/2151) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/e0ee8c908afc5d0df67a76ef54801f47ce08c144/games/current/board.2151.svg) |
-  | 15th Mar 2023 16:31 | **6** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#2151](https://github.com/rossjrw/rossjrw/issues/2151) |  |
+  | 15th Mar 2023 16:31 | **6** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#2151](https://github.com/rossjrw/rossjrw/issues/2151) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/af89aa084782634823177e68efafb1ee8c79a26a/games/current/board.2151.svg) |
+  | 15th Mar 2023 16:32 | **7** | :white_circle: **[@CostasAK](https://github.com/CostasAK)** moved a white piece onto the board to position 1    | [#2152](https://github.com/rossjrw/rossjrw/issues/2152) |  |
 
 </details>
 
