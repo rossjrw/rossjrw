@@ -439,7 +439,7 @@
     "time": "2023-03-23T05:20:05.430Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/aa7adf88250e394cb2bdfb4b30e45eed08827ddf/games/current/board.2170.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -449,5 +449,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "danielawde9",
+    "issue": 2171,
+    "time": "2023-03-24T19:08:52.419Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
   }
 ]
