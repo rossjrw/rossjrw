@@ -757,7 +757,7 @@
     "time": "2023-04-01T13:55:08.172Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/26186989e443f46019cf6022371d3f0f6384305d/games/current/board.2188.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -767,5 +767,22 @@
     "fromPosition": 4,
     "toPosition": 6,
     "roll": 2
+  },
+  {
+    "username": "Arawns1",
+    "issue": 2189,
+    "time": "2023-04-01T21:24:20.238Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 10,
+    "roll": 1
   }
 ]
