@@ -859,7 +859,7 @@
     "time": "2023-04-02T16:20:08.833Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/54cb2b440be5052deabce412fa8cb8b8edc691c3/games/current/board.2194.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -869,5 +869,22 @@
     "fromPosition": 14,
     "toPosition": 15,
     "roll": 1
+  },
+  {
+    "username": "werdl",
+    "issue": 2195,
+    "time": "2023-04-03T07:19:31.471Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
+    "roll": 2
   }
 ]
