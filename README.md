@@ -5,7 +5,7 @@ We're playing
 
 <p align="center">
   <b>It's the
-  :white_circle:white
+  :black_circle:black
   team's turn.</b>
 </p>
 
@@ -16,19 +16,17 @@ You're on a team! :wave:
   check back later, or [ask a
   friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github) to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-  **:white_circle:white** team.
+  **:black_circle:black** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2197.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2198.svg"></p>
 
-  **:white_circle:White team:**
+  **:black_circle:Black team:**
   You rolled a 2!
 What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
   | [    Move a new piece to tile 2](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [    Move the piece on tile 5 to tile 7](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%405-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [  :rocket:  Ascend the piece on tile 13 ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%4013-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -48,7 +46,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/Murdeala">@Murdeala</a></b> (18)<br><b><a href="https://github.com/zackfall">@zackfall</a></b> (1)<br><b><a href="https://github.com/Hrushal-Nikhare">@Hrushal-Nikhare</a></b> (1)<br><b><a href="https://github.com/danielawde9">@danielawde9</a></b> (1)<br><b><a href="https://github.com/Arawns1">@Arawns1</a></b> (1)<br><b><a href="https://github.com/werdl">@werdl</a></b> (1)</td>
-        <td><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (28)</td>
+        <td><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (29)</td>
       </tr>
     </tbody>
   </table>
@@ -113,7 +111,8 @@ What would you like to do?
   | 3rd Apr 2023 07:19 | **53** | :black_circle: **[@werdl](https://github.com/werdl)** moved a black piece from position 3 to position 5    | [#2195](https://github.com/rossjrw/rossjrw/issues/2195) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/d1745257007540585eccca1c4b5b81597f46ac3f/games/current/board.2195.svg) |
   | 3rd Apr 2023 07:40 | **54** | :white_circle: **[@CostasAK](https://github.com/CostasAK)** moved a white piece from position 10 to position 14  — claimed a rosette :rosette:  | [#2196](https://github.com/rossjrw/rossjrw/issues/2196) |  |
   | 3rd Apr 2023 07:41 | **55** | :white_circle: **[@CostasAK](https://github.com/CostasAK)** moved a white piece from position 4 to position 5 — captured a black piece :crossed_swords:   | [#2197](https://github.com/rossjrw/rossjrw/issues/2197) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/cac43c7362ec3d16e22c66c8c6a6e7adefb8fd38/games/current/board.2197.svg) |
-  | 3rd Apr 2023 07:41 | **56** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#2197](https://github.com/rossjrw/rossjrw/issues/2197) |  |
+  | 3rd Apr 2023 07:41 | **56** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#2197](https://github.com/rossjrw/rossjrw/issues/2197) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/2accfb498a445b0ae0a37ff1889940f0e3d7763a/games/current/board.2197.svg) |
+  | 3rd Apr 2023 07:42 | **57** | :white_circle: **[@CostasAK](https://github.com/CostasAK)** ascended a white piece from position 13 :rocket:    | [#2198](https://github.com/rossjrw/rossjrw/issues/2198) |  |
 
 </details>
 
