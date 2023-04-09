@@ -1378,6 +1378,23 @@
     "time": "2023-04-09T13:10:42.277Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/fe47da759222661c779abd6fbef892004e18c27e/games/current/board.2221.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "Stratis-Dermanoutsos",
+    "issue": 2222,
+    "time": "2023-04-09T14:12:49.596Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null,
     "events": {
       "rosetteClaimed": false,
