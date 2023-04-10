@@ -1480,7 +1480,7 @@
     "time": "2023-04-10T13:41:58.490Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1c554853ec10954c2bf7cfa3f837b6e1a38ff86c/games/current/board.2228.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1490,5 +1490,22 @@
     "fromPosition": 3,
     "toPosition": 4,
     "roll": 1
+  },
+  {
+    "username": "faculerena",
+    "issue": 2229,
+    "time": "2023-04-10T18:47:03.660Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 10,
+    "roll": 2
   }
 ]
