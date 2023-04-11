@@ -1514,6 +1514,23 @@
     "time": "2023-04-10T18:50:15.848Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/a683e506f7b3c6174d11ba687b9d996320137f26/games/current/board.2230.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "nnnolan",
+    "issue": 2231,
+    "time": "2023-04-11T13:32:22.420Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null,
     "events": {
       "rosetteClaimed": false,
