@@ -2036,7 +2036,7 @@
     "time": "2023-04-12T19:46:49.564Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/43bba9f137f4546d00105003d4ae52694f0ead8c/games/current/board.2261.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -2046,5 +2046,22 @@
     "fromPosition": 1,
     "toPosition": 4,
     "roll": 3
+  },
+  {
+    "username": "mannhingrajia",
+    "issue": 2262,
+    "time": "2023-04-12T23:14:29.395Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 8,
+    "roll": 4
   }
 ]
