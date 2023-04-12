@@ -1883,7 +1883,7 @@
     "time": "2023-04-12T15:23:33.734Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/9901afd8e2bc6f0e1c5a3b09e83deda598b36115/games/current/board.2251.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1892,6 +1892,23 @@
     },
     "fromPosition": 13,
     "toPosition": 15,
+    "roll": 2
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2252,
+    "time": "2023-04-12T15:24:35.685Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 8,
     "roll": 2
   }
 ]
