@@ -742,7 +742,7 @@
     <path id="use982-0-0" d="m96.8 57.1 17.5 7.5e-5 -2.5e-4 17.5-17.5-1.4e-5z" filter="url(#filter1501-15)" opacity=".56"/>
    </g>
   </g>
-  <g id="tile3-w" transform="translate(-4.46 -67)" style="display:none;">
+  <g id="tile3-w" transform="translate(-4.46 -67)">
    <circle id="path1055" cx="46.5" cy="91" r="7.68" fill="url(#radialGradient1075)" filter="url(#filter1435)" stroke="#000" stroke-width=".948"/>
    <g id="g917-7" transform="matrix(.526 0 0 .583 30.6 69.8)" fill="#717171">
     <path id="path857-5" d="m26.2 30.9c-3.4e-5 0.94-0.844 1.7-1.88 1.7-1.04-1.3e-5 -1.88-0.762-1.88-1.7 3.4e-5 -0.94 0.844-1.7 1.88-1.7 1.04 1.4e-5 1.88 0.762 1.88 1.7"/>
@@ -792,7 +792,7 @@
     <path id="path857-4-3-1-0-4-8" d="m32.5 36.3c-3.3e-5 0.94-0.844 1.7-1.88 1.7-1.04-1.2e-5 -1.88-0.762-1.88-1.7 3.3e-5 -0.94 0.844-1.7 1.88-1.7 1.04 1.3e-5 1.88 0.762 1.88 1.7"/>
    </g>
   </g>
-  <g id="tile0-w0" transform="translate(58.7 -67)">
+  <g id="tile0-w0" transform="translate(58.7 -67)" style="display:none;">
    <circle id="path1055-3-1" cx="46.5" cy="91" r="7.68" fill="url(#radialGradient1075)" filter="url(#filter1435-94-97)" stroke="#000" stroke-width=".948"/>
    <g id="g917-7-1-4" transform="matrix(.367 .377 -.418 .406 50.7 64.7)" fill="#717171">
     <path id="path857-5-7-1" d="m26.2 30.9c-3.4e-5 0.94-0.844 1.7-1.88 1.7-1.04-1.3e-5 -1.88-0.762-1.88-1.7 3.4e-5 -0.94 0.844-1.7 1.88-1.7 1.04 1.4e-5 1.88 0.762 1.88 1.7"/>
