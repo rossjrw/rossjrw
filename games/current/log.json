@@ -1701,7 +1701,7 @@
     "time": "2023-04-12T12:33:25.442Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/932dc71e7abf3ae5fca7249edf0d7e54763fe8d1/games/current/board.2241.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1710,6 +1710,23 @@
     },
     "fromPosition": 6,
     "toPosition": 8,
+    "roll": 2
+  },
+  {
+    "username": "Alylaxy",
+    "issue": 2242,
+    "time": "2023-04-12T13:26:12.788Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
     "roll": 2
   }
 ]
