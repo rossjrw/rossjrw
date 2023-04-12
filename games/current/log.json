@@ -1985,7 +1985,7 @@
     "time": "2023-04-12T17:48:00.993Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/aedf6a1b40ea4455e55c17a66f5821b1c73b676f/games/current/board.2257.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1995,5 +1995,22 @@
     "fromPosition": 4,
     "toPosition": 6,
     "roll": 2
+  },
+  {
+    "username": "Arch881010",
+    "issue": 2259,
+    "time": "2023-04-12T18:52:24.535Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
   }
 ]
