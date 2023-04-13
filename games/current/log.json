@@ -10,5 +10,34 @@
     "fromPosition": null,
     "toPosition": null,
     "roll": null
+  },
+  {
+    "username": "Alylaxy",
+    "issue": 2277,
+    "time": "2023-04-13T13:32:20.002Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/45b805b3b548104d41d50b6249371b03f3055850/games/current/board.2277.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
+  },
+  {
+    "username": "Alylaxy",
+    "issue": 2277,
+    "time": "2023-04-13T13:32:20.002Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
