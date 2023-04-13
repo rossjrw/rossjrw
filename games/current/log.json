@@ -2133,7 +2133,7 @@
     "time": "2023-04-13T12:31:46.892Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f4700431972f87b42ee61db565724942a4729e53/games/current/board.2266.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -2143,5 +2143,22 @@
     "fromPosition": 11,
     "toPosition": 14,
     "roll": 3
+  },
+  {
+    "username": "thisiscoding1234",
+    "issue": 2267,
+    "time": "2023-04-13T12:32:32.314Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
   }
 ]

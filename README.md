@@ -18,7 +18,7 @@ You're on a team! :wave:
 * If you've not yet played a turn this game, make a move now to join the
   **:black_circle:black** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2266.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2267.svg"></p>
 
   **:black_circle:Black team:**
   You rolled a 2!
@@ -26,7 +26,8 @@ What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
-  | [:rosette:    Move the piece on tile 2 to tile 4](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%402-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move a new piece to tile 2](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move the piece on tile 4 to tile 6](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%404-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -45,7 +46,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td><b><a href="https://github.com/Murdeala">@Murdeala</a></b> (30)<br><b><a href="https://github.com/thisiscoding1234">@thisiscoding1234</a></b> (10)<br><b><a href="https://github.com/arqalite">@arqalite</a></b> (3)<br><b><a href="https://github.com/zackfall">@zackfall</a></b> (1)<br><b><a href="https://github.com/Hrushal-Nikhare">@Hrushal-Nikhare</a></b> (1)<br><b><a href="https://github.com/danielawde9">@danielawde9</a></b> (1)<br><b><a href="https://github.com/Arawns1">@Arawns1</a></b> (1)<br><b><a href="https://github.com/werdl">@werdl</a></b> (1)<br><b><a href="https://github.com/BigVeezus">@BigVeezus</a></b> (1)<br><b><a href="https://github.com/birajkarki">@birajkarki</a></b> (1)<br><b><a href="https://github.com/Stratis-Dermanoutsos">@Stratis-Dermanoutsos</a></b> (1)<br><b><a href="https://github.com/BaptisteMartinet">@BaptisteMartinet</a></b> (1)<br><b><a href="https://github.com/faculerena">@faculerena</a></b> (1)<br><b><a href="https://github.com/nnnolan">@nnnolan</a></b> (1)<br><b><a href="https://github.com/sk185648">@sk185648</a></b> (1)<br><b><a href="https://github.com/Alylaxy">@Alylaxy</a></b> (1)<br><b><a href="https://github.com/Arch881010">@Arch881010</a></b> (1)<br><b><a href="https://github.com/mannhingrajia">@mannhingrajia</a></b> (1)</td>
+        <td><b><a href="https://github.com/Murdeala">@Murdeala</a></b> (30)<br><b><a href="https://github.com/thisiscoding1234">@thisiscoding1234</a></b> (11)<br><b><a href="https://github.com/arqalite">@arqalite</a></b> (3)<br><b><a href="https://github.com/zackfall">@zackfall</a></b> (1)<br><b><a href="https://github.com/Hrushal-Nikhare">@Hrushal-Nikhare</a></b> (1)<br><b><a href="https://github.com/danielawde9">@danielawde9</a></b> (1)<br><b><a href="https://github.com/Arawns1">@Arawns1</a></b> (1)<br><b><a href="https://github.com/werdl">@werdl</a></b> (1)<br><b><a href="https://github.com/BigVeezus">@BigVeezus</a></b> (1)<br><b><a href="https://github.com/birajkarki">@birajkarki</a></b> (1)<br><b><a href="https://github.com/Stratis-Dermanoutsos">@Stratis-Dermanoutsos</a></b> (1)<br><b><a href="https://github.com/BaptisteMartinet">@BaptisteMartinet</a></b> (1)<br><b><a href="https://github.com/faculerena">@faculerena</a></b> (1)<br><b><a href="https://github.com/nnnolan">@nnnolan</a></b> (1)<br><b><a href="https://github.com/sk185648">@sk185648</a></b> (1)<br><b><a href="https://github.com/Alylaxy">@Alylaxy</a></b> (1)<br><b><a href="https://github.com/Arch881010">@Arch881010</a></b> (1)<br><b><a href="https://github.com/mannhingrajia">@mannhingrajia</a></b> (1)</td>
         <td><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (60)</td>
       </tr>
     </tbody>
@@ -184,7 +185,8 @@ What would you like to do?
   | 13th Apr 2023 06:01 | **126** | :white_circle: **[@CostasAK](https://github.com/CostasAK)** moved a white piece from position 6 to position 7    | [#2264](https://github.com/rossjrw/rossjrw/issues/2264) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/49f162f34ee1f23caddbf78bd4e4ac9c074a0fe0/games/current/board.2264.svg) |
   | 13th Apr 2023 06:01 | **127** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#2264](https://github.com/rossjrw/rossjrw/issues/2264) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/b4ac71634f831998ee02e9f6b9f986632dc964cf/games/current/board.2264.svg) |
   | 13th Apr 2023 06:02 | **128** | :white_circle: **[@CostasAK](https://github.com/CostasAK)** moved a white piece from position 7 to position 9    | [#2265](https://github.com/rossjrw/rossjrw/issues/2265) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/e74fcbdca51f4e932fa017999df0f09642426547/games/current/board.2265.svg) |
-  | 13th Apr 2023 12:31 | **129** | :black_circle: **[@thisiscoding1234](https://github.com/thisiscoding1234)** moved a black piece from position 11 to position 14  — claimed a rosette :rosette:  | [#2266](https://github.com/rossjrw/rossjrw/issues/2266) |  |
+  | 13th Apr 2023 12:31 | **129** | :black_circle: **[@thisiscoding1234](https://github.com/thisiscoding1234)** moved a black piece from position 11 to position 14  — claimed a rosette :rosette:  | [#2266](https://github.com/rossjrw/rossjrw/issues/2266) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/f4700431972f87b42ee61db565724942a4729e53/games/current/board.2266.svg) |
+  | 13th Apr 2023 12:32 | **130** | :black_circle: **[@thisiscoding1234](https://github.com/thisiscoding1234)** moved a black piece from position 2 to position 4  — claimed a rosette :rosette:  | [#2267](https://github.com/rossjrw/rossjrw/issues/2267) |  |
 
 </details>
 
