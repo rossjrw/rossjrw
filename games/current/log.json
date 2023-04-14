@@ -80,7 +80,7 @@
     "time": "2023-04-14T15:49:23.467Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4d626e025278c6aa5abf1b5c044a75c9ebaa3ea3/games/current/board.2282.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -89,6 +89,23 @@
     },
     "fromPosition": 0,
     "toPosition": 1,
+    "roll": 1
+  },
+  {
+    "username": "zC4sTr0",
+    "issue": 2283,
+    "time": "2023-04-14T22:21:14.987Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 2,
     "roll": 1
   }
 ]
