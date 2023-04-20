@@ -199,7 +199,7 @@
     "time": "2023-04-20T02:11:33.568Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b3e45894dc30c5b0d362bf1f50771834b3808ca2/games/current/board.2293.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -209,5 +209,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "Skullfiredevil",
+    "issue": 2294,
+    "time": "2023-04-20T12:29:27.615Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
   }
 ]
