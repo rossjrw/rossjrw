@@ -284,7 +284,7 @@
     "time": "2023-04-23T14:26:11.177Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/273429293580396cab4fd4920bbf0f8a7eaa0519/games/current/board.2301.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -294,5 +294,22 @@
     "fromPosition": 2,
     "toPosition": 5,
     "roll": 3
+  },
+  {
+    "username": "killian31",
+    "issue": 2304,
+    "time": "2023-04-25T15:24:56.425Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
   }
 ]
