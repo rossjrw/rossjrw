@@ -328,5 +328,34 @@
     "fromPosition": 4,
     "toPosition": 6,
     "roll": 2
+  },
+  {
+    "username": "willwees",
+    "issue": 2312,
+    "time": "2023-05-01T14:26:18.075Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c8f1d0ebab0741f9a1ca9619e1e679c2b248beb2/games/current/board.2312.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 3,
+    "roll": 1
+  },
+  {
+    "username": "willwees",
+    "issue": 2312,
+    "time": "2023-05-01T14:26:18.075Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
