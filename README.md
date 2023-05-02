@@ -18,7 +18,7 @@ You're on a team! :wave:
 * If you've not yet played a turn this game, make a move now to join the
   **:black_circle:black** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2313.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2314.svg"></p>
 
   **:black_circle:Black team:**
   You rolled a 2!
@@ -28,7 +28,6 @@ What would you like to do?
 | --- |
   | [    Move a new piece to tile 2](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
   | [    Move the piece on tile 1 to tile 3](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%401-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [:rosette:    Move the piece on tile 6 to tile 8](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%406-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
   | [    Move the piece on tile 10 to tile 12](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%4010-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
@@ -48,7 +47,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td><b><a href="https://github.com/Murdeala">@Murdeala</a></b> (6)<br><b><a href="https://github.com/thisiscoding1234">@thisiscoding1234</a></b> (1)<br><b><a href="https://github.com/Alylaxy">@Alylaxy</a></b> (1)<br><b><a href="https://github.com/zackfall">@zackfall</a></b> (1)<br><b><a href="https://github.com/zC4sTr0">@zC4sTr0</a></b> (1)<br><b><a href="https://github.com/OBrien-reece">@OBrien-reece</a></b> (1)<br><b><a href="https://github.com/Skullfiredevil">@Skullfiredevil</a></b> (1)</td>
+        <td><b><a href="https://github.com/Murdeala">@Murdeala</a></b> (7)<br><b><a href="https://github.com/thisiscoding1234">@thisiscoding1234</a></b> (1)<br><b><a href="https://github.com/Alylaxy">@Alylaxy</a></b> (1)<br><b><a href="https://github.com/zackfall">@zackfall</a></b> (1)<br><b><a href="https://github.com/zC4sTr0">@zC4sTr0</a></b> (1)<br><b><a href="https://github.com/OBrien-reece">@OBrien-reece</a></b> (1)<br><b><a href="https://github.com/Skullfiredevil">@Skullfiredevil</a></b> (1)</td>
         <td><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (4)<br><b><a href="https://github.com/willwees">@willwees</a></b> (2)<br><b><a href="https://github.com/Hutch79">@Hutch79</a></b> (1)<br><b><a href="https://github.com/BethSandraT">@BethSandraT</a></b> (1)<br><b><a href="https://github.com/killian31">@killian31</a></b> (1)</td>
       </tr>
     </tbody>
@@ -80,7 +79,8 @@ What would you like to do?
   | 25th Apr 2023 17:39 | **19** | :black_circle: **[@Murdeala](https://github.com/Murdeala)** moved a black piece from position 4 to position 6 — captured a white piece :crossed_swords:   | [#2305](https://github.com/rossjrw/rossjrw/issues/2305) |  |
   | 1st May 2023 14:26 | **20** | :white_circle: **[@willwees](https://github.com/willwees)** moved a white piece from position 2 to position 3    | [#2312](https://github.com/rossjrw/rossjrw/issues/2312) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/c8f1d0ebab0741f9a1ca9619e1e679c2b248beb2/games/current/board.2312.svg) |
   | 1st May 2023 14:26 | **21** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#2312](https://github.com/rossjrw/rossjrw/issues/2312) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/6eb8a10b6c01ea11caefced1f5e8d8d10d2ba17f/games/current/board.2312.svg) |
-  | 1st May 2023 14:27 | **22** | :white_circle: **[@willwees](https://github.com/willwees)** moved a white piece from position 3 to position 5 — captured a black piece :crossed_swords:   | [#2313](https://github.com/rossjrw/rossjrw/issues/2313) |  |
+  | 1st May 2023 14:27 | **22** | :white_circle: **[@willwees](https://github.com/willwees)** moved a white piece from position 3 to position 5 — captured a black piece :crossed_swords:   | [#2313](https://github.com/rossjrw/rossjrw/issues/2313) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/171cd1ff3a161baa63907664c9f518985198458c/games/current/board.2313.svg) |
+  | 2nd May 2023 03:11 | **23** | :black_circle: **[@Murdeala](https://github.com/Murdeala)** moved a black piece from position 6 to position 8  — claimed a rosette :rosette:  | [#2314](https://github.com/rossjrw/rossjrw/issues/2314) |  |
 
 </details>
 
