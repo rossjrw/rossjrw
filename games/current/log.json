@@ -398,6 +398,23 @@
     "time": "2023-05-02T22:26:03.758Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/65e33c1f3c782f251f523d8d6785d9d90c92489e/games/current/board.2315.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 3,
+    "roll": 2
+  },
+  {
+    "username": "kztera",
+    "issue": 2320,
+    "time": "2023-05-07T07:31:56.710Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null,
     "events": {
       "rosetteClaimed": false,
