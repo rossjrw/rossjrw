@@ -512,7 +512,7 @@
     "time": "2023-05-09T01:35:56.065Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/743b795d91d9313b949545c3ed53a2ec75d16db9/games/current/board.2328.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -522,5 +522,22 @@
     "fromPosition": 3,
     "toPosition": 6,
     "roll": 3
+  },
+  {
+    "username": "RealtorDave",
+    "issue": 2331,
+    "time": "2023-05-10T11:21:52.190Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   }
 ]
