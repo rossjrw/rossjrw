@@ -573,5 +573,46 @@
     "fromPosition": 0,
     "toPosition": 1,
     "roll": 1
+  },
+  {
+    "username": "Jigsaw46",
+    "issue": 2336,
+    "time": "2023-05-12T15:32:51.698Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 9,
+    "roll": 2
+  },
+  {
+    "username": "Jigsaw46",
+    "issue": 2336,
+    "time": "2023-05-12T15:32:51.698Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/a1fd79314ae2487b8c95364206c85f39f9b41ad6/games/current/board.2336.svg",
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
+  },
+  {
+    "username": "Jigsaw46",
+    "issue": 2336,
+    "time": "2023-05-12T15:32:51.699Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
