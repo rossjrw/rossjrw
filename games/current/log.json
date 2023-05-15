@@ -621,7 +621,7 @@
     "time": "2023-05-13T08:10:45.041Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1da0a3c18ac86d9e2946835c328b9a3dc74ebcc4/games/current/board.2337.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -631,5 +631,22 @@
     "fromPosition": 8,
     "toPosition": 9,
     "roll": 1
+  },
+  {
+    "username": "PrathakGarg",
+    "issue": 2340,
+    "time": "2023-05-15T11:35:08.105Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
   }
 ]
