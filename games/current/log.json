@@ -701,7 +701,7 @@
     "time": "2023-05-16T12:46:52.162Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2d940d23b05c1b3ee9479a20df95f8dd29e78b47/games/current/board.2347.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -711,5 +711,22 @@
     "fromPosition": 4,
     "toPosition": 7,
     "roll": 3
+  },
+  {
+    "username": "ThisisErm",
+    "issue": 2349,
+    "time": "2023-05-16T18:18:52.963Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   }
 ]
