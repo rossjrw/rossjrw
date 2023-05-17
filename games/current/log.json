@@ -718,6 +718,23 @@
     "time": "2023-05-16T18:18:52.963Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6e8eb0a5a6af7dc15870a14fe4751d23d3193e3e/games/current/board.2349.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "ChipWolf",
+    "issue": 2352,
+    "time": "2023-05-17T21:44:32.112Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null,
     "events": {
       "rosetteClaimed": false,
