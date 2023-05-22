@@ -820,7 +820,7 @@
     "time": "2023-05-22T10:25:04.390Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/aac336587e915fbdc10aa26d16603bdad106de02/games/current/board.2359.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -830,5 +830,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "valgtreiz",
+    "issue": 2360,
+    "time": "2023-05-22T13:39:25.280Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
   }
 ]
