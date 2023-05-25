@@ -854,7 +854,7 @@
     "time": "2023-05-22T15:03:08.310Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/fcb285df6019a21192bc2ece407fd775d5e3416b/games/current/board.2361.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -864,5 +864,22 @@
     "fromPosition": 0,
     "toPosition": 1,
     "roll": 1
+  },
+  {
+    "username": "tmchuynh",
+    "issue": 2365,
+    "time": "2023-05-25T00:38:08.492Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 9,
+    "roll": 2
   }
 ]
