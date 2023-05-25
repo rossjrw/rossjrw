@@ -888,7 +888,7 @@
     "time": "2023-05-25T02:22:01.193Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c978b9811e3ed80c6a3cca9621b3918d4d3fed27/games/current/board.2366.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -897,6 +897,23 @@
     },
     "fromPosition": 4,
     "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "Vaibhav67979",
+    "issue": 2367,
+    "time": "2023-05-25T11:30:33.765Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 11,
     "roll": 2
   }
 ]
