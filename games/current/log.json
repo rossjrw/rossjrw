@@ -905,7 +905,7 @@
     "time": "2023-05-25T11:30:33.765Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/33bb298002fff3a11d4f678b65176ae1c4d1d850/games/current/board.2367.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -915,5 +915,22 @@
     "fromPosition": 9,
     "toPosition": 11,
     "roll": 2
+  },
+  {
+    "username": "IcyonGit",
+    "issue": 2369,
+    "time": "2023-05-26T11:53:32.077Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 13,
+    "roll": 3
   }
 ]
