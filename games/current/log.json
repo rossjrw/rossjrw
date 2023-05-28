@@ -990,7 +990,7 @@
     "time": "2023-05-28T12:24:13.771Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/22f27f1630d1ec1ed505092fee7776c94ec556a1/games/current/board.2374.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1000,5 +1000,22 @@
     "fromPosition": 2,
     "toPosition": 5,
     "roll": 3
+  },
+  {
+    "username": "DamnUi",
+    "issue": 2376,
+    "time": "2023-05-28T12:44:48.946Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
   }
 ]
