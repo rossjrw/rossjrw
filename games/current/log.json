@@ -1041,7 +1041,7 @@
     "time": "2023-05-29T15:04:33.660Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2dd425c785b0fcd503e176621a6ab076211df416/games/current/board.2378.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1050,6 +1050,23 @@
     },
     "fromPosition": 13,
     "toPosition": 15,
+    "roll": 2
+  },
+  {
+    "username": "Itz0xAkira",
+    "issue": 2380,
+    "time": "2023-05-30T07:14:57.958Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 3,
     "roll": 2
   }
 ]
