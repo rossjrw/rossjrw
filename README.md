@@ -5,7 +5,7 @@ We're playing
 
 <p align="center">
   <b>It's the
-  :white_circle:white
+  :black_circle:black
   team's turn.</b>
 </p>
 
@@ -16,18 +16,19 @@ You're on a team! :wave:
   check back later, or [ask a
   friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github) to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-  **:white_circle:white** team.
+  **:black_circle:black** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2387.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2388.svg"></p>
 
-  **:white_circle:White team:**
-  You rolled a 4!
+  **:black_circle:Black team:**
+  You rolled a 3!
 What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
-  | [    Move the piece on tile 3 to tile 7](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-4%403-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [    Move the piece on tile 4 to tile 9](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-4%404-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move the piece on tile 4 to tile 7](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%404-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [ :crossed_swords:   Move the piece on tile 6 to tile 9](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%406-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move the piece on tile 8 to tile 11](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%408-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -47,7 +48,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/Murdeala">@Murdeala</a></b> (20)<br><b><a href="https://github.com/thisiscoding1234">@thisiscoding1234</a></b> (1)<br><b><a href="https://github.com/Alylaxy">@Alylaxy</a></b> (1)<br><b><a href="https://github.com/zackfall">@zackfall</a></b> (1)<br><b><a href="https://github.com/zC4sTr0">@zC4sTr0</a></b> (1)<br><b><a href="https://github.com/OBrien-reece">@OBrien-reece</a></b> (1)<br><b><a href="https://github.com/Skullfiredevil">@Skullfiredevil</a></b> (1)<br><b><a href="https://github.com/RealtorDave">@RealtorDave</a></b> (1)<br><b><a href="https://github.com/Polymecha">@Polymecha</a></b> (1)<br><b><a href="https://github.com/ThisisErm">@ThisisErm</a></b> (1)<br><b><a href="https://github.com/livghit">@livghit</a></b> (1)<br><b><a href="https://github.com/IcyonGit">@IcyonGit</a></b> (1)<br><b><a href="https://github.com/Carol42">@Carol42</a></b> (1)</td>
-        <td><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (5)<br><b><a href="https://github.com/tmchuynh">@tmchuynh</a></b> (5)<br><b><a href="https://github.com/willwees">@willwees</a></b> (2)<br><b><a href="https://github.com/Jigsaw46">@Jigsaw46</a></b> (2)<br><b><a href="https://github.com/LAPCoder">@LAPCoder</a></b> (2)<br><b><a href="https://github.com/Hutch79">@Hutch79</a></b> (1)<br><b><a href="https://github.com/BethSandraT">@BethSandraT</a></b> (1)<br><b><a href="https://github.com/killian31">@killian31</a></b> (1)<br><b><a href="https://github.com/kztera">@kztera</a></b> (1)<br><b><a href="https://github.com/PrathakGarg">@PrathakGarg</a></b> (1)<br><b><a href="https://github.com/asimkilic">@asimkilic</a></b> (1)<br><b><a href="https://github.com/ChipWolf">@ChipWolf</a></b> (1)<br><b><a href="https://github.com/bendrexl">@bendrexl</a></b> (1)<br><b><a href="https://github.com/julycrystal">@julycrystal</a></b> (1)<br><b><a href="https://github.com/valgtreiz">@valgtreiz</a></b> (1)<br><b><a href="https://github.com/Vaibhav67979">@Vaibhav67979</a></b> (1)<br><b><a href="https://github.com/DamnUi">@DamnUi</a></b> (1)<br><b><a href="https://github.com/Itz0xAkira">@Itz0xAkira</a></b> (1)</td>
+        <td><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (5)<br><b><a href="https://github.com/tmchuynh">@tmchuynh</a></b> (5)<br><b><a href="https://github.com/LAPCoder">@LAPCoder</a></b> (3)<br><b><a href="https://github.com/willwees">@willwees</a></b> (2)<br><b><a href="https://github.com/Jigsaw46">@Jigsaw46</a></b> (2)<br><b><a href="https://github.com/Hutch79">@Hutch79</a></b> (1)<br><b><a href="https://github.com/BethSandraT">@BethSandraT</a></b> (1)<br><b><a href="https://github.com/killian31">@killian31</a></b> (1)<br><b><a href="https://github.com/kztera">@kztera</a></b> (1)<br><b><a href="https://github.com/PrathakGarg">@PrathakGarg</a></b> (1)<br><b><a href="https://github.com/asimkilic">@asimkilic</a></b> (1)<br><b><a href="https://github.com/ChipWolf">@ChipWolf</a></b> (1)<br><b><a href="https://github.com/bendrexl">@bendrexl</a></b> (1)<br><b><a href="https://github.com/julycrystal">@julycrystal</a></b> (1)<br><b><a href="https://github.com/valgtreiz">@valgtreiz</a></b> (1)<br><b><a href="https://github.com/Vaibhav67979">@Vaibhav67979</a></b> (1)<br><b><a href="https://github.com/DamnUi">@DamnUi</a></b> (1)<br><b><a href="https://github.com/Itz0xAkira">@Itz0xAkira</a></b> (1)</td>
       </tr>
     </tbody>
   </table>
@@ -122,7 +123,8 @@ What would you like to do?
   | 29th May 2023 15:04 | **63** | :black_circle: **[@Murdeala](https://github.com/Murdeala)** ascended a black piece from position 13 :rocket:    | [#2378](https://github.com/rossjrw/rossjrw/issues/2378) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/2dd425c785b0fcd503e176621a6ab076211df416/games/current/board.2378.svg) |
   | 30th May 2023 07:14 | **64** | :white_circle: **[@Itz0xAkira](https://github.com/Itz0xAkira)** moved a white piece from position 1 to position 3    | [#2380](https://github.com/rossjrw/rossjrw/issues/2380) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/1c8e2ac10696f177b16040984ac6f25cf3bb31c2/games/current/board.2380.svg) |
   | 30th May 2023 21:13 | **65** | :black_circle: **[@Murdeala](https://github.com/Murdeala)** moved a black piece from position 5 to position 6    | [#2381](https://github.com/rossjrw/rossjrw/issues/2381) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/d35fb4cf21eb22c75fe142c43953ab014d11075d/games/current/board.2381.svg) |
-  | 4th Jun 2023 07:33 | **66** | :white_circle: **[@CostasAK](https://github.com/CostasAK)** moved a white piece from position 2 to position 4  — claimed a rosette :rosette:  | [#2387](https://github.com/rossjrw/rossjrw/issues/2387) |  |
+  | 4th Jun 2023 07:33 | **66** | :white_circle: **[@CostasAK](https://github.com/CostasAK)** moved a white piece from position 2 to position 4  — claimed a rosette :rosette:  | [#2387](https://github.com/rossjrw/rossjrw/issues/2387) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/f9ac0b1c9ffc3c79340d3feb3c32f87145bd7779/games/current/board.2387.svg) |
+  | 5th Jun 2023 09:16 | **67** | :white_circle: **[@LAPCoder](https://github.com/LAPCoder)** moved a white piece from position 4 to position 9    | [#2388](https://github.com/rossjrw/rossjrw/issues/2388) |  |
 
 </details>
 
