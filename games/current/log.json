@@ -1177,7 +1177,7 @@
     "time": "2023-06-05T14:55:46.573Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c990d6f422b29e4461ab4b16cabfb53133ab4c18/games/current/board.2392.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1187,5 +1187,22 @@
     "fromPosition": 3,
     "toPosition": 6,
     "roll": 3
+  },
+  {
+    "username": "iskandert",
+    "issue": 2393,
+    "time": "2023-06-05T16:05:03.156Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
   }
 ]
