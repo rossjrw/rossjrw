@@ -1211,7 +1211,7 @@
     "time": "2023-06-06T01:04:40.759Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/563ac46d7287db621a815e487c0ced30897b1d20/games/current/board.2394.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1221,5 +1221,22 @@
     "fromPosition": 2,
     "toPosition": 4,
     "roll": 2
+  },
+  {
+    "username": "oof2win2",
+    "issue": 2397,
+    "time": "2023-06-07T19:25:03.876Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 7,
+    "roll": 3
   }
 ]
