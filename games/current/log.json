@@ -1347,7 +1347,7 @@
     "time": "2023-06-15T09:42:19.241Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b2d9ed46852bd0106c7bee184a53d21cdcf95503/games/current/board.2409.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1356,6 +1356,23 @@
     },
     "fromPosition": 3,
     "toPosition": 6,
+    "roll": 3
+  },
+  {
+    "username": "4troDev",
+    "issue": 2410,
+    "time": "2023-06-15T12:46:25.504Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 12,
     "roll": 3
   }
 ]
