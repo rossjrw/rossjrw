@@ -1330,7 +1330,7 @@
     "time": "2023-06-15T02:17:25.883Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/46124c2e0529ffd663e6e9f612df73dc0c2c3941/games/current/board.2408.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1339,6 +1339,23 @@
     },
     "fromPosition": 12,
     "toPosition": 15,
+    "roll": 3
+  },
+  {
+    "username": "vanphuoc3012",
+    "issue": 2409,
+    "time": "2023-06-15T09:42:19.241Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
     "roll": 3
   }
 ]
