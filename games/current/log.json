@@ -1415,7 +1415,7 @@
     "time": "2023-06-18T07:50:35.984Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f3fa58af8f9e2bad68267426f09d43fadcc45ffb/games/current/board.2413.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1425,5 +1425,22 @@
     "fromPosition": 0,
     "toPosition": 1,
     "roll": 1
+  },
+  {
+    "username": "chakitg",
+    "issue": 2414,
+    "time": "2023-06-18T11:41:01.294Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
   }
 ]
