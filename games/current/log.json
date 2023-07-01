@@ -1857,7 +1857,7 @@
     "time": "2023-07-01T15:51:54.451Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c0065c2742ddf306d44ca4e1d7918eae8a47c007/games/current/board.2449.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1867,5 +1867,22 @@
     "fromPosition": 1,
     "toPosition": 3,
     "roll": 2
+  },
+  {
+    "username": "Dysta",
+    "issue": 2450,
+    "time": "2023-07-01T18:35:49.293Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 12,
+    "roll": 3
   }
 ]
