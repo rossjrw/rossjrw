@@ -1840,7 +1840,7 @@
     "time": "2023-07-01T06:59:56.900Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8e8ba072e6ddc5c5f95e3d309cd9d76f9de46c38/games/current/board.2445.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1849,6 +1849,23 @@
     },
     "fromPosition": 11,
     "toPosition": 13,
+    "roll": 2
+  },
+  {
+    "username": "QManiac162",
+    "issue": 2449,
+    "time": "2023-07-01T15:51:54.451Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 3,
     "roll": 2
   }
 ]
