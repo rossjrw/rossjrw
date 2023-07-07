@@ -5,10 +5,27 @@
     "time": "2023-07-07T14:37:08.449Z",
     "team": "w",
     "action": "new",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ef6de44635feceda92503e54d000fa19e35ef6ca/games/current/board.2461.svg",
     "events": null,
     "fromPosition": null,
     "toPosition": null,
     "roll": null
+  },
+  {
+    "username": "AyaanT0",
+    "issue": 2462,
+    "time": "2023-07-07T15:32:20.657Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   }
 ]
