@@ -2000,7 +2000,7 @@
     "time": "2023-07-07T05:57:54.146Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c8224730ccee0eeeb82c55e8f185f8204a1551db/games/current/board.2459.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2010,5 +2010,22 @@
     "fromPosition": 7,
     "toPosition": 9,
     "roll": 2
+  },
+  {
+    "username": "WKL10086",
+    "issue": 2460,
+    "time": "2023-07-07T07:09:14.500Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": true
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
+    "roll": 1
   }
 ]
