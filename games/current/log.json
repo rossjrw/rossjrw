@@ -85,7 +85,7 @@
     "time": "2023-07-10T04:48:47.259Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/101a3f158760fc537fbe1f186f6e6e4724a094b0/games/current/board.2467.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -94,6 +94,23 @@
     },
     "fromPosition": 4,
     "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "MatthiasGN",
+    "issue": 2468,
+    "time": "2023-07-10T04:56:40.478Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
     "roll": 2
   }
 ]
