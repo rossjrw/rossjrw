@@ -136,7 +136,7 @@
     "time": "2023-07-11T19:13:12.436Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2717f16bf821d7af72f2bbec18726f93f3b910d9/games/current/board.2474.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -146,5 +146,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "JRetza",
+    "issue": 2475,
+    "time": "2023-07-12T02:19:25.180Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 9,
+    "roll": 1
   }
 ]
