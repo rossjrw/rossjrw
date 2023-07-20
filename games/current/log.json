@@ -476,7 +476,7 @@
     "time": "2023-07-19T10:47:14.399Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7e57f94a6417fdadb13ccf30c02182ed4a47e58d/games/current/board.2494.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -486,5 +486,22 @@
     "fromPosition": 2,
     "toPosition": 3,
     "roll": 1
+  },
+  {
+    "username": "IronCodem-alt",
+    "issue": 2496,
+    "time": "2023-07-20T13:00:02.685Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 10,
+    "roll": 2
   }
 ]
