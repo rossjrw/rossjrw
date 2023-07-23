@@ -544,7 +544,7 @@
     "time": "2023-07-23T12:23:40.789Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/492212926f8c27a7004a76d28501bc1b65d0dddc/games/current/board.2500.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -553,6 +553,23 @@
     },
     "fromPosition": 3,
     "toPosition": 4,
+    "roll": 1
+  },
+  {
+    "username": "Carol42",
+    "issue": 2501,
+    "time": "2023-07-23T19:25:52.697Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
     "roll": 1
   }
 ]
