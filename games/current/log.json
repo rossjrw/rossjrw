@@ -561,6 +561,23 @@
     "time": "2023-07-23T19:25:52.697Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/cafe97ca9e45122c1bd0e2cc127fc26f012a1db4/games/current/board.2501.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
+    "roll": 1
+  },
+  {
+    "username": "WKL10086",
+    "issue": 2502,
+    "time": "2023-07-24T04:23:07.857Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null,
     "events": {
       "rosetteClaimed": false,
