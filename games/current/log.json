@@ -709,7 +709,7 @@
     "time": "2023-07-26T22:27:20.269Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2a6bde13351741059bde0a48411477228ebd9c68/games/current/board.2509.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -719,5 +719,22 @@
     "fromPosition": 1,
     "toPosition": 2,
     "roll": 1
+  },
+  {
+    "username": "AgentHitmanFaris",
+    "issue": 2510,
+    "time": "2023-07-27T04:37:35.425Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 14,
+    "roll": 3
   }
 ]
