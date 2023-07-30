@@ -903,7 +903,7 @@
     "time": "2023-07-29T14:23:03.734Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e71a4101a330dbbae422e65603d78b25fa83f35a/games/current/board.2520.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -913,5 +913,22 @@
     "fromPosition": 14,
     "toPosition": 15,
     "roll": 1
+  },
+  {
+    "username": "Mrinank-Bhowmick",
+    "issue": 2522,
+    "time": "2023-07-30T11:27:42.537Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
   }
 ]
