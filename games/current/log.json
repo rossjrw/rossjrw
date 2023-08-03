@@ -1073,7 +1073,7 @@
     "time": "2023-08-03T02:21:32.529Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/da3e4659e03f0dcc6b931c84f6abb72f28a0c71b/games/current/board.2531.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -1083,5 +1083,22 @@
     "fromPosition": 4,
     "toPosition": 9,
     "roll": 4
+  },
+  {
+    "username": "Th1nhNg0",
+    "issue": 2532,
+    "time": "2023-08-03T04:10:34.081Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 11,
+    "roll": 3
   }
 ]
