@@ -18,17 +18,17 @@ You're on a team! :wave:
 * If you've not yet played a turn this game, make a move now to join the
   **:black_circle:black** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2535.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2536.svg"></p>
 
   **:black_circle:Black team:**
-  You rolled a 1!
+  You rolled a 4!
 What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
-  | [    Move the piece on tile 1 to tile 2](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%401-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [:rosette:    Move the piece on tile 3 to tile 4](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%403-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [    Move the piece on tile 11 to tile 12](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%4011-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move the piece on tile 1 to tile 5](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-4%401-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [:rosette:    Move the piece on tile 4 to tile 8](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-4%404-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [  :rocket:  Ascend the piece on tile 11 ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-4%4011-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -47,7 +47,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td><b><a href="https://github.com/Murdeala">@Murdeala</a></b> (23)<br><b><a href="https://github.com/JRetza">@JRetza</a></b> (2)<br><b><a href="https://github.com/MatthiasGN">@MatthiasGN</a></b> (1)<br><b><a href="https://github.com/Carol42">@Carol42</a></b> (1)<br><b><a href="https://github.com/TejaTadepalli">@TejaTadepalli</a></b> (1)<br><b><a href="https://github.com/Mrinank-Bhowmick">@Mrinank-Bhowmick</a></b> (1)<br><b><a href="https://github.com/godtrex99">@godtrex99</a></b> (1)<br><b><a href="https://github.com/CavalierAhmad">@CavalierAhmad</a></b> (1)</td>
+        <td><b><a href="https://github.com/Murdeala">@Murdeala</a></b> (24)<br><b><a href="https://github.com/JRetza">@JRetza</a></b> (2)<br><b><a href="https://github.com/MatthiasGN">@MatthiasGN</a></b> (1)<br><b><a href="https://github.com/Carol42">@Carol42</a></b> (1)<br><b><a href="https://github.com/TejaTadepalli">@TejaTadepalli</a></b> (1)<br><b><a href="https://github.com/Mrinank-Bhowmick">@Mrinank-Bhowmick</a></b> (1)<br><b><a href="https://github.com/godtrex99">@godtrex99</a></b> (1)<br><b><a href="https://github.com/CavalierAhmad">@CavalierAhmad</a></b> (1)</td>
         <td><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (23)<br><b><a href="https://github.com/AyaanT0">@AyaanT0</a></b> (2)<br><b><a href="https://github.com/IronCodem-alt">@IronCodem-alt</a></b> (2)<br><b><a href="https://github.com/kztera">@kztera</a></b> (1)<br><b><a href="https://github.com/skulldoggery">@skulldoggery</a></b> (1)<br><b><a href="https://github.com/RFebrians">@RFebrians</a></b> (1)<br><b><a href="https://github.com/WKL10086">@WKL10086</a></b> (1)<br><b><a href="https://github.com/blacksmithop">@blacksmithop</a></b> (1)<br><b><a href="https://github.com/AgentHitmanFaris">@AgentHitmanFaris</a></b> (1)<br><b><a href="https://github.com/Th1nhNg0">@Th1nhNg0</a></b> (1)</td>
       </tr>
     </tbody>
@@ -124,7 +124,8 @@ What would you like to do?
   | 3rd Aug 2023 02:21 | **64** | :black_circle: **[@Murdeala](https://github.com/Murdeala)** moved a black piece from position 4 to position 9 — captured a white piece :crossed_swords:   | [#2531](https://github.com/rossjrw/rossjrw/issues/2531) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/da3e4659e03f0dcc6b931c84f6abb72f28a0c71b/games/current/board.2531.svg) |
   | 3rd Aug 2023 04:10 | **65** | :white_circle: **[@Th1nhNg0](https://github.com/Th1nhNg0)** moved a white piece from position 8 to position 11    | [#2532](https://github.com/rossjrw/rossjrw/issues/2532) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/26c84d2dd03d6451dc3973f713e977ad75a45cea/games/current/board.2532.svg) |
   | 3rd Aug 2023 14:47 | **66** | :black_circle: **[@CavalierAhmad](https://github.com/CavalierAhmad)** moved a black piece from position 9 to position 11 — captured a white piece :crossed_swords:   | [#2533](https://github.com/rossjrw/rossjrw/issues/2533) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/e260c7fe6b0c2d6e57ffc5194518ed38c9cb8859/games/current/board.2533.svg) |
-  | 3rd Aug 2023 23:26 | **67** | :white_circle: **[@CostasAK](https://github.com/CostasAK)** moved a white piece onto the board to position 3    | [#2535](https://github.com/rossjrw/rossjrw/issues/2535) |  |
+  | 3rd Aug 2023 23:26 | **67** | :white_circle: **[@CostasAK](https://github.com/CostasAK)** moved a white piece onto the board to position 3    | [#2535](https://github.com/rossjrw/rossjrw/issues/2535) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/947132a17d0dd8168a46c29d4ae2eb1488b9e4c7/games/current/board.2535.svg) |
+  | 4th Aug 2023 14:43 | **68** | :black_circle: **[@Murdeala](https://github.com/Murdeala)** moved a black piece from position 3 to position 4  — claimed a rosette :rosette:  | [#2536](https://github.com/rossjrw/rossjrw/issues/2536) |  |
 
 </details>
 
