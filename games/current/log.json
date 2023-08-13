@@ -1277,7 +1277,7 @@
     "time": "2023-08-13T17:00:54.815Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/fe451241244f71c040cd6fd7f1ddd30d4996e909/games/current/board.2546.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1287,5 +1287,22 @@
     "fromPosition": 2,
     "toPosition": 4,
     "roll": 2
+  },
+  {
+    "username": "n0nsense-404",
+    "issue": 2547,
+    "time": "2023-08-13T18:17:30.759Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 7,
+    "roll": 3
   }
 ]
