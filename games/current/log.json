@@ -1260,7 +1260,7 @@
     "time": "2023-08-12T12:37:04.638Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0462cd785e19ae0220d7801ce1abd0197b0d86b2/games/current/board.2545.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1269,6 +1269,23 @@
     },
     "fromPosition": 5,
     "toPosition": 7,
+    "roll": 2
+  },
+  {
+    "username": "sinisterdaddy",
+    "issue": 2546,
+    "time": "2023-08-13T17:00:54.815Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
     "roll": 2
   }
 ]
