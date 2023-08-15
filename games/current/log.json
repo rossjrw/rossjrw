@@ -1311,7 +1311,7 @@
     "time": "2023-08-15T02:09:06.204Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/240fcedcbdb22bf8bade8b99bd8392ce3665a5fa/games/current/board.2548.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1321,5 +1321,22 @@
     "fromPosition": 3,
     "toPosition": 4,
     "roll": 1
+  },
+  {
+    "username": "ayersdecker",
+    "issue": 2550,
+    "time": "2023-08-15T17:43:39.866Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   }
 ]
