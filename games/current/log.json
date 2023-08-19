@@ -1379,7 +1379,7 @@
     "time": "2023-08-18T12:53:25.007Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/862f4d158200bbeeb8ac85c9ef1fff5478cab506/games/current/board.2556.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -1388,6 +1388,23 @@
     },
     "fromPosition": 3,
     "toPosition": 5,
+    "roll": 2
+  },
+  {
+    "username": "aviralrabbit1",
+    "issue": 2557,
+    "time": "2023-08-19T18:13:37.365Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
     "roll": 2
   }
 ]
