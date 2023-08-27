@@ -1600,7 +1600,7 @@
     "time": "2023-08-27T12:30:48.145Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/a32e11b670e4a57dd13cad36477012e7e2e41de7/games/current/board.2569.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1610,5 +1610,22 @@
     "fromPosition": 0,
     "toPosition": 1,
     "roll": 1
+  },
+  {
+    "username": "MHanzzala",
+    "issue": 2570,
+    "time": "2023-08-27T12:32:07.742Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   }
 ]
