@@ -1770,7 +1770,7 @@
     "time": "2023-09-07T03:59:23.157Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ba727d41373bc4b96d483e09aaabdfdabcce78ed/games/current/board.2580.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1779,6 +1779,23 @@
     },
     "fromPosition": 7,
     "toPosition": 10,
+    "roll": 3
+  },
+  {
+    "username": "dleitter",
+    "issue": 2581,
+    "time": "2023-09-07T06:10:38.188Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 4,
     "roll": 3
   }
 ]
