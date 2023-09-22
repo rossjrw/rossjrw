@@ -1928,5 +1928,34 @@
     "fromPosition": 13,
     "toPosition": 15,
     "roll": 2
+  },
+  {
+    "username": "NaimulIslam9m",
+    "issue": 2590,
+    "time": "2023-09-22T10:19:51.360Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/5448e293df574a844c8486d78254f9f70e2e8cff/games/current/board.2590.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 9,
+    "roll": 3
+  },
+  {
+    "username": "NaimulIslam9m",
+    "issue": 2590,
+    "time": "2023-09-22T10:19:51.360Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
