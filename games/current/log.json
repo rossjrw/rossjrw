@@ -2056,7 +2056,7 @@
     "time": "2023-10-05T07:28:24.516Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4594772ebe872c1a62ba62fd0246edabbe73755e/games/current/board.2595.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -2066,5 +2066,22 @@
     "fromPosition": 8,
     "toPosition": 9,
     "roll": 1
+  },
+  {
+    "username": "Murdeala",
+    "issue": 2596,
+    "time": "2023-10-11T01:50:39.393Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 9,
+    "roll": 4
   }
 ]
