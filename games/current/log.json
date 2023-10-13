@@ -2090,7 +2090,7 @@
     "time": "2023-10-11T19:29:36.772Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/bdb18457ec782bdf6b5519f1a186a6a229446bb7/games/current/board.2597.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2100,5 +2100,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "smznahid",
+    "issue": 2598,
+    "time": "2023-10-13T19:56:57.165Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   }
 ]
