@@ -2187,7 +2187,7 @@
     "time": "2023-10-17T11:42:14.557Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/fc4f908ba0b32bc510496949143bfdd8d8288ceb/games/current/board.2602.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2196,6 +2196,23 @@
     },
     "fromPosition": 12,
     "toPosition": 15,
+    "roll": 3
+  },
+  {
+    "username": "kapilsinghnegi",
+    "issue": 2603,
+    "time": "2023-10-18T11:08:31.880Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
     "roll": 3
   }
 ]
