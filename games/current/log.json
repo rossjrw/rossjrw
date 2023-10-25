@@ -2272,7 +2272,7 @@
     "time": "2023-10-19T07:29:25.360Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7e4b4a86a0da208ef80db9a819b4f11b060ddd91/games/current/board.2607.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2281,6 +2281,23 @@
     },
     "fromPosition": 8,
     "toPosition": 11,
+    "roll": 3
+  },
+  {
+    "username": "mirshahriar",
+    "issue": 2608,
+    "time": "2023-10-25T09:29:19.695Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 13,
     "roll": 3
   }
 ]
