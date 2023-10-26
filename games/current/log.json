@@ -2306,7 +2306,7 @@
     "time": "2023-10-25T11:13:26.876Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7eb5e6c80ebfe661c43187b5228b4f0bf57b1d7c/games/current/board.2609.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2316,5 +2316,22 @@
     "fromPosition": 11,
     "toPosition": 12,
     "roll": 1
+  },
+  {
+    "username": "Tuburni",
+    "issue": 2610,
+    "time": "2023-10-26T13:47:12.414Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 5,
+    "roll": 3
   }
 ]
