@@ -1,11 +1,11 @@
 Welcome to my Github profile!
 We're playing
 [the Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur).
-**Game #16 is in progress,** but you can join!
+**Game #17 is in progress,** but you can join!
 
 <p align="center">
   <b>It's the
-  :white_circle:white
+  :black_circle:black
   team's turn.</b>
 </p>
 
@@ -16,11 +16,11 @@ You're on a team! :wave:
   check back later, or [ask a
   friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github) to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-  **:white_circle:white** team.
+  **:black_circle:black** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2613.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2614.svg"></p>
 
-  **:white_circle:White team:**
+  **:black_circle:Black team:**
   You rolled a 3!
 What would you like to do?
 
@@ -31,7 +31,7 @@ What would you like to do?
 -----
 
 <details>
-<summary><b>Game #16 so far</b></summary>
+<summary><b>Game #17 so far</b></summary>
 
 ## Who's on each team?
 
@@ -46,7 +46,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td></td>
-        <td><b><a href="https://github.com/blacksmithop">@blacksmithop</a></b> (1)</td>
+        <td><b><a href="https://github.com/blacksmithop">@blacksmithop</a></b> (2)</td>
       </tr>
     </tbody>
   </table>
@@ -55,7 +55,8 @@ What would you like to do?
 
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
-  | 27th Oct 2023 10:56 | **0** | :white_circle: **[@blacksmithop](https://github.com/blacksmithop)** started a new game | [#2613](https://github.com/rossjrw/rossjrw/issues/2613) |  |
+  | 27th Oct 2023 10:56 | **0** | :white_circle: **[@blacksmithop](https://github.com/blacksmithop)** started a new game | [#2613](https://github.com/rossjrw/rossjrw/issues/2613) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/7472b3271f95785473ad1e986f4ac07c7b566df6/games/current/board.2613.svg) |
+  | 27th Oct 2023 10:56 | **1** | :white_circle: **[@blacksmithop](https://github.com/blacksmithop)** moved a white piece onto the board to position 3    | [#2614](https://github.com/rossjrw/rossjrw/issues/2614) |  |
 
 </details>
 
@@ -169,6 +170,13 @@ What would you like to do?
    * The :white_circle:white team captured 4 black pieces and claimed 9 rosettes. 
    * The MVP of the winning team was **[@Murdeala](https://github.com/Murdeala)**, who played 37 moves. 
    * The winning move was made by **[@WKL10086](https://github.com/WKL10086)** ([#2460](https://github.com/rossjrw/rossjrw/issues/2460)).
+1. A game was started on 7th Jul 2023 by **[@kztera](https://github.com/kztera)** and ended on 26th Oct 2023. 
+   * The :white_circle:white team won. 
+   * 38 players played 142 moves across 3 months and 2 weeks. 
+   * The :black_circle:black team captured 5 white pieces and claimed 14 rosettes. 
+   * The :white_circle:white team captured 12 black pieces and claimed 14 rosettes. 
+   * The MVP of the winning team was **[@CostasAK](https://github.com/CostasAK)**, who played 53 moves. 
+   * The winning move was made by **[@CostasAK](https://github.com/CostasAK)** ([#2612](https://github.com/rossjrw/rossjrw/issues/2612)).
 
 </details>
 
