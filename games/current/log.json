@@ -17,6 +17,23 @@
     "time": "2023-10-27T10:56:53.660Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8bb0cbe4c173ebb91b0667abbf9cfb8fde10d334/games/current/board.2614.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "krostport",
+    "issue": 2615,
+    "time": "2023-10-28T21:57:01.841Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null,
     "events": {
       "rosetteClaimed": false,
