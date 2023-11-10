@@ -255,7 +255,7 @@
     "time": "2023-11-10T13:29:41.065Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/67aa32957a25744680e40c005b60f0ce5782e67d/games/current/board.2628.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -265,5 +265,22 @@
     "fromPosition": 8,
     "toPosition": 10,
     "roll": 2
+  },
+  {
+    "username": "Shadow1363",
+    "issue": 2629,
+    "time": "2023-11-10T13:37:21.134Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 4,
+    "roll": 3
   }
 ]
