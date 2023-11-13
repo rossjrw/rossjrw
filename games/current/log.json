@@ -306,7 +306,7 @@
     "time": "2023-11-12T12:43:25.127Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ecfd577be5a6677aa7f209799b888abd4bac5df1/games/current/board.2631.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -316,5 +316,22 @@
     "fromPosition": 10,
     "toPosition": 12,
     "roll": 2
+  },
+  {
+    "username": "mayannaoliveira",
+    "issue": 2632,
+    "time": "2023-11-13T02:34:07.578Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 7,
+    "roll": 3
   }
 ]
