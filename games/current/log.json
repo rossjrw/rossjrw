@@ -357,7 +357,7 @@
     "time": "2023-11-13T07:02:32.316Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1308f987035d18b208e0b0dc81053fac80f16765/games/current/board.2634.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -366,6 +366,23 @@
     },
     "fromPosition": 4,
     "toPosition": 7,
+    "roll": 3
+  },
+  {
+    "username": "CalebGriffin",
+    "issue": 2635,
+    "time": "2023-11-14T10:28:15.388Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
     "roll": 3
   }
 ]
