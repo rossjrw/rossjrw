@@ -442,7 +442,7 @@
     "time": "2023-11-15T23:24:39.811Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2158f4035c2a8be86df922fbe72c27f502c298c6/games/current/board.2639.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -452,5 +452,22 @@
     "fromPosition": 3,
     "toPosition": 6,
     "roll": 3
+  },
+  {
+    "username": "GianncarloG",
+    "issue": 2640,
+    "time": "2023-11-16T00:44:34.520Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
+    "roll": 1
   }
 ]
