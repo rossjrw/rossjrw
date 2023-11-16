@@ -493,7 +493,7 @@
     "time": "2023-11-16T09:41:24.358Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/37ee0362a4d75c5303f154a0322c6205213cdfed/games/current/board.2642.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -502,6 +502,23 @@
     },
     "fromPosition": 6,
     "toPosition": 9,
+    "roll": 2
+  },
+  {
+    "username": "landergerotto",
+    "issue": 2643,
+    "time": "2023-11-16T16:32:51.751Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
     "roll": 2
   }
 ]
