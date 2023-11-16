@@ -476,7 +476,7 @@
     "time": "2023-11-16T09:39:40.130Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/a8be207a5307a4be265f431b85017de99940b440/games/current/board.2641.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -485,6 +485,23 @@
     },
     "fromPosition": 2,
     "toPosition": 4,
+    "roll": 2
+  },
+  {
+    "username": "ellertsmari",
+    "issue": 2642,
+    "time": "2023-11-16T09:41:24.358Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 9,
     "roll": 2
   }
 ]
