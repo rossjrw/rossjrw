@@ -510,7 +510,7 @@
     "time": "2023-11-16T16:32:51.751Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c95e3e4188e83b17e48ce682d56c675001891882/games/current/board.2643.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -519,6 +519,23 @@
     },
     "fromPosition": 0,
     "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "AbhishekNavgan95",
+    "issue": 2644,
+    "time": "2023-11-17T16:25:46.035Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
     "roll": 2
   }
 ]
