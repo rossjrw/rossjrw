@@ -590,7 +590,7 @@
     "time": "2023-11-19T12:39:00.275Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/781bf9b0de99bea0205bc8e77f469d5e5585e66b/games/current/board.2647.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -599,6 +599,23 @@
     },
     "fromPosition": 8,
     "toPosition": 11,
+    "roll": 3
+  },
+  {
+    "username": "akramghaleb",
+    "issue": 2648,
+    "time": "2023-11-20T07:05:11.048Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
     "roll": 3
   }
 ]
