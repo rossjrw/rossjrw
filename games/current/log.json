@@ -670,7 +670,7 @@
     "time": "2023-11-21T10:27:58.039Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/819f118b10460e69324411fefc21788b4b6b63b0/games/current/board.2651.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -679,6 +679,23 @@
     },
     "fromPosition": 14,
     "toPosition": 15,
+    "roll": 1
+  },
+  {
+    "username": "hrahmadi71",
+    "issue": 2652,
+    "time": "2023-11-26T13:15:45.979Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
     "roll": 1
   }
 ]
