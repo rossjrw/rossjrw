@@ -755,7 +755,7 @@
     "time": "2023-11-30T09:30:27.978Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c05b099daff0577680a6872e532dc2b45f9018b9/games/current/board.2656.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -764,6 +764,23 @@
     },
     "fromPosition": 9,
     "toPosition": 11,
+    "roll": 2
+  },
+  {
+    "username": "TheDayIsMyEnemy",
+    "issue": 2657,
+    "time": "2023-12-02T08:48:08.325Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 3,
     "roll": 2
   }
 ]
