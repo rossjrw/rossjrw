@@ -835,7 +835,7 @@
     "time": "2023-12-02T13:57:16.869Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f6dec0680401be28095fc6938d50c242290296b6/games/current/board.2660.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -845,5 +845,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "haseebhijazi",
+    "issue": 2661,
+    "time": "2023-12-03T06:22:42.529Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
+    "roll": 2
   }
 ]
