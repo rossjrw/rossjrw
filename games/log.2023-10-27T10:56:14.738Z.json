@@ -1,0 +1,917 @@
+[
+  {
+    "username": "blacksmithop",
+    "issue": 2613,
+    "time": "2023-10-27T10:56:14.738Z",
+    "team": "w",
+    "action": "new",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7472b3271f95785473ad1e986f4ac07c7b566df6/games/current/board.2613.svg",
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": null
+  },
+  {
+    "username": "blacksmithop",
+    "issue": 2614,
+    "time": "2023-10-27T10:56:53.660Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8bb0cbe4c173ebb91b0667abbf9cfb8fde10d334/games/current/board.2614.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "krostport",
+    "issue": 2615,
+    "time": "2023-10-28T21:57:01.841Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e042fa09db1749feb510bbd6339c82c6b30fc814/games/current/board.2615.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "Murdeala",
+    "issue": 2616,
+    "time": "2023-10-29T23:41:30.243Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/efa987bc0b1ac1aa1e9f6a84445f0aad0f1d2a08/games/current/board.2616.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2617,
+    "time": "2023-10-31T13:32:53.882Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ce348b6af373c46366f3a33098be2aa81c81b571/games/current/board.2617.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 4,
+    "roll": 1
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2618,
+    "time": "2023-10-31T13:33:41.277Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e938947e618891163404adb01f19f9ef8afef11a/games/current/board.2618.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "rossjrw",
+    "issue": 2619,
+    "time": "2023-10-31T13:37:11.248Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/67f110570fb6860b75b0278ff37022fd31c9e027/games/current/board.2619.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2620,
+    "time": "2023-11-01T16:42:42.769Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c5d1946b2d9671b53847049cec24ff8337d2a19e/games/current/board.2620.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 7,
+    "roll": 1
+  },
+  {
+    "username": "scout0773",
+    "issue": 2621,
+    "time": "2023-11-03T22:08:55.794Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/59c27370b92285f7b207c047589467adec7c67cf/games/current/board.2621.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "IogaMaster",
+    "issue": 2622,
+    "time": "2023-11-04T04:14:38.871Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/9469e8f0d8b109db9201f171afb8588c78aee496/games/current/board.2622.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 8,
+    "roll": 1
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2623,
+    "time": "2023-11-04T13:59:04.358Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/bdc7e012d47db8d11e8b6725420ed25539f82745/games/current/board.2623.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "Murdeala",
+    "issue": 2624,
+    "time": "2023-11-07T23:00:50.458Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/638e366fe550f381654f1d65fdcc26caadfe20c0/games/current/board.2624.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 3,
+    "roll": 1
+  },
+  {
+    "username": "guru2050",
+    "issue": 2625,
+    "time": "2023-11-08T19:03:35.244Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1db810b8d03fe3427777a23677a1dfbc9601c064/games/current/board.2625.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2626,
+    "time": "2023-11-09T11:31:56.097Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3dbc402f51b87d01f4fed9b66d3bc9fbd3c836ed/games/current/board.2626.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "Shadow1363",
+    "issue": 2627,
+    "time": "2023-11-09T16:42:12.681Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8815f4d29d210c7f2735f15562d50b762fad1f87/games/current/board.2627.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2628,
+    "time": "2023-11-10T13:29:41.065Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/67aa32957a25744680e40c005b60f0ce5782e67d/games/current/board.2628.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 10,
+    "roll": 2
+  },
+  {
+    "username": "Shadow1363",
+    "issue": 2629,
+    "time": "2023-11-10T13:37:21.134Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/a0043dfed42bbe2818e12893a6b1f4206b84cf86/games/current/board.2629.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 4,
+    "roll": 3
+  },
+  {
+    "username": "Murdeala",
+    "issue": 2630,
+    "time": "2023-11-11T12:03:27.598Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d68b7e64bd4bf87f6eb849c7f9655bcd1cbd7a7e/games/current/board.2630.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
+    "roll": 2
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2631,
+    "time": "2023-11-12T12:43:25.127Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ecfd577be5a6677aa7f209799b888abd4bac5df1/games/current/board.2631.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 12,
+    "roll": 2
+  },
+  {
+    "username": "mayannaoliveira",
+    "issue": 2632,
+    "time": "2023-11-13T02:34:07.578Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8ffb44071dc3756d1fb476825f06b80e7c68ebcc/games/current/board.2632.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 7,
+    "roll": 3
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2633,
+    "time": "2023-11-13T07:01:33.700Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/dabe904fa76f5ac45633ab0ec1904c73aa4ab8fa/games/current/board.2633.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 12,
+    "toPosition": 14,
+    "roll": 2
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2634,
+    "time": "2023-11-13T07:02:32.316Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1308f987035d18b208e0b0dc81053fac80f16765/games/current/board.2634.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 7,
+    "roll": 3
+  },
+  {
+    "username": "CalebGriffin",
+    "issue": 2635,
+    "time": "2023-11-14T10:28:15.388Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/72c6b956623b1d08f8e39e43952c2fd9344a7f8f/games/current/board.2635.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2636,
+    "time": "2023-11-14T18:57:59.104Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/507d03052cbe08ff96850815b501398b9132d502/games/current/board.2636.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2637,
+    "time": "2023-11-14T18:58:25.368Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/d003d99064493e4b4ba9994a6afb8845877aed81/games/current/board.2637.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 8,
+    "roll": 1
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2638,
+    "time": "2023-11-14T18:58:56.588Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/b37330c1a3152b590064324e66b2274295c1b420/games/current/board.2638.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
+    "roll": 1
+  },
+  {
+    "username": "Murdeala",
+    "issue": 2639,
+    "time": "2023-11-15T23:24:39.811Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2158f4035c2a8be86df922fbe72c27f502c298c6/games/current/board.2639.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
+  },
+  {
+    "username": "GianncarloG",
+    "issue": 2640,
+    "time": "2023-11-16T00:44:34.520Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4857881b501fdc46d39b75ea458283ed2e0e2522/games/current/board.2640.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
+    "roll": 1
+  },
+  {
+    "username": "ellertsmari",
+    "issue": 2641,
+    "time": "2023-11-16T09:39:40.130Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/a8be207a5307a4be265f431b85017de99940b440/games/current/board.2641.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
+  },
+  {
+    "username": "ellertsmari",
+    "issue": 2642,
+    "time": "2023-11-16T09:41:24.358Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/37ee0362a4d75c5303f154a0322c6205213cdfed/games/current/board.2642.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 9,
+    "roll": 2
+  },
+  {
+    "username": "landergerotto",
+    "issue": 2643,
+    "time": "2023-11-16T16:32:51.751Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c95e3e4188e83b17e48ce682d56c675001891882/games/current/board.2643.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "AbhishekNavgan95",
+    "issue": 2644,
+    "time": "2023-11-17T16:25:46.035Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2645,
+    "time": "2023-11-18T16:13:30.754Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/5a25c38f874d523764b4bab1e014c4cfb39e8bbe/games/current/board.2645.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2645,
+    "time": "2023-11-18T16:13:30.754Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ccb18d9fcffb32282240491a30236d90f6eaaaf0/games/current/board.2645.svg",
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
+  },
+  {
+    "username": "Luiz-Souza0",
+    "issue": 2646,
+    "time": "2023-11-19T04:36:28.805Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0e88fec5f52f0c93966186b31c22d29666fc9aa1/games/current/board.2646.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 11,
+    "roll": 2
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2647,
+    "time": "2023-11-19T12:39:00.275Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/781bf9b0de99bea0205bc8e77f469d5e5585e66b/games/current/board.2647.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 11,
+    "roll": 3
+  },
+  {
+    "username": "akramghaleb",
+    "issue": 2648,
+    "time": "2023-11-20T07:05:11.048Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "marsianjohncarter",
+    "issue": 2649,
+    "time": "2023-11-20T18:23:02.249Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4e514e5fa2002d94f59ece440512b6fd9171c84f/games/current/board.2649.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 6,
+    "roll": 1
+  },
+  {
+    "username": "marsianjohncarter",
+    "issue": 2649,
+    "time": "2023-11-20T18:23:02.249Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7e87bcdff16ce80dd9c0a43fe070302b237a0434/games/current/board.2649.svg",
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2650,
+    "time": "2023-11-21T10:25:36.968Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1ae7aed166614dcdee8ada340067710a53810bc2/games/current/board.2650.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 14,
+    "roll": 3
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2651,
+    "time": "2023-11-21T10:27:58.039Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/819f118b10460e69324411fefc21788b4b6b63b0/games/current/board.2651.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
+    "roll": 1
+  },
+  {
+    "username": "hrahmadi71",
+    "issue": 2652,
+    "time": "2023-11-26T13:15:45.979Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6cd1ebd69601bf89fe9425624e90fba9f3887277/games/current/board.2652.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2653,
+    "time": "2023-11-27T13:38:27.299Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/648a5b8958025bd655c6792466c757a06d0aaa8f/games/current/board.2653.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 9,
+    "roll": 3
+  },
+  {
+    "username": "niko-dunixi",
+    "issue": 2654,
+    "time": "2023-11-28T17:17:04.271Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/001e980cd58ada1a8257591d0cec4eac5e75ab51/games/current/board.2654.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 4,
+    "roll": 1
+  },
+  {
+    "username": "Murdeala",
+    "issue": 2655,
+    "time": "2023-11-30T01:11:52.564Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/eb825531dc5060dae4130586482ea0c9548fa21f/games/current/board.2655.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2656,
+    "time": "2023-11-30T09:30:27.978Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c05b099daff0577680a6872e532dc2b45f9018b9/games/current/board.2656.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 11,
+    "roll": 2
+  },
+  {
+    "username": "TheDayIsMyEnemy",
+    "issue": 2657,
+    "time": "2023-12-02T08:48:08.325Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 3,
+    "roll": 2
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2658,
+    "time": "2023-12-02T13:48:58.455Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c2506a73349d9c59e3c76a2bfa8e528c8e54910d/games/current/board.2658.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 13,
+    "roll": 2
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2658,
+    "time": "2023-12-02T13:48:58.455Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/920b1e27bd92fcfe6d4079091426949b5118b176/games/current/board.2658.svg",
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2659,
+    "time": "2023-12-02T13:56:12.046Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/98a1fbc16bc36ad54094faa2d43bf8995b8fb9a3/games/current/board.2659.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 8,
+    "roll": 4
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2660,
+    "time": "2023-12-02T13:57:16.869Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f6dec0680401be28095fc6938d50c242290296b6/games/current/board.2660.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "haseebhijazi",
+    "issue": 2661,
+    "time": "2023-12-03T06:22:42.529Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c894f197eec9584d12497d703f86130556f9e360/games/current/board.2661.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
+    "roll": 2
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2662,
+    "time": "2023-12-03T11:21:24.641Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/74ca22494962f49440385508d629a2319f326964/games/current/board.2662.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 4,
+    "roll": 1
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2663,
+    "time": "2023-12-03T11:21:52.674Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/9e37ab025369bfbf0c038d4b67dbddb3b4261ee3/games/current/board.2663.svg",
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 13,
+    "toPosition": 14,
+    "roll": 1
+  },
+  {
+    "username": "CostasAK",
+    "issue": 2664,
+    "time": "2023-12-03T11:22:29.515Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
+  }
+]
