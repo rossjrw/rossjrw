@@ -5,7 +5,7 @@ We're playing
 
 <p align="center">
   <b>It's the
-  :white_circle:white
+  :black_circle:black
   team's turn.</b>
 </p>
 
@@ -16,11 +16,11 @@ You're on a team! :wave:
   check back later, or [ask a
   friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github) to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-  **:white_circle:white** team.
+  **:black_circle:black** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2668.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2669.svg"></p>
 
-  **:white_circle:White team:**
+  **:black_circle:Black team:**
   You rolled a 3!
 What would you like to do?
 
@@ -47,7 +47,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/yassirelkhaili">@yassirelkhaili</a></b> (1)</td>
-        <td><b><a href="https://github.com/joshuajohncohen">@joshuajohncohen</a></b> (2)</td>
+        <td><b><a href="https://github.com/joshuajohncohen">@joshuajohncohen</a></b> (2)<br><b><a href="https://github.com/guru2050">@guru2050</a></b> (1)</td>
       </tr>
     </tbody>
   </table>
@@ -58,7 +58,8 @@ What would you like to do?
 | :---: | :---: | :--- | :---: | :---: |
   | 4th Dec 2023 21:59 | **0** | :white_circle: **[@joshuajohncohen](https://github.com/joshuajohncohen)** started a new game | [#2665](https://github.com/rossjrw/rossjrw/issues/2665) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/72594ffb917986681d42810303075146a4b89470/games/current/board.2665.svg) |
   | 4th Dec 2023 22:01 | **1** | :white_circle: **[@joshuajohncohen](https://github.com/joshuajohncohen)** moved a white piece onto the board to position 2    | [#2666](https://github.com/rossjrw/rossjrw/issues/2666) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/dbff9cb500732839004f25b6b0bedd7ca2d7e743/games/current/board.2666.svg) |
-  | 6th Dec 2023 14:21 | **2** | :black_circle: **[@yassirelkhaili](https://github.com/yassirelkhaili)** moved a black piece onto the board to position 2    | [#2668](https://github.com/rossjrw/rossjrw/issues/2668) |  |
+  | 6th Dec 2023 14:21 | **2** | :black_circle: **[@yassirelkhaili](https://github.com/yassirelkhaili)** moved a black piece onto the board to position 2    | [#2668](https://github.com/rossjrw/rossjrw/issues/2668) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/1074af9e08788c38d60a2811d0b036a701e515aa/games/current/board.2668.svg) |
+  | 6th Dec 2023 19:12 | **3** | :white_circle: **[@guru2050](https://github.com/guru2050)** moved a white piece onto the board to position 3    | [#2669](https://github.com/rossjrw/rossjrw/issues/2669) |  |
 
 </details>
 
