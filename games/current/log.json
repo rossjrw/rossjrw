@@ -17,6 +17,23 @@
     "time": "2023-12-04T22:01:11.264Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/dbff9cb500732839004f25b6b0bedd7ca2d7e743/games/current/board.2666.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "yassirelkhaili",
+    "issue": 2668,
+    "time": "2023-12-06T14:21:01.072Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null,
     "events": {
       "rosetteClaimed": false,
