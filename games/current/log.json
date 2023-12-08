@@ -68,7 +68,7 @@
     "time": "2023-12-07T15:38:59.286Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ec29a869c5ff39b8fbf81057d84c25bc4e1f4d2f/games/current/board.2670.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -78,5 +78,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "meryembarkallah21",
+    "issue": 2671,
+    "time": "2023-12-08T13:23:21.945Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
+    "roll": 2
   }
 ]
