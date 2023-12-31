@@ -449,7 +449,7 @@
     "time": "2023-12-30T16:01:41.633Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/a6f93697005d740619df5f193148eb954f94a86d/games/current/board.2691.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -458,6 +458,23 @@
     },
     "fromPosition": 0,
     "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "tetouanii",
+    "issue": 2692,
+    "time": "2023-12-31T14:02:17.410Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 12,
     "roll": 3
   }
 ]
