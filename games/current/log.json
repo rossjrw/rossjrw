@@ -517,7 +517,7 @@
     "time": "2024-01-04T16:58:24.501Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4c1b3f8e6c91edc61f646075b9a23dfcc5d303a5/games/current/board.2695.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -527,5 +527,22 @@
     "fromPosition": 12,
     "toPosition": 15,
     "roll": 3
+  },
+  {
+    "username": "ajorquera",
+    "issue": 2696,
+    "time": "2024-01-05T16:21:13.769Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
   }
 ]
