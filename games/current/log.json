@@ -534,7 +534,7 @@
     "time": "2024-01-05T16:21:13.769Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e53577874241bd8b84afdbc369c3d49a053f73dd/games/current/board.2696.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -544,5 +544,22 @@
     "fromPosition": 0,
     "toPosition": 1,
     "roll": 1
+  },
+  {
+    "username": "BrendonAraujo",
+    "issue": 2697,
+    "time": "2024-01-06T13:43:13.710Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   }
 ]
