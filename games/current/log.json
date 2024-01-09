@@ -578,5 +578,34 @@
     "fromPosition": 2,
     "toPosition": 5,
     "roll": 3
+  },
+  {
+    "username": "ParivalavanIT",
+    "issue": 2700,
+    "time": "2024-01-09T13:43:10.310Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8813c1ce7e5028ad1f9364f7ec2d567f8ae9f5b0/games/current/board.2700.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "ParivalavanIT",
+    "issue": 2700,
+    "time": "2024-01-09T13:43:10.310Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
