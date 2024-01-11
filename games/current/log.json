@@ -614,7 +614,7 @@
     "time": "2024-01-10T21:22:21.715Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/eb829fe240bbc591820bdc0dbb53fce022faefca/games/current/board.2702.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -624,5 +624,22 @@
     "fromPosition": 4,
     "toPosition": 5,
     "roll": 1
+  },
+  {
+    "username": "MGO29",
+    "issue": 2703,
+    "time": "2024-01-11T13:57:54.491Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   }
 ]
