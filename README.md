@@ -18,7 +18,7 @@ You're on a team! :wave:
 * If you've not yet played a turn this game, make a move now to join the
   **:black_circle:black** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2704.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2705.svg"></p>
 
   **:black_circle:Black team:**
   You rolled a 3!
@@ -27,8 +27,9 @@ What would you like to do?
 | Choices *(pick one of them!)* |
 | --- |
   | [    Move a new piece to tile 3](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move the piece on tile 2 to tile 5](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%402-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
   | [    Move the piece on tile 4 to tile 7](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%404-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [:rosette:    Move the piece on tile 5 to tile 8](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%405-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move the piece on tile 8 to tile 11](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%408-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -47,7 +48,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (11)<br><b><a href="https://github.com/HugoCotton">@HugoCotton</a></b> (2)<br><b><a href="https://github.com/yassirelkhaili">@yassirelkhaili</a></b> (1)<br><b><a href="https://github.com/tetouanii">@tetouanii</a></b> (1)<br><b><a href="https://github.com/BrendonAraujo">@BrendonAraujo</a></b> (1)<br><b><a href="https://github.com/ParivalavanIT">@ParivalavanIT</a></b> (1)<br><b><a href="https://github.com/IogaMaster">@IogaMaster</a></b> (1)<br><b><a href="https://github.com/the1Riddle">@the1Riddle</a></b> (1)</td>
+        <td><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (12)<br><b><a href="https://github.com/HugoCotton">@HugoCotton</a></b> (2)<br><b><a href="https://github.com/yassirelkhaili">@yassirelkhaili</a></b> (1)<br><b><a href="https://github.com/tetouanii">@tetouanii</a></b> (1)<br><b><a href="https://github.com/BrendonAraujo">@BrendonAraujo</a></b> (1)<br><b><a href="https://github.com/ParivalavanIT">@ParivalavanIT</a></b> (1)<br><b><a href="https://github.com/IogaMaster">@IogaMaster</a></b> (1)<br><b><a href="https://github.com/the1Riddle">@the1Riddle</a></b> (1)</td>
         <td><b><a href="https://github.com/Murdeala">@Murdeala</a></b> (4)<br><b><a href="https://github.com/joshuajohncohen">@joshuajohncohen</a></b> (2)<br><b><a href="https://github.com/guru2050">@guru2050</a></b> (1)<br><b><a href="https://github.com/meryembarkallah21">@meryembarkallah21</a></b> (1)<br><b><a href="https://github.com/Dazsfr">@Dazsfr</a></b> (1)<br><b><a href="https://github.com/MarvHetz">@MarvHetz</a></b> (1)<br><b><a href="https://github.com/devCKVargas">@devCKVargas</a></b> (1)<br><b><a href="https://github.com/codeIntrovert">@codeIntrovert</a></b> (1)<br><b><a href="https://github.com/Skogrine">@Skogrine</a></b> (1)<br><b><a href="https://github.com/CamoCatX">@CamoCatX</a></b> (1)<br><b><a href="https://github.com/walidbosso">@walidbosso</a></b> (1)<br><b><a href="https://github.com/ajorquera">@ajorquera</a></b> (1)<br><b><a href="https://github.com/rrcoder0167">@rrcoder0167</a></b> (1)<br><b><a href="https://github.com/MGO29">@MGO29</a></b> (1)</td>
       </tr>
     </tbody>
@@ -96,7 +97,8 @@ What would you like to do?
   | 9th Jan 2024 13:43 | **36** | :white_circle:  The white team rolled a 0 and their turn was automatically passed | [#2700](https://github.com/rossjrw/rossjrw/issues/2700) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/55fa1eb02a25213822aeda56cfb61a113632f897/games/current/board.2700.svg) |
   | 10th Jan 2024 21:22 | **37** | :black_circle: **[@IogaMaster](https://github.com/IogaMaster)** moved a black piece from position 4 to position 5 — captured a white piece :crossed_swords:   | [#2702](https://github.com/rossjrw/rossjrw/issues/2702) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/eb829fe240bbc591820bdc0dbb53fce022faefca/games/current/board.2702.svg) |
   | 11th Jan 2024 13:57 | **38** | :white_circle: **[@MGO29](https://github.com/MGO29)** moved a white piece onto the board to position 2    | [#2703](https://github.com/rossjrw/rossjrw/issues/2703) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/b1d70404151d35c68c0d803043313555624cde04/games/current/board.2703.svg) |
-  | 13th Jan 2024 17:51 | **39** | :black_circle: **[@the1Riddle](https://github.com/the1Riddle)** moved a black piece from position 3 to position 4  — claimed a rosette :rosette:  | [#2704](https://github.com/rossjrw/rossjrw/issues/2704) |  |
+  | 13th Jan 2024 17:51 | **39** | :black_circle: **[@the1Riddle](https://github.com/the1Riddle)** moved a black piece from position 3 to position 4  — claimed a rosette :rosette:  | [#2704](https://github.com/rossjrw/rossjrw/issues/2704) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/d7e2a388a39dda6370a1e032b52bd3d582d461f8/games/current/board.2704.svg) |
+  | 14th Jan 2024 18:31 | **40** | :black_circle: **[@CostasAK](https://github.com/CostasAK)** moved a black piece from position 5 to position 8  — claimed a rosette :rosette:  | [#2705](https://github.com/rossjrw/rossjrw/issues/2705) |  |
 
 </details>
 
