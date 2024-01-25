@@ -767,7 +767,7 @@
     "time": "2024-01-24T23:41:47.170Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e5595b3936e818561b29de7919bafcc376ffb199/games/current/board.2712.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -777,5 +777,22 @@
     "fromPosition": 3,
     "toPosition": 4,
     "roll": 1
+  },
+  {
+    "username": "MarcusKim442",
+    "issue": 2713,
+    "time": "2024-01-25T20:28:28.829Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   }
 ]
