@@ -862,5 +862,34 @@
     "fromPosition": 5,
     "toPosition": 9,
     "roll": 4
+  },
+  {
+    "username": "rajabatra",
+    "issue": 2718,
+    "time": "2024-01-29T21:10:31.238Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/bc9e174e50e92006aa51fcb79598f22cfc23d232/games/current/board.2718.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
+  },
+  {
+    "username": "rajabatra",
+    "issue": 2718,
+    "time": "2024-01-29T21:10:31.238Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
