@@ -932,7 +932,7 @@
     "time": "2024-01-31T23:44:07.986Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4f44cc5cedcef595d6b5c3a8fd699cc31e88953e/games/current/board.2721.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -941,6 +941,23 @@
     },
     "fromPosition": 3,
     "toPosition": 5,
+    "roll": 2
+  },
+  {
+    "username": "initcyber",
+    "issue": 2723,
+    "time": "2024-02-01T14:01:02.707Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 10,
     "roll": 2
   }
 ]
