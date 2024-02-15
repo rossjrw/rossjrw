@@ -1012,7 +1012,7 @@
     "time": "2024-02-06T00:11:23.186Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/68d1303cd6f61ec569811e5f4ae7a1e8d23c3dcf/games/current/board.2726.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1021,6 +1021,23 @@
     },
     "fromPosition": 2,
     "toPosition": 4,
+    "roll": 2
+  },
+  {
+    "username": "namenavi",
+    "issue": 2727,
+    "time": "2024-02-15T18:11:14.034Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
     "roll": 2
   }
 ]
