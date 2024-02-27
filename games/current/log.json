@@ -1148,10 +1148,27 @@
     "time": "2024-02-27T00:18:01.502Z",
     "team": "b",
     "action": "pass",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c5111f2dda14e4a58181d7afb2c5cfa8ce8ed150/games/current/board.2733.svg",
     "events": null,
     "fromPosition": null,
     "toPosition": null,
     "roll": 0
+  },
+  {
+    "username": "nogicoder",
+    "issue": 2734,
+    "time": "2024-02-27T03:20:45.364Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 9,
+    "roll": 3
   }
 ]
