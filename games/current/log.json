@@ -1274,6 +1274,23 @@
     "time": "2024-03-05T13:01:13.407Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2903f689b241d6947e696fcd21f6b6965c4745b0/games/current/board.2740.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "buroa",
+    "issue": 2741,
+    "time": "2024-03-05T23:50:26.800Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null,
     "events": {
       "rosetteClaimed": false,
