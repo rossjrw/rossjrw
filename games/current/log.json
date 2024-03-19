@@ -1410,7 +1410,7 @@
     "time": "2024-03-18T09:45:39.656Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1d4a3cb5470eb71f4f3e70743aae63da8552c6a7/games/current/board.2750.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -1420,5 +1420,22 @@
     "fromPosition": 8,
     "toPosition": 9,
     "roll": 1
+  },
+  {
+    "username": "lulunac27a",
+    "issue": 2751,
+    "time": "2024-03-19T00:07:34.203Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 7,
+    "toPosition": 9,
+    "roll": 2
   }
 ]
