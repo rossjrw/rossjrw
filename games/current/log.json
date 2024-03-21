@@ -1461,7 +1461,7 @@
     "time": "2024-03-19T10:40:01.634Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6f47be0240571619f53c728f26388fac8416dd21/games/current/board.2753.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1470,6 +1470,23 @@
     },
     "fromPosition": 0,
     "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "dilshanSankalpa",
+    "issue": 2754,
+    "time": "2024-03-21T03:19:10.606Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 11,
     "roll": 2
   }
 ]
