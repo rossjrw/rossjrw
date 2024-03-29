@@ -1512,7 +1512,7 @@
     "time": "2024-03-21T14:19:43.688Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7ea7dc125984ba8fc36ce79064898885d6987111/games/current/board.2756.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -1522,5 +1522,22 @@
     "fromPosition": 8,
     "toPosition": 11,
     "roll": 3
+  },
+  {
+    "username": "Pankaj-Meharchandani",
+    "issue": 2757,
+    "time": "2024-03-29T07:11:56.313Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
   }
 ]
