@@ -1563,6 +1563,23 @@
     "time": "2024-03-29T13:08:34.250Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/12ac30d7854b231d99fec8b804cc97951e17f4b2/games/current/board.2759.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "scaulfield7",
+    "issue": 2760,
+    "time": "2024-03-31T11:24:12.393Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null,
     "events": {
       "rosetteClaimed": false,
