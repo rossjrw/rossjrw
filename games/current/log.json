@@ -1580,7 +1580,7 @@
     "time": "2024-03-31T11:24:12.393Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/90afebf12343c9a5bf400eeeff353042c5a55225/games/current/board.2760.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -1590,5 +1590,22 @@
     "fromPosition": 4,
     "toPosition": 6,
     "roll": 2
+  },
+  {
+    "username": "69Jesse",
+    "issue": 2761,
+    "time": "2024-03-31T23:39:22.866Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
   }
 ]
