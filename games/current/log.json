@@ -1699,7 +1699,7 @@
     "time": "2024-04-03T16:50:41.938Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/8355148b0d901b500c6b1a4a73fcdf60b339a12f/games/current/board.2767.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1709,5 +1709,22 @@
     "fromPosition": 1,
     "toPosition": 4,
     "roll": 3
+  },
+  {
+    "username": "7IronSnow7",
+    "issue": 2768,
+    "time": "2024-04-04T02:20:21.984Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 11,
+    "roll": 2
   }
 ]
