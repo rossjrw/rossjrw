@@ -1,15 +1,15 @@
 {
-  "currentPlayer": "w",
+  "currentPlayer": "b",
   "dice": [
-    0,
     1,
     0,
+    1,
     1
   ],
-  "diceResult": 2,
+  "diceResult": 3,
   "possibleMoves": {
-    "4": 6,
-    "13": 15
+    "3": 6,
+    "8": 11
   },
   "board": [
     {
@@ -65,7 +65,7 @@
       "b": 0
     },
     {
-      "w": 1,
+      "w": 0,
       "b": 0
     },
     {
@@ -73,7 +73,7 @@
       "b": 0
     },
     {
-      "w": 1,
+      "w": 2,
       "b": 5
     }
   ]
