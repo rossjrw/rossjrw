@@ -2005,7 +2005,7 @@
     "time": "2024-04-10T13:47:39.661Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/88f4c8e4de77dd2c5a51e41392ede926a6f6bdb4/games/current/board.2785.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2015,5 +2015,22 @@
     "fromPosition": 0,
     "toPosition": 2,
     "roll": 2
+  },
+  {
+    "username": "LakeBlair",
+    "issue": 2786,
+    "time": "2024-04-10T18:09:47.382Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 6,
+    "roll": 1
   }
 ]
