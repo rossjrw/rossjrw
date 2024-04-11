@@ -170,7 +170,7 @@
     "time": "2024-04-11T14:15:57.360Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/34c9d46f4c5b40822ef66f5fcfa88271cbc952f5/games/current/board.2807.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -180,5 +180,22 @@
     "fromPosition": 6,
     "toPosition": 7,
     "roll": 1
+  },
+  {
+    "username": "karim-eg",
+    "issue": 2808,
+    "time": "2024-04-11T23:53:16.619Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 5,
+    "roll": 3
   }
 ]
