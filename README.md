@@ -1,11 +1,11 @@
 Welcome to my Github profile!
 We're playing
 [the Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur).
-**Game #18 is in progress,** but you can join!
+**Game #19 is in progress,** but you can join!
 
 <p align="center">
   <b>It's the
-  :black_circle:black
+  :white_circle:white
   team's turn.</b>
 </p>
 
@@ -16,22 +16,22 @@ You're on a team! :wave:
   check back later, or [ask a
   friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github) to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-  **:black_circle:black** team.
+  **:white_circle:white** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2797.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.2798.svg"></p>
 
-  **:black_circle:Black team:**
-  You rolled a 2!
+  **:white_circle:White team:**
+  You rolled a 1!
 What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
-  | [    Move a new piece to tile 2](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move a new piece to tile 1](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
 <details>
-<summary><b>Game #18 so far</b></summary>
+<summary><b>Game #19 so far</b></summary>
 
 ## Who's on each team?
 
@@ -45,7 +45,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td><b><a href="https://github.com/tassiaaccioly">@tassiaaccioly</a></b> (1)</td>
+        <td><b><a href="https://github.com/tassiaaccioly">@tassiaaccioly</a></b> (2)</td>
         <td></td>
       </tr>
     </tbody>
@@ -55,7 +55,8 @@ What would you like to do?
 
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
-  | 11th Apr 2024 03:01 | **0** | :black_circle: **[@tassiaaccioly](https://github.com/tassiaaccioly)** started a new game | [#2797](https://github.com/rossjrw/rossjrw/issues/2797) |  |
+  | 11th Apr 2024 03:01 | **0** | :black_circle: **[@tassiaaccioly](https://github.com/tassiaaccioly)** started a new game | [#2797](https://github.com/rossjrw/rossjrw/issues/2797) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/3b55d755eb1059017bd702f5a1d0265e5152c490/games/current/board.2797.svg) |
+  | 11th Apr 2024 03:01 | **1** | :black_circle: **[@tassiaaccioly](https://github.com/tassiaaccioly)** moved a black piece onto the board to position 2    | [#2798](https://github.com/rossjrw/rossjrw/issues/2798) |  |
 
 </details>
 
@@ -183,6 +184,13 @@ What would you like to do?
    * The :white_circle:white team captured 0 black pieces and claimed 3 rosettes. 
    * The MVP of the winning team was **[@CostasAK](https://github.com/CostasAK)**, who played 26 moves. 
    * The winning move was made by **[@CostasAK](https://github.com/CostasAK)** ([#2664](https://github.com/rossjrw/rossjrw/issues/2664)).
+1. A game was started on 4th Dec 2023 by **[@joshuajohncohen](https://github.com/joshuajohncohen)** and ended on 11th Apr 2024. 
+   * The :black_circle:black team won. 
+   * 44 players played 133 moves across 4 months and 6 days. 
+   * The :black_circle:black team captured 11 white pieces and claimed 16 rosettes. 
+   * The :white_circle:white team captured 5 black pieces and claimed 12 rosettes. 
+   * The MVP of the winning team was **[@CostasAK](https://github.com/CostasAK)**, who played 49 moves. 
+   * The winning move was made by **[@tassiaaccioly](https://github.com/tassiaaccioly)** ([#2796](https://github.com/rossjrw/rossjrw/issues/2796)).
 
 </details>
 
