@@ -85,7 +85,7 @@
     "time": "2024-04-11T11:59:20.906Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/85cc7a31329c7462afa4c3a9e645e0904358dfc4/games/current/board.2802.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -94,6 +94,23 @@
     },
     "fromPosition": 0,
     "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "7IronSnow7",
+    "issue": 2803,
+    "time": "2024-04-11T13:08:44.342Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
     "roll": 2
   }
 ]
