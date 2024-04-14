@@ -221,7 +221,7 @@
     "time": "2024-04-12T00:02:06.171Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ba8efe90785f535e87d1abc23c297dbb50131f37/games/current/board.2810.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -231,5 +231,22 @@
     "fromPosition": 4,
     "toPosition": 6,
     "roll": 2
+  },
+  {
+    "username": "chiragyadav916",
+    "issue": 2813,
+    "time": "2024-04-14T18:12:07.241Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 6,
+    "roll": 1
   }
 ]
