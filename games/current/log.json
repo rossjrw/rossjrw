@@ -2136,7 +2136,7 @@
     "time": "2024-05-05T16:00:24.613Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/a7976ecf1934f36b60f2b0a1851b62f6260b019b/games/current/board.2925.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2146,5 +2146,22 @@
     "fromPosition": 8,
     "toPosition": 11,
     "roll": 3
+  },
+  {
+    "username": "Eloitor",
+    "issue": 2926,
+    "time": "2024-05-05T16:47:28.249Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 11,
+    "roll": 1
   }
 ]
