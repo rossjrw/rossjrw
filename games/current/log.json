@@ -2204,7 +2204,7 @@
     "time": "2024-05-07T10:57:37.551Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/1f89d7f8360fc97daccb51c5940521c5b8ebe7c8/games/current/board.2929.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -2213,6 +2213,23 @@
     },
     "fromPosition": 4,
     "toPosition": 7,
+    "roll": 3
+  },
+  {
+    "username": "TobeTek",
+    "issue": 2930,
+    "time": "2024-05-07T11:55:38.450Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
     "roll": 3
   }
 ]
