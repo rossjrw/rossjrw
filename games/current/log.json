@@ -3232,5 +3232,34 @@
     "fromPosition": null,
     "toPosition": null,
     "roll": 3
+  },
+  {
+    "username": "huuquyet",
+    "issue": 2980,
+    "time": "2024-05-12T09:27:44.518Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7f618511f2f78925cb6a36438a258d7356c53cd2/games/current/board.2980.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 12,
+    "roll": 2
+  },
+  {
+    "username": "huuquyet",
+    "issue": 2980,
+    "time": "2024-05-12T09:27:44.518Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 4
   }
 ]
