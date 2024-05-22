@@ -876,7 +876,7 @@
     "time": "2024-05-22T07:30:10.532Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/46409bd98f1ad5c7bdf8d9cc98979ecdbb6caed5/games/current/board.3037.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -885,6 +885,23 @@
     },
     "fromPosition": 13,
     "toPosition": 15,
+    "roll": 2
+  },
+  {
+    "username": "guibariste",
+    "issue": 3038,
+    "time": "2024-05-22T08:54:14.281Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 3,
     "roll": 2
   }
 ]
