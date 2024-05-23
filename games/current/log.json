@@ -893,7 +893,7 @@
     "time": "2024-05-22T08:54:14.281Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/141db06f5798f05db9781ef51c2d79a52a51f763/games/current/board.3038.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -903,5 +903,22 @@
     "fromPosition": 1,
     "toPosition": 3,
     "roll": 2
+  },
+  {
+    "username": "garvit-exe",
+    "issue": 3039,
+    "time": "2024-05-23T06:06:45.322Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
+    "roll": 1
   }
 ]
