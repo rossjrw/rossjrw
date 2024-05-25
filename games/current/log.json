@@ -1063,7 +1063,7 @@
     "time": "2024-05-24T13:34:59.997Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/71ea957ac7ded1aaac904e0062f4c3b84e88cf2f/games/current/board.3049.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1072,6 +1072,23 @@
     },
     "fromPosition": 0,
     "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "igorantun",
+    "issue": 3050,
+    "time": "2024-05-25T19:49:11.876Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 5,
+    "toPosition": 7,
     "roll": 2
   }
 ]
