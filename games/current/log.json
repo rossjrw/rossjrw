@@ -1386,7 +1386,7 @@
     "time": "2024-06-02T02:14:27.840Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/11b3b4b81685cc48f7b28691748a3544900e822b/games/current/board.3068.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1396,5 +1396,22 @@
     "fromPosition": 13,
     "toPosition": 14,
     "roll": 1
+  },
+  {
+    "username": "ahujaesh",
+    "issue": 3069,
+    "time": "2024-06-02T02:15:22.865Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 12,
+    "toPosition": 15,
+    "roll": 3
   }
 ]
