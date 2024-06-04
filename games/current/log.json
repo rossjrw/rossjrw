@@ -1573,10 +1573,27 @@
     "time": "2024-06-03T13:56:10.031Z",
     "team": "b",
     "action": "pass",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ac03213449876b61e11ed3a1fee7acf75f76b7fc/games/current/board.3078.svg",
     "events": null,
     "fromPosition": null,
     "toPosition": null,
     "roll": 0
+  },
+  {
+    "username": "afraaz24",
+    "issue": 3079,
+    "time": "2024-06-04T02:56:32.681Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
+    "roll": 2
   }
 ]
