@@ -238,7 +238,7 @@
     "time": "2024-06-12T03:25:14.714Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ae4b20b7ae660e36e1a1944a49c8ed2f4fea8231/games/current/board.3154.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -248,5 +248,22 @@
     "fromPosition": 0,
     "toPosition": 1,
     "roll": 1
+  },
+  {
+    "username": "Hans5958",
+    "issue": 3155,
+    "time": "2024-06-12T07:53:38.552Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
+    "roll": 2
   }
 ]
