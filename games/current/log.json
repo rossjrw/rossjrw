@@ -437,7 +437,7 @@
     "time": "2024-06-13T10:57:20.985Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/45a0d58ca6642c6f032f35eb0879ea20f395711d/games/current/board.3165.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -447,5 +447,22 @@
     "fromPosition": 0,
     "toPosition": 1,
     "roll": 1
+  },
+  {
+    "username": "huuquyet",
+    "issue": 3166,
+    "time": "2024-06-14T03:45:16.686Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 9,
+    "roll": 2
   }
 ]
