@@ -522,7 +522,7 @@
     "time": "2024-06-14T12:18:18.506Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/7ee3b6e86988090e24eef62a8aecd2218f7a4eda/games/current/board.3170.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -532,5 +532,22 @@
     "fromPosition": 8,
     "toPosition": 11,
     "roll": 3
+  },
+  {
+    "username": "HerobrineTV",
+    "issue": 3171,
+    "time": "2024-06-14T12:32:00.078Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   }
 ]
