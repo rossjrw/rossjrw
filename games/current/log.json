@@ -573,7 +573,7 @@
     "time": "2024-06-15T03:15:18.243Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0479979a7bec7f3018ac89112532ddae94dfeba1/games/current/board.3173.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -582,6 +582,23 @@
     },
     "fromPosition": 2,
     "toPosition": 3,
+    "roll": 1
+  },
+  {
+    "username": "debasish-dutta",
+    "issue": 3174,
+    "time": "2024-06-15T05:02:19.017Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
     "roll": 1
   }
 ]
