@@ -840,6 +840,23 @@
     "time": "2024-06-23T16:15:54.796Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/bfb90fdb4809a338a7f4b6318e20f4a9e79a8b65/games/current/board.3188.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "foenyxr",
+    "issue": 3189,
+    "time": "2024-06-23T19:51:19.136Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null,
     "events": {
       "rosetteClaimed": false,
