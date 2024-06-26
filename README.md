@@ -18,7 +18,7 @@ You're on a team! :wave:
 * If you've not yet played a turn this game, make a move now to join the
   **:white_circle:white** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.3193.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.3194.svg"></p>
 
   **:white_circle:White team:**
   You rolled a 2!
@@ -28,7 +28,6 @@ What would you like to do?
 | --- |
   | [    Move a new piece to tile 2](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
   | [    Move the piece on tile 5 to tile 7](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%405-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [:rosette:    Move the piece on tile 12 to tile 14](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%4012-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -48,7 +47,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/tassiaaccioly">@tassiaaccioly</a></b> (25)<br><b><a href="https://github.com/Hans5958">@Hans5958</a></b> (1)<br><b><a href="https://github.com/debasish-dutta">@debasish-dutta</a></b> (1)<br><b><a href="https://github.com/foenyxr">@foenyxr</a></b> (1)</td>
-        <td><b><a href="https://github.com/huuquyet">@huuquyet</a></b> (13)<br><b><a href="https://github.com/Casper-Guo">@Casper-Guo</a></b> (12)<br><b><a href="https://github.com/HerobrineTV">@HerobrineTV</a></b> (1)</td>
+        <td><b><a href="https://github.com/huuquyet">@huuquyet</a></b> (14)<br><b><a href="https://github.com/Casper-Guo">@Casper-Guo</a></b> (12)<br><b><a href="https://github.com/HerobrineTV">@HerobrineTV</a></b> (1)</td>
       </tr>
     </tbody>
   </table>
@@ -113,7 +112,8 @@ What would you like to do?
   | 24th Jun 2024 03:44 | **53** | :white_circle: **[@huuquyet](https://github.com/huuquyet)** moved a white piece from position 10 to position 12    | [#3191](https://github.com/rossjrw/rossjrw/issues/3191) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/568a058d492bce22214d5b05d6b8fb43fbdbf9a5/games/current/board.3191.svg) |
   | 24th Jun 2024 03:44 | **54** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#3191](https://github.com/rossjrw/rossjrw/issues/3191) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/b31a0d614c2e400e891d84fd6f888871b98b8602/games/current/board.3191.svg) |
   | 24th Jun 2024 03:46 | **55** | :white_circle: **[@huuquyet](https://github.com/huuquyet)** moved a white piece from position 4 to position 5 — captured a black piece :crossed_swords:   | [#3192](https://github.com/rossjrw/rossjrw/issues/3192) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/57e533fa3dc0a6dfc098ce645992ef1f9d940f07/games/current/board.3192.svg) |
-  | 24th Jun 2024 11:04 | **56** | :black_circle: **[@tassiaaccioly](https://github.com/tassiaaccioly)** moved a black piece from position 2 to position 3    | [#3193](https://github.com/rossjrw/rossjrw/issues/3193) |  |
+  | 24th Jun 2024 11:04 | **56** | :black_circle: **[@tassiaaccioly](https://github.com/tassiaaccioly)** moved a black piece from position 2 to position 3    | [#3193](https://github.com/rossjrw/rossjrw/issues/3193) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/70265a5f8e7eadf3638cf609b8510019c635a5d7/games/current/board.3193.svg) |
+  | 26th Jun 2024 03:56 | **57** | :white_circle: **[@huuquyet](https://github.com/huuquyet)** moved a white piece from position 12 to position 14  — claimed a rosette :rosette:  | [#3194](https://github.com/rossjrw/rossjrw/issues/3194) |  |
 
 </details>
 
