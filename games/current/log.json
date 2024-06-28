@@ -971,7 +971,7 @@
     "time": "2024-06-26T03:59:10.810Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/2e0b1d72f14de8a601f944e49b4541f5f9a30f5d/games/current/board.3195.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -981,5 +981,22 @@
     "fromPosition": 5,
     "toPosition": 7,
     "roll": 2
+  },
+  {
+    "username": "i-like-trains-de",
+    "issue": 3196,
+    "time": "2024-06-28T20:27:52.302Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
   }
 ]
