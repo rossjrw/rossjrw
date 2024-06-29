@@ -1148,7 +1148,7 @@
     "time": "2024-06-29T12:04:28.363Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/30f430ac6546856a198c62997946331ac98031f6/games/current/board.3204.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1158,5 +1158,22 @@
     "fromPosition": 0,
     "toPosition": 2,
     "roll": 2
+  },
+  {
+    "username": "commonuserlol",
+    "issue": 3205,
+    "time": "2024-06-29T12:14:49.912Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 3,
+    "roll": 3
   }
 ]
