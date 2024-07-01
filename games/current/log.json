@@ -1510,5 +1510,34 @@
     "fromPosition": 11,
     "toPosition": 15,
     "roll": 4
+  },
+  {
+    "username": "curtainteddy",
+    "issue": 3225,
+    "time": "2024-07-01T11:42:23.068Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0a5566c5ac9a5acd71569432871d27a5389aaa79/games/current/board.3225.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 5,
+    "roll": 3
+  },
+  {
+    "username": "curtainteddy",
+    "issue": 3225,
+    "time": "2024-07-01T11:42:23.068Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
