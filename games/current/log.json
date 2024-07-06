@@ -1563,7 +1563,7 @@
     "time": "2024-07-06T14:21:13.215Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e0b7cce832b2f1dc8fb249041ccf5d84bf2cfa2b/games/current/board.3230.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1572,6 +1572,23 @@
     },
     "fromPosition": 0,
     "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "AppleBoiy",
+    "issue": 3231,
+    "time": "2024-07-06T14:37:21.839Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
     "roll": 2
   }
 ]
