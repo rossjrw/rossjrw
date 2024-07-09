@@ -2022,7 +2022,7 @@
     "time": "2024-07-09T12:33:41.770Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3c64c31f417c9a9ab129a7e202b9c9b9d7150a24/games/current/board.3257.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2032,5 +2032,22 @@
     "fromPosition": 0,
     "toPosition": 3,
     "roll": 3
+  },
+  {
+    "username": "Coding4Hours",
+    "issue": 3258,
+    "time": "2024-07-09T16:27:02.365Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   }
 ]
