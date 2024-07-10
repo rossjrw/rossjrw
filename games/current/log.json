@@ -2260,7 +2260,7 @@
     "time": "2024-07-10T20:09:56.928Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ee661f42c95a8c9b15be7022f3a589681c918915/games/current/board.3272.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -2270,5 +2270,22 @@
     "fromPosition": 7,
     "toPosition": 9,
     "roll": 2
+  },
+  {
+    "username": "Coding4Hours",
+    "issue": 3273,
+    "time": "2024-07-10T20:16:08.622Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 4,
+    "roll": 4
   }
 ]
