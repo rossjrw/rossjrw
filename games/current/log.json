@@ -2719,7 +2719,7 @@
     "time": "2024-07-15T18:49:51.523Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3bd637e4f741c7c9679de3cc77994dd141ead02c/games/current/board.3300.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2729,5 +2729,22 @@
     "fromPosition": 8,
     "toPosition": 9,
     "roll": 1
+  },
+  {
+    "username": "tassiaaccioly",
+    "issue": 3301,
+    "time": "2024-07-15T20:37:44.298Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 9,
+    "roll": 3
   }
 ]
