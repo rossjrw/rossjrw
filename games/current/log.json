@@ -2583,7 +2583,7 @@
     "time": "2024-07-15T16:14:49.701Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/924c545458fa5d253eae03f223132855c10d34bb/games/current/board.3291.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2593,5 +2593,22 @@
     "fromPosition": 14,
     "toPosition": 15,
     "roll": 1
+  },
+  {
+    "username": "nhelchitnis",
+    "issue": 3292,
+    "time": "2024-07-15T16:16:40.191Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 6,
+    "roll": 3
   }
 ]
