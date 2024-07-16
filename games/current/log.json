@@ -2736,7 +2736,7 @@
     "time": "2024-07-15T20:37:44.298Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/3bf032c33953d5268a5b89507a7ba0871edb1667/games/current/board.3301.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -2746,5 +2746,22 @@
     "fromPosition": 6,
     "toPosition": 9,
     "roll": 3
+  },
+  {
+    "username": "kashish1928",
+    "issue": 3303,
+    "time": "2024-07-16T12:58:33.186Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
+    "roll": 1
   }
 ]
