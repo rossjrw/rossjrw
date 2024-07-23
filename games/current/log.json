@@ -301,7 +301,7 @@
     "time": "2024-07-23T10:15:23.313Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0c2530e26ed505764f5dc51ce313a545e8973624/games/current/board.3327.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -311,5 +311,22 @@
     "fromPosition": 4,
     "toPosition": 7,
     "roll": 3
+  },
+  {
+    "username": "Jh123x",
+    "issue": 3328,
+    "time": "2024-07-23T12:45:38.264Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 13,
+    "roll": 2
   }
 ]
