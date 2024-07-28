@@ -437,6 +437,23 @@
     "time": "2024-07-25T16:48:51.976Z",
     "team": "w",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/515c0954ac44c7831843d55874b13899a8e22c1e/games/current/board.3335.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "nathanielchitn",
+    "issue": 3336,
+    "time": "2024-07-28T19:00:13.848Z",
+    "team": "b",
+    "action": "move",
     "boardImage": null,
     "events": {
       "rosetteClaimed": false,
