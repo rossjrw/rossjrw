@@ -454,7 +454,7 @@
     "time": "2024-07-28T19:00:13.848Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6fbaa541a3a6ec7d62fa575318e3003266231edb/games/current/board.3336.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -463,6 +463,23 @@
     },
     "fromPosition": 4,
     "toPosition": 6,
+    "roll": 2
+  },
+  {
+    "username": "mikeselva123",
+    "issue": 3337,
+    "time": "2024-07-28T23:34:11.485Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 3,
     "roll": 2
   }
 ]
