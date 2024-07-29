@@ -488,7 +488,7 @@
     "time": "2024-07-28T23:46:57.232Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0d3053a0770a8f1a5ed71d7c939060ae1054af47/games/current/board.3338.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -498,5 +498,22 @@
     "fromPosition": 14,
     "toPosition": 15,
     "roll": 1
+  },
+  {
+    "username": "MeJaM35",
+    "issue": 3339,
+    "time": "2024-07-29T07:51:55.071Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
+    "roll": 2
   }
 ]
