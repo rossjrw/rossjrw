@@ -505,7 +505,7 @@
     "time": "2024-07-29T07:51:55.071Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/a9ca2155cf2c13bc048c1cc0f94e46e17d7cb8f9/games/current/board.3339.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -514,6 +514,23 @@
     },
     "fromPosition": 3,
     "toPosition": 5,
+    "roll": 2
+  },
+  {
+    "username": "Axelaredz",
+    "issue": 3340,
+    "time": "2024-07-29T21:18:36.310Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 8,
     "roll": 2
   }
 ]
