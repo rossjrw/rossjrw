@@ -937,7 +937,7 @@
     "time": "2024-08-07T17:57:12.667Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e82725e8e85cfcc852636e35ea180658570993aa/games/current/board.3363.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -947,5 +947,22 @@
     "fromPosition": 2,
     "toPosition": 5,
     "roll": 3
+  },
+  {
+    "username": "L4FeeR",
+    "issue": 3364,
+    "time": "2024-08-08T13:19:14.204Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 5,
+    "roll": 1
   }
 ]
