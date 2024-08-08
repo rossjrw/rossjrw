@@ -1022,7 +1022,7 @@
     "time": "2024-08-08T19:26:49.762Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/78416186100c04699f8d396926fbf91a3d18d3a5/games/current/board.3370.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1032,5 +1032,22 @@
     "fromPosition": 4,
     "toPosition": 8,
     "roll": 4
+  },
+  {
+    "username": "Justgonc",
+    "issue": 3371,
+    "time": "2024-08-08T19:28:17.434Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 13,
+    "toPosition": 15,
+    "roll": 2
   }
 ]
