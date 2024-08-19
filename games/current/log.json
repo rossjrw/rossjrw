@@ -1403,7 +1403,7 @@
     "time": "2024-08-19T03:45:17.441Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/071dee6c42effd103d18344d10e7737512532fa9/games/current/board.3394.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1412,6 +1412,23 @@
     },
     "fromPosition": 0,
     "toPosition": 1,
+    "roll": 1
+  },
+  {
+    "username": "rishichitnis008",
+    "issue": 3395,
+    "time": "2024-08-19T07:18:06.446Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
     "roll": 1
   }
 ]
