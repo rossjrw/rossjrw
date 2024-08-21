@@ -1437,7 +1437,7 @@
     "time": "2024-08-20T15:30:07.906Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/9e76cc6db2c7d40f6b006c96f06d7e80cbbc8462/games/current/board.3396.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1447,5 +1447,22 @@
     "fromPosition": 4,
     "toPosition": 6,
     "roll": 2
+  },
+  {
+    "username": "rnr-roah",
+    "issue": 3397,
+    "time": "2024-08-21T11:43:02.707Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 12,
+    "toPosition": 15,
+    "roll": 3
   }
 ]
