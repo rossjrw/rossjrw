@@ -1515,5 +1515,34 @@
     "fromPosition": 0,
     "toPosition": 2,
     "roll": 2
+  },
+  {
+    "username": "Vinlock",
+    "issue": 3401,
+    "time": "2024-08-22T23:12:39.808Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/61dc296f42077d51d3f102191cec8a08780dfd7e/games/current/board.3401.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
+  },
+  {
+    "username": "Vinlock",
+    "issue": 3401,
+    "time": "2024-08-22T23:12:39.808Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
