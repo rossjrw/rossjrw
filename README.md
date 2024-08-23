@@ -5,7 +5,7 @@ We're playing
 
 <p align="center">
   <b>It's the
-  :white_circle:white
+  :black_circle:black
   team's turn.</b>
 </p>
 
@@ -16,18 +16,19 @@ You're on a team! :wave:
   check back later, or [ask a
   friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github) to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-  **:white_circle:white** team.
+  **:black_circle:black** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.3402.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.3403.svg"></p>
 
-  **:white_circle:White team:**
-  You rolled a 2!
+  **:black_circle:Black team:**
+  You rolled a 1!
 What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
-  | [    Move a new piece to tile 2](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [ :crossed_swords:   Move the piece on tile 4 to tile 6](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%404-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move a new piece to tile 1](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [:rosette:    Move the piece on tile 3 to tile 4](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%403-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move the piece on tile 8 to tile 9](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%408-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -47,7 +48,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/tassiaaccioly">@tassiaaccioly</a></b> (24)<br><b><a href="https://github.com/Justgonc">@Justgonc</a></b> (7)<br><b><a href="https://github.com/nathanielchitn">@nathanielchitn</a></b> (4)<br><b><a href="https://github.com/Casper-Guo">@Casper-Guo</a></b> (3)<br><b><a href="https://github.com/LiamJaco">@LiamJaco</a></b> (2)<br><b><a href="https://github.com/Jh123x">@Jh123x</a></b> (1)<br><b><a href="https://github.com/Axelaredz">@Axelaredz</a></b> (1)<br><b><a href="https://github.com/lmhinnel">@lmhinnel</a></b> (1)<br><b><a href="https://github.com/tb148">@tb148</a></b> (1)</td>
-        <td><b><a href="https://github.com/huuquyet">@huuquyet</a></b> (27)<br><b><a href="https://github.com/rishichitnis008">@rishichitnis008</a></b> (8)<br><b><a href="https://github.com/mikeselva123">@mikeselva123</a></b> (2)<br><b><a href="https://github.com/Vinlock">@Vinlock</a></b> (2)<br><b><a href="https://github.com/MeJaM35">@MeJaM35</a></b> (1)<br><b><a href="https://github.com/YoganshSharma">@YoganshSharma</a></b> (1)<br><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (1)<br><b><a href="https://github.com/L4FeeR">@L4FeeR</a></b> (1)<br><b><a href="https://github.com/rnr-roah">@rnr-roah</a></b> (1)</td>
+        <td><b><a href="https://github.com/huuquyet">@huuquyet</a></b> (27)<br><b><a href="https://github.com/rishichitnis008">@rishichitnis008</a></b> (9)<br><b><a href="https://github.com/mikeselva123">@mikeselva123</a></b> (2)<br><b><a href="https://github.com/Vinlock">@Vinlock</a></b> (2)<br><b><a href="https://github.com/MeJaM35">@MeJaM35</a></b> (1)<br><b><a href="https://github.com/YoganshSharma">@YoganshSharma</a></b> (1)<br><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (1)<br><b><a href="https://github.com/L4FeeR">@L4FeeR</a></b> (1)<br><b><a href="https://github.com/rnr-roah">@rnr-roah</a></b> (1)</td>
       </tr>
     </tbody>
   </table>
@@ -149,7 +150,8 @@ What would you like to do?
   | 22nd Aug 2024 13:45 | **90** | :black_circle: **[@tassiaaccioly](https://github.com/tassiaaccioly)** moved a black piece onto the board to position 2    | [#3400](https://github.com/rossjrw/rossjrw/issues/3400) |  |
   | 22nd Aug 2024 23:12 | **91** | :white_circle: **[@Vinlock](https://github.com/Vinlock)** moved a white piece onto the board to position 1    | [#3401](https://github.com/rossjrw/rossjrw/issues/3401) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/61dc296f42077d51d3f102191cec8a08780dfd7e/games/current/board.3401.svg) |
   | 22nd Aug 2024 23:12 | **92** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#3401](https://github.com/rossjrw/rossjrw/issues/3401) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/54134876fb2c639600d083c725314e970b516e8f/games/current/board.3401.svg) |
-  | 23rd Aug 2024 01:34 | **93** | :white_circle: **[@Vinlock](https://github.com/Vinlock)** moved a white piece from position 1 to position 4  — claimed a rosette :rosette:  | [#3402](https://github.com/rossjrw/rossjrw/issues/3402) |  |
+  | 23rd Aug 2024 01:34 | **93** | :white_circle: **[@Vinlock](https://github.com/Vinlock)** moved a white piece from position 1 to position 4  — claimed a rosette :rosette:  | [#3402](https://github.com/rossjrw/rossjrw/issues/3402) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/031b5bcfa1bbefa771dfcace5d2d0f7367be7d11/games/current/board.3402.svg) |
+  | 23rd Aug 2024 12:30 | **94** | :white_circle: **[@rishichitnis008](https://github.com/rishichitnis008)** moved a white piece from position 4 to position 6 — captured a black piece :crossed_swords:   | [#3403](https://github.com/rossjrw/rossjrw/issues/3403) |  |
 
 </details>
 
