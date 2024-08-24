@@ -1585,7 +1585,7 @@
     "time": "2024-08-24T14:56:56.018Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f78533d50d953b8777940e7c6b1940bcb54c4bbd/games/current/board.3404.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -1595,5 +1595,22 @@
     "fromPosition": 3,
     "toPosition": 4,
     "roll": 1
+  },
+  {
+    "username": "VikSil",
+    "issue": 3405,
+    "time": "2024-08-24T17:23:14.164Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 6,
+    "roll": 2
   }
 ]
