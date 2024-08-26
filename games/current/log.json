@@ -1799,5 +1799,34 @@
     "fromPosition": 4,
     "toPosition": 7,
     "roll": 3
+  },
+  {
+    "username": "Justgoncaa",
+    "issue": 3417,
+    "time": "2024-08-26T23:48:40.877Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/586dcdd7e81eeead289aebf90a8e775be2cb883b/games/current/board.3417.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 7,
+    "roll": 4
+  },
+  {
+    "username": "Justgoncaa",
+    "issue": 3417,
+    "time": "2024-08-26T23:48:40.877Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
