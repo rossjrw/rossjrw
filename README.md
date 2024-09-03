@@ -18,16 +18,17 @@ You're on a team! :wave:
 * If you've not yet played a turn this game, make a move now to join the
   **:white_circle:white** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.3428.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.3429.svg"></p>
 
   **:white_circle:White team:**
-  You rolled a 4!
+  You rolled a 3!
 What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
-  | [:rosette:    Move a new piece to tile 4](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-4%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [    Move the piece on tile 9 to tile 13](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-4%409-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move a new piece to tile 3](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move the piece on tile 4 to tile 7](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%404-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move the piece on tile 9 to tile 12](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%409-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -47,7 +48,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/tassiaaccioly">@tassiaaccioly</a></b> (26)<br><b><a href="https://github.com/Casper-Guo">@Casper-Guo</a></b> (11)<br><b><a href="https://github.com/Justgonc">@Justgonc</a></b> (7)<br><b><a href="https://github.com/nathanielchitn">@nathanielchitn</a></b> (4)<br><b><a href="https://github.com/LiamJaco">@LiamJaco</a></b> (4)<br><b><a href="https://github.com/Jh123x">@Jh123x</a></b> (1)<br><b><a href="https://github.com/Axelaredz">@Axelaredz</a></b> (1)<br><b><a href="https://github.com/lmhinnel">@lmhinnel</a></b> (1)<br><b><a href="https://github.com/tb148">@tb148</a></b> (1)<br><b><a href="https://github.com/VikSil">@VikSil</a></b> (1)<br><b><a href="https://github.com/LucasFASouza">@LucasFASouza</a></b> (1)</td>
-        <td><b><a href="https://github.com/huuquyet">@huuquyet</a></b> (29)<br><b><a href="https://github.com/rishichitnis008">@rishichitnis008</a></b> (13)<br><b><a href="https://github.com/Justgoncaa">@Justgoncaa</a></b> (4)<br><b><a href="https://github.com/mikeselva123">@mikeselva123</a></b> (2)<br><b><a href="https://github.com/Vinlock">@Vinlock</a></b> (2)<br><b><a href="https://github.com/MeJaM35">@MeJaM35</a></b> (1)<br><b><a href="https://github.com/YoganshSharma">@YoganshSharma</a></b> (1)<br><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (1)<br><b><a href="https://github.com/L4FeeR">@L4FeeR</a></b> (1)<br><b><a href="https://github.com/rnr-roah">@rnr-roah</a></b> (1)<br><b><a href="https://github.com/figuran04">@figuran04</a></b> (1)</td>
+        <td><b><a href="https://github.com/huuquyet">@huuquyet</a></b> (29)<br><b><a href="https://github.com/rishichitnis008">@rishichitnis008</a></b> (13)<br><b><a href="https://github.com/Justgoncaa">@Justgoncaa</a></b> (5)<br><b><a href="https://github.com/mikeselva123">@mikeselva123</a></b> (2)<br><b><a href="https://github.com/Vinlock">@Vinlock</a></b> (2)<br><b><a href="https://github.com/MeJaM35">@MeJaM35</a></b> (1)<br><b><a href="https://github.com/YoganshSharma">@YoganshSharma</a></b> (1)<br><b><a href="https://github.com/CostasAK">@CostasAK</a></b> (1)<br><b><a href="https://github.com/L4FeeR">@L4FeeR</a></b> (1)<br><b><a href="https://github.com/rnr-roah">@rnr-roah</a></b> (1)<br><b><a href="https://github.com/figuran04">@figuran04</a></b> (1)</td>
       </tr>
     </tbody>
   </table>
@@ -177,7 +178,8 @@ What would you like to do?
   | 2nd Sep 2024 14:47 | **118** | :black_circle: **[@Casper-Guo](https://github.com/Casper-Guo)** moved a black piece from position 2 to position 4  — claimed a rosette :rosette:  | [#3425](https://github.com/rossjrw/rossjrw/issues/3425) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/848b48fda2e64ec3f9f8de655fea336abedbb9af/games/current/board.3425.svg) |
   | 2nd Sep 2024 14:50 | **119** | :black_circle: **[@Casper-Guo](https://github.com/Casper-Guo)** moved a black piece from position 10 to position 12    | [#3426](https://github.com/rossjrw/rossjrw/issues/3426) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/7760353831205712cf5673a403deac842277f27f/games/current/board.3426.svg) |
   | 2nd Sep 2024 16:55 | **120** | :white_circle: **[@huuquyet](https://github.com/huuquyet)** moved a white piece from position 7 to position 9    | [#3427](https://github.com/rossjrw/rossjrw/issues/3427) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/a6fcb14be7fe0d518113f52c64653159488f90f0/games/current/board.3427.svg) |
-  | 2nd Sep 2024 18:05 | **121** | :black_circle: **[@tassiaaccioly](https://github.com/tassiaaccioly)** ascended a black piece from position 12 :rocket:    | [#3428](https://github.com/rossjrw/rossjrw/issues/3428) |  |
+  | 2nd Sep 2024 18:05 | **121** | :black_circle: **[@tassiaaccioly](https://github.com/tassiaaccioly)** ascended a black piece from position 12 :rocket:    | [#3428](https://github.com/rossjrw/rossjrw/issues/3428) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/9030361fe531f8f34994be71a75a735af08bdb1b/games/current/board.3428.svg) |
+  | 3rd Sep 2024 15:45 | **122** | :white_circle: **[@Justgoncaa](https://github.com/Justgoncaa)** moved a white piece onto the board to position 4  — claimed a rosette :rosette:  | [#3429](https://github.com/rossjrw/rossjrw/issues/3429) |  |
 
 </details>
 
