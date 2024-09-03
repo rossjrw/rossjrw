@@ -2051,7 +2051,7 @@
     "time": "2024-09-03T15:47:45.093Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/933d948f72d0a79a34755f060133747526ad502b/games/current/board.3430.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2061,5 +2061,22 @@
     "fromPosition": 9,
     "toPosition": 12,
     "roll": 3
+  },
+  {
+    "username": "LiamJaco",
+    "issue": 3431,
+    "time": "2024-09-03T15:48:36.432Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
+    "roll": 2
   }
 ]
