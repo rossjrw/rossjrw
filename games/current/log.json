@@ -2034,7 +2034,7 @@
     "time": "2024-09-03T15:45:30.363Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6349ad90fc6b68b39b4324debf0c725e72a680ef/games/current/board.3429.svg",
     "events": {
       "rosetteClaimed": true,
       "captureHappened": false,
@@ -2044,5 +2044,22 @@
     "fromPosition": 0,
     "toPosition": 4,
     "roll": 4
+  },
+  {
+    "username": "Justgoncaa",
+    "issue": 3430,
+    "time": "2024-09-03T15:47:45.093Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 9,
+    "toPosition": 12,
+    "roll": 3
   }
 ]
