@@ -2221,6 +2221,23 @@
     "time": "2024-09-08T18:23:33.343Z",
     "team": "b",
     "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/efd01c5e8b671f24eb540ae0b7e2eabac54e45fa/games/current/board.3440.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
+  },
+  {
+    "username": "yutagiyuu",
+    "issue": 3441,
+    "time": "2024-09-09T19:48:39.469Z",
+    "team": "w",
+    "action": "move",
     "boardImage": null,
     "events": {
       "rosetteClaimed": false,
