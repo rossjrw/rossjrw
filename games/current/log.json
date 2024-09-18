@@ -2488,7 +2488,7 @@
     "time": "2024-09-17T16:52:46.299Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/0307cdc722e5f53e3ada881eea3d53e2b316f0d6/games/current/board.3455.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2498,5 +2498,22 @@
     "fromPosition": 3,
     "toPosition": 5,
     "roll": 2
+  },
+  {
+    "username": "Nikita8Sannikov",
+    "issue": 3456,
+    "time": "2024-09-18T06:13:03.583Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 11,
+    "toPosition": 14,
+    "roll": 3
   }
 ]
