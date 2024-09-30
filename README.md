@@ -18,16 +18,16 @@ You're on a team! :wave:
 * If you've not yet played a turn this game, make a move now to join the
   **:black_circle:black** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.3501.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.3502.svg"></p>
 
   **:black_circle:Black team:**
-  You rolled a 4!
+  You rolled a 2!
 What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
-  | [    Move the piece on tile 2 to tile 6](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-4%402-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [:rosette:    Move the piece on tile 4 to tile 8](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-4%404-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [:rosette:    Move the piece on tile 2 to tile 4](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%402-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move the piece on tile 8 to tile 10](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%408-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -46,7 +46,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td><b><a href="https://github.com/LucasFASouza">@LucasFASouza</a></b> (2)</td>
+        <td><b><a href="https://github.com/LucasFASouza">@LucasFASouza</a></b> (2)<br><b><a href="https://github.com/tassiaaccioly">@tassiaaccioly</a></b> (1)</td>
         <td><b><a href="https://github.com/AdityaSreevatsaK">@AdityaSreevatsaK</a></b> (3)<br><b><a href="https://github.com/Casper-Guo">@Casper-Guo</a></b> (1)</td>
       </tr>
     </tbody>
@@ -61,7 +61,8 @@ What would you like to do?
   | 30th Sep 2024 13:34 | **2** | :black_circle: **[@LucasFASouza](https://github.com/LucasFASouza)** moved a black piece onto the board to position 4  — claimed a rosette :rosette:  | [#3497](https://github.com/rossjrw/rossjrw/issues/3497) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/c5a366f73de50b612406afaceb4c3acd14a60538/games/current/board.3497.svg) |
   | 30th Sep 2024 13:35 | **3** | :black_circle: **[@LucasFASouza](https://github.com/LucasFASouza)** moved a black piece onto the board to position 2    | [#3498](https://github.com/rossjrw/rossjrw/issues/3498) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/dddc25ef7a41dc7fe24b7914e64e29db471ac761/games/current/board.3498.svg) |
   | 30th Sep 2024 13:37 | **4** | :white_circle: **[@Casper-Guo](https://github.com/Casper-Guo)** moved a white piece from position 2 to position 4  — claimed a rosette :rosette:  | [#3500](https://github.com/rossjrw/rossjrw/issues/3500) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/bed4038374c75f0f4c46fb89ce1a40eb3986d185/games/current/board.3500.svg) |
-  | 30th Sep 2024 13:39 | **5** | :white_circle: **[@AdityaSreevatsaK](https://github.com/AdityaSreevatsaK)** moved a white piece onto the board to position 1    | [#3501](https://github.com/rossjrw/rossjrw/issues/3501) |  |
+  | 30th Sep 2024 13:39 | **5** | :white_circle: **[@AdityaSreevatsaK](https://github.com/AdityaSreevatsaK)** moved a white piece onto the board to position 1    | [#3501](https://github.com/rossjrw/rossjrw/issues/3501) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/34a129f7338ad591d3fb8f852d9bb9c215bad813/games/current/board.3501.svg) |
+  | 30th Sep 2024 14:13 | **6** | :black_circle: **[@tassiaaccioly](https://github.com/tassiaaccioly)** moved a black piece from position 4 to position 8  — claimed a rosette :rosette:  | [#3502](https://github.com/rossjrw/rossjrw/issues/3502) |  |
 
 </details>
 
