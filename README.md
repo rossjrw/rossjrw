@@ -1,11 +1,11 @@
 Welcome to my Github profile!
 We're playing
 [the Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur).
-**Game #22 is in progress,** but you can join!
+**Game #23 is in progress,** but you can join!
 
 <p align="center">
   <b>It's the
-  :white_circle:white
+  :black_circle:black
   team's turn.</b>
 </p>
 
@@ -16,22 +16,22 @@ You're on a team! :wave:
   check back later, or [ask a
   friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github) to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-  **:white_circle:white** team.
+  **:black_circle:black** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.3495.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.3496.svg"></p>
 
-  **:white_circle:White team:**
-  You rolled a 2!
+  **:black_circle:Black team:**
+  You rolled a 4!
 What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
-  | [    Move a new piece to tile 2](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [:rosette:    Move a new piece to tile 4](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-4%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
 <details>
-<summary><b>Game #22 so far</b></summary>
+<summary><b>Game #23 so far</b></summary>
 
 ## Who's on each team?
 
@@ -46,7 +46,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td></td>
-        <td><b><a href="https://github.com/AdityaSreevatsaK">@AdityaSreevatsaK</a></b> (1)</td>
+        <td><b><a href="https://github.com/AdityaSreevatsaK">@AdityaSreevatsaK</a></b> (2)</td>
       </tr>
     </tbody>
   </table>
@@ -55,7 +55,8 @@ What would you like to do?
 
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
-  | 30th Sep 2024 06:23 | **0** | :white_circle: **[@AdityaSreevatsaK](https://github.com/AdityaSreevatsaK)** started a new game | [#3495](https://github.com/rossjrw/rossjrw/issues/3495) |  |
+  | 30th Sep 2024 06:23 | **0** | :white_circle: **[@AdityaSreevatsaK](https://github.com/AdityaSreevatsaK)** started a new game | [#3495](https://github.com/rossjrw/rossjrw/issues/3495) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/04b97611c3815cf87878e36f129c788d630c2da5/games/current/board.3495.svg) |
+  | 30th Sep 2024 06:23 | **1** | :white_circle: **[@AdityaSreevatsaK](https://github.com/AdityaSreevatsaK)** moved a white piece onto the board to position 2    | [#3496](https://github.com/rossjrw/rossjrw/issues/3496) |  |
 
 </details>
 
@@ -211,6 +212,13 @@ What would you like to do?
    * The :white_circle:white team captured 12 black pieces and claimed 20 rosettes. 
    * The MVP of the winning team was **[@tassiaaccioly](https://github.com/tassiaaccioly)**, who played 75 moves. 
    * The winning move was made by **[@tassiaaccioly](https://github.com/tassiaaccioly)** ([#3309](https://github.com/rossjrw/rossjrw/issues/3309)).
+1. A game was started on 16th Jul 2024 by **[@tassiaaccioly](https://github.com/tassiaaccioly)** and ended on 30th Sep 2024. 
+   * The :white_circle:white team won. 
+   * 27 players played 192 moves across 2 months and 2 weeks. 
+   * The :black_circle:black team captured 10 white pieces and claimed 20 rosettes. 
+   * The :white_circle:white team captured 13 black pieces and claimed 23 rosettes. 
+   * The MVP of the winning team was **[@huuquyet](https://github.com/huuquyet)**, who played 36 moves. 
+   * The winning move was made by **[@AdityaSreevatsaK](https://github.com/AdityaSreevatsaK)** ([#3494](https://github.com/rossjrw/rossjrw/issues/3494)).
 
 </details>
 
