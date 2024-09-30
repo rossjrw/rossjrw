@@ -3139,5 +3139,46 @@
     "fromPosition": 12,
     "toPosition": 13,
     "roll": 1
+  },
+  {
+    "username": "Casper-Guo",
+    "issue": 3493,
+    "time": "2024-09-30T04:13:59.386Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 12,
+    "roll": 2
+  },
+  {
+    "username": "Casper-Guo",
+    "issue": 3493,
+    "time": "2024-09-30T04:13:59.386Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/5f1a4e566e8359595d73d87d2e76765545fc63d3/games/current/board.3493.svg",
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
+  },
+  {
+    "username": "Casper-Guo",
+    "issue": 3493,
+    "time": "2024-09-30T04:13:59.386Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
