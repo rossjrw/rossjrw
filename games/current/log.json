@@ -187,7 +187,7 @@
     "time": "2024-09-30T22:08:32.035Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/485dd49f468d5890151e12a3c61400224bf2adb7/games/current/board.3507.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -197,5 +197,22 @@
     "fromPosition": 2,
     "toPosition": 3,
     "roll": 1
+  },
+  {
+    "username": "figuran04",
+    "issue": 3508,
+    "time": "2024-10-01T19:09:34.025Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 3,
+    "roll": 2
   }
 ]
