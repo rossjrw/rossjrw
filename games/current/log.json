@@ -374,7 +374,7 @@
     "time": "2024-10-03T14:34:46.489Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/ee17158aa806e5f0b050c2b0b49e9e5a167ee2fd/games/current/board.3518.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -383,6 +383,23 @@
     },
     "fromPosition": 0,
     "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "RichardBotic",
+    "issue": 3519,
+    "time": "2024-10-03T15:58:50.890Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 8,
+    "toPosition": 10,
     "roll": 2
   }
 ]
