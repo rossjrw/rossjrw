@@ -1835,7 +1835,7 @@
     "time": "2024-10-15T09:59:32.423Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/899930e8ec2f80d8c005bd9ec1891dfceb6e105e/games/current/board.3601.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1845,5 +1845,22 @@
     "fromPosition": 0,
     "toPosition": 2,
     "roll": 2
+  },
+  {
+    "username": "nxdun",
+    "issue": 3602,
+    "time": "2024-10-15T13:01:47.418Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 1,
+    "roll": 1
   }
 ]
