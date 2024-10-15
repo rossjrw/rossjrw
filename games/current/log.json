@@ -1801,7 +1801,7 @@
     "time": "2024-10-15T06:17:05.227Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f3d4989162f7f621512dc78c02657b85182fa83d/games/current/board.3599.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1811,5 +1811,22 @@
     "fromPosition": 12,
     "toPosition": 15,
     "roll": 3
+  },
+  {
+    "username": "hoonc95",
+    "issue": 3600,
+    "time": "2024-10-15T07:11:32.925Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 7,
+    "roll": 1
   }
 ]
