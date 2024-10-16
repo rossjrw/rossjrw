@@ -2063,7 +2063,7 @@
     "time": "2024-10-16T16:47:09.092Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/f681d3a470f7780c182d5fec3cadc68702a1db91/games/current/board.3613.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2072,6 +2072,23 @@
     },
     "fromPosition": 0,
     "toPosition": 2,
+    "roll": 2
+  },
+  {
+    "username": "Apollorion",
+    "issue": 3614,
+    "time": "2024-10-16T19:48:44.434Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 12,
     "roll": 2
   }
 ]
