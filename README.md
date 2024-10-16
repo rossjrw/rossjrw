@@ -5,7 +5,7 @@ We're playing
 
 <p align="center">
   <b>It's the
-  :white_circle:white
+  :black_circle:black
   team's turn.</b>
 </p>
 
@@ -16,17 +16,19 @@ You're on a team! :wave:
   check back later, or [ask a
   friend](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+Take+your+turn+at+https://github.com/rossjrw/rossjrw+%23RoyalGameOfUr+%23github) to make a move.
 * If you've not yet played a turn this game, make a move now to join the
-  **:white_circle:white** team.
+  **:black_circle:black** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.3614.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.3615.svg"></p>
 
-  **:white_circle:White team:**
-  You rolled a 1!
+  **:black_circle:Black team:**
+  You rolled a 3!
 What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
-  | [    Move the piece on tile 2 to tile 3](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%402-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move a new piece to tile 3](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%400-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move the piece on tile 8 to tile 11](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%408-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [  :rocket:  Ascend the piece on tile 12 ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%4012-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -46,7 +48,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/LucasFASouza">@LucasFASouza</a></b> (30)<br><b><a href="https://github.com/RichardBotic">@RichardBotic</a></b> (17)<br><b><a href="https://github.com/tassiaaccioly">@tassiaaccioly</a></b> (5)<br><b><a href="https://github.com/figuran04">@figuran04</a></b> (1)<br><b><a href="https://github.com/Theorafael">@Theorafael</a></b> (1)<br><b><a href="https://github.com/hoonc95">@hoonc95</a></b> (1)<br><b><a href="https://github.com/nxdun">@nxdun</a></b> (1)<br><b><a href="https://github.com/Apollorion">@Apollorion</a></b> (1)</td>
-        <td><b><a href="https://github.com/Casper-Guo">@Casper-Guo</a></b> (27)<br><b><a href="https://github.com/AdityaSreevatsaK">@AdityaSreevatsaK</a></b> (24)<br><b><a href="https://github.com/MatissesProjects">@MatissesProjects</a></b> (6)<br><b><a href="https://github.com/huuquyet">@huuquyet</a></b> (3)</td>
+        <td><b><a href="https://github.com/Casper-Guo">@Casper-Guo</a></b> (28)<br><b><a href="https://github.com/AdityaSreevatsaK">@AdityaSreevatsaK</a></b> (24)<br><b><a href="https://github.com/MatissesProjects">@MatissesProjects</a></b> (6)<br><b><a href="https://github.com/huuquyet">@huuquyet</a></b> (3)</td>
       </tr>
     </tbody>
   </table>
@@ -180,7 +182,8 @@ What would you like to do?
   | 16th Oct 2024 16:06 | **122** | :white_circle:  The white team rolled a 0 and their turn was automatically passed | [#3611](https://github.com/rossjrw/rossjrw/issues/3611) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/3daf603ca0596f0a5ae2c3e1772b8295fe586e61/games/current/board.3611.svg) |
   | 16th Oct 2024 16:07 | **123** | :black_circle: **[@LucasFASouza](https://github.com/LucasFASouza)** moved a black piece from position 7 to position 10    | [#3612](https://github.com/rossjrw/rossjrw/issues/3612) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/70f0807b520d7a18f6582d6b3b4cab14f4d1a389/games/current/board.3612.svg) |
   | 16th Oct 2024 16:47 | **124** | :white_circle: **[@Casper-Guo](https://github.com/Casper-Guo)** moved a white piece onto the board to position 2    | [#3613](https://github.com/rossjrw/rossjrw/issues/3613) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/f681d3a470f7780c182d5fec3cadc68702a1db91/games/current/board.3613.svg) |
-  | 16th Oct 2024 19:48 | **125** | :black_circle: **[@Apollorion](https://github.com/Apollorion)** moved a black piece from position 10 to position 12    | [#3614](https://github.com/rossjrw/rossjrw/issues/3614) |  |
+  | 16th Oct 2024 19:48 | **125** | :black_circle: **[@Apollorion](https://github.com/Apollorion)** moved a black piece from position 10 to position 12    | [#3614](https://github.com/rossjrw/rossjrw/issues/3614) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/c0317ffa3cce23aa2c2cd452da4c8ee01d622905/games/current/board.3614.svg) |
+  | 16th Oct 2024 19:49 | **126** | :white_circle: **[@Casper-Guo](https://github.com/Casper-Guo)** moved a white piece from position 2 to position 3    | [#3615](https://github.com/rossjrw/rossjrw/issues/3615) |  |
 
 </details>
 
