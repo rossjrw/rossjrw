@@ -2010,5 +2010,34 @@
     "fromPosition": 1,
     "toPosition": 4,
     "roll": 3
+  },
+  {
+    "username": "LucasFASouza",
+    "issue": 3611,
+    "time": "2024-10-16T16:06:34.071Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/c4efa54b4277d0dc768977eb9d6366e89d9b125a/games/current/board.3611.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 7,
+    "roll": 3
+  },
+  {
+    "username": "LucasFASouza",
+    "issue": 3611,
+    "time": "2024-10-16T16:06:34.071Z",
+    "team": "w",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]
