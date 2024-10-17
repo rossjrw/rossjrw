@@ -18,15 +18,15 @@ You're on a team! :wave:
 * If you've not yet played a turn this game, make a move now to join the
   **:white_circle:white** team.
 
-<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.3628.svg"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.3629.svg"></p>
 
   **:white_circle:White team:**
-  You rolled a 3!
+  You rolled a 1!
 What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
-  | [:rosette:    Move the piece on tile 11 to tile 14](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-3%4011-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [  :rocket: :crown: Ascend the piece on tile 14 ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%4014-0&amp;body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -46,7 +46,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><a href="https://github.com/LucasFASouza">@LucasFASouza</a></b> (38)<br><b><a href="https://github.com/RichardBotic">@RichardBotic</a></b> (17)<br><b><a href="https://github.com/tassiaaccioly">@tassiaaccioly</a></b> (5)<br><b><a href="https://github.com/figuran04">@figuran04</a></b> (1)<br><b><a href="https://github.com/Theorafael">@Theorafael</a></b> (1)<br><b><a href="https://github.com/hoonc95">@hoonc95</a></b> (1)<br><b><a href="https://github.com/nxdun">@nxdun</a></b> (1)<br><b><a href="https://github.com/Apollorion">@Apollorion</a></b> (1)</td>
-        <td><b><a href="https://github.com/Casper-Guo">@Casper-Guo</a></b> (33)<br><b><a href="https://github.com/AdityaSreevatsaK">@AdityaSreevatsaK</a></b> (24)<br><b><a href="https://github.com/MatissesProjects">@MatissesProjects</a></b> (6)<br><b><a href="https://github.com/huuquyet">@huuquyet</a></b> (3)</td>
+        <td><b><a href="https://github.com/Casper-Guo">@Casper-Guo</a></b> (34)<br><b><a href="https://github.com/AdityaSreevatsaK">@AdityaSreevatsaK</a></b> (24)<br><b><a href="https://github.com/MatissesProjects">@MatissesProjects</a></b> (6)<br><b><a href="https://github.com/huuquyet">@huuquyet</a></b> (3)</td>
       </tr>
     </tbody>
   </table>
@@ -196,6 +196,9 @@ What would you like to do?
   | 17th Oct 2024 20:10 | **138** | :black_circle: **[@LucasFASouza](https://github.com/LucasFASouza)** moved a black piece from position 6 to position 7    | [#3626](https://github.com/rossjrw/rossjrw/issues/3626) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/aff44319e7ae9d6e54f8c4055bee969784f7fbae/games/current/board.3626.svg) |
   | 17th Oct 2024 20:11 | **139** | :white_circle: **[@Casper-Guo](https://github.com/Casper-Guo)** moved a white piece from position 9 to position 11    | [#3627](https://github.com/rossjrw/rossjrw/issues/3627) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/e6125b94d73fadf798d1e18bd81265e599e062d1/games/current/board.3627.svg) |
   | 17th Oct 2024 20:16 | **140** | :black_circle: **[@LucasFASouza](https://github.com/LucasFASouza)** moved a black piece from position 7 to position 9    | [#3628](https://github.com/rossjrw/rossjrw/issues/3628) |  |
+  | 17th Oct 2024 20:50 | **141** | :white_circle: **[@Casper-Guo](https://github.com/Casper-Guo)** moved a white piece from position 11 to position 14  — claimed a rosette :rosette:  | [#3629](https://github.com/rossjrw/rossjrw/issues/3629) |  |
+  | 17th Oct 2024 20:50 | **142** | :white_circle:  The white team rolled a 2 and their turn was automatically passed | [#3629](https://github.com/rossjrw/rossjrw/issues/3629) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/10b2683ba0978fd3a078836a771f1015434fcbb3/games/current/board.3629.svg) |
+  | 17th Oct 2024 20:50 | **143** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#3629](https://github.com/rossjrw/rossjrw/issues/3629) |  |
 
 </details>
 
