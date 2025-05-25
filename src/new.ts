@@ -79,9 +79,7 @@ export async function resetGame(
       [Make the first move yourself](https://github.com/${
         context.repo.owner
       }/${context.repo.repo}),
-      or ask a friend: [share on Twitter](https://twitter.com/share?text=I'm+playing+The+Royal+Game+of+Ur+on+a+GitHub+profile.+I+just+started+a+new+game+%E2%80%94+take+the+first+turn+at+https://github.com/${
-        context.repo.owner
-      }+%23ur+%23github)
+      or ask a friend!
     `,
   })
   octokit.issues.update({
