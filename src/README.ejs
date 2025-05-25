@@ -52,9 +52,11 @@ What would you like to do?
 
 ## What's happened so far?
 
+Moves played in this game, most recent first:
+
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
-<% logItems.forEach((logItem, index) => { -%>
+<% logItems.reverse().forEach((logItem, index) => { -%>
   | <%= logItem[0] %> | **<%= index %>** | <%= logItem[1] %> | <%= logItem[2] %> | <%= logItem[3] %> |
 <% }) -%>
 
