@@ -28,7 +28,7 @@
     "@types/lodash": "^4.14.158",
     "@typescript-eslint/eslint-plugin": "^3.7.0",
     "@typescript-eslint/parser": "^3.7.0",
-    "clean-webpack-plugin": "^3.0.0",
+    "clean-webpack-plugin": "^4.0.0",
     "compress-tag": "^2.0.0",
     "core-js": "^3.6.5",
     "crypto-random-string": "^3.2.0",
@@ -38,12 +38,12 @@
     "humanize-duration": "^3.24.0",
     "jest": "^26.1.0",
     "prettier": "2.4.1",
-    "source-map-loader": "^1.0.1",
+    "source-map-loader": "^5.0.0",
     "svgo": "^1.3.2",
-    "ts-loader": "^8.0.1",
+    "ts-loader": "^9.5.2",
     "typescript": "^3.9.7",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12"
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
   },
   "dependencies": {
     "ejs": "^3.1.3",

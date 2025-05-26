@@ -9,6 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     library: "play",
     libraryTarget: "umd",
+    hashFunction: "sha256",
   },
   devtool: "source-map",
   module: {
