@@ -73,7 +73,11 @@ export async function generateReadme(
           ${events.ascensionHappened ? ":rocket:" : ""}
           ${events.gameWon ? ":crown:" : ""}
           ${events.ascensionHappened ? "Ascend" : "Move"}
-          ${move.from === 0 ? "a new piece" : `the piece on tile ${move.from}`}
+          ${
+            move.from === 0
+              ? "a new piece"
+              : `the piece on tile ${move.from}`
+          }
           ${events.ascensionHappened ? "" : `to tile ${move.to}`}
         `,
           url: issueLink(
@@ -96,9 +100,9 @@ export async function generateReadme(
 
   // Make a list of moves that have happened so far this game, as markdown
   const logItems = log.internalLog.map((logItem) => {
-    return [
-      `${dateformat(new Date(logItem.time), "dS mmm yyyy HH:MM")}`,
-      compress`
+    return {
+      date: `${dateformat(new Date(logItem.time), "dS mmm yyyy HH:MM")}`,
+      description: compress`
         :${teamName(logItem.team)}_circle:
         ${
           logItem.action === "pass"
@@ -144,11 +148,11 @@ export async function generateReadme(
           }[logItem.action]
         }
       `,
-      `[#${logItem.issue}](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${logItem.issue})`,
-      `${
+      issueLink: `[#${logItem.issue}](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${logItem.issue})`,
+      boardImageLink: `${
         logItem.boardImage === null ? "" : `[link](${logItem.boardImage})`
       }`,
-    ]
+    }
   })
 
   const teamTable = makeTeamListTable(log, true)

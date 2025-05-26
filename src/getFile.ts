@@ -22,7 +22,7 @@ export async function getFile(
       mediaType: { format: "raw" },
     })
   } catch (error) {
-    if (error.status === 404) {
+    if ((error as any).status === 404) {
       // There's no game file! That's probably fine
       return null
     } else {

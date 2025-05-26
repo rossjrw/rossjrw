@@ -57,7 +57,7 @@ Moves played in this game, most recent first:
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
 <% logItems.reverse().forEach((logItem, index) => { -%>
-  | <%= logItem[0] %> | **<%= index %>** | <%= logItem[1] %> | <%= logItem[2] %> | <%= logItem[3] %> |
+  | <%= logItem.date %> | **<%= index %>** | <%= logItem.description %> | <%= logItem.issueLink %> | <%= logItem.boardImageLink %> |
 <% }) -%>
 
 </details>
