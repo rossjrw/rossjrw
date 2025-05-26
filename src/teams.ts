@@ -31,16 +31,10 @@ export function getOppositeTeam(
   return undefined
 }
 
-export function makeTeamListTable(
-  log: Log,
-  hasPlayerLinks: boolean
-): string {
-  /**
-   * Makes a table containing team members.
-   *
-   * @param hasPlayerLinks: Players as hyperlinks? Required for README, but not
-   * required for issues.
-   */
+/**
+ * Makes a table containing team members.
+ */
+export function makeTeamListTable(log: Log, html: boolean): string {
   const PLAYERS_TABLE = `<table>
     <thead>
       <tr><th colspan=2>Players in this game</th></tr>
@@ -59,8 +53,8 @@ export function makeTeamListTable(
 
   const players = makeTeamStats(log)
 
-  const blackPlayers = makeTeamListColumn(players, Ur.BLACK, hasPlayerLinks)
-  const whitePlayers = makeTeamListColumn(players, Ur.WHITE, hasPlayerLinks)
+  const blackPlayers = makeTeamListColumn(players, Ur.BLACK, html)
+  const whitePlayers = makeTeamListColumn(players, Ur.WHITE, html)
 
   return ejs.render(PLAYERS_TABLE, { blackPlayers, whitePlayers })
 }
@@ -92,7 +86,7 @@ export function makeTeamStats(log: Log): TeamPlayer[] {
 function makeTeamListColumn(
   players: TeamPlayer[],
   team: Ur.Player,
-  hasLinks: boolean
+  html: boolean
 ): string[] {
   return players
     .filter((player) => {
@@ -104,8 +98,8 @@ function makeTeamListColumn(
       return 0
     })
     .map((player) => {
-      if (hasLinks) {
-        return `<b><a href="https://github.com/${player.name}">@${player.name}</a></b> (${player.moves})`
+      if (html) {
+        return `<b><img src="https://github.com/${player.name}.png?size=16" alt=""> <a href="https://github.com/${player.name}">${player.name}</a></b> (${player.moves})`
       } else {
         return `@${player.name} (${player.moves})`
       }
