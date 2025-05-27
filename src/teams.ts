@@ -99,7 +99,7 @@ function makeTeamListColumn(
     })
     .map((player) => {
       if (html) {
-        return `<b><img src="https://github.com/${player.name}.png?size=16" alt=""> <a href="https://github.com/${player.name}">${player.name}</a></b> (${player.moves})`
+        return `<b><img src="https://github.com/${player.name}.png?size=16" alt="" width="16"> <a href="https://github.com/${player.name}">${player.name}</a></b> (${player.moves})`
       } else {
         return `@${player.name} (${player.moves})`
       }

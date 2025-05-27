@@ -109,7 +109,7 @@ export async function listPreviousGames(
     return compress`
       A game was started
       on ${dateformat(new Date(firstMove.time), "dS mmm yyyy")}
-      by ![](https://github.com/${firstMove.username}.png?size=16)
+      by <img src="https://github.com/${firstMove.username}.png?size=16" alt="" width="16">
       **[${firstMove.username}](https://github.com/${firstMove.username})**
       and ended on ${dateformat(new Date(lastMove.time), "dS mmm yyyy")}.
       <> The ${
@@ -140,13 +140,13 @@ export async function listPreviousGames(
       }).length
     } rosettes.
       <> The MVP of the winning team was
-      ![](https://github.com/${mvp}.png?size=16)
+      <img src="https://github.com/${mvp}.png?size=16" alt="" width="16">
       **[${mvp}](https://github.com/${mvp})**,
       who played ${
         log.filter((logItem) => logItem.username === mvp).length
       } moves.
       <> The winning move was made
-      by ![](https://github.com/${lastMove.username}.png?size=16)
+      by <img src="https://github.com/${lastMove.username}.png?size=16" alt="" width="16">
       **[${lastMove.username}](https://github.com/${lastMove.username})**
       ([#${lastMove.issue}](https://github.com/${context.repo.owner}/${
       context.repo.repo

@@ -107,7 +107,7 @@ export async function generateReadme(
         ${
           logItem.action === "pass"
             ? ""
-            : `![](https://github.com/${logItem.username}.png?size=16) **[${logItem.username}](https://github.com/${logItem.username})**`
+            : `<img src="https://github.com/${logItem.username}.png?size=16" alt="" width="16"> **[${logItem.username}](https://github.com/${logItem.username})**`
         }
         ${
           {
