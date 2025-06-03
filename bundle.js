@@ -25882,6 +25882,7 @@ function generateReadme(state, gamePath, octokit, context, log) {
                                     : "", ((_e = logItem.events) === null || _e === void 0 ? void 0 : _e.gameWon) ? "— won the game :crown:" : ""),
                             }[logItem.action]),
                             issueLink: "[#".concat(logItem.issue, "](https://github.com/").concat(context.repo.owner, "/").concat(context.repo.repo, "/issues/").concat(logItem.issue, ")"),
+                            issue: logItem.issue,
                             boardImageLink: "".concat(logItem.boardImage === null ? "" : "[link](".concat(logItem.boardImage, ")")),
                         };
                     });
