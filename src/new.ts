@@ -1,5 +1,5 @@
 import { Octokit } from "@octokit/rest"
-import { Context } from "@actions/github/lib/context"
+import { Context, isIssueContext } from "@/gh"
 import Ur from "ur-game"
 import { compress } from "compress-tag"
 
@@ -14,7 +14,7 @@ export async function resetGame(
   oldGamePath: string,
   octokit: Octokit,
   context: Context,
-  log: Log
+  log: Log,
 ): Promise<Change[]> {
   /**
    * Called when a player uses the "new" command.
@@ -64,15 +64,16 @@ export async function resetGame(
 
   // Update README.md with the new state
   changes = changes.concat(
-    await generateReadme(newState, gamePath, octokit, context, log)
+    await generateReadme(newState, gamePath, octokit, context, log),
   )
 
   // Add a comment to the issue to indicate that a new board was made
-  octokit.issues.createComment({
-    owner: context.repo.owner,
-    repo: context.repo.repo,
-    issue_number: context.issue.number,
-    body: compress`
+  if (isIssueContext(context)) {
+    octokit.issues.createComment({
+      owner: context.repo.owner,
+      repo: context.repo.repo,
+      issue_number: context.issue.number,
+      body: compress`
       Done! You started a new game.
       \n\n
       It's ${teamName(newState.currentPlayer)} to play!
@@ -81,13 +82,14 @@ export async function resetGame(
       }/${context.repo.repo}),
       or ask a friend!
     `,
-  })
-  octokit.issues.update({
-    owner: context.repo.owner,
-    repo: context.repo.repo,
-    issue_number: context.issue.number,
-    state: "closed",
-  })
+    })
+    octokit.issues.update({
+      owner: context.repo.owner,
+      repo: context.repo.repo,
+      issue_number: context.issue.number,
+      state: "closed",
+    })
+  }
 
   return changes
 }

@@ -1,5 +1,5 @@
 import { Octokit } from "@octokit/rest/index"
-import { Context } from "@actions/github/lib/context"
+import { Context } from "@/gh"
 import { compress } from "compress-tag"
 import {
   countBy,
@@ -25,13 +25,13 @@ export function makeVictoryMessage(log: Log): string {
   const players = makeTeamStats(log)
 
   const winningTeam = teamName(
-    log.internalLog[log.internalLog.length - 1].team
+    log.internalLog[log.internalLog.length - 1].team,
   )
   const moves = players.reduce((moves, player) => moves + player.moves, 0)
 
   const startingDate = new Date(log.internalLog[0].time)
   const endingDate = new Date(
-    log.internalLog[log.internalLog.length - 1].time
+    log.internalLog[log.internalLog.length - 1].time,
   )
   const hours = (endingDate.getTime() - startingDate.getTime()) / 1000 / 3600
 
@@ -50,7 +50,7 @@ export function makeVictoryMessage(log: Log): string {
 export async function listPreviousGames(
   gamePath: string,
   octokit: Octokit,
-  context: Context
+  context: Context,
 ): Promise<string[]> {
   /**
    * Generates a list of previous games from the logs in the game directory.
@@ -87,9 +87,9 @@ export async function listPreviousGames(
         throw new Error("GAMEFILE_IS_DIR")
       }
       return JSON.parse(
-        Buffer.from(gameFile.data.content!, "base64").toString()
+        Buffer.from(gameFile.data.content!, "base64").toString(),
       )
-    })
+    }),
   )
 
   const gameStrings = gameLogs.map((log) => {
@@ -100,11 +100,11 @@ export async function listPreviousGames(
       countBy,
       entries,
       partialRight(maxBy, last),
-      head
+      head,
     )(
       log
         .filter((logItem) => logItem.team === lastMove.team)
-        .map((logItem) => logItem.username)
+        .map((logItem) => logItem.username),
     )
     return compress`
       A game was started
@@ -116,29 +116,30 @@ export async function listPreviousGames(
         lastMove.team === "b" ? ":black_circle:black" : ":white_circle:white"
       } team won.
       <> ${playerCount} players played ${
-      log.length
-    } moves across ${humanizeDuration(
-      new Date(lastMove.time).getTime() - new Date(firstMove.time).getTime(),
-      { largest: 2, delimiter: " and " }
-    )}.
+        log.length
+      } moves across ${humanizeDuration(
+        new Date(lastMove.time).getTime() -
+          new Date(firstMove.time).getTime(),
+        { largest: 2, delimiter: " and " },
+      )}.
       <> The :black_circle:black team captured ${
         log.filter((logItem) => {
           return logItem.team === "b" && logItem.events?.captureHappened
         }).length
       } white pieces and claimed ${
-      log.filter((logItem) => {
-        return logItem.team === "b" && logItem.events?.rosetteClaimed
-      }).length
-    } rosettes.
+        log.filter((logItem) => {
+          return logItem.team === "b" && logItem.events?.rosetteClaimed
+        }).length
+      } rosettes.
       <> The :white_circle:white team captured ${
         log.filter((logItem) => {
           return logItem.team === "w" && logItem.events?.captureHappened
         }).length
       } black pieces and claimed ${
-      log.filter((logItem) => {
-        return logItem.team === "w" && logItem.events?.rosetteClaimed
-      }).length
-    } rosettes.
+        log.filter((logItem) => {
+          return logItem.team === "w" && logItem.events?.rosetteClaimed
+        }).length
+      } rosettes.
       <> The MVP of the winning team was
       <img src="https://github.com/${mvp}.png?size=16" alt="" width="16">
       **[${mvp}](https://github.com/${mvp})**,
@@ -149,8 +150,8 @@ export async function listPreviousGames(
       by <img src="https://github.com/${lastMove.username}.png?size=16" alt="" width="16">
       **[${lastMove.username}](https://github.com/${lastMove.username})**
       ([#${lastMove.issue}](https://github.com/${context.repo.owner}/${
-      context.repo.repo
-    }/issues/${lastMove.issue})).
+        context.repo.repo
+      }/issues/${lastMove.issue})).
     `.replace(/<>/g, "\n   *")
   })
 

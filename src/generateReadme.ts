@@ -1,5 +1,5 @@
 import { Octokit } from "@octokit/rest/index"
-import { Context } from "@actions/github/lib/context"
+import { Context } from "@/gh"
 import Ur from "ur-game"
 import ejs from "ejs"
 import { compress, compressTight } from "compress-tag"

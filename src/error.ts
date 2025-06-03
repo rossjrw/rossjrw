@@ -1,5 +1,5 @@
 import { Octokit } from "@octokit/rest"
-import { Context } from "@actions/github/lib/context"
+import { Context, isIssueContext } from "@/gh"
 import { default as _core } from "@actions/core"
 import { get } from "lodash"
 
@@ -17,7 +17,7 @@ export function handleError(
   log: Log,
   octokit: Octokit,
   context: Context,
-  core: typeof _core
+  core: typeof _core,
 ): void {
   /**
    * Handles execution errors by reporting the problem back to the user and
@@ -44,11 +44,11 @@ export function handleError(
     MOVE_WHEN_GAME_ENDED:
       "You can't make a move when the game has finished! You'll have to start a new game instead.",
     WRONG_TEAM: `Sorry, you're on the ${teamName(
-      playerTeam
+      playerTeam,
     )} team, but it's ${teamName(
-      getOppositeTeam(playerTeam)
+      getOppositeTeam(playerTeam),
     )} to play. You'll have to wait until it's the ${teamName(
-      playerTeam
+      playerTeam,
     )} team's turn before you can make a move.`,
     WRONG_DICE_COUNT:
       "You tried to move a piece by the wrong number of places. Check the dice roll!",
@@ -58,20 +58,30 @@ export function handleError(
   }
   const ERROR_DEFAULT = `Something went wrong, but I'm not sure exactly what.\n\n@${context.repo.owner}`
 
-  addReaction("confused", octokit, context)
-  octokit.issues.createComment({
-    owner: context.repo.owner,
-    repo: context.repo.repo,
-    issue_number: context.issue.number,
-    body: get(ERROR_DESC, error.message, ERROR_DEFAULT + ' ' + error.message),
-  })
-  addLabels(["Unsuccessful"], octokit, context)
-  octokit.issues.update({
-    owner: context.repo.owner,
-    repo: context.repo.repo,
-    issue_number: context.issue.number,
-    state: "closed",
-  })
+  if (isIssueContext(context)) {
+    addReaction("confused", octokit, context)
+    octokit.issues.createComment({
+      owner: context.repo.owner,
+      repo: context.repo.repo,
+      issue_number: context.issue.number,
+      body: get(
+        ERROR_DESC,
+        error.message,
+        ERROR_DEFAULT + " " + error.message,
+      ),
+    })
+    addLabels(["Unsuccessful"], octokit, context)
+    octokit.issues.update({
+      owner: context.repo.owner,
+      repo: context.repo.repo,
+      issue_number: context.issue.number,
+      state: "closed",
+    })
+  } else {
+    core.setFailed(
+      get(ERROR_DESC, error.message, ERROR_DEFAULT + " " + error.message),
+    )
+  }
 
   // Only raise an error if there was an actual uncaught problem
   if (!(error.message in ERROR_DESC)) {

@@ -1,5 +1,5 @@
 import { Octokit } from "@octokit/rest/index"
-import { Context } from "@actions/github/lib/context"
+import { Context } from "@/gh"
 
 import { Change } from "@/play"
 
@@ -7,7 +7,7 @@ export async function makeCommit(
   message: string,
   changes: Change[],
   octokit: Octokit,
-  context: Context
+  context: Context,
 ): Promise<void> {
   /**
    * From the given list of changes, makes a single commit to implement them.

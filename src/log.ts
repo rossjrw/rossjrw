@@ -1,5 +1,5 @@
 import { Octokit } from "@octokit/rest/index"
-import { Context } from "@actions/github/lib/context"
+import { Context } from "@/gh"
 import Ur from "ur-game"
 
 import { Change } from "@/play"
@@ -20,7 +20,7 @@ export interface LogItem {
 
 export class Log {
   username: string
-  issue: number
+  issue: number | undefined
   time: string
 
   gamePath: string
@@ -35,7 +35,7 @@ export class Log {
     this.octokit = octokit
     this.context = context
     this.username = context.actor
-    this.issue = context.issue.number
+    this.issue = context.issue?.number
     this.time = new Date().toISOString()
 
     // Internal log will need to be prepared with another method because the
@@ -61,7 +61,7 @@ export class Log {
       throw new Error("FILE_IS_DIR")
     }
     this.internalLog = JSON.parse(
-      Buffer.from(logFile.data.content!, "base64").toString()
+      Buffer.from(logFile.data.content!, "base64").toString(),
     )
 
     // Get the SHA of the latest commit
@@ -79,7 +79,7 @@ export class Log {
     roll: number | null,
     fromPosition: number | null,
     toPosition: number | null,
-    events: Events | null
+    events: Events | null,
   ): void {
     /**
      * Adds an item to the internal log.
@@ -89,6 +89,9 @@ export class Log {
      * @param team: The team that this player is on.
      * @returns An array of changes to add to the commit.
      */
+    if (this.issue === undefined) {
+      throw new Error("LOG_ENTRY_WITHOUT_ISSUE")
+    }
     const logItem: LogItem = {
       username: this.username,
       issue: this.issue,
@@ -133,13 +136,12 @@ export class Log {
       this.internalLog.length >= 2 &&
       this.internalLog[this.internalLog.length - 2].boardImage === null
     ) {
-      this.internalLog[
-        this.internalLog.length - 2
-      ].boardImage = `https://raw.githubusercontent.com/${
-        this.context.repo.owner
-      }/${this.context.repo.repo}/${this.lastCommitSha}/${
-        this.gamePath
-      }/board.${this.internalLog[this.internalLog.length - 2].issue}.svg`
+      this.internalLog[this.internalLog.length - 2].boardImage =
+        `https://raw.githubusercontent.com/${
+          this.context.repo.owner
+        }/${this.context.repo.repo}/${this.lastCommitSha}/${
+          this.gamePath
+        }/board.${this.internalLog[this.internalLog.length - 2].issue}.svg`
     } else {
       // The second-to-last image should have had a null address, but it's not
       // absolutely critical to execution

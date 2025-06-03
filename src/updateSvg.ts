@@ -1,5 +1,5 @@
 import { Octokit } from "@octokit/rest"
-import { Context } from "@actions/github/lib/context"
+import { Context } from "@/gh"
 import { State } from "ur-game"
 import { range } from "lodash"
 

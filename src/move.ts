@@ -1,5 +1,5 @@
 import { Octokit } from "@octokit/rest"
-import { Context } from "@actions/github/lib/context"
+import { Context, isIssueContext } from "@/gh"
 import Ur from "ur-game"
 import { isEmpty } from "lodash"
 import { compress } from "compress-tag"
@@ -19,7 +19,7 @@ export async function makeMove(
   gamePath: string,
   octokit: Octokit,
   context: Context,
-  log: Log
+  log: Log,
 ): Promise<Change[]> {
   /**
    * Called when a player uses the "move" command. Executes that move onto the
@@ -54,15 +54,17 @@ export async function makeMove(
       playerIsOnTeam(
         context.actor,
         getOppositeTeam(state.currentPlayer)!,
-        log
+        log,
       ) // Player can't be on the opposite team
     ) {
       throw new Error("WRONG_TEAM")
     }
-    if (state.currentPlayer === Ur.BLACK) {
-      addLabels(["Black team"], octokit, context)
-    } else {
-      addLabels(["White team"], octokit, context)
+    if (isIssueContext(context)) {
+      addLabels(
+        [state.currentPlayer === Ur.BLACK ? "Black team" : "White team"],
+        octokit,
+        context,
+      )
     }
     // The move should be 'a@b' where a is the dice count and b is the position
     // The given diceResult must match the internal diceResult
@@ -94,25 +96,28 @@ export async function makeMove(
 
     // Let's detect what happened in that move
     events = analyseMove(state, fromPosition, toPosition)
-    if (events.rosetteClaimed) {
-      addLabels([":rosette: Rosette!"], octokit, context)
-    }
-    if (events.captureHappened) {
-      addLabels([":crossed_swords: Capture!"], octokit, context)
-    }
-    if (events.ascensionHappened) {
-      addLabels([":rocket: Ascension!"], octokit, context)
-    }
-    if (events.gameWon) {
-      addLabels([":crown: Winner!"], octokit, context)
+    if (isIssueContext(context)) {
+      if (events.rosetteClaimed) {
+        addLabels([":rosette: Rosette!"], octokit, context)
+      }
+      if (events.captureHappened) {
+        addLabels([":crossed_swords: Capture!"], octokit, context)
+      }
+      if (events.ascensionHappened) {
+        addLabels([":rocket: Ascension!"], octokit, context)
+      }
+      if (events.gameWon) {
+        addLabels([":crown: Winner!"], octokit, context)
+      }
     }
 
     // Add a comment to the issue to indicate that the move was successful
-    await octokit.issues.createComment({
-      owner: context.repo.owner,
-      repo: context.repo.repo,
-      issue_number: context.issue.number,
-      body: compress`
+    if (isIssueContext(context)) {
+      await octokit.issues.createComment({
+        owner: context.repo.owner,
+        repo: context.repo.repo,
+        issue_number: context.issue.number,
+        body: compress`
         Done! You ${events.ascensionHappened ? "ascended" : "moved"}
         a ${teamName(state.currentPlayer)} piece
         ${
@@ -150,13 +155,14 @@ export async function makeMove(
         Ask a friend to
         ${events.gameWon ? "start the next game" : "make the next move"}!
       `,
-    })
-    octokit.issues.update({
-      owner: context.repo.owner,
-      repo: context.repo.repo,
-      issue_number: context.issue.number,
-      state: "closed",
-    })
+      })
+      octokit.issues.update({
+        owner: context.repo.owner,
+        repo: context.repo.repo,
+        issue_number: context.issue.number,
+        state: "closed",
+      })
+    }
 
     // Update the log with this action
     log.addToLog(
@@ -165,11 +171,11 @@ export async function makeMove(
       state.diceResult,
       fromPosition,
       toPosition,
-      events
+      events,
     )
 
     // If the game was won, leave a message to let everyone know
-    if (events.gameWon) {
+    if (events.gameWon && isIssueContext(context)) {
       await octokit.issues.createComment({
         owner: context.repo.owner,
         repo: context.repo.repo,
@@ -191,15 +197,15 @@ export async function makeMove(
       newState.diceResult!,
       null,
       null,
-      null
+      null,
     )
     changes = changes.concat(
-      await makeMove(newState, "pass", gamePath, octokit, context, log)
+      await makeMove(newState, "pass", gamePath, octokit, context, log),
     )
   } else {
     // Update README.md with the new state
     changes = changes.concat(
-      await generateReadme(newState, gamePath, octokit, context, log)
+      await generateReadme(newState, gamePath, octokit, context, log),
     )
     // Replace the contents of the current game state file with the new state
     changes.push({

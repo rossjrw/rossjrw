@@ -6,7 +6,7 @@ export function addReaction(
     Parameters<typeof octokit.reactions.createForIssue>[0]
   >["content"],
   octokit: Octokit,
-  context: Context
+  context: Context,
 ): void {
   /**
    * Adds a reaction to the triggering issue.
@@ -22,7 +22,7 @@ export function addReaction(
 export function addLabels(
   labels: string[],
   octokit: Octokit,
-  context: Context
+  context: Context,
 ): void {
   /**
    * Adds labels to the triggering issue.

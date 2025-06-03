@@ -1,5 +1,4 @@
 import { Octokit } from "@octokit/rest/index"
-import { Context } from "@actions/github/lib/context"
 import { default as _core } from "@actions/core"
 import { Buffer } from "buffer"
 
@@ -7,6 +6,7 @@ import { makeCommit } from "@/commit"
 import { handleError } from "@/error"
 import { generateReadme } from "@/generateReadme"
 import { getFile } from "@/getFile"
+import { Context, isIssueContext } from "@/gh"
 import { addReaction } from "@/issues"
 import { Log } from "@/log"
 import { makeMove } from "@/move"
@@ -44,7 +44,9 @@ export default async function play(
   await log.prepareInitialLog()
 
   try {
-    addReaction("eyes", octokit, context)
+    if (isIssueContext(context)) {
+      addReaction("eyes", octokit, context)
+    }
 
     const [command, move] = parseIssueTitle(title)
 
@@ -75,7 +77,7 @@ export default async function play(
         await resetGame(gamePath, oldGamePath, octokit, context, log),
         log.makeLogChanges(),
       )
-      commitMessage = `(${context.actor}) Start a new game (#${context.issue.number})`
+      commitMessage = `(${context.actor}) Start a new game (#${context.issue?.number})`
     } else if (command === "move") {
       changes = changes.concat(
         await makeMove(state, move, gamePath, octokit, context, log),
@@ -83,7 +85,7 @@ export default async function play(
       )
       commitMessage = `(${context.actor}) Move ${teamName(
         state.currentPlayer,
-      )} ${move} (#${context.issue.number})`
+      )} ${move} (#${context.issue?.number})`
     } else if (command === "refresh") {
       changes = changes.concat(
         await generateReadme(state, gamePath, octokit, context, log),
@@ -96,7 +98,9 @@ export default async function play(
     // All the changes have been collected - commit them
     await makeCommit(commitMessage, changes, octokit, context)
 
-    addReaction("rocket", octokit, context)
+    if (isIssueContext(context)) {
+      addReaction("rocket", octokit, context)
+    }
   } catch (error) {
     // If there was an error, forward it to the user, then stop
     if (error instanceof Error)
