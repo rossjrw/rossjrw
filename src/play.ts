@@ -1,14 +1,16 @@
 import { Octokit } from "@octokit/rest/index"
 import { Context } from "@actions/github/lib/context"
 import { default as _core } from "@actions/core"
+import { Buffer } from "buffer"
 
-import { addReaction } from "@/issues"
-import { handleError } from "@/error"
-import { resetGame } from "@/new"
-import { makeMove } from "@/move"
 import { makeCommit } from "@/commit"
-import { Log } from "@/log"
+import { handleError } from "@/error"
+import { generateReadme } from "@/generateReadme"
 import { getFile } from "@/getFile"
+import { addReaction } from "@/issues"
+import { Log } from "@/log"
+import { makeMove } from "@/move"
+import { resetGame } from "@/new"
 import { teamName } from "@/teams"
 
 export interface Change {
@@ -20,7 +22,7 @@ export default async function play(
   title: string,
   octokit: Octokit,
   context: Context,
-  core: typeof _core
+  core: typeof _core,
 ): Promise<void> {
   /**
    * Let's play Ur!
@@ -38,13 +40,6 @@ export default async function play(
 
   const gamePath = "games/current"
   const oldGamePath = "games"
-
-  // Prepare a list of changes, which will be made into a single commit to the
-  // play branch
-  let changes: Change[] = []
-
-  // Prepare a log object, which will be used to merge log entries into a
-  // single change
   const log = new Log(gamePath, octokit, context)
   await log.prepareInitialLog()
 
@@ -59,7 +54,7 @@ export default async function play(
       gamePath,
       "state.json",
       octokit,
-      context
+      context,
     )
     if (!stateFile) {
       throw new Error("MOVE_WHEN_EMPTY_GAME")
@@ -68,33 +63,38 @@ export default async function play(
       throw new Error("FILE_IS_DIR")
     }
     const state = JSON.parse(
-      Buffer.from(stateFile.data.content!, "base64").toString()
+      Buffer.from(stateFile.data.content!, "base64").toString(),
     )
 
+    let changes: Change[] = []
+    let commitMessage: string
+
+    // Collect changes for each command
     if (command === "new") {
       changes = changes.concat(
-        await resetGame(gamePath, oldGamePath, octokit, context, log)
+        await resetGame(gamePath, oldGamePath, octokit, context, log),
+        log.makeLogChanges(),
       )
+      commitMessage = `(${context.actor}) Start a new game (#${context.issue.number})`
     } else if (command === "move") {
       changes = changes.concat(
-        await makeMove(state, move, gamePath, octokit, context, log)
+        await makeMove(state, move, gamePath, octokit, context, log),
+        log.makeLogChanges(),
       )
+      commitMessage = `(${context.actor}) Move ${teamName(
+        state.currentPlayer,
+      )} ${move} (#${context.issue.number})`
+    } else if (command === "refresh") {
+      changes = changes.concat(
+        await generateReadme(state, gamePath, octokit, context, log),
+      )
+      commitMessage = `(${context.actor}) Regenerate README after update`
+    } else {
+      throw command satisfies never
     }
 
-    // Extract changes from the log
-    changes = changes.concat(log.makeLogChanges())
-
     // All the changes have been collected - commit them
-    await makeCommit(
-      `(${context.actor}) ${
-        command === "new"
-          ? "Start a new game"
-          : `Move ${teamName(state.currentPlayer)} ${move}`
-      } (#${context.issue.number})`,
-      changes,
-      octokit,
-      context
-    )
+    await makeCommit(commitMessage, changes, octokit, context)
 
     addReaction("rocket", octokit, context)
   } catch (error) {
@@ -105,7 +105,9 @@ export default async function play(
   }
 }
 
-function parseIssueTitle(title: string): ["new" | "move", string, number] {
+function parseIssueTitle(
+  title: string,
+): ["new" | "move" | "refresh", string] {
   /**
    * Parses the issue title into move instructions.
    *
@@ -115,7 +117,7 @@ function parseIssueTitle(title: string): ["new" | "move", string, number] {
   if (!gamename || gamename !== "ur") {
     throw new Error("WRONG_GAME")
   }
-  if (!command || !["new", "move"].includes(command)) {
+  if (!command || !["new", "move", "refresh"].includes(command)) {
     throw new Error("UNKNOWN_COMMAND")
   }
   if (command === "move") {
@@ -131,6 +133,7 @@ function parseIssueTitle(title: string): ["new" | "move", string, number] {
     if (isNaN(parseInt(gameId))) {
       throw new Error("NON_NUMERIC_ID")
     }
+    return [command, move]
   }
-  return [command as "new" | "move", move, parseInt(gameId)]
+  return [command as "new" | "refresh", ""]
 }

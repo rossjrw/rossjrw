@@ -11,7 +11,8 @@ export async function updateSvg(
   gamePath: string,
   baseSvgPath: string,
   octokit: Octokit,
-  context: Context
+  context: Context,
+  issueNumber: number,
 ): Promise<Change[]> {
   /**
    * Generates an SVG to visually represent the current board state.
@@ -93,7 +94,7 @@ export async function updateSvg(
 
   // Save the new SVG to a file
   changes.push({
-    path: `${gamePath}/board.${context.issue.number}.svg`,
+    path: `${gamePath}/board.${issueNumber}.svg`,
     content: svg,
   })
 

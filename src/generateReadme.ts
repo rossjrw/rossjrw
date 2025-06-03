@@ -17,7 +17,7 @@ export async function generateReadme(
   gamePath: string,
   octokit: Octokit,
   context: Context,
-  log: Log
+  log: Log,
 ): Promise<Change[]> {
   /**
    * Generates the new README file based on the current state of the game.
@@ -28,6 +28,9 @@ export async function generateReadme(
    */
   let changes: Change[] = []
 
+  // Determine the issue number for the board image (latest log entry)
+  const latestIssueNumber = log.internalLog[log.internalLog.length - 1].issue
+
   // Update the SVG to represent the new game board
   changes = changes.concat(
     await updateSvg(
@@ -35,8 +38,9 @@ export async function generateReadme(
       gamePath,
       "assets/board.optimised.svg", // TODO change for compiled branch
       octokit,
-      context
-    )
+      context,
+      latestIssueNumber,
+    ),
   )
 
   // Grab the EJS template
@@ -82,7 +86,7 @@ export async function generateReadme(
         `,
           url: issueLink(
             `ur-move-${state.diceResult}%40${move.from}-0`,
-            context
+            context,
           ),
         }
       })

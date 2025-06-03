@@ -21,3 +21,19 @@ jobs:
           ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
           BRANCH: compiled
           FOLDER: dist
+      - name: Checkout compiled code
+        if: github.ref == 'refs/heads/source'
+        uses: actions/checkout@v2
+        with:
+          ref: compiled
+      - name: Regenerate readme
+        if: github.ref == 'refs/heads/source'
+        uses: actions/github-script@v2.0.0
+        env:
+          TITLE: ur-refresh
+        with:
+          script: |
+            const path = require('path')
+            const scriptPath = path.resolve('./bundle.js')
+            const play = require(scriptPath)
+            console.log(await play.default(process.env.TITLE, github, context, core))
