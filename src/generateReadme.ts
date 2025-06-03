@@ -153,6 +153,7 @@ export async function generateReadme(
         }
       `,
       issueLink: `[#${logItem.issue}](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${logItem.issue})`,
+      issue: logItem.issue,
       boardImageLink: `${
         logItem.boardImage === null ? "" : `[link](${logItem.boardImage})`
       }`,
