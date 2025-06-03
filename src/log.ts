@@ -35,7 +35,7 @@ export class Log {
     this.octokit = octokit
     this.context = context
     this.username = context.actor
-    this.issue = context.issue?.number
+    this.issue = context.issue.number
     this.time = new Date().toISOString()
 
     // Internal log will need to be prepared with another method because the
