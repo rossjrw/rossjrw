@@ -25990,7 +25990,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   isIssueContext: () => (/* binding */ isIssueContext)
 /* harmony export */ });
 function isIssueContext(context) {
-    return "issue" in context && context.issue !== undefined;
+    return context.issue.number !== undefined;
 }
 
 
@@ -26049,12 +26049,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var Log = /** @class */ (function () {
     function Log(gamePath, octokit, context) {
-        var _a;
         this.gamePath = gamePath;
         this.octokit = octokit;
         this.context = context;
         this.username = context.actor;
-        this.issue = (_a = context.issue) === null || _a === void 0 ? void 0 : _a.number;
+        this.issue = context.issue.number;
         this.time = new Date().toISOString();
         // Internal log will need to be prepared with another method because the
         // constructor method cannot be async
