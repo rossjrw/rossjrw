@@ -619,7 +619,7 @@
     "time": "2026-06-27T15:58:27.975Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/08792bdc3292e4818fd5707cdbea8e25d84b6340/games/current/board.4605.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -629,5 +629,22 @@
     "fromPosition": 0,
     "toPosition": 1,
     "roll": 1
+  },
+  {
+    "username": "guru2050",
+    "issue": 4606,
+    "time": "2026-07-02T17:42:43.630Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 4,
+    "roll": 3
   }
 ]
