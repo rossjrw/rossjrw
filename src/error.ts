@@ -50,6 +50,8 @@ export function handleError(
     )} to play. You'll have to wait until it's the ${teamName(
       playerTeam,
     )} team's turn before you can make a move.`,
+    CONSECUTIVE_MOVE:
+      "You've already made the last move! To make the game fair, you must wait for a teammate to move, or wait at least 1 hour before you can move again.",
     WRONG_DICE_COUNT:
       "You tried to move a piece by the wrong number of places. Check the dice roll!",
     NO_MOVE_POSITION: "I can't tell which piece you want to move.",

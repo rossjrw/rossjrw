@@ -59,6 +59,31 @@ export async function makeMove(
     ) {
       throw new Error("WRONG_TEAM")
     }
+
+    // Check if the user is making consecutive moves (cooldown / teammate check)
+    if (context.actor !== context.repo.owner) {
+      let lastMove = null
+      for (let i = log.internalLog.length - 1; i >= 0; i--) {
+        if (log.internalLog[i].action === "move") {
+          lastMove = log.internalLog[i]
+          break
+        }
+      }
+      if (
+        lastMove !== null &&
+        lastMove.username === context.actor &&
+        !lastMove.events?.rosetteClaimed
+      ) {
+        const lastMoveTime = new Date(lastMove.time).getTime()
+        const now = new Date().getTime()
+        const diffMs = now - lastMoveTime
+        const oneHourMs = 60 * 60 * 1000
+        if (diffMs < oneHourMs) {
+          throw new Error("CONSECUTIVE_MOVE")
+        }
+      }
+    }
+
     if (isIssueContext(context)) {
       addLabels(
         [state.currentPlayer === Ur.BLACK ? "Black team" : "White team"],
@@ -202,6 +227,37 @@ export async function makeMove(
     changes = changes.concat(
       await makeMove(newState, "pass", gamePath, octokit, context, log),
     )
+  } else if (
+    !events?.gameWon &&
+    Object.keys(newState.possibleMoves!).length === 1
+  ) {
+    // If there is exactly 1 possible move, auto-execute it (#1123)
+    const onlyMoveKey = Object.keys(newState.possibleMoves!)[0]
+    const onlyFromPosition = parseInt(onlyMoveKey)
+    const onlyToPosition = newState.possibleMoves![onlyMoveKey]
+    
+    // Add a log entry for the auto-move
+    const autoEvents = analyseMove(newState, onlyFromPosition, onlyToPosition)
+    log.addToLog(
+      "move",
+      newState.currentPlayer!,
+      newState.diceResult ?? null,
+      onlyFromPosition,
+      onlyToPosition,
+      autoEvents,
+    )
+    
+    // Execute the auto-move
+    const autoState = Ur.takeTurn(newState, newState.currentPlayer!, onlyFromPosition)
+    
+    // Update README and state with the auto-moved state
+    changes = changes.concat(
+      await generateReadme(autoState, gamePath, octokit, context, log),
+    )
+    changes.push({
+      path: `${gamePath}/state.json`,
+      content: JSON.stringify(autoState, null, 2),
+    })
   } else {
     // Update README.md with the new state
     changes = changes.concat(

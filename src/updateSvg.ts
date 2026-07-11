@@ -6,6 +6,9 @@ import { range } from "lodash"
 import { Change } from "@/play"
 import { getFile } from "@/getFile"
 
+// Cache for the SVG template to avoid repeated API calls
+let cachedSvgTemplate: string | null = null
+
 export async function updateSvg(
   state: State,
   gamePath: string,
@@ -42,20 +45,22 @@ export async function updateSvg(
     })
   }
 
-  // Get the contents of the template SVG
-  const svgFile = await octokit.repos.getContents({
-    owner: context.repo.owner,
-    repo: context.repo.repo,
-    ref: "source", // TODO use compiled branch
-    path: baseSvgPath,
-    mediaType: { format: "raw" },
-  })
-  // If a file was queried then data is not an array
-  if (Array.isArray(svgFile.data)) {
-    throw new Error("FILE_IS_DIR")
+  // Get the contents of the template SVG (cached to reduce API calls for rate limiting #1271)
+  if (!cachedSvgTemplate) {
+    const svgFile = await octokit.repos.getContents({
+      owner: context.repo.owner,
+      repo: context.repo.repo,
+      ref: "source", // TODO use compiled branch
+      path: baseSvgPath,
+      mediaType: { format: "raw" },
+    })
+    // If a file was queried then data is not an array
+    if (Array.isArray(svgFile.data)) {
+      throw new Error("FILE_IS_DIR")
+    }
+    cachedSvgTemplate = Buffer.from(svgFile.data.content!, "base64").toString()
   }
-
-  let svg = Buffer.from(svgFile.data.content!, "base64").toString()
+  let svg = cachedSvgTemplate
 
   // Hide elements that should not be visible for this board
   // Tokens: tileN-T and tile0-TN, tile15-TN
