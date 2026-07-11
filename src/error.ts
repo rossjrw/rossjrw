@@ -43,6 +43,8 @@ export function handleError(
     // Execution errors
     MOVE_WHEN_GAME_ENDED:
       "You can't make a move when the game has finished! You'll have to start a new game instead.",
+    UNFINISHED_GAME_NEW:
+      "You can't start a new game while the current game is still in progress! Wait until someone wins, then try again.",
     WRONG_TEAM: `Sorry, you're on the ${teamName(
       playerTeam,
     )} team, but it's ${teamName(

@@ -73,6 +73,9 @@ export default async function play(
 
     // Collect changes for each command
     if (command === "new") {
+      if (state.currentPlayer) {
+        throw new Error("UNFINISHED_GAME_NEW")
+      }
       changes = changes.concat(
         await resetGame(gamePath, oldGamePath, octokit, context, log),
         log.makeLogChanges(),
