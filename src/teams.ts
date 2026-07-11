@@ -34,7 +34,11 @@ export function getOppositeTeam(
 /**
  * Makes a table containing team members.
  */
-export function makeTeamListTable(log: Log, html: boolean): string {
+export function makeTeamListTable(
+  log: Log,
+  html: boolean,
+  pingablePlayers?: Set<string>
+): string {
   const PLAYERS_TABLE = `<table>
     <thead>
       <tr><th colspan=2>Players in this game</th></tr>
@@ -53,8 +57,8 @@ export function makeTeamListTable(log: Log, html: boolean): string {
 
   const players = makeTeamStats(log)
 
-  const blackPlayers = makeTeamListColumn(players, Ur.BLACK, html)
-  const whitePlayers = makeTeamListColumn(players, Ur.WHITE, html)
+  const blackPlayers = makeTeamListColumn(players, Ur.BLACK, html, pingablePlayers)
+  const whitePlayers = makeTeamListColumn(players, Ur.WHITE, html, pingablePlayers)
 
   return ejs.render(PLAYERS_TABLE, { blackPlayers, whitePlayers })
 }
@@ -86,7 +90,8 @@ export function makeTeamStats(log: Log): TeamPlayer[] {
 function makeTeamListColumn(
   players: TeamPlayer[],
   team: Ur.Player,
-  html: boolean
+  html: boolean,
+  pingablePlayers?: Set<string>
 ): string[] {
   return players
     .filter((player) => {
@@ -101,7 +106,8 @@ function makeTeamListColumn(
       if (html) {
         return `<b><img src="https://github.com/${player.name}.png?size=16" alt="" width="16"> <a href="https://github.com/${player.name}">${player.name}</a></b> (${player.moves})`
       } else {
-        return `@${player.name} (${player.moves})`
+        const prefix = (pingablePlayers === undefined || pingablePlayers.has(player.name)) ? "@" : ""
+        return `${prefix}${player.name} (${player.moves})`
       }
     })
 }

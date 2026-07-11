@@ -180,7 +180,7 @@ export async function makeMove(
         owner: context.repo.owner,
         repo: context.repo.repo,
         issue_number: context.issue.number,
-        body: makeVictoryMessage(log),
+        body: await makeVictoryMessage(log, octokit, context),
       })
     }
   }

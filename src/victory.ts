@@ -13,11 +13,76 @@ import {
 } from "lodash"
 import humanizeDuration from "humanize-duration"
 import dateformat from "dateformat"
+import Ur from "ur-game"
 
 import { Log, LogItem } from "@/log"
 import { teamName, makeTeamStats, makeTeamListTable } from "@/teams"
 
-export function makeVictoryMessage(log: Log): string {
+export async function getPreviousPlayers(
+  gamePath: string,
+  octokit: Octokit,
+  context: Context,
+): Promise<Map<string, number>> {
+  const gameDirPath = gamePath.substring(0, gamePath.lastIndexOf("/"))
+  let logDir
+  try {
+    logDir = await octokit.repos.getContents({
+      owner: context.repo.owner,
+      repo: context.repo.repo,
+      ref: "play",
+      path: gameDirPath,
+      mediaType: { format: "raw" },
+    })
+  } catch (e) {
+    return new Map()
+  }
+
+  if (!Array.isArray(logDir.data)) {
+    throw new Error("GAMEDIR_IS_FILE")
+  }
+
+  const gameFiles = logDir.data.filter((dirObject) => {
+    return dirObject.type === "file"
+  })
+
+  const previousGamesCount = new Map<string, number>()
+
+  await Promise.all(
+    gameFiles.map(async (file): Promise<void> => {
+      try {
+        const gameFile = await octokit.repos.getContents({
+          owner: context.repo.owner,
+          repo: context.repo.repo,
+          ref: "play",
+          path: file.path,
+          mediaType: { format: "raw" },
+        })
+        if (Array.isArray(gameFile.data)) {
+          return
+        }
+        const logItems: LogItem[] = JSON.parse(
+          Buffer.from(gameFile.data.content!, "base64").toString(),
+        )
+        const playersInGame = new Set(logItems.map((item) => item.username))
+        playersInGame.forEach((player) => {
+          if (player) {
+            previousGamesCount.set(player, (previousGamesCount.get(player) || 0) + 1)
+          }
+        })
+      } catch (e) {
+        // Ignore single file failures
+      }
+    })
+  )
+
+  return previousGamesCount
+}
+
+export async function makeVictoryMessage(
+  log: Log,
+  octokit: Octokit,
+  context: Context,
+): Promise<string> {
   /**
    * Called at the end of a game. Produces a message to ping participants in a
    * game, show teams, give stats, etc.
@@ -35,6 +100,64 @@ export function makeVictoryMessage(log: Log): string {
   )
   const hours = (endingDate.getTime() - startingDate.getTime()) / 1000 / 3600
 
+  // 1. Exclude the repository owner
+  const owner = context.repo.owner
+  const eligiblePlayers = players.filter((p) => p.name !== owner)
+
+  // 2. Fetch previous games data
+  const previousGamesCount = await getPreviousPlayers(log.gamePath, octokit, context)
+
+  // 3. Assign random keys for tie-breaking
+  const sortablePlayers = eligiblePlayers.map((p) => ({
+    name: p.name,
+    team: p.team,
+    moves: p.moves,
+    previousGames: previousGamesCount.get(p.name) || 0,
+    randomKey: Math.random(),
+  }))
+
+  // 4. Group by team
+  const blackTeam = sortablePlayers.filter((p) => p.team === Ur.BLACK)
+  const whiteTeam = sortablePlayers.filter((p) => p.team === Ur.WHITE)
+
+  // 5. Sort each team individually
+  const sortTeam = (teamPlayers: typeof sortablePlayers) => {
+    return teamPlayers.slice().sort((a, b) => {
+      if (a.moves !== b.moves) {
+        return b.moves - a.moves
+      }
+      if (a.previousGames !== b.previousGames) {
+        return b.previousGames - a.previousGames
+      }
+      return a.randomKey - b.randomKey
+    })
+  }
+
+  const sortedBlack = sortTeam(blackTeam)
+  const sortedWhite = sortTeam(whiteTeam)
+
+  // 6. Assign rank in team (number of players on the same team above them)
+  const rankedBlack = sortedBlack.map((p, index) => ({ ...p, rankInTeam: index }))
+  const rankedWhite = sortedWhite.map((p, index) => ({ ...p, rankInTeam: index }))
+
+  // 7. Combine and sort to balance teams and prioritize
+  const combined = rankedBlack.concat(rankedWhite).sort((a, b) => {
+    if (a.rankInTeam !== b.rankInTeam) {
+      return a.rankInTeam - b.rankInTeam
+    }
+    if (a.moves !== b.moves) {
+      return b.moves - a.moves
+    }
+    if (a.previousGames !== b.previousGames) {
+      return b.previousGames - a.previousGames
+    }
+    return a.randomKey - b.randomKey
+  })
+
+  // 8. Pick top 50
+  const chosenPlayers = combined.slice(0, 50)
+  const pingablePlayers = new Set(chosenPlayers.map((p) => p.name))
+
   return compress`
     This game has ended!
     Congratulations to the ${winningTeam} team for their victory.
@@ -43,7 +166,7 @@ export function makeVictoryMessage(log: Log): string {
     ${moves} moves,
     and took ${hours} hours.
     \n\n
-    ${makeTeamListTable(log, false)}
+    ${makeTeamListTable(log, false, pingablePlayers)}
   `
 }
 
