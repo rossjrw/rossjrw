@@ -76,6 +76,9 @@ export default async function play(
 
     // Work out the next state of the game for each command
     if (command === "new") {
+      if (state.currentPlayer) {
+        throw new Error("UNFINISHED_GAME_NEW")
+      }
       const [newState, archiveChanges] = resetGame(
         oldGamePath,
         context.actor,
