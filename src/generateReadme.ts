@@ -152,10 +152,15 @@ export async function generateReadme(
           }[logItem.action]
         }
       `,
-      issueLink: `[#${logItem.issue}](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${logItem.issue})`,
+      issueLink:
+        logItem.action === "pass"
+          ? ""
+          : `[#${logItem.issue}](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/${logItem.issue})`,
       issue: logItem.issue,
       boardImageLink: `${
-        logItem.boardImage === null ? "" : `[link](${logItem.boardImage})`
+        logItem.action === "pass" || logItem.boardImage === null
+          ? ""
+          : `[link](${logItem.boardImage})`
       }`,
     }
   })

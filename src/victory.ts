@@ -94,7 +94,7 @@ export async function listPreviousGames(
 
   const gameStrings = gameLogs.map((log) => {
     const firstMove = log[0]
-    const lastMove = log[log.length - 1]
+    const winningMove = findWinningMove(log)
     const playerCount = uniq(log.map((entry) => entry.username)).length
     const mvp = flow(
       countBy,
@@ -103,7 +103,7 @@ export async function listPreviousGames(
       head,
     )(
       log
-        .filter((logItem) => logItem.team === lastMove.team)
+        .filter((logItem) => logItem.team === winningMove.team)
         .map((logItem) => logItem.username),
     )
     return compress`
@@ -111,14 +111,14 @@ export async function listPreviousGames(
       on ${dateformat(new Date(firstMove.time), "dS mmm yyyy")}
       by <img src="https://github.com/${firstMove.username}.png?size=16" alt="" width="16">
       **[${firstMove.username}](https://github.com/${firstMove.username})**
-      and ended on ${dateformat(new Date(lastMove.time), "dS mmm yyyy")}.
+      and ended on ${dateformat(new Date(winningMove.time), "dS mmm yyyy")}.
       <> The ${
-        lastMove.team === "b" ? ":black_circle:black" : ":white_circle:white"
+        winningMove.team === "b" ? ":black_circle:black" : ":white_circle:white"
       } team won.
       <> ${playerCount} players played ${
         log.length
       } moves across ${humanizeDuration(
-        new Date(lastMove.time).getTime() -
+        new Date(winningMove.time).getTime() -
           new Date(firstMove.time).getTime(),
         { largest: 2, delimiter: " and " },
       )}.
@@ -147,13 +147,27 @@ export async function listPreviousGames(
         log.filter((logItem) => logItem.username === mvp).length
       } moves.
       <> The winning move was made
-      by <img src="https://github.com/${lastMove.username}.png?size=16" alt="" width="16">
-      **[${lastMove.username}](https://github.com/${lastMove.username})**
-      ([#${lastMove.issue}](https://github.com/${context.repo.owner}/${
+      by <img src="https://github.com/${winningMove.username}.png?size=16" alt="" width="16">
+      **[${winningMove.username}](https://github.com/${winningMove.username})**
+      ([#${winningMove.issue}](https://github.com/${context.repo.owner}/${
         context.repo.repo
-      }/issues/${lastMove.issue})).
+      }/issues/${winningMove.issue})).
     `.replace(/<>/g, "\n   *")
   })
 
   return gameStrings
+}
+
+function findWinningMove(log: LogItem[]): LogItem {
+  for (let i = log.length - 1; i >= 0; i--) {
+    if (log[i].events?.gameWon) {
+      return log[i]
+    }
+  }
+  for (let i = log.length - 1; i >= 0; i--) {
+    if (log[i].action === "move") {
+      return log[i]
+    }
+  }
+  return log[log.length - 1]
 }
