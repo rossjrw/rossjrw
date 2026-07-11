@@ -10,7 +10,10 @@ import { updateSvg } from "@/updateSvg"
 import { Change } from "@/play"
 import { Log } from "@/log"
 import { getOppositeTeam, makeTeamListTable, teamName } from "@/teams"
-import { listPreviousGames } from "@/victory"
+import { listPreviousGames, getPreviousGameLogs, generateLeaderboardTable } from "@/victory"
+
+// Cache for the EJS template to avoid repeated API calls
+let cachedTemplate: string | null = null
 
 export async function generateReadme(
   state: Ur.State,
@@ -43,19 +46,22 @@ export async function generateReadme(
     ),
   )
 
-  // Grab the EJS template
-  const readmeFile = await octokit.repos.getContents({
-    owner: context.repo.owner,
-    repo: context.repo.repo,
-    ref: "source",
-    path: "src/README.ejs",
-    mediaType: { format: "raw" },
-  })
-  // If a file was queried then data is not an array
-  if (Array.isArray(readmeFile.data)) {
-    throw new Error("FILE_IS_DIR")
+  // Grab the EJS template (cached to reduce API calls for rate limiting #1271)
+  if (!cachedTemplate) {
+    const readmeFile = await octokit.repos.getContents({
+      owner: context.repo.owner,
+      repo: context.repo.repo,
+      ref: "source",
+      path: "src/README.ejs",
+      mediaType: { format: "raw" },
+    })
+    // If a file was queried then data is not an array
+    if (Array.isArray(readmeFile.data)) {
+      throw new Error("FILE_IS_DIR")
+    }
+    cachedTemplate = Buffer.from(readmeFile.data.content!, "base64").toString()
   }
-  const template = Buffer.from(readmeFile.data.content!, "base64").toString()
+  const template = cachedTemplate
 
   // Make a list of possible actions that can be taken this turn, structured
   // into an array of links
@@ -162,7 +168,19 @@ export async function generateReadme(
 
   const teamTable = makeTeamListTable(log, true)
 
-  const previousGames = await listPreviousGames(gamePath, octokit, context)
+  const gameLogs = await getPreviousGameLogs(gamePath, octokit, context)
+  const previousGames = await listPreviousGames(gamePath, octokit, context, gameLogs)
+  const leaderboardTable = generateLeaderboardTable(gameLogs)
+
+  const latestLogEntry = log.internalLog[log.internalLog.length - 1]
+  const skipNotice =
+    latestLogEntry?.action === "pass"
+      ? compress`
+          :${teamName(latestLogEntry.team)}_circle:
+          The ${teamName(latestLogEntry.team)} team rolled a ${latestLogEntry.roll}
+          and their turn was automatically passed.
+        `
+      : null
 
   const readme = ejs.render(template, {
     actions,
@@ -171,6 +189,8 @@ export async function generateReadme(
     context,
     teamTable,
     previousGames,
+    skipNotice,
+    leaderboardTable,
   })
 
   const currentReadmeFile = await octokit.repos.getContents({
