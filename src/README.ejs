@@ -17,6 +17,10 @@ You're on a team! :wave:
   <img src="https://raw.githubusercontent.com/<%- context.repo.owner %>/<%- context.repo.repo %>/play/games/current/board.<%- logItems[logItems.length - 1].issue %>.svg">
 </p>
 
+<% if (skipNotice) { -%>
+<p align="center"><b><%- skipNotice %></b></p>
+<% } -%>
+
 <% if (state.currentPlayer) { -%>
 **<%- state.currentPlayer === "b" ? ":black_circle:Black" : ":white_circle:White" %> team:** You rolled a <%- state.diceResult %>!
 <% } -%>
