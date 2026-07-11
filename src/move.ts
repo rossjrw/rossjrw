@@ -180,7 +180,7 @@ export async function makeMove(
         owner: context.repo.owner,
         repo: context.repo.repo,
         issue_number: context.issue.number,
-        body: makeVictoryMessage(log),
+        body: await makeVictoryMessage(log, octokit, context),
       })
     }
   }
@@ -202,6 +202,37 @@ export async function makeMove(
     changes = changes.concat(
       await makeMove(newState, "pass", gamePath, octokit, context, log),
     )
+  } else if (
+    !events?.gameWon &&
+    Object.keys(newState.possibleMoves!).length === 1
+  ) {
+    // If there is exactly 1 possible move, auto-execute it (#1123)
+    const onlyMoveKey = Object.keys(newState.possibleMoves!)[0]
+    const onlyFromPosition = parseInt(onlyMoveKey)
+    const onlyToPosition = newState.possibleMoves![onlyMoveKey]
+    
+    // Add a log entry for the auto-move
+    const autoEvents = analyseMove(newState, onlyFromPosition, onlyToPosition)
+    log.addToLog(
+      "move",
+      newState.currentPlayer!,
+      newState.diceResult ?? null,
+      onlyFromPosition,
+      onlyToPosition,
+      autoEvents,
+    )
+    
+    // Execute the auto-move
+    const autoState = Ur.takeTurn(newState, newState.currentPlayer!, onlyFromPosition)
+    
+    // Update README and state with the auto-moved state
+    changes = changes.concat(
+      await generateReadme(autoState, gamePath, octokit, context, log),
+    )
+    changes.push({
+      path: `${gamePath}/state.json`,
+      content: JSON.stringify(autoState, null, 2),
+    })
   } else {
     // Update README.md with the new state
     changes = changes.concat(
