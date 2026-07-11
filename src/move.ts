@@ -59,6 +59,31 @@ export async function makeMove(
     ) {
       throw new Error("WRONG_TEAM")
     }
+
+    // Check if the user is making consecutive moves (cooldown / teammate check)
+    if (context.actor !== context.repo.owner) {
+      let lastMove = null
+      for (let i = log.internalLog.length - 1; i >= 0; i--) {
+        if (log.internalLog[i].action === "move") {
+          lastMove = log.internalLog[i]
+          break
+        }
+      }
+      if (
+        lastMove !== null &&
+        lastMove.username === context.actor &&
+        !lastMove.events?.rosetteClaimed
+      ) {
+        const lastMoveTime = new Date(lastMove.time).getTime()
+        const now = new Date().getTime()
+        const diffMs = now - lastMoveTime
+        const oneHourMs = 60 * 60 * 1000
+        if (diffMs < oneHourMs) {
+          throw new Error("CONSECUTIVE_MOVE")
+        }
+      }
+    }
+
     if (isIssueContext(context)) {
       addLabels(
         [state.currentPlayer === Ur.BLACK ? "Black team" : "White team"],
