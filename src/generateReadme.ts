@@ -10,7 +10,7 @@ import { updateSvg } from "@/updateSvg"
 import { Change } from "@/play"
 import { Log } from "@/log"
 import { getOppositeTeam, makeTeamListTable, teamName } from "@/teams"
-import { listPreviousGames } from "@/victory"
+import { listPreviousGames, getPreviousGameLogs, generateLeaderboardTable } from "@/victory"
 
 // Cache for the EJS template to avoid repeated API calls
 let cachedTemplate: string | null = null
@@ -168,7 +168,9 @@ export async function generateReadme(
 
   const teamTable = makeTeamListTable(log, true)
 
-  const previousGames = await listPreviousGames(gamePath, octokit, context)
+  const gameLogs = await getPreviousGameLogs(gamePath, octokit, context)
+  const previousGames = await listPreviousGames(gamePath, octokit, context, gameLogs)
+  const leaderboardTable = generateLeaderboardTable(gameLogs)
 
   const latestLogEntry = log.internalLog[log.internalLog.length - 1]
   const skipNotice =
@@ -188,6 +190,7 @@ export async function generateReadme(
     teamTable,
     previousGames,
     skipNotice,
+    leaderboardTable,
   })
 
   const currentReadmeFile = await octokit.repos.getContents({
