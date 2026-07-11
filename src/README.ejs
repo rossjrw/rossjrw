@@ -17,6 +17,17 @@ You're on a team! :wave:
   <img src="https://raw.githubusercontent.com/<%- context.repo.owner %>/<%- context.repo.repo %>/play/games/current/board.<%- logItems[logItems.length - 1].issue %>.svg">
 </p>
 
+<% if (recentLogItems.length > 0) { -%>
+**Recent turns:**
+
+| Time | Turn | Event |
+| :---: | :---: | :--- |
+<% recentLogItems.forEach((logItem, index) => { -%>
+| <%- logItem.date %> | <%- logItems.length - recentLogItems.length + index %> | <%- logItem.description %> |
+<% }) -%>
+
+<% } -%>
+
 <% if (state.currentPlayer) { -%>
 **<%- state.currentPlayer === "b" ? ":black_circle:Black" : ":white_circle:White" %> team:** You rolled a <%- state.diceResult %>!
 <% } -%>

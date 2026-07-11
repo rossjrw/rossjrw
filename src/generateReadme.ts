@@ -164,10 +164,14 @@ export async function generateReadme(
 
   const previousGames = await listPreviousGames(gamePath, octokit, context)
 
+  // Prepare recent log items for display on main screen (last 3 turns, excluding the current turn being displayed)
+  const recentLogItems = logItems.slice(-4, -1).reverse()
+
   const readme = ejs.render(template, {
     actions,
     state,
     logItems,
+    recentLogItems,
     context,
     teamTable,
     previousGames,
