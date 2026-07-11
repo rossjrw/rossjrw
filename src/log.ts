@@ -128,25 +128,55 @@ export class Log {
      * more commits are added in between, so long as the image was not changed,
      * the image will still work. The only thing that could break it is
      * rewriting history - but even then those commits might still be saved.
+     *
+     * Passes need special handling because they share an issue number with
+     * the move that triggered them and do not change piece positions. See
+     * rossjrw/rossjrw#137.
      */
+    if (this.internalLog.length < 2 || this.lastCommitSha === null) {
+      return
+    }
 
-    // The board image for the current round has already been added, so the
-    // second-to-last image needs to be linked
-    if (
-      this.internalLog.length >= 2 &&
-      this.internalLog[this.internalLog.length - 2].boardImage === null
-    ) {
-      this.internalLog[this.internalLog.length - 2].boardImage =
-        `https://raw.githubusercontent.com/${
-          this.context.repo.owner
-        }/${this.context.repo.repo}/${this.lastCommitSha}/${
-          this.gamePath
-        }/board.${this.internalLog[this.internalLog.length - 2].issue}.svg`
+    const latest = this.internalLog[this.internalLog.length - 1]
+    const secondLatest = this.internalLog[this.internalLog.length - 2]
+
+    if (latest.action === "pass") {
+      // Passes do not get board links — the link is deferred to the next event.
+      // The move before a pass uses the previous event's board file name.
+      let moveIndex = this.internalLog.length - 2
+      while (moveIndex >= 0 && this.internalLog[moveIndex].action === "pass") {
+        moveIndex--
+      }
+      if (
+        moveIndex >= 0 &&
+        this.internalLog[moveIndex].action === "move" &&
+        this.internalLog[moveIndex].boardImage === null &&
+        moveIndex >= 1
+      ) {
+        this.internalLog[moveIndex].boardImage = this.boardImageUrl(
+          this.internalLog[moveIndex - 1].issue,
+        )
+      }
+      return
+    }
+
+    if (secondLatest.action === "pass") {
+      // The board image that would have appeared on the pass belongs here.
+      if (latest.boardImage === null) {
+        latest.boardImage = this.boardImageUrl(secondLatest.issue)
+      }
+      return
+    }
+
+    if (secondLatest.boardImage === null) {
+      secondLatest.boardImage = this.boardImageUrl(secondLatest.issue)
     } else {
-      // The second-to-last image should have had a null address, but it's not
-      // absolutely critical to execution
       console.error("Second-to-last image was not null")
     }
+  }
+
+  private boardImageUrl(issue: number): string {
+    return `https://raw.githubusercontent.com/${this.context.repo.owner}/${this.context.repo.repo}/${this.lastCommitSha}/${this.gamePath}/board.${issue}.svg`
   }
 
   makeLogChanges(): Change[] {
