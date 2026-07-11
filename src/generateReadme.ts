@@ -164,6 +164,16 @@ export async function generateReadme(
 
   const previousGames = await listPreviousGames(gamePath, octokit, context)
 
+  const latestLogEntry = log.internalLog[log.internalLog.length - 1]
+  const skipNotice =
+    latestLogEntry?.action === "pass"
+      ? compress`
+          :${teamName(latestLogEntry.team)}_circle:
+          The ${teamName(latestLogEntry.team)} team rolled a ${latestLogEntry.roll}
+          and their turn was automatically passed.
+        `
+      : null
+
   const readme = ejs.render(template, {
     actions,
     state,
@@ -171,6 +181,7 @@ export async function generateReadme(
     context,
     teamTable,
     previousGames,
+    skipNotice,
   })
 
   const currentReadmeFile = await octokit.repos.getContents({
