@@ -1097,7 +1097,7 @@
     "time": "2026-07-29T05:54:01.346Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/5f30971c17d0fd94653c623d7535a2daa5fcaaad/games/current/board.4644.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1107,5 +1107,22 @@
     "fromPosition": 4,
     "toPosition": 5,
     "roll": 1
+  },
+  {
+    "username": "PViniKs",
+    "issue": 4645,
+    "time": "2026-07-31T19:03:55.864Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": true,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 3,
+    "toPosition": 5,
+    "roll": 2
   }
 ]
