@@ -1534,7 +1534,7 @@
     "time": "2026-08-18T06:28:12.232Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/6fac6edd277a3772dc9e2b3c5bbb2cf6c262cfc8/games/current/board.4669.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -1544,5 +1544,22 @@
     "fromPosition": 5,
     "toPosition": 9,
     "roll": 3
+  },
+  {
+    "username": "vaishaldsouza",
+    "issue": 4671,
+    "time": "2026-08-28T12:33:52.916Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 0,
+    "toPosition": 2,
+    "roll": 2
   }
 ]
