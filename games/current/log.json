@@ -1619,7 +1619,7 @@
     "time": "2026-09-02T04:33:23.440Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/594585f39a98d6a169922ea676fe30ba6b127b59/games/current/board.4675.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1629,5 +1629,22 @@
     "fromPosition": 13,
     "toPosition": 15,
     "roll": 2
+  },
+  {
+    "username": "VISWA-R-R",
+    "issue": 4676,
+    "time": "2026-09-02T10:34:21.763Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 5,
+    "roll": 3
   }
 ]
