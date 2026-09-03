@@ -1755,7 +1755,7 @@
     "time": "2026-09-03T16:38:26.447Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/507eaecfe26a47d0ddc98a4df2daabc82452b184/games/current/board.4683.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -1765,5 +1765,22 @@
     "fromPosition": 12,
     "toPosition": 13,
     "roll": 1
+  },
+  {
+    "username": "hillset",
+    "issue": 4684,
+    "time": "2026-09-03T17:16:53.004Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 1,
+    "toPosition": 3,
+    "roll": 2
   }
 ]
