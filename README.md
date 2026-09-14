@@ -1,26 +1,26 @@
 Welcome to my Github profile! We're playing [the Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur). **Game #30 is in progress,** but you can join!
 
 <p align="center">
-  <b>It's the :white_circle:white team's turn.</b>
+  <b>It's the :black_circle:black team's turn.</b>
 </p>
 
 You're on a team! :wave:
 
 * If you've already played a turn this game, you're already on a team &mdash; check the game log below for a reminder. If it's not your turn, check back later, or ask a friend to make a move.
-* If you've not yet played a turn this game, make a move now to join the **:white_circle:white** team.
+* If you've not yet played a turn this game, make a move now to join the **:black_circle:black** team.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.4705.svg">
+  <img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.4706.svg">
 </p>
 
-**:white_circle:White team:** You rolled a 1!
+**:black_circle:Black team:** You rolled a 2!
 What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
-  | [    Move a new piece to tile 1](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%400-0&body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [    Move the piece on tile 2 to tile 3](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%402-0&body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
-  | [    Move the piece on tile 12 to tile 13](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%4012-0&body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move a new piece to tile 2](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%400-0&body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move the piece on tile 3 to tile 5](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%403-0&body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [    Move the piece on tile 8 to tile 10](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%408-0&body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -40,7 +40,7 @@ What would you like to do?
       </tr>
       <tr align="center">
         <td><b><img src="https://github.com/AdityaSreevatsaK.png?size=16" alt="" width="16"> <a href="https://github.com/AdityaSreevatsaK">AdityaSreevatsaK</a></b> (21)<br><b><img src="https://github.com/guru2050.png?size=16" alt="" width="16"> <a href="https://github.com/guru2050">guru2050</a></b> (13)<br><b><img src="https://github.com/Casper-Guo.png?size=16" alt="" width="16"> <a href="https://github.com/Casper-Guo">Casper-Guo</a></b> (7)<br><b><img src="https://github.com/LucasFASouza.png?size=16" alt="" width="16"> <a href="https://github.com/LucasFASouza">LucasFASouza</a></b> (3)<br><b><img src="https://github.com/32bikram.png?size=16" alt="" width="16"> <a href="https://github.com/32bikram">32bikram</a></b> (2)<br><b><img src="https://github.com/ratishoberoi.png?size=16" alt="" width="16"> <a href="https://github.com/ratishoberoi">ratishoberoi</a></b> (1)<br><b><img src="https://github.com/lantgabor.png?size=16" alt="" width="16"> <a href="https://github.com/lantgabor">lantgabor</a></b> (1)<br><b><img src="https://github.com/AnuragChowdhury.png?size=16" alt="" width="16"> <a href="https://github.com/AnuragChowdhury">AnuragChowdhury</a></b> (1)<br><b><img src="https://github.com/KhanMaytok.png?size=16" alt="" width="16"> <a href="https://github.com/KhanMaytok">KhanMaytok</a></b> (1)<br><b><img src="https://github.com/grvig.png?size=16" alt="" width="16"> <a href="https://github.com/grvig">grvig</a></b> (1)<br><b><img src="https://github.com/KidIsKing.png?size=16" alt="" width="16"> <a href="https://github.com/KidIsKing">KidIsKing</a></b> (1)<br><b><img src="https://github.com/MEGAJava505.png?size=16" alt="" width="16"> <a href="https://github.com/MEGAJava505">MEGAJava505</a></b> (1)<br><b><img src="https://github.com/Tejakshaya.png?size=16" alt="" width="16"> <a href="https://github.com/Tejakshaya">Tejakshaya</a></b> (1)<br><b><img src="https://github.com/PViniKs.png?size=16" alt="" width="16"> <a href="https://github.com/PViniKs">PViniKs</a></b> (1)<br><b><img src="https://github.com/hillset.png?size=16" alt="" width="16"> <a href="https://github.com/hillset">hillset</a></b> (1)<br><b><img src="https://github.com/1corinthianfeather-design.png?size=16" alt="" width="16"> <a href="https://github.com/1corinthianfeather-design">1corinthianfeather-design</a></b> (1)<br><b><img src="https://github.com/rossjrw.png?size=16" alt="" width="16"> <a href="https://github.com/rossjrw">rossjrw</a></b> (1)</td>
-        <td><b><img src="https://github.com/MatissesProjects.png?size=16" alt="" width="16"> <a href="https://github.com/MatissesProjects">MatissesProjects</a></b> (47)<br><b><img src="https://github.com/Oph72.png?size=16" alt="" width="16"> <a href="https://github.com/Oph72">Oph72</a></b> (8)<br><b><img src="https://github.com/tassiaaccioly.png?size=16" alt="" width="16"> <a href="https://github.com/tassiaaccioly">tassiaaccioly</a></b> (2)<br><b><img src="https://github.com/vaishaldsouza.png?size=16" alt="" width="16"> <a href="https://github.com/vaishaldsouza">vaishaldsouza</a></b> (2)<br><b><img src="https://github.com/ookpassant.png?size=16" alt="" width="16"> <a href="https://github.com/ookpassant">ookpassant</a></b> (2)<br><b><img src="https://github.com/VISWA-R-R.png?size=16" alt="" width="16"> <a href="https://github.com/VISWA-R-R">VISWA-R-R</a></b> (1)<br><b><img src="https://github.com/Felorez.png?size=16" alt="" width="16"> <a href="https://github.com/Felorez">Felorez</a></b> (1)<br><b><img src="https://github.com/mbti0n.png?size=16" alt="" width="16"> <a href="https://github.com/mbti0n">mbti0n</a></b> (1)</td>
+        <td><b><img src="https://github.com/MatissesProjects.png?size=16" alt="" width="16"> <a href="https://github.com/MatissesProjects">MatissesProjects</a></b> (48)<br><b><img src="https://github.com/Oph72.png?size=16" alt="" width="16"> <a href="https://github.com/Oph72">Oph72</a></b> (8)<br><b><img src="https://github.com/tassiaaccioly.png?size=16" alt="" width="16"> <a href="https://github.com/tassiaaccioly">tassiaaccioly</a></b> (2)<br><b><img src="https://github.com/vaishaldsouza.png?size=16" alt="" width="16"> <a href="https://github.com/vaishaldsouza">vaishaldsouza</a></b> (2)<br><b><img src="https://github.com/ookpassant.png?size=16" alt="" width="16"> <a href="https://github.com/ookpassant">ookpassant</a></b> (2)<br><b><img src="https://github.com/VISWA-R-R.png?size=16" alt="" width="16"> <a href="https://github.com/VISWA-R-R">VISWA-R-R</a></b> (1)<br><b><img src="https://github.com/Felorez.png?size=16" alt="" width="16"> <a href="https://github.com/Felorez">Felorez</a></b> (1)<br><b><img src="https://github.com/mbti0n.png?size=16" alt="" width="16"> <a href="https://github.com/mbti0n">mbti0n</a></b> (1)</td>
       </tr>
     </tbody>
   </table>
@@ -51,7 +51,8 @@ Moves played in this game, most recent first:
 
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
-| 11th Sep 2026 20:04 | **128** | :black_circle: <img src="https://github.com/Casper-Guo.png?size=16" alt="" width="16"> **[Casper-Guo](https://github.com/Casper-Guo)** moved a black piece onto the board to position 3    | [#4705](https://github.com/rossjrw/rossjrw/issues/4705) |  |
+| 14th Sep 2026 20:06 | **129** | :white_circle: <img src="https://github.com/MatissesProjects.png?size=16" alt="" width="16"> **[MatissesProjects](https://github.com/MatissesProjects)** moved a white piece from position 12 to position 13    | [#4706](https://github.com/rossjrw/rossjrw/issues/4706) |  |
+| 11th Sep 2026 20:04 | **128** | :black_circle: <img src="https://github.com/Casper-Guo.png?size=16" alt="" width="16"> **[Casper-Guo](https://github.com/Casper-Guo)** moved a black piece onto the board to position 3    | [#4705](https://github.com/rossjrw/rossjrw/issues/4705) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/b9b878565946bae0fda393d0591bdb8f3a9ee124/games/current/board.4705.svg) |
 | 11th Sep 2026 20:04 | **127** | :black_circle: <img src="https://github.com/Casper-Guo.png?size=16" alt="" width="16"> **[Casper-Guo](https://github.com/Casper-Guo)** moved a black piece from position 13 to position 14  — claimed a rosette :rosette:  | [#4704](https://github.com/rossjrw/rossjrw/issues/4704) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/00bef2b235b6215696b55005a47b55a619778e9b/games/current/board.4704.svg) |
 | 11th Sep 2026 20:03 | **126** | :black_circle: <img src="https://github.com/Casper-Guo.png?size=16" alt="" width="16"> **[Casper-Guo](https://github.com/Casper-Guo)** moved a black piece from position 5 to position 8  — claimed a rosette :rosette:  | [#4703](https://github.com/rossjrw/rossjrw/issues/4703) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/302169559bc5b0f06339045c8a4d4b3a768a6e79/games/current/board.4703.svg) |
 | 11th Sep 2026 16:56 | **125** | :white_circle: <img src="https://github.com/mbti0n.png?size=16" alt="" width="16"> **[mbti0n](https://github.com/mbti0n)** moved a white piece onto the board to position 2    | [#4702](https://github.com/rossjrw/rossjrw/issues/4702) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/b4b0326103442a9be85741221748dbba3cef4536/games/current/board.4702.svg) |
