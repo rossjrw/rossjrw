@@ -2214,7 +2214,7 @@
     "time": "2026-09-18T19:53:05.865Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/e84968d6f39d76e182ed84db06196cda1ee437fb/games/current/board.4710.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2223,6 +2223,23 @@
     },
     "fromPosition": 8,
     "toPosition": 10,
+    "roll": 2
+  },
+  {
+    "username": "bIackbirds",
+    "issue": 4711,
+    "time": "2026-09-24T00:17:50.538Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": true,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 4,
     "roll": 2
   }
 ]
