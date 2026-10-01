@@ -2697,7 +2697,7 @@
     "time": "2026-09-30T18:06:07.303Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/84f9d4b203013c5543f6277d515bb3cbda8faac1/games/current/board.4737.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2706,6 +2706,23 @@
     },
     "fromPosition": 7,
     "toPosition": 10,
+    "roll": 3
+  },
+  {
+    "username": "mbti0n",
+    "issue": 4738,
+    "time": "2026-10-01T04:15:48.378Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 4,
+    "toPosition": 7,
     "roll": 3
   }
 ]
