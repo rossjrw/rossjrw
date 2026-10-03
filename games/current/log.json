@@ -2765,7 +2765,7 @@
     "time": "2026-10-01T19:17:15.534Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/18726d38e2d3099ecf5b06b5825b5ad95141a237/games/current/board.4742.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -2774,6 +2774,23 @@
     },
     "fromPosition": 10,
     "toPosition": 13,
+    "roll": 3
+  },
+  {
+    "username": "georgebarr",
+    "issue": 4743,
+    "time": "2026-10-03T12:25:29.005Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 2,
+    "toPosition": 5,
     "roll": 3
   }
 ]
