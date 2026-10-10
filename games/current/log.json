@@ -3190,5 +3190,34 @@
     "fromPosition": null,
     "toPosition": null,
     "roll": 3
+  },
+  {
+    "username": "kubo6472",
+    "issue": 4766,
+    "time": "2026-10-10T12:52:26.101Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/714faf2f2ecb49fdb65d00d17d9d0c39045fcae4/games/current/board.4766.svg",
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 6,
+    "toPosition": 7,
+    "roll": 1
+  },
+  {
+    "username": "kubo6472",
+    "issue": 4766,
+    "time": "2026-10-10T12:52:26.101Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 2
   }
 ]
