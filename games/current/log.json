@@ -816,7 +816,7 @@
     "time": "2026-10-14T05:21:03.371Z",
     "team": "b",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/206ce995e8e3a951b44da74985d53861e3bff17d/games/current/board.4819.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": false,
@@ -826,5 +826,22 @@
     "fromPosition": 4,
     "toPosition": 7,
     "roll": 3
+  },
+  {
+    "username": "Oph72",
+    "issue": 4820,
+    "time": "2026-10-14T16:22:54.472Z",
+    "team": "w",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": true,
+      "gameWon": false
+    },
+    "fromPosition": 14,
+    "toPosition": 15,
+    "roll": 1
   }
 ]
