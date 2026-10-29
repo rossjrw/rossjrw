@@ -2498,7 +2498,7 @@
     "time": "2026-10-29T20:48:50.024Z",
     "team": "w",
     "action": "move",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/4112147bd0932af8a1f9827db7448e9f3faa7c7b/games/current/board.4916.svg",
     "events": {
       "rosetteClaimed": false,
       "captureHappened": true,
@@ -2508,5 +2508,22 @@
     "fromPosition": 4,
     "toPosition": 6,
     "roll": 2
+  },
+  {
+    "username": "Casper-Guo",
+    "issue": 4917,
+    "time": "2026-10-29T20:50:27.784Z",
+    "team": "b",
+    "action": "move",
+    "boardImage": null,
+    "events": {
+      "rosetteClaimed": false,
+      "captureHappened": false,
+      "ascensionHappened": false,
+      "gameWon": false
+    },
+    "fromPosition": 10,
+    "toPosition": 13,
+    "roll": 3
   }
 ]
