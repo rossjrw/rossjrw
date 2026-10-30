@@ -1,24 +1,16 @@
-Welcome to my Github profile! We're playing [the Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur). **Game #31 is in progress,** but you can join!
+Welcome to my Github profile! We're playing [the Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur). **This game has ended!**
+
+This game has finished, so we're just waiting for someone to click _"Start a new game"._ Could that someone be you?
 
 <p align="center">
-  <b>It's the :black_circle:black team's turn.</b>
+  <img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.4932.svg">
 </p>
 
-You're on a team! :wave:
-
-* If you've already played a turn this game, you're already on a team &mdash; check the game log below for a reminder. If it's not your turn, check back later, or ask a friend to make a move.
-* If you've not yet played a turn this game, make a move now to join the **:black_circle:black** team.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.4931.svg">
-</p>
-
-**:black_circle:Black team:** You rolled a 1!
 What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
-  | [  :rocket: :crown: Ascend the piece on tile 14 ](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-1%4014-0&body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
+  | [Start a new game](https://github.com/rossjrw/rossjrw/issues/new?title=ur-new&body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
@@ -37,7 +29,7 @@ What would you like to do?
         <td>:white_circle: <b> White team</b></td>
       </tr>
       <tr align="center">
-        <td><b><img src="https://github.com/Casper-Guo.png?size=16" alt="" width="16"> <a href="https://github.com/Casper-Guo">Casper-Guo</a></b> (73)<br><b><img src="https://github.com/guru2050.png?size=16" alt="" width="16"> <a href="https://github.com/guru2050">guru2050</a></b> (7)<br><b><img src="https://github.com/AdityaSreevatsaK.png?size=16" alt="" width="16"> <a href="https://github.com/AdityaSreevatsaK">AdityaSreevatsaK</a></b> (2)</td>
+        <td><b><img src="https://github.com/Casper-Guo.png?size=16" alt="" width="16"> <a href="https://github.com/Casper-Guo">Casper-Guo</a></b> (74)<br><b><img src="https://github.com/guru2050.png?size=16" alt="" width="16"> <a href="https://github.com/guru2050">guru2050</a></b> (7)<br><b><img src="https://github.com/AdityaSreevatsaK.png?size=16" alt="" width="16"> <a href="https://github.com/AdityaSreevatsaK">AdityaSreevatsaK</a></b> (2)</td>
         <td><b><img src="https://github.com/Oph72.png?size=16" alt="" width="16"> <a href="https://github.com/Oph72">Oph72</a></b> (64)<br><b><img src="https://github.com/MatissesProjects.png?size=16" alt="" width="16"> <a href="https://github.com/MatissesProjects">MatissesProjects</a></b> (11)<br><b><img src="https://github.com/mbti0n.png?size=16" alt="" width="16"> <a href="https://github.com/mbti0n">mbti0n</a></b> (1)</td>
       </tr>
     </tbody>
@@ -49,7 +41,8 @@ Moves played in this game, most recent first:
 
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
-| 30th Oct 2026 22:55 | **166** | :black_circle: <img src="https://github.com/Casper-Guo.png?size=16" alt="" width="16"> **[Casper-Guo](https://github.com/Casper-Guo)** moved a black piece from position 12 to position 14  — claimed a rosette :rosette:  | [#4931](https://github.com/rossjrw/rossjrw/issues/4931) |  |
+| 30th Oct 2026 23:24 | **167** | :black_circle: <img src="https://github.com/Casper-Guo.png?size=16" alt="" width="16"> **[Casper-Guo](https://github.com/Casper-Guo)** ascended a black piece from position 14 :rocket:   — won the game :crown: | [#4932](https://github.com/rossjrw/rossjrw/issues/4932) |  |
+| 30th Oct 2026 22:55 | **166** | :black_circle: <img src="https://github.com/Casper-Guo.png?size=16" alt="" width="16"> **[Casper-Guo](https://github.com/Casper-Guo)** moved a black piece from position 12 to position 14  — claimed a rosette :rosette:  | [#4931](https://github.com/rossjrw/rossjrw/issues/4931) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/c917566a679bb1251a84b99d5e4501400ea48dce/games/current/board.4931.svg) |
 | 30th Oct 2026 22:22 | **165** | :white_circle: <img src="https://github.com/MatissesProjects.png?size=16" alt="" width="16"> **[MatissesProjects](https://github.com/MatissesProjects)** moved a white piece from position 6 to position 9    | [#4930](https://github.com/rossjrw/rossjrw/issues/4930) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/01cfee8a644e5129443cb0d659ad0ee955da33b5/games/current/board.4930.svg) |
 | 30th Oct 2026 21:42 | **164** | :black_circle: <img src="https://github.com/Casper-Guo.png?size=16" alt="" width="16"> **[Casper-Guo](https://github.com/Casper-Guo)** moved a black piece from position 8 to position 12    | [#4929](https://github.com/rossjrw/rossjrw/issues/4929) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/bb1b32e28b5691f6ccb3ea66087e4812348707ad/games/current/board.4929.svg) |
 | 30th Oct 2026 21:40 | **163** | :black_circle: <img src="https://github.com/Casper-Guo.png?size=16" alt="" width="16"> **[Casper-Guo](https://github.com/Casper-Guo)** moved a black piece from position 7 to position 8  — claimed a rosette :rosette:  | [#4928](https://github.com/rossjrw/rossjrw/issues/4928) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/c53957d5ffec9dcc18efcb0cbaf1ee620a90f063/games/current/board.4928.svg) |
