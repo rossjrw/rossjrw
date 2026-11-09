@@ -134,7 +134,7 @@ export class Log {
     // action from an earlier issue, whose board was actually committed.
     // Otherwise we could link an intermediate pass to a non-existent SVG.
     const currentIssue = this.internalLog[this.internalLog.length - 1]?.issue
-    const previousBoard = [...this.internalLog]
+    const previousBoard = this.internalLog.slice()
       .reverse()
       .find((item) => item.issue !== currentIssue)
 
