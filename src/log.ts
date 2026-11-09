@@ -130,32 +130,19 @@ export class Log {
      * rewriting history - but even then those commits might still be saved.
      */
 
-    // Consecutive automatic passes can share an issue and a commit.
-    // Such intermediate board images never existed as separate commits.
-    if (
-      this.internalLog.length >= 2 &&
-      this.internalLog[this.internalLog.length - 2].issue ===
-        this.internalLog[this.internalLog.length - 1].issue
-    ) {
-      return
-    }
+    // All passes in one issue share a single commit. Find the most recent
+    // action from an earlier issue, whose board was actually committed.
+    // Otherwise we could link an intermediate pass to a non-existent SVG.
+    const currentIssue = this.internalLog[this.internalLog.length - 1]?.issue
+    const previousBoard = [...this.internalLog]
+      .reverse()
+      .find((item) => item.issue !== currentIssue)
 
-    // The board image for the current round has already been added, so the
-    // second-to-last image needs to be linked
-    if (
-      this.internalLog.length >= 2 &&
-      this.internalLog[this.internalLog.length - 2].boardImage === null
-    ) {
-      this.internalLog[this.internalLog.length - 2].boardImage =
-        `https://raw.githubusercontent.com/${
-          this.context.repo.owner
-        }/${this.context.repo.repo}/${this.lastCommitSha}/${
-          this.gamePath
-        }/board.${this.internalLog[this.internalLog.length - 2].issue}.svg`
-    } else {
-      // The second-to-last image should have had a null address, but it's not
-      // absolutely critical to execution
-      console.error("Second-to-last image was not null")
+    if (previousBoard && previousBoard.boardImage === null) {
+      previousBoard.boardImage =
+        `https://raw.githubusercontent.com/${this.context.repo.owner}/${this.context.repo.repo}/${this.lastCommitSha}/${this.gamePath}/board.${previousBoard.issue}.svg`
+    } else if (previousBoard) {
+      console.error("Previous board image was not null")
     }
   }
 
