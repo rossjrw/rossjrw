@@ -130,6 +130,16 @@ export class Log {
      * rewriting history - but even then those commits might still be saved.
      */
 
+    // Consecutive automatic passes can share an issue and a commit.
+    // Such intermediate board images never existed as separate commits.
+    if (
+      this.internalLog.length >= 2 &&
+      this.internalLog[this.internalLog.length - 2].issue ===
+        this.internalLog[this.internalLog.length - 1].issue
+    ) {
+      return
+    }
+
     // The board image for the current round has already been added, so the
     // second-to-last image needs to be linked
     if (

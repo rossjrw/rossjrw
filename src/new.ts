@@ -8,6 +8,7 @@ import { generateReadme } from "@/generateReadme"
 import { Change } from "@/play"
 import { Log } from "@/log"
 import { teamName } from "@/teams"
+import { skipUnplayableTurns } from "@/skipUnplayableTurns"
 
 export async function resetGame(
   gamePath: string,
@@ -50,21 +51,23 @@ export async function resetGame(
   }
   const newState = Ur.startGame(7, 4, gameStartTeam)
 
-  // Save the new state
-  changes.push({
-    path: `${gamePath}/state.json`,
-    content: JSON.stringify(newState, null, 2),
-  })
-
   // Wipe the log for the new game
   log.internalLog = []
 
-  // Update the log with this action
+  // Record the new game before any automatic passes.
   log.addToLog("new", newState.currentPlayer!, null, null, null, null)
 
-  // Update README.md with the new state
+  // The opening dice can roll zero. Skip that turn, and any subsequent
+  // unplayable turns, before exposing the new game to players.
+  const playableState = skipUnplayableTurns(newState, log)
+
+  // Save and display the first playable state.
+  changes.push({
+    path: `${gamePath}/state.json`,
+    content: JSON.stringify(playableState, null, 2),
+  })
   changes = changes.concat(
-    await generateReadme(newState, gamePath, octokit, context, log),
+    await generateReadme(playableState, gamePath, octokit, context, log),
   )
 
   // Add a comment to the issue to indicate that a new board was made
@@ -76,7 +79,7 @@ export async function resetGame(
       body: compress`
       Done! You started a new game.
       \n\n
-      It's ${teamName(newState.currentPlayer)} to play!
+      It's ${teamName(playableState.currentPlayer)} to play!
       [Make the first move yourself](https://github.com/${
         context.repo.owner
       }/${context.repo.repo}),

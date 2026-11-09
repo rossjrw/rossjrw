@@ -11,6 +11,7 @@ import { addReaction } from "@/issues"
 import { Log } from "@/log"
 import { makeMove } from "@/move"
 import { resetGame } from "@/new"
+import { skipUnplayableTurns } from "@/skipUnplayableTurns"
 import { teamName } from "@/teams"
 
 export interface Change {
@@ -87,9 +88,22 @@ export default async function play(
         state.currentPlayer,
       )} ${move} (#${context.issue?.number})`
     } else if (command === "refresh") {
+      // An issue-triggered refresh can repair a game stuck on a zero roll.
+      // Build-triggered refreshes have no issue number, and only regenerate
+      // the README (there is no issue number available for pass log entries).
+      const refreshedState = isIssueContext(context)
+        ? skipUnplayableTurns(state, log)
+        : state
       changes = changes.concat(
-        await generateReadme(state, gamePath, octokit, context, log),
+        await generateReadme(refreshedState, gamePath, octokit, context, log),
       )
+      if (refreshedState !== state) {
+        changes.push({
+          path: `${gamePath}/state.json`,
+          content: JSON.stringify(refreshedState, null, 2),
+        })
+        changes = changes.concat(log.makeLogChanges())
+      }
       commitMessage = `(${context.actor}) Regenerate README after update`
     } else {
       throw command satisfies never
