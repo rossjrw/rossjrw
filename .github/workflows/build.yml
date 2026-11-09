@@ -13,7 +13,7 @@ jobs:
       - name: Install
         run: npm install
       - name: Test
-        run: npm test -- --runInBand
+        run: npm test
       - name: Build
         run: npm run build
       - name: Deploy
