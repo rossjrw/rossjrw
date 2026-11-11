@@ -1,6 +1,7 @@
 import { Octokit } from "@octokit/rest/index"
 import { default as _core } from "@actions/core"
 import { Buffer } from "buffer"
+import Ur from "ur-game"
 
 import { makeCommit } from "@/commit"
 import { handleError } from "@/error"
@@ -10,7 +11,8 @@ import { Context, isIssueContext } from "@/gh"
 import { addReaction } from "@/issues"
 import { Log } from "@/log"
 import { makeMove } from "@/move"
-import { resetGame } from "@/new"
+import { announceNewGame, resetGame } from "@/new"
+import { passUnplayableTurns } from "@/passUnplayableTurns"
 import { teamName } from "@/teams"
 
 export interface Change {
@@ -64,36 +66,54 @@ export default async function play(
     if (Array.isArray(stateFile.data)) {
       throw new Error("FILE_IS_DIR")
     }
-    const state = JSON.parse(
+    const state: Ur.State = JSON.parse(
       Buffer.from(stateFile.data.content!, "base64").toString(),
     )
 
     let changes: Change[] = []
+    let nextState: Ur.State
     let commitMessage: string
 
-    // Collect changes for each command
+    // Work out the next state of the game for each command
     if (command === "new") {
-      changes = changes.concat(
-        await resetGame(gamePath, oldGamePath, octokit, context, log),
-        log.makeLogChanges(),
+      const [newState, archiveChanges] = resetGame(
+        oldGamePath,
+        context.actor,
+        log,
       )
+      nextState = newState
+      changes = changes.concat(archiveChanges)
       commitMessage = `(${context.actor}) Start a new game (#${context.issue?.number})`
     } else if (command === "move") {
-      changes = changes.concat(
-        await makeMove(state, move, gamePath, octokit, context, log),
-        log.makeLogChanges(),
-      )
+      nextState = await makeMove(state, move, octokit, context, log)
       commitMessage = `(${context.actor}) Move ${teamName(
         state.currentPlayer,
       )} ${move} (#${context.issue?.number})`
     } else if (command === "refresh") {
-      changes = changes.concat(
-        await generateReadme(state, gamePath, octokit, context, log),
-      )
+      nextState = state
       commitMessage = `(${context.actor}) Regenerate README after update`
     } else {
       throw command satisfies never
     }
+
+    // If the team to play has no possible moves (e.g. it rolled a 0), nobody
+    // can make the move that the game would wait for, so pass the turn now
+    const playableState = passUnplayableTurns(nextState, log)
+
+    if (command === "new" && isIssueContext(context)) {
+      announceNewGame(playableState, octokit, context)
+    }
+
+    changes = changes.concat(
+      await generateReadme(playableState, gamePath, octokit, context, log),
+      {
+        path: `${gamePath}/state.json`,
+        content: JSON.stringify(playableState, null, 2),
+      },
+      // Generating the README links the previous board image into the log, so
+      // the log must be saved after it
+      log.makeLogChanges(),
+    )
 
     // All the changes have been collected - commit them
     await makeCommit(commitMessage, changes, octokit, context)

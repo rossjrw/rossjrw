@@ -1,6 +1,7 @@
 import { Octokit } from "@octokit/rest/index"
 import { Context } from "@/gh"
 import Ur from "ur-game"
+import { findLast, last } from "lodash"
 
 import { Change } from "@/play"
 import { Events } from "@/analyseMove"
@@ -128,24 +129,32 @@ export class Log {
      * more commits are added in between, so long as the image was not changed,
      * the image will still work. The only thing that could break it is
      * rewriting history - but even then those commits might still be saved.
+     *
+     * One issue can add several actions to the log - a move followed by
+     * automatic passes - but each commit only has one board image, for the
+     * last of them. So the action to link is the last one from an earlier
+     * issue, and the actions before it from the same issue get no image.
      */
+    const currentIssue = last(this.internalLog)?.issue
+    const previousAction = findLast(
+      this.internalLog,
+      (logItem) => logItem.issue !== currentIssue,
+    )
 
-    // The board image for the current round has already been added, so the
-    // second-to-last image needs to be linked
-    if (
-      this.internalLog.length >= 2 &&
-      this.internalLog[this.internalLog.length - 2].boardImage === null
-    ) {
-      this.internalLog[this.internalLog.length - 2].boardImage =
-        `https://raw.githubusercontent.com/${
-          this.context.repo.owner
-        }/${this.context.repo.repo}/${this.lastCommitSha}/${
-          this.gamePath
-        }/board.${this.internalLog[this.internalLog.length - 2].issue}.svg`
+    if (previousAction === undefined) {
+      // No earlier issue has played in this game, so there's no previous board
+      return
+    }
+    if (previousAction.boardImage === null) {
+      previousAction.boardImage = `https://raw.githubusercontent.com/${
+        this.context.repo.owner
+      }/${this.context.repo.repo}/${this.lastCommitSha}/${
+        this.gamePath
+      }/board.${previousAction.issue}.svg`
     } else {
-      // The second-to-last image should have had a null address, but it's not
+      // The previous image should have had a null address, but it's not
       // absolutely critical to execution
-      console.error("Second-to-last image was not null")
+      console.error("Previous image was not null")
     }
   }
 
