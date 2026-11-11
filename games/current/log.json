@@ -5,10 +5,22 @@
     "time": "2026-10-30T23:24:44.372Z",
     "team": "b",
     "action": "new",
-    "boardImage": null,
+    "boardImage": "https://raw.githubusercontent.com/rossjrw/rossjrw/9efeac1a8d1647858a90c7818633cdbe0c9d1d22/games/current/board.4933.svg",
     "events": null,
     "fromPosition": null,
     "toPosition": null,
     "roll": null
+  },
+  {
+    "username": "rossjrw",
+    "issue": 4935,
+    "time": "2026-11-11T22:56:36.019Z",
+    "team": "b",
+    "action": "pass",
+    "boardImage": null,
+    "events": null,
+    "fromPosition": null,
+    "toPosition": null,
+    "roll": 0
   }
 ]

@@ -1,28 +1,29 @@
-Welcome to my Github profile! We're playing [the Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur). **Game #31 is in progress,** but you can join!
+Welcome to my Github profile! We're playing [the Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur). **Game #32 is in progress,** but you can join!
 
 <p align="center">
-  <b>It's the :black_circle:black team's turn.</b>
+  <b>It's the :white_circle:white team's turn.</b>
 </p>
 
 You're on a team! :wave:
 
 * If you've already played a turn this game, you're already on a team &mdash; check the game log below for a reminder. If it's not your turn, check back later, or ask a friend to make a move.
-* If you've not yet played a turn this game, make a move now to join the **:black_circle:black** team.
+* If you've not yet played a turn this game, make a move now to join the **:white_circle:white** team.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.4933.svg">
+  <img src="https://raw.githubusercontent.com/rossjrw/rossjrw/play/games/current/board.4935.svg">
 </p>
 
-**:black_circle:Black team:** You rolled a 0!
+**:white_circle:White team:** You rolled a 2!
 What would you like to do?
 
 | Choices *(pick one of them!)* |
 | --- |
+  | [    Move a new piece to tile 2](https://github.com/rossjrw/rossjrw/issues/new?title=ur-move-2%400-0&body=Press+Submit%21+You+don%27t+need+to+edit+this+text+or+do+anything+else.%0D%0A%0D%0ABe+aware+that+your+move+can+take+a+minute+or+two+to+process.) |
 
 -----
 
 <details>
-<summary><b>Game #31 so far</b></summary>
+<summary><b>Game #32 so far</b></summary>
 
 ## Who's on each team?
 
@@ -48,7 +49,8 @@ Moves played in this game, most recent first:
 
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
-| 30th Oct 2026 23:24 | **1** | :black_circle: <img src="https://github.com/Casper-Guo.png?size=16" alt="" width="16"> **[Casper-Guo](https://github.com/Casper-Guo)** started a new game | [#4933](https://github.com/rossjrw/rossjrw/issues/4933) |  |
+| 11th Nov 2026 22:56 | **2** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#4935](https://github.com/rossjrw/rossjrw/issues/4935) |  |
+| 30th Oct 2026 23:24 | **1** | :black_circle: <img src="https://github.com/Casper-Guo.png?size=16" alt="" width="16"> **[Casper-Guo](https://github.com/Casper-Guo)** started a new game | [#4933](https://github.com/rossjrw/rossjrw/issues/4933) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/9efeac1a8d1647858a90c7818633cdbe0c9d1d22/games/current/board.4933.svg) |
 
 </details>
 
@@ -267,6 +269,13 @@ Moves played in this game, most recent first:
    * The :white_circle:white team captured 12 black pieces and claimed 25 rosettes. 
    * The MVP of the winning team was <img src="https://github.com/Casper-Guo.png?size=16" alt="" width="16"> **[Casper-Guo](https://github.com/Casper-Guo)**, who played 37 moves. 
    * The winning move was made by <img src="https://github.com/Casper-Guo.png?size=16" alt="" width="16"> **[Casper-Guo](https://github.com/Casper-Guo)** ([#4769](https://github.com/rossjrw/rossjrw/issues/4769)).
+1. A game was started on 10th Oct 2026 by <img src="https://github.com/Casper-Guo.png?size=16" alt="" width="16"> **[Casper-Guo](https://github.com/Casper-Guo)** and ended on 30th Oct 2026. 
+   * The :black_circle:black team won. 
+   * 6 players played 167 moves across 2 weeks and 6 days. 
+   * The :black_circle:black team captured 11 white pieces and claimed 24 rosettes. 
+   * The :white_circle:white team captured 9 black pieces and claimed 19 rosettes. 
+   * The MVP of the winning team was <img src="https://github.com/Casper-Guo.png?size=16" alt="" width="16"> **[Casper-Guo](https://github.com/Casper-Guo)**, who played 76 moves. 
+   * The winning move was made by <img src="https://github.com/Casper-Guo.png?size=16" alt="" width="16"> **[Casper-Guo](https://github.com/Casper-Guo)** ([#4932](https://github.com/rossjrw/rossjrw/issues/4932)).
 
 </details>
 
