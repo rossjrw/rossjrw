@@ -25738,6 +25738,7 @@ function handleError(error, log, octokit, context, core) {
         NON_NUMERIC_ID: "You've told me what move to make, but the game ID you've given me isn't a number.",
         // Execution errors
         MOVE_WHEN_GAME_ENDED: "You can't make a move when the game has finished! You'll have to start a new game instead.",
+        UNFINISHED_GAME_NEW: "You can't start a new game while the current game is still in progress! Wait until someone wins, then try again.",
         WRONG_TEAM: "Sorry, you're on the ".concat((0,_teams__WEBPACK_IMPORTED_MODULE_4__.teamName)(playerTeam), " team, but it's ").concat((0,_teams__WEBPACK_IMPORTED_MODULE_4__.teamName)((0,_teams__WEBPACK_IMPORTED_MODULE_4__.getOppositeTeam)(playerTeam)), " to play. You'll have to wait until it's the ").concat((0,_teams__WEBPACK_IMPORTED_MODULE_4__.teamName)(playerTeam), " team's turn before you can make a move."),
         WRONG_DICE_COUNT: "You tried to move a piece by the wrong number of places. Check the dice roll!",
         NO_MOVE_POSITION: "I can't tell which piece you want to move.",
@@ -27038,6 +27039,9 @@ function play(title, octokit, context, core) {
                     nextState = void 0;
                     commitMessage = void 0;
                     if (!(command === "new")) return [3 /*break*/, 4];
+                    if (state.currentPlayer) {
+                        throw new Error("UNFINISHED_GAME_NEW");
+                    }
                     _b = (0,_new__WEBPACK_IMPORTED_MODULE_9__.resetGame)(oldGamePath, context.actor, log), newState = _b[0], archiveChanges = _b[1];
                     nextState = newState;
                     changes = changes.concat(archiveChanges);
