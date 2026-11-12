@@ -49,7 +49,7 @@ Moves played in this game, most recent first:
 
 | Time | Turn | Event | Issue | Board |
 | :---: | :---: | :--- | :---: | :---: |
-| 11th Nov 2026 22:56 | **2** | :black_circle:  The black team rolled a 0 and their turn was automatically passed | [#4935](https://github.com/rossjrw/rossjrw/issues/4935) |  |
+| 11th Nov 2026 22:56 | **2** | :black_circle:  The black team rolled a 0 and their turn was automatically passed |  |  |
 | 30th Oct 2026 23:24 | **1** | :black_circle: <img src="https://github.com/Casper-Guo.png?size=16" alt="" width="16"> **[Casper-Guo](https://github.com/Casper-Guo)** started a new game | [#4933](https://github.com/rossjrw/rossjrw/issues/4933) | [link](https://raw.githubusercontent.com/rossjrw/rossjrw/9efeac1a8d1647858a90c7818633cdbe0c9d1d22/games/current/board.4933.svg) |
 
 </details>
