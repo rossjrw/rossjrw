@@ -29,7 +29,9 @@ export function getPlayerTeam(
   /**
    * Checks what team a player is on.
    */
-  return log.internalLog.find((item) => item.username === username)?.team
+  return log.internalLog.find(
+    (item) => item.action !== "pass" && item.username === username,
+  )?.team
 }
 
 export function getPlayerTeamSource(
