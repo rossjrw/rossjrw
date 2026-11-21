@@ -95,6 +95,7 @@ export async function listPreviousGames(
   const gameStrings = gameLogs.map((log) => {
     const firstMove = log[0]
     const lastMove = log[log.length - 1]
+    const winningMove = log.find((logItem) => logItem.events?.gameWon)
     const playerCount = uniq(log.map((entry) => entry.username)).length
     const mvp = flow(
       countBy,
@@ -103,7 +104,7 @@ export async function listPreviousGames(
       head,
     )(
       log
-        .filter((logItem) => logItem.team === lastMove.team)
+        .filter((logItem) => logItem.team === winningMove?.team)
         .map((logItem) => logItem.username),
     )
     return compress`
@@ -112,9 +113,15 @@ export async function listPreviousGames(
       by <img src="https://github.com/${firstMove.username}.png?size=16" alt="" width="16">
       **[${firstMove.username}](https://github.com/${firstMove.username})**
       and ended on ${dateformat(new Date(lastMove.time), "dS mmm yyyy")}.
-      <> The ${
-        lastMove.team === "b" ? ":black_circle:black" : ":white_circle:white"
-      } team won.
+      <> ${
+        winningMove
+          ? `The ${
+              winningMove.team === "b"
+                ? ":black_circle:black"
+                : ":white_circle:white"
+            } team won.`
+          : "The game ended without a winner."
+      }
       <> ${playerCount} players played ${
         log.length
       } moves across ${humanizeDuration(
@@ -140,18 +147,24 @@ export async function listPreviousGames(
           return logItem.team === "w" && logItem.events?.rosetteClaimed
         }).length
       } rosettes.
-      <> The MVP of the winning team was
-      <img src="https://github.com/${mvp}.png?size=16" alt="" width="16">
-      **[${mvp}](https://github.com/${mvp})**,
-      who played ${
-        log.filter((logItem) => logItem.username === mvp).length
-      } moves.
-      <> The winning move was made
-      by <img src="https://github.com/${lastMove.username}.png?size=16" alt="" width="16">
-      **[${lastMove.username}](https://github.com/${lastMove.username})**
-      ([#${lastMove.issue}](https://github.com/${context.repo.owner}/${
-        context.repo.repo
-      }/issues/${lastMove.issue})).
+      ${
+        winningMove
+          ? compress`
+        <> The MVP of the winning team was
+        <img src="https://github.com/${mvp}.png?size=16" alt="" width="16">
+        **[${mvp}](https://github.com/${mvp})**,
+        who played ${
+          log.filter((logItem) => logItem.username === mvp).length
+        } moves.
+        <> The winning move was made
+        by <img src="https://github.com/${winningMove.username}.png?size=16" alt="" width="16">
+        **[${winningMove.username}](https://github.com/${winningMove.username})**
+        ([#${winningMove.issue}](https://github.com/${context.repo.owner}/${
+          context.repo.repo
+        }/issues/${winningMove.issue})).
+      `
+          : ""
+      }
     `.replace(/<>/g, "\n   *")
   })
 
